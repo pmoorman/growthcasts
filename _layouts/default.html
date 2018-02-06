@@ -7,10 +7,14 @@
 
     {% include header.html %}
 
-    <main>
+    <main class="main">
 
       {% for item in site.modules %}
-        <div>{{ item }}</div>
+        <section class="section">
+          <div class="container container--xlarge">
+            {{ item }}
+          </div>
+        </section>
       {% endfor %}
 
     </main>

@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &__column {
+    flex: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    & > * + * {
+      margin-top: 2rem;
+    }
+  }
+}
