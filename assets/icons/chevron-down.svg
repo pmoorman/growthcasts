@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Growthcasts---Full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-831.000000, -35174.000000)">
+        <g id="Group-11" transform="translate(316.000000, 35081.000000)" fill="#A0A4B1" fill-rule="nonzero">
+            <g id="q" transform="translate(0.000000, 60.000000)">
+                <g id="chevron-down" transform="translate(515.000000, 33.000000)">
+                    <path d="M5.51706164,6.78898729 L0.19259589,1.6746715 C-0.0641986301,1.4280136 -0.0641986301,1.02811887 0.19259589,0.781487286 L0.813609589,0.184987286 C1.06996575,-0.061249556 1.48544521,-0.0617232402 1.74240411,0.183934655 L5.98202055,4.23711887 L10.2216096,0.183934655 C10.4785685,-0.0617232402 10.8940479,-0.061249556 11.1504041,0.184987286 L11.7714178,0.781487286 C12.0282123,1.02814518 12.0282123,1.42803992 11.7714178,1.6746715 L6.44697945,6.78898729 C6.19018493,7.03561887 5.77385616,7.03561887 5.51706164,6.78898729 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

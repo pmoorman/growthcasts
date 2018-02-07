@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Growthcasts---Full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-487.000000, -34240.000000)" opacity="0.200000003">
+        <g id="Plan" transform="translate(1.000000, 32260.000000)" fill="#A0A4B1" fill-rule="nonzero">
+            <g id="Core" transform="translate(426.000000, 1393.000000)">
+                <g id="Group-10-Copy" transform="translate(60.000000, 519.000000)">
+                    <g id="checkmark.1" transform="translate(0.000000, 68.000000)">
+                        <path d="M14.9305455,0.588611111 C14.1572121,-0.196203704 12.9038788,-0.196203704 12.1305455,0.588611111 L5.12981818,7.67601852 L3.38,5.90416667 C2.60666667,5.12416667 1.35284848,5.12416667 0.58,5.90416667 C-0.193333333,6.68898148 -0.193333333,7.96009259 0.58,8.74009259 L3.73006061,11.9323148 C4.50339394,12.7171296 5.75672727,12.7171296 6.53006061,11.9323148 L14.9305455,3.42453704 C15.7038788,2.63972222 15.7038788,1.36861111 14.9305455,0.588611111" id="checkmark-grey"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
