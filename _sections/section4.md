@@ -7,7 +7,6 @@ desc: A Fast-paced Video Course with over 7+ Hrs of Video Content
 image: intro.png
 ---
 
-
 {: .space}
 After watching that video on Reddit, I started messing around with the things they do: I tested the way they structure their funnels. I "reverse-engineered" the way they build traffic systems (called “growth engines”). I started applying their ruthless testing and prioritisation regimes.
 

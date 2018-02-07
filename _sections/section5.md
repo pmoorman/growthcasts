@@ -5,8 +5,6 @@ heading_quote: so you, too, can build the systems that bring in traffic, users a
 heading_image: section4.png
 ---
 
-<!-- diagram image -->
-
 {: .space}
 Look over my shoulder while I break down these systems for you, show you how they work, and help you create your own.
 
