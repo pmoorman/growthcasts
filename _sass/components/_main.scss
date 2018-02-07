@@ -1,0 +1,5 @@
+.main {
+  & > *:nth-child(even) {
+    background: color('lighter-gray');
+  }
+}

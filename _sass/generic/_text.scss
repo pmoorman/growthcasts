@@ -1,0 +1,17 @@
+.t {
+  &a {
+    &-c {
+        text-align: center;
+    }
+
+    &-r {
+        text-align: right;
+    }
+  }
+
+  &t {
+    &-u {
+        text-transform: uppercase;
+    }
+  }
+}

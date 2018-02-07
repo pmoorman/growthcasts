@@ -5,8 +5,10 @@
 @import "functions/breakpoint";
 
 @import "generic/normalize";
+@import "generic/general";
 @import "generic/fonts";
 @import "generic/typography";
+@import "generic/text";
 
 @import "objects/container";
 @import "objects/section";
@@ -15,6 +17,9 @@
 @import "objects/paragraph";
 @import "objects/grid";
 @import "objects/wrapper";
+@import "objects/space";
 
+@import "components/main";
 @import "components/header";
 @import "components/button";
+@import "components/quote";

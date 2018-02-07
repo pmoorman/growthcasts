@@ -1,0 +1,23 @@
+<article class="container container--xlarge">
+  <div class="grid grid--center">
+    <div class="grid__column section__aside">
+      <img class="image" src="{{ "./assets/" | append: page.heading_image | relative_url}}" alt="">
+    </div>
+
+    <div class="grid__column section__content">
+        <h2 class="section__heading h3">
+          {{ page.heading }}
+
+          {% if page.heading_quote %}
+            <span class="quote quote--primary">"{{ page.heading_quote }}"</span>
+          {% endif %}
+        </h2>
+
+        <div>
+          {{ content }}
+        </div>
+    </div>
+
+    <div class="grid__column section__aside"></div>
+  </div>
+</article>

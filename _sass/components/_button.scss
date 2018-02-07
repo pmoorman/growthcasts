@@ -33,10 +33,10 @@
     color: #fff;
     background: color('primary');
 
-    &:hover {
-      color: #fff;
-      background: darken(color('primary'), 20%);
-    }
+    // &:hover {
+    //   color: #fff;
+    //   background: darken(color('primary'), 20%);
+    // }
   }
 
   &--secondary {
