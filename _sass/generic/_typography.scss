@@ -1,0 +1,70 @@
+html {
+  line-height: 1.8;
+}
+
+body, input {
+  font-family: 'Helvetica';
+  color: transparentize(color('secondary'), .3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: color('primary');
+  text-decoration: underline;
+
+  &:hover {
+    color: darken(color('primary'), 15%);
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: color('secondary');
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
+h1,
+.h1 {
+  font-size: 32px;
+
+  @media (min-width: breakpoint('large')) {
+    font-size: 36px;
+  }
+
+  @media (min-width: breakpoint('xlarge')) {
+    font-size: 42px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+
+  @media (min-width: breakpoint('large')) {
+    font-size: 32px;
+  }
+
+  @media (min-width: breakpoint('xlarge')) {
+    font-size: 36px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 21px;
+
+  @media (min-width: breakpoint('large')) {
+    font-size: 24px;
+  }
+
+  @media (min-width: breakpoint('xlarge')) {
+    font-size: 30px;
+  }
+}

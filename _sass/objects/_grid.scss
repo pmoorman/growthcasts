@@ -1,6 +1,18 @@
 .grid {
+  $this: &;
+
   display: flex;
   flex-wrap: wrap;
+
+  &__column {
+    flex: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    & > * + * {
+      margin-top: 2.5rem;
+    }
+  }
 
   &--center {
     justify-content: center;
@@ -10,13 +22,28 @@
     align-items: center;
   }
 
-  &__column {
-    flex: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  &--reversed {
+    flex-direction: row-reverse;
+  }
+
+  &--stackable {
+    flex-direction: column;
+
+    @media (min-width: breakpoint('medium')) {
+      flex-direction: row;
+    }
+
+    & > #{$this}__column {
+      @media (max-width: breakpoint('medium')) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
 
     & > * + * {
-      margin-top: 2rem;
+      @media (max-width: breakpoint('medium')) {
+        padding-top: 2rem;
+      }
     }
   }
 }

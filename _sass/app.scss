@@ -4,8 +4,9 @@
 @import "functions/color";
 @import "functions/breakpoint";
 
-@import "generic/fonts";
 @import "generic/normalize";
+@import "generic/fonts";
+@import "generic/typography";
 
 @import "objects/container";
 @import "objects/section";
@@ -13,5 +14,7 @@
 @import "objects/heading";
 @import "objects/paragraph";
 @import "objects/grid";
+@import "objects/wrapper";
 
 @import "components/header";
+@import "components/button";
