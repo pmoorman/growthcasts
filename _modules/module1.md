@@ -2,6 +2,7 @@
 layout: module
 title:  Module 1
 heading: Traction System
+underline: true
 desc: Growth Starts with Acquisition, Unlock Limitless Traffic to Your Business
 image: module1.png
 
