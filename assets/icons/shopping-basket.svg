@@ -1,24 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>shopping basket</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Growthcasts---Full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1241.000000, -31358.000000)">
-        <g id="Buy-Box" transform="translate(415.000000, 31244.000000)">
-            <g id="cta" transform="translate(652.000000, 85.000000)">
-                <g id="shopping-basket" transform="translate(173.000000, 27.000000)">
-                    <g id="Frames-24px">
-                        <rect id="Rectangle-path" x="0" y="0" width="16" height="16"></rect>
-                    </g>
-                    <g id="Solid" transform="translate(1.333333, 2.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                        <g id="Group">
-                            <polygon id="Shape" points="13.3333333 4.33066667 11.0533333 4.33066667 8.57866667 0 7.42133333 0.661333333 9.518 4.33066667 3.81533333 4.33066667 5.912 0.661333333 4.75466667 0 2.28 4.33066667 0 4.33066667 0 5.664 13.3333333 5.664"></polygon>
-                            <path d="M1,6 L2.06933333,10.812 C2.13666667,11.1166667 2.40733333,11.3333333 2.72,11.3333333 L10.72,11.3333333 C11.0326667,11.3333333 11.3033333,11.116 11.3706667,10.8113333 L12.44,6 L1,6 Z" id="Shape"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M-1-2h16v16H-1z"/>
+    <g fill="#FFF" fill-rule="nonzero">
+      <path d="M13.667 4.33h-2.28L8.912 0 7.755.661l2.096 3.67H4.15L6.245.66 5.088 0 2.613 4.33H.333v1.334h13.334zM1.333 6l1.07 4.812a.666.666 0 0 0 .65.521h8a.666.666 0 0 0 .651-.522L12.774 6H1.333z"/>
     </g>
+  </g>
 </svg>
