@@ -33,6 +33,11 @@
     flex-direction: row-reverse;
   }
 
+  &--gapeless {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   &--stackable {
     flex-direction: column;
 

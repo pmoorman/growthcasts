@@ -1,0 +1,63 @@
+.module {
+  & > * + * {
+    margin-top: 4rem;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+  }
+
+  &__content {
+    max-width: 400px;
+    margin: 0 auto;
+
+    &-heading {
+      color: color('primary');
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__learn {
+    padding-right: 10rem;
+    padding-left: 5rem;
+  }
+
+  &__testimonial {
+    width: 74%;
+    margin-left: 13%;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    position: relative;
+
+    &-text {
+      position: absolute;
+      top: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-arrow {
+      position: absolute;
+      top: 3rem;
+      right: -2rem;
+    }
+
+    &-quote {
+      padding: 0 8rem;
+      font-style: italic;
+    }
+
+    &-author {
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}

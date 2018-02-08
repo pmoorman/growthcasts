@@ -1,0 +1,44 @@
+.step {
+  $this: &;
+
+  padding: 0 4rem;
+
+  &__number {
+    max-width: 50px;
+
+    p {
+      width: 34px;
+      height: 34px;
+      border: 1px solid lighten(color('light-gray'), 20%);
+      border-radius: 50%;
+      text-align: center;
+      font-size: 15px;
+      color: #000;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 1px;
+        height: 150px;
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        background: lighten(color('light-gray'), 20%);
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  &:last-child > #{$this}__number p:after {
+    content: none
+  }
+}

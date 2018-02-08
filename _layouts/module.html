@@ -1,3 +1,128 @@
-<!-- Layout for each module -->
+<div class="module container container--xlarge">
+  <header class="ta-c">
+    <h3 class="section__title">{{ page.title }}</h3>
 
-<h2> {{ page.title }} </h2>
+    <h2>{{ page.heading }}</h2>
+
+    {% if page.underline %}
+      <span class="underline">
+        <!-- svg underline -->
+      </span>
+    {% endif %}
+
+    <p>{{ page.desc }}</p>
+  </header>
+
+  <div class="grid grid--justify grid--gapeless">
+    <div class="grid__column">
+      <div class="card card--white">
+        <img class="image" src="{{ "./assets/modules/" | append: page.image }}" alt="">
+      </div>
+    </div>
+
+    <div class="module__steps grid__column">
+      {% for step in page.steps %}
+      {% assign i = forloop.index %}
+        {% for item in step %}
+
+        <div class="step grid grid--justify">
+          <div class="step__number grid__column">
+            <p class="paragraph">{{ i }}</p>
+          </div>
+          <div class="step__content grid__column">
+            <h3 class="step__title h4 heading">{{ item[0] }}</h3>
+
+            <p class="step__desc">{{ item[1] }} </p>
+          </div>
+        </div>
+
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="grid grid--justify grid--gapeless">
+    <div class="module__content grid__column">
+      <h3>Inside this module</h3>
+
+      <div>
+
+          {% if page.core[0] %}
+            {% for item in page.core[0] %}
+
+            <div class="grid grid--gapeless grid--justify">
+              <p class="module__content-heading heading tt-u">{{ item[0] }}</p>
+
+              <p class="paragraph">{{ item[1] }} </p>
+            </div>
+
+            {% endfor %}
+          {% endif %}
+
+          {% for core in page.core offset: 1 %}
+            {% for item in core %}
+
+              <div class="grid grid--gapeless grid--justify">
+                <p class="heading">{{ item[0] }}</p>
+
+                <p class="paragraph">{{ item[1] }} </p>
+              </div>
+
+            {% endfor %}
+          {% endfor %}
+      </div>
+
+      <div>
+        {% if page.core[0] %}
+          {% for item in page.bonus[0] %}
+
+          <div class="grid grid--gapeless grid--justify">
+            <p class="module__content-heading heading tt-u">{{ item[0] }}</p>
+
+            <p class="paragraph">{{ item[1] }} </p>
+          </div>
+
+          {% endfor %}
+        {% endif %}
+
+        {% for bonus in page.bonus offset: 1 %}
+          {% for item in bonus %}
+
+          <div class="grid grid--gapeless grid--justify">
+            <p class="heading">{{ item[0] }}</p>
+
+            <p class="paragraph">{{ item[1] }} </p>
+          </div>
+
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="module__learn grid__column" style="max-width: 600px">
+      {{ content }}
+    </div>
+  </div>
+
+  {% if page.quote %}
+  <div class="module__testimonial card card--white ta-c">
+    <p class="module__testimonial-quote h4">{{ page.quote }}</p>
+    {% if page.author-img %}
+      <!-- author image -->
+    {% endif %}
+    <span class="module__testimonial-author">
+      {% if page.author %}
+        {{ page.author }},
+      {% endif %}
+    </span>
+    <span>{{ page.author-desc }}</span>
+
+    {% if page.extra-text %}
+      <div class="module__testimonial-text">
+        <p>Check what our client say about that module!</p>
+        <img class="module__testimonial-arrow" src="{{ "./assets/icons/modul-arrow.svg" | relative_url }}" alt="">
+      </div>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
