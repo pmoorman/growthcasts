@@ -1,4 +1,4 @@
-.quote {
+.handwriting {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.5;
@@ -6,5 +6,13 @@
 
   &--primary {
     color: darken(color('primary'), 15%);
+  }
+
+  &--light {
+    color: color('light-gray');
+  }
+
+  &--small {
+    font-size: 20px;
   }
 }

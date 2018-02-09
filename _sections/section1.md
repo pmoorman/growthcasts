@@ -10,7 +10,7 @@ And damnit... that's a complicated question! Getting people to adopt your produc
 
 And that’s great. The world needs creators and ruckus makers like that! That drive to build stuff is often the very motivation that got us started as entrepreneurs in the first place.  But inevitably — soon after you ship the product — you (or worse, your impatient Seed investors) start asking...
 
-{: .quote}
+{: .handwriting}
 "How do I get people to use this thing?"
 
 {: .list}
