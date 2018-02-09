@@ -1,8 +1,13 @@
 .list {
   list-style: none;
 
+  & > * + * {
+    margin-top: 0.8rem;
+  }
+
   li {
     position: relative;
+    line-height: 1.8;
 
     &:before {
       content: '';

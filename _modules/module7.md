@@ -1,10 +1,10 @@
 ---
 layout: module
-title:  Module 3
-heading: Risk Roadmaps
+title:  Module 7
+heading: Advanced Onboarding
 underline: true
-desc: This 'Strategic Module' Helps You Become a Growth Strategist...
-image: module3.png
+desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
+image: module7.png
 
 steps:
 - Deploy a Strategic User Acqisition Plan: >

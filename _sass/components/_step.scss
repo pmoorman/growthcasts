@@ -36,6 +36,7 @@
   &__desc {
     font-size: 14px;
     line-height: 2;
+    margin-top: 0.8rem;
   }
 
   &:last-child > #{$this}__number p:after {

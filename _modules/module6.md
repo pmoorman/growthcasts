@@ -1,9 +1,9 @@
 ---
 layout: module
-title:  Module 3
-heading: Risk Roadmaps
+title:  Module 6
+heading: Sales Funnels
 underline: true
-desc: This 'Strategic Module' Helps You Become a Growth Strategist...
+desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
 image: module3.png
 
 steps:
