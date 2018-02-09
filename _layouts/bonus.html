@@ -1,0 +1,15 @@
+<div class="grid__column grid grid--center grid--middle">
+  <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
+</div>
+
+<div class="grid__column">
+  <h2 class="heading h3">{{ page.heading }}</h2>
+
+  {% if page.underline %}
+    <span class="underline">
+      <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
+    </span>
+  {% endif %}
+
+  {{ content }}
+</div>

@@ -16,8 +16,19 @@
       {% endfor %}
 
       {% for module in site.modules %}
-        <section class="section modules">
+        <section class="section">
           {{ module }}
+        </section>
+      {% endfor %}
+
+      {% for bonus in site.bonuses %}
+        {% assign i = forloop.index | modulo: 2 %}
+        <section class="section bonuses">
+          <div class="bonus container container--large">
+            <div class="grid grid--justify grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+              {{ bonus }}
+            </div>
+          </div>
         </section>
       {% endfor %}
 

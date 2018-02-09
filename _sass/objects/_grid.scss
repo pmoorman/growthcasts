@@ -29,10 +29,6 @@
     align-items: center;
   }
 
-  &--reversed {
-    flex-direction: row-reverse;
-  }
-
   &--gapeless {
     margin-left: 0;
     margin-right: 0;
@@ -57,6 +53,24 @@
     & > * + * {
       @media (max-width: breakpoint('medium')) {
         padding-top: 2rem;
+      }
+    }
+  }
+
+  &--reversed {
+    flex-direction: row-reverse;
+  }
+
+  &--reversable {
+    flex-direction: row;
+
+    @media (min-width: breakpoint('large')) {
+      flex-direction: row-reverse;
+    }
+
+    &#{$this}--stackable {
+      @media (max-width: breakpoint('large')) {
+        flex-direction: column;
       }
     }
   }
