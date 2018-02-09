@@ -1,7 +1,8 @@
 .quote {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.5;
+  font-family: $font-family-secondary;
 
   &--primary {
     color: darken(color('primary'), 15%);

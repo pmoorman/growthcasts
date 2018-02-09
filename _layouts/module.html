@@ -6,7 +6,7 @@
 
     {% if page.underline %}
       <span class="underline">
-        <img class="underline__img" src="{{ "./assets/underlines/underline-short.svg" }}" alt="">
+        <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
       </span>
     {% endif %}
 
@@ -16,7 +16,7 @@
   <div class="grid grid--justify grid--gapeless">
     <div class="grid__column">
       <div class="card card--white">
-        <img class="image" src="{{ "./assets/modules/" | append: page.image }}" alt="">
+        <img class="image" src="{{ "./assets/images/modules/" | append: page.image }}" alt="">
       </div>
     </div>
 
@@ -120,7 +120,7 @@
     {% if page.extra-text %}
       <div class="module__testimonial-text">
         <p>Check what our client say about that module!</p>
-        <img class="module__testimonial-arrow" src="{{ "./assets/icons/modul-arrow.svg" | relative_url }}" alt="">
+        <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
       </div>
     {% endif %}
   </div>

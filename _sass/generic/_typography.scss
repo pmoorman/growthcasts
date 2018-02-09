@@ -3,7 +3,7 @@ html {
 }
 
 body, input {
-  font-family: 'Helvetica';
+  font-family: $font-family;
   color: transparentize(color('secondary'), .3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

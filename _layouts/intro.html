@@ -6,11 +6,11 @@
   {% if page.underline %}
     <span class="underline">
       <span class="underline">
-        <img class="underline__img" src="{{ "./assets/underlines/underline-short.svg" }}" alt="">
+        <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
       </span>
     </span>
   {% endif %}
   <p>{{ page.desc }}</p>
 
-  <img class="image space" src="{{ "./assets/" | append: page.image | relative_url}}" alt="">
+  <img class="image space" src="{{ "./assets/images/" | append: page.image | relative_url}}" alt="">
 </header>
