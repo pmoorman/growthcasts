@@ -1,0 +1,19 @@
+.faq {
+  margin-top: -12rem;
+  padding-top: 12rem;
+
+  &__column {
+    min-width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  &__item-heading {
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+  }
+
+  &__item-content {
+    padding-top: 1rem;
+    display: none;
+  }
+}

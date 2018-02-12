@@ -1,0 +1,18 @@
+<h3 class="faq__item-heading heading h4">{{ page.heading }}</h3>
+
+{% for question in page.faq %}
+  {% for item in question %}
+
+    <div class="card card--white card--small">
+      <div class="grid grid--gapeless grid--justify grid--middle ">
+        <h4 class="heading h6">{{ item[0] }}</h4>
+
+        <span><img src="{{ './assets/images/icons/chevron-down.svg' | relative_url }}" alt=""></span>
+      </div>
+      <div class="faq__item-content">
+        {{ item[1] }}
+      </div>
+    </div>
+
+  {% endfor %}
+{% endfor %}
