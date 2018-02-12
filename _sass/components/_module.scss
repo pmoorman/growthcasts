@@ -7,6 +7,10 @@
     height: 450px;
   }
 
+  &__image {
+    padding: 1rem;
+  }
+
   &__steps {
     display: flex;
     flex-direction: column;

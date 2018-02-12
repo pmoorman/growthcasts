@@ -4,7 +4,7 @@ title:  Module 5
 heading: Lead Gen Engine
 underline: true
 desc: Build Growth Engines (Part II), Scale any Channel with this 'Meta Blueprint'...
-image: module3.png
+image: module5.png
 
 steps:
 - Deploy a Strategic User Acqisition Plan: >

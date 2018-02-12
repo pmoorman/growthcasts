@@ -4,7 +4,7 @@ title:  Module 4
 heading: Facebook Ads Engine
 underline: true
 desc: Build Growth Engines (part I), The Core of Your Growth Strategy...
-image: module3.png
+image: module4.png
 
 steps:
 - Deploy a Strategic User Acqisition Plan: >

@@ -4,7 +4,7 @@ title:  Module 6
 heading: Sales Funnels
 underline: true
 desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
-image: module3.png
+image: module6.png
 
 steps:
 - Deploy a Strategic User Acqisition Plan: >
