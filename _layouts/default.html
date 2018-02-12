@@ -33,10 +33,14 @@
       {% endfor %}
 
       <section class="section">
+        <div class="container container--medium">
+          {% include choose-plan.html %}
+        </div>
+
         <div class="container container--large">
           <div class="grid grid--stackable grid--center">
             {% for price in site.prices %}
-              <div class="grid__column price card">
+              <div class="grid__column price card card--white">
                 {{ price }}
               </div>
             {% endfor %}
