@@ -23,9 +23,9 @@
 
       {% for bonus in site.bonuses %}
         {% assign i = forloop.index | modulo: 2 %}
-        <section class="section bonuses">
-          <div class="bonus container container--large">
-            <div class="grid grid--justify grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+        <section class="section">
+          <div class="wrapper container container--large">
+            <div class="grid grid--justify grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
               {{ bonus }}
             </div>
           </div>
@@ -33,12 +33,12 @@
       {% endfor %}
 
       <section class="section">
-        <div class="container container--medium">
+        <div class="wrapper container container--medium">
           {% include choose-plan.html %}
         </div>
 
-        <div class="container container--large">
-          <div class="grid grid--stackable grid--center">
+        <div class="wrapper container container--large">
+          <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column price card card--white">
                 {{ price }}
@@ -53,7 +53,7 @@
       </section>
 
       <section class="section">
-        <div class="testimonials container container--medium">
+        <div class="wrapper testimonials container container--medium">
           <h2 class="ta-c">Here's what others say about us...</h2>
           {% for testimonial in site.testimonials %}
             <div class="card card--white">

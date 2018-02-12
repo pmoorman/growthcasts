@@ -1,4 +1,4 @@
-<div class="module container container--xlarge">
+<div class="module wrapper container container--xlarge">
   <header class="ta-c">
     <h3 class="handwriting handwriting--small handwriting--light">{{ page.title }}</h3>
 
@@ -13,7 +13,7 @@
     <p>{{ page.desc }}</p>
   </header>
 
-  <div class="grid grid--justify grid--gapeless">
+  <div class="grid grid--justify grid--gapeless grid--stackable grid--middle">
     <div class="grid__column">
       <div class="module__card card card--white grid grid--justify grid--middle">
         <img class="module__image image" src="{{ "./assets/images/modules/" | append: page.image }}" alt="">
@@ -41,12 +41,11 @@
     </div>
   </div>
 
-  <div class="grid grid--justify grid--gapeless">
+  <div class="grid grid--space grid--middle grid--gapeless grid--stackable">
     <div class="module__content grid__column">
       <h3>Inside this module</h3>
 
       <div>
-
           {% if page.core[0] %}
             {% for item in page.core[0] %}
 
@@ -99,7 +98,7 @@
       </div>
     </div>
 
-    <div class="module__learn grid__column" style="max-width: 600px">
+    <div class="module__learn grid__column">
       {{ content }}
     </div>
   </div>

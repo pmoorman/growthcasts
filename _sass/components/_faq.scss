@@ -5,7 +5,10 @@
 
   &__column {
     min-width: 50%;
-    margin-bottom: 4rem;
+
+    @media (min-width: breakpoint('medium')) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__item-heading {

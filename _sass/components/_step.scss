@@ -1,7 +1,9 @@
 .step {
   $this: &;
 
-  padding: 0 4rem;
+  @media (min-width: breakpoint('medium')) {
+    padding: 0 4rem;
+  }
 
   &__number {
     max-width: 50px;
