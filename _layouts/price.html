@@ -1,0 +1,30 @@
+<header class="price__header {% if page.color == 'secondary' %}price__header--secondary {% endif %}">
+  <h3 class="price__heading heading ta-c tt-u">{{ page.heading }}</h3>
+  <div class="grid grid--middle grid--gapeless">
+    <p class="price__current-price paragraph grid__column ta-r">{{ page.current-price }}</p>
+    <p class="price__old-price paragraph grid__column ta-c">{{ page.old-price }}</p>
+  </div>
+</header>
+
+<div class="price__content">
+  <p class="paragraph tt-u h6">Core content</p>
+    <ul class="list list--checked list--checked-secondary">
+      {% for item in page.core %}
+        <li class="paragraph">{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+  <p class="paragraph tt-u h6">Pro content</p>
+    <ul class="list list--checked">
+      {% for item in page.pro %}
+        <li class="paragraph">{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+  <a class="button button--primary button--rounded button--shadow button--expanded" href="#">
+    Get it now
+      <span class="button__icon">
+        <img class="button__icon-img" src="{{ "./assets/images/icons/shopping-basket.svg" | relative_url }}" alt="">
+      </span>
+  </a>
+</div>

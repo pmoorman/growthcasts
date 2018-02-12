@@ -34,4 +34,18 @@
       }
     }
   }
+
+  &--checked-secondary {
+    li {
+      &:before {
+        content: url('./images/icons/checkmark-dark.svg');
+        position: absolute;
+        top: 8px;
+        left: -40px;
+        width: auto;
+        height: auto;
+        background: none;
+      }
+    }
+  }
 }
