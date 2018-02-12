@@ -48,8 +48,19 @@
         </div>
       </section>
 
-      <section class=" faq section">
+      <section class="faq section">
         {% include faq.html %}
+      </section>
+
+      <section class="section">
+        <div class="testimonials container container--medium">
+          <h2 class="ta-c">Here's what others say about us...</h2>
+          {% for testimonial in site.testimonials %}
+            <div class="card card--white">
+              {{ testimonial }}
+            </div>
+          {% endfor %}
+        </div>
       </section>
 
     </main>
