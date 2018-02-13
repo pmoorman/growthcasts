@@ -2,12 +2,16 @@
   list-style: none;
 
   & > * + * {
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
+
+    @media (min-width: breakpoint('medium')) {
+      margin-top: 0.8rem;
+    }
   }
 
   li {
     position: relative;
-    line-height: 1.8;
+    line-height: 1.6;
 
     &:before {
       content: '';
@@ -26,25 +30,18 @@
       &:before {
         content: url('./images/icons/checkmark.svg');
         position: absolute;
-        top: 8px;
+        top: 0;
         left: -40px;
-        width: auto;
-        height: auto;
+        width: 12px;
         background: none;
       }
     }
-  }
 
-  &--checked-secondary {
-    li {
-      &:before {
-        content: url('./images/icons/checkmark-dark.svg');
-        position: absolute;
-        top: 8px;
-        left: -40px;
-        width: auto;
-        height: auto;
-        background: none;
+    &-secondary {
+      li {
+        &:before {
+          content: url('./images/icons/checkmark-dark.svg');
+        }
       }
     }
   }

@@ -1,5 +1,7 @@
 .price {
-  max-width: 380px;
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 
   &__header {
@@ -21,8 +23,7 @@
   }
 
   &__content {
-    padding: 3rem;
-    padding-top: 0;
+    padding: 2rem;
 
     & > * + * {
       margin-top: 2rem;
@@ -30,19 +31,22 @@
   }
 
   &__current-price {
+    display: inline;
     font-size: 60px;
     position: relative;
+    margin-right: 2rem;
 
     &:before {
       content: '$';
       position: absolute;
-      top: 25px;
-      left: 10px;
+      top: -5px;
+      left: -15px;
       font-size: 18px;
     }
   }
 
   &__old-price {
+    display: inline;
     font-size: 24px;
     text-decoration: line-through;
     color: color('light-gray');
@@ -51,8 +55,8 @@
     &:before {
       content: '$';
       position: absolute;
-      top: 5px;
-      left: 32px;
+      top: -5px;
+      left: -10px;
       font-size: 12px;
     }
   }

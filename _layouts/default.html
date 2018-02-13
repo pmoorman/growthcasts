@@ -40,8 +40,10 @@
         <div class="wrapper container container--large">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
-              <div class="grid__column price card card--white">
-                {{ price }}
+              <div class="grid__column">
+                <div class="price card card--white">
+                  {{ price }}
+                </div>
               </div>
             {% endfor %}
           </div>
