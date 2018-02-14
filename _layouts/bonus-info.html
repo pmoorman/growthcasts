@@ -1,0 +1,13 @@
+<article class="wrapper container container--medium">
+  <h2 class="section__heading h3">
+    {{ page.heading }}
+
+    {% if page.heading_quote %}
+      <span class="handwriting handwriting--primary">"{{ page.heading_quote }}"</span>
+    {% endif %}
+  </h2>
+
+  <div>
+    {{ content }}
+  </div>
+</article>

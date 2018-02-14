@@ -1,0 +1,13 @@
+.c {
+  &--primary {
+    color: color('primary');
+  }
+
+  &--secondary {
+    color: color('secodary')
+  }
+
+  &--black {
+    color: #000;
+  }
+}
