@@ -1,4 +1,8 @@
 .main {
+  & > *:nth-child(odd) {
+    background: #fff;
+  }
+
   & > *:nth-child(even) {
     background: color('lighter-gray');
   }

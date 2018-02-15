@@ -1,7 +1,15 @@
 .faq {
   margin-top: -12rem;
-  padding-top: 12rem;
+  padding-top: 10rem;
   padding-bottom: 0;
+
+  & > * + * {
+    margin-top: 3rem;
+
+    @media (min-width: breakpoint('medium')) {
+      margin-top: 6rem;
+    }
+  }
 
   &__column {
     min-width: 50%;
