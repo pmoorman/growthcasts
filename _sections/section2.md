@@ -15,7 +15,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
 {: .video}
 <!-- video with a heading and a button -->
 
-{: .quote .ta-c .space}
+{: .handwriting .handwriting--small .ta-c .space}
 Watch it (or just the first few minutes...). It’s important, because it frames EVERYTHING else you’ll read on this page.
 
 This guy is not your typical marketing guru. Brian Balfour is the former “VP of Growth” at Hubspot, one of the biggest tech startups in the world. And you see immediately that his way of approaching the question is different. He’s not talking about the newest “trick” he discovered to "game the system". None of that.
