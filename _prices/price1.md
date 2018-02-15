@@ -4,6 +4,7 @@ heading: Elite Core
 current_price: 209
 old_price: 229
 color: secondary
+core_version: true
 
 core:
 - 7 Core Video modules

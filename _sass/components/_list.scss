@@ -45,4 +45,20 @@
       }
     }
   }
+
+  &--gray {
+    li {
+      text-decoration: line-through;
+      color: #dbdbdb;
+
+      &:before {
+        content: url('./images/icons/checkmark-grey.svg');
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 12px;
+        background: none;
+      }
+    }
+  }
 }

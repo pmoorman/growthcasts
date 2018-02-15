@@ -4,6 +4,7 @@ heading: Elite Pro
 current_price: 229
 old_price: 249
 color: primary
+core_version: false
 
 core:
 - 7 Core Video modules

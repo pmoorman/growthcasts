@@ -23,9 +23,9 @@
     {% endfor %}
   </ul>
 
-  <p class="paragraph tt-u h6">Pro content</p>
+  <p class="paragraph tt-u h6 {% if page.core_version == true %}c--gray {% endif %}">Pro content</p>
 
-  <ul class="list list--checked">
+  <ul class="list list--checked {% if page.core_version == true %}list--gray {% endif %}">
     {% for item in page.pro %}
       <li class="paragraph">{{ item }}</li>
     {% endfor %}
@@ -33,8 +33,11 @@
 
   <a class="button button--primary button--rounded button--shadow button--expanded" href="#">
     Get it now
-    <span class="button__icon">
-      <img class="button__icon-img" src="{{ "./assets/images/icons/shopping-basket.svg" | relative_url }}" alt="">
-    </span>
+    <div class="grid grid--gapeless grid--middle">
+      <span>${{ page.current_price }}</span>
+      <span class="button__icon">
+        <img class="button__icon-img" src="{{ "./assets/images/icons/shopping-basket.svg" | relative_url }}" alt="">
+      </span>
+    </div>
   </a>
 </div>
