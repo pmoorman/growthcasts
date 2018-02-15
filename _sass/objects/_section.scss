@@ -19,4 +19,10 @@
   &__heading {
     line-height: 1.8;
   }
+
+  &__content {
+    @media (min-width: breakpoint('large')) {
+      padding-right: 3rem;
+    }
+  }
 }

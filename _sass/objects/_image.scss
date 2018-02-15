@@ -1,4 +1,10 @@
 .image {
   max-width: 100%;
   height: auto;
+
+  &--wider {
+    max-width: 120%;
+    margin-left: -10%;
+    margin-right: -10%;
+  }
 }
