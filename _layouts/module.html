@@ -48,77 +48,79 @@
     </div>
   </div>
 
-  <div class="grid grid--space grid--stackable">
-    <div class="module__content grid__column">
-      <h3>Inside this module</h3>
+  <div class="container container--large">
+    <div class="grid grid--space grid--stackable">
+      <div class="module__content grid__column">
+        <h3>Inside this module</h3>
 
-      <div>
-        {% if page.core[0] %}
-          {% for item in page.core[0] %}
-            <div class="grid grid--gapeless grid--justify">
-              <p class="module__content-heading paragraph tt-u h6">{{ item[0] }}</p>
+        <div>
+          {% if page.core[0] %}
+            {% for item in page.core[0] %}
+              <div class="grid grid--gapeless grid--justify">
+                <p class="module__content-heading paragraph tt-u h6">{{ item[0] }}</p>
 
-              <p class="module__content-text paragraph">{{ item[1] }} </p>
-            </div>
+                <p class="module__content-text paragraph">{{ item[1] }} </p>
+              </div>
+              {% endfor %}
+          {% endif %}
+
+          {% for core in page.core offset: 1 %}
+            {% for item in core %}
+              <div class="grid grid--gapeless grid--justify grid--middle">
+                <p class="heading">{{ item[0] }}</p>
+
+                <p class="module__content-text paragraph">{{ item[1] }} </p>
+              </div>
             {% endfor %}
-        {% endif %}
-
-        {% for core in page.core offset: 1 %}
-          {% for item in core %}
-            <div class="grid grid--gapeless grid--justify grid--middle">
-              <p class="heading">{{ item[0] }}</p>
-
-              <p class="module__content-text paragraph">{{ item[1] }} </p>
-            </div>
           {% endfor %}
-        {% endfor %}
+        </div>
+
+        <div>
+          {% if page.core[0] %}
+            {% for item in page.bonus[0] %}
+              <div class="grid grid--gapeless grid--justify">
+                <p class="module__content-heading paragraph tt-u h6">{{ item[0] }}</p>
+
+                <p class="module__content-text paragraph">{{ item[1] }} </p>
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          {% for bonus in page.bonus offset: 1 %}
+            {% for item in bonus %}
+              <div class="grid grid--gapeless grid--justify grid--middle">
+                <p class="heading">{{ item[0] }}</p>
+
+                <p class="module__content-text paragraph">{{ item[1] }} </p>
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
       </div>
 
-      <div>
-        {% if page.core[0] %}
-          {% for item in page.bonus[0] %}
-            <div class="grid grid--gapeless grid--justify">
-              <p class="module__content-heading paragraph tt-u h6">{{ item[0] }}</p>
-
-              <p class="module__content-text paragraph">{{ item[1] }} </p>
-            </div>
-          {% endfor %}
-        {% endif %}
-
-        {% for bonus in page.bonus offset: 1 %}
-          {% for item in bonus %}
-            <div class="grid grid--gapeless grid--justify grid--middle">
-              <p class="heading">{{ item[0] }}</p>
-
-              <p class="module__content-text paragraph">{{ item[1] }} </p>
-            </div>
-          {% endfor %}
-        {% endfor %}
+      <div class="module__learn grid__column">
+        <h3>What you'll learn</h3>
+        {{ content }}
       </div>
     </div>
 
-    <div class="module__learn grid__column">
-      <h3>What you'll learn</h3>
-      {{ content }}
-    </div>
+    {% if page.quote %}
+      <div class="module__testimonial card card--white ta-c">
+        <p class="module__testimonial-quote h4">{{ page.quote }}</p>
+        {% if page.author_img %}
+          <!-- author image -->
+        {% endif %}
+
+        {% if page.author %}
+            <span class="module__testimonial-author">{{ page.author }},</span>
+            <span>{{ page.author_desc }}</span>
+        {% endif %}
+
+        <div class="module__testimonial-text">
+          <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
+          <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
+        </div>
+      </div>
+    {% endif %}
   </div>
-
-  {% if page.quote %}
-    <div class="module__testimonial card card--white ta-c">
-      <p class="module__testimonial-quote h4">{{ page.quote }}</p>
-      {% if page.author_img %}
-        <!-- author image -->
-      {% endif %}
-
-      {% if page.author %}
-          <span class="module__testimonial-author">{{ page.author }},</span>
-          <span>{{ page.author_desc }}</span>
-      {% endif %}
-
-      <div class="module__testimonial-text">
-        <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
-        <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
-      </div>
-    </div>
-  {% endif %}
 </div>

@@ -1,5 +1,34 @@
 .underline {
+  position: relative;
+
   &__img {
     width: 200px;
+  }
+
+  @media (min-width: breakpoint('large')) {
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: -15px;
+      left: 0;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: rotate(-1deg);
+    }
+  }
+
+  &--short {
+    &:after {
+      background-image: url(./images/underlines/underline3.svg);
+    }
+  }
+
+  &--medium {
+    &:after {
+      background-image: url(./images/underlines/underline2.svg);
+    }
   }
 }

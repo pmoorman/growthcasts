@@ -31,12 +31,38 @@
     }
   }
 
+  &__content {
+    @media (min-width: breakpoint('large')) {
+      padding-left: 3rem;
+      padding-right: 12rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    display: none;
+
+    @media (min-width: breakpoint('large')) {
+      display: block;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+    &--bottom {
+      bottom: 1rem;
+    }
+  }
+
   &--white {
     background: #fff;
   }
 
   &--wider {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 
     @media (min-width: breakpoint('medium')) {
       width: auto;

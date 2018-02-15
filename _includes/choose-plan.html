@@ -2,37 +2,40 @@
   <div class="grid__column section__aside"></div>
 
   <div class="grid__column">
-      <h2 class="section__heading h3">
-        Choose your plan now
+    <h2 class="section__heading h3">
+      Choose your plan now
 
-        {% if page.heading_quote %}
-          <span class="handwriting handwriting--primary">"{{ page.heading_quote }}"</span>
-        {% endif %}
-      </h2>
+      {% if page.heading_quote %}
+        <span class="handwriting handwriting--primary">"{{ page.heading_quote }}"</span>
+      {% endif %}
+    </h2>
 
-      <div>
-        <div class="card card--white card--wider">
-          <p class="paragraph">Every purchase is covered by our monstrous 365-day money-back guarantee. My refund policy is really simple... </p>
-          <p class="handwriting handwriting--primary">If you don't like the product you can just get your money back  (up till 365 days after you purchase).</p>
-        </div>
+    <div class="card card--white card--wider">
+      <div class="card__content">
+        <p class="paragraph">Every purchase is covered by our monstrous <b><span class="underline underline--short">365-day money-back guarantee</span></b>. My refund policy is really simple... </p>
 
-        <p>Valid reasons for a refund include:</p>
-
-        <ul class="list space">
-          <li>You didn't have time to go through the course, so it was a bad investment...</li>
-          <li>You don't really like the way in which I teach... (pretty unlikely if you liked the emails, btw)</li>
-          <li>You tried the system I suggested, but for some reason it doesn't work in your market...</li>
-          <li>You buy it, but the next month you're super tight on cash. You decide you need the money back in order to pay the bills...</li>
-        </ul>
-
-        <p class="space">I hope you are willing to invest in your future, and make a "ballsy move" by getting into Elite, today. And if you ever come to regret this purchase... you can claw your money back, easily.</p>
-
-        <p>Now...</p>
-
-        <p class="h2">Let's pick whichever Risk-free option you like best...</p>
-
-
+        <p class="handwriting handwriting--primary">If you don't like the product you can just get your money back <span class="underline underline--medium"> (up till 365 days after you purchase)</span>.</p>
       </div>
+
+      <div class="card__image card__image--right card__image--bottom">
+        <img class="image" src="{{ "./assets/images/like.png" | relative_url }}" alt="">
+      </div>
+    </div>
+
+    <p><b>Valid reasons for a refund include:</b></p>
+
+    <ul class="list">
+      <li>You didn't have time to go through the course, so it was a bad investment...</li>
+      <li>You don't really like the way in which I teach... (pretty unlikely if you liked the emails, btw)</li>
+      <li>You tried the system I suggested, but for some reason it doesn't work in your market...</li>
+      <li>You buy it, but the next month you're super tight on cash. You decide you need the money back in order to pay the bills...</li>
+    </ul>
+
+    <p class="space">I hope you are willing to invest in your future, and make a "ballsy move" by getting into Elite, today. And if you ever come to regret this purchase... you can claw your money back, easily.</p>
+
+    <p>Now...</p>
+
+    <p class="h2">Let's pick whichever Risk-free option you like best...</p>
   </div>
 
   <div class="grid__column section__aside"></div>
