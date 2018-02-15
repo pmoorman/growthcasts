@@ -1,10 +1,16 @@
 <header class="price__header {% if page.color == 'secondary' %}price__header--secondary {% endif %}">
-  <h3 class="price__heading heading ta-c tt-u">{{ page.heading }}</h3>
+  {% if page.heading %}
+    <h3 class="price__heading heading ta-c tt-u">{{ page.heading }}</h3>
+  {% endif %}
 
   <div class="ta-c">
-    <p class="price__current-price paragraph">{{ page.current-price }}</p>
+    {% if page.current_price %}
+      <p class="price__current-price paragraph">{{ page.current_price }}</p>
+    {% endif %}
 
-    <p class="price__old-price paragraph">{{ page.old-price }}</p>
+    {% if page.old_price %}
+      <p class="price__old-price paragraph">{{ page.old_price }}</p>
+    {% endif %}
   </div>
 </header>
 

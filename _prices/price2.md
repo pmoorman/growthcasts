@@ -1,8 +1,8 @@
 ---
 layout: price
 heading: Elite Pro
-current-price: 229
-old-price: 249
+current_price: 229
+old_price: 249
 color: primary
 
 core:

@@ -1,8 +1,12 @@
 <div class="module wrapper container container--xlarge">
   <header class="ta-c">
-    <h3 class="handwriting handwriting--small handwriting--light">{{ page.title }}</h3>
+    {% if page.small_heading %}
+      <h3 class="handwriting handwriting--small handwriting--light">{{ page.small_heading }}</h3>
+    {% endif %}
 
-    <h2 class="heading">{{ page.heading }}</h2>
+    {% if page.heading %}
+      <h2 class="heading">{{ page.heading }}</h2>
+    {% endif %}
 
     {% if page.underline %}
       <span class="underline">
@@ -10,13 +14,17 @@
       </span>
     {% endif %}
 
-    <p>{{ page.desc }}</p>
+    {% if page.desc %}
+      <p>{{ page.desc }}</p>
+    {% endif %}
   </header>
 
   <div class="grid grid--justify grid--stackable grid--middle">
     <div class="grid__column">
       <div class="module__card card card--white">
-        <img class="module__image image" src="{{ "./assets/images/modules/" | append: page.image }}" alt="">
+        {% if page.image %}
+          <img class="module__image image" src="{{ "./assets/images/modules/" | append: page.image }}" alt="">
+        {% endif %}
       </div>
     </div>
 
@@ -98,23 +106,19 @@
   {% if page.quote %}
     <div class="module__testimonial card card--white ta-c">
       <p class="module__testimonial-quote h4">{{ page.quote }}</p>
-      {% if page.author-img %}
+      {% if page.author_img %}
         <!-- author image -->
       {% endif %}
 
       {% if page.author %}
           <span class="module__testimonial-author">{{ page.author }},</span>
+          <span>{{ page.author_desc }}</span>
       {% endif %}
 
-      <span>{{ page.author-desc }}</span>
-
-      {% if page.extra-text %}
-        <div class="module__testimonial-text">
-          <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
-
-          <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
-        </div>
-      {% endif %}
+      <div class="module__testimonial-text">
+        <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
+        <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
+      </div>
     </div>
   {% endif %}
 </div>

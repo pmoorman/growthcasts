@@ -1,8 +1,8 @@
 ---
 layout: price
 heading: Elite Core
-current-price: 209
-old-price: 229
+current_price: 209
+old_price: 229
 color: secondary
 
 core:

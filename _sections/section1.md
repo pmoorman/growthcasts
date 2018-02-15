@@ -1,6 +1,6 @@
 ---
 layout: section
-heading: The question every entrepreneurs asks after creating their project is...
+heading: The question every entrepreneurs asks after creating their product is...
 heading_quote: How do I get people to use this thing?
 heading_image: section1.png
 ---

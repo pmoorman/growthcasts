@@ -1,6 +1,6 @@
 ---
 layout: module
-title:  Module 3
+small_heading:  Module 3
 heading: Risk Roadmaps
 underline: true
 desc: This 'Strategic Module' Helps You Become a Growth Strategist...
@@ -32,10 +32,9 @@ bonus:
 - Treasure Vault: ONLINE
 
 quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-extra-text: true
 author: Irina Bykowa
-author-img:
-author-desc: works with Slack
+author_img:
+author_desc: works with Slack
 ---
 
 {: .list}

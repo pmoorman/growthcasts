@@ -1,7 +1,9 @@
 <div>
-  <p class="card__about handwriting handwriting--small handwriting--light ta-c">{{ page.about }}</p>
+  {% if page.about %}
+    <p class="card__about handwriting handwriting--small handwriting--light ta-c">{{ page.about }}</p>
+  {% endif %}
 
   <img class="card__arrow card__arrow--left" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
 
-  <img class="image" src="{{ "./assets/images/testimonials/testimonial1.png" | relative_url }}" alt="">
+  <img class="image" src="{{ "./assets/images/testimonials/" | append: page.image }}" alt="">
 </div>

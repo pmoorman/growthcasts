@@ -1,6 +1,6 @@
 ---
 layout: module
-title:  Module 1
+small_heading:  Module 1
 heading: Traction System
 underline: true
 desc: Growth Starts with Acquisition, Unlock Limitless Traffic to Your Business
@@ -32,10 +32,9 @@ bonus:
 - Treasure Vault: ONLINE
 
 quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-extra-text: true
 author: Irina Bykowa
-author-img:
-author-desc: works with Slack
+author_img:
+author_desc: works with Slack
 ---
 
 {: .list}

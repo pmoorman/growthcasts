@@ -1,9 +1,11 @@
 <article class="wrapper container container--medium">
-  <h3 class="handwriting handwriting--small handwriting--light">{{ page.title }}</h3>
+  {% if page.small_heading %}
+  <h3 class="handwriting handwriting--small handwriting--light">{{ page.small_heading }}</h3>
+  {% endif %}
 
-  <h2 class="section__heading h3">
-    {{ page.heading }}
-  </h2>
+  {% if page.heading %}
+    <h2 class="section__heading h3">{{ page.heading }}</h2>
+  {% endif %}
 
   <div>
     {{ content }}

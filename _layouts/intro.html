@@ -1,16 +1,23 @@
 <div class="wrapper ta-c">
-  <h3 class="handwriting handwriting--small handwriting--light">{{ page.title }}</h3>
+  {% if page.small_heading %}
+    <h3 class="handwriting handwriting--small handwriting--light">{{ page.small_heading }}</h3>
+  {% endif %}
 
-  <h2 class="heading">{{ page.heading }} </h2>
+  {% if page.heading %}
+    <h2 class="heading">{{ page.heading }} </h2>
+  {% endif %}
 
   {% if page.underline %}
     <span class="underline">
-      <span class="underline">
-        <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
-      </span>
+      <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
     </span>
   {% endif %}
-  <p>{{ page.desc }}</p>
 
-  <img class="image space" src="{{ "./assets/images/" | append: page.image | relative_url}}" alt="">
+  {% if page.desc %}
+    <p>{{ page.desc }}</p>
+  {% endif %}
+
+  {% if page.image %}
+    <img class="image space" src="{{ "./assets/images/" | append: page.image | relative_url}}" alt="">
+  {% endif %}
 </div>

@@ -21,7 +21,13 @@
         </section>
       {% endfor %}
 
-      {% for bonus in site.bonuses %}
+      {% for bonus-info in site.bonuses limit: 1 %}
+        <section class="section">
+          {{ bonus-info }}
+        </section>
+      {% endfor %}
+
+      {% for bonus in site.bonuses offset: 1 %}
         {% assign i = forloop.index | modulo: 2 %}
         <section class="section">
           <div class="wrapper container container--large">
@@ -33,11 +39,11 @@
       {% endfor %}
 
       <section class="section">
-        <div class="wrapper container container--medium">
+        <div class="wrapper container container--xlarge">
           {% include choose-plan.html %}
         </div>
 
-        <div class="wrapper container container--large">
+        <div class="wrapper container container--medium">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">

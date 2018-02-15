@@ -1,9 +1,13 @@
 <div class="grid__column grid grid--center grid--middle">
-  <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
+  {% if page.image %}
+    <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
+  {% endif %}
 </div>
 
 <div class="grid__column">
-  <h2 class="heading h3">{{ page.heading }}</h2>
+  {% if page.heading %}
+    <h2 class="heading h3">{{ page.heading }}</h2>
+  {% endif %}
 
   {% if page.underline %}
     <span class="underline">
