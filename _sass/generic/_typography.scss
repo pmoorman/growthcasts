@@ -12,10 +12,6 @@ body, input {
 a {
   color: color('primary');
   text-decoration: underline;
-
-  &:hover {
-    color: darken(color('primary'), 15%);
-  }
 }
 
 h1, .h1,
