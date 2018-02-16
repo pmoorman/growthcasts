@@ -1,4 +1,5 @@
 import Accordion from '../components/accordion'
+import Carousel from '../components/carousel'
 
 class App {
   constructor() {
@@ -7,6 +8,7 @@ class App {
 
   components() {
     new Accordion().init()
+    new Carousel().init()
   }
 }
 

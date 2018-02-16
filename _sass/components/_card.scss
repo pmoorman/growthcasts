@@ -22,8 +22,12 @@
     top: -2rem;
 
     &--left {
-      left: 4rem;
+      left: 2rem;
       transform: scaleX(-1) rotate(-20deg);
+
+      @media (min-width: breakpoint('large')) {
+        left: 8rem;
+      }
     }
 
     &--right {

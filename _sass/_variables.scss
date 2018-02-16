@@ -1,0 +1,22 @@
+$font-family: 'Averta', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-secondary: 'HandOfSeanPro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$line-height: 2;
+
+$colors: (
+  primary: #108dff,
+  secondary: #2a3048,
+  white: #ffffff,
+  lighter-gray: #fafafa,
+  light-gray: #a0a4b1,
+  gray: #586973,
+  darker-gray: #425059,
+  black: #131413,
+);
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px
+);

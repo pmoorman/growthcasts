@@ -1,16 +1,25 @@
-@import "settings/colors";
-@import "settings/breakpoints";
-@import "settings/variables";
+// Variables
+// =================================================
+@import "variables";
 
+// Vendors
+// =================================================
+@import "vendors/normalize";
+@import "vendors/swiper";
+
+// Functions
+// =================================================
 @import "functions/color";
 @import "functions/breakpoint";
 
-@import "generic/normalize";
+// Generic
+// =================================================
 @import "generic/general";
 @import "generic/fonts";
 @import "generic/typography";
-@import "generic/text";
 
+// Objects
+// =================================================
 @import "objects/container";
 @import "objects/section";
 @import "objects/image";
@@ -18,8 +27,9 @@
 @import "objects/paragraph";
 @import "objects/grid";
 @import "objects/wrapper";
-@import "objects/space";
 
+// Components
+// =================================================
 @import "components/accordion";
 @import "components/main";
 @import "components/header";
@@ -35,3 +45,8 @@
 @import "components/testimonials";
 @import "components/footer";
 @import "components/color";
+
+// Utilities
+// =================================================
+@import "utilities/space";
+@import "utilities/text";

@@ -61,13 +61,19 @@
       </section>
 
       <section class="section">
-        <div class="wrapper testimonials container container--medium">
+        <div class="wrapper container container--xlarge">
           <h2 class="ta-c">Here's what others say about us...</h2>
-          {% for testimonial in site.testimonials %}
-            <div class="card card--white">
-              {{ testimonial }}
+          <div class="testimonials swiper-container">
+            <div class="testimonials__slider swiper-wrapper">
+              {% for testimonial in site.testimonials %}
+                <div class="testimonials__slide card card--white swiper-slide">
+                  {{ testimonial }}
+                </div>
+              {% endfor %}
             </div>
-          {% endfor %}
+
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
 
