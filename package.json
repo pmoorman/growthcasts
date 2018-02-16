@@ -1,0 +1,24 @@
+{
+  "name": "growthcasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c && jekyll build",
+    "watch": "jekyll serve --livereload & rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/tonikstudio/growthcasts.git"
+  },
+  "author": "Tonik <hello@tonik.pl> (http://tonik.pl)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tonikstudio/growthcasts/issues"
+  },
+  "homepage": "https://gitlab.com/tonikstudio/growthcasts#README",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "rollup-plugin-babel": "^3.0.3"
+  }
+}

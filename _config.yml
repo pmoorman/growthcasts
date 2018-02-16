@@ -48,3 +48,7 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+    - assets/js/core
+    - assets/js/components

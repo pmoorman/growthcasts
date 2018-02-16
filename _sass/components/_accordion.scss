@@ -1,0 +1,31 @@
+.accordion {
+  $this: &;
+  transition: background 1.5s ease;
+
+  &__head {
+    padding: 0.5rem 0;
+    cursor: pointer;
+
+    &.active {
+      #{$this}__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__icon {
+    max-width: 15px;
+    max-height: 15px;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+  }
+
+  &__text {
+    margin-top: 1rem;
+  }
+}
