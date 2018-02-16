@@ -1,5 +1,6 @@
 .accordion {
   $this: &;
+
   transition: background 1.5s ease;
 
   &__head {
@@ -21,8 +22,14 @@
 
   &__content {
     height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     overflow: hidden;
     transition: height 0.25s ease-in-out;
+
+    &--border {
+      border-bottom: 1px solid #dbdbdb;
+    }
   }
 
   &__text {
