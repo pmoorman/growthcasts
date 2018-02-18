@@ -1,4 +1,4 @@
-import Swiper from 'swiper'
+import Swiper from "swiper"
 
 export default class Carousel {
   init() {
@@ -7,7 +7,7 @@ export default class Carousel {
   }
 
   setVars() {
-    this._swiper = document.querySelector('.swiper-container')
+    this._swiper = document.querySelector(".swiper-container")
     if (!this._swiper) return false
 
     return true
@@ -19,7 +19,7 @@ export default class Carousel {
       spaceBetween: 300,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true
       }
     })

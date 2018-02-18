@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c && jekyll build",
+    "build": "rollup -c & jekyll build",
     "watch": "jekyll serve --livereload & rollup -c --watch"
   },
   "repository": {

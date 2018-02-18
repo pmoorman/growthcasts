@@ -1,5 +1,36 @@
 'use strict';
 
+class MobileMenu {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._menu = document.querySelector(".jsMenu");
+    if (!this._menu) return false;
+
+    this._menuBtn = document.querySelector(".jsMenuBtn");
+    this._offcanvas = document.querySelector(".jsOffcanvas");
+    return true;
+  }
+
+  setEvents() {
+    this._menuBtn.addEventListener("click", () => {
+      this._menuBtn.classList.toggle("menu-button--open");
+      this._offcanvas.classList.toggle("offcanvas--active");
+
+      if (this._offcanvas.classList.contains("offcanvas--active")) {
+
+        window.addEventListener("scroll", () => {
+          this._offcanvas.classList.remove("offcanvas--active");
+          this._menuBtn.classList.remove("menu-button--open");
+        });
+      }
+    });
+  }
+}
+
 class Accordion {
   init() {
     if (!this.setVars()) return;
@@ -7096,7 +7127,7 @@ class Carousel {
   }
 
   setVars() {
-    this._swiper = document.querySelector('.swiper-container');
+    this._swiper = document.querySelector(".swiper-container");
     if (!this._swiper) return false;
 
     return true;
@@ -7108,7 +7139,7 @@ class Carousel {
       spaceBetween: 300,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true
       }
     });
@@ -7212,7 +7243,8 @@ class SmoothScroll {
   }
 
   setVars() {
-    this._links = document.querySelectorAll('a[href^="#"]');
+    this._offcanvas = document.querySelector(".jsOffcanvas");
+    this._links = document.querySelectorAll("a[href^='#']");
     if (!this._links) return false;
 
     return true;
@@ -7220,8 +7252,8 @@ class SmoothScroll {
 
   setEvents() {
     for (var i = 0; i < this._links.length; i++) {
-      this._links[i].addEventListener('click', event => {
-        scrollIt(document.querySelector(event.currentTarget.getAttribute('href')));
+      this._links[i].addEventListener("click", event => {
+        scrollIt(document.querySelector(event.currentTarget.getAttribute("href")));
       });
     }
   }
@@ -7233,6 +7265,7 @@ class App {
   }
 
   components() {
+    new MobileMenu().init();
     new Accordion().init();
     new Carousel().init();
     new SmoothScroll().init();

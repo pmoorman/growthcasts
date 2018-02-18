@@ -1,5 +1,6 @@
 .header {
   background: #fafafa;
+  position: relative;
 
   &__content {
     @media (min-width: breakpoint('medium')) {

@@ -22,7 +22,7 @@
       {% endfor %}
 
       {% for bonus-info in site.bonuses limit: 1 %}
-        <section class="section">
+        <section class="section" id="bonus">
           {{ bonus-info }}
         </section>
       {% endfor %}
@@ -43,7 +43,7 @@
           {% include choose-plan.html %}
         </div>
 
-        <div class="wrapper container container--medium">
+        <div class="wrapper container container--medium" id="pricing">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">
@@ -56,7 +56,7 @@
         </div>
       </section>
 
-      <section class="faq section">
+      <section class="faq section" id="faq">
         {% include faq.html %}
       </section>
 

@@ -1,4 +1,4 @@
-import scrollIt from '../vendor/scroll-it'
+import scrollIt from "../vendor/scroll-it"
 
 export default class SmoothScroll {
   init() {
@@ -7,7 +7,8 @@ export default class SmoothScroll {
   }
 
   setVars() {
-    this._links = document.querySelectorAll('a[href^="#"]')
+    this._offcanvas = document.querySelector(".jsOffcanvas")
+    this._links = document.querySelectorAll("a[href^='#']")
     if (!this._links) return false
 
     return true
@@ -15,8 +16,8 @@ export default class SmoothScroll {
 
   setEvents() {
     for (var i = 0; i < this._links.length; i++) {
-      this._links[i].addEventListener('click', (event) => {
-        scrollIt(document.querySelector(event.currentTarget.getAttribute('href')))
+      this._links[i].addEventListener("click", (event) => {
+        scrollIt(document.querySelector(event.currentTarget.getAttribute("href")))
       })
     }
   }
