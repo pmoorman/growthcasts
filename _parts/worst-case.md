@@ -1,7 +1,7 @@
 ---
 layout: note
 small_heading: Worst case
-heading: You spend $229... PLUS you spend 3 hours to find out  that this course is not something you like.
+heading: You spend $229... PLUS you spend 3 hours to find out that this course is not something you like.
 heading_image: worst-case.png
 ---
 
