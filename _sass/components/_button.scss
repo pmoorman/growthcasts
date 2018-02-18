@@ -1,4 +1,6 @@
 .button {
+  $this: &;
+
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -19,10 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
-    background: #fff;
+    background: color(white);
     margin-left: 10px;
     margin-right: -5px;
 
@@ -36,9 +38,21 @@
     background: color('primary');
   }
 
-  &--secondary {
-    background: color('white');
+  &--white {
+    background: color(white);
     color: color('primary');
+
+    #{$this}__icon {
+      background: color('primary');
+    }
+
+    #{$this}__icon-img {
+      fill: color(white);
+    }
+
+    #{$this}__shadow {
+      fill: color(white);
+    }
   }
 
   &--shadow {

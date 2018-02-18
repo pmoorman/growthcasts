@@ -39,6 +39,16 @@
       {% endfor %}
 
       <section class="section">
+        <div class="wrapper container container--large">
+          {% include buy-banner.html %}
+
+          {% for slide in site.slides %}
+            {{ slide }}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="section">
         <div class="wrapper container container--xlarge">
           {% include choose-plan.html %}
         </div>

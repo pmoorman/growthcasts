@@ -60,7 +60,12 @@
   }
 
   &--white {
-    background: #fff;
+    background: color(white);
+  }
+
+  &--primary {
+    background: color('primary');
+    color: color(white);
   }
 
   &--wider {

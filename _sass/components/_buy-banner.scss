@@ -1,0 +1,20 @@
+.buy-banner {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+
+  @media (min-width: breakpoint('medium')) {
+    text-align: left;
+  }
+
+  @media (min-width: breakpoint('large')) {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+
+  &__button {
+    @media (min-width: breakpoint('medium')) {
+      text-align: right;
+    }
+  }
+}
