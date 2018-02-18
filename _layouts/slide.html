@@ -1,1 +1,9 @@
-{{ page.heading }}
+<div class="swiper-slide grid grid--center grid--middle grid--justify grid--stackable">
+  <div class="grid__column">
+    <img class="image" src="{{"./assets/images/slides/" | append: page.image }}" alt="">
+  </div>
+  <div class="grid__column">
+    {{ content }}
+    <p><b>{{ page.author }}</b>{{ page.position }}</p>
+  </div>
+</div>

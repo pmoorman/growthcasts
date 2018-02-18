@@ -7127,7 +7127,7 @@ class Carousel {
   }
 
   setVars() {
-    this._swiper = document.querySelector(".swiper-container");
+    this._swiper = document.querySelector(".swiper2");
     if (!this._swiper) return false;
 
     return true;
@@ -7139,7 +7139,33 @@ class Carousel {
       spaceBetween: 300,
       loop: true,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination2",
+        clickable: true
+      }
+    });
+  }
+}
+
+class Carousel$1 {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._swiper = document.querySelector(".swiper1");
+    if (!this._swiper) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    const testimonialsSlider = new Swiper$1(this._swiper, {
+      speed: 800,
+      spaceBetween: 300,
+      loop: true,
+      pagination: {
+        el: ".slides-pagination1",
         clickable: true
       }
     });
@@ -7268,6 +7294,7 @@ class App {
     new MobileMenu().init();
     new Accordion().init();
     new Carousel().init();
+    new Carousel$1().init();
     new SmoothScroll().init();
   }
 }

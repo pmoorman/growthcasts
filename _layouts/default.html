@@ -42,9 +42,15 @@
         <div class="wrapper container container--large">
           {% include buy-banner.html %}
 
-          {% for slide in site.slides %}
-            {{ slide }}
-          {% endfor %}
+          <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+            {% for slide in site.slides %}
+              {{ slide }}
+            {% endfor %}
+            </div>
+
+            <div class="swiper-pagination swiper-pagination1"></div>
+          </div>
         </div>
       </section>
 
@@ -73,7 +79,7 @@
       <section class="section">
         <div class="wrapper container container--xlarge">
           <h2 class="ta-c">Here's what others say about us...</h2>
-          <div class="testimonials swiper-container">
+          <div class="testimonials swiper-container swiper2">
             <div class="testimonials__slider swiper-wrapper">
               {% for testimonial in site.testimonials %}
                 <div class="testimonials__slide card card--white swiper-slide">
@@ -82,7 +88,7 @@
               {% endfor %}
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination2"></div>
           </div>
         </div>
       </section>
