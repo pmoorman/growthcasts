@@ -15,7 +15,7 @@
 </header>
 
 <div class="price__content">
-  <p class="paragraph tt-u h6">Core content</p>
+  <p class="price__content-heading paragraph tt-u">Core content</p>
 
   <ul class="list list--checked list--checked-secondary">
     {% for item in page.core %}
@@ -23,7 +23,7 @@
     {% endfor %}
   </ul>
 
-  <p class="paragraph tt-u h6 {% if page.core_version == true %}c--gray {% endif %}">Pro content</p>
+  <p class="price__content-heading paragraph tt-u {% if page.core_version == true %}c--gray {% endif %}">Pro content</p>
 
   <ul class="list list--checked {% if page.core_version == true %}list--gray {% endif %}">
     {% for item in page.pro %}

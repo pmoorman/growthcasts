@@ -18,8 +18,9 @@
     &:before {
       content: '';
       position: absolute;
-      top: 12px;
+      top: 50%;
       left: -30px;
+      transform: translateY(-50%);
       width: 7px;
       height: 7px;
       border-radius: 50%;
