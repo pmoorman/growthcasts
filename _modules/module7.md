@@ -37,7 +37,7 @@ author_img:
 author_desc: works with Slack
 ---
 
-{: .list}
+{: .list .list--flat}
 - How to identify the best traction channels for your specific business needs
 - The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
 - You'll learn about the **'power law of channels'**, and how to use it effectively

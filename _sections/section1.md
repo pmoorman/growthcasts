@@ -19,7 +19,6 @@ And that’s great. The world needs creators and ruckus makers like that! That d
 - How can we get more revenue, so we can hire a better team?
 - How can we 5X the revenue this year… so we can finally pay all the bills?
 
-{: .space}
 And we tell ourselves “ah, that’ll be fine. We’ll figure it out!”… but chances are you won’t figure it out. It’s stupidly hard. As a matter of fact... **Most startups fail because they can’t get enough customers.**
 
 Trust me, I know how you feel: When you’ve got a great product and you’re anxious to scale and you’re being told to “Do things that don’t scale” it’s like, “Dude. At this rate, I’ll be in a wheelchair before I do big numbers.”

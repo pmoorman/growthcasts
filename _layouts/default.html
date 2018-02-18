@@ -77,6 +77,23 @@
         </div>
       </section>
 
+      <section class="section">
+        {% for part in site.parts %}
+          {{ part }}
+        {% endfor %}
+        <div class="wrapper container container--medium" id="pricing">
+          <div class="grid grid--stackable grid--center grid--middle">
+            {% for price in site.prices %}
+              <div class="grid__column">
+                <div class="price card card--white">
+                  {{ price }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
     </main>
 
     {% include footer.html %}

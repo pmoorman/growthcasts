@@ -1,0 +1,35 @@
+<article class="wrapper container container--xlarge">
+  <div class="grid grid--center">
+    <div class="grid__column section__aside">
+      {% if page.heading_image %}
+        <img class="image" src="{{ "./assets/images/note/" | append: page.heading_image }}" alt="">
+      {% endif %}
+    </div>
+
+    <div class="grid__column">
+      {% if page.small_heading %}
+        <h3 class="handwriting handwriting--small handwriting--light">{{ page.small_heading }}</h3>
+      {% endif %}
+
+      {% if page.heading %}
+        <h2 class="section__heading h3">
+          {{ page.heading }}
+
+          {% if page.heading_quote %}
+            <span class="handwriting handwriting--primary">"{{ page.heading_quote }}"</span>
+          {% endif %}
+        </h2>
+      {% endif %}
+
+      {% if page.content_image %}
+        <img class="image image--wider" src="{{ "./assets/images/" | append: page.content_image}}" alt="">
+      {% endif %}
+
+      <div class="section__content">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="grid__column section__aside"></div>
+  </div>
+</article>

@@ -6,8 +6,6 @@ heading_image: section3.png
 content_image: diagram.png
 ---
 
-<!-- diagram image -->
-
 {: .space}
 After watching that video on Reddit, I started messing around with the things they do: I tested the way they structure their funnels. I "reverse-engineered" the way they build traffic systems (called “growth engines”). I started applying their ruthless testing and prioritisation regimes.
 
@@ -19,6 +17,7 @@ But I always had one simple objective in mind...
 
 Fast-forward 2 years, and see what we have:
 
+{: .list}
 - There's a simple, 7-part framework that we execute
 - Over the years, they have been tried and tested.
 - I have — as a consultant — been able to help 3 startups scale incredibly well (1 to acquisition, 1 to raise Series A, 2 to profitability)
