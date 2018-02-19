@@ -10,7 +10,7 @@
     <main class="main" id="get-started">
 
       {% for section in site.sections %}
-        <section class="section" id="{% if section.link_id %}{{ section.link_id }}{% endif %}">
+        <section class="section" {% if section.link_id %}id="{{ section.link_id }}"{% endif %}>
           {{ section }}
         </section>
       {% endfor %}
