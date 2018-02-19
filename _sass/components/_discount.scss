@@ -6,4 +6,9 @@
   margin: 0;
   padding: 1rem 2rem;
   z-index: 10;
+  display: none;
+
+  @media(min-width: breakpoint('xlarge')) {
+    display: block;
+  }
 }
