@@ -29,9 +29,9 @@
 
       {% for bonus in site.bonuses offset: 1 %}
         {% assign i = forloop.index | modulo: 2 %}
-        <section class="section">
+        <section class="section bonus">
           <div class="wrapper container container--large">
-            <div class="grid grid--justify grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+            <div class="bonus grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
               {{ bonus }}
             </div>
           </div>

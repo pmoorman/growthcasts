@@ -1,10 +1,10 @@
-<div class="grid__column grid grid--center grid--middle">
+<div class="bonus__image grid__column grid grid--center grid--middle">
   {% if page.image %}
     <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
   {% endif %}
 </div>
 
-<div class="grid__column">
+<div class="bonus__content grid__column">
   {% if page.heading %}
     <h2 class="heading h3">{{ page.heading }}</h2>
   {% endif %}

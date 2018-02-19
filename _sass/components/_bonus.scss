@@ -1,0 +1,13 @@
+.bonus {
+  &__image {
+    max-width: 40%;
+  }
+
+  &__content {
+    max-width: 50%;
+
+    @media (min-width: breakpoint('large')) {
+      max-width: 45%;
+    }
+  }
+}

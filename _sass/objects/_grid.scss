@@ -83,12 +83,12 @@
   &--reversable {
     flex-direction: row;
 
-    @media (min-width: breakpoint('large')) {
+    @media (min-width: breakpoint('medium')) {
       flex-direction: row-reverse;
     }
 
     &#{$this}--stackable {
-      @media (max-width: breakpoint('large')) {
+      @media (max-width: breakpoint('medium')) {
         flex-direction: column;
       }
     }
