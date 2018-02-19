@@ -1,0 +1,10 @@
+.timer {
+  display: inline;
+
+  &__item {
+    display: inline-block;
+    padding: 0 8px;
+    background: lighten(color('secondary'), 72%);
+    border-radius: 4px;
+  }
+}

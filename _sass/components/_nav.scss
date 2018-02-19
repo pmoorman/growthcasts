@@ -2,6 +2,7 @@
   $this: &;
 
   width: 100%;
+  max-width: 280px;
 
   @media (min-width: breakpoint('xlarge')) {
     position: fixed;
