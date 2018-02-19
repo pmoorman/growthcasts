@@ -1,0 +1,19 @@
+.slider {
+  $this: &;
+
+  padding: 4rem 0;
+
+  &__wrapper {
+    padding-bottom: 5rem;
+  }
+
+  &__pagination {
+    bottom: 2rem;
+  }
+
+  &-pagination {
+    &__img {
+      cursor: pointer;
+    }
+  }
+}

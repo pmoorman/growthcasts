@@ -7,19 +7,19 @@ export default class Carousel {
   }
 
   setVars() {
-    this._swiper = document.querySelector(".swiper2")
+    this._swiper = document.querySelector(".jsSwiper2")
     if (!this._swiper) return false
 
     return true
   }
 
   setEvents() {
-    const swiper2 = new Swiper(this._swiper, {
+    const swiper = new Swiper(this._swiper, {
       speed: 800,
       spaceBetween: 300,
       loop: true,
       pagination: {
-        el: ".swiper-pagination2",
+        el: ".jsSwiperPagination2",
         clickable: true
       }
     })

@@ -10,7 +10,7 @@
     <main class="main" id="get-started">
 
       {% for section in site.sections %}
-        <section class="section">
+        <section class="section" id="{% if section.link_id %}{{ section.link_id }}{% endif %}">
           {{ section }}
         </section>
       {% endfor %}
@@ -42,14 +42,14 @@
         <div class="wrapper container container--large">
           {% include buy-banner.html %}
 
-          <div class="swiper-container swiper1">
-            <div class="swiper-wrapper">
+          <div class="slider swiper-container jsSwiper1">
+            <div class="slider__wrapper swiper-wrapper">
             {% for slide in site.slides %}
               {{ slide }}
             {% endfor %}
             </div>
 
-            <div class="swiper-pagination swiper-pagination1"></div>
+            <div class="swiper-pagination jsSwiperPagination1 slider__pagination grid grid--space grid--gapeless"></div>
           </div>
         </div>
       </section>
@@ -79,7 +79,7 @@
       <section class="section">
         <div class="wrapper container container--xlarge">
           <h2 class="ta-c">Here's what others say about us...</h2>
-          <div class="testimonials swiper-container swiper2">
+          <div class="testimonials swiper-container jsSwiper2">
             <div class="testimonials__slider swiper-wrapper">
               {% for testimonial in site.testimonials %}
                 <div class="testimonials__slide card card--white swiper-slide">
@@ -88,12 +88,12 @@
               {% endfor %}
             </div>
 
-            <div class="swiper-pagination swiper-pagination2"></div>
+            <div class="swiper-pagination jsSwiperPagination2"></div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="note">
         {% for part in site.parts %}
           {{ part }}
         {% endfor %}

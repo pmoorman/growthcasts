@@ -4,8 +4,9 @@ image: photo.png
 author: Nic Yeeles,
 position: CEO/Founder at Peg.co
 ---
-{: .h3}
-It's incredible how Pieter was able to give us a new sense of focus and clarity in hof we executed our customer acquisition strategies.
 
-{: .h3}
-Wholehartedly endorse his work!
+{: .c--black}
+**It's incredible how Pieter was able to give us a new sense of focus and clarity in hof we executed our customer acquisition strategies.**
+
+{: .c--black}
+**Wholehartedly endorse his work!**

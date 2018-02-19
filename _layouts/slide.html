@@ -1,9 +1,13 @@
-<div class="swiper-slide grid grid--center grid--middle grid--justify grid--stackable">
-  <div class="grid__column">
+<div class="slide swiper-slide grid grid--center grid--middle grid--gapeless grid--space">
+  <div class="slide__image grid__column">
     <img class="image" src="{{"./assets/images/slides/" | append: page.image }}" alt="">
   </div>
-  <div class="grid__column">
+  
+  <div class="slide__content grid__column">
     {{ content }}
-    <p><b>{{ page.author }}</b>{{ page.position }}</p>
+
+    <b><span class="slide__author c--black"> {{ page.author }} </span></b>
+
+    <span class="slide__author-position">{{ page.position }}</span>
   </div>
 </div>
