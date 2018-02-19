@@ -1,18 +1,33 @@
 .slide {
   &__image {
-    max-width: 250px;
+    max-height: 200px;
+    text-align: center;
 
     @media (min-width: breakpoint('medium')) {
       max-width: 350px;
       max-height: 280px;
+    }
+
+    img {
+      max-height: 250px;
+
+      @media (min-width: breakpoint('medium')) {
+        max-height: 400px;
+      }
     }
   }
 
   &__content {
     max-width: 400px;
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.6;
+    text-align: center;
+
+    @media (min-width: breakpoint('medium')) {
+      font-size: 24px;
+      text-align: left;
+    }
   }
 
   &__author {
