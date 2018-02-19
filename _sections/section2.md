@@ -15,7 +15,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
 
 <!-- How to become elite at growth - video -->
 <div class="video">
-  <img class="video__image image image--wider" src="./assets/images/brian-thumbnail.jpg">
+  <img class="video__image image image--wider" src="./assets/images/brian-thumbnail.jpg" alt="">
   <header class="video__header grid grid--middle grid--gapeless grid--justify">
     <div class="grid__column">
       <p class="c--white paragraph">Brian Belfour</p>
@@ -36,7 +36,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
   <div class="modal__background"></div>
   <div class="modal__content">
     <div class="modal__video-wrapper">
-      <iframe src="https://www.youtube.com/embed/7ehZn-Ma1Ow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/7ehZn-Ma1Ow" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
