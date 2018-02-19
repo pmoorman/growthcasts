@@ -21,6 +21,13 @@
     }
   }
 
+  &__link {
+    text-decoration: none;
+    color: color(light-gray);
+    font-weight: 600;
+    font-size: 12px;
+  }
+
   &__item {
     position: relative;
 
@@ -38,15 +45,8 @@
       }
 
       #{$this}__link {
-        color: color(primary);
+        color: color('primary');
       }
     }
-  }
-
-  &__link {
-    text-decoration: none;
-    color: color(light-gray);
-    font-weight: 600;
-    font-size: 12px;
   }
 }

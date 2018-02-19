@@ -1,24 +1,19 @@
-import scrollIt from "../vendor/scroll-it"
+import SmoothScroll from 'smooth-scroll'
 
-export default class SmoothScroll {
+export default class Scroll {
   init() {
-    if (!this.setVars()) return
     this.setEvents()
   }
 
-  setVars() {
-    this._offcanvas = document.querySelector(".jsOffcanvas")
-    this._links = document.querySelectorAll("a[href^='#']")
-    if (!this._links) return false
-
-    return true
-  }
-
   setEvents() {
-    for (var i = 0; i < this._links.length; i++) {
-      this._links[i].addEventListener("click", (event) => {
-        scrollIt(document.querySelector(event.currentTarget.getAttribute("href")))
-      })
-    }
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 3000,
+      offset: 0,
+      easing: 'easeInOutCubic',
+      after: (anchor, toggle) => {
+        document.querySelectorAll(".nav__link").forEach(link => link.parentNode.classList.remove('nav__item--active'))
+        toggle.parentNode.classList.add('nav__item--active')
+      }
+    })
   }
 }
