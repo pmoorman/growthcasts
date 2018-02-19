@@ -8,10 +8,10 @@ heading_image: best-case.png
 Imagine...
 
 {: .list}
-- What if $19/month would <b>double your profits</b> in 2 months from now?
-- What if it would <b>triple the revenue of your business</b>?
-- What if you would <b>5X your personal income</b> to over 6-figures per year?
-- What if 10x or 20x <b>more warm leads converted</b> on your website?
+- What if $19/month would <span class="t--bold c--black">double your profits</span> in 2 months from now?
+- What if it would <span class="t--bold c--black">triple the revenue of your business</span>?
+- What if you would <span class="t--bold c--black">5X your personal income</span> to over 6-figures per year?
+- What if 10x or 20x <span class="t--bold c--black">more warm leads converted</span> on your website?
 
 ... Because if you master the systems of growth marketing, that might just happen.
 
@@ -19,7 +19,8 @@ It all has happened to my students (and to myself, for that matter). You definit
 
 But...
 
-<b>I know your ‘lizard brain’ is still cooking up excuses at breakneck speed...</b>
+{: .t--bold .c--black}
+I know your ‘lizard brain’ is still cooking up excuses at breakneck speed...
 
 {: .list}
 - "What if things go WRONG?!”

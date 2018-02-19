@@ -13,7 +13,8 @@ After a while I started to notice their channel strategies. The psychological tr
 
 But I always had one simple objective in mind...
 
-**“Can I turn their strategies into something that a dummy like myself can execute?”**
+{: .c--black .t--bold}
+“Can I turn their strategies into something that a dummy like myself can execute?”
 
 Fast-forward 2 years, and see what we have:
 
@@ -23,4 +24,5 @@ Fast-forward 2 years, and see what we have:
 - I have — as a consultant — been able to help 3 startups scale incredibly well (1 to acquisition, 1 to raise Series A, 2 to profitability)
 - A few friends of mine started using this system… and they got great results, too.
 
-**Now it’s even turned into a new, flagship product (called “Growthcasts Elite”), that every entrepreneur can us himself, to learn these skills!**
+{: .c--black .t--bold}
+Now it’s even turned into a new, flagship product (called “Growthcasts Elite”), that every entrepreneur can us himself, to learn these skills!

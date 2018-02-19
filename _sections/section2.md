@@ -8,7 +8,8 @@ heading_image: section2.png
 {: .space}
 Actually, maybe "revelation" is a bit of a big word. It was more like: “I got lucky”.
 
-**How?**
+{: .t--bold .c--black}
+How?
 
 In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
 
@@ -22,8 +23,8 @@ This guy is not your typical marketing guru. Brian Balfour is the former “VP o
 
 He’s talking about process, frameworks, systems.
 
-{: .space}
-**The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...**
+{: .space .t--bold .c--black}
+The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...
 
 {: .space}
 Duh! What got you here… won’t get you there! So what’s the difference?

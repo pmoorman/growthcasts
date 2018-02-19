@@ -11,7 +11,8 @@ I cannot give you those 3 hours back. But I can make it easy for you...
 
 I can give you an unconditional 'no-matter-what-the-reason-is' money-back guarantee. And I can make it be valid for a massive 365 days.
 
-<b>You have 365 days to claw back your money (and you'll retain full access to all the content)</b>
+{: .t--bold .c--black}
+You have 365 days to claw back your money (and you'll retain full access to all the content)
 
 So then the question is...
 

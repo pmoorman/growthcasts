@@ -31,14 +31,14 @@
     }
 
     &-heading {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
     }
   }
 
   &__current-price {
     display: inline;
-    font-size: 60px;
+    font-size: 66px;
     position: relative;
     margin-right: 2rem;
     font-family: $font-family-headings;
@@ -54,7 +54,7 @@
 
   &__old-price {
     display: inline;
-    font-size: 24px;
+    font-size: 26px;
     text-decoration: line-through;
     color: color('light-gray');
     position: relative;
