@@ -6,7 +6,7 @@ export default class Scroll {
   }
 
   setEvents() {
-    const scroll = new SmoothScroll('.nav__link', {
+    let scroll = new SmoothScroll('.nav__link', {
       speed: 3000,
       offset: 0,
       easing: 'easeInOutCubic',
@@ -14,6 +14,12 @@ export default class Scroll {
         document.querySelectorAll(".nav__link").forEach(link => link.parentNode.classList.remove('nav__item--active'))
         toggle.parentNode.classList.add('nav__item--active')
       }
+    })
+
+    let scrollDown = new SmoothScroll('.jsScrollDownBtn', {
+      speed: 1000,
+      offset: 0,
+      easing: 'easeInOutCubic'
     })
   }
 }
