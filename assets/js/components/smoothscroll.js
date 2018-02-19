@@ -6,7 +6,7 @@ export default class Scroll {
   }
 
   setEvents() {
-    const scroll = new SmoothScroll('a[href*="#"]', {
+    const scroll = new SmoothScroll('.nav__link', {
       speed: 3000,
       offset: 0,
       easing: 'easeInOutCubic',

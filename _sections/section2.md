@@ -13,8 +13,33 @@ How?
 
 In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
 
-{: .video}
-<!-- video with a heading and a button -->
+<!-- How to become elite at growth - video -->
+<div class="video">
+  <img class="video__image image image--wider" src="./assets/images/brian-thumbnail.jpg">
+  <header class="video__header grid grid--middle grid--gapeless grid--justify">
+    <div class="grid__column">
+      <p class="c--white paragraph">Brian Belfour</p>
+      <h4 class="video__heading heading c--white">How to become elite at growth</h4>
+    </div>
+    <div class="video__button grid__column">
+    <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#how-to-become-elite-at-growth">
+      Play
+      <span class="button__icon">
+        <img class="button__icon-img" src="./assets/images/icons/play.svg" alt="">
+      </span>
+    </a>
+    </div>
+  </header>
+</div>
+
+<div class="modal jsModal" id="how-to-become-elite-at-growth">
+  <div class="modal__background"></div>
+  <div class="modal__content">
+    <div class="modal__video-wrapper">
+      <iframe src="https://www.youtube.com/embed/7ehZn-Ma1Ow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 
 {: .handwriting .handwriting--small .ta-c .c--black .space}
 Watch it (or just the first few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.

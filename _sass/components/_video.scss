@@ -1,0 +1,26 @@
+.video {
+  position: relative;
+
+  &__image {
+    height: 100%;
+  }
+
+  &__header {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    width: 100%;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &__button {
+    max-width: 140px;
+  }
+
+  &--secondary {
+    background: color('secondary');
+  }
+}

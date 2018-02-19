@@ -3,6 +3,7 @@ import Accordion from '../components/accordion'
 import Carousel from '../components/carousel'
 import Testimonials from '../components/testimonials'
 import SmoothScroll from '../components/smoothscroll'
+import Modal from '../components/modal'
 
 class App {
   constructor() {
@@ -15,6 +16,7 @@ class App {
     new Carousel().init()
     new Testimonials().init()
     new SmoothScroll().init()
+    new Modal().init()
   }
 }
 

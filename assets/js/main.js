@@ -7289,7 +7289,7 @@ class Scroll {
   }
 
   setEvents() {
-    const scroll = new smoothScroll_min('a[href*="#"]', {
+    const scroll = new smoothScroll_min('.nav__link', {
       speed: 3000,
       offset: 0,
       easing: 'easeInOutCubic',
@@ -7298,6 +7298,44 @@ class Scroll {
         toggle.parentNode.classList.add('nav__item--active');
       }
     });
+  }
+}
+
+class Modal {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._modal = document.querySelectorAll(".jsModal");
+    this._modalButton = document.querySelectorAll(".jsModalButton");
+    this._isVisible = false;
+    if (!this._modal) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    for (let i = 0; i < this._modalButton.length; i++) {
+      this._modalButton[i].addEventListener("click", e => {
+        e.preventDefault();
+
+        let target = e.currentTarget.getAttribute("href");
+        let modal = document.querySelector(target);
+
+        this._isVisible = !this._isVisible;
+        modal.classList.toggle("modal--visible");
+
+        if (this._isVisible) {
+          for (let i = 0; i < this._modal.length; i++) {
+            modal.addEventListener("click", e => {
+              modal.classList.remove("modal--visible");
+            });
+          }
+        }
+      });
+    }
   }
 }
 
@@ -7312,6 +7350,7 @@ class App {
     new Carousel().init();
     new Carousel$1().init();
     new Scroll().init();
+    new Modal().init();
   }
 }
 
