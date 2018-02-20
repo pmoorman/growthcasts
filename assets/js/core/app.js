@@ -4,6 +4,7 @@ import Slider from '../components/slider'
 import Carousel from '../components/testimonials'
 import SmoothScroll from '../components/smoothscroll'
 import Modal from '../components/modal'
+import Timer from '../components/timer'
 
 class App {
   constructor() {
@@ -17,6 +18,7 @@ class App {
     new Carousel().init()
     new SmoothScroll().init()
     new Modal().init()
+    new Timer().init()
   }
 }
 
