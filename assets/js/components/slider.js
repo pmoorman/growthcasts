@@ -1,0 +1,34 @@
+import Swiper from "swiper"
+
+export default class Slider {
+  init() {
+    if (!this.setVars()) return
+    this.setEvents()
+  }
+
+  setVars() {
+    this._swiper = document.querySelector(".jsSwiper1")
+    if (!this._swiper) return false
+
+    return true
+  }
+
+  setEvents() {
+    const swiper = new Swiper(this._swiper, {
+      speed: 800,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".jsSwiperPagination1",
+        clickable: true,
+        bulletClass: "slider__switch",
+        bulletActiveClass: "slider__switch--active",
+        renderBullet: function (index, className) {
+          return `<div class="${className}">
+                    <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
+                  </div>`
+        }
+      }
+    })
+  }
+}

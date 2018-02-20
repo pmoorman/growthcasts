@@ -7120,6 +7120,39 @@ if (typeof Swiper$1.use === 'undefined') {
 
 Swiper$1.use(components);
 
+class Slider {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._swiper = document.querySelector(".jsSwiper1");
+    if (!this._swiper) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    const swiper = new Swiper$1(this._swiper, {
+      speed: 800,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".jsSwiperPagination1",
+        clickable: true,
+        bulletClass: "slider__switch",
+        bulletActiveClass: "slider__switch--active",
+        renderBullet: function (index, className) {
+          return `<div class="${className}">
+                    <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
+                  </div>`;
+        }
+      }
+    });
+  }
+}
+
 class Carousel {
   init() {
     if (!this.setVars()) return;
@@ -7141,39 +7174,6 @@ class Carousel {
       pagination: {
         el: ".jsSwiperPagination2",
         clickable: true
-      }
-    });
-  }
-}
-
-class Carousel$1 {
-  init() {
-    if (!this.setVars()) return;
-    this.setEvents();
-  }
-
-  setVars() {
-    this._swiper = document.querySelector(".jsSwiper1");
-    if (!this._swiper) return false;
-
-    return true;
-  }
-
-  setEvents() {
-    const swiper = new Swiper$1(this._swiper, {
-      speed: 800,
-      spaceBetween: 0,
-      loop: true,
-      pagination: {
-        el: ".jsSwiperPagination1",
-        clickable: true,
-        bulletClass: "slider-pagination__switch--active",
-        bulletActiveClass: "slider-pagination__switch",
-        renderBullet: function (index, className) {
-          return `<div class="slider-pagination__switch ${className}">
-                    <img class="slider-pagination__img image" src="./assets/images/logos/${index + 1}-g.png" alt="">
-                  </div>`;
-        }
       }
     });
   }
@@ -7353,8 +7353,8 @@ class App {
   components() {
     new MobileMenu().init();
     new Accordion().init();
+    new Slider().init();
     new Carousel().init();
-    new Carousel$1().init();
     new Scroll().init();
     new Modal().init();
   }

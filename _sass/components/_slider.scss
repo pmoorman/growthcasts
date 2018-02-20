@@ -1,19 +1,49 @@
 .slider {
   $this: &;
 
-  padding: 4rem 0;
+  margin-top: 6rem;
 
   &__wrapper {
     padding-bottom: 5rem;
   }
 
   &__pagination {
-    bottom: 2rem;
+    position: relative;
+    height: 50px;
+
+    @media (min-width: breakpoint('medium')) {
+      padding-left: 2rem;
+      margin-top: 3rem;
+    }
   }
 
-  &-pagination {
-    &__img {
+  &__switch {
+    position: relative;
+    width: 100%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+    @media (min-width: breakpoint('medium')) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       cursor: pointer;
+      filter: grayscale(100%) brightness(100%) contrast(50%);
+      opacity: .3;
+      transition: .3s ease-out;
+    }
+
+    &--active {
+      img {
+        filter: none;
+        opacity: 1;
+      }
     }
   }
 }

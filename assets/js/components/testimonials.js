@@ -7,7 +7,7 @@ export default class Carousel {
   }
 
   setVars() {
-    this._swiper = document.querySelector(".jsSwiper1")
+    this._swiper = document.querySelector(".jsSwiper2")
     if (!this._swiper) return false
 
     return true
@@ -16,18 +16,11 @@ export default class Carousel {
   setEvents() {
     const swiper = new Swiper(this._swiper, {
       speed: 800,
-      spaceBetween: 0,
+      spaceBetween: 300,
       loop: true,
       pagination: {
-        el: ".jsSwiperPagination1",
-        clickable: true,
-        bulletClass: "slider-pagination__switch--active",
-        bulletActiveClass: "slider-pagination__switch",
-        renderBullet: function (index, className) {
-          return `<div class="slider-pagination__switch ${className}">
-                    <img class="slider-pagination__img image" src="./assets/images/logos/${index + 1}-g.png" alt="">
-                  </div>`
-        }
+        el: ".jsSwiperPagination2",
+        clickable: true
       }
     })
   }
