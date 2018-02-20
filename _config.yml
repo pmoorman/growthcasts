@@ -30,8 +30,8 @@ plugins:
 
 # Collections
 collections:
-  - modules
-  - sections
+  - intro
+  - course
   - bonuses
   - prices
   - faq

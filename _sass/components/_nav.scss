@@ -21,31 +21,36 @@
     }
   }
 
+  &__item {
+    position: relative;
+  }
+
   &__link {
     text-decoration: none;
     color: color(light-gray);
     font-weight: 600;
     font-size: 12px;
-  }
+    transition: .5s;
 
-  &__item {
-    position: relative;
+    &:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      background: color(primary);
+      border-radius: 50%;
+      opacity: 0;
+      transition: .3s;
+    }
 
     &--active {
-      &:after {
-        content: '';
-        width: 8px;
-        height: 8px;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(-50%, -50%);
-        background: color(primary);
-        border-radius: 50%;
-      }
+      color: color('primary');
 
-      #{$this}__link {
-        color: color('primary');
+      &:after {
+        opacity: 1
       }
     }
   }

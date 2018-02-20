@@ -7179,10 +7179,221 @@ class Carousel {
   }
 }
 
+class Modal {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._modal = document.querySelectorAll(".jsModal");
+    this._modalButton = document.querySelectorAll(".jsModalButton");
+    this._isVisible = false;
+    if (!this._modal) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    for (let i = 0; i < this._modalButton.length; i++) {
+      this._modalButton[i].addEventListener("click", e => {
+        e.preventDefault();
+
+        let target = e.currentTarget.getAttribute("href");
+        let modal = document.querySelector(target);
+
+        this._isVisible = !this._isVisible;
+        modal.classList.toggle("modal--visible");
+
+        if (this._isVisible) {
+          for (let i = 0; i < this._modal.length; i++) {
+            modal.addEventListener("click", e => {
+              modal.classList.remove("modal--visible");
+            });
+          }
+        }
+      });
+    }
+  }
+}
+
+class DiscountTimer {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._discountBar = document.querySelector(".jsDiscountBar");
+    if (!this._discountBar) return false;
+
+    this._timer = document.querySelector(".jsTimer");
+    this._deadline = "2018-02-20 18:00:00";
+    this._remainingTime = 0;
+    this._interval;
+
+    return true;
+  }
+
+  setEvents() {
+    this._interval = setInterval(() => {
+      this._remainingTime = this.getTime(this._deadline);
+
+      if (this._remainingTime.total < 0 || !this._remainingTime) {
+        this.disableDiscount();
+      }
+
+      this.updateElements();
+    }, 1000);
+  }
+
+  getTime() {
+    let total = Date.parse(this._deadline) - Date.parse(new Date());
+    if (!total) return false;
+
+    let seconds = Math.floor(total / 1000 % 60);
+    let minutes = Math.floor(total / 1000 / 60 % 60);
+
+    return {
+      'total': total,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+
+  updateElements() {
+    let minutes = ("0" + this._remainingTime.minutes.toString()).split('').slice(-2);
+    let seconds = ("0" + this._remainingTime.seconds.toString()).split('').slice(-2);
+
+    for (let i = 0; i < this._timer.children.length; i++) {
+      this._timer.children[i].innerText = [...minutes, ...seconds][i];
+    }
+  }
+
+  disableDiscount() {
+    for (let i = 0; i < this._timer.children.length; i++) {
+      this._timer.children[i].innerText = "0";
+    }
+    this._discountBar.style.display = "none";
+  }
+}
+
 var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function createCommonjsModule(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var gumshoe_min = createCommonjsModule(function (module, exports) {
+/*! gumshoejs v3.5.0 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
+!function (e, t) {
+  "function" == typeof undefined && undefined.amd ? undefined([], t(e)) : module.exports = t(e);
+}("undefined" != typeof commonjsGlobal ? commonjsGlobal : commonjsGlobal.window || commonjsGlobal.global, function (e) {
+  var t,
+      n,
+      o,
+      r,
+      a,
+      c,
+      i,
+      l = {},
+      s = "querySelector" in document && "addEventListener" in e && "classList" in document.createElement("_"),
+      u = [],
+      f = { selector: "[data-gumshoe] a", selectorHeader: "[data-gumshoe-header]", container: e, offset: 0, activeClass: "active", scrollDelay: !1, callback: function () {} },
+      d = function (e, t, n) {
+    if ("[object Object]" === Object.prototype.toString.call(e)) for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.call(n, e[o], o, e);else for (var r = 0, a = e.length; r < a; r++) t.call(n, e[r], r, e);
+  },
+      v = function () {
+    var e = {},
+        t = !1,
+        n = 0,
+        o = arguments.length;"[object Boolean]" === Object.prototype.toString.call(arguments[0]) && (t = arguments[0], n++);for (; n < o; n++) {
+      var r = arguments[n];!function (n) {
+        for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t && "[object Object]" === Object.prototype.toString.call(n[o]) ? e[o] = v(!0, e[o], n[o]) : e[o] = n[o]);
+      }(r);
+    }return e;
+  },
+      m = function (e) {
+    return Math.max(e.scrollHeight, e.offsetHeight, e.clientHeight);
+  },
+      g = function () {
+    return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
+  },
+      h = function (e) {
+    var n = 0;if (e.offsetParent) do {
+      n += e.offsetTop, e = e.offsetParent;
+    } while (e);else n = e.offsetTop;return n = n - a - t.offset, n >= 0 ? n : 0;
+  },
+      p = function (t) {
+    var n = t.getBoundingClientRect();return n.top >= 0 && n.left >= 0 && n.bottom <= (e.innerHeight || document.documentElement.clientHeight) && n.right <= (e.innerWidth || document.documentElement.clientWidth);
+  },
+      y = function () {
+    u.sort(function (e, t) {
+      return e.distance > t.distance ? -1 : e.distance < t.distance ? 1 : 0;
+    });
+  };l.setDistances = function () {
+    o = g(), a = r ? m(r) + h(r) : 0, d(u, function (e) {
+      e.distance = h(e.target);
+    }), y();
+  };var b = function () {
+    var e = document.querySelectorAll(t.selector);d(e, function (e) {
+      if (e.hash) {
+        var t = document.querySelector(e.hash);t && u.push({ nav: e, target: t, parent: "li" === e.parentNode.tagName.toLowerCase() ? e.parentNode : null, distance: 0 });
+      }
+    });
+  },
+      H = function () {
+    c && (c.nav.classList.remove(t.activeClass), c.parent && c.parent.classList.remove(t.activeClass));
+  },
+      C = function (e) {
+    H(), e.nav.classList.add(t.activeClass), e.parent && e.parent.classList.add(t.activeClass), t.callback(e), c = { nav: e.nav, parent: e.parent };
+  };l.getCurrentNav = function () {
+    var n = e.pageYOffset;if (e.innerHeight + n >= o && p(u[0].target)) return C(u[0]), u[0];for (var r = 0, a = u.length; r < a; r++) {
+      var c = u[r];if (c.distance <= n) return C(c), c;
+    }H(), t.callback();
+  };var L = function () {
+    d(u, function (e) {
+      e.nav.classList.contains(t.activeClass) && (c = { nav: e.nav, parent: e.parent });
+    });
+  };l.destroy = function () {
+    t && (t.container.removeEventListener("resize", j, !1), t.container.removeEventListener("scroll", j, !1), u = [], t = null, n = null, o = null, r = null, a = null, c = null, i = null);
+  };var E = function (e) {
+    window.clearTimeout(n), n = setTimeout(function () {
+      l.setDistances(), l.getCurrentNav();
+    }, 66);
+  },
+      j = function (e) {
+    n || (n = setTimeout(function () {
+      n = null, "scroll" === e.type && l.getCurrentNav(), "resize" === e.type && (l.setDistances(), l.getCurrentNav());
+    }, 66));
+  };return l.init = function (e) {
+    s && (l.destroy(), t = v(f, e || {}), r = document.querySelector(t.selectorHeader), b(), 0 !== u.length && (L(), l.setDistances(), l.getCurrentNav(), t.container.addEventListener("resize", j, !1), t.scrollDelay ? t.container.addEventListener("scroll", E, !1) : t.container.addEventListener("scroll", j, !1)));
+  }, l;
+});
+});
+
+class Slider$1 {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._nav = document.querySelector(".jsMenu");
+    if (!this._nav) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    gumshoe_min.init({
+      selector: ".jsMenu > ul > li > a",
+      selectorHeader: "jsMenu",
+      container: window,
+      offset: 0,
+      activeClass: "nav__link--active"
+    });
+  }
 }
 
 var smoothScroll_min = createCommonjsModule(function (module, exports) {
@@ -7291,11 +7502,11 @@ class Scroll {
   setEvents() {
     let scroll = new smoothScroll_min('.nav__link', {
       speed: 3000,
-      offset: 0,
+      offset: -60,
       easing: 'easeInOutCubic',
       after: (anchor, toggle) => {
-        document.querySelectorAll(".nav__link").forEach(link => link.parentNode.classList.remove('nav__item--active'));
-        toggle.parentNode.classList.add('nav__item--active');
+        document.querySelectorAll(".nav__link").forEach(link => link.classList.remove('nav__link--active'));
+        toggle.classList.add('nav__link--active');
       }
     });
 
@@ -7304,105 +7515,6 @@ class Scroll {
       offset: 0,
       easing: 'easeInOutCubic'
     });
-  }
-}
-
-class Modal {
-  init() {
-    if (!this.setVars()) return;
-    this.setEvents();
-  }
-
-  setVars() {
-    this._modal = document.querySelectorAll(".jsModal");
-    this._modalButton = document.querySelectorAll(".jsModalButton");
-    this._isVisible = false;
-    if (!this._modal) return false;
-
-    return true;
-  }
-
-  setEvents() {
-    for (let i = 0; i < this._modalButton.length; i++) {
-      this._modalButton[i].addEventListener("click", e => {
-        e.preventDefault();
-
-        let target = e.currentTarget.getAttribute("href");
-        let modal = document.querySelector(target);
-
-        this._isVisible = !this._isVisible;
-        modal.classList.toggle("modal--visible");
-
-        if (this._isVisible) {
-          for (let i = 0; i < this._modal.length; i++) {
-            modal.addEventListener("click", e => {
-              modal.classList.remove("modal--visible");
-            });
-          }
-        }
-      });
-    }
-  }
-}
-
-class DiscountTimer {
-  init() {
-    if (!this.setVars()) return;
-    this.setEvents();
-  }
-
-  setVars() {
-    this._discountBar = document.querySelector(".jsDiscountBar");
-    if (!this._discountBar) return false;
-
-    this._timer = document.querySelector(".jsTimer");
-    this._deadline = "2018-02-20 18:00:00";
-    this._remainingTime = 0;
-    this._interval;
-
-    return true;
-  }
-
-  setEvents() {
-    this._interval = setInterval(() => {
-      this._remainingTime = this.getTime(this._deadline);
-
-      if (this._remainingTime.total < 0 || !this._remainingTime) {
-        this.disableDiscount();
-      }
-
-      this.updateElements();
-    }, 1000);
-  }
-
-  getTime() {
-    let total = Date.parse(this._deadline) - Date.parse(new Date());
-    if (!total) return false;
-
-    let seconds = Math.floor(total / 1000 % 60);
-    let minutes = Math.floor(total / 1000 / 60 % 60);
-
-    return {
-      'total': total,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-
-  updateElements() {
-    let minutes = ("0" + this._remainingTime.minutes.toString()).split('').slice(-2);
-    let seconds = ("0" + this._remainingTime.seconds.toString()).split('').slice(-2);
-
-    for (let i = 0; i < this._timer.children.length; i++) {
-      this._timer.children[i].innerText = [...minutes, ...seconds][i];
-    }
-  }
-
-  disableDiscount() {
-    for (let i = 0; i < this._timer.children.length; i++) {
-      this._timer.children[i].innerText = "0";
-    }
-    this._discountBar.style.display = "none";
   }
 }
 
@@ -7416,9 +7528,10 @@ class App {
     new Accordion().init();
     new Slider().init();
     new Carousel().init();
-    new Scroll().init();
     new Modal().init();
     new DiscountTimer().init();
+    new Slider$1().init();
+    new Scroll().init();
   }
 }
 

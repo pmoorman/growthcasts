@@ -1,9 +1,5 @@
 .section {
-  padding: 4rem 0;
-
-  @media (min-width: breakpoint('medium')) {
-    padding: 6rem 0;
-  }
+  padding: 6rem 0;
 
   &__aside {
     display: none;
@@ -28,5 +24,9 @@
     @media (min-width: breakpoint('large')) {
       padding-right: 3rem;
     }
+  }
+
+  &--gray {
+    background: color('lighter-gray');
   }
 }
