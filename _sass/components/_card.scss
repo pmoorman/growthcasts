@@ -21,6 +21,14 @@
     position: absolute;
     top: -2rem;
 
+    svg {
+      max-width: 12px;
+
+      @media (min-width: breakpoint('medium')) {
+        max-width: 14px;
+      }
+    }
+
     &--left {
       left: 2rem;
       transform: scaleX(-1) rotate(-20deg);

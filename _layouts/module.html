@@ -10,7 +10,7 @@
 
     {% if page.underline %}
       <span class="underline">
-        <img class="underline__img" src="{{ "./assets/images/underlines/underline-short.svg" }}" alt="">
+        {% include_absolute icons/underline-short.svg %}
       </span>
     {% endif %}
 
@@ -53,7 +53,9 @@
       <div class="module__content grid__column accordion jsAccordion">
         <div class="grid grid--gapeless grid--justify grid--middle accordion__head jsAccordionHead">
           <h3>Inside this module</h3>
-          <img class="accordion__icon" src="{{ './assets/images/icons/chevron-down.svg' | relative_url }}" alt="">
+          <span class="accordion__icon">
+            {% include_absolute icons/chevron-down.svg %}
+          </span>
         </div>
 
         <div class="accordion__content accordion__content--border jsAccordionContent">
@@ -108,7 +110,9 @@
       <div class="module__learn grid__column accordion jsAccordion">
         <div class="grid grid--gapeless grid--justify grid--middle accordion__head jsAccordionHead">
           <h3>What you'll learn</h3>
-          <img class="accordion__icon" src="{{ './assets/images/icons/chevron-down.svg' | relative_url }}" alt="">
+          <span class="accordion__icon">
+            {% include_absolute icons/chevron-down.svg %}
+          </span>
         </div>
 
         <div class="accordion__content accordion__content--border jsAccordionContent">
@@ -133,7 +137,9 @@
 
         <div class="module__testimonial-text">
           <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
-          <img class="module__testimonial-arrow" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
+          <span class="module__testimonial-arrow">
+            {% include_absolute icons/module-arrow.svg %}
+          </span>
         </div>
       </div>
     {% endif %}

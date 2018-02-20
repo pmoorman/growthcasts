@@ -129,13 +129,19 @@
     }
 
     &-arrow {
-      width: 12px;
       position: absolute;
-      top: 4.5rem;
+      top: 4rem;
       right: 0;
 
+      svg {
+        width: 12px;
+
+        @media (min-width: breakpoint('small')) {
+          width: 14px;
+        }
+      }
+
       @media (min-width: breakpoint('small')) {
-        width: 14px;
         top: 3rem;
         right: -2rem;
       }

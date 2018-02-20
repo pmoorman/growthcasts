@@ -9,15 +9,20 @@
 
     &.active {
       #{$this}__icon {
-        transform: rotate(180deg);
+        svg {
+          transform: rotate(180deg);  
+        }
       }
     }
   }
 
   &__icon {
-    max-width: 15px;
-    max-height: 15px;
-    transition: transform 0.25s ease-in-out;
+    line-height: 0;
+
+    svg {
+      max-width: 12px;
+      transition: transform 0.25s ease-in-out;
+    }
   }
 
   &__content {

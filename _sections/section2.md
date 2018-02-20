@@ -25,7 +25,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
     <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#how-to-become-elite-at-growth">
       Play
       <span class="button__icon">
-        <img class="button__icon-img" src="./assets/images/icons/play.svg" alt="">
+        {% include_absolute icons/play.svg %}
       </span>
     </a>
     </div>

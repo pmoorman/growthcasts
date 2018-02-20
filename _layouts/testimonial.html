@@ -3,7 +3,9 @@
     <p class="card__about handwriting handwriting--small handwriting--light ta-c">{{ page.about }}</p>
   {% endif %}
 
-  <img class="card__arrow card__arrow--left" src="{{ "./assets/images/icons/modul-arrow.svg" | relative_url }}" alt="">
+  <span class="card__arrow card__arrow--left">
+    {% include_absolute icons/module-arrow.svg %}
+  </span>
 
   <img class="image" src="{{ "./assets/images/testimonials/" | append: page.image }}" alt="">
 </div>
