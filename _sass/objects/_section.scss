@@ -1,5 +1,9 @@
 .section {
-  padding: 6rem 0;
+  padding: 4rem 0;
+
+  @media (min-width: breakpoint('medium')) {
+    padding: 6rem 0;
+  }
 
   &__aside {
     display: none;

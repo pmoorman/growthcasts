@@ -2,6 +2,12 @@
   background: #fafafa;
   position: relative;
 
+  &__wrapper {
+    & > * + * {
+      margin-top: 3rem;
+    }
+  }
+
   &__content {
     @media (min-width: breakpoint('medium')) {
       order: -1;
