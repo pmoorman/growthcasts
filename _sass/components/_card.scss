@@ -76,6 +76,11 @@
     color: color(white);
   }
 
+  &--secondary {
+    background: color('secondary');
+    color: color(white);
+  }
+
   &--wider {
     width: 100%;
     margin-right: auto;

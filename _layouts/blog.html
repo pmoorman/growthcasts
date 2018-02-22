@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include blog-header.html header="Blog" %}
+
+    <main id="get-started">
+
+      <div class="section container container--medium">
+        {% for post in paginator.posts %}
+          <article>
+            <header>
+              <p>{{ post.date | date: '%d %B %Y'}}</p>
+              <h2>{{ post.title }}</h2>
+            </header>
+            <div>
+              {{ post.content | remove: "--more--" | truncatewords: 150, "" }}
+              <a href="{{ post.url }}" class="link link--block">
+                Read more →
+              </a>
+            </div>
+          </article>
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <div class="ta-c">
+          <a href="{{ paginator.next_page_path }}" class="button button--primary button--rounded button--shadow button">
+            Load more
+            <span class="button__icon">
+              {% include_absolute icons/arrow-down.svg %}
+            </span>
+          </a>
+        </div>
+        {% endif %}
+
+        <div class="card card--secondary card--wider">
+          <h3 class="h2 c--white">Not ready for a big investment yet?</h3>
+
+          <p>No problem at all. Thousands of marketers have gone through my free email course instead. In 7 lessons you'll learn a ton about growth marketing, and start executing simple strategies yourself</p>
+
+          <a class="button button--white button--rounded" href="#">
+            Get it now
+            <span class="button__icon">
+              {% include_absolute icons/shopping-basket-white.svg %}
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.link {
+  font-weight: 600;
+  color: darken(color('primary'), 15%);
+
+  &--block {
+    display: block;
+  }
+}
