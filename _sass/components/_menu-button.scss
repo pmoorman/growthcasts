@@ -8,7 +8,6 @@
   position: fixed;
   right: 1rem;
   z-index: 1000;
-  background: transparent;
 
   @media (min-width: breakpoint('xlarge')) {
     display: none;
@@ -37,7 +36,15 @@
     }
   }
 
+  &--primary {
+    background: color('primary');
+    #{$this}__item {
+      background: color(white);
+    }
+  }
+
   &--gray {
+    background: transparent;
     #{$this}__item {
       background: color(gray);
     }
