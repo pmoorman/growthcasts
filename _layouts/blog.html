@@ -14,13 +14,13 @@
           <article>
             <header>
               <p>{{ post.date | date: '%d %B %Y'}}</p>
+              
               <h2>{{ post.title }}</h2>
             </header>
             <div>
-              {{ post.content | remove: "--more--" | truncatewords: 150, "" }}
-              <a href="{{ post.url }}" class="link link--block">
-                Read more →
-              </a>
+              {{ post.content | truncatewords: 106, "" }}
+
+              <a href="{{ post.url }}" class="link link--block">Read more → </a>
             </div>
           </article>
         {% endfor %}

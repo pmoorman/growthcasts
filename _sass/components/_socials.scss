@@ -1,0 +1,32 @@
+.socials {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+
+  & > * + * {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    width: 22px;
+    height: 22px;
+    border: 1px solid color('light-gray');
+    border-radius: 50%;
+    line-height: 23px;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &--horizontal {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+
+    & > * + * {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+  }
+}

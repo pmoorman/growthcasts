@@ -1,0 +1,23 @@
+<div class="share share--{{ include.direction }} {% if include.mobile %}share--mobile {% endif %}">
+  <p class="share__text paragraph tt-u wm-s">Share</p>
+
+  <ul class="socials socials--{{ include.direction }}">
+    <li class="socials__item grid grid--center grid--gapeless">
+      <a class="socials__link" href="#">
+        <span class="socials__icon">{% include_absolute icons/socials/facebook.svg %}</span>
+      </a>
+    </li>
+
+    <li class="socials__item grid grid--center grid--gapeless">
+      <a class="socials__link" href="#">
+        <span class="socials__icon">{% include_absolute icons/socials/twitter.svg %}</span>
+      </a>
+    </li>
+
+    <li class="socials__item grid grid--center grid--gapeless">
+      <a class="socials__link" href="#">
+        <span class="socials__icon">{% include_absolute icons/socials/google-plus.svg %}</span>
+      </a>
+    </li>
+  </ul>
+</div>

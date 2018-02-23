@@ -1,1 +1,44 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include blog-header.html header="Blog" %}
+
+    <main id="get-started">
+      <article class="wrapper section container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside">
+            <div class="grid grid--right grid--gapeless">
+              {% include share.html direction="vertical" %}
+            </div>
+          </div>
+
+          <div class="grid__column">
+            <header>
+              <p>{{ page.date | date: '%d %B %Y'}}</p>
+              <h2>{{ page.title }}</h2>
+            </header>
+            <div class="section__content">
+              {{ content }}
+            </div>
+          </div>
+
+          <div class="grid__column section__aside"></div>
+        </div>
+
+        {% include share.html direction="horizontal" mobile=true %}
+      </article>
+    </main>
+
+    <footer>
+      <div class="wrapper container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>

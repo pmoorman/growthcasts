@@ -1,0 +1,27 @@
+.share {
+  $this: &;
+
+  margin-top: 1.5rem;
+
+  &__text {
+    color: color('light-gray');
+    font-size: 14px;
+  }
+
+  &--horizontal {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  &--vertical {
+    #{$this}__text {
+      writing-mode: sideways-lr;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: breakpoint('medium')) {
+      display: none;
+    }
+  }
+}
