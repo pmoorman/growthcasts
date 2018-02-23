@@ -1,5 +1,16 @@
-<header class="section section--gray">
-  <div class="container container--xlarge ta-c">
-    <h1>{{ include.header }}</h1>
+<header class="header section">
+  <div class="container container--large">
+    <div class="grid grid--justify grid--middle">
+      <div class="grid__column">
+        <a class="logo" href="{{ site.url }}">
+          {% include_absolute logo/Growthcasts.svg %}
+        </a>
+      </div>
+      <div class="grid__column">
+        {% include nav.html %}
+      </div>
+    </div>
+
+    <h1 class="ta-c">Blog</h1>
   </div>
 </header>

@@ -6,13 +6,13 @@ export default class Scroll {
   }
 
   setEvents() {
-    let scroll = new SmoothScroll('.nav__link', {
+    let scroll = new SmoothScroll('.sales-nav__link', {
       speed: 3000,
       offset: -60,
       easing: 'easeInOutCubic',
       after: (anchor, toggle) => {
-        document.querySelectorAll(".nav__link").forEach(link => link.classList.remove('nav__link--active'))
-        toggle.classList.add('nav__link--active')
+        document.querySelectorAll(".sales-nav__link").forEach(link => link.classList.remove('sales-nav__link--active'))
+        toggle.classList.add('sales-nav__link--active')
       }
     })
 

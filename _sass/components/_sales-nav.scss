@@ -1,0 +1,57 @@
+.sales-nav {
+  $this: &;
+
+  width: 100%;
+  max-width: 280px;
+
+  @media (min-width: breakpoint('xlarge')) {
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 120px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: color(light-gray);
+    font-weight: 600;
+    font-size: 12px;
+    transition: .5s;
+
+    &:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      background: color(primary);
+      border-radius: 50%;
+      opacity: 0;
+      transition: .3s;
+    }
+
+    &--active {
+      color: color('primary');
+
+      &:after {
+        opacity: 1
+      }
+    }
+  }
+}

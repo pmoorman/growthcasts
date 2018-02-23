@@ -7391,7 +7391,7 @@ class Slider$1 {
       selectorHeader: "jsMenu",
       container: window,
       offset: 0,
-      activeClass: "nav__link--active"
+      activeClass: "sales-nav__link--active"
     });
   }
 }
@@ -7500,13 +7500,13 @@ class Scroll {
   }
 
   setEvents() {
-    let scroll = new smoothScroll_min('.nav__link', {
+    let scroll = new smoothScroll_min('.sales-nav__link', {
       speed: 3000,
       offset: -60,
       easing: 'easeInOutCubic',
       after: (anchor, toggle) => {
-        document.querySelectorAll(".nav__link").forEach(link => link.classList.remove('nav__link--active'));
-        toggle.classList.add('nav__link--active');
+        document.querySelectorAll(".sales-nav__link").forEach(link => link.classList.remove('sales-nav__link--active'));
+        toggle.classList.add('sales-nav__link--active');
       }
     });
 

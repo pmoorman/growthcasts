@@ -19,7 +19,7 @@ export default class Slider {
     selectorHeader: "jsMenu",
     container: window,
     offset: 0,
-    activeClass: "nav__link--active",
+    activeClass: "sales-nav__link--active",
 });
   }
 }
