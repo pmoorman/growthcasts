@@ -1,0 +1,9 @@
+.posts-list {
+  & > * + * {
+    margin-top: 4rem;
+
+    @media (min-width: breakpoint("medium")) {
+      margin-top: 10rem;
+    }
+  }
+}

@@ -9,12 +9,12 @@
 
     <main id="get-started">
 
-      <div class="section container container--medium">
+      <div class="posts-list wrapper section container container--medium">
         {% for post in paginator.posts %}
           <article>
             <header>
               <p>{{ post.date | date: '%d %B %Y'}}</p>
-              
+
               <h2>{{ post.title }}</h2>
             </header>
             <div>

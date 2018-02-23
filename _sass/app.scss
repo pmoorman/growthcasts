@@ -21,7 +21,6 @@
 // Objects
 // =================================================
 @import "objects/container";
-@import "objects/section";
 @import "objects/image";
 @import "objects/heading";
 @import "objects/paragraph";
@@ -30,6 +29,7 @@
 
 // Components
 // =================================================
+@import "components/section";
 @import "components/logo";
 @import "components/accordion";
 @import "components/header";
@@ -62,6 +62,7 @@
 @import "components/quote";
 @import "components/share";
 @import "components/socials";
+@import "components/posts-list";
 
 // Utilities
 // =================================================
