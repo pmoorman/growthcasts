@@ -3,19 +3,19 @@
 
   <ul class="socials socials--{{ include.direction }}">
     <li class="socials__item grid grid--center grid--gapeless">
-      <a class="socials__link" href="#">
+      <a class="socials__link" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
         <span class="socials__icon">{% include_absolute icons/socials/facebook.svg %}</span>
       </a>
     </li>
 
     <li class="socials__item grid grid--center grid--gapeless">
-      <a class="socials__link" href="#">
+      <a class="socials__link" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">
         <span class="socials__icon">{% include_absolute icons/socials/twitter.svg %}</span>
       </a>
     </li>
 
     <li class="socials__item grid grid--center grid--gapeless">
-      <a class="socials__link" href="#">
+      <a class="socials__link" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
         <span class="socials__icon">{% include_absolute icons/socials/google-plus.svg %}</span>
       </a>
     </li>
