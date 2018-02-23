@@ -1,8 +1,19 @@
 <header class="header section">
   <div class="header__wrapper wrapper container container--xlarge">
-    <a class="logo" href="{{ site.url }}">
-      {% include_absolute logo/Growthcasts.svg %}
-    </a>
+    <div class="grid grid--justify grid--middle">
+      <div class="grid__column">
+        <a class="logo" href="{{ site.url }}">
+          {% include_absolute logo/Growthcasts.svg %}
+        </a>
+      </div>
+      <div class="grid__column">
+        <div class="offcanvas offcanvas--home jsOffcanvas">
+          <div class="offcanvas__body">
+            {% include nav.html contact_link=true %}
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="grid grid--middle grid--stackable grid--justify">
       <div class="grid__column">
@@ -21,4 +32,10 @@
       </div>
     </div>
   </div>
+
+  <button class="menu-button menu-button--gray menu-button--home menu-button--top button jsMenuBtn">
+    <span class="menu-button__item"></span>
+    <span class="menu-button__item"></span>
+    <span class="menu-button__item"></span>
+  </button>
 </header>

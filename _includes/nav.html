@@ -9,5 +9,11 @@
     <li class="nav__item">
       <a class="nav__link nav__link--active" href="/blog">Blog</a>
     </li>
+
+    {% if include.contact_link %}
+    <li class="nav__item">
+      <a class="nav__link c--primary" href="mailto:pieter@growthcasts.co">Contact with me</a>
+    </li>
+    {% endif %}
   </ul>
 </nav>
