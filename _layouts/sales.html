@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sales-header.html %}
+
+    <main id="get-started">
+
+      <div class="sections" id="intro">
+        {% for section in site.intro %}
+          <section class="section">
+            {{ section }}
+          </section>
+        {% endfor %}
+      </div>
+
+      <div class="sections sections--gray" id="course">
+        {% for module in site.course %}
+          <section class="section">
+            {{ module }}
+          </section>
+        {% endfor %}
+      </div>
+
+      <div class="sections" id="bonus">
+        {% for bonus in site.bonuses %}
+          {% assign i = forloop.index | modulo: 2 %}
+          <section class="section bonus">
+            <div class="wrapper container container--large">
+              <div class="bonus grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+                {{ bonus }}
+              </div>
+            </div>
+          </section>
+        {% endfor %}
+
+        <section class="section">
+          <div class="wrapper container container--large">
+            {% include buy-banner.html %}
+
+            <div class="slider swiper-container jsSwiper1">
+              <div class="slider__wrapper swiper-wrapper">
+              {% for slide in site.slides %}
+                {{ slide }}
+              {% endfor %}
+              </div>
+
+              <div class="swiper-pagination jsSwiperPagination1 slider__pagination grid grid--gapeless grid--space"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section pricing" id="pricing">
+        <div class="wrapper container container--xlarge">
+          {% include choose-plan.html %}
+        </div>
+
+        <div class="wrapper container container--medium">
+          <div class="grid grid--stackable grid--center grid--middle">
+            {% for price in site.prices %}
+              <div class="grid__column">
+                <div class="price card card--white">
+                  {{ price }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <div class="sections sections--gray" id="faq">
+        <section class="faq section">
+          {% include faq.html %}
+        </section>
+
+        <section class="section">
+          <div class="wrapper container container--xlarge">
+            <h2 class="ta-c">Here's what others say about us...</h2>
+
+            <div class="testimonials swiper-container jsSwiper2">
+              <div class="testimonials__slider swiper-wrapper">
+                {% for testimonial in site.testimonials %}
+                  <div class="testimonials__slide card card--white swiper-slide">
+                    {{ testimonial }}
+                  </div>
+                {% endfor %}
+              </div>
+
+              <div class="swiper-pagination jsSwiperPagination2"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section section--gray" id="note">
+        {% for part in site.parts %}
+          {{ part }}
+        {% endfor %}
+        <div class="wrapper container container--medium">
+          <div class="grid grid--stackable grid--center grid--middle">
+            {% for price in site.prices %}
+              <div class="grid__column">
+                <div class="price card card--white">
+                  {{ price }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {% include discount.html %}
+
+    {% include footer.html %}
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>

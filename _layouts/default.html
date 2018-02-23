@@ -9,115 +9,105 @@
 
     <main id="get-started">
 
-      <div class="sections" id="intro">
-        {% for section in site.intro %}
-          <section class="section">
-            {{ section }}
-          </section>
-        {% endfor %}
-      </div>
+      <secion class="wrapper section container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside">
+            <img class="image" src="{{ "./assets/images/sections/section4.png" }}" alt="">
+          </div>
 
-      <div class="sections sections--gray" id="course">
-        {% for module in site.course %}
-          <section class="section">
-            {{ module }}
-          </section>
-        {% endfor %}
-      </div>
+          <div class="grid__column">
 
-      <div class="sections" id="bonus">
-        {% for bonus in site.bonuses %}
-          {% assign i = forloop.index | modulo: 2 %}
-          <section class="section bonus">
-            <div class="wrapper container container--large">
-              <div class="bonus grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
-                {{ bonus }}
-              </div>
-            </div>
-          </section>
-        {% endfor %}
+            <h2 class="section__heading h3">Want to expand your business faster, increase your monthly revenue growth, and get more and more people to experience your products?</h2>
 
-        <section class="section">
-          <div class="wrapper container container--large">
-            {% include buy-banner.html %}
+            <div class="section__content">
+              <p>Caling a startup has become stupidly hard. But if you’re anything like me… that's the reason you became an entrepreneur in the first place: you wanted to make an impact in the world, by creating meaningful businesses.</p>
 
-            <div class="slider swiper-container jsSwiper1">
-              <div class="slider__wrapper swiper-wrapper">
-              {% for slide in site.slides %}
-                {{ slide }}
-              {% endfor %}
-              </div>
+              <p>Anyhow... So glad you dropped by here.</p>
 
-              <div class="swiper-pagination jsSwiperPagination1 slider__pagination grid grid--gapeless grid--space"></div>
+              <p>I don’t know exactly how you ended up here...</p>
+
+              <p>But here’s how we can help:</p>
+
+              <p class="handwriting c--secondary">We can help you build simple ‘growth systems’ into the core of your business</p>
+
+              <p>Later we’ll discuss what those growth systems are, and how they work. But right now, let’s focus on why they matter...</p>
+
+              <p>Over the last couple of years — as the internet matured <span class="c--secondary t--bold">— online marketing has gone through a series of massive shifts. As a result, marketing has become incredibly complex.<span></p>
+
+              <p>The problem is not that there aren’t enough marketing tactics to try. The internet is literally full of that. We have an endless obsession with “growth hacks” and loopholes, and gimmicks to “game the system”. There are literally hundreds of gurus and advisors selling you those. But while it’s tempting, those tactics will never work.</p>
+
+              <p>Here’s the bottom line: the only way to unlock sustainable, accelerating, stable product growth (where you constantly grow your user base and revenues, month-over-month)… is to understand the ‘growth levers’ that drive your business, from the ground up.</p>
+
+              <p class="handwriting handwriting--primary">Growth is a matter of systems, not tactics</p>
+
+              <p>Let me put it plainly…</p>
+
+              <div class="handwriting c--secondary space">What you need are automated systems, that drive new customers in, virtually on autopilot.</div>
+
+              <p class="space">Of course, those systems don’t have to be complicated (on the contrary), but you need to be deliberate about it.</p>
+
+              <p>High-growth startups like Uber, Amazon or Pinterest are able to create “engineered virality” into their business, via various growth loops (Btw. I explain here what “growth loops” are)</p>
+
+              <p>So if you’re feeling confused about how marketing works, and how you can grow your startup… Then we're here to help you.</p>
+
+              <p>If you’re still haven’t cracked the nut on “how to quickly learn growth marketing”, we suggest you start with <a class="link" href="#">reading our Frank vs. Matt essay.</a></p>
+
+              <p>Another great starting-point is our <a class="link" href="#">free email course</a></p>
+
+              <p>Besides that, there’s a lot of cool stuff around here. Just look around. Pick what you like, and ignore the rest.</p>
             </div>
           </div>
-        </section>
-      </div>
 
-      <section class="section pricing" id="pricing">
+          <div class="grid__column section__aside"></div>
+        </div>
+      </secion>
+
+      <section class="section section--gray">
         <div class="wrapper container container--xlarge">
-          {% include choose-plan.html %}
-        </div>
+          <div class="grid grid--center">
+            <div class="grid__column section__aside"></div>
 
-        <div class="wrapper container container--medium">
-          <div class="grid grid--stackable grid--center grid--middle">
-            {% for price in site.prices %}
-              <div class="grid__column">
-                <div class="price card card--white">
-                  {{ price }}
-                </div>
+            <div class="grid__column">
+              <div class="section__content">
+                <p class="handwriting c--secondary">We can help you build simple ‘growth systems’ into the core of your business</p>
+
+                <ul class="list">
+                  <li><span class="c--secondary t--bold">We teach to entrepreneurs</span>, not to “get rich quick” internet marketers</li>
+                  <li>Growth is about <span class="c--secondary t--bold">systems, not hacks</span></li>
+                  <li><span class="c--secondary t--bold">We teach to entrepreneurs</span>, not to “get rich quick” internet marketers</li>
+                  <li>Growth is about <span class="c--secondary t--bold">systems, not hacks</span></li>
+                </ul>
+
+                <p>The amount of complicated marketing hoopla is absolutely staggering.</p>
+
+                <p>We need to go “back to basics”.</p>
+
+                <p>Catch. Pass. Shoot.</p>
+
+                <p>And only when you simplify it, will you see that…</p>
+
+                <a class="link" href="#">Growth solves all problems...</a>
+
+                <p class="space">Cheers,</p>
+
+                <p class="handwriting paragraph">Pieter</p>
+
               </div>
-            {% endfor %}
-          </div>
-        </div>
-      </section>
-
-      <div class="sections sections--gray" id="faq">
-        <section class="faq section">
-          {% include faq.html %}
-        </section>
-
-        <section class="section">
-          <div class="wrapper container container--xlarge">
-            <h2 class="ta-c">Here's what others say about us...</h2>
-
-            <div class="testimonials swiper-container jsSwiper2">
-              <div class="testimonials__slider swiper-wrapper">
-                {% for testimonial in site.testimonials %}
-                  <div class="testimonials__slide card card--white swiper-slide">
-                    {{ testimonial }}
-                  </div>
-                {% endfor %}
-              </div>
-
-              <div class="swiper-pagination jsSwiperPagination2"></div>
             </div>
-          </div>
-        </section>
-      </div>
 
-      <section class="section section--gray" id="note">
-        {% for part in site.parts %}
-          {{ part }}
-        {% endfor %}
-        <div class="wrapper container container--medium">
-          <div class="grid grid--stackable grid--center grid--middle">
-            {% for price in site.prices %}
-              <div class="grid__column">
-                <div class="price card card--white">
-                  {{ price }}
-                </div>
-              </div>
-            {% endfor %}
+            <div class="grid__column section__aside"></div>
           </div>
+
+          {% include banner.html %}
         </div>
       </section>
-
     </main>
 
-    {% include discount.html %}
-
-    {% include footer.html %}
+    <footer>
+      <div class="container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   </body>
