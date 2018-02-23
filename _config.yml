@@ -38,6 +38,7 @@ collections:
   - testimonials
   - parts
   - slides
+  - consulting-offers
 
 pagination:
   enabled: true

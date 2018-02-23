@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include consulting-header.html %}
+
+    <main id="get-started">
+      <article class="wrapper section container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+
+          <div class="grid__column">
+            <h2 class="section__heading h3">
+              ...an independent growth marketer from Holland. I help software companies build focused, profitable products. Previously a CTO at a recruitment firm <span class="handwriting handwriting--primary">(boring!)</span>
+            </h2>
+
+            <div class="section__content">
+              <p>Later we’ll discuss what those growth systems are, and how they work. But right now, let’s focus on why they matter...</p>
+
+              <p>Over the last couple of years — as the internet matured <span class="t--bold c--secondary">— online marketing has gone through a series of massive shifts. As a result, marketing has become incredibly complex.</span></p>
+
+              <p>The problem is not that there aren’t enough marketing tactics to try. The internet is literally full of that. We have an endless obsession with “growth hacks” and loopholes, and gimmicks to “game the system”. There are literally hundreds of gurus and advisors selling you those. But while it’s tempting, those tactics will never work.</p>
+
+              <p>Here’s the bottom line: the only way to unlock sustainable, accelerating, stable product growth (where you constantly grow your user base and revenues, month-over-month)… is to understand the ‘growth levers’ that drive your business, from the ground up.</p>
+            </div>
+          </div>
+
+          <div class="grid__column section__aside"></div>
+        </div>
+      </article>
+
+      <div class="section section--gray">
+        <div class="wrapper container container--xlarge">
+          <div class="grid grid--center">
+            <div class="grid__column section__aside"></div>
+
+            <div class="grid__column">
+              <h3 class="section__heading">Helping early-stage startups drive explosive product growth</h3>
+
+              <div class="section__content">
+                <p>Every year I take on a few clients to work 1-on-1 on their business. I call it “consulting” but really it’s quite hands-on: writing copy, building marketing systems, helping with strategy.  I can’t guarantee availability, <span class="c--secondary t--bold">because it’s only me</span>, and I also like to spend time sailing, climbing and traveling.</p>
+
+                <p><span class="t--bold c--secondary">Here’s how I can help:</span></p>
+
+                {% for offer in site.consulting-offers %}
+                  <div class="section section--small">
+                    <h3 class="h4">{{ offer.heading }}</h3>
+
+                    <p>{{ offer.content }}</p>
+
+                    <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="#">{{ offer.footer_link }}</a></p>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="grid__column section__aside"></div>
+          </div>
+
+          <div class="section section--small container container--large">
+            <div class="slider swiper-container jsSwiper1">
+              <div class="slider__wrapper swiper-wrapper">
+              {% for slide in site.slides %}
+                {{ slide }}
+              {% endfor %}
+              </div>
+
+              <div class="swiper-pagination jsSwiperPagination1 slider__pagination grid grid--gapeless grid--space"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper section container container--medium">
+        <div class="card card--secondary card--wider">
+          <h3 class="h2 c--white">Not ready for a big investment yet?</h3>
+
+          <p>No problem at all. Thousands of marketers have gone through my free email course instead. In 7 lessons you'll learn a ton about growth marketing, and start executing simple strategies yourself</p>
+
+          <a class="button button--white button--rounded" href="#">
+            Get it now
+            <span class="button__icon">
+              {% include_absolute icons/shopping-basket-white.svg %}
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>

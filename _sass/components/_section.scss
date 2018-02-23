@@ -30,4 +30,9 @@
   &--gray {
     background: color('lighter-gray');
   }
+
+  &--small {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }

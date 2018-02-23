@@ -24,7 +24,7 @@ export default class MobileMenu {
           this._offcanvas.classList.remove("offcanvas--active")
           this._menuBtn.classList.remove("menu-button--open")
         })
-        
+
       }
     })
   }
