@@ -1,0 +1,19 @@
+.banner {
+  background-image: url('./images/footer-banner.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 40%;
+
+  @media (min-width: breakpoint('large')) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  &__content {
+    max-width: 580px;
+
+    & > * + * {
+      margin-top: 2rem;
+    }
+  }
+}
