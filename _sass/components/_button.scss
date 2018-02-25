@@ -25,7 +25,6 @@
     width: 27px;
     height: 27px;
     border-radius: 50%;
-    background: color(white);
     margin-left: 10px;
     margin-right: -5px;
 
@@ -37,6 +36,14 @@
   &--primary {
     color: #fff;
     background: color('primary');
+
+    #{$this}__icon {
+      background: color(white);
+
+      svg {
+        fill: color('primary');
+      }
+    }
   }
 
   &--white {
@@ -45,14 +52,10 @@
 
     #{$this}__icon {
       background: color('primary');
-    }
 
-    #{$this}__icon-img {
-      fill: color(white);
-    }
-
-    #{$this}__shadow {
-      fill: color(white);
+      svg {
+        fill: color(white);
+      }
     }
   }
 

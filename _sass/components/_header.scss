@@ -14,4 +14,8 @@
       order: -1;
     }
   }
+
+  &--full {
+    min-height: 100vh;
+  }
 }
