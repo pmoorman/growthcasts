@@ -1,7 +1,9 @@
-<div class="bonus__image grid__column grid grid--center grid--middle">
-  {% if page.image %}
-    <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
-  {% endif %}
+<div class="grid__column grid grid--center grid--middle">
+  <div class="bonus__image">
+    {% if page.image %}
+      <img class="image" src="{{ "./assets/images/bonuses/" | append: page.image }}" alt="">
+    {% endif %}
+  </div>
 </div>
 
 <div class="bonus__content grid__column">
