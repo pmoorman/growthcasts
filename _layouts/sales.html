@@ -5,7 +5,9 @@
 
   <body>
 
-    {% include sales-header.html %}
+    {% for sales-header in site.sales-header %}
+      {{ sales-header }}
+    {% endfor %}
 
     <main id="get-started">
       <div class="sections" id="intro">
@@ -14,7 +16,6 @@
             {{ section }}
           </section>
         {% endfor %}
-
       </div>
 
       <div class="sections sections--gray" id="course">
