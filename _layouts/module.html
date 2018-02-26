@@ -19,7 +19,7 @@
     {% endif %}
   </header>
 
-  <div class="grid grid--justify grid--stackable grid--middle">
+  <div class="grid grid--justify grid--stackable grid--middle {% if page.reverse %}grid--reversable{% endif %}">
     <div class="grid__column">
       <div class="module__card card card--white">
         {% if page.image %}

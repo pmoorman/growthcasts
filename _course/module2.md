@@ -5,6 +5,7 @@ heading: Copywriting
 underline: true
 desc: Copywriting is the Backbone Skill, Learn It Once... Sell More Online – Forever
 image: module2.png
+reverse: true
 
 steps:
 - Deploy a Strategic User Acqisition Plan: >
