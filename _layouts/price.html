@@ -31,7 +31,7 @@
     {% endfor %}
   </ul>
 
-  <a class="button button--primary button--rounded button--shadow button--expanded" href="#">
+  <a class="button button--primary button--rounded button--shadow button--expanded" href="{% if page.core_version %}https://gum.co/elitecore{% else %}https://gum.co/elitepro{% endif %}">
     <span>Get it now</span>
     <div class="grid grid--gapeless grid--middle">
       <span>${{ page.current_price }}</span>
