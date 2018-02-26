@@ -5,9 +5,5 @@
 
   &__content {
     max-width: 50%;
-
-    @media (min-width: breakpoint('large')) {
-      max-width: 45%;
-    }
   }
 }

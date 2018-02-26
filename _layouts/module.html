@@ -5,7 +5,7 @@
     {% endif %}
 
     {% if page.heading %}
-      <h2 class="heading">{{ page.heading }}</h2>
+      <h2 class="heading h1">{{ page.heading }}</h2>
     {% endif %}
 
     {% if page.underline %}
@@ -66,7 +66,7 @@
                 <div class="grid grid--gapeless grid--justify">
                   <p class="module__content-heading paragraph tt-u">{{ item[0] }}</p>
 
-                  <p class="module__content-text paragraph">{{ item[1] }} </p>
+                  <p class="module__content-text module__content-text--small paragraph">{{ item[1] }} </p>
                 </div>
                 {% endfor %}
             {% endif %}
@@ -74,9 +74,9 @@
             {% for core in page.core offset: 1 %}
               {% for item in core %}
                 <div class="grid grid--gapeless grid--justify grid--middle">
-                  <p class="heading">{{ item[0] }}</p>
+                  <p class="module__content-text paragraph">{{ item[0] }}</p>
 
-                  <p class="module__content-text paragraph">{{ item[1] }} </p>
+                  <p class="module__content-text module__content-text--small paragraph">{{ item[1] }} </p>
                 </div>
               {% endfor %}
             {% endfor %}
@@ -88,7 +88,7 @@
                 <div class="grid grid--gapeless grid--justify">
                   <p class="module__content-heading paragraph tt-u">{{ item[0] }}</p>
 
-                  <p class="module__content-text paragraph">{{ item[1] }} </p>
+                  <p class="module__content-text module__content-text--small paragraph">{{ item[1] }} </p>
                 </div>
               {% endfor %}
             {% endif %}
@@ -96,9 +96,9 @@
             {% for bonus in page.bonus offset: 1 %}
               {% for item in bonus %}
                 <div class="grid grid--gapeless grid--justify grid--middle">
-                  <p class="heading">{{ item[0] }}</p>
+                  <p class="module__content-text paragraph">{{ item[0] }}</p>
 
-                  <p class="module__content-text paragraph">{{ item[1] }} </p>
+                  <p class="module__content-text module__content-text--small paragraph">{{ item[1] }} </p>
                 </div>
               {% endfor %}
             {% endfor %}

@@ -30,7 +30,7 @@
           {% assign i = forloop.index | modulo: 2 %}
           <section class="section bonus">
             <div class="wrapper container container--large">
-              <div class="bonus grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+              <div class="bonus grid grid--space grid--middle grid--stackable {% if i != 0 %}grid--reversable {% endif %}">
                 {{ bonus }}
               </div>
             </div>
@@ -59,7 +59,7 @@
           {% include choose-plan.html %}
         </div>
 
-        <div class="wrapper container container--medium">
+        <div class="wrapper container container--large">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">
@@ -79,7 +79,7 @@
 
         <section class="section">
           <div class="wrapper container container--xlarge">
-            <h2 class="ta-c">Here's what others say about us...</h2>
+            <h2 class="ta-c h1">Here's what others say about us...</h2>
 
             <div class="testimonials swiper-container jsSwiper2">
               <div class="testimonials__slider swiper-wrapper">
@@ -100,7 +100,7 @@
         {% for part in site.parts %}
           {{ part }}
         {% endfor %}
-        <div class="wrapper container container--medium">
+        <div class="wrapper container container--large">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">

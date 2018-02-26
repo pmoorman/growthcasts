@@ -12,6 +12,7 @@ body, input {
 a {
   color: color('primary');
   text-decoration: underline;
+  font-size: 18px;
 }
 
 h1, .h1,
@@ -71,7 +72,7 @@ h4,
   font-size: 18px;
 
   @media (min-width: breakpoint('xlarge')) {
-    font-size: 21px;
+    font-size: 24px;
   }
 }
 
@@ -87,4 +88,8 @@ h5,
 h6,
 .h6 {
   font-size: 14px;
+}
+
+p {
+  font-size: 18px;
 }

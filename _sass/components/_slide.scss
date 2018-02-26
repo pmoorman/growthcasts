@@ -18,25 +18,21 @@
   }
 
   &__content {
-    max-width: 400px;
+    max-width: 50%;
     font-style: italic;
-    font-size: 20px;
     line-height: 1.6;
     text-align: center;
 
     @media (min-width: breakpoint('medium')) {
-      font-size: 24px;
       text-align: left;
     }
   }
 
   &__author {
-    font-size: 14px;
     font-style: normal;
   }
 
   &__author-position {
-    font-size: 14px;
     font-style: normal;
   }
 }

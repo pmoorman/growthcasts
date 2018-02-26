@@ -1,5 +1,5 @@
 ---
-layout: section
+layout: bonus-info
 small_heading: Bonus
 heading: These bonuses make execution easy & simple for busy entrepreneurs that don't want to waste time...
 ---
