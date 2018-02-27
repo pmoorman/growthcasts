@@ -33,7 +33,7 @@ bonus:
 
 quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
 author: Irina Bykowa
-author_img:
+author_img: irina.png
 author_desc: works with Slack
 ---
 
