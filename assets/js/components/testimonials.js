@@ -18,6 +18,9 @@ export default class Carousel {
       speed: 800,
       spaceBetween: 300,
       loop: true,
+      autoplay: {
+        delay: 20000,
+      },
       pagination: {
         el: ".jsSwiperPagination2",
         clickable: true
