@@ -1,7 +1,11 @@
 .header {
   background: #fafafa;
   position: relative;
-  padding-top: 3rem;
+  padding-top: 2rem;
+
+  @media (min-width: breakpoint('medium')) {
+    padding-top: 3rem;
+  }
 
   &__wrapper {
     & > * + * {

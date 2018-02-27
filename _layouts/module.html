@@ -125,14 +125,14 @@
 
     {% if page.quote %}
       <div class="module__testimonial card card--white">
-        <p class="module__testimonial-quote ta-c h4">{{ page.quote }}</p>
-        <div class="grid grid--middle grid--center grid--gapeless">
+        <p class="module__testimonial-quote ta-c h3">{{ page.quote }}</p>
+        <div class="module__testimonial-author grid grid--middle grid--center grid--gapeless grid--stackable">
             {% if page.author_img %}
               <img class="module__testimonial-img image" src="{{ "./assets/images/" | append: page.author_img }}" alt="">
             {% endif %}
 
             {% if page.author %}
-              <span class="module__testimonial-author">{{ page.author }},</span>
+              <span class="c--secondary t--bold">{{ page.author }}, </span>
               <span>{{ page.author_desc }}</span>
             {% endif %}
         </div>

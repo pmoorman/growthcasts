@@ -28,7 +28,12 @@
   }
 
   &__content {
-    padding: 3rem;
+    padding: 3rem 1rem;
+
+    @media (min-width: breakpoint("small")) {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
 
     & > * + * {
       margin-top: 2rem;
@@ -38,6 +43,13 @@
       font-size: 14px;
       font-weight: 600;
     }
+  }
+
+  &__button {
+    display: flex;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__current-price {

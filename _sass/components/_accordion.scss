@@ -4,13 +4,17 @@
   transition: background 1.5s ease;
 
   &__head {
-    padding: 0.5rem 0;
     cursor: pointer;
+
+    @media (min-width: breakpoint("medium")) {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
 
     &.active {
       #{$this}__icon {
         svg {
-          transform: rotate(180deg);  
+          transform: rotate(180deg);
         }
       }
     }
@@ -20,7 +24,7 @@
     line-height: 0;
 
     svg {
-      max-width: 12px;
+      width: 12px;
       transition: transform 0.25s ease-in-out;
     }
   }

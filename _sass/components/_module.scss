@@ -105,8 +105,12 @@
 
   &__testimonial {
     margin-top: 8rem;
-    margin-bottom: -10rem;
+    margin-bottom: -6rem;
     position: relative;
+
+    @media (min-width: breakpoint('medium')) {
+      margin-bottom: -10rem;
+    }
 
     @media (min-width: breakpoint('large')) {
       padding-right: 4rem;
@@ -158,18 +162,21 @@
       line-height: 1.6;
 
       @media (min-width: breakpoint('large')) {
-        padding: 0 6rem;
+        padding: 0 4rem;
       }
     }
 
     &-author {
-      font-weight: 600;
-      color: #000;
+      & > * + * {
+        padding: 0;
+        line-height: 1.6;
+      }
     }
 
     &-img {
       max-width: 40px;
       margin-right: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
 }

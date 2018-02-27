@@ -14,15 +14,13 @@ How?
 
 In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
 
-{{ page.video }}
-
 <!-- VIDEO  How to become elite at growth-->
 <div class="video">
-  <img class="video__image image image--wider" src="./assets/images/brian-thumbnail.jpg" alt="">
+  <img class="video__image image" src="./assets/images/brian-thumbnail.jpg" alt="">
   <header class="video__header grid grid--middle grid--gapeless grid--justify">
     <div class="grid__column">
       <p class="c--white paragraph">Brian Belfour</p>
-      <h4 class="video__heading heading c--white">How to become elite at growth</h4>
+      <h4 class="video__heading heading c--white h3">How to become elite at growth</h4>
     </div>
     <div class="video__button grid__column">
     <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#{{ page.video_id }}">

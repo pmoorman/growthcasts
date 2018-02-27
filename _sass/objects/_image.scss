@@ -3,10 +3,6 @@
   height: auto;
 
   &--wider {
-    max-width: 110%;
-    margin-left: -5%;
-    margin-right: -5%;
-
     @media (min-width: breakpoint('medium')) {
       max-width: 120%;
       margin-left: -10%;
