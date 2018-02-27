@@ -5,5 +5,5 @@ text: Watch the video below, to get a full scoop on everything that's inside Eli
 video_image: video-illustration.png
 video_heading: Walkthrough video
 button_text: Play
-video_id: how-to-become-elite-at-growth
+video_id: walkthrough
 ---
