@@ -6,6 +6,11 @@
     bottom: 4rem;
     left: 0;
     width: 100%;
+
+    &--static {
+      position: static;
+      margin-top: 3rem;
+    }
   }
 
   &__heading {
@@ -18,5 +23,9 @@
 
   &--secondary {
     background: color('secondary');
+  }
+
+  &--bottom {
+    margin-bottom: -10rem;
   }
 }

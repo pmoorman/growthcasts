@@ -1,0 +1,27 @@
+<div>
+  <div class="container container--small ta-c">
+    <h2 class="h1">{{ page.heading }}</h2>
+    <p>{{ page.text }}</p>
+  </div>
+  <div>
+    {{ content }}
+    <div class="wrapper container container--large">
+      <div class="video video--secondary video--bottom card">
+        <img class="video__image image" src="{{ "./assets/images/" | append: page.video_image }}" alt="">
+        <header class="video__header video__header--static grid grid--middle grid--gapeless grid--justify">
+          <div class="grid__column">
+            <h4 class="heading c--white h3">{{ page.video_heading }}</h4>
+          </div>
+          <div class="video__button grid__column">
+          <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#{{ page.video_id }}">
+            {{ page.button_text }}
+            <span class="button__icon">
+              {% include_absolute icons/play.svg %}
+            </span>
+          </a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>

@@ -29,9 +29,9 @@
       <div class="sections" id="bonus">
         {% for bonus in site.bonuses %}
           {% assign i = forloop.index | modulo: 2 %}
-          <section class="section bonus">
+          <section class="section">
             <div class="wrapper container container--large">
-              <div class="bonus grid grid--space grid--middle grid--stackable {% if i != 0 %}grid--reversable {% endif %}">
+              <div class="bonus {% if forloop.index == 3 %}bonus--first {% endif %} grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
                 {{ bonus }}
               </div>
             </div>
@@ -114,9 +114,20 @@
         </div>
       </section>
 
-    </main>
+      {% for video in site.videos %}
+      <div class="modal jsModal" id="{{ video.video_id }}">
+        <div class="modal__background"></div>
+        <div class="modal__content">
+          <div class="modal__video-wrapper">
+            <iframe src="{{ video.video_link }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
 
-    {% include discount.html %}
+
+
+    </main>
 
     {% include footer.html %}
 

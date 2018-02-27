@@ -41,6 +41,7 @@ collections:
   - parts
   - slides
   - consulting-offers
+  - videos
 
 pagination:
   enabled: true

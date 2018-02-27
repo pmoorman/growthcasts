@@ -3,6 +3,7 @@ layout: section
 heading: As I was browsing the murky backwaters of Reddit's mother-of-distractions...
 heading_quote: I had a revelation that would change my career...
 heading_image: section2.png
+video_id: how-to-become-elite-at-growth
 ---
 
 {: .space}
@@ -13,7 +14,9 @@ How?
 
 In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
 
-<!-- How to become elite at growth - video -->
+{{ page.video }}
+
+<!-- VIDEO  How to become elite at growth-->
 <div class="video">
   <img class="video__image image image--wider" src="./assets/images/brian-thumbnail.jpg" alt="">
   <header class="video__header grid grid--middle grid--gapeless grid--justify">
@@ -22,7 +25,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
       <h4 class="video__heading heading c--white">How to become elite at growth</h4>
     </div>
     <div class="video__button grid__column">
-    <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#how-to-become-elite-at-growth">
+    <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#{{ page.video_id }}">
       Play
       <span class="button__icon">
         {% include_absolute icons/play.svg %}
@@ -31,15 +34,7 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
     </div>
   </header>
 </div>
-
-<div class="modal jsModal" id="how-to-become-elite-at-growth">
-  <div class="modal__background"></div>
-  <div class="modal__content">
-    <div class="modal__video-wrapper">
-      <iframe src="https://www.youtube.com/embed/7ehZn-Ma1Ow" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
+<!-- END OF VIDEO -->
 
 {: .handwriting .handwriting--small .ta-c .c--black .space}
 Watch it (or just the first few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.
