@@ -32,11 +32,23 @@
 }
 
 @font-face {
-  font-family: 'LyonText';
-  src: url('./fonts/LyonText.eot');
-  src: url('./fonts/LyonText.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/LyonText.woff2') format('woff2'),
-    url('./fonts/LyonText.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'LyonText';
+    src: url('./fonts/LyonText-RegularNo2.eot');
+    src: url('./fonts/LyonText-RegularNo2.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/LyonText-RegularNo2.woff2') format('woff2'),
+        url('./fonts/LyonText-RegularNo2.woff') format('woff'),
+        url('./fonts/LyonText-RegularNo2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LyonText';
+    src: url('./fonts/LyonText-RegularNo2Italic.eot');
+    src: url('./fonts/LyonText-RegularNo2Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/LyonText-RegularNo2Italic.woff2') format('woff2'),
+        url('./fonts/LyonText-RegularNo2Italic.woff') format('woff'),
+        url('./fonts/LyonText-RegularNo2Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
