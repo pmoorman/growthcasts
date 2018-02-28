@@ -3,6 +3,7 @@
 
   width: 100%;
   max-width: 280px;
+  z-index: 20;
 
   @media (min-width: breakpoint('xlarge')) {
     position: fixed;
