@@ -1,3 +1,3 @@
 ---
-layout: consulting
+layout: pages/consulting
 ---

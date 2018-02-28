@@ -4,12 +4,13 @@
   {% include head.html %}
 
   <body>
-
     {% for sales-header in site.sales-header %}
       {{ sales-header }}
     {% endfor %}
 
     <main id="get-started">
+    </div>
+
       <div class="sections" id="intro">
         {% for section in site.intro %}
           <section class="section">
@@ -126,8 +127,25 @@
       {% endfor %}
     </main>
 
+    {% include discount.html %}
+
     {% include footer.html %}
 
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    <!-- Drip -->
+      <script type="text/javascript">
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '3029595';
+
+        (function() {
+          var dc = document.createElement('script');
+          dc.type = 'text/javascript'; dc.async = true;
+          dc.src = '//tag.getdrip.com/3029595.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(dc, s);
+        })();
+      </script>
+    <!-- end Drip -->
   </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: pages/blog
 pagination:
   enabled: true
 ---
