@@ -3,7 +3,6 @@ import Accordion from '../components/accordion'
 import Slider from '../components/slider'
 import Carousel from '../components/testimonials'
 import Modal from '../components/modal'
-import Timer from '../components/timer'
 import ScrollSpy from '../components/scrollspy'
 import SmoothScroll from '../components/smoothscroll'
 
@@ -18,7 +17,6 @@ class App {
     new Slider().init()
     new Carousel().init()
     new Modal().init()
-    new Timer().init()
     new ScrollSpy().init()
     new SmoothScroll().init()
   }
