@@ -18,7 +18,7 @@
 
           <div class="grid__column">
             <header>
-              <p>{{ page.date | date: '%d %B %Y'}}</p>
+              <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
               <h2>{{ page.title }}</h2>
             </header>
             <div class="section__content">
@@ -32,6 +32,8 @@
         {% include share-bar.html direction="horizontal" mobile=true %}
       </article>
     </main>
+
+    {% include banner.html heading="Not ready for a big investment yet?" text="No problem at all. Thousands of marketers have gone through my free email course instead. In 7 lessons you'll learn a ton about growth marketing, and start executing simple strategies yourself" %}
 
     <footer>
       <div class="wrapper container container--medium ta-c">
