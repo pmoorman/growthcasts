@@ -7134,10 +7134,13 @@ class Slider {
   }
 
   setEvents() {
-    const swiper = new Swiper$1(this._swiper, {
+    this._swiperInstance = new Swiper$1(this._swiper, {
       speed: 800,
       spaceBetween: 0,
       loop: true,
+      autoplay: {
+        delay: 20000
+      },
       pagination: {
         el: ".jsSwiperPagination1",
         clickable: true,
@@ -7148,8 +7151,28 @@ class Slider {
                     <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
                   </div>`;
         }
+      },
+      breakpoints: {
+        520: {
+          pagination: {
+            renderBullet: function (index, className) {
+              if (index < 3) {
+                return `<div class="${className}">
+                          <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
+                        </div>`;
+              } else {
+                return "";
+              }
+            }
+          }
+        }
       }
     });
+  }
+
+  limitSlider() {
+    this._swiperInstance.removeSlide([3, 4, 5, 6]);
+    this._swiperInstance.update();
   }
 }
 
@@ -7171,6 +7194,9 @@ class Carousel {
       speed: 800,
       spaceBetween: 300,
       loop: true,
+      autoplay: {
+        delay: 20000
+      },
       pagination: {
         el: ".jsSwiperPagination2",
         clickable: true
@@ -7518,6 +7544,26 @@ class Scroll {
   }
 }
 
+class PostsLoader {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._postsBtn = document.querySelector(".jsLoadMoreBtn");
+    if (!this._postsBtn) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    this._postsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  }
+}
+
 class App {
   constructor() {
     this.components();
@@ -7532,6 +7578,7 @@ class App {
     new DiscountTimer().init();
     new Slider$1().init();
     new Scroll().init();
+    new PostsLoader().init();
   }
 }
 

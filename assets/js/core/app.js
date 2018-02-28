@@ -6,6 +6,7 @@ import Modal from '../components/modal'
 import Timer from '../components/timer'
 import ScrollSpy from '../components/scrollspy'
 import SmoothScroll from '../components/smoothscroll'
+import PostsLoader from '../components/postsLoader'
 
 class App {
   constructor() {
@@ -21,6 +22,7 @@ class App {
     new Timer().init()
     new ScrollSpy().init()
     new SmoothScroll().init()
+    new PostsLoader().init()
   }
 }
 
