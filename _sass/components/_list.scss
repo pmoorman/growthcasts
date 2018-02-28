@@ -1,4 +1,6 @@
 .list {
+  $this: &;
+
   list-style: none;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -61,6 +63,27 @@
         width: 12px;
         background: none;
       }
+    }
+  }
+
+  &--numbers {
+    padding: 0;
+
+    #{$this}__number {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 40px;
+      border: 1px solid lighten(color("light-gray"), 25%);
+      border-radius: 50%;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: color("primary");
+    }
+
+    li:before {
+      content: none;
     }
   }
 
