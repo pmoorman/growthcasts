@@ -36,19 +36,29 @@
 
   &__info {
     position: absolute;
-    bottom: 0;
-    right: -150px;
+    bottom: 70px;
+    right: -70px;
     text-transform: none;
     cursor: default;
+
+    @media (min-width: breakpoint("small")) {
+      bottom: 0;
+      right: -150px;
+    }
   }
 
   &__info-icon {
     position: absolute;
     right: -30px;
-    bottom: -10px;
+    bottom: 20px;
     width: 10px;
-    transform: rotate(90deg);
+    transform: rotate(40deg);
     cursor: default;
+
+    @media (min-width: breakpoint("small")) {
+      bottom: -10px;
+      transform: rotate(90deg);
+    }
   }
 
   &--primary {
