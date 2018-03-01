@@ -1,7 +1,11 @@
 .handwriting {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.5;
   font-family: $font-family-secondary;
+
+  @media (min-width: breakpoint("medium")) {
+    font-size: 28px;
+  }
 
   &--primary {
     color: darken(color('primary'), 15%);
@@ -13,6 +17,6 @@
   }
 
   &--small {
-    font-size: 20px;
+    font-size: 22px;
   }
 }

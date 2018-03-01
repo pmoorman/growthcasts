@@ -1,19 +1,21 @@
 <div class="container container--xlarge">
   <div class="banner card card--secondary">
     <div class="banner__content">
-      <h3 class="h2 c--white">{{ include.heading }}</h3>
+      <h3 class="banner__heading h2 c--white">{{ include.heading }}</h3>
 
       <p>{{ include.text }}</p>
 
       <a class="button button--white button--rounded" href="#">
         Get it now
+        
         <span class="button__icon">
           {% include_absolute icons/shopping-basket-white.svg %}
         </span>
+
         <span class="button__info handwriting handwriting--small handwriting--light">It's FREE</span>
+
         <span class="button__info-icon">
           {% include_absolute icons/module-arrow.svg %}
-          <!-- <img src="{{ "./icons/arrow-down.svg" | relative_url }}" alt=""> -->
         </span>
       </a>
     </div>

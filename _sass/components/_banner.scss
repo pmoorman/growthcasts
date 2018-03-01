@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: 40%;
+  margin-top: 2rem;
   margin-bottom: -10rem;
   text-align: left;
 
@@ -16,6 +17,18 @@
 
     & > * + * {
       margin-top: 2rem;
+    }
+  }
+
+  &__heading {
+    font-size: 24px;
+
+    @media (min-width: breakpoint('large')) {
+      font-size: 30px;
+    }
+
+    @media (min-width: breakpoint('xlarge')) {
+      font-size: 36px;
     }
   }
 }

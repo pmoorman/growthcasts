@@ -10,7 +10,11 @@
   }
 
   &--lower {
-    padding-top: 6rem;
+    padding-top: 7rem;
+
+    @media (min-width: breakpoint("medium")) {
+      padding-top: 4rem;
+    }
   }
 
   &--light {

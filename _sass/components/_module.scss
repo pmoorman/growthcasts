@@ -156,13 +156,19 @@
     }
 
     &-quote {
-      padding: 0 1rem;
       font-family: $font-family-headings;
+      font-size: 21px;
       font-style: italic;
       line-height: 1.6;
 
       @media (min-width: breakpoint('large')) {
-        padding: 0 4rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        font-size: 24px;
+      }
+
+      @media (min-width: breakpoint('xlarge')) {
+        font-size: 30px;
       }
     }
 

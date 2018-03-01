@@ -3,9 +3,13 @@
 
   &__header {
     position: absolute;
-    bottom: 4rem;
+    bottom: 2rem;
     left: 0;
     width: 100%;
+
+    @media (min-width: breakpoint("medium")) {
+      bottom: 4rem;
+    }
 
     &--static {
       position: static;
@@ -21,6 +25,7 @@
 
   &__heading {
     margin-top: 0;
+    padding-right: 2rem;
   }
 
   &__button {

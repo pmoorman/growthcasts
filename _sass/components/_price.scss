@@ -5,15 +5,14 @@
   padding: 0;
 
   &__header {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     padding-bottom: 1rem;
     background: color('primary');
     border-radius: 0.3rem 0.3rem 0 0 ;
     color: #fff;
 
     @media (min-width: breakpoint("medium")) {
-      padding-right: 4rem;
-      padding-left: 4rem;
+      padding: 4rem;
     }
 
     &--secondary {
@@ -28,7 +27,7 @@
   }
 
   &__content {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 
     @media (min-width: breakpoint("small")) {
       padding-right: 3rem;

@@ -1,5 +1,9 @@
 .faq {
-  padding-top: 10rem;
+  padding-top: 12rem;
+
+  @media (min-width: breakpoint('medium')) {
+    padding-top: 10rem;
+  }
 
   &__column {
     min-width: 50%;
