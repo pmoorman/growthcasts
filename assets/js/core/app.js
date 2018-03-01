@@ -5,6 +5,7 @@ import Carousel from '../components/testimonials'
 import Modal from '../components/modal'
 import ScrollSpy from '../components/scrollspy'
 import SmoothScroll from '../components/smoothscroll'
+import PostsLoader from '../components/postsLoader'
 
 class App {
   constructor() {
@@ -19,6 +20,7 @@ class App {
     new Modal().init()
     new ScrollSpy().init()
     new SmoothScroll().init()
+    new PostsLoader().init()
   }
 }
 

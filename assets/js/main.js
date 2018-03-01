@@ -7133,14 +7133,18 @@ class Slider {
     return true;
   }
 
-  setEvents() {
-    const swiper = new Swiper$1(this._swiper, {
+  setCarousel() {
+    this._swiperInstance = new Swiper$1(this._swiper, {
       speed: 800,
       spaceBetween: 0,
       loop: true,
+      autoplay: {
+        delay: 20000
+      },
       pagination: {
         el: ".jsSwiperPagination1",
         clickable: true,
+        slideClass: "swiper-slide",
         bulletClass: "slider__switch",
         bulletActiveClass: "slider__switch--active",
         renderBullet: function (index, className) {
@@ -7148,6 +7152,26 @@ class Slider {
                     <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
                   </div>`;
         }
+      }
+    });
+  }
+
+  destroyCarousel() {
+    this._swiperInstance.destroy();
+    delete this._swiperInstance;
+  }
+
+  setEvents() {
+    if (window.innerWidth > 520) {
+      this.setCarousel();
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 520 && typeof this._swiperInstance == "object") {
+        console.log(this._swiperInstance.pagination);
+        this.destroyCarousel();
+      } else if (window.innerWidth > 520 && typeof this._swiperInstance != 'object') {
+        this.setCarousel();
       }
     });
   }
@@ -7460,6 +7484,26 @@ class Scroll {
   }
 }
 
+class PostsLoader {
+  init() {
+    if (!this.setVars()) return;
+    this.setEvents();
+  }
+
+  setVars() {
+    this._postsBtn = document.querySelector(".jsLoadMoreBtn");
+    if (!this._postsBtn) return false;
+
+    return true;
+  }
+
+  setEvents() {
+    this._postsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  }
+}
+
 class App {
   constructor() {
     this.components();
@@ -7473,6 +7517,7 @@ class App {
     new Modal().init();
     new Slider$1().init();
     new Scroll().init();
+    new PostsLoader().init();
   }
 }
 

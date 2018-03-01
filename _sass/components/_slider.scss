@@ -4,12 +4,19 @@
   margin-top: 6rem;
 
   &__wrapper {
-    padding-bottom: 5rem;
+    @media (min-width: 520px) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__pagination {
     position: relative;
     height: 50px;
+    display: none;
+
+    @media (min-width: 520px) {
+      display: flex;
+    }
 
     @media (min-width: breakpoint('medium')) {
       padding-left: 2rem;
