@@ -31,4 +31,10 @@
       background-image: url(./images/underlines/underline2.svg);
     }
   }
+
+  &--block {
+    @media (min-width: breakpoint('large')) {
+      display: block;
+    }
+  }
 }
