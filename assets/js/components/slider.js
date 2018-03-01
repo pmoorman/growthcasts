@@ -13,7 +13,7 @@ export default class Slider {
     return true
   }
 
-  setEvents() {
+  setCarousel() {
     this._swiperInstance = new Swiper(this._swiper, {
       speed: 800,
       spaceBetween: 0,
@@ -24,6 +24,7 @@ export default class Slider {
       pagination: {
         el: ".jsSwiperPagination1",
         clickable: true,
+        slideClass: "swiper-slide",
         bulletClass: "slider__switch",
         bulletActiveClass: "slider__switch--active",
         renderBullet: function (index, className) {
@@ -31,27 +32,27 @@ export default class Slider {
                     <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
                   </div>`
         }
-      },
-      breakpoints: {
-        520: {
-          pagination: {
-            renderBullet: function (index, className) {
-              if (index < 3 ) {
-                return `<div class="${className}">
-                          <img class="image" src="./assets/images/logos/${index + 1}.png" alt="">
-                        </div>`
-              } else {
-                return ""
-              }
-            }
-          }
-        }
       }
     })
   }
 
-  limitSlider() {
-    this._swiperInstance.removeSlide([3, 4, 5, 6])
-    this._swiperInstance.update()
+  destroyCarousel() {
+    this._swiperInstance.destroy()
+    delete this._swiperInstance
+  }
+
+  setEvents() {
+    if (window.innerWidth > 520) {
+      this.setCarousel()
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 520 && typeof this._swiperInstance == "object") {
+        console.log(this._swiperInstance.pagination)
+        this.destroyCarousel()
+      } else if (window.innerWidth > 520 && typeof this._swiperInstance != 'object') {
+        this.setCarousel()
+      }
+    })
   }
 }
