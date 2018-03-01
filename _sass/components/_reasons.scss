@@ -1,0 +1,10 @@
+.reasons {
+  & > * + * {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    max-width: 500px;
+    text-transform: none;
+  }
+}

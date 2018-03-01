@@ -34,8 +34,8 @@
               {% endif %}
 
               {% if page.form %}
-                <form>
-                  <div class="grid">
+                <form class="form">
+                  <div class="form__content grid grid--center grid--middle">
                     <div class="grid__column">
                       <div class="form-group">
                         <label class="form-group__label" for="email">Email</label>
@@ -56,9 +56,9 @@
               {% endif %}
 
               {% if page.reasons %}
-                <div>
+                <div class="reasons">
                   {% for reason in page.reasons %}
-                  <a class="button button--white button--rounded button--expanded" href="#">
+                  <a class="reasons__item button button--white button--rounded button--expanded button--gray-shadow" href="#">
                     <span class="c--secondary">{{ reason }}</span>
                     <span class="button__icon">
                       {% include_absolute icons/arrow-down.svg %}

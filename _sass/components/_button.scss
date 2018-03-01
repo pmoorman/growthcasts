@@ -91,6 +91,10 @@
     box-shadow: 0 1rem 1rem rgba(0, 100, 191, .1);
   }
 
+  &--gray-shadow {
+    box-shadow: 0 1rem 1rem rgba(27, 33, 55, .1);
+  }
+
   &--rounded {
     border-radius: 2rem;
   }
