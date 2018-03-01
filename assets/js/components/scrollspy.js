@@ -15,11 +15,11 @@ export default class Slider {
 
   setEvents() {
     Gumshoe.init({
-    selector: ".jsMenu > ul > li > a",
-    selectorHeader: "jsMenu",
-    container: window,
-    offset: 0,
-    activeClass: "sales-nav__link--active",
-});
+      selector: ".jsMenu > ul > li > a",
+      selectorHeader: "jsMenu",
+      container: window,
+      offset: 0,
+      activeClass: "sales-nav__link--active",
+    });
   }
 }

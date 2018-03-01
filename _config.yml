@@ -43,12 +43,6 @@ collections:
   - consulting-offers
   - videos
 
-pagination:
-  enabled: true
-  per_page: 3
-  indexpage: blog
-  permalink: "/blog/:num"
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
