@@ -10,9 +10,17 @@
     }
   }
 
-  &--lower {
+  &--home {
     @media (min-width: breakpoint('medium')) {
       margin-bottom: -9rem;
+    }
+  }
+
+  &--consulting {
+    margin-bottom: -6rem;
+    
+    @media (min-width: breakpoint('medium')) {
+      margin-bottom: -12rem;
     }
   }
 }

@@ -42,6 +42,8 @@
   }
 
   &--first {
-    padding-top: 10rem;
+    @media (min-width: breakpoint('medium')) {
+      padding-top: 10rem;
+    }
   }
 }

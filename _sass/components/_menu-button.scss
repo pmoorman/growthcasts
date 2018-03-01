@@ -51,7 +51,11 @@
   }
 
   &--top {
-    top: 2.5rem;
+    top: 1.6rem;
+
+    @media (min-width: breakpoint('medium')) {
+      top: 2.5rem;
+    }
   }
 
   &--bottom {
