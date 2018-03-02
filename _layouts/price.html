@@ -3,15 +3,7 @@
     <h3 class="price__heading heading ta-c tt-u h5">{{ page.heading }}</h3>
   {% endif %}
 
-  <div class="ta-c">
-    {% if page.current_price %}
-      <p class="price__current-price paragraph">{{ page.current_price }}</p>
-    {% endif %}
-
-    {% if page.old_price %}
-      <p class="price__old-price paragraph h2">{{ page.old_price }}</p>
-    {% endif %}
-  </div>
+  <div class="ta-c" data-placeholder="{% if page.core_version %}pricetable2{% else %}pricetable{% endif %}"></div>
 </header>
 
 <div class="price__content">
@@ -31,13 +23,5 @@
     {% endfor %}
   </ul>
 
-  <a class="price__button button button--primary button--rounded button--shadow button--expanded" href="{% if page.core_version %}https://gum.co/elitecore{% else %}https://gum.co/elitepro{% endif %}">
-    <span>Get it now</span>
-    <div class="grid grid--gapeless grid--middle">
-      <span>${{ page.current_price }}</span>
-      <span class="button__icon">
-        {% include_absolute icons/shopping-basket.svg %}
-      </span>
-    </div>
-  </a>
+  <div data-placeholder="{% if page.core_version %}price_button2{% else %}price_button{% endif %}"></div>
 </div>
