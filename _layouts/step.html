@@ -34,17 +34,17 @@
               {% endif %}
 
               {% if page.form %}
-                <form class="form">
+                <form class="form" action="https://www.getdrip.com/forms/26459209/submissions" method="post" data-drip-embedded-form="26459209">
                   <div class="form__content grid grid--center grid--middle">
                     <div class="grid__column">
                       <div class="form-group">
                         <label class="form-group__label" for="email">Email</label>
-                        <input class="form-group__input" type="email" name="email" id="email" placeholder="pieter@growthcasts.co">
+                        <input class="form-group__input" type="email" name="fields[email]" id="email" placeholder="pieter@growthcasts.co">
                       </div>
                     </div>
 
                     <div class="grid__colummn">
-                      <button type="submit" class="button button--primary button--rounded button--shadow">
+                      <button type="submit" class="button button--primary button--rounded button--shadow"  data-drip-attribute="sign-up-button">
                         Join the course
                         <span class="button__icon">
                           {% include_absolute icons/arrow-down.svg %}

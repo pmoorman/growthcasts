@@ -7,7 +7,7 @@ window.drip_plinko = function(drip, page) {
   timer_end_date = drip.custom_fields().timer_end_date
 
 
-  if (typeof timer_end_date !== 'undefined') {
+  if (typeof timer_end_date !== 'undefined' && timer !== null) {
     var time = getTime(timer_end_date),
         days = time.days,
         hours = time.hours,
