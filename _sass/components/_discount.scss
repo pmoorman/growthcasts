@@ -6,9 +6,9 @@
   margin: 0;
   padding: 2rem;
   z-index: 10;
-  display: none;
   background: color(white);
   box-shadow: 0 2rem 5rem rgba(42, 42, 72, .1);
+  display: none;
 
   @media(min-width: breakpoint('xxlarge')) {
     display: block;

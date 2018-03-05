@@ -14,7 +14,7 @@ window.drip_plinko = function(drip, page) {
         minutes = time.minutes,
         seconds = time.seconds
 
-    time.total <= 0 ? timer.classList.add('discount--hidden') : null
+    time.total <= 0 ? timer.classList.add('discount--hidden') : timer.classList.remove('discount--hidden')
 
     var interval = setInterval(() => {
         if(time.total <= 0){
