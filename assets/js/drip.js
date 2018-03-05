@@ -2,12 +2,10 @@ window._drip_pro = new DripPro
 
 //////////// VANAF HIER TOT EINDE DRIP PLINKO DE CODE INPLAKKEN////////////////
 window.drip_plinko = function(drip, page) {
-  var response = {}
-  var timer_end_date = drip.custom_fields().timer_end_date
+  var response = {},
+  timer = document.querySelector('.jsDiscount'),
+  timer_end_date = drip.custom_fields().timer_end_date
 
-  setTimeout(function() {
-    updateTimer()
-  }, 500)
 
   if (typeof timer_end_date !== 'undefined') {
     var time = getTime(timer_end_date),
@@ -16,9 +14,12 @@ window.drip_plinko = function(drip, page) {
         minutes = time.minutes,
         seconds = time.seconds
 
+    time.total <= 0 ? timer.classList.add('discount--hidden') : null
+
     var interval = setInterval(() => {
-        if(time.total < 0){
-          // end
+        if(time.total <= 0){
+          clearInterval(interval)
+          timer.classList.add('discount--hidden')
         } else {
           time = getTime(timer_end_date)
           updateTimer()
@@ -27,14 +28,14 @@ window.drip_plinko = function(drip, page) {
   }
 
   function updateTimer() {
-    var seconds0 = document.querySelector('[data-timer="seconds0"]')
-    var seconds1 = document.querySelector('[data-timer="seconds1"]')
-    var minutes0 = document.querySelector('[data-timer="minutes0"]')
-    var minutes1 = document.querySelector('[data-timer="minutes1"]')
-    var hours0 = document.querySelector('[data-timer="hours0"]')
-    var hours1 = document.querySelector('[data-timer="hours1"]')
-    var days0 = document.querySelector('[data-timer="days0"]')
-    var days1 = document.querySelector('[data-timer="days1"]')
+    var seconds0 = document.querySelector('[data-timer="seconds0"]'),
+        seconds1 = document.querySelector('[data-timer="seconds1"]'),
+        minutes0 = document.querySelector('[data-timer="minutes0"]'),
+        minutes1 = document.querySelector('[data-timer="minutes1"]'),
+        hours0 = document.querySelector('[data-timer="hours0"]'),
+        hours1 = document.querySelector('[data-timer="hours1"]'),
+        days0 = document.querySelector('[data-timer="days0"]'),
+        days1 = document.querySelector('[data-timer="days1"]')
 
     seconds0.innerText = time.seconds[0]
     seconds1.innerText = time.seconds[1]
@@ -46,39 +47,37 @@ window.drip_plinko = function(drip, page) {
     days1.innerText = time.days[1]
   }
 
-  var discount_template = `<div class="discount card card--white">
-                            <div class="container container--xxlarge">
-                              <div class="grid grid--justify grid--middle grid--stackable grid--gapeless">
-                                <div class="grid__column">
-                                  <p class="heading h3">25% Discount on Growthcasts Elite</p>
-                                </div>
+  var discount_template = `<div class="container container--xxlarge">
+                            <div class="grid grid--justify grid--middle grid--stackable grid--gapeless">
+                              <div class="grid__column">
+                                <p class="heading h3">25% Discount on Growthcasts Elite</p>
+                              </div>
 
-                                <div class="grid__column">
-                                  <div class="grid grid--center grid--middle">
-                                    <div class="timer grid__column">
-                                      <div class="jsTimer">
-                                        <span class="timer__item" data-timer="days0">0</span>
-                                        <span class="timer__item" data-timer="days1">0</span> :
-                                        <span class="timer__item" data-timer="hours0">0</span>
-                                        <span class="timer__item" data-timer="hours1">0</span> :
-                                        <span class="timer__item" data-timer="minutes0">0</span>
-                                        <span class="timer__item" data-timer="minutes1">0</span> :
-                                        <span class="timer__item" data-timer="seconds0">0</span>
-                                        <span class="timer__item" data-timer="seconds1">0</span>
+                              <div class="grid__column">
+                                <div class="grid grid--center grid--middle">
+                                  <div class="timer grid__column">
+                                    <div class="jsTimer">
+                                      <span class="timer__item" data-timer="days0">0</span>
+                                      <span class="timer__item" data-timer="days1">0</span> :
+                                      <span class="timer__item" data-timer="hours0">0</span>
+                                      <span class="timer__item" data-timer="hours1">0</span> :
+                                      <span class="timer__item" data-timer="minutes0">0</span>
+                                      <span class="timer__item" data-timer="minutes1">0</span> :
+                                      <span class="timer__item" data-timer="seconds0">0</span>
+                                      <span class="timer__item" data-timer="seconds1">0</span>
+                                    </div>
+                                  </div>
+                                  <div class="grid__column">
+                                    <a class="discount__button button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
+                                      <span>Get it now</span>
+                                      <div class="grid grid--gapeless grid--middle">
+                                        <span>$187</span>
+
+                                        <span class="button__icon">
+                                          <img src="icons/shopping-basket.svg" alt="">
+                                        </span>
                                       </div>
-                                    </div>
-                                    <div class="grid__column">
-                                      <a class="discount__button button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
-                                        <span>Get it now</span>
-                                        <div class="grid grid--gapeless grid--middle">
-                                          <span>$187</span>
-
-                                          <span class="button__icon">
-                                            <img src="icons/shopping-basket.svg" alt="">
-                                          </span>
-                                        </div>
-                                      </a>
-                                    </div>
+                                    </a>
                                   </div>
                                 </div>
                               </div>
