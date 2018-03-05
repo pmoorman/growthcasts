@@ -8,7 +8,7 @@
   z-index: 10;
   display: none;
 
-  @media(min-width: breakpoint('xlarge')) {
+  @media(min-width: breakpoint('xxlarge')) {
     display: block;
   }
 }

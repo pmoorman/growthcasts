@@ -5,15 +5,50 @@ window.drip_plinko = function(drip, page) {
   var response = {}
   var timer_end_date = drip.custom_fields().timer_end_date
 
+  setTimeout(function() {
+    updateTimer()
+  }, 500)
+
   if (typeof timer_end_date !== 'undefined') {
-    var time = setTimer(timer_end_date),
-    days = ("0" + time.days.toString()).split('').slice(-2),
-    hours = ("0" + time.hours.toString()).split('').slice(-2)
+    var time = getTime(timer_end_date),
+        days = time.days,
+        hours = time.hours,
+        minutes = time.minutes,
+        seconds = time.seconds
+
+    var interval = setInterval(() => {
+        if(time.total < 0){
+          // end
+        } else {
+          time = getTime(timer_end_date)
+          updateTimer()
+        }
+    }, 1000)
   }
 
-  var discount_template = `<div class="discount card card--white jsDiscountBar">
-                            <div class="container container--xlarge">
-                              <div class="grid grid--justify grid--middle grid--stackable">
+  function updateTimer() {
+    var seconds0 = document.querySelector('[data-timer="seconds0"]')
+    var seconds1 = document.querySelector('[data-timer="seconds1"]')
+    var minutes0 = document.querySelector('[data-timer="minutes0"]')
+    var minutes1 = document.querySelector('[data-timer="minutes1"]')
+    var hours0 = document.querySelector('[data-timer="hours0"]')
+    var hours1 = document.querySelector('[data-timer="hours1"]')
+    var days0 = document.querySelector('[data-timer="days0"]')
+    var days1 = document.querySelector('[data-timer="days1"]')
+
+    seconds0.innerText = time.seconds[0]
+    seconds1.innerText = time.seconds[1]
+    minutes0.innerText = time.minutes[0]
+    minutes1.innerText = time.minutes[1]
+    hours0.innerText = time.hours[0]
+    hours1.innerText = time.hours[1]
+    days0.innerText = time.days[0]
+    days1.innerText = time.days[1]
+  }
+
+  var discount_template = `<div class="discount card card--white">
+                            <div class="container container--xxlarge">
+                              <div class="grid grid--justify grid--middle grid--stackable grid--gapeless">
                                 <div class="grid__column">
                                   <p class="heading h3">10% Discount on Growthcasts Elite</p>
                                 </div>
@@ -22,14 +57,18 @@ window.drip_plinko = function(drip, page) {
                                   <div class="grid grid--center grid--middle">
                                     <div class="timer grid__column">
                                       <div class="jsTimer">
-                                        <span class="timer__item">${days[0]}</span>
-                                        <span class="timer__item">${days[1]}</span> :
-                                        <span class="timer__item">${hours[0]}</span>
-                                        <span class="timer__item">${hours[1]}</span>
+                                        <span class="timer__item" data-timer="days0">0</span>
+                                        <span class="timer__item" data-timer="days1">0</span> :
+                                        <span class="timer__item" data-timer="hours0">0</span>
+                                        <span class="timer__item" data-timer="hours1">0</span> :
+                                        <span class="timer__item" data-timer="minutes0">0</span>
+                                        <span class="timer__item" data-timer="minutes1">0</span> :
+                                        <span class="timer__item" data-timer="seconds0">0</span>
+                                        <span class="timer__item" data-timer="seconds1">0</span>
                                       </div>
                                     </div>
                                     <div class="grid__column">
-                                      <a class="discount__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
+                                      <a class="discount__button button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
                                         <span>Get it now</span>
                                         <div class="grid grid--gapeless grid--middle">
                                           <span>$187</span>
@@ -197,159 +236,7 @@ window.drip_plinko = function(drip, page) {
         }
       }
   }
-  else if (drip.has_tag('24 hours before expire')){
-
-      if (drip.has_tag('business starter')){
-        response = {
-          // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
-                          <span>Get it now</span>
-                          <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
-                          </div>
-                        </a>`,
-          // Core
-          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
-                            <span>Get it now</span>
-                            <div class="grid grid--gapeless grid--middle">
-                              <span>$177</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
-                            </div>
-                          </a>`,
-          // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <b>$187</b></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
-                            Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
-                          </a>`,
-          // Discount
-          discount: discount_template
-        }
-      }
-     else if (drip.has_tag('tag business owner')){
-        response = {
-          // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
-                          <span>Get it now</span>
-                          <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
-                          </div>
-                        </a>`,
-          // Core
-          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
-                            <span>Get it now</span>
-                            <div class="grid grid--gapeless grid--middle">
-                              <span>$177</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
-                            </div>
-                          </a>`,
-          // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <b>$187</b></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
-                            Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
-                          </a>`,
-          // Discount
-          discount: discount_template
-        }
-      }
-      else if (drip.has_tag('tag consultant')){
-        response = {
-          // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
-                          <span>Get it now</span>
-                          <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
-                          </div>
-                        </a>`,
-          // Core
-          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
-                            <span>Get it now</span>
-                            <div class="grid grid--gapeless grid--middle">
-                              <span>$177</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
-                            </div>
-                          </a>`,
-          // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <b>$187</b></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
-                            Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
-                          </a>`,
-          // Discount
-          discount: discount_template
-        }
-      }
-      else {
-        response = {
-          // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
-                          <span>Get it now</span>
-                          <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
-                          </div>
-                        </a>`,
-          // Core
-          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
-                            <span>Get it now</span>
-                            <div class="grid grid--gapeless grid--middle">
-                              <span>$177</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
-                            </div>
-                          </a>`,
-          // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <b>$187</b></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
-                            Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
-                          </a>`,
-          // Discount
-          discount: discount_template
-        }
-      }
-  }
   else {
-
       if (drip.has_tag('business starter')){
         response = {
           // PRO
@@ -678,16 +565,19 @@ jQuery(function(){
   })
 })
 
-function setTimer(date) {
-  var t = Date.parse(date) - Date.parse(new Date());
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+function getTime(date) {
+  var total = Date.parse(date) - Date.parse(new Date())
+
+  let seconds = Math.floor( (total / 1000) % 60 )
+  var minutes = Math.floor((total / 1000 / 60) % 60)
+  var hours = Math.floor((total / (1000 * 60 * 60)) % 24)
+  var days = Math.floor(total / (1000 * 60 * 60 * 24))
 
   return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes
-  };
+    'total': total,
+    'days': ("0" + days.toString()).split('').slice(-2),
+    'hours': ("0" + hours.toString()).split('').slice(-2),
+    'minutes': ("0" + minutes.toString()).split('').slice(-2),
+    'seconds': ("0" + seconds.toString()).split('').slice(-2)
+  }
 }
