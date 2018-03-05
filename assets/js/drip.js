@@ -50,7 +50,7 @@ window.drip_plinko = function(drip, page) {
                             <div class="container container--xxlarge">
                               <div class="grid grid--justify grid--middle grid--stackable grid--gapeless">
                                 <div class="grid__column">
-                                  <p class="heading h3">10% Discount on Growthcasts Elite</p>
+                                  <p class="heading h3">25% Discount on Growthcasts Elite</p>
                                 </div>
 
                                 <div class="grid__column">
