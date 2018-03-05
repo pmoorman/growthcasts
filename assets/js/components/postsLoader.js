@@ -6,10 +6,11 @@ export default class PostsLoader {
 
   setVars() {
     this._postsBtn = document.querySelector(".jsLoadMoreBtn")
+    if (!this._postsBtn) return false
+
     this._postsList = document.querySelector(".jsPostsList").children
     this._maxVisiblePosts = 3
     this._postsNumber = this._postsList.length
-    if (!this._postsBtn) return false
 
     return true
   }
