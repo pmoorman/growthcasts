@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body>
-
     {% include blog-header.html %}
 
     <main>
@@ -18,9 +17,15 @@
 
           <div class="grid__column">
             <header>
-              <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
-              <h2>{{ page.title }}</h2>
+              {% if page.date %}
+                <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
+              {% endif %}
+
+              {% if page.title %}
+                <h2>{{ page.title }}</h2>
+              {% endif %}
             </header>
+            
             <div class="section__content">
               {{ content }}
             </div>

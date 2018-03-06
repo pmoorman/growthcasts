@@ -3,17 +3,19 @@
     <li class="nav__item">
       <a class="nav__link {% if page.url == "/" %}nav__link--active{% endif %}" href="{{ site.url }}">Home</a>
     </li>
+    
     <li class="nav__item">
       <a class="nav__link {% if page.url == "/consulting.html" %}nav__link--active{% endif %}" href="/consulting">About & Consulting</a>
     </li>
+
     <li class="nav__item">
       <a class="nav__link {% if page.url == "/blog.html" %}nav__link--active{% endif %}" href="/blog">Blog</a>
     </li>
 
     {% if include.contact_link %}
-    <li class="nav__item">
-      <a class="nav__link c--primary" href="mailto:{{ site.email }}">Contact with me</a>
-    </li>
+      <li class="nav__item">
+        <a class="nav__link c--primary" href="mailto:{{ site.email }}">Contact with me</a>
+      </li>
     {% endif %}
   </ul>
 </nav>

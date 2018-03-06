@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
 
   <body>
-
     {% include blog-header.html %}
 
     <main>
@@ -12,9 +10,13 @@
         {% for post in site.posts %}
           <article class="post">
             <header>
-              <p class="date">{{ post.date | date: '%d %B %Y'}}</p>
+              {% if post.date %}
+                <p class="date">{{ post.date | date: '%d %B %Y'}}</p>
+              {% endif %}
 
-              <h2>{{ post.title }}</h2>
+              {% if post.title %}
+                <h2>{{ post.title }}</h2>
+              {% endif %}
             </header>
             <div>
               {{ post.content | truncatewords: 106, "" }}

@@ -4,7 +4,6 @@
 
 {% for question in page.faq %}
   {% for item in question %}
-
     <div class="card card--white card--small accordion jsAccordion">
       <div class="grid grid--gapeless grid--justify grid--middle accordion__head jsAccordionHead">
         <h4 class="faq__question heading h5">{{ item[0] }}</h4>
@@ -13,10 +12,10 @@
           {% include_absolute icons/chevron-down.svg %}
         </span>
       </div>
+      
       <div class="accordion__content jsAccordionContent">
         <p class="accordion__text paragraph jsAccordionTxt">{{ item[1] }}</p>
       </div>
     </div>
-
   {% endfor %}
 {% endfor %}

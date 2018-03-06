@@ -1,7 +1,13 @@
 <div class="wrapper container container--medium ta-c">
-  <h2 class="heading h1">{{ page.heading }}</h2>
+  {% if page.heading %}
+    <h2 class="heading h1">{{ page.heading }}</h2>
+  {% endif %}
 
-  <p>{{ page.text }}</p>
+  {% if page.text %}
+    <p>{{ page.text }}</p>
+  {% endif %}
 
-  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  {% if site.email %}
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  {% endif %}
 </div>

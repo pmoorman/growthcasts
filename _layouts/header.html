@@ -3,6 +3,7 @@
     <a class="logo" href="{{ site.url }}">
       {% include_absolute logo/Growthcasts.svg %}
     </a>
+
     <div class="grid grid--middle grid--stackable grid--justify">
       {% if page.image %}
       <div class="grid__column">
@@ -12,30 +13,30 @@
 
       <div class="grid__column header__content">
         {% if page.heading %}
-        <h1 class="heading">{{ page.heading }}</h1>
+          <h1 class="heading">{{ page.heading }}</h1>
         {% endif %}
 
         {% if page.text %}
-        <p class="paragraph">{{ page.text }}</p>
+          <p class="paragraph">{{ page.text }}</p>
         {% endif %}
 
         {% if page.button_text %}
-        <a class="button button--primary button--rounded button--shadow jsScrollDownBtn" href="#get-started">
-          {{ page.button_text }}
-          <span class="button__icon">
-            {% include_absolute icons/arrow-down.svg %}
-          </span>
-        </a>
+          <a class="button button--primary button--rounded button--shadow jsScrollDownBtn" href="#get-started">
+            {{ page.button_text }}
+            <span class="button__icon">
+              {% include_absolute icons/arrow-down.svg %}
+            </span>
+          </a>
         {% endif %}
       </div>
     </div>
 
     {% if page.sales-nav %}
-    <button class="menu-button menu-button--primary menu-button--bottom button jsMenuBtn">
-      <span class="menu-button__item"></span>
-      <span class="menu-button__item"></span>
-      <span class="menu-button__item"></span>
-    </button>
+      <button class="menu-button menu-button--primary menu-button--bottom button jsMenuBtn">
+        <span class="menu-button__item"></span>
+        <span class="menu-button__item"></span>
+        <span class="menu-button__item"></span>
+      </button>
     {% endif %}
   </div>
 

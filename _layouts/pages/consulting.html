@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
 
   <body>
-
     {% include consulting-header.html %}
 
     <main>
@@ -49,9 +47,9 @@
                   <div class="section section--small">
                     <h3 class="h4">{{ offer.heading }}</h3>
 
-                    <p>{{ offer.content }}</p>
+                    {{ offer.content }}
 
-                    <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="#">{{ offer.footer_link }}</a></p>
+                    <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="mailto:{{ site.email }}">{{ offer.footer_link }}</a></p>
                   </div>
                 {% endfor %}
               </div>

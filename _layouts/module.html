@@ -110,6 +110,7 @@
       <div class="module__learn grid__column accordion jsAccordion">
         <div class="grid grid--gapeless grid--justify grid--middle accordion__head jsAccordionHead">
           <h3>What you'll learn</h3>
+
           <span class="accordion__icon">
             {% include_absolute icons/chevron-down.svg %}
           </span>
@@ -126,19 +127,22 @@
     {% if page.quote %}
       <div class="module__testimonial card card--white">
         <p class="module__testimonial-quote ta-c c--secondary">{{ page.quote }}</p>
+        
         <div class="module__testimonial-author grid grid--middle grid--center grid--gapeless grid--stackable">
-            {% if page.author_img %}
-              <img class="module__testimonial-img image" src="{{ "./assets/images/" | append: page.author_img }}" alt="">
-            {% endif %}
+          {% if page.author_img %}
+            <img class="module__testimonial-img image" src="{{ "./assets/images/" | append: page.author_img }}" alt="">
+          {% endif %}
 
-            {% if page.author %}
-              <span class="c--secondary t--bold">{{ page.author }}, </span>
-              <span>{{ page.author_desc }}</span>
-            {% endif %}
+          {% if page.author %}
+            <span class="c--secondary t--bold">{{ page.author }}, </span>
+
+            <span>{{ page.author_desc }}</span>
+          {% endif %}
         </div>
 
         <div class="module__testimonial-text">
           <p class="handwriting handwriting--small handwriting--light">Check what our client say about that module!</p>
+
           <span class="module__testimonial-arrow">
             {% include_absolute icons/module-arrow.svg %}
           </span>

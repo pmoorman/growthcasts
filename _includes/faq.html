@@ -3,7 +3,9 @@
 
   <p>These are the questions people ask me all the time. If you ever have any other question, you can easily reach me. Simply send me an email, and I'll generally get back within 24 hours:</p>
 
-  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  {% if site.email %}
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  {% endif %}
 </div>
 
 <div class="wrapper container container--xlarge">

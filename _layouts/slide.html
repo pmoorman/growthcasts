@@ -8,8 +8,12 @@
       {{ content }}
     </div>
 
-    <b><span class="slide__author c--black"> {{ page.author }} </span></b>
+    {% if page.author %}
+      <span class="slide__author c--black t--bold"> {{ page.author }} </span>
+    {% endif %}
 
-    <span class="slide__author-position">{{ page.position }}</span>
+    {% if page.position %}
+      <span class="slide__author-position">{{ page.position }}</span>
+    {% endif %}
   </div>
 </div>
