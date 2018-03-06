@@ -5,53 +5,54 @@
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% feed_meta %}
+  
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
   <script src="https://gumroad.com/js/gumroad.js"></script>
 
-    <!-- <script type="text/javascript">
-      window.mp = ['Viewed Test Page']
-    </script> -->
+  <!-- <script type="text/javascript">
+    window.mp = ['Viewed Test Page']
+  </script> -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <!-- <script type="text/javascript" src="example-inc/modal.js"></script> -->
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/growthcasts/squarespace-drip/drip_pro.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <!-- <script type="text/javascript" src="example-inc/modal.js"></script> -->
+  <script src="https://s3-us-west-2.amazonaws.com/growthcasts/squarespace-drip/drip_pro.js"></script>
 
-    <!-- Drip -->
-      <script type="text/javascript">
-        var _dcq = _dcq || [];
-        var _dcs = _dcs || {};
-        _dcs.account = '3029595';
-
-        (function() {
-          var dc = document.createElement('script');
-          dc.type = 'text/javascript'; dc.async = true;
-          dc.src = '//tag.getdrip.com/3029595.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(dc, s);
-        })();
-
-      </script>
-    <!-- end Drip -->
-
-    <script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
-
-    <!-- Facebook Pixel Code -->
+  <!-- Drip -->
     <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '388523794687616');
-    fbq('track', 'PageView');
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '3029595';
+
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/3029595.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=388523794687616&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code --><!-- End of Squarespace Headers -->
-        <script>/* Must be below squarespace-headers */(function(){var touchTest="ontouchstart"in window||navigator.msMaxTouchPoints;if(!touchTest){with(document.documentElement){className=className.replace(new RegExp("touch-styles"),"")}}})()</script>
+  <!-- end Drip -->
+
+  <script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '388523794687616');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=388523794687616&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code --><!-- End of Squarespace Headers -->
+  <script>/* Must be below squarespace-headers */(function(){var touchTest="ontouchstart"in window||navigator.msMaxTouchPoints;if(!touchTest){with(document.documentElement){className=className.replace(new RegExp("touch-styles"),"")}}})()</script>
 
 </head>

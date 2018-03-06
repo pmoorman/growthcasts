@@ -5,7 +5,7 @@
     {% endif %}
 
     {% if page.heading %}
-      <h2 class="heading h1">{{ page.heading }}</h2>
+      <h4 class="heading h1">{{ page.heading }}</h4>
     {% endif %}
 
     {% if page.underline %}
@@ -38,7 +38,7 @@
             </div>
 
             <div class="grid__column">
-              <h3 class="heading h4">{{ item[0] }}</h3>
+              <h5 class="heading h4">{{ item[0] }}</h5>
 
               <p class="step__desc paragraph">{{ item[1] }} </p>
             </div>
@@ -127,7 +127,7 @@
     {% if page.quote %}
       <div class="module__testimonial card card--white">
         <p class="module__testimonial-quote ta-c c--secondary">{{ page.quote }}</p>
-        
+
         <div class="module__testimonial-author grid grid--middle grid--center grid--gapeless grid--stackable">
           {% if page.author_img %}
             <img class="module__testimonial-img image" src="{{ "./assets/images/" | append: page.author_img }}" alt="">
