@@ -1,17 +1,34 @@
 .discount {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem 2rem;
   z-index: 10;
   background: color(white);
   box-shadow: 0 2rem 5rem rgba(42, 42, 72, .1);
-  display: none;
 
-  @media(min-width: breakpoint('xxlarge')) {
-    display: block;
+  @media(min-width: breakpoint('xlarge')) {
+    top: auto;
+    bottom: 0;
+  }
+
+  &__body {
+    flex-direction: column;
+    text-align: center;
+
+    @media(min-width: breakpoint('xlarge')) {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media(min-width: breakpoint('xlarge')) {
+      display: inline-block;
+    }
   }
 
   &--hidden {

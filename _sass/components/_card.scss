@@ -22,10 +22,10 @@
     top: -2rem;
 
     svg {
-      max-width: 12px;
+      width: 10px;
 
       @media (min-width: breakpoint('medium')) {
-        max-width: 14px;
+        width: 14px;
       }
     }
 

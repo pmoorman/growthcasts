@@ -48,7 +48,7 @@ window.drip_plinko = function(drip, page) {
   }
 
   var discount_template = `<div class="container container--xxlarge">
-                            <div class="grid grid--justify grid--middle grid--stackable grid--gapeless">
+                            <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
                                 <p class="heading h3">25% Discount on Growthcasts Elite</p>
                               </div>
@@ -57,18 +57,30 @@ window.drip_plinko = function(drip, page) {
                                 <div class="grid grid--center grid--middle">
                                   <div class="timer grid__column">
                                     <div class="jsTimer">
-                                      <span class="timer__item" data-timer="days0">0</span>
-                                      <span class="timer__item" data-timer="days1">0</span> :
-                                      <span class="timer__item" data-timer="hours0">0</span>
-                                      <span class="timer__item" data-timer="hours1">0</span> :
-                                      <span class="timer__item" data-timer="minutes0">0</span>
-                                      <span class="timer__item" data-timer="minutes1">0</span> :
-                                      <span class="timer__item" data-timer="seconds0">0</span>
-                                      <span class="timer__item" data-timer="seconds1">0</span>
+                                      <div class="timer__item">
+                                        <span data-timer="days0">0</span>
+                                        <span data-timer="days1">0</span>
+                                        <p class="paragraph">days</p>
+                                      </div> :
+                                      <div class="timer__item">
+                                        <span data-timer="hours0">0</span>
+                                        <span data-timer="hours1">0</span>
+                                        <p class="paragraph">hours</p>
+                                      </div> :
+                                      <div class="timer__item">
+                                        <span data-timer="minutes0">0</span>
+                                        <span data-timer="minutes1">0</span>
+                                        <p class="paragraph">minutes</p>
+                                      </div> :
+                                      <div class="timer__item">
+                                        <span data-timer="seconds0">0</span>
+                                        <span data-timer="seconds1">0</span>
+                                        <p class="paragraph">seconds</p>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="grid__column">
-                                    <a class="discount__button button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
+                                  <div class="grid__column discount__button">
+                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
                                       <span>Get it now</span>
                                       <div class="grid grid--gapeless grid--middle">
                                         <span>$187</span>
