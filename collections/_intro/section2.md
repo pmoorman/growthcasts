@@ -9,7 +9,7 @@ video_id: how-to-become-elite-at-growth
 {: .space}
 Actually, maybe "revelation" is a bit of a big word. It was more like: “I got lucky”.
 
-{: .t--bold .c--black}
+{: .t--bold .c--secondary}
 How?
 
 In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
@@ -34,14 +34,14 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
 </div>
 <!-- END OF VIDEO -->
 
-{: .handwriting .handwriting--small .ta-c .c--black .space}
+{: .handwriting .handwriting--small .ta-c .c--secondary .space}
 Watch it (or just the first few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.
 
 This guy is not your typical marketing guru. Brian Balfour is the former “VP of Growth” at Hubspot, one of the biggest tech startups in the world. And you see immediately that his way of approaching the question is different. He’s not talking about the newest “trick” he discovered to "game the system". None of that.
 
 He’s talking about process, frameworks, systems.
 
-{: .space .t--bold .c--black}
+{: .space .t--bold .c--secondary}
 The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...
 
 {: .space}

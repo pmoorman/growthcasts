@@ -41,7 +41,7 @@ author_desc: works with Slack
 {: .list .list--flat .list--small}
 - How to identify the best traction channels for your specific business needs
 - The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--black">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--black">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--black">what holds you back</span> from <span class="t--bold c--black">fast scaling</span>, and how to overcome those obstacles
+- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
+- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
+- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
 - More than anything, you'll learn how to confidently drive the acquisition efforts of your business

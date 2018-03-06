@@ -99,6 +99,7 @@
         {% for part in site.parts %}
           {{ part }}
         {% endfor %}
+        
         <div class="wrapper container container--large">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
@@ -115,6 +116,7 @@
       {% for video in site.videos %}
       <div class="modal jsModal" id="{{ video.video_id }}">
         <div class="modal__background"></div>
+
         <div class="modal__content">
           <div class="modal__video-wrapper">
             <iframe src="{{ video.video_link }}" frameborder="0" allowfullscreen></iframe>
