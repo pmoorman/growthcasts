@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
 
 # Collections
+collections_dir: collections
 collections:
   - sales-header
   - intro
