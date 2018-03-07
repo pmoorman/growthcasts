@@ -6,9 +6,10 @@ export default class Modal {
 
   setVars() {
     this._modal = document.querySelectorAll(".jsModal")
+    if (!this._modal) return false
+
     this._modalButton = document.querySelectorAll(".jsModalButton")
     this._isVisible = false
-    if (!this._modal) return false
 
     return true
   }
@@ -21,15 +22,14 @@ export default class Modal {
         let target = e.currentTarget.getAttribute("href")
         let modal = document.querySelector(target)
 
-        this._isVisible = !this._isVisible
+        this._isVisible = true
         modal.classList.toggle("modal--visible")
 
         if (this._isVisible) {
-          for (let i = 0; i < this._modal.length; i++) {
-            modal.addEventListener("click", (e) => {
-              modal.classList.remove("modal--visible")
-            })
-          }
+          modal.addEventListener("click", (e) => {
+            this._isVisible = false
+            e.target.classList.contains("jsModalBg")  ? modal.classList.remove("modal--visible") : null
+          })
         }
       })
     }

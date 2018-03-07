@@ -22,16 +22,16 @@
     left: 50%;
     visibility: hidden;
     opacity: 0;
+    padding: 2rem;
     transform: translate(-50%, -50%);
     overflow: visible;
-    padding: 2rem;
     text-align: center;
     max-width: 1280px;
     width: 100%;
     transition: ease 300ms all;
   }
 
-  &__video-wrapper {
+  &__video {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
@@ -46,6 +46,12 @@
       outline: none;
       box-shadow: none;
     }
+  }
+
+  &__form {
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    background: color(white);
   }
 
   &--visible {
