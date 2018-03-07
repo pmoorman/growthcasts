@@ -53,12 +53,12 @@
         </section>
       </div>
 
-      <section class="section section--gray pricingn jsPricing" id="pricing">
+      <section class="section section--gray pricing" id="pricing">
         <div class="wrapper container container--xlarge">
           {% include choose-plan.html %}
         </div>
 
-        <div class="wrapper container container--large">
+        <div class="wrapper container container--large jsPricing1">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">
@@ -100,7 +100,7 @@
           {{ part }}
         {% endfor %}
 
-        <div class="wrapper container container--large">
+        <div class="wrapper container container--large jsPricing2">
           <div class="grid grid--stackable grid--center grid--middle">
             {% for price in site.prices %}
               <div class="grid__column">

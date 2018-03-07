@@ -19,14 +19,22 @@
       background: lighten(color('secondary'), 72%);
       border-radius: 4px;
       line-height: 1.8;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
+
+      @media(min-width: breakpoint('medium')) {
+        font-size: 18px;
+      }
     }
 
     p {
-      font-size: 12px;
+      font-size: 10px;
       text-transform: uppercase;
       font-weight: 600;
+
+      @media(min-width: breakpoint('medium')) {
+        font-size: 12px;
+      }
     }
   }
 }
