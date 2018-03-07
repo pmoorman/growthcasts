@@ -7348,16 +7348,27 @@ class Slider$1 {
     this._nav = document.querySelector(".jsMenu");
     if (!this._nav) return false;
 
+    this._pricing = document.querySelector(".jsPricing");
+    this._discount = document.querySelector(".jsDiscount");
+    if (!this._discount) return false;
+
     return true;
   }
 
   setEvents() {
     gumshoe_min.init({
       selector: ".jsMenu > ul > li > a",
-      selectorHeader: "jsMenu",
       container: window,
       offset: 0,
       activeClass: "sales-nav__link--active"
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset >= pricing.offsetTop && window.pageYOffset < pricing.offsetTop + pricing.offsetHeight) {
+        this._discount.classList.add("discount--mobile");
+      } else {
+        this._discount.classList.remove("discount--mobile");
+      }
     });
   }
 }
@@ -7466,20 +7477,20 @@ class Scroll {
   }
 
   setEvents() {
-    let scroll = new smoothScroll_min('.sales-nav__link', {
+    let scroll = new smoothScroll_min(".sales-nav__link", {
       speed: 3000,
       offset: -60,
-      easing: 'easeInOutCubic',
+      easing: "easeInOutCubic",
       after: (anchor, toggle) => {
-        document.querySelectorAll(".sales-nav__link").forEach(link => link.classList.remove('sales-nav__link--active'));
-        toggle.classList.add('sales-nav__link--active');
+        document.querySelectorAll(".sales-nav__link").forEach(link => link.classList.remove("sales-nav__link--active"));
+        toggle.classList.add("sales-nav__link--active");
       }
     });
 
-    let scrollDown = new smoothScroll_min('.jsScrollDownBtn', {
+    let scrollDown = new smoothScroll_min(".jsScrollDownBtn", {
       speed: 1000,
       offset: 0,
-      easing: 'easeInOutCubic'
+      easing: "easeInOutCubic"
     });
   }
 }
