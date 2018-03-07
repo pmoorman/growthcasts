@@ -82,7 +82,7 @@ window.drip_plinko = function(drip, page) {
                                   <div class="grid__column discount__button">
                                     <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
                                       <span>Get it now</span>
-                                      <div class="grid grid--gapeless grid--middle">
+                                      <div class="wrapper grid grid--gapeless grid--middle">
                                         <span>$187</span>
 
                                         <span class="button__icon">
