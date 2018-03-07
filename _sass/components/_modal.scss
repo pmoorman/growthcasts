@@ -49,9 +49,13 @@
   }
 
   &__form {
-    padding: 4rem 2rem;
+    padding: 2rem;
     border-radius: 5px;
     background: color(white);
+
+    @media (min-width: breakpoint("medium")) {
+      padding: 4rem 2rem;
+    }
   }
 
   &--visible {
