@@ -1,5 +1,4 @@
 # Redirects from what the browser requests to what we serve
-/home              /
-/blog/my-post.php  /blog/my-post
-/news              /blog
-/google            https://www.google.com
+/growth-course          https://course.growthcasts.co
+/welcome-to-the-course  https://course.growthcasts.co/welcome-to-the-course
+/login-page             https://course.growthcasts.co/login-page
