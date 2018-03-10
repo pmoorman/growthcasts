@@ -57,5 +57,8 @@ collections:
 #   - vendor/ruby/
 
 exclude:
-    - assets/js/core
-    - assets/js/components
+  - assets/js/core
+  - assets/js/components
+
+include:
+  - _redirects
