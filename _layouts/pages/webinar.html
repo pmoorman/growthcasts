@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include blog-header.html %}
+
+    <main>
+      <div class="posts-list wrapper section container container--medium jsPostsList">
+        {% for post in site.posts %}
+          <article class="post">
+            <header>
+              {% if post.date %}
+                <p class="date">{{ post.date | date: '%d %B %Y'}}</p>
+              {% endif %}
+
+              {% if post.title %}
+                <h2>{{ post.title }}</h2>
+              {% endif %}
+            </header>
+            <div>
+              {{ post.content | truncatewords: 106, "" }}
+
+              <a href="{{ post.url }}" class="link link--block">Read more → </a>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="wrapper ta-c">
+        <a href="#" class="button button--primary button--rounded button--shadow button jsLoadMoreBtn">
+          Load more
+          <span class="button__icon">
+            {% include_absolute icons/arrow-down.svg %}
+          </span>
+        </a>
+
+        <div class="section">
+          {% include banner.html heading="Not ready for a big investment yet?" text="No problem at all. Thousands of marketers have gone through my free email course instead. In 7 lessons you'll learn a ton about growth marketing, and start executing simple strategies yourself" %}
+        </div>
+      </div>
+
+      {% include modal-form.html %}
+    </main>
+
+    <footer class="wrapper footer footer--light footer--lower">
+      <div class="section section--small container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>
