@@ -3,11 +3,11 @@ layout: module
 small_heading:  Module 1
 heading: Traction System
 underline: true
-desc: Growth Starts with Acquisition, Unlock Limitless Traffic to Your Business
+desc: Growth Starts with Acquisition, Unlock Limitless </br>Traffic to Your Business
 image: module1.png
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
+- Deploy a Strategic User Acquisition Plan: >
     Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
 - Acquire More Traffic, Efficiently: >
     Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
@@ -29,6 +29,8 @@ bonus:
 - Channels Strategy Guide: PDF
 - Cheatsheet: PDF
 - Editable Worksheet: PDF
+- Case study #1: VIDEO
+- Case study #2: VIDEO
 - Treasure Vault: ONLINE
 
 quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!

@@ -21,7 +21,7 @@ Fast-forward 2 years, and see what we have:
 {: .list}
 - There's a simple, 7-part framework that we execute
 - Over the years, they have been tried and tested.
-- I have — as a consultant — been able to help 3 startups scale incredibly well (1 to acquisition, 1 to raise Series A, 2 to profitability)
+- I have — as a consultant — been able to help 4 startups scale incredibly well <em>(1 to raise $20MM in funding, 1 to acquisition, 2 to profitability)</em>
 - A few friends of mine started using this system… and they got great results, too.
 
 {: .c--secondary .t--bold}
