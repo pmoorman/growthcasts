@@ -47,7 +47,7 @@ The few elite marketers that actually {::nomarkdown}*know*{:/} how to build bill
 {: .space}
 Duh! What got you here… won’t get you there! So what’s the difference?
 
-Systems thinking.
+<span class="underline underline--short">Systems thinking.</span>
 
 Instead in “hacks”, you need a scalable, repeatable process… to bring hundreds of people in the door, and turn them into happy, paying customers. You need some sort of a “acquisition machine” (or process, or system, or whatever you want to call it) that does the work for you. Something that works around the clock, and virtually on autopilot — so you don’t have to close every deal yourself.
 
