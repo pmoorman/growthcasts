@@ -3,44 +3,40 @@
   {% include head.html %}
 
   <body>
-    {% include blog-header.html %}
+    {% include webinar-header.html %}
 
     <main>
-      <div class="posts-list wrapper section container container--medium jsPostsList">
-        {% for post in site.posts %}
-          <article class="post">
-            <header>
-              {% if post.date %}
-                <p class="date">{{ post.date | date: '%d %B %Y'}}</p>
-              {% endif %}
-
-              {% if post.title %}
-                <h2>{{ post.title }}</h2>
-              {% endif %}
-            </header>
-            <div>
-              {{ post.content | truncatewords: 106, "" }}
-
-              <a href="{{ post.url }}" class="link link--block">Read more → </a>
+     <center>
+      <iframe src="https://player.vimeo.com/video/209943347" width="960" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     </center>
+           <article class="wrapper section section--first container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+          <div class="grid__column">
+            <h2 class="section__heading h3">Quick notes:</h2>
+    <ol>
+      <li>Sorry about the shitty audio quality!<br>
+         I was in Cuzco, Peru.... without a good mic.<br>
+         -- Also birds in the background were in a really chirpy mood ;-)</li>
+      <li> Check out Elite <a href="https://growhtcasts.co/elite">here</a>, and check out your <b><i>'loophole access'...</i></b></li>
+      </ol><br><br>
+    <h2>What's covered in the mini-webinar... </h2>
+    <ul>
+      <li>How Process, Engines & Funnels fit together</li>
+      <li>Get a step-by-step summary of each system</li>
+      <li>Learn which 2 growth engines are most important (and why)</li>
+      <li>Learn how you create 'Growth Loops', and how that generates exponential <br>or viral growth  --  this is the essence to growth marketing!!</li>
+      <li>Pointers on how to move forward after the email course</li>
+      <li>A special deal (<i>instructions in the webinar</i>), to get Growthcasts Elite at a<br>steep discount... if you're ready to take immediate action.</li>
+    </ul>
+    <p> Thanks for watching, and happy growing!<br><br>
+        Cheers,<br><br>
+        <b>-Pieter</b><br><br>
+        <i>P.S. any questions? Hit me up on pieter@growthcasts.co, and I'll get back to you ASAP.</i>
+      </p>
+          </div>
             </div>
-          </article>
-        {% endfor %}
-      </div>
-
-      <div class="wrapper ta-c">
-        <a href="#" class="button button--primary button--rounded button--shadow button jsLoadMoreBtn">
-          Load more
-          <span class="button__icon">
-            {% include_absolute icons/arrow-down.svg %}
-          </span>
-        </a>
-
-        <div class="section">
-          {% include banner.html heading="Not ready for a big investment yet?" text="No problem at all. Thousands of marketers have gone through my free email course instead. In 7 lessons you'll learn a ton about growth marketing, and start executing simple strategies yourself" %}
-        </div>
-      </div>
-
-      {% include modal-form.html %}
+              </article>
     </main>
 
     <footer class="wrapper footer footer--light footer--lower">
