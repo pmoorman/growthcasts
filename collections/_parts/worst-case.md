@@ -17,7 +17,7 @@ You have 365 days to claw back your money (and you'll retain full access to all 
 So then the question is...
 
 {: .handwriting .handwriting--primary}
-What if — in the absolute worst case scenario — you’d get a world class growth marketing education… absolutely for FREE?
+What if — in the absolute worst case scenario — you’d get a world class growth marketing education… <span class="underline underline--medium">absolutely for FREE?</span>
 
 Think it over. I'm trying to make this a no-brainer to you.
 

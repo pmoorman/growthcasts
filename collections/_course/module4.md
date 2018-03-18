@@ -8,40 +8,38 @@ image: module4.png
 reverse: true
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Scale Up & Growth: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- A Detailed Blueprint For Scaling Paid Ads: >
+    Module 5 & 6 teach how to drive traffic & leads through “growth engines”. This modules breaks down the step-by-step blueprint for Facebook ads.
+- Step-by-step Instructions. Very Practical...: >
+    Broken down over 5 different steps, learn everything from concepting, to A/B testing, tooling and scaling. A very <i>practical</i> module.
+- Understand the ‘Meta-Blueprint’ of the Growth Loops Architecture: >
+    Once you’ve seen a first growth engine, we’ll “connect the dots” and give the meta-blueprint that you can apply across any other channel.
 
 core:
-- Core Content: 7 videos, 56:24
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Core Content: 7 videos, 57 min
+- Meta Blueprint: 4:56min
+- Core constraints: 5:19min
+- Strategy and Structure: 6:02min
+- Advertising Copywriting: 9:15min
+- A/B testing: 13:32min
+- Profitability: 10:27min
+- Scaling: 8:46min
 
 bonus:
 - Bonus Content:
-- Channels Strategy Guide: PDF
-- Cheatsheet: PDF
-- Editable Worksheet: PDF
+- Facebook Ads Engine Guide: PDF
+- Tools Cheatsheet: PDF
+- Ads Swipe File: PDF
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-author: Irina Bykowa
-author_img: irina.png
-author_desc: works with Slack
+quote: I became really good at Adwords, and I learned it by understanding Facebook..
+author: Mark Schnetlager
+author_img: mark.png
+author_desc: <p>&nbsp;founder/CEO @ Markify</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- A detailed blueprint of the entire Facebook Ads blueprint. Learn which steps you need to take to unleash the power of the Facebook monster to <b>drive fast and predictable growth.</b>
+- Swipe files with effective & proven ads in virtually every startup industry: SaaS, eCommerce, corporate B2B, mobile apps & consumer products, agencies, etc. etc.
+- Frameworks on how to <b>plot your financial models</b>, so you can scale with confidence once you hit initial traction.
+- Most importantly… you'll see the entire process of making a growth engine. Once you know how <b><i>to make one growth engine, you can make any growth engine.</i></b>

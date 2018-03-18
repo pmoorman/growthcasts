@@ -1,5 +1,5 @@
 ---
 layout: testimonial
-about: Caspar helped actual clients and not even finished the course
-image: testimonial1.png
+about: Morgan loved how simple Elite was to implement in real life
+image: testimonial4.png
 ---

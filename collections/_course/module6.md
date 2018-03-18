@@ -8,40 +8,45 @@ image: module6.png
 reverse: true
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Scale Up & Growth: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Stop Closing Every Sales Yourself: >
+    Growth marketing is about <i>building systems</i>, rather than being a slave to your business. Learn how to take yourself out of the picture.
+- Create Systems That Drive Sales — On Autopilot: >
+    Once you see the whole picture, you’ll understand intuitively where funnels fit in. Learn to think like a “funnel architect”.
+- Learn Five Easy Funnel Templates (5x): >
+    Five templates that you can use over-and-over. Identify which one matches your business... and have a simple structure that you know will work.
 
 core:
-- Core Content: 7 videos, 56:24
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Core Content: 7 videos, 64 min
+- Intro (Sales Funnels): 9:40min
+- The Process: 10:46min
+- Webinar Funnel: 9:40min
+- Email Course Funnel: 5:47min
+- Product Demo Funnel: 8:31min
+- Freemium Funnel: 10:12min
+- Invitation or VIP Funnel: 6:54min
+- Sales Funnel Architect: 4:21min
 
 bonus:
 - Bonus Content:
-- Channels Strategy Guide: PDF
-- Cheatsheet: PDF
-- Editable Worksheet: PDF
+- Hypnotic Sales Funnels Guide: PDF
+- Webinar Funnel Template: PDF
+- Email Course Funnel Template: PDF
+- Product Demo Funnel Template: PDF
+- Freemium Funnel Template: PDF
+- VIP Funnel Template: PDF
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-author: Irina Bykowa
-author_img: irina.png
-author_desc: works with Slack
+quote: I never thought it was so easy to test and optimise your business as a whole. Really an eye-opener!
+author: Eva Moorman
+author_img: eva.png
+author_desc: <p>&nbsp;freelance designer and consultant</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- <b>Template I</b>: Webinar Funnel. Great for educational products, mid-size SaaS and consultancy.
+- <b>Template II</b>: Emailcourse Funnel. Mostly used for educational products like books or a training.
+- <b>Template III</b>: Product Demo Funnel. This is the perfect funnel for enterprise SaaS.
+- <b>Template IV</b>: Freemium Funnel. Very strong funnel for addictive products.
+- <b>Template V</b>: Invitation or VIP funnel. Social and virality based funnel, works for all sorts of companies.
+- Besides all these incredibly helpful templates, I also show you the framework we use to create & optimise funnels for maximum ROI.
+- Swipe file with examples for each type of sales funnel. This makes it easy to implement everything.

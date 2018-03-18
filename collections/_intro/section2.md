@@ -1,7 +1,7 @@
 ---
 layout: section
-heading: As I was browsing the murky backwaters of Reddit's mother-of-distractions...
-heading_quote: I had a revelation that would change my career...
+heading: As I was browsing the murky backwaters of Reddit's mother-of-distractions...<br>
+heading_quote: <span class="underline underline--medium">I had a revelation that would change my career...</span>
 heading_image: section2.png
 video_id: how-to-become-elite-at-growth
 ---
@@ -41,8 +41,10 @@ This guy is not your typical marketing guru. Brian Balfour is the former “VP o
 
 He’s talking about process, frameworks, systems.
 
-{: .space .t--bold .c--secondary}
-The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...
+{: .handwriting}
+<span style="float: left; margin-left: -200px; color: #0066c3;">Big Inside</span>
+
+<b>The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...</b>
 
 {: .space}
 Duh! What got you here… won’t get you there! So what’s the difference?

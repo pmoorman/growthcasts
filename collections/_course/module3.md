@@ -7,40 +7,42 @@ desc: This 'Strategic Module' Helps You Become a Growth Strategist...
 image: module3.png
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Scale Up & Growth: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Intermediate & Advanced Lean Startup Strategies: >
+    Learn a simple 4-part framework to optimise for product/market-fit. Bridge the gap between high- level strategy and practical execution.
+- Accelerate Your Growth With High-Tempo Testing: >
+    Learn the strategic approach to scaling growth efforts across teams. Once you’ve hit your stride, learn to increase cadence & tempo.
+- Become a Growth Strategist. Achieve P/M-fit Faster: >
+    Ultimately, the goal is to get you to a strong and optimised growth strategy as soon as possible. That requires being strategic, rather than tactical.
 
 core:
-- Core Content: 7 videos, 56:24
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Core Content: 7 videos, 71 min
+- Advanced Lean Startup: 3:09min
+- Startup Plan: 9:37min
+- Risk Roadmaps: 8:29min
+- Market risks: 8:11min
+- Product risks: 6:32min
+- Channel risks: 7:18min
+- Ignition risks: 9:28min
+- What MVPs are for: 10:13min
+- The Final Roadmap: 11:22min
 
 bonus:
 - Bonus Content:
-- Channels Strategy Guide: PDF
-- Cheatsheet: PDF
+- Risk Roadmap Guide: PDF
+- Cheatsheet (2x): PDF
 - Editable Worksheet: PDF
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-author: Irina Bykowa
-author_img: irina.png
-author_desc: works with Slack
+quote: This really gave me a clear view on my business, finally I know my core business values!
+author: Heather Dawton
+author_img: Heather.png
+author_desc: <p>&nbsp;lifestyle entrepreneur</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- Deep channels analysis, to hit <b>hyper-growth</b>, faster
+- Intermediate and advanced lean startup strategies that form the bridge between conceptual thinking an execution.
+- Become a growth strategist, and make better business decisions that scale companies faster and in <b>a more sustainable way.</b>
+- Learn how to accelerate cycle speed to compress your time and get more done in the same amount of time.
+- Gain laser focus and more confidence, as you execute a <b>step-by-step strategic plan.</b>
+- More than anything, you'll learn how to become a growth strategist, rather than going from trick to trick...
