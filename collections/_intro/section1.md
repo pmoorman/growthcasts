@@ -1,7 +1,7 @@
 ---
 layout: section
 heading: The question every entrepreneurs asks after creating their product is...
-heading_quote: '"How do I get people to use this thing?"'
+heading_quote: '<span class="underline underline--medium">"How do I get people to use this thing?"</span>'
 heading_image: section1.png
 link_id: intro
 ---

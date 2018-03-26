@@ -13,7 +13,7 @@ Imagine...
 - What if you would <span class="t--bold c--secondary">5X your personal income</span> to over 6-figures per year?
 - What if 10x or 20x <span class="t--bold c--secondary">more warm leads converted</span> on your website?
 
-... Because if you master the systems of growth marketing, that might just happen.
+... Because if you master the systems of growth, that might just happen.
 
 It all has happened to my students (and to myself, for that matter). You definitely wouldn’t be the first one. It happens, every day.
 
@@ -30,4 +30,4 @@ I know your ‘lizard brain’ is still cooking up excuses at breakneck speed...
 Let's talk frankly to your lizard brain:
 
 {: .handwriting .handwriting--primary}
-In the worst case you make a small (but maybe risky) investment today...   and nothing happens.
+In the worst case you make a small (maybe risky) investment today...   <span class="underline underline--medium">and nothing happens.</span>

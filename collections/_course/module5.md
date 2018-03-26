@@ -7,40 +7,39 @@ desc: Build Growth Engines (Part II), Scale any Channel with this 'Meta Blueprin
 image: module5.png
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Scale Up & Growth: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Every Startup Starts With Outbound...: >
+    Like it or not, but ‘hustle’ is the name of the game. Outbound channels allow you to “scale the hustle” in a way that’s both <i>simple</i>, and <i>proven to work</i>.
+- Learn to Build Simple Growth Engines for B2B & SaaS: >
+    The Lead Gen engine is most suitable for B2B and SaaS applications. It’s a proven engine, and incredibly cheap/simple to set up and drive leads.
+- Unlock Growth Across 25+ Different Channels: >
+    Once you understand this module, you’ll see how to quickly build your own growth engines — no matter which channel you tap into <i>(it’s all the same!)</i>
 
 core:
-- Core Content: 7 videos, 56:24
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Core Content: 7 videos, 54 min
+- The Blueprint: 6:28min
+- SPAM Law: 8:57min
+- Finding the Source: 6:31min
+- Data Scraping: 6:39min
+- Finding anyone's email: 8:04min
+- Outbound Outreach: 8:07min
+- Outsourcing & Automation: 10:35min
 
 bonus:
 - Bonus Content:
-- Channels Strategy Guide: PDF
-- Cheatsheet: PDF
-- Editable Worksheet: PDF
+- Lead Gen Engine Guide: PDF
+- Email Swipe Files: PDF
+- Tools Cheatsheet: PDF
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-author: Irina Bykowa
-author_img: irina.png
-author_desc: works with Slack
+quote: At first, I thought this was just another growth hack, but it's a whole system and it works great!
+author: Nina Chow
+author_img: nina.png
+author_desc: <p>&nbsp;tech blogger</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- An extensive ‘Frequently asked questions’ section to troubleshoot potential roadblocks you might encounter
+- Learn essential growth hacking skills such as web scraping, email marketing essentials, and more..
+- A PDF <b>swipe file</b> with the very emails that we use in our own engines. These are the high-value emails that are proven to convert. Normally you’d pay a senior copywriter for this. Now you can just copy-paste (and modify to your liking).
+- HD quality videos showing exactly how web scraping is done. This is the hardest part of the engine, and the true cornerstone in this engine.
+- A lot of information on how to <b>automate & outsource the entire engine</b> (or parts of it) to scale efficiently and at incredibly low costs.

@@ -8,40 +8,40 @@ image: module2.png
 reverse: true
 
 steps:
-- Deploy a Strategic User Acqisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Scale Up & Growth: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Learn the “Four Horsemen” of Copywriting...: >
+    Copywriting is neither a science nor an artform. There is a simple set of 4 skills to consistently producing weapons-grade persuasion copy...
+- Writer Better, Faster: >
+    I realised this only later, but this kind of process avoids “writers block”, and helps unexperienced writers to write twice as good, twice as fast!
+- Convert Online. Use Story, Emotions & ‘Hidden Pains’: >
+    If you’ve liked my emails so far... you’ve liked my way of storytelling and copywriting. I’ll show you how to use stories to effectively drive sales.
 
 core:
 - Core Content: 7 videos, 56:24
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Intro: 4:40min
+- Perspectives: 8:17min
+- Problem statements: 5:28min
+- Benefits vs features: 8:14min
+- Peeling the Onion: 8:00min
+- Power Words: 6:13min
+- Swipe Files: 7:33min
 
 bonus:
 - Bonus Content:
-- Channels Strategy Guide: PDF
+- Copywriting Guide: PDF
 - Cheatsheet: PDF
-- Editable Worksheet: PDF
+- Peeling the Onion worksheet: PDF
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
-author: Irina Bykowa
-author_img: irina.png
-author_desc: works with Slack
+quote: I never expected writing (of all things) to boost my sales by this much!
+author: Willem Hoogslag
+author_img: willem.png
+author_desc: <p>&nbsp;owns contentmarketing firm</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- How to become a confident writer. Write twice as good, twice as fast.
+- <b>Become a systematic copywriter</b>, using proven frameworks and structures to do your heavy lifting.
+- The <b>80/20</b> of writing better copy for more sales: only 4 hacks you need to master, drive most of the results.
+- Get an extensive library with examples to swipe from. This means you can start copy-pasting, rather than laying the groundwork yourself.
+- I show you how to unlock your <b>inner salesman</b>. We don't only work on your skills, but also your 'inner game' and mindset.
+- More than anything, you'll be able to <b>sell online</b>

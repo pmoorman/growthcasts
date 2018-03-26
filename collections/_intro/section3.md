@@ -1,7 +1,7 @@
 ---
 layout: section
 heading: We successfully boiled down their billion-dollar “growth systems" into a simple 7-part framework that any entrepreneur can quickly implement...
-heading_quote: and execute while working from a laptop in Bali
+heading_quote: <br> <span class='underline underline--medium'>and execute while working from a laptop in Bali</span><br><br>
 heading_image: section3.png
 content_image: diagram.png
 ---

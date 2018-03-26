@@ -1,5 +1,5 @@
 ---
 layout: testimonial
-about: Caspar helped actual clients and not even finished the course
-image: testimonial1.png
+about: Frank really likes the tactical step-by-step of the course
+image: testimonial2.png
 ---
