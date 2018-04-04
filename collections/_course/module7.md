@@ -8,9 +8,9 @@ image: module7.png
 
 steps:
 - Close Your Growth Loops: >
-    Strong onboarding allows you to close your growth loops <i>efficiently</i>. Increase retention, LTV & CAC allowance. The backbone of strong growth!
+    Strong onboarding allows you to close your growth loops <i>efficiently</i>. Increase retention, LTV & CAC allowance. The backbone of growth!
 - 1 Framework || 7 Advanced Strategies: >
-    Email, NUX, and five more strategies... all play seamlessly into the “Magic Moments Map” framework, and allow for swift & simple execution
+    Email, NUX, and five more strategies. All play neatly into the “Magic Moments Map” frame- work, and allow for swift & simple execution.
 - Increase Profits & ‘Scaling Power’: >
     In the end, every growth model relies on turning cold leads into happy power users. Strengthen retention, and strengthen growth.
 
@@ -31,6 +31,8 @@ bonus:
 - Bonus Content:
 - Advanced Onboarding Guide: PDF
 - Magic Moments Map Worksheet: PDF
+- Case study 1: VIDEO
+- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
 quote: Most people don't take onboarding seriously! This module really made me see the importance.
@@ -41,7 +43,7 @@ author_desc: <p>&nbsp;works in consultancy firm</p>
 
 {: .list .list--flat .list--small}
 - 7 different strategies, with an extensive framework to figure out which to use in which case, and quick-start tips on how to implement them quickly
-- Swipe file with onboarding flows of other businesses, plus notes on how to find more great onboarding examples with minimum effort.
-- Cheat sheet help you quickly find which strategies your business should be using.
+- Swipe file with onboarding examples, plus notes on how to find more onboarding examples with minimum effort.
+- A worksheet that helps you quickly find the strategies your business should use.
 - Note: much like sales funnels, the strategies you learn in this module are highly suitable to sell as a productised service: virtually all early-stage startups can benefit tremendously from better onboarding. <b>This skill set is high-value and very easy to learn.</b>
 - As a business owner you'll notice the results because more leads convert to paying (!!) users, and ultimately <b>happy ambassadors that unlock viral word-of-mouth growth.</b>

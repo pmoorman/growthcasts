@@ -8,11 +8,11 @@ image: module3.png
 
 steps:
 - Intermediate & Advanced Lean Startup Strategies: >
-    Learn a simple 4-part framework to optimise for product/market-fit. Bridge the gap between high- level strategy and practical execution.
+    Learn a simple 4-part framework to optimise for product/market-fit. Bridge the gap between high-level strategy and practical execution.
 - Accelerate Your Growth With High-Tempo Testing: >
     Learn the strategic approach to scaling growth efforts across teams. Once you’ve hit your stride, learn to increase cadence & tempo.
 - Become a Growth Strategist. Achieve P/M-fit Faster: >
-    Ultimately, the goal is to get you to a strong and optimised growth strategy as soon as possible. That requires being strategic, rather than tactical.
+    Ultimately, the goal is to get you to a strong and optimised growth strategy asap. That requires being strategic, rather than tactical.
 
 core:
 - Core Content: 7 videos, 71 min
@@ -31,6 +31,7 @@ bonus:
 - Risk Roadmap Guide: PDF
 - Cheatsheet (2x): PDF
 - Editable Worksheet: PDF
+- Case study 1: VIDEO
 - Treasure Vault: ONLINE
 
 quote: This really gave me a clear view on my business, finally I know my core business values!

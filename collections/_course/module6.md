@@ -3,12 +3,12 @@ layout: module
 small_heading:  Module 6
 heading: Sales Funnels
 underline: true
-desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
+desc: Design Your Growth Loop and take control of your business
 image: module6.png
 reverse: true
 
 steps:
-- Stop Closing Every Sales Yourself: >
+- Stop Closing Every Sale Yourself: >
     Growth marketing is about <i>building systems</i>, rather than being a slave to your business. Learn how to take yourself out of the picture.
 - Create Systems That Drive Sales — On Autopilot: >
     Once you see the whole picture, you’ll understand intuitively where funnels fit in. Learn to think like a “funnel architect”.
@@ -34,6 +34,8 @@ bonus:
 - Product Demo Funnel Template: PDF
 - Freemium Funnel Template: PDF
 - VIP Funnel Template: PDF
+- Case study 1: VIDEO
+- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
 quote: I never thought it was so easy to test and optimise your business as a whole. Really an eye-opener!

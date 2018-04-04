@@ -9,7 +9,7 @@ reverse: true
 
 steps:
 - A Detailed Blueprint For Scaling Paid Ads: >
-    Module 5 & 6 teach how to drive traffic & leads through “growth engines”. This modules breaks down the step-by-step blueprint for Facebook ads.
+    Module 5 & 6 teach how to drive traffic & leads through “growth engines”. This module breaks down the step-by-step blueprint for Fb ads.
 - Step-by-step Instructions. Very Practical...: >
     Broken down over 5 different steps, learn everything from concepting, to A/B testing, tooling and scaling. A very <i>practical</i> module.
 - Understand the ‘Meta-Blueprint’ of the Growth Loops Architecture: >

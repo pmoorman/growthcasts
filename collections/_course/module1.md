@@ -10,9 +10,9 @@ steps:
 - Deploy a Strategic User Acquisition Plan: >
     Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
 - Acquire More Traffic, Efficiently: >
-    Most startups fail not because they don’t have a strong product.... but because nobody knows they exist. That’s why “getting eyeballs” matters (a lot).
+    Most startups fail not because they don’t have a strong product.. but because nobody knows they exist. That’s why “attention” matters (a lot).
 - Scale Up & Growth: >
-    Once you’ve identified your proper channel and engine (outbound, inbound or product-based), we need to think about managing growth <i>as you scale.</i>
+    Once you’ve identified your proper channel and engine (outbound, inbound or product-based), we need to start managing growth <i>as you scale.</i>
 
 core:
 - Core Content: 7 videos, 56 min
@@ -29,8 +29,8 @@ bonus:
 - Channels Strategy Guide: PDF
 - Cheatsheet: PDF
 - Editable Worksheet: PDF
-- Case study #1: VIDEO
-- Case study #2: VIDEO
+- Case study 1: VIDEO
+- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
 quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
@@ -43,6 +43,6 @@ author_desc: <p>&nbsp;works with Slack</p>
 - How to identify the best traction channels for your specific business needs
 - The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
 - You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with minimal invesment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome those obstacles
+- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with a minimal investment of effort & money
+- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome these obstacles
 - More than anything, you'll learn how to confidently drive the acquisition efforts of your business

@@ -10,9 +10,9 @@ steps:
 - Every Startup Starts With Outbound...: >
     Like it or not, but ‘hustle’ is the name of the game. Outbound channels allow you to “scale the hustle” in a way that’s both <i>simple</i>, and <i>proven to work</i>.
 - Learn to Build Simple Growth Engines for B2B & SaaS: >
-    The Lead Gen engine is most suitable for B2B and SaaS applications. It’s a proven engine, and incredibly cheap/simple to set up and drive leads.
+    The Lead Gen engine is most suitable for B2B and SaaS applications. It’s a proven engine, and incredibly cheap/simple to set up & drive leads.
 - Unlock Growth Across 25+ Different Channels: >
-    Once you understand this module, you’ll see how to quickly build your own growth engines — no matter which channel you tap into <i>(it’s all the same!)</i>
+    In this module, you’ll see how to quickly build your own growth engines, no matter which channel you tap into <i>(it’s all the same!)</i>
 
 core:
 - Core Content: 7 videos, 54 min
@@ -29,6 +29,9 @@ bonus:
 - Lead Gen Engine Guide: PDF
 - Email Swipe Files: PDF
 - Tools Cheatsheet: PDF
+- Case study 1: VIDEO
+- Case study 2: VIDEO
+- Case study 3: VIDEO
 - Treasure Vault: ONLINE
 
 quote: At first, I thought this was just another growth hack, but it's a whole system and it works great!
@@ -41,5 +44,5 @@ author_desc: <p>&nbsp;tech blogger</p>
 - An extensive ‘Frequently asked questions’ section to troubleshoot potential roadblocks you might encounter
 - Learn essential growth hacking skills such as web scraping, email marketing essentials, and more..
 - A PDF <b>swipe file</b> with the very emails that we use in our own engines. These are the high-value emails that are proven to convert. Normally you’d pay a senior copywriter for this. Now you can just copy-paste (and modify to your liking).
-- HD quality videos showing exactly how web scraping is done. This is the hardest part of the engine, and the true cornerstone in this engine.
-- A lot of information on how to <b>automate & outsource the entire engine</b> (or parts of it) to scale efficiently and at incredibly low costs.
+- HD quality videos showing exactly how web scraping is done. This is the hardest part of the engine, and the true cornerstone of this technique.
+- A lot of information on how to <b>automate & outsource the entire engine</b> (or parts of it) to scale efficiently & at low costs.

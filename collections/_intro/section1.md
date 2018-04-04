@@ -15,15 +15,15 @@ And that’s great. The world needs creators and ruckus makers like that! That d
 "How do I get people to use this thing?"
 
 {: .list}
-- What can we do to hit those growth targets we’ve set for yourselves?
+- What can we do to hit those growth targets we’ve set for ourselves?
 - How can I get a steady stream of people signing up?
 - How can we get more revenue, so we can hire a better team?
-- How can we 5X the revenue this year… so we can finally pay all the bills?
+- How can we triple the revenue this year… so we can finally pay the bills?
 
 And we tell ourselves “ah, that’ll be fine. We’ll figure it out!”… but chances are you won’t figure it out. It’s stupidly hard. As a matter of fact... <span class="t--bold c--secondary">Most startups fail because they can’t get enough customers.</span>
 
 Trust me, I know how you feel: When you’ve got a great product and you’re anxious to scale and you’re being told to “Do things that don’t scale” it’s like, “Dude. At this rate, I’ll be in a wheelchair before I do big numbers.”
-We all know that it’s important to build the right product, get customer feedback, work on your positioning, etc. etc. Bu...
+We all know that it’s important to build the right product, get customer feedback, work on your positioning, etc. etc. But...
 
 Chances are you don’t want to do small numbers forever. It sucks to be living off of a small founder’s salary for the next 10 years. You are not building a part-time side project. You wanted to build a startup! Something that can grow. You want to GO FAST!
 
@@ -37,10 +37,10 @@ So. Back to you.
 
 ... And you know – deep down – that "getting customers" ain't easy ...
 
-... But you're keen to start scaling quickly and kick some serious but ...
+... But you're keen to start scaling quickly and kick some serious ...
 
 ... And you're willing to explore a systematic approach to doing that ...
 
 
 {: .space}
-Maybe it’s time you learn how the fastest growing startups actually drive their growth, so you can replicate the framework that they use. Imagine for a second…
+Maybe it’s time you learn how the fastest growing startups actually drive their growth, and replicate the framework that they use. Imagine for a second…

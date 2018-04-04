@@ -26,9 +26,9 @@ But it feels differently, doesn't it? You buy those tools in a heartbeat... beca
 So here's the question again...
 
 {: .handwriting .handwriting--primary}
-Should you invest $19/month to learn how to acquire more customers?
+Should you invest $19/month to learn to acquire more customers?
 
-I don't know much about your business... but if you have ANY of the tools above... then probably you should!Imagine you look back in a year from now...
+I don't know much about your business... but if you have ANY of the tools above... then probably you should! Imagine you look back in a year from now...
 
 {: .t--bold .c--secondary}
 Would $19 really be a significant thing in your monthly expense statement?

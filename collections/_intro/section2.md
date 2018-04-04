@@ -1,6 +1,6 @@
 ---
 layout: section
-heading: As I was browsing the murky backwaters of Reddit's mother-of-distractions...<br>
+heading: As I was browsing the murky backwaters of Reddit the-mother-of-distractions...<br>
 heading_quote: <span class="underline underline--medium">I had a revelation that would change my career...</span>
 heading_image: section2.png
 video_id: how-to-become-elite-at-growth
@@ -35,14 +35,14 @@ In the months prior... I stumbled on a keynote presentation by Brian Balfour, wh
 <!-- END OF VIDEO -->
 
 {: .handwriting .handwriting--small .ta-c .c--secondary .space}
-Watch it (or just the first few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.
+Watch it (just a few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.
 
 This guy is not your typical marketing guru. Brian Balfour is the former “VP of Growth” at Hubspot, one of the biggest tech startups in the world. And you see immediately that his way of approaching the question is different. He’s not talking about the newest “trick” he discovered to "game the system". None of that.
 
 He’s talking about process, frameworks, systems.
 
 {: .handwriting}
-<span style="float: left; margin-left: -200px; color: #0066c3;">Big Inside</span>
+<span style="float: left; margin-left: -200px; color: #0066c3;">Big Insight</span>
 
 <b>The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...</b>
 

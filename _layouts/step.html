@@ -17,38 +17,39 @@
                 <h1 class="heading">{{ page.heading }}</h1>
               {% endif %}
 
-              {% if page.subheading %}
-                <p class="heading h3">{{ page.subheading }}</p>
-              {% endif %}
-
               {% if page.text %}
                 <p class="paragraph">{{ page.text }}</p>
               {% endif %}
+
+
 
               {% if content %}
                 {{ content }}
               {% endif %}
 
               {% if page.form %}
-                <form class="form" action="https://www.getdrip.com/forms/26459209/submissions" method="post" data-drip-embedded-form="26459209">
-                  <div class="form__content grid grid--center grid--middle">
-                    <div class="grid__column">
-                      <div class="form-group">
-                        <label class="form-group__label" for="email">Email</label>
-                        <input class="form-group__input" type="email" name="fields[email]" id="email" placeholder="pieter@growthcasts.co">
-                      </div>
-                    </div>
+      <div class="banner__content">
+        <h3 class="banner__heading h2 c--white">{{ include.heading }}</h3>
 
-                    <div>
-                      <button type="submit" class="button button--primary button--rounded button--shadow"  data-drip-attribute="sign-up-button">
-                        Join the course
-                        <span class="button__icon">
-                          {% include_absolute icons/arrow-down.svg %}
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </form>
+      {% include modal-form.html %}
+
+              <a class="button button--primary button--rounded button--shadow jsModalButton" href="#join-the-course">
+                Join the course
+
+                <span class="button__icon">
+                  {% include_absolute icons/arrow-down.svg %}
+                </span>
+
+                <span class="button__info handwriting handwriting--small handwriting--light">It's<span class="underline underline--medium"> FREE</span></span>
+                <span class="button__info-icon">
+                  {% include_absolute icons/module-arrow.svg %}
+                </span>
+        </a>
+      </div>
+              {% endif %}
+
+              {% if page.subheading %}
+                <p class="heading h3">{{ page.subheading }}</p>
               {% endif %}
 
               {% if page.reasons %}

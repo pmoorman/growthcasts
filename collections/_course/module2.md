@@ -9,7 +9,7 @@ reverse: true
 
 steps:
 - Learn the “Four Horsemen” of Copywriting...: >
-    Copywriting is neither a science nor an artform. There is a simple set of 4 skills to consistently producing weapons-grade persuasion copy...
+    Copywriting is neither a science nor an artform. There is a simple set of 4 skills to consistently produce weapons-grade persuasion copy...
 - Writer Better, Faster: >
     I realised this only later, but this kind of process avoids “writers block”, and helps unexperienced writers to write twice as good, twice as fast!
 - Convert Online. Use Story, Emotions & ‘Hidden Pains’: >
@@ -30,9 +30,11 @@ bonus:
 - Copywriting Guide: PDF
 - Cheatsheet: PDF
 - Peeling the Onion worksheet: PDF
+- Case study 1: VIDEO
+- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: I never expected writing (of all things) to boost my sales by this much!
+quote: I never expected that writing (of all things), would boost my sales by this much!
 author: Willem Hoogslag
 author_img: willem.png
 author_desc: <p>&nbsp;owns contentmarketing firm</p>
@@ -43,5 +45,5 @@ author_desc: <p>&nbsp;owns contentmarketing firm</p>
 - <b>Become a systematic copywriter</b>, using proven frameworks and structures to do your heavy lifting.
 - The <b>80/20</b> of writing better copy for more sales: only 4 hacks you need to master, drive most of the results.
 - Get an extensive library with examples to swipe from. This means you can start copy-pasting, rather than laying the groundwork yourself.
-- I show you how to unlock your <b>inner salesman</b>. We don't only work on your skills, but also your 'inner game' and mindset.
-- More than anything, you'll be able to <b>sell online</b>
+- I show you how to unlock your <b>inner salesman</b>. We don't only work skills, but also your 'inner game' and mindset.
+- More than anything, you'll learn to <b>sell online</b>
