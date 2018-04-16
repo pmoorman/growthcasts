@@ -2,7 +2,6 @@
 layout: section
 heading: As I was browsing the murky backwaters of Reddit the-mother-of-distractions...<br>
 heading_quote: <span class="underline underline--medium">I had a revelation that would change my career...</span>
-heading_image: section2.png
 video_id: how-to-become-elite-at-growth
 ---
 

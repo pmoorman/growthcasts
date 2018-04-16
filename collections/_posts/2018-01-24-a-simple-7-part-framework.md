@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  How to boil down a successfull billion-dollar growth system into a simple 7 part framework
+title:  A Simple 7-part framework
 date:   2017-01-24 16:16:01 -0600
 ---
-
-Later we’ll discuss what those growth systems are, and how they work. But right now, let’s focus on why they matter...
 
 Over the last couple of years — as the internet matured — online marketing has gone through a series of massive shifts. As a result, marketing has become incredibly complex.
 
@@ -12,18 +10,25 @@ The problem is not that there aren’t enough marketing tactics to try. The inte
 
 Here’s the bottom line: the only way to unlock sustainable, accelerating, stable product growth (where you constantly grow your user base and revenues, month-over-month)... is to understand the ‘growth levers’ that drive your business, from the ground up.
 
-## Header of the second paragraph
+Example 1: Hotmail
+Oh, the classic example!  It’s getting a little dated now, but good ‘ol Hotmail really nailed it with viral growth. And I mean »really« nailed it.
 
-Later we’ll discuss what those growth systems are, and how they work. But right now, let’s focus on why they matter...
-Over the last couple of years — as the internet matured — online marketing has gone through a series of massive shifts. As a result, marketing has become incredibly complex.
+The had a killer product: the first free web-based email client. Everyone wanted that.
 
-The problem is not that there aren’t enough marketing tactics to try. The internet is literally full of that. We have an endless obsession with “growth hacks” and loopholes, and gimmicks to “game the system”. There are literally hundreds of gurus and advisors selling you those. But while it’s tempting, those tactics will never work.
+And they put a small “this email is sent by Hotmail” in the footer of the email. Plus, all emails had the @hotmail.com extension (if that wasn’t already obvious to you).
 
-Later we’ll discuss what those growth systems are, and how they work. But right now, let’s focus on why they matter...
+The loop worked like this:
 
-{: .quote}
-How to boil down a succesfull billion-dollar growth system into a simple 7 part framework
+Person sends out email to friends/colleagues
+They see that “this email is sent with Hotmail”
+They discover the crazy good deal
+They want it, too!
+They sign up, and start sending emails to their friends
+Few things to learn here:
 
-Over the last couple of years — as the internet matured — online marketing has gone through a series of massive shifts. As a result, marketing has become incredibly complex.
+It was intrinsically sharable (email)
+It was a great deal (free web-based email client)
+It was generic: everyone wants to have this kind of service
 
-The problem is not that there aren’t enough marketing tactics to try. The internet is literally full of that. We have an endless obsession with “growth hacks” and loopholes, and gimmicks to “game the system”. There are literally hundreds of gurus and advisors selling you those. But while it’s tempting, those tactics will never work.
+
+Also, did you notice that loop there? Realise that this loop can cycle around really fast: within the 1st day of a certain cohort of users signing up, they’re already bringing in new users. From there on out, it only compounds further.
