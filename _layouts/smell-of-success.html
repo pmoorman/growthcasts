@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include leadhead.html %}
+
+<body>
+
+<header class="header section">
+  <div class="wrapper container container--large">
+    <div class="grid grid--justify grid--middle">
+      <div class="grid__column">
+        <a class="logo" href="{{ site.url }}">
+          {% include_absolute logo/Growthcasts.svg %}
+        </a>
+      </div>
+      
+      <div class="grid__column">
+        <div class="offcanvas offcanvas--home jsOffcanvas">
+          <div class="offcanvas__body">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="heading heading--subpage bold ta-c">Welcome to Growthcasts!</h1>
+    <h2 class="ta-c">Check your mail for the first story!<br><br>↓</h2>
+  </div>
+</header>
+    <main>
+    <article class="wrapper section container container--medium">
+          <div class="grid__column">
+            <p><b>This email course</b> is tailored to entrepreneurial people.
+                If that’s you, I will help you grow your early-stage business (or learn how to)<br>
+                Because the thing is…. growth is much harder than it seems! And maybe something you struggle with, too! <br>I’ve struggled with this for a long time, too, but I'll tell you all about that in the course ;)<br><br>
+                But anyway…. The solution is something that I stumbled on mostly by accident. It’s about building a systematic ‘growth loop'. Sounds cryptic, I know. <br>That’s because it’s an entirely different way to approach your marketing.
+                If you want to find out more about that, there's two things I need you to do:<br>
+                <b>1. Check your inbox</b> for the first email lesson (could be in spam)<br>
+                <b>2. Add my emailadres</b> (pieter@growthcasts.co) to your contacts, so you will receive all the other lessons!<br><br>
+                I promise it’s gonna be different than you expect, but fun and extremely valuable
+                <br><br><b>Now, let’s go and read!</b><br>
+                <i>Cheers</i><br>
+                –Pieter
+            </p>
+          </div>
+          </div>
+    </article>
+    </main>
+    <footer class="wrapper footer footer--light footer--lower" >
+      <div class="section section--small container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+</body>
+</html>

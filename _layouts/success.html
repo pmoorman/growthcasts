@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include leadhead.html %}
+
+<body>
+
+<header class="header section">
+  <div class="wrapper container container--large">
+    <div class="grid grid--justify grid--middle">
+      <div class="grid__column">
+        <a class="logo" href="{{ site.url }}">
+          {% include_absolute logo/Growthcasts.svg %}
+        </a>
+      </div>
+      
+      <div class="grid__column">
+        <div class="offcanvas offcanvas--home jsOffcanvas">
+          <div class="offcanvas__body">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="heading heading--subpage bold ta-c">Welcome, the first lesson is on its way to your inbox as we speak!</h1>
+    <h2 class="ta-c">Check below to see what you'll learn during this course<br></h2>
+  </div>
+</header>
+    <main>
+    <article class="wrapper section container container--medium">
+          <div class="grid__column">
+            <p><i>This email course is for entrepreneurs. You'll learn how to build growth, right into your business!
+            I designed a system that helps you find the perfect strategy, build a sustainable company and sell products your customer actually want to buy.</i><br>
+            <br>
+            <span class="underline underline--short handwriting handwriting--light"> Even more curious now?</span> 
+            <br><br>
+            <b>Well, here are</b> the lessons that you'll read over coming 14 days: <br>
+            <b>1. The Traction System </b>: The practical system to find your perfect acquisition channel.<br>
+            <b>2. Write to sell </b>: The core of copywriting, learn the few tactics that makes all your communication produce sales.<br>
+            <b>3. Risk Roadmaps </b>: The key strategy to scale your business as systematically as possible. Lean and sustainable roadmaps, riskfree growth!<br>
+            <b>4. Facebook Ad Engine </b>: The blueprint for your outbound marketing, learn how to hack Facebook ads, and use it for all your channels.<br>
+            <b>5. Lead Gen Engine </b>: Scrape the internet and find buckets of your customers, almost for free. Great for B2B products!<br>
+            <b>6. Salesfunnel </b>: Design your business so that you can optimise, grow and monitor it like a true system. You'll never be in the dark, again!<br>
+            <b>7. Advanced Onboarding </b>: Often forgotten, helping your customers understand and enjoy your products had enormous value. Turn cold costumers into addited power users.<br><br>
+
+            Now start with finding your perfect acquisition channel.<br>
+            Check your inbox (or spam) and start learning Growth Marketing!
+            <br>  <br>
+            Enjoy!<br>
+            Cheers,<br>
+            -Pieter
+            </p>
+                </div>
+          </div>
+        <div class="module__testimonial card container--xlarge" style="margin-top: -2rem">
+         <p class="module__testimonial-quote ta-c c--secondary">I really liked the email course, tons of value for free!</p>
+
+        <div class="module__testimonial-author grid grid--middle grid--center grid--gapeless grid--stackable">
+            <img class="module__testimonial-img image" src="./assets/images/willem.png" alt="">
+
+            <span class="c--secondary t--bold">Willem Hoogslag, </span>
+
+            <span>&nbsp;owns contentmarketing firm</span>
+        </div></div>
+    </article>
+
+    </main>
+    <footer class="wrapper footer footer--light footer--lower">
+      <div class="section section--small container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+</body>
+</html>

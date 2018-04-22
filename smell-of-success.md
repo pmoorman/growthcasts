@@ -1,0 +1,3 @@
+---
+layout: smell-of-success
+---
