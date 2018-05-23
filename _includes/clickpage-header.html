@@ -14,8 +14,11 @@
         </div>
       </div>
     </div>
+                  {% if page.heading %}
+    <h1 class="heading heading--subpage ta-c">{{ page.heading }}</h1>
+              {% endif %}
 
-    <h1 class="heading heading--subpage ta-c"><b>Thanks for clicking</b><br>Your easter egg email will land in you inbox within a few minutes!</h1>
+
 
     <button class="menu-button menu-button--gray menu-button--home menu-button--top button jsMenuBtn">
       <span class="menu-button__item"></span>
