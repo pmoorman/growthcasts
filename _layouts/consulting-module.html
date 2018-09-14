@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include con-module-header.html %}
+
+    <main id="get-started">
+      <section class="wrapper section container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside">
+          </div>
+
+          <div class="grid__column">
+            <h3 id="aintmagic"class="section__heading h3">We have helped many entrepreneurs build their dream business</em></h3>
+            <div class="section__content">
+                <p> Besides our course, we've been helping out startups from many different industries. This has been an enlightening and awesome experience and it really helped me to become better at explaining the Growth Marketing to people.
+                <br>
+                Because I don't like to keep things to myself, I thought that everyone could use a little help. That's why I added a consulting module to Elite, in which I try to explain how <i>you</i> can use Elite to help startups reach sustainable growth!
+
+                The lessons in the module include:
+                <ol>
+                  <li> Consulting introduction: The main concepts </li>
+                  <li> Positioning: How to position yourself in the market</li>
+                  <li> etc. </li>
+                </ol>
+
+                  </div>
+                          </div>
+
+                          <div class="grid__column section__aside"></div>
+                        </div>
+                      </section>
+
+
+                <section class="section section--gray">
+                        <div class="wrapper container container--xlarge">
+                          <div class="grid grid--center">
+                            <div class="grid__column section__aside"></div>
+
+                            <div class="grid__column">
+                              <div class="section__content">
+
+                <h2 id="growthloops"><strong>Some of our customers</strong></h2>
+                <h3> Klooker </h3>
+                <p> Dennie was super exited, we've pivotted his business into the sky!</p>
+                <br>
+                <h3> Peg </h3>
+                <p> Niccer was a great guy, he loved what we did:</p>
+                <br>
+                <h3> etc. </h3>
+                
+
+              <a class="button button--primary button--rounded button--shadow jsScrollDownBtn" href="/story">
+                Read more
+                <span class="button__icon">
+                  {% include_absolute icons/arrow-right.svg %}
+                </span>
+              </a>
+
+              </div>
+            </div>
+            <div class="grid__column section__aside"></div>
+          </div>
+
+     
+
+          {% include banner.html heading="Learn this simple, step-by-step framework to accelerate monthly user growth" text="Email course – 7 lessons" %}
+        </div>
+      </section>
+
+
+      {% include modal-form.html %}
+    </main>
+
+    <footer class="wrapper footer footer--light footer--lower">
+      <div class="section section--small container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>
