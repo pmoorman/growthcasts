@@ -1,7 +1,7 @@
 ---
-heading: 60-Minute Strategy Call
-footer: A strategy call costs $299.
-footer_link: 60-Minute Strategy Call
+heading: Marketing execution
+footer: Marketing execution starts at $8,000/month.
+footer_link: Email us to discuss your challenges
 ---
 
-Want to make sure you’re setting things up the right way to make your engines work?  Want me to review & revise your marketing copy or core value props? Can’t figure out the next steps? Need some help working out your growth model? I’m happy to help with a laser-focused strategy call.
+We come on board as your in-house growth team. We bring deep expertise in technical marketing and online user acquisition. We revamp your marketing strategy, setup and optimize (new) marketing channels, your website, sales funnels and onboarding flows. We run a regime of high-tempo testing, and report directly to you, the CEO.

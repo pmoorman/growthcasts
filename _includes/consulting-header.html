@@ -1,5 +1,5 @@
 <header class="header section">
-  <div class="wrapper container container--large">
+  <div class="header__wrapper wrapper container container--xlarge">
     <div class="grid grid--justify grid--middle">
       <div class="grid__column">
         <a class="logo" href="{{ site.url }}">
@@ -10,22 +10,33 @@
       <div class="grid__column">
         <div class="offcanvas offcanvas--home jsOffcanvas">
           <div class="offcanvas__body">
-            {% include nav.html %}
+            {% include nav.html contact_link=true %}
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container container--medium">
-      <h1 class="heading heading--subpage">Hi, I'am Pieter Moorman</h1>
+    <div class="grid grid--middle grid--stackable grid--justify">
+      <div class="grid__column">
+        <img class="image image--home" src="{{ "./assets/images/home-header.png" | relative_url }}" alt="">
+      </div>
 
-      <img class="image image--consulting" src="{{ "./assets/images/note/pieter2.jpg "}}" alt="" style="width:675px;height:450px;border:0;" hspace="10">
+      <div class="grid__column header__content">
+        <h1><b>Boutique Growth Agency</b></h1><span class="underline--medium"><h3>Amsterdam • Bali • San Fransisco</span></h3>
+
+        <a class="button button--primary button--rounded button--shadow jsScrollDownBtn" href="#get-started">
+          What we do
+          <span class="button__icon">
+            {% include_absolute icons/arrow-down.svg %}
+          </span>
+        </a>
+      </div>
     </div>
-
-    <button class="menu-button menu-button--gray menu-button--top menu-button--home button button--rounded jsMenuBtn">
-      <span class="menu-button__item"></span>
-      <span class="menu-button__item"></span>
-      <span class="menu-button__item"></span>
-    </button>
   </div>
+
+  <button class="menu-button menu-button--gray menu-button--home menu-button--top button jsMenuBtn">
+    <span class="menu-button__item"></span>
+    <span class="menu-button__item"></span>
+    <span class="menu-button__item"></span>
+  </button>
 </header>
