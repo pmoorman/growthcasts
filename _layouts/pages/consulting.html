@@ -27,7 +27,6 @@
 
             <div class="section__content">
               <p>Maybe that means you’re going international. Maybe that means you’re tightening up your branding. Maybe that means you’re unlocking new acquisition channels, and building out additional online funnels.</p>
-
               <p>In either case, it’s about scale. To increase the reach of your products, your identity, and your vision. To change the world, and to change your industry.
               <br><br>
               <i>Because that’s what you came for.</i>
@@ -42,31 +41,57 @@
       </div>
     </article>
       
-      <div class="section section--gray">
-        <div class="wrapper container container--xlarge">
-          <div class="grid grid--center">
-            <div class="grid__column section__aside"></div>
+    <div class="section section--gray">
+      <div class="wrapper container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
 
-            <div class="grid__column">
-              <h3 class="section__heading h2"><b>What we do</b></h3>
+          <div class="grid__column">
+            <h3 class="section__heading h2"><b>What we do</b></h3>
 
-              <div class="section__content">
-                {% for offer in site.consulting-offers %}
-                  <div class="section section--small">
-                    <h3 class="h4">{{ offer.heading }}</h3>
+            <div class="section__content">
+              {% for offer in site.consulting-offers %}
+                <div class="section section--small">
+                  <h3 class="h4">{{ offer.heading }}</h3>
 
-                    {{ offer.content }}
+                  {{ offer.content }}
 
-                    <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="mailto:{{ site.email }}">{{ offer.footer_link }}</a></p>
-                  </div>
-                {% endfor %}
-              </div>
+                  <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="mailto:{{ site.email }}">{{ offer.footer_link }}</a></p>
+                </div>
+              {% endfor %}
             </div>
-
-            <div class="grid__column section__aside"></div>
           </div>
+
+          <div class="grid__column section__aside"></div>
         </div>
       </div>
+    </div>
+
+
+    <article class="wrapper section section--first container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+
+          <div class="grid__column">
+            <h2 class="section__heading h2">            
+              <b>Who we are</b>
+            </h2>
+
+            <div class="section__content">
+              <p>We’re a boutique growth agency from The Netherlands, now operating from San Fransisco, Amsterdam and Bali. We’re a concise team of senior marketers specialized in startup growth. We are entrepreneurs ourselves and work remotely for businesses around the world.</p>
+            </div>
+            <h2 class="section__heading h3"><b>The team</b></h2>
+
+            <div class="section__content">
+              <p>Maybe that means you’re going international. Maybe that means you’re tightening up your branding. Maybe that means you’re unlocking new acquisition channels, and building out additional online funnels.</p>
+              <br>
+              <img src="/assets/images/aboutus.png" alt="About_us" style="width:100%;height:auto;border:0;">
+            </div>
+          </div>
+        <div class="grid__column section__aside"></div>
+      </div>
+    </article>
+
     </main>
 
     <footer class="wrapper footer footer--light footer--lower">
