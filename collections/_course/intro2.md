@@ -2,7 +2,6 @@
 layout: section
 heading: Growthcasts Elite is a fast-paced video course with over 7+ Hrs of video content...
 heading_quote: <br>so you, too, can build the systems that bring in traffic, users and revenue on autopilot… and grow your startup bigger, better and faster
-heading_image: section4.png
 ---
 
 {: .space}
