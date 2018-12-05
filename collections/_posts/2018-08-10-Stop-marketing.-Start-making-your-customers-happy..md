@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Stop marketing. Start making your customers happy.
+title:  <b>Stop marketing. Start making your customers happy.</b>
 date:   2018-08-10 09:15:41 -0600
 ---
 

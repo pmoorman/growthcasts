@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How I learned to love emails
+title:  <b>How I learned to love emails</b>
 date:   2018-08-17 09:07:01 -0600
 ---
 

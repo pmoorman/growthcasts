@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The customer equation, Do they spend more than you do?
+title:  <b>The customer equation, Do they spend more than you do?</b>
 date:   2018-08-03 08:12:01 -0600
 ---
 

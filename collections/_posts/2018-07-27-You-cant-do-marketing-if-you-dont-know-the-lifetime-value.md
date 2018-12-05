@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  You can’t do marketing if you don’t know the lifetime value of your customers
+title:  <b>You can’t do marketing if you don’t know the lifetime value of your customers</b>
 date:   2018-07-27 11:10:11 -0600
 ---
 
