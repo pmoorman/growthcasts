@@ -9,7 +9,8 @@ html {
 
 body, input {
   font-family: $font-family;
-  color: transparentize(color('secondary'), .3);
+  color: transparentize(color('secondary'), .1);
+  /*color: color('new-secondary');*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
