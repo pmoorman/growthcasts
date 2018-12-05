@@ -16,10 +16,10 @@ But here’s the problem…
 
 When most startups decide they need to do a “rebranding”, they focus on a new logo, and maybe style directions like fonts, colors, and other such matters. 
 <br><br>
-<blockquote>But that’s not branding—that’s your <b>visual identity</b></blockquote>
+<blockquote><i>But that’s not branding—that’s your <b>visual identity</b></i></blockquote>
 
 
-That confusion of terms is widespread, and regretful… because we’ve just reduced something important to something rather marginal. Visual identity isn’t going to make-or-break your startup *—but branding is.*
+That confusion of terms is widespread, and regretful… because we’ve just reduced something important to something rather marginal. Visual identity isn’t going to make-or-break your startup —but branding is.
 
 So what’s branding then?
 <br><br>
