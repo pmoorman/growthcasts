@@ -3,9 +3,8 @@
   {% include head.html %}
 
   <body>
-    {% for sales-header in site.sales-header %}
-      {{ sales-header }}
-    {% endfor %}
+    {% include sales-nav.html %}
+    {% include sales_header.html %}
 
     <main id="get-started">
       <div class="sections" id="intro">

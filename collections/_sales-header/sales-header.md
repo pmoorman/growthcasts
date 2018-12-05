@@ -4,5 +4,5 @@ heading: What if growth marketing &amp; 'user acquisition' were things you becam
 text: What if there was <span class="underline underline--medium">a proven, step-by-step framework</span> you could follow to grow your business? Learn to execute our simple blueprint to build your startup bigger, better, faster.
 button_text: Get started
 image: sales-banner.png
-sales-nav: false
+sales-nav: true
 ---

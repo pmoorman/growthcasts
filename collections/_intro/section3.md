@@ -1,27 +1,46 @@
 ---
 layout: section
-heading: We successfully boiled down their billion-dollar “growth systems" into a simple 7-part framework that any entrepreneur can quickly implement...
-heading_quote: <br> <span class='underline underline--medium'>and execute while working from a laptop in Bali</span><br><br>
-content_image: diagram.png
+heading: <b>I became a student of growth</b>
 ---
 
 {: .space}
-After watching that video on Reddit, I started messing around with the things they do: I tested the way they structure their funnels. I "reverse-engineered" the way they build traffic systems (called “growth engines”). I started applying their ruthless testing and prioritisation regimes.
+The few elite marketers that actually *know* how to build billion-dollar startup companies… they approach the question of “how to get customers” *profoundly* different than what any marketing guru ever talks about…
 
-After a while I started to notice their channel strategies. The psychological triggers they pull. The copywriting. (Slack. Holy shit.  Mind-blowing).
+So I did what they did. I started messing around with the things they do: I tested the way they structure their funnels. I “reverse-engineered” the way they build traffic systems (called “growth engines”). I started applying their ruthless testing and prioritization regimes.
 
-But I always had one simple objective in mind...
+After a while I started to notice their channel strategies. The psychological triggers they pull. The copywriting.
 
-{: .c--secondary .t--bold}
-“Can I turn their strategies into something that a dummy like myself can execute?”
+But I always had one simple objective in mind…
+<br><br>
+### *“Can I turn their strategies into something that a single entrepreneur like me can execute?”*
 
-Fast-forward 2 years, and see what we have:
+<ul>
+	<li>Can I find a framework that works to get my first 100 customers (rather than 10 million customers like *they* talk about)?</li>
+	<li>Can I simplify it, so it’ll work for eCommerce, and SaaS and mobile apps… all the same?</li>
+	<li>How can you apply their onboarding strategies, if you’re A) not a developer and B) strapped for cash?</li>
+</ul>
 
-{: .list}
-- There's a simple, 7-part framework that we execute
-- Over the years, they have been tried and tested.
-- I have — as a consultant — been able to help 4 startups scale incredibly well <em>(1 to raise $20MM in funding, 1 to acquisition, 2 to profitability)</em>
-- A few friends started using this system… and they got great results, too.
+And so on. 
+I was experimenting, testing and writing notes. 
 
-{: .c--secondary .t--bold}
-Now it’s even turned into a new, flagship product (called “Growthcasts Elite”), that every entrepreneur can us himself, to learn these skills!
+What I found was a simple, 6-part framework that I could easily execute against. It was practical, simple and focused. It fits on the back of a napkin. 
+
+Here’s the outline…
+
+<img src="/assets/images/diagram.png" style="width: 100%; height: auto; border:0;">
+
+When I saw that it was working for my own two companies, I got curious if it would work for others, too. That turned into a few consulting gigs, and…
+<br><br>
+### The results were *extra-ordinary*
+
+As a growth marketing consultant, I was able to help 4 startups scale *incredibly well.* All within the time span of less than 2 years: 
+
+  – One company raised $20MM+ in funding
+  – Another company got acquired
+  – Another 2 companies achieved profitability, and kept scaling
+
+Of course, those consulting gigs paid incredibly well. I was doing all the work while sitting in Bali or traveling the world… *yet the results kept rolling in.*
+
+I started to document everything. To create a “playbook”. Friends started using this system too… and they got excellent results. Today, that 6-part system has turned into our flagship product, called **“Growthcasts Elite”**. It’s a premium offering, that every entrepreneur can us himself, to learn these skills.
+
+So, I want to introduce you to something exciting…

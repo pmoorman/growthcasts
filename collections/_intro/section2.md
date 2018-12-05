@@ -1,65 +1,51 @@
 ---
 layout: section
-heading: As I was browsing the murky backwaters of Reddit the-mother-of-distractions...<br>
-heading_quote: <span class="underline underline--medium">I had a revelation that would change my career...</span>
+heading: <b>Durable, scalable sources of new users are built on loops</b>
 video_id: how-to-become-elite-at-growth
 ---
 
 {: .space}
-Actually, maybe "revelation" is a bit of a big word. It was more like: “I got lucky”.
-
-{: .t--bold .c--secondary}
-How?
-
-In the months prior... I stumbled on a keynote presentation by Brian Balfour, where he talks about growth marketing.
-
-<!-- VIDEO  How to become elite at growth-->
-<div class="video">
-  <img class="video__image image" src="./assets/images/brian-thumbnail.jpg" alt="">
-  <header class="video__header grid grid--middle grid--gapeless grid--justify">
-    <div class="grid__column">
-      <p class="c--white paragraph">Brian Belfour</p>
-      <p class="video__heading heading c--white h3">How to become elite at growth</p>
-    </div>
-    <div class="video__button grid__column">
-    <a class="button button--white button--expanded button--rounded button--shadow jsModalButton" href="#{{ page.video_id }}">
-      Play
-      <span class="button__icon">
-        {% include_absolute icons/play.svg %}
-      </span>
-    </a>
-    </div>
-  </header>
-</div>
-<!-- END OF VIDEO -->
-
-{: .handwriting .handwriting--small .ta-c .c--secondary .space}
-Watch it (just a few minutes...). It’s important, because it frames <span class="underline underline--short">EVERYTHING</span> else you’ll read on this page.
-
-This guy is not your typical marketing guru. Brian Balfour is the former “VP of Growth” at Hubspot, one of the biggest tech startups in the world. And you see immediately that his way of approaching the question is different. He’s not talking about the newest “trick” he discovered to "game the system". None of that.
-
-He’s talking about process, frameworks, systems.
-
 {: .handwriting}
 <span style="float: left; margin-left: -200px; color: #0066c3;">Big Insight</span>
 
-<b>The few elite marketers that actually {::nomarkdown}*know*{:/} how to build billion-dollar startup companies... they approach the question of “how to get customers” profoundly different from what ANY marketing guru ever talks about...</b>
+At the core, growth marketing takes the question of “how can we get users”… and approaches it *like an engineer would.* The challenge is to build something scalable, durable, and automated. It’s not longer about cool creatives or profitable ad campaigns like in traditional marketing—you need to build *a machine (or process, or system, or whatever you want to call it…)* to bring in new users, virtually on autopilot.
 
-{: .space}
-Duh! What got you here… won’t get you there! So what’s the difference?
+This is done through loops. One cohort of users today… needs to bring in another cohort of users, tomorrow. And then *that cohort* needs to brings in *the next cohort,* and on and on… in an infinite cycle that creates new customers at every turn. 
 
-<span class="underline underline--short">Systems thinking.</span>
+There are over 25 different such loops, and each of them can apply to different kinds of products and businesses. But let’s take two examples, to get you going…
 
-Instead in “hacks”, you need a scalable, repeatable process… to bring hundreds of people in the door, and turn them into happy, paying customers. You need some sort of a “acquisition machine” (or process, or system, or whatever you want to call it) that does the work for you. Something that works around the clock, and virtually on autopilot — so you don’t have to close every deal yourself.
+<br>
+<blockquote>
+<span class="underline underline--short"><b>USG-SEO loops</b><br></span>
+  Products like Yelp or Reddit execute on a USG-SEO loop: users create content, which gets ranked by Google (mostly for long-tail keywords), and that content brings new users into the platform, so the loop repeats. User-generated content forms the beating heart of this machine.  
+</blockquote>
 
-You need a system that can scale your growth.
+<img src="/assets/images/usg-seo-loop.png" style="width: 100%; height: auto; border:0;">
 
-Think about it.
+<blockquote>
+<span class="underline underline--short"><b>“Powered by” loop</b><br></span>
+  You know that Intercom widget on millions of sites, don’t you? Whenever a company uses Intercom, they expose their live chat widget on their website. The widget simply says *“Powered by Intercom”*, and brings new users in touch with Intercom.
+</blockquote>
 
-It’s profound.
+<img src="/assets/images/powered-by-loop.png" style="width: 100%; height: auto; border:0;">
 
-Taking that approach, completely flips the script on what marketing is all about. Suddenly your job is no longer to “get customers”, but rather to “build a little machine, that gets customers for us — on autopilot.”
 
-If you’re thinking, “Good for them...”
+Taking that approach, you flip the script on what marketing is all about: Suddenly your job is no longer to *“get customers”*, but rather to engineer a loop that *automatically* gets more customers in, creating those positive feedback loops. And the funny thing is…
+<br><br>
+### This works as well for venture-backed SaaS companies as it does for a lone *‘digital nomad’*, operating a lifestyle business from the beaches of Bali…
 
-...Here’s why I’m telling you all this:
+And I can know, because I do just that!
+
+For me, this journey started when I had lost my previous startup. I was living in paradise, but I felt like a failure. While *living* in Bali was fun, it wasn’t a sustainable solution without a business that earns money.
+
+
+<blockquote class="handwriting handwriting--primary">Even cheap fun isn't free</blockquote>
+
+Things needed to change around, if I wanted to stay living here.
+And if you’re with your back against the wall, and you NEED to make business a success, only one thing matters…
+
+
+<blockquote><i>Getting enough customers to pay the bills!</i></blockquote>
+
+No customers, and I’d have to go back to Holland, and find myself a boring office job.
+<br><br>
