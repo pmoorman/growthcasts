@@ -59,13 +59,15 @@
 
     &-heading {
       font-size: 14px;
+      font-family: 'Avenir', 'Helvetica Neue';
       color: color('primary');
       font-weight: 600;
       margin-bottom: 1rem;
     }
 
     &-text {
-      font-size: 16px;
+      font-size: 14px;
+      font-family: 'Roboto Mono', 'Avenir';
       color: color('light-gray');
 
       &--small {

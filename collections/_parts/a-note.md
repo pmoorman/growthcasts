@@ -2,7 +2,7 @@
 layout: note
 small_heading: A note from Pieter
 heading: Should you invest $19/month to learn how to acquire more customers?
-content_image: pieter.jpg
+content_image: pieter2.jpg
 ---
 
 Maybe that's a weird way to put it. Because it's a no-brainer:

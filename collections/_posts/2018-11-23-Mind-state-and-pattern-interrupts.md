@@ -5,7 +5,7 @@ layout: post
 date:   2018-11-23 12:12:11 -0600
 ---
 
-### *3 little thought experiments, that immediately help you write better ads…*
+##### *3 little thought experiments, that immediately help you write better ads…*
 
 Here are the 3 questions:
 

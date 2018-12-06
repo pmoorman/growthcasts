@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include headerless.html %}
+
+    <main id="get-started">
+      <section class="wrapper section container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside">
+          </div>
+          <div class="grid__column">
+            <h2 id="aintmagic" class="section__heading h2"><b>The inspiring work we have been doing</b></h2>
+            <div class="section__content">
+                <p>Over the years we have had the pleasure to work with amazing entrepreneurs to build and grow their startups into the businesses of their dreams. We've been helping our friends, strangers and clients in various ways:</p>
+
+                <ul>
+                    <li>With our free email course</li>
+                    <li>Through our full-pull flagship product: Elite</li>
+                    <li>By giving public talks</li>
+                    <li>In conversations with friends</li>
+                    <li>By working and advising for all types of businesses</li>
+                </ul>
+
+                <p>Cool stuff.</p>
+
+                <p><b>Now to give some sense of our past work...</b></p>
+                <br><br>
+                <h3 id="somequickfactsaboutmypreviouswork">Some “Quick Facts” about my previous work…</h3>
+
+                <p><strong>For BABB</strong></p>
+
+                <p>=> <em>“Crafted strategic messaging &amp; positioning that resulted in raising a $25MM Initial Coin Offering (ICO)”</em></p>
+
+                <p><a href="https://getbabb.com/" target="_blank">Visit website »</a> </p>
+
+                <p><strong>For Switch.cm</strong></p>
+
+                <p>=> <em>“Built an automated acquisition engine. Switch was Acquired 8 months later by Booking.com”</em></p>
+
+                <p>(Acquired; no website)</p>
+
+                <p><strong>For Peg</strong></p>
+
+                <p>=> <em>“Set up sales infrastructure and lead generation engine. London-based Peg raised a big [undisclosed] Series A round… 2 months later”</em> </p>
+
+                <p><a href="https://peg.co" target="_blank" >Visit website »</a></p>
+
+                <p><strong>For Klooker</strong> </p>
+
+                <p>=> <em>“From $0 revenue to 3500+ recurring revenue customers, all while bootstrapped”</em></p>
+
+                <p><a href="https://www.klooker.nl" target="_blank">Visit website (Dutch!) »</a></p>
+
+                <p><strong>For Growthcasts</strong> </p>
+
+                <p>=> <em>“Educated thousands of entrepreneurs about growth marketing &amp; user acquisition, while creating a bootstrapped business”</em></p>
+
+                <p><strong>For Radiantly Alive</strong> </p>
+
+                <p><em>=> “Quadrupled top-line revenue (and improved profitability even more) compared to any of the 5 years before.”</em></p>
+
+                <p><a href="https://www.radiantlyalive.com" target="_blank">Visit website »</a></p>
+
+                <p><strong>For RChain</strong> </p>
+
+                <p>=> <em>“Product marketing and management of community-directed marketing efforts, while growing market cap from XXX to YYY”</em> }}</p>
+
+                <p><a href="https://rchain.coop" target="_blank">Visit website »</a></p>
+
+                <p><strong>For Alvalor</strong></p>
+
+                <p>=> Marketing ownership / website / content strategy / fundraising</p>
+
+                <p><a href="https://alvalor.org" target="_blank">Visit website »</a> </p>
+                              
+                    </div>
+                </div>
+                <div class="grid__column section__aside"></div>
+              </div>
+                
+                <div class="section">
+                  <div class="wrapper container container--xlarge">
+                    <h3 class="ta-c h3">Some of the nice things others have said about my work…</h3>
+                    <div class="testimonials swiper-container jsSwiper2">
+                      <div class="testimonials__slider swiper-wrapper">
+                        {% for testimonial in site.testimonials %}
+                          <div class="testimonials__slide card card--white swiper-slide">
+                            {{ testimonial }}
+                          </div>
+                        {% endfor %}
+                      </div>
+
+                      <div class="swiper-pagination jsSwiperPagination2"></div>
+                    </div>
+                </div>
+
+          <center>
+          <img src="/assets/images/quickfix-testimonial.png" alt="" style="width:80%;height:auto;border:0;">
+        </center>
+
+                  <div class="wrapper section container container--xlarge">
+                    <div class="grid grid--center">
+                      <div class="grid__column section__aside">
+                      </div>
+                      <div class="grid__column">
+                <div class="section__content">But of course the real question is…
+
+
+                <h2 id="whatcanidoforyourbusiness" class="section__heading h3"><strong>What can I do for</strong> <strong><em>your</em></strong> <strong>business?</strong></h2>
+
+                <p>Now that you’ve gotten a feel for Growthcasts and for my work, it’s time for the next step. </p>
+
+                <p>If you’d like to know more about our flagship product <strong>“Growthcasts Elite”</strong>, then <a href="/elite"> check it out</a>, sign up for <a href="/home#the-emailcourse">the email course</a> to know when it's open for sales again</p>
+
+                <p>If you have a business with <strong>$25k or more</strong> in marketing budget, I might be able to offer bespoke services to you. Contact my colleague to work with me (<a href="mailto:caspar@growthcasts.co">click here</a>, send an email to Caspar).</p>
+
+                <p>Speak soon,</p>
+
+                <p><strong>—Pieter</strong></p>
+                <img src="/assets/images/pieter.png" alt="Piet" style="width:17%;height:auto;border:0;">
+                <br><br>
+                    <span class="ta-c" style="  font-family: 'Averta', 'Helvetica Neue';background: #2a3048; color: #a0a4b1;">
+                    <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p></span>
+                    </div>
+                </div>
+                <div class="grid__column section__aside"></div>
+              </div></div></section>
+    </main>
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>
