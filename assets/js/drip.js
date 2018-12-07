@@ -83,7 +83,7 @@ window.drip_plinko = function(drip, page) {
                                     <a class="button button--primary button--rounded button--shadow" href="https://gum.co/JkIeL">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$187</span>
+                                        <span>$349</span>
 
                                         <span class="button__icon">
                                           <img src="icons/shopping-basket.svg" alt="">
@@ -132,7 +132,7 @@ window.drip_plinko = function(drip, page) {
                                     <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$187</span>
+                                        <span>$249</span>
 
                                         <span class="button__icon">
                                           <img src="icons/shopping-basket.svg" alt="">
