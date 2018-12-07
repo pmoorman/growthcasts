@@ -1,5 +1,6 @@
 .price {
   max-width: 420px;
+  font-family: 'Averta', 'Helvetica Neue';
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -23,7 +24,7 @@
 
   &__heading {
     font-weight: bold;
-    font-family: $font-family;
+    font-family: 'Averta', 'Helvetica Neue';
     color: #fff;
   }
 
@@ -42,6 +43,7 @@
     &-heading {
       font-size: 14px;
       font-weight: 600;
+      font-family: 'Averta', 'Helvetica Neue';
     }
   }
 
@@ -57,7 +59,6 @@
     font-size: 62px;
     position: relative;
     margin-right: 2rem;
-    font-family: $font-family-headings;
 
     @media (min-width: breakpoint("xlarge")) {
       font-size: 84px;
