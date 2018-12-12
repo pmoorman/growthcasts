@@ -18,21 +18,20 @@
     line-height: 1.6;
 
     &:before {
-      content: '';
+      content: url('./images/icons/dot_blue.svg');
       position: absolute;
-      top: 8px;
-      left: -30px;
+      top: 3px;
+      left: -40px;
       width: 7px;
       height: 7px;
-      border-radius: 50%;
-      background: color('primary');
+      background: none;
     }
   }
 
   &--checked {
     li {
       &:before {
-        content: url('./images/icons/checkmark.svg');
+        content: url('./images/icons/vink_blue.svg');
         position: absolute;
         top: 3px;
         left: -40px;
@@ -44,7 +43,7 @@
     &-secondary {
       li {
         &:before {
-          content: url('./images/icons/checkmark-dark.svg');
+          content: url('./images/icons/vink_grey.svg');
         }
       }
     }
@@ -56,7 +55,7 @@
       color: #dbdbdb;
 
       &:before {
-        content: url('./images/icons/checkmark-grey.svg');
+        content: url('./images/icons/vink_grey.svg');
         position: absolute;
         top: 0;
         left: -40px;

@@ -19,3 +19,35 @@ body {
 svg {
   fill: currentColor;
 }
+
+ol {
+  font-family: 'HandOfSeanPro';
+  font-size: 1.2em;
+}
+
+.list_num_blue {
+  color: color('primary');
+}
+
+ol p {
+  font-family: 'Lora';
+  font-size: 1rem;
+  color: transparentize(color('secondary'), .1);
+}
+
+ul {
+  list-style-image: url('images/dotlistitem_grey.svg');
+}
+
+.list_dot_blue {
+  list-style-image: url('images/dotlistitem_blue.svg');
+}
+
+.list_vink_grey {
+  list-style-image: url('images/vinklistitem_grey.svg');
+}
+
+.list_vink_blue {
+  list-style-image: url('images/vinklistitem_blue.svg');
+}
+
