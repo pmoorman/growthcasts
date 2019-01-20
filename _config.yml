@@ -58,6 +58,7 @@ collections:
 exclude:
   - assets/js/core
   - assets/js/components
+  - vendor
 
 include:
   - _redirects
