@@ -50,7 +50,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_30 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">30% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">25% Discount on Growthcasts Elite</p>
                               </div>
 
                               <div class="grid__column">
@@ -83,7 +83,7 @@ window.drip_plinko = function(drip, page) {
                                     <a class="button button--primary button--rounded button--shadow" href="https://gum.co/JkIeL">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$349</span>
+                                        <span>$187</span>
 
                                         <span class="button__icon">
                                           <img src="icons/shopping-basket.svg" alt="">
@@ -99,7 +99,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_50 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">50% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">25% Discount on Growthcasts Elite</p>
                               </div>
 
                               <div class="grid__column">
@@ -132,7 +132,7 @@ window.drip_plinko = function(drip, page) {
                                     <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$249</span>
+                                        <span>$187</span>
 
                                         <span class="button__icon">
                                           <img src="icons/shopping-basket.svg" alt="">
@@ -150,22 +150,22 @@ window.drip_plinko = function(drip, page) {
 
         response = {
           // PRO
-          pricetable: '<p class="price__current-price paragraph">349</p><p class="price__old-price paragraph h2">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/JkIeL">
+          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/PkOtf">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
-                            <span>$349</span>
+                            <span>$187</span>
                             <span class="button__icon">
                               <img src="icons/shopping-basket.svg" alt="">
                             </span>
                           </div>
                         </a>`,
           // Core
-          pricetable2: '<p class="price__current-price paragraph">321</p><p class="price__old-price paragraph h2">459</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/swwpL">
+          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/nobodiscount">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
-                              <span>$321</span>
+                              <span>$177</span>
                               <span class="button__icon">
                                 <img src="icons/shopping-basket.svg" alt="">
                               </span>
@@ -173,8 +173,8 @@ window.drip_plinko = function(drip, page) {
                           </a>`,
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$349</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$187</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/PkOtf">
                             Get it now
                             <span class="button__icon">
                               <img src="icons/shopping-basket-white.svg" alt="">
@@ -188,22 +188,22 @@ window.drip_plinko = function(drip, page) {
   else if (drip.has_tag('50%_discount')) {
         response = {
           // PRO
-          pricetable: '<p class="price__current-price paragraph">249</p><p class="price__old-price paragraph h2">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
+          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/PkOtf">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
-                            <span>$249</span>
+                            <span>$187</span>
                             <span class="button__icon">
                               <img src="icons/shopping-basket.svg" alt="">
                             </span>
                           </div>
                         </a>`,
           // Core
-          pricetable2: '<p class="price__current-price paragraph">234</p><p class="price__old-price paragraph h2">469</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
+          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/nobodiscount">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
-                              <span>$234</span>
+                              <span>$177</span>
                               <span class="button__icon">
                                 <img src="icons/shopping-basket.svg" alt="">
                               </span>
@@ -211,8 +211,8 @@ window.drip_plinko = function(drip, page) {
                           </a>`,
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$249</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$187</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/PkOtf">
                             Get it now
                             <span class="button__icon">
                               <img src="icons/shopping-basket-white.svg" alt="">
@@ -223,57 +223,25 @@ window.drip_plinko = function(drip, page) {
           }
       }
 
-  else if (drip.has_tag('Ended_emailcourse')) {
-    response = {
-      // PRO
-      pricetable: '<p class="price__current-price--center paragraph"><i>closed</i></p>',
-      price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded">
-                      <span></span>
-                      <div class="grid grid--gapeless grid--middle">
-                        <span>Saleswindow closed</span>
-                        </span>
-                      </div>
-                    </a>`,
-      // Core
-      pricetable2: '<p class="price__current-price--center paragraph"><i>closed</i></p>',
-      price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded">
-                        <span></span>
-                        <div class="grid grid--gapeless grid--middle">
-                          <span>Saleswindow closed</span>
-                          </span>
-                        </div>
-                      </a>`,
-      // Banner
-      banner_header: `<h3 class="heading h3 c--white">The saleswindow is now closed</h3>
-                      <p class="paragraph">You'll get notified when it will open again.</p>`,
-      banner_button: `<a class="button button--white button--rounded button--shadow">
-                        <i>closed</i>
-                        <span class="button__icon">
-                          <img src="icons/shopping-basket-white.svg" alt="">
-                        </span>
-                      </a>`
-      }
-  }
-
   else {
         response = {
           // PRO
-          pricetable: '<p class="price__current-price price__current-price--center paragraph">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitepro">
+          pricetable: '<p class="price__current-price price__current-price--center paragraph">249</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/kHwmw">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
-                            <span>$499</span>
+                            <span>$249</span>
                             <span class="button__icon">
                               <img src="icons/shopping-basket.svg" alt="">
                             </span>
                           </div>
                         </a>`,
           // Core
-          pricetable2: '<p class="price__current-price price__current-price--center paragraph">469</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitecore">
+          pricetable2: '<p class="price__current-price price__current-price--center paragraph">229</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/nobonus">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
-                              <span>$469</span>
+                              <span>$229</span>
                               <span class="button__icon">
                                 <img src="icons/shopping-basket.svg" alt="">
                               </span>
@@ -281,8 +249,8 @@ window.drip_plinko = function(drip, page) {
                           </a>`,
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$499</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/elitepro">
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$249</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/kHwmw">
                             Get it now
                             <span class="button__icon">
                               <img src="icons/shopping-basket-white.svg" alt="">
