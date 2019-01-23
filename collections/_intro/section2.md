@@ -39,8 +39,6 @@ And I can know, because I do just that!
 For me, this journey started when I had lost my previous startup. I was living in paradise, but I felt like a failure. While *living* in Bali was fun, it wasn’t a sustainable solution without a business that earns money.
 
 
-<blockquote class="handwriting handwriting--primary">Even cheap fun isn't free</blockquote>
-
 Things needed to change around, if I wanted to stay living here.
 And if you’re with your back against the wall, and you NEED to make business a success, only one thing matters…
 

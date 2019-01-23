@@ -22,6 +22,21 @@
     }
   }
 
+  &__small {
+    display: none;
+
+    @media (min-width: breakpoint('medium')) {
+      display: block;
+      min-width: 65px;
+      max-width: 75px;
+    }
+
+    @media (min-width: breakpoint('large')) {
+      min-width: 150px;
+      max-width: 110px;
+    }
+  }
+
   &__heading {
     line-height: 1.6;
   }
