@@ -80,7 +80,7 @@ window.drip_plinko = function(drip, page) {
                                     </div>
                                   </div>
                                   <div class="grid__column discount__button">
-                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/JkIeL">
+                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/PkOtf">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
                                         <span>$187</span>
@@ -129,7 +129,7 @@ window.drip_plinko = function(drip, page) {
                                     </div>
                                   </div>
                                   <div class="grid__column discount__button">
-                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
+                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/PkOtf">
                                       <span>Get it now</span>
                                       <div class="wrapper grid grid--gapeless grid--middle">
                                         <span>$187</span>
