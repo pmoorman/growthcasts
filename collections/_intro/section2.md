@@ -24,7 +24,7 @@ There are over 25 different such loops, and each of them can apply to different 
 
 <blockquote>
 <span class="underline underline--short"><b>“Powered by” loop</b><br></span>
-  You know that Intercom widget on millions of sites, don’t you? Whenever a company uses Intercom, they expose their live chat widget on their website. The widget simply says *“Powered by Intercom”*, and brings new users in touch with Intercom.
+  You know that Intercom widget on millions of sites, don’t you? Whenever a company uses Intercom, they expose their live chat widget on their website. The widget simply says <i>“Powered by Intercom”</i>, and brings new users in touch with Intercom.
 </blockquote>
 
 <img src="/assets/images/powered-by-loop.png" style="width: 100%; height: auto; border:0;">
@@ -42,8 +42,8 @@ For me, this journey started when I had lost my previous startup. I was living i
 Things needed to change around, if I wanted to stay living here.
 And if you’re with your back against the wall, and you NEED to make business a success, only one thing matters…
 
-
-<blockquote><i>Getting enough customers to pay the bills!</i></blockquote>
+<br>
+<blockquote><i><b>Getting enough customers to pay the bills!</b></i></blockquote>
 
 No customers, and I’d have to go back to Holland, and find myself a boring office job.
 <br><br>

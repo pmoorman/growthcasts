@@ -1,12 +1,12 @@
 {% if page.heading %}
-  <h3 class="faq__heading heading">{{ page.heading }}</h3>
+  <h3 class="faq__heading heading"><b>{{ page.heading }}</b></h3>
 {% endif %}
 
 {% for question in page.faq %}
   {% for item in question %}
     <div class="card card--white card--small accordion jsAccordion">
       <div class="grid grid--gapeless grid--justify grid--middle accordion__head jsAccordionHead">
-        <h4 class="faq__question heading h5">{{ item[0] }}</h4>
+        <h4 class="faq__question heading h5"><b>{{ item[0] }}</b></h4>
 
         <span class="accordion__icon">
           {% include_absolute icons/chevron-down.svg %}

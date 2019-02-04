@@ -12,7 +12,7 @@ After a while I started to notice their channel strategies. The psychological tr
 
 But I always had one simple objective in mind…
 <br><br>
-### *“Can I turn their strategies into something that a single entrepreneur like me can execute?”*
+### “Can I turn their strategies into something that a single entrepreneur like me can execute?”
 
 <ul>
 	<li>Can I find a framework that works to get my first 100 customers (rather than 10 million customers like *they* talk about)?</li>

@@ -22,9 +22,9 @@ And that’s where marketing comes in…
 
 Every day startups with amazing products close their doors and disappear… because they couldn’t get enough users, and because they couldn’t explain their vision well enough.
 <br><br>
-<blockquote><i>Customers are the lifeblood of your business.<br>
+<blockquote><i><b>Customers are the lifeblood of your business.<br>
 They are the reason your product exists!
-</i></blockquote>
+</b></i></blockquote>
 
 Getting more customers is the hardest—but also most important—thing in business… and unlocking profitable and scalable acquisition channels is the most important milestone towards product/market-fit and starting the growth phase of your business. 
 
