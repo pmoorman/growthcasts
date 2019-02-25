@@ -1,48 +1,49 @@
 ---
 layout: module
 small_heading:  Module 5
-heading: Lead Gen Engine
+heading: Retention
 underline: true
-desc: Build Growth Engines (Part II), Scale any Channel with this 'Meta Blueprint'...
-image: module5.png
+desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
+image: module7.png
 
 steps:
-- Every Startup Starts With Outbound...: >
-    Like it or not, but ‘hustle’ is the name of the game. Outbound channels allow you to “scale the hustle” in a way that’s both <i>simple</i>, and <i>proven to work</i>.
-- Learn to Build Simple Growth Engines for B2B & SaaS: >
-    The Lead Gen engine is most suitable for B2B and SaaS applications. It’s a proven engine, and incredibly cheap/simple to set up & drive leads.
-- Unlock Growth Across 25+ Different Channels: >
-    In this module, you’ll see how to quickly build your own growth engines, no matter which channel you tap into <i>(it’s all the same!)</i>
+- Close Your Growth Loops: >
+    Strong onboarding allows you to close your growth loops <i>efficiently</i>. Increase retention, LTV & CAC allowance. The backbone of growth!
+- Build an Ambassadors Army: >
+    Email, NUX, and five more strategies. All play neatly into the “Magic Moments Map” frame- work, and allow for swift & simple execution.
+- Increase Profits & Unlock Scale: >
+    In the end, every growth model relies on turning cold leads into happy power users. Strengthen retention, and strengthen growth.
 
 core:
-- Core Content: 7 videos, 54 min
-- The Blueprint: 6:28min
-- SPAM Law: 8:57min
-- Finding the Source: 6:31min
-- Data Scraping: 6:39min
-- Finding anyone's email: 8:04min
-- Outbound Outreach: 8:07min
-- Outsourcing & Automation: 10:35min
+- Core Content: 7 videos, 74 min
+- Intro (50%): 3:56min
+- Magic Moments Map: 8:46min
+- Friction and Confusion: 7:11min
+- NUX: 7:41min
+- Blank States: 8:34min
+- Interface Enhancements: 7:44min
+- Drip Campaigns and Email: 10:49min
+- Retargeting: 6:07min
+- VIP Onboarding: 7:03min
+- Webinars and Training: 7:59min
 
 bonus:
 - Bonus Content:
-- Lead Gen Engine Guide: PDF
-- Email Swipe Files: PDF
-- Tools Cheatsheet: PDF
+- Advanced Onboarding Guide: PDF
+- Magic Moments Map Worksheet: PDF
 - Case study 1: VIDEO
 - Case study 2: VIDEO
-- Case study 3: VIDEO
 - Treasure Vault: ONLINE
 
-quote: At first, I thought this was just another growth hack, but it's a whole system and it works great!
-author: Nina Chow
-author_img: nina.png
-author_desc: <p>&nbsp;tech blogger</p>
+quote: High customer retention is like the "golden ticket" to limitless expansion. This course covers it in depth...
+author: Frank Peters
+author_img: frank.png
+author_desc: <p>&nbsp;works in consultancy firm</p>
 ---
 
 {: .list .list--flat .list--small}
-- An extensive ‘Frequently asked questions’ section to troubleshoot potential roadblocks you might encounter
-- Learn essential growth hacking skills such as web scraping, email marketing essentials, and more..
-- A PDF <b>swipe file</b> with the very emails that we use in our own engines. These are the high-value emails that are proven to convert. Normally you’d pay a senior copywriter for this. Now you can just copy-paste (and modify to your liking).
-- HD quality videos showing exactly how web scraping is done. This is the hardest part of the engine, and the true cornerstone of this technique.
-- A lot of information on how to <b>automate & outsource the entire engine</b> (or parts of it) to scale efficiently & at low costs.
+- 7 different strategies, with an extensive framework to figure out which to use in which case, and quick-start tips on how to implement them quickly
+- Swipe file with onboarding examples, plus notes on how to find more onboarding examples with minimum effort.
+- A worksheet that helps you quickly find the strategies your business should use.
+- Note: much like sales funnels, the strategies you learn in this module are highly suitable to sell as a productised service: virtually all early-stage startups can benefit tremendously from better onboarding. <b>This skill set is high-value and very easy to learn.</b>
+- As a business owner you'll notice the results because more leads convert to paying (!!) users, and ultimately <b>happy ambassadors that unlock viral word-of-mouth growth.</b>

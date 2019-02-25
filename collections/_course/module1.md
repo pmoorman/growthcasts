@@ -1,17 +1,17 @@
 ---
 layout: module
 small_heading:  Module 1
-heading: Traction System
+heading: Growth Strategy
 underline: true
-desc: Growth Starts with Acquisition, Unlock Limitless </br>Traffic to Your Business
+desc: Where we lay out the Foundation of the Growth Loops Architecture
 image: module1.png
 
 steps:
-- Deploy a Strategic User Acquisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Most startups fail not because they don’t have a strong product.. but because nobody knows they exist. That’s why “attention” matters (a lot).
-- Scale Up & Growth: >
+- Systems&#58; 6 pillars of Growth: >
+    Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Focus &amp; Clarity: >
+    Marketing can be daunting and intimidating, or simple and focused. Strong growth processes help you execute with focus &amp; clarity.
+- Crafting your Growth Strategy: >
     Once you’ve identified your proper channel and engine (outbound, inbound or product-based), we need to start managing growth <i>as you scale.</i>
 
 core:
@@ -33,7 +33,7 @@ bonus:
 - Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
+quote: Above all else&#58; Clarity &amp; Focus on how to craft a coherent growth strategy—with those growth loops
 author: Irina Bykowa
 author_img: irina.png
 author_desc: <p>&nbsp;works with Slack</p>
