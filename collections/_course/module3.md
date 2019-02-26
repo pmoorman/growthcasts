@@ -9,7 +9,7 @@ reverse: true
 
 steps:
 - Master Traffic &amp; Acquisition: >
-    Module 5 & 6 teach how to drive traffic & leads through “growth engines”. This module breaks down the step-by-step blueprint for Fb ads.
+    Drive traffic &amp; leads through growth engines. Learn step-by-step blueprints for Facebook ads, outbound lead gen and content-based engines.
 - Scale Through Automation: >
     Once you’ve seen a first growth engine, we’ll “connect the dots” and give the meta-blueprint that you can apply across any other channel.
 - The Architecture of Growth: >

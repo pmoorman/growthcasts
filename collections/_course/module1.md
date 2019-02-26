@@ -12,7 +12,7 @@ steps:
 - Focus &amp; Clarity: >
     Marketing can be daunting and intimidating, or simple and focused. Strong growth processes help you execute with focus &amp; clarity.
 - Crafting your Growth Strategy: >
-    Once you’ve identified your proper channel and engine (outbound, inbound or product-based), we need to start managing growth <i>as you scale.</i>
+    Identify your proper channel and engine (outbound, inbound or product-based). Execute coherent growth strategies as you scale.
 
 core:
 - Core Content: 7 videos, 56 min

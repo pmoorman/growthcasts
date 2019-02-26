@@ -3,16 +3,16 @@ layout: module
 small_heading:  Module 6 (PRO)
 heading: Advanced Strategies 
 underline: true
-desc: This 'Strategic Module' Helps You Become a Growth Strategist...
+desc: This 'Strategic Module' Deepens Your Expertise as a Growth Strategist...
 image: module3.png
 
 steps:
 - Become a Growth Strategist: >
-    Ultimately, the goal is to get you to a strong and optimised growth strategy asap. That requires being strategic, rather than tactical.
+    Learn intermediate &amp; advanced growth strategies. Lead a scaling growth team with confidence.
 - Accelerate Across Channels: >
-    Learn the strategic approach to scaling growth efforts across teams. Once you’ve hit your stride, learn to increase cadence & tempo.
+    Data &amp; analytics become your allies. Once you’ve hit your stride, learn to increase cadence & tempo.
 - Drive Explosive Product Growth: >
-    Learn a simple 4-part framework to optimise for product/market-fit. Bridge the gap between high-level strategy and practical execution.
+    No matter what market, you lead growth efforts with focus &amp; clarity of vision. Bridge high-level strategy and practical execution.
 
 core:
 - Core Content: 7 videos, 71 min

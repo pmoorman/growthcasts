@@ -3,7 +3,7 @@ layout: module
 small_heading:  Module 2
 heading: Sales Funnels
 underline: true
-desc: Design Your Growth Loop and take control of your business
+desc: Design Sales Machines that work virtually on Autopilot
 image: module6.png
 reverse: true
 
@@ -13,7 +13,7 @@ steps:
 - Nurture &amp; Convert on Autopilot: >
     Growth marketing is about <i>building systems</i>, rather than being a slave to your business. Learn how to take yourself out of the picture.
 - Use our Proven Funnel Blueprints: >
-    Five templates that you can use over-and-over. Identify which one matches your business... and have a simple structure that you know will work.
+    Fast templates that you can use over-and-over. Identify which one matches your business... and have a simple structure that you know will work.
 
 core:
 - Core Content: 7 videos, 64 min
@@ -38,7 +38,7 @@ bonus:
 - Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: Nr. #1 reason to buy this course: get my hands on those step-by-step funnel templates!!
+quote: Nr. &#35;1 reason to buy this course&#58; get my hands on those step-by-step funnel templates!!
 author: Eva Moorman
 author_img: eva.png
 author_desc: <p>&nbsp;freelance designer and consultant</p>

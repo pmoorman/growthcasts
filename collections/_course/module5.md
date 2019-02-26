@@ -3,16 +3,16 @@ layout: module
 small_heading:  Module 5
 heading: Retention
 underline: true
-desc: Close Your Growth Loop, Unleash 'Engineered Virality'...
+desc: Close Your Growth Loop — Unleash Engineered Virality...
 image: module7.png
 
 steps:
 - Close Your Growth Loops: >
-    Strong onboarding allows you to close your growth loops <i>efficiently</i>. Increase retention, LTV & CAC allowance. The backbone of growth!
+    Retention &amp; onboarding close out your growth loops efficiently. They are the backbone of stable, durable growth.
 - Build an Ambassadors Army: >
-    Email, NUX, and five more strategies. All play neatly into the “Magic Moments Map” frame- work, and allow for swift & simple execution.
+    In the end, growth relies on turning cold leads into happy power users. To strengthen retention is to strengthen growth.
 - Increase Profits & Unlock Scale: >
-    In the end, every growth model relies on turning cold leads into happy power users. Strengthen retention, and strengthen growth.
+     Learn simple frameworks like the “Magic Moments Map” for swift & simple execution of both onboarding &amp; retention strategies.
 
 core:
 - Core Content: 7 videos, 74 min

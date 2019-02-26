@@ -3,17 +3,17 @@ layout: module
 small_heading:  Module 4
 heading: Copy &amp; Conversions
 underline: true
-desc: Copywriting is the Backbone Skill, Learn It Once... Sell More Online – Forever
+desc: Magic that drives sales. Learn Once — Benefit Forever
 image: module2.png
 reverse: true
 
 steps:
 - The Keys of Hypnotic Storytelling: >
-    Copywriting is neither a science nor an artform. There is a simple set of 4 skills to consistently produce weapons-grade persuasion copy...
+    Story is the core of what drives emotions &amp; conversions. I’ll show you how to use stories to effectively drive sales.
 - Craft High-Pulling Sales Flows: >
-    If you’ve liked my emails so far... you’ve liked my way of storytelling and copywriting. I’ll show you how to use stories to effectively drive sales.
+    Structure drives everything. In fact, I use a simple set of 4 skills to consistently produce weapons-grade persuasion copy...
 - Writer Better, Faster: >
-    I realised this only later, but this kind of process avoids “writers block”, and helps unexperienced writers to write twice as good, twice as fast!
+    Avoids “writers block”, and write copy that's twice as good, twice as fast!
 
 core:
 - Core Content: 7 videos, 56:24
