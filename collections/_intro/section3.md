@@ -27,7 +27,7 @@ What I found was a simple, 6-part framework that I could easily execute against.
 
 You've seen the outline before…
 
-<img src="/assets/images/diagram.png" style="width:100%; height:auto; border:0;">
+<img src="/assets/images/diagram.png" class="breakout_image">
 
 When I saw that it was working for my own two companies, I got curious if it would work for others, too. That turned into a few consulting gigs, and…
 <br><br>

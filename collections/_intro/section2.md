@@ -16,14 +16,14 @@ There are over 25 different such loops, and each of them can apply to different 
 
 <br>
 <blockquote>
-<span class="underline underline--short"><b>USG-SEO loops</b><br></span>
+<span class="underline underline--short" style="font-size: 115%;"><b>USG-SEO loops</b></span><br style="margin-bottom: 15px;">
   Products like Yelp or Reddit execute on a USG-SEO loop: users create content, which gets ranked by Google (mostly for long-tail keywords), and that content brings new users into the platform, so the loop repeats. User-generated content forms the beating heart of this machine.
 </blockquote>
 
 <img src="/assets/images/usg-seo-loop.png" style="width: 100%; height: auto; border:0;">
 
 <blockquote>
-<span class="underline underline--short"><b>“Powered by” loop</b><br></span>
+<span class="underline underline--short" style="font-size: 115%;"><b>“Powered by” loop</b></span><br style="margin-bottom: 15px;">
   You know that Intercom widget on millions of sites, don’t you? Whenever a company uses Intercom, they expose their live chat widget on their website. The widget simply says <i>“Powered by Intercom”</i>, and brings new users in touch with Intercom.
 </blockquote>
 

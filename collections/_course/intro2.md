@@ -1,20 +1,20 @@
 ---
 layout: section
-heading: Growthcasts Elite is a fast-paced video course with over 7+ Hrs of video content...
-heading_quote: <br>so you, too, can build the systems that bring in traffic, users and revenue on autopilot… and grow your startup bigger, better and faster
+heading: A fast-paced video course showing exactly how to build the growth systems that bring traffic, users and revenue on autopilot...
+heading_quote: <br>... and grow your startup bigger, better and faster
 ---
 
 {: .space}
 Look over my shoulder while I break down these systems for you, show you how they work, and help you create your own.
 
-A few practicalities you should know...
+{: .list .list--checked}
+- <span class="t--bold c--secondary">Module 1: Growth Strategy</span><br>Foundation of the growth loops architecture
+- <span class="t--bold c--secondary">Module 2: Sales Funnels</span><br>Design sales machines that work on autopilot
+- <span class="t--bold c--secondary">Module 3: Growth Engines</span><br>On acquisition &amp; driving traffic
+- <span class="t--bold c--secondary">Module 4: Copy &amp; Conversion</span><br>The magic sauce to conversions
+- <span class="t--bold c--secondary">Module 5: Retention</span><br>Advanced onboarding and retention
+- <span class="t--bold c--secondary">Module 6: Advanced Strategy</span><br>Become a growth strategist
 
-<span class="c--secondary t--bold">– The course is broken down into 7 different modules.</span> Each module corresponds with one growth system. Each module consists of video lessons, a PDF guide, case studies, swipe files, and more.
-
-<span class="c--secondary t--bold">– Although this might seem overwhelming...</span> it often turns out that people simply need to “reshuffle” the pieces of the puzzle that they already have, to unlock substantial extra growth
-
-<span class="c--secondary t--bold">– This course is created primarily for entrepreneurs...</span> even when you don't have a lot of resources… and you're stretched thin with a million to-dos
-
-<span class="c--secondary t--bold">– The course also works for people that want to venture into a career as a professional “growth marketer”</span> (and thus sell their services to other companies)
+Look over my shoulder while I break down these systems for you, show you how they work, and help you create your own.
 
 With that said, let’s dive straight into it...

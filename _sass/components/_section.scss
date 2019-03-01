@@ -67,3 +67,12 @@
     }
   }
 }
+.breakout_image {
+  width: 100%;
+  height: auto;
+  border: 0;
+  @media (min-width: breakpoint('medium')) {
+    width: 140%;
+    margin-left: -120px; 
+  }
+}
