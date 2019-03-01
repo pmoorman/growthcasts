@@ -1,6 +1,6 @@
 ---
 layout: section
-heading: <b>Durable, scalable sources of new users are built on loops</b>
+heading: Durable, scalable sources of new users are built on growth loops
 video_id: how-to-become-elite-at-growth
 ---
 

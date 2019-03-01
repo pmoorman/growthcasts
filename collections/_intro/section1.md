@@ -20,7 +20,7 @@ That means there are only **two basic functions in business:**
 
 And that’s where marketing comes in…
 <br><br>
-### Marketing is important—because even with a great product, the world will not automatically beat a path to your door
+### Even with a great product, the world will not automatically beat a path to your doorway
 
 Every day startups with amazing products close their doors and disappear… because they couldn’t get enough users, and because they couldn’t explain their vision well enough.
 <br><br>
