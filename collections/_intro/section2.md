@@ -31,7 +31,7 @@ There are over 25 different such loops, and each of them can apply to different 
 
 
 <br><br>
-### Growth loops work for venture-backed companies as as well as for lone *‘digital nomads’*, operating a lifestyle business from Bali…
+### Growth loops work for both venture-backed companies and lone *‘digital nomads’*, operating a lifestyle business from Bali…
 
 And I can know, because I do just that!
 

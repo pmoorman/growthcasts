@@ -5,7 +5,7 @@ heading_quote: <br>... and grow your startup bigger, better and faster
 ---
 
 {: .space}
-Look over my shoulder while I break down these systems for you, show you how they work, and help you create your own.
+Become a confident growth marketing practitioner. Follow our exect step-by-step execution, and drive explosive user growth: 
 
 {: .list .list--checked}
 - <span class="t--bold c--secondary">Module 1: Growth Strategy</span><br>Foundation of the growth loops architecture

@@ -35,9 +35,10 @@ When I saw that it was working for my own two companies, I got curious if it wou
 
 As a growth marketing consultant, I was able to help 4 startups scale *incredibly well.* All within less than 2 years: 
 
-  – One company raised $20MM+ in funding
-  – Another company got acquired
-  – Another 2 companies achieved profitability, and kept scaling
+* One company raised $20MM+ in funding
+* Another company got acquired
+* A yoga studio *quadrupled* revenue with my help
+* Two more companies achieved profitability, and kept scaling
 
 Of course, those consulting gigs paid incredibly well. I was doing all the work while sitting in Bali or traveling the world… *yet the results kept rolling in.*
 
