@@ -40,9 +40,10 @@ author_desc: <p>&nbsp;works with Slack</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with a minimal investment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome these obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- Identify the best traction channels for your business type
+- Understand over 25 acquisition channels that growth marketers use
+- How to build a coherent growth loops architecture into your product fabric
+- Growth process &amp; execution velocity to breach through scaling barriers
+- How to leverage the *"power law of channels"* for fast traffic generation
+- Craft both inbound, outbound & product-based loops effectively
+- Learn to confidently drive acquisition &amp; generate gobs of traffic

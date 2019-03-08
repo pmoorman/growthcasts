@@ -39,7 +39,10 @@ author_desc: <p>&nbsp;founder/CEO @ Markify</p>
 ---
 
 {: .list .list--flat .list--small}
-- A detailed blueprint of the entire Facebook Ads blueprint. Learn which steps you need to take to unleash the power of the Facebook monster to <b>drive fast and predictable growth.</b>
-- Swipe files with effective & proven ads in virtually every startup industry: SaaS, eCommerce, corporate B2B, mobile apps & consumer products, agencies, etc. etc.
-- Frameworks on how to <b>plot your financial models</b>, so you can scale with confidence once you hit initial traction.
-- Most importantly… you'll see the entire process of making a growth engine. Once you know how <b><i>to make one growth engine, you can make any growth engine.</i></b>
+- Strategy: understand how growth engines fit into the wider growth masterplan
+- Full meta-blueprint on how to design and architect growth engines on all channels
+- Learn which steps you need to take to unleash the power of outbound engines
+- Swipe files with effective & proven ads in virtually every startup industry
+- Detailed blueprints &amp; breakdown of the complete Facebook Ads engine
+- Case studies and “behind the scenes” recordings of multiple real-world startups
+- Learn the three predominant blueprints for inbound and "content-based" engines

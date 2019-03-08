@@ -42,8 +42,10 @@ author_desc: <p>&nbsp;works in consultancy firm</p>
 ---
 
 {: .list .list--flat .list--small}
-- 7 different strategies, with an extensive framework to figure out which to use in which case, and quick-start tips on how to implement them quickly
-- Swipe file with onboarding examples, plus notes on how to find more onboarding examples with minimum effort.
-- A worksheet that helps you quickly find the strategies your business should use.
-- Note: much like sales funnels, the strategies you learn in this module are highly suitable to sell as a productised service: virtually all early-stage startups can benefit tremendously from better onboarding. <b>This skill set is high-value and very easy to learn.</b>
-- As a business owner you'll notice the results because more leads convert to paying (!!) users, and ultimately <b>happy ambassadors that unlock viral word-of-mouth growth.</b>
+- Understand the four 2nd-order effects of retention that increase user acquisition
+- Properly define, measure, segment, and analyze your retention
+- Learn how high retention rates become structural advantage that kill competitors
+- Explore 7 primary onboarding strategies that drive explosive product growth
+- Model how retention pumps back into your growth engines &amp; and generates traffic
+- Leverage high retention into explosive &amp; automated product-based growth loops
+- Convert leads into brand ambassadors that recommend you to their peers

@@ -45,10 +45,12 @@ author_desc: <p>&nbsp;freelance designer and consultant</p>
 ---
 
 {: .list .list--flat .list--small}
-- <b>Template I</b>: Webinar Funnel. Great for educational products, mid-size SaaS and consultancy.
-- <b>Template II</b>: Emailcourse Funnel. Mostly used for educational products like books or a training.
-- <b>Template III</b>: Product Demo Funnel. This is the perfect funnel for enterprise SaaS.
-- <b>Template IV</b>: Freemium Funnel. Very strong funnel for addictive products.
-- <b>Template V</b>: Invitation or VIP funnel. Social and virality based funnel, works for all sorts of companies.
-- Besides all these incredibly helpful templates, I also show you the framework we use to create & optimise funnels for maximum ROI.
-- Swipe file with examples for each type of sales funnel. This makes it easy to implement everything.
+- Learn the high-level funnel architectures that drive your entire growth strategy 
+- Implement surefire strategies to reduce friction &amp; **slash acquisition costs** 
+- Use radical empathy to create emotional effects in online sales environments
+- Eliminate funnel blockers that destroy your online conversions and effectiveness
+- Use the technique of **"conversational sequencing"** to create hypnotic copy flow
+- Structure multiple content-, sales- and product-driven funnels with confidence
+- Learn intermediate &amp; advanced tactics to increase funnel conversions 
+- Multiple proven, step-by-step templates to implement for immediate results
+- Run efficient multi-variable testing and optimisation on all AARRR funnel metrics

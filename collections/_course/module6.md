@@ -41,9 +41,13 @@ author_desc: <p>&nbsp;lifestyle entrepreneur</p>
 ---
 
 {: .list .list--flat .list--small}
-- Deep channels analysis, to hit <b>hyper-growth</b>, faster
-- Intermediate and advanced lean startup strategies that form the bridge between conceptual thinking an execution.
-- Become a growth strategist, and make better business decisions that scale companies faster and in <b>a more sustainable way.</b>
-- Learn how to accelerate cycle speed to compress your time and get more done in the same amount of time.
-- Gain laser focus and more confidence, as you execute a <b>step-by-step strategic plan.</b>
-- More than anything, you'll learn how to become a growth strategist, rather than going from trick to trick...
+<!-- 
+- Use radical empathy for great emotional effects in digital sales environments
+ -->
+- Explore more sophisticated &amp; complex growth marketing tactics and frameworks
+- Use simple frameworks to increase clarity and strategic focus as you scale
+- How to use high-tempo testing to find conversion increases fast &amp; repeatedly
+- Find product/market-fit faster using our strategic framework of "Risk Roadmaps"
+- Learn to accelerate cycle speed for time compression and execution efficiency
+- Deep understanding of traction channels, growth strategies and user acquisition
+- Above all: become a leader/executer that can confidently lead a marketing team…

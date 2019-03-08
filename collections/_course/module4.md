@@ -41,9 +41,9 @@ author_desc: <p>&nbsp;owns contentmarketing firm</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to become a confident writer. Write twice as good, twice as fast.
-- <b>Become a systematic copywriter</b>, using proven frameworks and structures to do your heavy lifting.
-- The <b>80/20</b> of writing better copy for more sales: only 4 hacks you need to master, drive most of the results.
-- Get an extensive library with examples to swipe from. This means you can start copy-pasting, rather than laying the groundwork yourself.
-- I show you how to unlock your <b>inner salesman</b>. We don't only work skills, but also your 'inner game' and mindset.
-- More than anything, you'll learn to <b>sell online</b>
+- How to become a confident writer and write twice as good, twice as fast
+- Learn systematic copywriting, using proven frameworks to do the heavy lifting
+- Use our simple P-S-T framework for creating highly effective copy flow
+- Increase conversions by ethically tapping into hidden emotions and neglected pains
+- Craft engaging "signature stories" that drive hypnotic, soft-sell conversions
+- How to activate your inner salesman through mindset &amp; story adjustments
