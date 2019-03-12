@@ -15,9 +15,9 @@
   &__content {
     max-width: 580px;
 
-    & > * + * {
-      margin-top: 2rem;
-    }
+    // & > * + * {
+    //   margin-top: 2rem;
+    // }
   }
 
   &__heading {
