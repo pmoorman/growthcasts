@@ -4,7 +4,7 @@ small_heading:  Module 2
 heading: Sales Funnels
 underline: true
 desc: Design Sales Machines that work virtually on Autopilot
-image: module6.png
+image: module2.png
 reverse: true
 
 steps:

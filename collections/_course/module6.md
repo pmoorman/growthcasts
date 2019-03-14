@@ -4,7 +4,7 @@ small_heading:  Module 6 (PRO)
 heading: Advanced Strategies 
 underline: true
 desc: This 'Strategic Module' Deepens Your Expertise as a Growth Strategist...
-image: module3.png
+image: module6.png
 
 steps:
 - Become a Growth Strategist: >

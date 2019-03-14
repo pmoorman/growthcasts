@@ -4,7 +4,7 @@ small_heading:  Module 4
 heading: Copy &amp; Conversions
 underline: true
 desc: Magic that drives sales. Learn Once — Benefit Forever
-image: module2.png
+image: module4.png
 reverse: true
 
 steps:

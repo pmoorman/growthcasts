@@ -4,7 +4,7 @@ small_heading:  Module 5
 heading: Retention
 underline: true
 desc: Close Your Growth Loop — Unleash Engineered Virality...
-image: module7.png
+image: module5.png
 
 steps:
 - Close Your Growth Loops: >

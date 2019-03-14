@@ -4,7 +4,7 @@ small_heading:  Module 3
 heading: Growth Engines
 underline: true
 desc: Build Growth Engines, The Core of Your Growth Strategy...
-image: module4.png
+image: module3.png
 reverse: true
 
 steps:
