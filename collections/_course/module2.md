@@ -16,15 +16,13 @@ steps:
     Fast templates that you can use over-and-over. Identify which one matches your business... and have a simple structure that you know will work.
 
 core:
-- Core Content: 7 videos, 64 min
-- Intro (Sales Funnels): 9:40min
-- The Process: 10:46min
-- Webinar Funnel: 9:40min
-- Email Course Funnel: 5:47min
-- Product Demo Funnel: 8:31min
-- Freemium Funnel: 10:12min
-- Invitation or VIP Funnel: 6:54min
-- Sales Funnel Architect: 4:21min
+- Core Content: 6 videos, 58 min
+- Radical empathy: 10:03min
+- Conversational sequencing: 5:50min
+- Funnel building process: 10:08min
+- Email Course Funnel: 12:29min
+- Freemium Funnel: 10:16min
+- Product Demo Funnel: 10:00min
 
 bonus:
 - Bonus Content:

@@ -15,14 +15,13 @@ steps:
     Identify your proper channel and engine (outbound, inbound or product-based). Execute coherent growth strategies as you scale.
 
 core:
-- Core Content: 7 videos, 56 min
-- Channels Strategy: 6:25 min
-- Core Constraints: 10:24 min
-- Product/Channel fit: 7:00 min
-- Prioritise: 3:26 min
-- Lean testing: 10:22 min
-- Profitability: 8:42 min
-- Scaling: 5:20 min
+- Core Content: 6 videos, 64 min
+- Introduction: 3:25 min
+- Growth Systems: 9:13 min
+- Process &amp; lean: 11:39 min
+- Growth Loops, part I: 10:41 min
+- Laws of Distribution: 14:42 min
+- Growth Loops, part II: 13:52 min
 
 bonus:
 - Bonus Content:

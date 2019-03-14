@@ -16,14 +16,11 @@ steps:
     Avoids “writers block”, and write copy that's twice as good, twice as fast!
 
 core:
-- Core Content: 7 videos, 56:24
-- Intro: 4:40min
-- Perspectives: 8:17min
-- Problem statements: 5:28min
-- Benefits vs features: 8:14min
-- Peeling the Onion: 8:00min
-- Power Words: 6:13min
-- Swipe Files: 7:33min
+- Core Content: 4 videos, 49 min
+- Story structure: 11:15min
+- Product copy: 11:42min
+- Closing: 13:08min
+- On writing well: 12:57min
 
 bonus:
 - Bonus Content:

@@ -16,14 +16,14 @@ steps:
     Broken down over 5 different steps, learn everything from concepting, to A/B testing, tooling and scaling. A very <i>practical</i> module.
 
 core:
-- Core Content: 7 videos, 57 min
-- Meta Blueprint: 4:56min
-- Core constraints: 5:19min
-- Strategy and Structure: 6:02min
-- Advertising Copywriting: 9:15min
-- A/B testing: 13:32min
-- Profitability: 10:27min
-- Scaling: 8:46min
+- Core Content: 7 videos, 71 min
+- Stable vs. Spikes: 6:17min
+- Core constraints: 5:29min
+- Growth Engine Meta-blueprint: 12:45min
+- Facebook ads engine: 10:24min
+- Lead gen engine: 13:53min
+- Content-driven engines: 10:12min
+- Profitability &amp; scaling: 13:04min
 
 bonus:
 - Bonus Content:

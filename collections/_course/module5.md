@@ -15,17 +15,13 @@ steps:
      Learn simple frameworks like the “Magic Moments Map” for swift & simple execution of both onboarding &amp; retention strategies.
 
 core:
-- Core Content: 7 videos, 74 min
-- Intro (50%): 3:56min
-- Magic Moments Map: 8:46min
-- Friction and Confusion: 7:11min
-- NUX: 7:41min
-- Blank States: 8:34min
-- Interface Enhancements: 7:44min
-- Drip Campaigns and Email: 10:49min
-- Retargeting: 6:07min
-- VIP Onboarding: 7:03min
-- Webinars and Training: 7:59min
+- Core Content: 6 videos, 67 min
+- Retention strategy: 11:05min
+- Retention matrix: 14:36min
+- Onboarding: 8:05min
+- Product &amp; interface strategies: 11:01min
+- Educational strategies: 13:53min
+- Closing the loop: 8:16min
 
 bonus:
 - Bonus Content:

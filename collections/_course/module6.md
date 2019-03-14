@@ -15,16 +15,15 @@ steps:
     No matter what market, you lead growth efforts with focus &amp; clarity of vision. Bridge high-level strategy and practical execution.
 
 core:
-- Core Content: 7 videos, 71 min
-- Advanced Lean Startup: 3:09min
-- Startup Plan: 9:37min
-- Risk Roadmaps: 8:29min
-- Market risks: 8:11min
-- Product risks: 6:32min
-- Channel risks: 7:18min
-- Ignition risks: 9:28min
-- What MVPs are for: 10:13min
-- The Final Roadmap: 11:22min
+- Core Content: 8 videos, 81 min
+- Strategy overview: 8:09min
+- Modelling growth loops: 11:25min
+- High-tempo testing: 8:52min
+- Risk Roadmaps, part I: 14:34min
+- Risk Roadmaps, part II: 9:49min
+- Data &amp; Analytics: 14:04min
+- Branding for growth: 10:01min
+- Wrapping up: 4:22min
 
 bonus:
 - Bonus Content:
