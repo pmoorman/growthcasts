@@ -1,18 +1,18 @@
 ---
 layout: module
 small_heading:  Module 1
-heading: Traction System
+heading: Growth Strategy
 underline: true
-desc: Growth Starts with Acquisition, Unlock Limitless </br>Traffic to Your Business
+desc: Where we lay out the Foundation of the Growth Loops Architecture
 image: module1.png
 
 steps:
-- Deploy a Strategic User Acquisition Plan: >
-    Struggling to acquire users quickly and effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
-- Acquire More Traffic, Efficiently: >
-    Most startups fail not because they don’t have a strong product.. but because nobody knows they exist. That’s why “attention” matters (a lot).
-- Scale Up & Growth: >
-    Once you’ve identified your proper channel and engine (outbound, inbound or product-based), we need to start managing growth <i>as you scale.</i>
+- Systems&#58; 6 pillars of Growth: >
+    Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities...
+- Focus &amp; Clarity: >
+    Marketing can be daunting and intimidating, or simple and focused. Strong growth processes help you execute with focus &amp; clarity.
+- Crafting your Growth Strategy: >
+    Identify your proper channel and engine (outbound, inbound or product-based). Execute coherent growth strategies as you scale.
 
 core:
 - Core Content: 7 videos, 56 min
@@ -33,16 +33,17 @@ bonus:
 - Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: I thought this module was one of the most valuable ones in the entire course. Really liked this...!
+quote: Above all else&#58; Clarity &amp; Focus on how to craft a coherent growth strategy—with those growth loops
 author: Irina Bykowa
 author_img: irina.png
 author_desc: <p>&nbsp;works with Slack</p>
 ---
 
 {: .list .list--flat .list--small}
-- How to identify the best traction channels for your specific business needs
-- The 25+ acquisition channels growth hackers can leverage to drive growth (and how find even more, on your own...)
-- You'll learn about the <span class="t--bold c--secondary">'power law of channels'</span>, and how to use it effectively
-- How <span class="t--bold c--secondary">'lean testing'</span> allows you to validate a potential growth engine, with a minimal investment of effort & money
-- I show you <span class="t--bold c--secondary">what holds you back</span> from <span class="t--bold c--secondary">fast scaling</span>, and how to overcome these obstacles
-- More than anything, you'll learn how to confidently drive the acquisition efforts of your business
+- Identify the best traction channels for your business type
+- Understand over 25 acquisition channels that growth marketers use
+- How to build a coherent growth loops architecture into your product fabric
+- Growth process &amp; execution velocity to breach through scaling barriers
+- How to leverage the *"power law of channels"* for fast traffic generation
+- Craft both inbound, outbound & product-based loops effectively
+- Learn to confidently drive acquisition &amp; generate gobs of traffic

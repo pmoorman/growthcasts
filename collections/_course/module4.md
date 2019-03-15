@@ -1,45 +1,49 @@
 ---
 layout: module
 small_heading:  Module 4
-heading: Facebook Ads Engine
+heading: Copy &amp; Conversions
 underline: true
-desc: Build Growth Engines (part I), The Core of Your Growth Strategy...
-image: module4.png
+desc: Magic that drives sales. Learn Once — Benefit Forever
+image: module2.png
 reverse: true
 
 steps:
-- A Detailed Blueprint For Scaling Paid Ads: >
-    Module 5 & 6 teach how to drive traffic & leads through “growth engines”. This module breaks down the step-by-step blueprint for Fb ads.
-- Step-by-step Instructions. Very Practical...: >
-    Broken down over 5 different steps, learn everything from concepting, to A/B testing, tooling and scaling. A very <i>practical</i> module.
-- Understand the ‘Meta-Blueprint’ of the Growth Loops Architecture: >
-    Once you’ve seen a first growth engine, we’ll “connect the dots” and give the meta-blueprint that you can apply across any other channel.
+- The Keys of Hypnotic Storytelling: >
+    Story is the core of what drives emotions &amp; conversions. I’ll show you how to use stories to effectively drive sales.
+- Craft High-Pulling Sales Flows: >
+    Structure drives everything. In fact, I use a simple set of 4 skills to consistently produce weapons-grade persuasion copy...
+- Writer Better, Faster: >
+    Avoids “writers block”, and write copy that's twice as good, twice as fast!
 
 core:
-- Core Content: 7 videos, 57 min
-- Meta Blueprint: 4:56min
-- Core constraints: 5:19min
-- Strategy and Structure: 6:02min
-- Advertising Copywriting: 9:15min
-- A/B testing: 13:32min
-- Profitability: 10:27min
-- Scaling: 8:46min
+- Core Content: 7 videos, 56:24
+- Intro: 4:40min
+- Perspectives: 8:17min
+- Problem statements: 5:28min
+- Benefits vs features: 8:14min
+- Peeling the Onion: 8:00min
+- Power Words: 6:13min
+- Swipe Files: 7:33min
 
 bonus:
 - Bonus Content:
-- Facebook Ads Engine Guide: PDF
-- Tools Cheatsheet: PDF
-- Ads Swipe File: PDF
+- Copywriting Guide: PDF
+- Cheatsheet: PDF
+- Peeling the Onion worksheet: PDF
+- Case study 1: VIDEO
+- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: I became really good at Adwords, and I learned it by understanding Facebook..
-author: Mark Schnetlager
-author_img: mark.png
-author_desc: <p>&nbsp;founder/CEO @ Markify</p>
+quote: Copywriting is salesmanship at scale. The better your copy, the more you sell.
+author: Willem Hoogslag
+author_img: willem.png
+author_desc: <p>&nbsp;owns contentmarketing firm</p>
 ---
 
 {: .list .list--flat .list--small}
-- A detailed blueprint of the entire Facebook Ads blueprint. Learn which steps you need to take to unleash the power of the Facebook monster to <b>drive fast and predictable growth.</b>
-- Swipe files with effective & proven ads in virtually every startup industry: SaaS, eCommerce, corporate B2B, mobile apps & consumer products, agencies, etc. etc.
-- Frameworks on how to <b>plot your financial models</b>, so you can scale with confidence once you hit initial traction.
-- Most importantly… you'll see the entire process of making a growth engine. Once you know how <b><i>to make one growth engine, you can make any growth engine.</i></b>
+- How to become a confident writer and write twice as good, twice as fast
+- Learn systematic copywriting, using proven frameworks to do the heavy lifting
+- Use our simple P-S-T framework for creating highly effective copy flow
+- Increase conversions by ethically tapping into hidden emotions and neglected pains
+- Craft engaging "signature stories" that drive hypnotic, soft-sell conversions
+- How to activate your inner salesman through mindset &amp; story adjustments

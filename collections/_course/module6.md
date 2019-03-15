@@ -1,54 +1,53 @@
 ---
 layout: module
-small_heading:  Module 6
-heading: Sales Funnels
+small_heading:  Module 6 (PRO)
+heading: Advanced Strategies 
 underline: true
-desc: Design Your Growth Loop and take control of your business
-image: module6.png
-reverse: true
+desc: This 'Strategic Module' Deepens Your Expertise as a Growth Strategist...
+image: module3.png
 
 steps:
-- Stop Closing Every Sale Yourself: >
-    Growth marketing is about <i>building systems</i>, rather than being a slave to your business. Learn how to take yourself out of the picture.
-- Create Systems That Drive Sales — On Autopilot: >
-    Once you see the whole picture, you’ll understand intuitively where funnels fit in. Learn to think like a “funnel architect”.
-- Learn Five Easy Funnel Templates (5x): >
-    Five templates that you can use over-and-over. Identify which one matches your business... and have a simple structure that you know will work.
+- Become a Growth Strategist: >
+    Learn intermediate &amp; advanced growth strategies. Lead a scaling growth team with confidence.
+- Accelerate Across Channels: >
+    Data &amp; analytics become your allies. Once you’ve hit your stride, learn to increase cadence & tempo.
+- Drive Explosive Product Growth: >
+    No matter what market, you lead growth efforts with focus &amp; clarity of vision. Bridge high-level strategy and practical execution.
 
 core:
-- Core Content: 7 videos, 64 min
-- Intro (Sales Funnels): 9:40min
-- The Process: 10:46min
-- Webinar Funnel: 9:40min
-- Email Course Funnel: 5:47min
-- Product Demo Funnel: 8:31min
-- Freemium Funnel: 10:12min
-- Invitation or VIP Funnel: 6:54min
-- Sales Funnel Architect: 4:21min
+- Core Content: 7 videos, 71 min
+- Advanced Lean Startup: 3:09min
+- Startup Plan: 9:37min
+- Risk Roadmaps: 8:29min
+- Market risks: 8:11min
+- Product risks: 6:32min
+- Channel risks: 7:18min
+- Ignition risks: 9:28min
+- What MVPs are for: 10:13min
+- The Final Roadmap: 11:22min
 
 bonus:
 - Bonus Content:
-- Hypnotic Sales Funnels Guide: PDF
-- Webinar Funnel Template: PDF
-- Email Course Funnel Template: PDF
-- Product Demo Funnel Template: PDF
-- Freemium Funnel Template: PDF
-- VIP Funnel Template: PDF
+- Risk Roadmap Guide: PDF
+- Cheatsheet (2x): PDF
+- Editable Worksheet: PDF
 - Case study 1: VIDEO
-- Case study 2: VIDEO
 - Treasure Vault: ONLINE
 
-quote: I never thought it was so easy to test and optimise your business as a whole. Really an eye-opener!
-author: Eva Moorman
-author_img: eva.png
-author_desc: <p>&nbsp;freelance designer and consultant</p>
+quote: The "Advanced" module is a masterpiece—gave me the confidence to pursue a career in growth myself
+author: Heather Dawton
+author_img: Heather.png
+author_desc: <p>&nbsp;lifestyle entrepreneur</p>
 ---
 
 {: .list .list--flat .list--small}
-- <b>Template I</b>: Webinar Funnel. Great for educational products, mid-size SaaS and consultancy.
-- <b>Template II</b>: Emailcourse Funnel. Mostly used for educational products like books or a training.
-- <b>Template III</b>: Product Demo Funnel. This is the perfect funnel for enterprise SaaS.
-- <b>Template IV</b>: Freemium Funnel. Very strong funnel for addictive products.
-- <b>Template V</b>: Invitation or VIP funnel. Social and virality based funnel, works for all sorts of companies.
-- Besides all these incredibly helpful templates, I also show you the framework we use to create & optimise funnels for maximum ROI.
-- Swipe file with examples for each type of sales funnel. This makes it easy to implement everything.
+<!-- 
+- Use radical empathy for great emotional effects in digital sales environments
+ -->
+- Explore more sophisticated &amp; complex growth marketing tactics and frameworks
+- Use simple frameworks to increase clarity and strategic focus as you scale
+- How to use high-tempo testing to find conversion increases fast &amp; repeatedly
+- Find product/market-fit faster using our strategic framework of "Risk Roadmaps"
+- Learn to accelerate cycle speed for time compression and execution efficiency
+- Deep understanding of traction channels, growth strategies and user acquisition
+- Above all: become a leader/executer that can confidently lead a marketing team…

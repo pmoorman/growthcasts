@@ -1,6 +1,6 @@
 ---
 layout: section
-heading: <b>I became a student of growth</b>
+heading: <b>So I became a student of growth</b>
 ---
 
 {: .space}
@@ -25,19 +25,20 @@ I was experimenting, testing and writing notes.
 
 What I found was a simple, 6-part framework that I could easily execute against. It was practical, simple and focused. It fits on the back of a napkin. 
 
-Here’s the outline…
+You've seen the outline before…
 
-<img src="/assets/images/diagram.png" style="width: 100%; height: auto; border:0;">
+<img src="/assets/images/diagram.png" class="breakout_image">
 
 When I saw that it was working for my own two companies, I got curious if it would work for others, too. That turned into a few consulting gigs, and…
 <br><br>
 ### The results were *extra-ordinary*
 
-As a growth marketing consultant, I was able to help 4 startups scale *incredibly well.* All within the time span of less than 2 years: 
+As a growth marketing consultant, I was able to help 4 startups scale *incredibly well.* All within less than 2 years: 
 
-  – One company raised $20MM+ in funding
-  – Another company got acquired
-  – Another 2 companies achieved profitability, and kept scaling
+* One company raised $20MM+ in funding
+* Another company got acquired
+* A yoga studio *quadrupled* revenue with my help
+* Two more companies achieved profitability, and kept scaling
 
 Of course, those consulting gigs paid incredibly well. I was doing all the work while sitting in Bali or traveling the world… *yet the results kept rolling in.*
 
