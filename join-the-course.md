@@ -1,10 +1,10 @@
 ---
 layout: step
-page-headline: Double your user base with modern growth marketing strategies — then double again
+page-headline: Join 15,271+ others: our most popular course on modern growth marketing techniques
 page-text: Email course - 14 days
 button: Join +15,271 people
 form: true
-popup-headline: Join our popular course on user growth
-popup-text: Get smarter at acquiring users on autopilot, and scaling growth
+popup-headline: Join +15,271 other people
+popup-text: "Wow. This marketing framework is both phenomenal, and simple"
 popup-button: Join the course
 ---
