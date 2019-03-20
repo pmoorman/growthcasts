@@ -13,12 +13,12 @@
             </div>
 
             <div class="grid__column header__content">
-              {% if page.heading %}
-                <h3 class="heading">{{ page.heading }}</h3>
+              {% if page.page-headline %}
+                <h3 class="heading">{{ page.page-headline }}</h3>
               {% endif %}
 
               {% if page.text %}
-                <p class="paragraph">{{ page.text }}</p>
+                <p class="paragraph">{{ page.page-text }}</p>
               {% endif %}
 
 
@@ -29,12 +29,43 @@
 
               {% if page.form %}
       <div class="banner__content">
-        <h3 class="banner__heading h2 c--white">{{ include.heading }}</h3>
+        <!-- <h3 class="banner__heading h2 c--white">{{ include.page-heading }}</h3> -->
+        <div class="modal jsModal" id="join-the-course">
+          <div class="modal__background jsModalBg"></div>
 
-      {% include modal-form.html %}
+          <div class="modal__content jsModalBg">
+            <div class="modal__form container container--medium">
+              <h3>{{ page.popup-headline }}</h3>
+
+              <p>{{ page.popup-text }}</p>
+
+              <form class="form" action="https://www.getdrip.com/forms/277204824/submissions" method="post" data-drip-embedded-form="277204824">
+                <div class="form__content grid grid--gapeless grid--center grid--middle">
+                  <div class="grid__column">
+                    <div class="form-group form-group--narrow container">
+                      <label class="form-group__label" for="email">Email</label>
+
+                      <input class="form-group__input" type="email" name="fields[email]" id="email" placeholder="type@youremail.com">
+                    </div>
+                  </div>
+
+                  <div class="grid__column">
+                    <button type="submit" class="button button--primary button--rounded button--shadow"  data-drip-attribute="sign-up-button">
+                      {{ page.popup-button}}
+
+                      <span class="button__icon">
+                        {% include_absolute icons/arrow-down.svg %}
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
               <a class="button button--primary button--rounded button--shadow jsModalButton" href="#join-the-course">
-                Join the course
+                {{ page.button }}
 
 
                 <span class="button__info handwriting handwriting--small handwriting--light">It's<span class="underline underline--medium"> FREE</span></span>
