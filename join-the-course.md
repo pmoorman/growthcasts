@@ -1,10 +1,10 @@
 ---
 layout: step
-page-headline: Learn this simple, step-by-step framework to accelerate monthly user growth
+page-headline: Our most popular course: modern growth marketing & user acquisition techniques
 page-text: Email course - 14 days
-button: join the course
+button: Join +15,271 people
 form: true
-popup-headline: Start your Free 14-day Email Course
-popup-text: Practical Lessons to Become a Master Entrepreneur
-popup-button: Let's go!
+popup-headline: Learn growth marketing today
+popup-text: Get smarter at growing startups with our popular course
+popup-button: Enroll now
 ---
