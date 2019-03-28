@@ -1,6 +1,6 @@
 ---
 layout: step
-page-headline: Join 15,271+ others: our most popular course on modern growth marketing techniques
+page-headline: Join 15,271+ others&colon; our most popular course on modern growth marketing techniques
 page-text: Email course - 14 days
 button: Join +15,271 people
 form: true
