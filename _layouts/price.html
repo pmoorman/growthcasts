@@ -1,3 +1,12 @@
+<script>
+(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://samcart.com/embed/embed.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'samcart-embed'));
+</script>
+
 <header class="price__header {% if page.color == 'secondary' %}price__header--secondary {% endif %}">
   {% if page.heading %}
     <h3 class="price__heading heading ta-c tt-u h5">{{ page.heading }}</h3>
