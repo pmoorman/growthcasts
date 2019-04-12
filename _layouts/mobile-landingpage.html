@@ -6,28 +6,24 @@
   <body>
     <main>
       <div class="header header--full">
-        <div class="wrapper section section--lead-gen container container--xlarge"">
+        <div class="wrapper section section--lead-gen container container--xlarge">
           <div class="grid grid--middle grid--stackable grid--justify">
             <div class="grid__column header__content">
               {% if page.page-headline %}
                 <h3 class="heading tac">{{ page.page-headline }}</h3>
               {% endif %}
-              <br><br><br>
-              {% if page.text %}
-                <p class="paragraph">{{ page.page-text }}</p>
-              {% endif %}
-
-            <div class="grid__column">
-              <iframe class="resp-iframe" src="https://player.vimeo.com/video/329793543?autoplay=1" frameborder="0"></iframe>
-              <br><br><br><br>
+           <br>
+            <div class="grid">
+              <iframe class="resp-iframe" src="https://player.vimeo.com/video/329990055?autoplay=1" frameborder="0" style="margin-top: 8rem; width: 140%; margin-left:-6rem;"></iframe>
             </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
 
-
-              {% if content %}
-                {{ content }}
-              {% endif %}
-
-              {% if page.form %}
+        <div class="wrapper section section--lead-gen container container--xlarge">
+          <div class="grid grid--middle grid--stackable grid--justify">
+            <div class="grid__column header__content">
       <div class="banner__content">
         <!-- <h3 class="banner__heading h2 c--white">{{ include.page-heading }}</h3> -->
         <div class="modal jsModal" id="join-the-course">
@@ -74,37 +70,20 @@
                 </span>
         </a>
       </div>
-              {% endif %}
+
+<div class="module__testimonial card " style="margin-top: 1rem">
+         <p class="module__testimonial-quote ta-c c--secondary" style="font-size: 24px">At first I was a bit skeptical, but the course gave me a lot of really useful insights!</p> 
+
+        <div class="module__testimonial-author grid grid--middle grid--center grid--gapeless grid--stackable">
+            <img class="module__testimonial-img image" src="./assets/images/Robin van Ittersum.png" alt="mijgoed.jpg">
+
+            <span class="c--secondary t--bold">Robin van Ittersum,</span>
+
+            <span>&nbsp;Founder Osnap</span>
+        </div></div>
 
               {% if page.subheading %}
                 <p class="heading h3">{{ page.subheading }}</p>
-              {% endif %}
-
-              {% if page.reasons %}
-                <div class="reasons">
-                  <a class="reasons__item button button--white button--rounded button--expanded button--gray-shadow" href="http://drip.la/c/eyJhY2NvdW50X2lkIjoiMzAyOTU5NSIsInRyaWdnZXJfaWQiOiI2MDMxMzk5NiIsImR5bmFtaWNfdXJsIjpudWxsLCJ1cmwiOiJodHRwczovL3d3dy5ncm93dGhjYXN0cy5jby90aGUtc21lbGwtb2Ytc3VjY2VzcyJ9">
-                    <span class="c--secondary">I want to start a Business the right away</span>
-                    <span class="button__icon">
-                      {% include_absolute icons/arrow-down.svg %}
-                    </span>
-                  </a>
-                </div>
-                <div class="reasons">
-                  <a class="reasons__item button button--white button--rounded button--expanded button--gray-shadow" href="http://drip.la/c/eyJhY2NvdW50X2lkIjoiMzAyOTU5NSIsInRyaWdnZXJfaWQiOiIzODEwNTcxOSIsImR5bmFtaWNfdXJsIjpudWxsLCJ1cmwiOiJodHRwczovL3d3dy5ncm93dGhjYXN0cy5jby90aGUtc21lbGwtb2Ytc3VjY2VzcyJ9">
-                    <span class="c--secondary">I have a business that I want to make a success</span>
-                    <span class="button__icon">
-                      {% include_absolute icons/arrow-down.svg %}
-                    </span>
-                  </a>
-                </div>
-                <div class="reasons">
-                  <a class="reasons__item button button--white button--rounded button--expanded button--gray-shadow" href="http://drip.la/c/eyJhY2NvdW50X2lkIjoiMzAyOTU5NSIsInRyaWdnZXJfaWQiOiIyODY4NzAyOCIsImR5bmFtaWNfdXJsIjpudWxsLCJ1cmwiOiJodHRwczovL3d3dy5ncm93dGhjYXN0cy5jby90aGUtc21lbGwtb2Ytc3VjY2VzcyJ9">
-                    <span class="c--secondary">I want to become a Top-Notch Consultant</span>
-                    <span class="button__icon">
-                      {% include_absolute icons/arrow-down.svg %}
-                    </span>
-                  </a>
-                </div>
               {% endif %}
             </div>
           </div>
