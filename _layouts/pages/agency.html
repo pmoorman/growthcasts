@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include agency-header.html %}
+
+    <main id="get-started">
+      <article class="wrapper section section--first container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+
+          <div class="grid__column">
+            <h1 class="section__heading h2">
+              
+            <b>We help you that have traction, unlock their full potential and scale</b>
+            </h1>
+
+            <div class="section__content">
+              <p>We are a boutique growth agency, focused on taking hungry startup companies out of the “we’re just getting started” phase, and into the real world of serious business and mature brands.</p>
+
+              <p>That means you already have a strong product, funding and a steady customer base.<span class="t--bold c--secondary"> What you don’t have (yet),</span> is a strong brand that people <i>recognize</i>, an increasing growth rate, and a business that <i>performs.</i></p>
+              <span class="handwriting handwriting--primary underline underline--medium">We are here to change that.</span>
+            </div><br>
+            <h2 class="section__heading h3"><b>Our job is to make your marketing scale</b>
+            </h2>
+
+            <div class="section__content">
+              <p>Maybe that means you’re going international. Maybe that means you’re tightening up your branding. Maybe that means you’re unlocking new acquisition channels, and building out additional online funnels.</p>
+              <p>In either case, it’s about scale. To increase the reach of your products, your identity, and your vision. To change the world, and to change your industry.
+              <br><br>
+              <span class="handwriting handwriting--primary underline underline--medium">Because that’s what you came for.</span>
+              <br><br>
+              Unlike the typical agency, we’re not <b><i>advisors</i></b>. We’re <b><i>executors.</i></b> We don’t like lengthy sales decks and extensive price negotiations. So we’ve bundled our services in a few neath packages (below), so you can pick whatever suits you.
+              <br><br>
+              <b>Then <a href="mailto:pieter@growthcasts.co">send us an email</a>, and we’ll figure out how to get started…</b>
+              </p>
+            </div>
+          </div>
+        <div class="grid__column section__aside"></div>
+      </div>
+    </article>
+      
+    <div class="section section--gray">
+      <div class="wrapper container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+
+          <div class="grid__column">
+            <h3 class="section__heading h2"><b>What we do</b></h3>
+
+            <div class="section__content">
+              {% for offer in site.consulting-offers %}
+                <div class="section section--small">
+                  <h3 class="h4">{{ offer.heading }}</h3>
+
+                  {{ offer.content }}
+
+                  <p><span class="t--bold c--secondary">{{ offer.footer }}</span> <a class="link" href="mailto:{{ site.email }}">{{ offer.footer_link }}</a></p>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="grid__column section__aside"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <article class="wrapper section section--first container container--xlarge">
+        <div class="grid grid--center">
+          <div class="grid__column section__aside"></div>
+
+          <div class="grid__column">
+            <h2 class="section__heading h2">            
+              <b>Who we are</b>
+            </h2>
+
+            <div class="section__content">
+              <p>We’re a boutique growth agency from The Netherlands, now operating from San Fransisco, Amsterdam and Bali. We’re a concise team of senior marketers specialized in startup growth (and finding the best coffeespots in town ;). We are entrepreneurs ourselves and work remotely for businesses around the world.</p>
+            </div>
+            <h2 class="section__heading h3"><b>The team</b></h2>
+              <img src="/assets/images/aboutus.png" alt="About_us" style="width:100%;height:auto;border:0;">
+          </div>
+        <div class="grid__column section__aside"></div>
+      </div>
+    </article>
+
+    </main>
+
+    <footer class="wrapper footer footer--light footer--lower">
+      <div class="section section--small container container--medium ta-c">
+        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>
