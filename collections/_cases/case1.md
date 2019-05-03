@@ -1,9 +1,10 @@
 ---
-client: klooker
-name: Dennis
-footer: Marketing execution starts at $8,000/month.
+company: diesel
+client_name: Antony Hampson
+client_title: DIESEL Australia
+tags: "#ecommerce&nbsp;#SEA&nbsp;#SEO&nbsp;#retargeting"
 footer_link: Read story
-testimonial: Amazing how DoubleDouble lives up their name and generated 4x higher conversions in 3 months time
+testimonial: They’re extremely forthcoming with ideas to engage our costumer further.
 ---
 
-We come on board as your in-house growth team. With deep expertise in technical marketing and online user acquisition, we revamp your marketing strategy, setup and optimize (new) marketing channels, your website, sales funnels and onboarding flows. We run a regime of high-tempo testing, and report directly to you, the CEO.
+How the iconic jeans brand increased their revenue by 44% in 3 months with our **conversion optimization geek** Arthur on board.

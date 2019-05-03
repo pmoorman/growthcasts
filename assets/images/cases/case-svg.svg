@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1014px" height="479px" viewBox="0 0 1014 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-Vid-1-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.88811657%" y1="80.3085865%" x2="118.596292%" y2="23.8758233%" id="linearGradient-1">
+            <stop stop-color="#CADBE3" offset="0%"></stop>
+            <stop stop-color="#15D0FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="87.4051662%" y2="12.5948338%" id="linearGradient-2">
+            <stop stop-color="#0AD0B9" offset="0%"></stop>
+            <stop stop-color="#25DDCB" offset="14.9837428%"></stop>
+            <stop stop-color="#6CFFFA" offset="33.2257045%"></stop>
+            <stop stop-color="#C9D0DF" offset="49.5190571%"></stop>
+            <stop stop-color="#CDBA8B" offset="58.7292269%"></stop>
+            <stop stop-color="#13E2A5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-887.000000, -1773.000000)">
+            <g id="bg-Vid-1-1" transform="translate(-133.000000, 1679.000000)">
+                <polygon id="Shape" fill="#F3F6FB" fill-rule="nonzero" points="1127 94 1020.9 573 2035 573 2035 94"></polygon>
+                <path d="M2034,362.5 L2035,94 L1232,94 C1515.12821,129.1633 1702.79488,158.329967 1795,181.5 C1887.20512,204.670033 1966.87179,265.003366 2034,362.5 Z" id="Shape" fill-opacity="0.390000015" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.1856"></path>
+                <path d="M1543,573 L2034.1,573 L2034.1,94 C1953.83595,225.905609 1885.80262,319.072276 1830,373.5 C1774.19738,427.927724 1678.53071,494.427724 1543,573 Z" id="Shape" fill-opacity="0.529999971" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.09442935"></path>
+                <rect id="Rectangle-path" x="0" y="0" width="1920" height="479"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
