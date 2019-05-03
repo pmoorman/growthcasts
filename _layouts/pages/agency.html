@@ -39,8 +39,7 @@
               <img width="180" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
               {{ case.content }}
               <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
-            <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
-                href="mailto:{{ site.email }}">{{ case.footer_link }}</a></p>
+            <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link" href="{{ case.link }}">{{ case.footer_link }}</a></p>
                 <div class="case__testimonial">
                 <img class="cases__client-photo" src="{{ case.company | prepend: url | append: "-client.png" }}" alt="{{ case.client_name }}">
                 <div class="cases__testimonial">
@@ -55,25 +54,77 @@
     </div>
   </div>
 
-
-    <article class="wrapper section section--first container container--xlarge">
-        <div class="grid grid--center">
-          <div class="grid__column section__aside"></div>
-
-          <div class="grid__column">
-            <h2 class="section__heading h2">            
-              <b>Who we are</b>
-            </h2>
-
-            <div class="section__content">
-              <p>We’re a boutique growth agency from The Netherlands, now operating from San Fransisco, Amsterdam and Bali. We’re a concise team of senior marketers specialized in startup growth (and finding the best coffeespots in town ;). We are entrepreneurs ourselves and work remotely for businesses around the world.</p>
-            </div>
-            <h2 class="section__heading h3"><b>The team</b></h2>
-              <img src="/assets/images/aboutus.png" alt="About_us" style="width:100%;height:auto;border:0;">
+    <div class="section clients container container--xlarge">
+      <h3>More Clients</h3>
+    <div class="tab-wrapper">
+      <div class="tab-column">
+        <!-- RALIVE -->
+        <div class="tab-full image"
+          style="background-image: url(&quot;./assets/images/clients/ralive-picture.jpg);">
+          <div class="square-content">
+            <h3 class="square-heading">Radiantly Alive</h3>
+            <div class="square-sub">By opening up a new channel and creating a sales funnel we quadrupled their top-line revenue (and improved profitability
+            even more) compared to any of the 5 years before.</div>
           </div>
-        <div class="grid__column section__aside"></div>
+          <div class="square-mask"></div>
+          <div class="w-embed">
+            <div class="image-src"
+              data-src="./assets/images/clients/ralive-logo.png">
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
+      <div class="tab-column flexd">
+        <!-- SWITCH -->
+        <div class="flex-square">
+          <div class="client-link yc">
+            <div class="read-block">
+              <div class="no-link">
+                &nbsp;</div>
+            </div><img src=".assets/images/switch-logo" alt="" class="press-logo">
+            <div class="press-text">We built an automated acquisition engine, generating triple digit leads for switch within 2 months. Switch was Acquired
+            8 months later by Booking.com</div>
+          </div>
+        </div>
+        <!-- PEG -->
+        <div class="flex-square"><a target="_blank" href="https://peg.co/"
+            class="client-link ph w-inline-block">
+            <div class="no-link"
+              >
+              PEG</div><img
+              src="./assets/images/clients/peg-logo.png"
+               alt="" class="press-logo peg">
+            <div class="press-text">Set up a sales infrastructure and lead generation engine. London-based Peg raised a big [undisclosed] Series A round… 2
+            months later and was acquired only a year after.</div>
+          </a></div>
+          <!-- ALVALOR -->
+        <div class="flex-square"><a
+            href="https://www.alvalor.org/"
+            target="_blank" class="client-link tc w-inline-block">
+            <div class="no-link"
+              >
+              &nbsp;</div><img
+              src=".assets/images/clients/alvalor-logo.png"
+               alt="" class="press-logo">
+            <div class="press-text">For Alvalor we came on board as Head of Marketing. We did a full website redesign, wrote a content strategy and helped
+            with fundraising.</div>
+            <div class="no-link"
+              >
+              ALVALOR</div>
+          </a></div>
+          <!-- RCHAIN -->
+        <div class="flex-square"><a href="https://www.rchain.coop/"
+            target="_blank" class="client-link gh w-inline-block">
+            <div class="no-link"
+              >
+              RCHAIN</div><img src=".assets/images/clients/rchain-logo.jpeg"
+               alt="" class="press-logo rchain">
+            <div class="press-text">We worked long term on product marketing and management of community-directed marketing efforts, while RChain was
+            building the new internet.</div>
+          </a></div>
+      </div>
+    </div>
+</div>
 
     </main>
 

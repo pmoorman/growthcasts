@@ -3,7 +3,8 @@ company: diesel
 client_name: Antony Hampson
 client_title: DIESEL Australia
 tags: "#ecommerce&nbsp;#SEA&nbsp;#SEO&nbsp;#retargeting"
-footer_link: Read story
+footer_link: Story coming soon
+link: https://au.diesel.com
 testimonial: They’re extremely forthcoming with ideas to engage our costumer further.
 ---
 
