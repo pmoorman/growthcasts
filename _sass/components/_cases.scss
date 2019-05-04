@@ -151,6 +151,11 @@
     margin-right: -5px;
     margin-left: -5px;
     border-radius: 4px;
+    @media (max-width: 768px) {
+     display: block;
+     width: 95%;
+     margin: 0 auto;
+    }
 }
 
 .tab-column {
@@ -161,6 +166,10 @@
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
+    @media (max-width: 768px) {
+     width: 100%;
+     margin: 5px;
+    }
 }
 
 .flexd {
@@ -177,6 +186,19 @@
     background-position: 50% 50%;
     background-size: cover;
     height: 100%;
+      @media (max-width: 768px) {
+        height: 220px;
+      }
+
+}
+.tab-full .square-content {
+  @media (max-width: 768px) {
+    font-size: 0.5rem;
+    font-size: 14px;
+    text-align: center;
+    left: 15px;
+    line-height: 1.39;
+  }
 }
 .client-link {
     bottom: 0;
@@ -238,10 +260,6 @@
     flex: auto;
     border-radius: 4px;
     background-color: transparent;
-    -webkit-transition: -webkit-transform 240ms ease;
-    transition: -webkit-transform 240ms ease;
-    transition: transform 240ms ease;
-    transition: transform 240ms ease,-webkit-transform 240ms ease;
 }
 
 .w-inline-block {
@@ -254,6 +272,14 @@
     right: 0;
 }
 
+.ralive .w-embed img {
+    height: 120px;
+    margin: 38px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+}
+
 .tab-full {
     top: 0;
     bottom: 0;
@@ -264,6 +290,11 @@
     background-position: 0 0;
     background-size: auto;
     color: #fff;
+    @media (max-width: 767px) {
+      width: 100%;
+      display: block;
+    }
+
 }
 
 .square-content {
@@ -277,8 +308,7 @@
 .square-heading {
   width: 290px;
     margin-bottom: 6px;
-    font-family: 'Source Serif Pro',sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.3em;
 }
 
