@@ -13,13 +13,14 @@
           <div class="grid__column"  style="text-align:center">
             <h2 class="section__heading h3">
               
-            <b>DoubleDouble is a growth marketing agency focused on  helping established startups reach scale</b>
+            <b>Double is a growth marketing agency focused on  helping established startups reach scale</b>
             </h2>
 
             <div class="section__content">
-              <p>To build the growth systems that drive stable flows of users into your business. To double your revenue-and then double again. To turn passionate founder hustle into durable, scalable pathways to growth.</p>
+              <p>As your startup scales, you'll need mature growth systems to drive stable flows of users into your business. That's the
+              transition that turns passionate founder hustle into durable, scalable pathways to growth.</p>
               <p>We build the growth systems that make acquisition and customer retention stable, predictable & systematic. Starting at
-              the high-level strategy, down to hands-on execution.➾</p>
+              the high-level strategy, down to hands-on execution.</p>
               <!-- <span class="handwriting handwriting--primary underline underline--medium">How we typically work</span> -->
             </div><br>
           </div>
@@ -64,9 +65,10 @@
         <div class="case-image">
         </div>
           <div class="large-content">
-              <img width="180" src="./assets/images/cases/klooker-logo.png" />
-              We helped Klooker go from $0 revenue to 3500+ recurring revenue customers, while being completely bootstrapped!
-              
+              <img width="170" src="./assets/images/cases/klooker-logo.png" />
+              <p></p>
+              <div class="content-text">We helped Klooker go <b>from $0 revenue to 3500+ recurring revenue customers</b>, while being completely bootstrapped!</div>
+              <p></p>
               <div class="cases__hashtags"><i>#paidads #funnels #scaleup #sustainability</i></div>
             <p><a class="link" href="https://klooker.nl">Klooker</a></p>
             
@@ -92,30 +94,15 @@
             <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
             <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
                 href="{{ case.link }}">{{ case.footer_link }}</a></p>
-                {% if case.testimonial != "" %}
-                <div>
-                <hr style="margin-bottom:10px; opacity:0.4;">
-            <div class="case__testimonial">
-              <img class="cases__client-photo" src="{{ case.company | prepend: url | append: "-client.png" }}"
-                alt="{{ case.client_name }}">
-             
-                <div class="cases__testimonial">
-                <div style="margin-bottom: 5px"><i>"{{ case.testimonial }}"</i></div>
-                <div> 
-                  <span><b>{{ case.client_name }} | </b></span><span>{{ case.client_title }}</span>
-                </div>
-              </div>
-              </div>
-              {% endif %}
             </div>
-            {% endif %}
-            {% endfor %}
-          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
         </div>
       </div>
 
     <div class="section clients container container--large">
-      <h3>More Clients</h3>
+      <h3 class="clients-heading">More Clients</h3>
     <div class="tab-wrapper">
       <div class="tab-column">
         <!-- RALIVE -->
