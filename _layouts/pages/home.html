@@ -1,84 +1,179 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% include home-header.html %}
+<body>
+  {% include home-header.html %}
 
-    <main id="grow">
-      <section class="wrapper section container container--xlarge">
-        <div class="grid grid--center">
-          <div class="grid__column section__aside"></div>
-          <div class="grid__column">
-            <h2 class="section__heading h2"><b>Growth Marketing for Startups</b></span></h2>
+  <main id="get-started">
+    <article class="wrapper section section--first container container--xlarge">
+      <div class="grid grid--center">
+        <div class="grid__column section__aside"></div>
 
-            <div class="section__content">
-              <p>We help <u>early-stage startup companies</u> (prior to P/M-fit)…  get the growth systems in place…  to predictably acquire users… and convert them to raving fans and happy customers.</p>
-              <p>
-              We create best-in-class marketing education, to help ruckus-makers like you become better marketers.
-              <br><br>
-              So once you launch your product, and you’re like…</p>
+        <div class="grid__column" style="text-align:center">
+          <h2 class="section__heading h3">
 
-              <blockquote><p><b><i>“… how do we ever get people to use this thing?!”</i></b></p></blockquote>
+            <b>Double is a growth marketing agency focused on  helping established startups reach scale</b>
+          </h2>
 
-              <p>That’s where we step in.<br>That’s when you call us.
-              <br><br>
-              And here’s the best part…</p>
-              <br>
-              <h3 id="thefastestwaytoincrease">We're really good at it</h3>
+          <div class="section__content">
+            <p>As your startup scales, you'll need mature growth systems to drive stable flows of users into your
+              business. That's the
+              transition that turns passionate founder hustle into durable, scalable pathways to growth.</p>
+            <p>We build the growth systems that make acquisition and customer retention stable, predictable &
+              systematic. Starting at
+              the high-level strategy, down to hands-on execution.</p>
+            <!-- <span class="handwriting handwriting--primary underline underline--medium">How we typically work</span> -->
+          </div><br>
+        </div>
+        <div class="grid__column section__aside"></div>
+      </div>
+    </article>
 
-              <ul class="list_vink_grey">
-                <li><b>For BABB</b> we crafted a strategic messaging & positioning… that resulted in raising a $25MM Initial Coin Offering (ICO)… <i>Wow!</i></li>
-              
-                <li><b>For Switch</b> we built an automated acquisition engine. They got acquired 8 months later by Booking.com</li>
-
-                <li><b>For Klooker</b> we help them go from $0 revenue to 3500+ recurring revenue customers… <i>while being completely bootstrapped!</i></li>
-
-                <li><b>For Radiantly Alive</b> we quadrupled annual top-line revenue compared to any of the 5 years before… <i> within just 8 weeks</i></li>
-        
-                <li><b><span style="background-color:#5DB1FE;">Here at Growthcasts</span></b> we’ve educated thousands of entrepreneurs about growth marketing & user acquisition… <i>and help them make the change they want to see</i></li>
-              </ul>
-              
-              <p>Of course that’s not the only stuff we do, but it gives a taste. Obviously the last bullet is most important here, because <i><b>that’s this very website!</b></i></p>
-
-              <p>On this little corner of the internet, we teach people about growth marketing & user acquisition. By popular request we’ve also re-opened our <i><b><a href="/agency">boutique growth agency</a></i></b>, but we’re mostly <b>education-focused.</b></p>
-
-              <p>In fact, just click around this website, and explore a bit.
-              <br>
-              There’s a lot to see.</p>
-              <p>To get started:</p>
-              <ol>
-                <li><p><b>Join the email course</b><br>
-                  The most popular thing we’ve ever crafted. Oh and it’s free, too (<a href="#the-emailcourse" class="jsScrollDownBtn">click here</a>).
-                </p></li><br>
-                <li><p><b>Explore more about us</b><br>
-                  If you’re curious about our style and vision, here’s a great place to get to know us better (<a href="/story">click here</a>).
-                </p></li>
-              </ol>
-              <p>
-              Cheers,
-              <br><br>
-              <b> ⏤Pieter <i>"join the course"</i> Moorman</b></p>
-              <img src="/assets/images/pieter.png" alt="Piet" style="width:17%;height:auto;border:0;">
+    <div class="section cases">
+      {% for case in site.cases %}
+      {% if case.company == "diesel" %}
+      {% assign url = "./assets/images/cases/" %}
+      <div class="section__content"></div>
+      <div class="cases__bg--right">
+        <div class="cases__photo">
+          <img src="{{ case.company | prepend: url | append: "-photo.png" }}">
+        </div>
+        <div class="cases__content">
+          <img width="180" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
+          {{ case.content }}
+          <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
+          <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
+              href="{{ case.link }}">{{ case.footer_link }}</a></p>
+          <hr style="margin-bottom:10px; opacity:0.4;">
+          <div class="case__testimonial">
+            <img class="cases__client-photo" src="{{ case.company | prepend: url | append: "-client.png" }}"
+              alt="{{ case.client_name }}">
+            <div class="cases__testimonial">
+              <div style="margin-bottom: 5px"><i>"{{ case.testimonial }}"</i></div>
+              <div>
+                <span><b>{{ case.client_name }} | </b></span><span>{{ case.client_title }}</span>
+              </div>
             </div>
           </div>
-            <div class="grid__column section__aside"></div>
-          </div>
-          <span id='the-emailcourse'></span>
-          {% include banner.html heading="Learn this simple, step-by-step framework to accelerate monthly user growth" text="Email course – 7 lessons" %}
+          {% endif %}
+          {% endfor %}
         </div>
-      </section>
-
-
-      {% include modal-form.html %}
-    </main>
-
-    <footer class="wrapper footer footer--light footer--lower">
-      <div class="section section--small container container--medium ta-c">
-        <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
       </div>
-    </footer>
+    </div>
+    <div>{% for case in site.cases %}
+      {% if case.company == "klooker" %}
+      <div class="section cases">
+        <div class="section__content"></div>
+        <div class="cases__big">
+          <div class="case-image">
+          </div>
+          <div class="large-content">
+            <img width="170" src="./assets/images/cases/klooker-logo.png" />
+            <p></p>
+            <div class="content-text">We helped Klooker go <b>from $0 revenue to 3500+ recurring revenue customers</b>,
+              while being completely bootstrapped!</div>
+            <p></p>
+            <div class="cases__hashtags"><i>#paidads #funnels #scaleup #sustainability</i></div>
+            <p><a class="link" href="https://klooker.nl">Klooker</a></p>
 
-    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-  </body>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+    <div class="section cases">
+      {% for case in site.cases %}
+      {% if case.company == "babb" %}
+      {% assign url = "./assets/images/cases/" %}
+      <div class="section__content"></div>
+      <div class="cases__bg--right">
+        <div class="cases__photo">
+          <img src="{{ case.company | prepend: url | append: "-photo.png" }}">
+        </div>
+        <div class="cases__content">
+          <img width="180" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
+          {{ case.content }}
+          <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
+          <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
+              href="{{ case.link }}">{{ case.footer_link }}</a></p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    </div>
+
+    <div class="section clients container container--large">
+      <h3 class="clients-heading">More Clients</h3>
+      <div class="tab-wrapper">
+        <div class="tab-column">
+          <!-- RALIVE -->
+          <div class="tab-full image ralive"
+            style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3) ), url(./assets/images/clients/ralive-picture.jpg);">
+            <div class="square-content">
+              <h3 class="square-heading">Radiantly Alive</h3>
+              <div class="square-sub">Our sales funnel restructuring led to a 400% growth of total gross revenue as
+                compared to any of the 5 years prior. The
+                studio is now one of the most recognisable yoga brands in Bali.</div>
+            </div>
+            <div class="square-mask"></div>
+            <div class="w-embed">
+              <img src="./assets/images/clients/ralive-logo.png" alt="Radiantly Alive Logo">
+              </img>
+            </div>
+          </div>
+        </div>
+        <div class="tab-column flexd">
+          <!-- SWITCH -->
+          <div class="flex-square">
+            <a target="_blank" href="https://www.switch.cm/" class="client-link switch">
+              <div class="read-block">
+                <div class="no-link">
+                  &nbsp;</div>
+              </div><img src="./assets/images/clients/switch-logo.png" alt="" class="press-logo">
+              <div class="press-text">Our automated acquisition engine generated triple digit leads within 2 months.
+                Switch was acquired 8 months later.</div>
+            </a>
+          </div>
+          <!-- PEG -->
+          <div class="flex-square"><a target="_blank" href="https://peg.co/" class="client-link peg w-inline-block">
+              <img src="./assets/images/clients/pug-logo.png" alt="" class="press-logo">
+              <div class="press-text">London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales
+                infrastructure and outbound sales
+                engine.</div>
+            </a></div>
+          <!-- ALVALOR -->
+          <div class="flex-square">
+            <a href="https://www.alvalor.org/" target="_blank" class="client-link alvalor w-inline-block">
+              <div class="no-link">
+                &nbsp;</div><img src="./assets/images/clients/alvalor-logo.png" alt="" class="press-log">
+              <div class="press-text">We helped Alvalor with their growth strategy, restructured their value props, and
+                led a full redesign of the website.</div>
+            </a></div>
+          <!-- RCHAIN -->
+          <div class="flex-square"><a href="https://www.rchain.coop/" target="_blank"
+              class="client-link rchain w-inline-block">
+              <img src="./assets/images/clients/rchain-logo.png" alt="" class="press-logo">
+              <div class="press-text">Long-term management of RChain's product marketing and community growth, so they
+                could focus on building the new
+                internet.</div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="wrapper footer footer--light footer--lower">
+    <div class="section section--small container container--medium ta-c">
+      <p>This is a product of 39Labs LLC (Jackson, Wyoming, USA). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+</body>
+
 </html>
