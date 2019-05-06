@@ -60,6 +60,10 @@
       line-height: 1.29;
       color: #656a7d;
     }
+    .link {
+          color: #108dff;
+    text-decoration: none;
+    }
   }
 .testimonials {
   overflow: visible;
@@ -250,7 +254,7 @@
   }
     & .rchain {
     background-color: #e29797;
-    padding: 30px 10px 40px;
+    padding: 35px 10px 40px;
   }
   & .switch {
     background-color: #576192;
@@ -291,7 +295,7 @@
 }
 
 .ralive .w-embed img {
-    height: 120px;
+    height: 90px;
     margin: 38px;
     @media (max-width: 768px) {
       display: none;
@@ -385,33 +389,40 @@
     }
   .large-content {
     width: 50%;
-    background-image: url(./images/cases/case-svg.svg);
     padding: 70px;
+    margin-top: 30px;
     @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
+    padding: 30px;
     height: 390px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    .content-text {
-      width: 340px;
-    }
   }
+}
+.content-text {
+      width: 320px;
+      margin: 20px 0px;
+      @media (max-width: 768px) {
+        width: 100%;
+    }
   }
   .case-image {
     width: 50%;
-    height: 487px;
+    width: 590px;
+    margin: auto;
+        height: 377px;;
     background-image: url('./images/cases/klooker-photo.jpg');
     float: right;
     background-size: cover;
     background-position: center;
     @media (max-width: 768px) {
-    width: 100%;
-    height: 390px;
+        width: 80%;
+        float: none;
+    margin-bottom: 40px;
+    height: 200px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
   }
