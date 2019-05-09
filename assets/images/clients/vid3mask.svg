@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="319px" height="436px" viewBox="0 0 319 436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Vid 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.952858855 320 25.7562569 320 436 0 436"></polygon>
+        <linearGradient x1="100%" y1="92.989953%" x2="45.2793193%" y2="8.49809368%" id="linearGradient-3">
+            <stop stop-color="#F8FCFC" offset="0%"></stop>
+            <stop stop-color="#F1F8F9" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="320" height="570"></rect>
+        <linearGradient x1="22.3411742%" y1="33.7158294%" x2="61.2065588%" y2="53.1392592%" id="linearGradient-6">
+            <stop stop-color="#98C2FF" offset="0%"></stop>
+            <stop stop-color="#E4CFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vid-3">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g mask="url(#mask-2)" id="BG">
+                <g transform="translate(-83.000000, -269.000000)">
+                    <g>
+                        <g id="Path-3-+-Path-2-Mask" transform="translate(242.000000, 420.000000) rotate(-180.000000) translate(-242.000000, -420.000000) translate(82.000000, 135.000000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="Mask" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                            <polygon id="Path-3" fill="url(#linearGradient-6)" opacity="0.185575181" mask="url(#mask-5)" points="717.092288 -40 1106.44531 275.226563 -148 -40"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
