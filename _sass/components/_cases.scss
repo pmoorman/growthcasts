@@ -60,11 +60,11 @@
       line-height: 1.29;
       color: #656a7d;
     }
-    .link {
-          color: #108dff;
+  }
+   a.link {
+    color: #108dff;
     text-decoration: none;
     }
-  }
 .testimonials {
   overflow: visible;
 
@@ -426,6 +426,26 @@
     flex: 0 0 auto;
   }
   }
+  
 }
-//TODO
-/* Copy paste clients styling in scss */
+
+.course {
+  &__image {
+    margin: 0 auto;
+    width: 230px;
+     @media (max-width: 768px) {
+       width: 170px;
+  }
+}
+}
+
+.block-wrapper {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+  @media (max-width: 424px) {
+       width: 80%;
+       margin-bottom: 18px;
+  }
+}
