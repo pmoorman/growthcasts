@@ -13,7 +13,7 @@
         <div class="grid__column" style="text-align:center">
           <h2 class="section__heading h3">
 
-            <b>Double is a growth marketing agency focused on  helping established startups reach scale</b>
+            <b>Double is a growth marketing agency focused on helping established startups reach scale</b>
           </h2>
 
           <div class="section__content">
@@ -36,11 +36,12 @@
       {% assign url = "./assets/images/cases/" %}
       <div class="section__content"></div>
       <div class="cases__bg--right">
+        <div class="cases__svg-overlay"></div>
         <div class="cases__photo">
           <img src="{{ case.company | prepend: url | append: "-photo.png" }}">
         </div>
         <div class="cases__content">
-          <img width="180" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
+          <img width="170" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
           {{ case.content }}
           <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
           <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
@@ -56,20 +57,21 @@
               </div>
             </div>
           </div>
-          {% endif %}
-          {% endfor %}
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
     </div>
     <div>{% for case in site.cases %}
       {% if case.company == "klooker" %}
       <div class="section cases">
         <div class="section__content"></div>
         <div class="cases__big">
-          <div class="case-image">
+          <div class="case-image-wrapper">
+            <div class="case-image"></div>
           </div>
           <div class="large-content">
-            <img width="170" src="./assets/images/cases/klooker-logo.png" />
+            <img width="170" src="./assets/images/cases/klooker-logo.png" style="margin-left: -4px"/>
             <p></p>
             <div class="content-text">We helped Klooker go <b>from $0 revenue to 3500+ recurring revenue customers</b>,
               while being completely bootstrapped!</div>
@@ -88,18 +90,21 @@
       {% for case in site.cases %}
       {% if case.company == "babb" %}
       {% assign url = "./assets/images/cases/" %}
-      <div class="section__content"></div>
+      <div class="section__content--babb"></div>
       <div class="cases__bg--right">
-        <div class="cases__photo">
+        <div class="cases__svg-overlay--babb"></div>
+        <div class="cases__photo--babb">
           <img src="{{ case.company | prepend: url | append: "-photo.png" }}">
         </div>
-        <div class="cases__content">
+        <div class="cases__wrapper--babb">
+        <div class="cases__content--babb">
           <img width="180" src="{{ case.company | prepend: url | append: "-logo.png" }}" alt="{{ case.company }}" />
           {{ case.content }}
-          <div class="cases__hashtags"><i> {{ case.tags }} </i></div>
+          <div class="cases__hashtags cases__hash--babb"><i> {{ case.tags }} </i></div>
           <p><span class="t--bold c--secondary">{{ case.footer }}</span> <a class="link"
               href="{{ case.link }}">Visit the site</a></p>
         </div>
+      </div>
       </div>
       {% endif %}
       {% endfor %}

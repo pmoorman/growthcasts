@@ -2,7 +2,7 @@
 company: babb
 client_name: 
 client_title: 
-tags: "#copywriting&nbsp;#storytelling&nbsp;#launch&nbsp;#crypto"
+tags: "#copywriting&nbsp;#storytelling&nbsp;&nbsp;#crypto"
 footer_link: BABB
 link: https://getbabb.com/
 testimonial:

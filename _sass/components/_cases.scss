@@ -1,47 +1,60 @@
 .cases {
     width: 100%;
-  &__bg--right {
-      background-image: url(./images/cases/case-svg.svg);
-      width: 100%;
-      height: 478px;
+    &__bg--right {
       position: relative;
-      background-size: cover;
-      background-position: center;
+          max-width: 1440px;
+    margin: 0 auto;
+    }
+  &__svg-overlay {
+      width: calc(60% + 40px);
+      height: 478px;
+      right: 0px;
+      position: absolute;
+      background-image: url('./images/cases/case-overlay.svg');
       @media (max-width: 767px) {
-      height: auto;
+      display: none;
     }
   }
   &__photo {
     height: 478px;
-    width: 50%;
+    width: 60%;
     overflow: hidden;
     & img {
       height: 478px;
     }
     @media (max-width: 767px) {
       width: 100%;
-      height: auto;
+      height: 240px;
        & img {
       width: 100%;
       height: auto;
     }
-    }
   } 
+}
     &__content {
     width: 300px;
     z-index: 3;
     position: absolute;
-    top: 60px;
-    left: 56vw;
+    top: 64px;
+    left: 58vw;
     font-size: 15px;
     line-height: 1.56;
+      @media (min-width: 1580px) {
+       left: 34vw;
+    }
     @media (max-width: 767px) {
       position: relative;
       width: 100%;
-      min-height: 500px;
+      min-height: 430px;
       left: auto;
+      margin-top: -9px;
       top: 0px;
-      padding: 7%;
+      padding: 12% 7% 15% 7%;
+      background-image: url(./images/cases/case-overlay.svg);
+    background-position: center;
+    }
+    @media (max-width: 350px) {
+      margin-top: -34px !important;
     }
     img {
       margin-left: -7px;
@@ -107,6 +120,107 @@
   height: 800px;
   display: flex;
 }
+
+.cases {
+  &__svg-overlay--babb {
+      width: calc(70% + 40px);
+      height: 458px;
+      right: 0px;
+      position: absolute;
+      background-image: url('./images/cases/case-overlay.svg');
+  @media (max-width: 767px) {
+    width: 130%;
+  }
+
+    }
+  &__photo--babb {
+    height: 458px;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    margin-left: -40px;
+    & img {
+      height: 458px;
+    }
+    
+    @media (max-width: 767px) {
+          width: 600px;
+    right: -190px;
+    top: 30px;
+    height: 140px;
+    position: absolute;
+    overflow: visible;
+       & img {
+      width: 100%;
+      height: auto;
+    }
+    
+  } 
+  @media (max-width: 640px) {
+    width: 540px;
+    top: 60px;
+    height: 170px;
+    right: -240px;
+  }
+  
+  @media (max-width: 520px) {
+    width: 460px;
+    top: 60px;
+    height: 140px;
+    right: -250px;
+  }
+  @media (max-width: 426px) {
+    width: 430px;
+    top: 70px;
+    height: 140px;
+    right: -200px;
+  }
+    @media (max-width: 350px) {
+   display: none;
+  }
+}
+
+&__hash--babb {
+  @media (max-width: 426px) {
+    margin-top: 10px;
+}
+}
+  
+&__wrapper-babb {
+  position: absolute;
+  left: 0px;
+  @media (max-width: 767px) {
+    background-image: url(./images/cases/case-overlay.svg);
+    background-position: center;
+}
+}
+    &__content--babb {
+    width: 300px;
+    z-index: 3;
+    position: absolute;
+    top: 64px;
+    left: 58vw;
+    font-size: 15px;
+    line-height: 1.56;
+    @media (max-width: 767px) {
+      position: relative;
+      width: 60%;
+      min-height: 430px;
+      left: auto;
+      margin-top: -9px;
+      top: 0px;
+      padding: 12% 7% 15% 7%;
+    }
+    @media (min-width: 1580px) {
+       left: 34vw;
+    }
+    @media (max-width: 350px) {
+   width: 100%;
+  }
+    }
+}
+    //END BABB
+
 
 .clients {
   &__box {
@@ -384,7 +498,7 @@
   position: relative;
   font-size: 15px;
   line-height: 1.56;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
      display: block;
      width: 100%;
      margin: 0 auto;
@@ -393,38 +507,56 @@
     width: 50%;
     padding: 70px;
     margin-top: 30px;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
+        width: 80%;
+    margin: auto;
+    padding: 0px 30px 0px;
+    flex: 0 0 auto;
+  }
+  @media (max-width: 426px) {
     width: 90%;
-    padding: 30px;
-    height: 390px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
+    margin: auto;
+    padding: 30px 10px;
     flex: 0 0 auto;
   }
 }
 .content-text {
       width: 320px;
       margin: 20px 0px;
-      @media (max-width: 768px) {
+      @media (max-width: 1000px) {
         width: 100%;
     }
   }
+  .case-image-wrapper {
+     width: 50%;
+     padding-right: 40px;
+     @media (max-width: 1000px) {
+       width: auto;
+       padding: 0px;
+         margin: auto;
+     }
+  }
   .case-image {
-    width: 50%;
-    width: 590px;
-    margin: auto;
-        height: 377px;;
+    margin: 50px auto;
+          width: 575px;
+      height: 346px;
     background-image: url('./images/cases/klooker-photo.jpg');
     float: right;
+    border-radius: 5px;
     background-size: cover;
     background-position: center;
-    @media (max-width: 768px) {
-        width: 80%;
+    @media (max-width: 1000px) {
+        width: 75%;
         float: none;
     margin-bottom: 40px;
+    height: 260px;
+    flex: 0 0 auto;
+  }
+  @media (max-width: 426px) {
+    width: 90%;
+    margin: auto;
     height: 200px;
-    -webkit-box-flex: 0;
+    padding: 30px 0px;
     flex: 0 0 auto;
   }
   }
