@@ -437,8 +437,35 @@
     width: 230px;
      @media (max-width: 768px) {
        width: 170px;
+       & img {
+         border-bottom: 1px solid grey;
+       }
   }
 }
+}
+
+.contact-form {
+  background: #171d1d;
+  color: #fff;
+  & h2 {
+    color: white;
+  }
+  height: 490px;
+}
+
+.banner {
+  background-image: url('./images/footer-banner.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+  margin-top: 2rem;
+  margin-bottom: -10rem;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 
 .block-wrapper {
