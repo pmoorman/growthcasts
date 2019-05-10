@@ -570,23 +570,24 @@
   &__image {
     margin: 0 auto;
     width: 230px;
-     @media (max-width: 768px) {
-       width: 170px;
-       & img {
+    & img {
          border-bottom: 1px solid grey;
        }
+     @media (max-width: 768px) {
+       width: 170px;
+       
   }
 }
 }
 
-.contact-form {
-  background: #171d1d;
-  color: #fff;
-  & h2 {
-    color: white;
-  }
-  height: 490px;
-}
+// .contact-form {
+//   background: #2d2d2d;
+//   color: #fff;
+//   & h2, h4 {
+//     color: white;
+//   }
+//   height: 460px;
+// }
 
 .banner {
   background-image: url('./images/footer-banner.png');
