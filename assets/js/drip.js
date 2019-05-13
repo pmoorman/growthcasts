@@ -561,32 +561,27 @@ window.drip_plinko = function(drip, page) {
 
         response = {
           // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href='https://growthcasts.samcart.com/products/elite-pro-25-off'
-						   sc-url='https://growthcasts.samcart.com/products/elite-pro-25-off'
-						   sc-popup
-						   sc-embed='custom'
-						   sc-product='elite-pro-25-off'
-						   sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
+          pricetable: '<p class="price__current-price price__current-price--center paragraph">249</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded"  href='https://growthcasts.samcart.com/products/elite-pro' sc-url='https://growthcasts.samcart.com/products/elite-pro' sc-popup sc-embed='custom' sc-product='elite-pro' sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
+                            <span>$249</span>
                             <span class="button__icon">
                               <img src="icons/shopping-basket.svg" alt="">
                             </span>
                           </div>
                         </a>`,
           // Core
-          pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href='https://growthcasts.samcart.com/products/elite-core-25-off'
-							   sc-url='https://growthcasts.samcart.com/products/elite-core-25-off'
+          pricetable2: '<p class="price__current-price price__current-price--center paragraph">229</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href='https://growthcasts.samcart.com/products/elite-core'
+							   sc-url='https://growthcasts.samcart.com/products/elite-core'
 							   sc-popup
 							   sc-embed='custom'
-							   sc-product='elite-core-25-off'
+							   sc-product='elite-core'
 							   sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
-                              <span>$177</span>
+                              <span>$229</span>
                               <span class="button__icon">
                                 <img src="icons/shopping-basket.svg" alt="">
                               </span>
@@ -594,20 +589,13 @@ window.drip_plinko = function(drip, page) {
                           </a>`,
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$187</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href='https://growthcasts.samcart.com/products/elite-pro-25-off'
-							   sc-url='https://growthcasts.samcart.com/products/elite-pro-25-off'
-							   sc-popup
-							   sc-embed='custom'
-							   sc-product='elite-pro-25-off'
-							   sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$249</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href='https://growthcasts.samcart.com/products/elite-pro' sc-url='https://growthcasts.samcart.com/products/elite-pro' sc-popup sc-embed='custom' sc-product='elite-pro' sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
                             Get it now
                             <span class="button__icon">
                               <img src="icons/shopping-basket-white.svg" alt="">
                             </span>
-                          </a>`,
-          // Discount timer
-          discount: discount_template_30
+                          </a>`
         }
       }
   
