@@ -561,21 +561,7 @@ window.drip_plinko = function(drip, page) {
 
         response = {
           // PRO
-          pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href='https://growthcasts.samcart.com/products/elite-pro-25-off'
-						   sc-url='https://growthcasts.samcart.com/products/elite-pro-25-off'
-						   sc-popup
-						   sc-embed='custom'
-						   sc-product='elite-pro-25-off'
-						   sc-marketplace='eg2auTo12aLoDAjL1HHnbqbNka1hPmCY'>
-                          <span>Get it now</span>
-                          <div class="grid grid--gapeless grid--middle">
-                            <span>$187</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
-                          </div>
-                        </a>`,
+
           // Core
           pricetable2: '<p class="price__current-price paragraph">177</p><p class="price__old-price paragraph h2">229</p>',
           price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href='https://growthcasts.samcart.com/products/elite-core-25-off'
