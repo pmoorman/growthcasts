@@ -70,7 +70,7 @@ It's advised to pass in your own overrides in your initializer vs. overriding th
 - **pre_init**: A function fired when initiating Drip Pro Tools
 */
     DripPro.prototype.settings = {
-      debug: false,
+      debug: true,
       cookie_prefix: 'drippro_',
       offer_fn_name: 'drip_plinko',
       survey_fn_name: 'survey_plinko',
