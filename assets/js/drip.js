@@ -544,7 +544,6 @@ window.drip_plinko = function(drip, page) {
 
 
   if (drip.has_tag('30%_discount')) {
-
         response = {
           // PRO
           pricetable: '<p class="price__current-price paragraph">187</p><p class="price__old-price paragraph h2">249</p>',
@@ -581,7 +580,6 @@ window.drip_plinko = function(drip, page) {
           discount: discount_template_30
         }
       }
-  
   else if (drip.has_tag('50%_discount')) {
         response = {
           // PRO
@@ -619,7 +617,6 @@ window.drip_plinko = function(drip, page) {
           discount: discount_template_50
           }
       }
-
   else {
         response = {
           // PRO
