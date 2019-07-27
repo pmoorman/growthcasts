@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include new-head.html %}
+
+  <body>
+
+    <nav>
+      <img src="/assets/images/new-web/logo.png" />
+    </nav>
+
+    <section id="intro" style="text-align: center;">
+      <div class="container">
+        <h3>We work for startups that need</h3>
+        <h1><span>more</span> <span>revenue</span></h1>
+        <h4>Double is a growth marketing agency. <strong>We help startups scale.</strong></h4>
+        <img src="/assets/images/new-web/intro_hero.png" />
+      </div>
+    </section>
+
+    <section id="how-we-work" class="text-center">
+      <div class="container">
+        <img src="/assets/images/new-web/intro_hero_overlay.png" style="margin-top: -275px;" />
+        <h3 style="margin-top: -30px;">Systematic growth marketing</h3>
+        <p>Double brings you your own dedicated growth team, always led by one of our 3 partners. You’ll work with experienced marketers with a proven track record in scaling startups into international brands.</p>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h2>How we work?</h2>
+          </div>
+          <div class="col-md-6">
+            <ul class="text-left">
+              {% for item in page.how_it_works %}
+              <li class="d-flex align-items-center">
+                <img width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
+                {{ item | markdownify }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="our-promise" class="text-center" style="background-color: #EFF0F6;">
+      <div class="container">
+        <h2>Our promise</h2>
+        <h4>Double is your dedicated marketing team. Here’s what you can expect from us:</h4>
+
+        <div class="row">
+          {% for item in page.our_promise %}
+          <div class="col-md-3">
+            <img width="70" height="70" src="{{ item.image }}" />
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.content }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
