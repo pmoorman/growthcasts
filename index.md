@@ -65,4 +65,20 @@ how_we_help:
 
   - title: Analytics & data analysis
     content: Setting up analytics tools and crunching data to draw proper conclusions on retention, LTV, cohort performance or channel attribution.
+
+our_process:
+  - title: Growth Strategy
+    content: |
+      To double or quadruple your revenue and user base starts with making strong strategic decisions. As startups scales, they need mature growth systems to drive stable flows of users into their business.
+
+      Our first job is to architect a high-level growth strategy that makes acquisition and customer retention stable, predictable & systematic. This is the “blueprint” we’ll later execute against...
+
+  - title: Execution
+    content: |
+      Our primary task is to create marketing systems drive user growth systematically, on autopilot. This systems-building includes an acquisition engine, a sales funnel to convert cold leads to active users, and a cadence of high-tempo optimization.
+
+  - title: Scaling & resourcing
+    content: |
+      Once the systems are operational, we’ll help the team optimize their strategy and increase conversions as they scale. While the startup is scaling up it’s marketing efforts, we help them bring onboard in-house hires to take over the day-to-day execution of their marketing & growth systems.
+
 ---

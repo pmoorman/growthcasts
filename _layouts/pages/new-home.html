@@ -324,5 +324,26 @@
       </div>
     </section>
 
+    <!-- SECTION: Our process -->
+    <section id="our-process">
+      <div class="container">
+        <h2 class="text-center">Our process</h2>
+
+        {% for item in page.our_process %}
+          <div class="d-flex justify-content-between">
+            <div class="col-md-5 d-flex">
+              <div class="col-md-4">
+                <div style="font-size: 28px; font-weight: 300; width: 70px; height: 70px; border: 1px solid #E7E9F3; border-radius: 35px; padding: 13px 27px;">{{ forloop.index }}</div>
+              </div>
+              <div class="col">
+                <h3>{{ item.title }}</h3>
+              </div>
+            </div>
+            <div class="offset-md-1 col-md-7">{{ item.content | markdownify }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
   </body>
 </html>
