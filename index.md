@@ -28,4 +28,41 @@ about_points:
   - Team Players
   - Strategy-minded
   - Executers
+
+how_we_help:
+  - title: Create sales funnels
+    content: The bread and butter of growth marketing is creating high-conversion sales funnels, that get cold leads ready to purchase... all while working on autopilot.
+
+  - title: Website (re)design
+    content: From strategy to implementation, we help clients restructure their website to generate more leads, and tell their story better.
+
+  - title: Paid ad campaigns
+    content: Paid advertising campaigns on Facebook, Google, Instagram or other platforms are the fastest way for B2C companies to scale.
+
+  - title: Copywriting
+    content: Writing better sales copy is the primary driver of higher conversions. Writing attention-grabbing ads and money-pulling sales letters is kind of our thing.
+
+  - title: A/B testing & high-tempo experimentation
+    content: Setting up a cadence of high-tempo experimentation and rapid A/B testing to validate concepts and hone in on the winning strategy.
+
+  - title: Onboarding experiences
+    content: Especially geared to apps and SaaS companies, we help startups create better onboarding experiences and lift retention.
+  
+  - title: Retailers strategy
+    content: Helping startups in the B2C markets make the move into the retail markets, whether it’s fashion, ecommerce or food & beverages.
+
+  - title: Landingpages & campaigns
+    content: Optimising landing pages and dedicated campaigns (whether paid ads, SEO, affiliates, etc.) is our everyday business.
+
+  - title: Outbound outreach
+    content: Setting up systems to quickly get in touch with hundreds or thousands of business relationships, and building out the sales infrastructure to support it.
+
+  - title: Building sales teams
+    content: We built sales teams in various industries and for various sorts of products, ranging from street sales teams to closing high-value enterprise deals.
+
+  - title: Storytelling
+    content: Stories carry your growth, because stories sell. We’ve helped sell more than $30M in products by telling better, more engaging stories.
+
+  - title: Analytics & data analysis
+    content: Setting up analytics tools and crunching data to draw proper conclusions on retention, LTV, cohort performance or channel attribution.
 ---

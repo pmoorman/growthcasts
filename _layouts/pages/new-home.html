@@ -45,7 +45,7 @@
     </section>
 
     <!-- SECTION: Our promise -->
-    <section id="our-promise" class="text-center" style="background-color: #EFF0F6;">
+    <section id="our-promise" class="alternate-section text-center">
       <div class="container">
         <h2>Our promise</h2>
         <h4>Double is your dedicated marketing team. Here’s what you can expect from us:</h4>
@@ -119,8 +119,126 @@
 
     <!-- SECTION: Partnerships -->
     <section id="partnerships">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- TODO: Change to BABB logo -->
+            <img width="193" src="/assets/images/new-web/logo.svg" /> 
+            <h4>For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!</h4>
+            <!-- TODO: Change href and add arrow icon -->
+            <a href="#" class="btn btn-link">Visit the site</a>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/assets/images/new-web/cecelia_knight.png" /> 
+            <div>
+              <h4><b>Cecelia Knight</b></h4>
+              <p>CEO at BABB</p>
+            </div>
+            <div class="speech-bubble text-light p-4 bg-secondary">
+              Every product that is labeled as a PC must be accompanied with specific software to operate the unit and must feature a touchscreen.
+            </div>
+          </div>
 
+          <div class="col-md-6">
+            <img class="img-fluid" src="/assets/images/new-web/loet_rammelaarsburg.svg" /> 
+            <div class="speech-bubble text-light p-4 bg-secondary">
+              These guys are different than regular marketers we come across. They really seem to get it.
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <h4><b>Loet Rammelaarsburg</b></h4>
+                <p>Chief Operations at StartLife</p>
+              </div>
+              <!-- TODO: Change to Startlife logo -->
+              <img width="174" src="/assets/images/new-web/logo.svg" /> 
+            </div>
+          </div>
 
+          <div class="col-md-6 text-center">
+            <h2>Partnerships</h2>
+            <p>We partner with accelerators and universities to be their 'preferred marketing partner' in crime. Besides free workshops and training, we work directly for those in need of dedicated help. That's how we already helped several startups from wageningen university accelerator Startlife to overcome their growth stagnation and become a grown up company. </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION: How we help -->
+    <section id="how-we-help" class="alternate-section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>“I need you guys to scale my business…”</h2>
+            <h4>Excellent. Here’s how we help:</h4>
+          </div>
+            
+          <div class="col-md-6">
+            {% for item in page.how_we_help %}
+            <div>
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.content }}</p>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Clients -->
+    <section id="clients">
+      <div class="container">
+
+        <div class="text-center">
+          <h2>More work we’re proud of…</h2>
+          <h4>The software availability is the key to why Windows wins over Linux in this competition.</h4>
+        </div>
+
+        <div class="row text-light">
+          <div class="col-md-9 d-flex flex-wrap">
+
+            <div class="col-md-6" style="background: #FE2553;">
+              <!-- TODO: Change to Peg logo -->
+              <img width="200" src="/assets/images/new-web/logo.svg" /> 
+              <h4>Peg</h4>
+              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
+              <h4>Peg</h4>
+              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
+            </div>
+    
+            <div class="col-md-6" style="background: #E82191;">
+              <h4>Radiantly Alive</h4>
+              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
+            </div>
+  
+            <div class="col-md-12" style="background: #0C0A09;">
+              <!-- TODO: Change to Peg logo -->
+              <img width="200" src="/assets/images/new-web/logo.svg" /> 
+              <h4>Peg</h4>
+              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
+            </div>
+          </div>
+        
+          <div class="col-md-3 d-flex flex-wrap">
+
+            <div class="col-md-12" style="background: #576192;">
+              <h4>Radiantly Alive</h4>
+              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
+            </div>
+
+            <div class="col-md-12" style="background: #A9002D;">
+              <h4>Radiantly Alive</h4>
+              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
+              <h4>Peg</h4>
+              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
   </body>
