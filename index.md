@@ -23,4 +23,9 @@ our_promise:
   - image: /assets/images/new-web/experienced_execution-icon.svg
     title: Experienced execution
     content: Even the best strategies will need dependable execution. Trust our specialists to hit objectives quickly and efficiently.
+
+about_points:
+  - Team Players
+  - Strategy-minded
+  - Executers
 ---

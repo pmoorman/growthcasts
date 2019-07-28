@@ -8,6 +8,7 @@
       <img src="/assets/images/new-web/logo.png" />
     </nav>
 
+    <!-- SECTION: Intro -->
     <section id="intro" style="text-align: center;">
       <div class="container">
         <h3>We work for startups that need</h3>
@@ -17,6 +18,7 @@
       </div>
     </section>
 
+    <!-- SECTION: How we work -->
     <section id="how-we-work" class="text-center">
       <div class="container">
         <img src="/assets/images/new-web/intro_hero_overlay.png" style="margin-top: -275px;" />
@@ -42,6 +44,7 @@
       </div>
     </section>
 
+    <!-- SECTION: Our promise -->
     <section id="our-promise" class="text-center" style="background-color: #EFF0F6;">
       <div class="container">
         <h2>Our promise</h2>
@@ -57,6 +60,67 @@
           {% endfor %}
         </div>
       </div>
+    </section>
+
+    <!-- SECTION: About us -->
+    <section id="about-us" class="text-center">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md"></div>
+
+          <div class="col-md-5">
+            <h3>Hey! We’re</h3>
+            <img width="350" src="/assets/images/new-web/logo.svg" />
+            <h4>Your dedicated team of growth marketing super-nerds.</h4>
+            <img class="img-fluid" src="/assets/images/new-web/about.png" />
+            <ul class="text-left">
+              {% for item in page.about_points %}
+              <li class="d-flex justify-content-between">
+                {{ item }}
+                <img width="30" height="30" src="/assets/images/new-web/check_icon_fore.png" />
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <div class="col-md"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Klooker -->
+    <section id="klooker" class="text-light" style="background: url(/assets/images/new-web/klooker.png); background-size: cover; background-position: center;">
+      <div class="container">
+        <h2 class="text-center m-auto" style="max-width: 800px;">
+          We grow startups for a living
+          <span style="font-size: 22px; font-weight: 300;"> …and we love it</span>
+        </h2>
+
+        <div style="max-width: 425px;">
+          <!-- TODO: Change to Klooker logo -->
+          <img width="350" src="/assets/images/new-web/logo.svg" /> 
+          <h4>Working with Dennis from Day 0, we led the growth efforts that grew Klooker <b>from zero to over 5,000 recurring revenue customers</b>. We are currently helping Klooker expand towards it’s milestone of 50,000 customers. Exciting!</h4>
+          <!-- TODO: Change href and add arrow icon -->
+          <a href="#" class="btn btn-link">Visit the site</a>
+        </div>
+
+        <div class="row justify-content-between align-items-center">
+          <div class="speech-bubble p-4 bg-secondary">
+            Double’s team is extremely forthcoming with ideas to engage our costumer further. 
+          </div>
+          <div>
+            <h4><b>Dennis Kamst</b></h4>
+            <p>Founder & CEO at klooker</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Partnerships -->
+    <section id="partnerships">
+
+
     </section>
 
   </body>

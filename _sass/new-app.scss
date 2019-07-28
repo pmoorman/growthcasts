@@ -53,9 +53,11 @@
       url("../assets/fonts/poppins-v8-latin-600.svg#Poppins") format("svg"); /* Legacy iOS */
 }
 
-$primary-color: #3497f3; ;
+$primary-color: #3497f3;
+$secondary-color: #181D33;
 $theme-colors: (
-  primary: $primary-color
+  primary: $primary-color,
+  secondary: $secondary-color
 );
 
 $container-max-widths: (
