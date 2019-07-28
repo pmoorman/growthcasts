@@ -236,8 +236,8 @@
           <div class="col-md-4 p-0 d-flex flex-wrap">
             <div class="col-md-12 p-2">
               {% include new-web/square-box.html
-                logo="/assets/images/new-web/rchain_logo.png"
-                logo_width="50"
+                logo="/assets/images/new-web/switchcm_logo_light.png"
+                logo_width="150"
                 name="Switch.cm"
                 content="Our automated acquisition engine generated triple digit leads within 2 months. Switch was acquired 8 months later."
                 bgcolor="#576192" %}
@@ -353,10 +353,10 @@
 
         <div class="row">
           {% for item in page.packages %}
-          <div class="col-md-3">
-            <div class="p-3 text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
+          <div class="col-md-3 p-2" style="height: 289px;">
+            <div class="p-4 text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
               <div class="upper">
-                <h4>{{ item.title | markdownify }}</h4>
+                <h4 class="font-weight-normal">{{ item.title }}</h4>
                 <p>{{ item.content }}</p>
               </div>
               <div class="lower">
@@ -365,6 +365,46 @@
             </div>
           </div>
           {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <h2>Still here? We should talk</h2>
+            <p>Not about the fact that you’re here (although we like that, too), but about how we can partner up to scale your company. That’s even more exciting to us.</p>
+          
+            <div class="person">
+              <h4 class="font-weight-bold">Pieter Moorman</h4>
+              <p>Partner / consultant</p>
+            </div>
+
+            <div class="channels">
+              <p><b>Email:</b> pieter@double-agency.com</p>
+              <p><b>WhatsApp:</b> +44 770 000 5858</p>
+            </div>
+
+            <div class="p-3 form_box" style="background-color: #EFF0F6;">
+              <h4 class="font-weight-bold">Leave your contact info</h4>
+              <p>and we’ll call you back.</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Join Now</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <!-- TODO: Add Pieter Moorman image -->
+          </div>
+          
         </div>
       </div>
     </section>
