@@ -195,49 +195,67 @@
           <h2>More work we’re proud of…</h2>
           <h4>The software availability is the key to why Windows wins over Linux in this competition.</h4>
         </div>
-
-        <div class="row text-light">
-          <div class="col-md-9 d-flex flex-wrap">
-
-            <div class="col-md-6" style="background: #FE2553;">
-              <!-- TODO: Change to Peg logo -->
-              <img width="200" src="/assets/images/new-web/logo.svg" /> 
-              <h4>Peg</h4>
-              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
-              <h4>Peg</h4>
-              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
-            </div>
-    
-            <div class="col-md-6" style="background: #E82191;">
-              <h4>Radiantly Alive</h4>
-              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
-            </div>
-  
-            <div class="col-md-12" style="background: #0C0A09;">
-              <!-- TODO: Change to Peg logo -->
-              <img width="200" src="/assets/images/new-web/logo.svg" /> 
-              <h4>Peg</h4>
-              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
-            </div>
-          </div>
         
-          <div class="col-md-3 d-flex flex-wrap">
+        <div class="d-flex flex-wrap p-0 m-auto text-light" style="width: 1026px;">
 
-            <div class="col-md-12" style="background: #576192;">
-              <h4>Radiantly Alive</h4>
-              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
+          <div class="col-md-8 p-0 d-flex flex-wrap">
+            <div class="col-md-6 p-2">
+              {% include new-web/vertical-box.html
+                logo="/assets/images/new-web/peg_logo.png"
+                logo_width="135"
+                headline="$1M+"
+                subtitle="Raised"
+                name="Peg"
+                content="London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine."
+                bgcolor="#FE2553" %}
+            </div>
+            <div class="col-md-6 p-2">
+              {% include new-web/vertical-box.html
+                logo="/assets/images/new-web/radiantly_alive_logo.png"
+                logo_width="82"
+                headline="400%"
+                subtitle="Growth"
+                name="Radiantly Alive"
+                content="Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali."
+                bgcolor="#E82191" %}
             </div>
 
-            <div class="col-md-12" style="background: #A9002D;">
-              <h4>Radiantly Alive</h4>
-              <p>London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.</p>
-              <h4>Peg</h4>
-              <p>Our sales funnel restructuring led to a 400% growth of total gross revenue as compared to any of the 5 years prior. The studio is now one of the most recognisable yoga brands in Bali.</p>
+            <div class="col-md-12 p-2">
+              <!-- TODO: Change logo -->
+              {% include new-web/horizontal-box.html
+                logo="/assets/images/new-web/radiantly_alive_logo.png"
+                logo_width="82"
+                headline="+44%"
+                subtitle="Online revenue in Australia"
+                name="Diesel"
+                content="The iconic jeans brand increased online revenue in Australia by 44% in 3 months when our conversion optimization geek, Arthur, came on board."
+                bgcolor="#0C0A09" %}
             </div>
           </div>
 
-        </div>
+          <div class="col-md-4 p-0 d-flex flex-wrap">
+            <div class="col-md-12 p-2">
+              {% include new-web/square-box.html
+                logo="/assets/images/new-web/rchain_logo.png"
+                logo_width="50"
+                name="Switch.cm"
+                content="Our automated acquisition engine generated triple digit leads within 2 months. Switch was acquired 8 months later."
+                bgcolor="#576192" %}
+            </div>
 
+            <div class="col-md-12 p-2">
+              {% include new-web/vertical-box.html
+                logo="/assets/images/new-web/rchain_logo.png"
+                logo_width="93"
+                headline="Long-term"
+                subtitle="Management"
+                name="RChain"
+                content="Long-term management of RChain's product marketing and community growth, so they could focus on building the new internet."
+                bgcolor="#A9002D" %}
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
 

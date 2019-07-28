@@ -1,0 +1,14 @@
+<div class="p-4" style="background: {{ include.bgcolor }}; height: 684px;">
+  <div class="upper d-flex flex-column align-items-center justify-content-around text-center" style="height: 55%;">
+    <img width="{{ include.logo_width }}" src="{{ include.logo }}" /> 
+    <div>
+      <h3>{{ include.headline }}</h3>
+      <p>{{ include.subtitle }}</p>
+    </div>
+  </div>
+  <hr>
+  <div class="lower">
+    <h4>{{ include.name }}</h4>
+    <p>{{ include.content }}</p>
+  </div>
+</div>
