@@ -81,4 +81,21 @@ our_process:
     content: |
       Once the systems are operational, we’ll help the team optimize their strategy and increase conversions as they scale. While the startup is scaling up it’s marketing efforts, we help them bring onboard in-house hires to take over the day-to-day execution of their marketing & growth systems.
 
+packages:
+  - title: Growth <br> Strategy
+    content: Strategy-only, executed by your team
+    price: €450/week
+
+  - title: Execution <br> (early-stage)
+    content: Capacity of 10 hrs/week
+    price: €900/week
+
+  - title: Execution <br> (Phase II)
+    content: Capacity of 20 hrs/week
+    price: €1750/week
+
+  - title: Head of <br> Growth
+    content: Dedicated availability
+    price: €2800/sprint
+
 ---
