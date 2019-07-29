@@ -88,9 +88,9 @@
     <section id="about-us" class="pb-0 text-center" style="margin-bottom: -100px;">
       <div class="container">
 
-        <div>
+        <!-- <div>
           <img class="img-fluid" src="/assets/images/new-web/about3.png" />
-        </div>
+        </div>  -->
 
         <div class="m-auto" style="max-width: 512px;">
 
@@ -148,7 +148,7 @@
   
           <div class="row mt-5 justify-content-between align-items-center">
 
-            <div class="speech-bubble speech-bubble-right-top">
+            <div class="speech-bubble speech-bubble-right-top" style="max-width: 670px;">
               <div class="speech-bubble-back"></div>
               <div class="speech-bubble-fore">
                   Double’s team is extremely forthcoming with ideas to engage our costumer further. 
@@ -166,23 +166,26 @@
     </section>
 
     <!-- SECTION: Partnerships -->
-    <section id="partnerships">
+    <section id="partnerships" class="pt-0">
       <div class="container">
-        <div class="row">
+
+        <div class="row d-flex align-items-center mb-5">
+          
+          <!-- PARTNER: Babb -->
           <div class="col-md-6">
             <!-- TODO: Change to BABB logo -->
-            <img width="193" src="/assets/images/new-web/logo.svg" /> 
-            <h4>For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!</h4>
-            <!-- TODO: Change href and add arrow icon -->
-            <a href="#" class="btn btn-link">Visit the site</a>
+            <img class="mb-5" width="193" src="/assets/images/new-web/logo.svg" /> 
+            <p class="lead mb-4">For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!</p>
+            <a href="#" class="btn btn-link"><b>Visit the site</b> <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
           </div>
-          <div class="col-md-6">
-            <img class="img-fluid" src="/assets/images/new-web/cecelia_knight.png" /> 
-            <div>
-              <h4><b>Cecelia Knight</b></h4>
-              <p>CEO at BABB</p>
+
+          <div class="col-md-6 position-relative">
+            <img class="img-fluid position-relative" style="left: 100px;" src="/assets/images/new-web/cecelia_knight.png" /> 
+            <div class="position-absolute" style="top: 50%; transform: translateY(-100%);">
+              <h4 class="mb-0"><b>Cecelia Knight</b></h4>
+              <p class="mb-0">CEO at BABB</p>
             </div>
-            <div class="speech-bubble speech-bubble-top-right">
+            <div class="speech-bubble speech-bubble-top-right position-relative" style="top: -60px;">
               <div class="speech-bubble-back"></div>
               <div class="speech-bubble-fore">
                   Every product that is labeled as a PC must be accompanied with specific software to operate the unit and must feature a touchscreen.
@@ -191,24 +194,33 @@
             
           </div>
 
-          <div class="col-md-6">
+        </div>
+
+        <div class="row d-flex mt-5">
+
+          <!-- PARTNER: Start life -->
+          <div class="col-md-6 mt-5">
             <img class="img-fluid" src="/assets/images/new-web/loet_rammelaarsburg.svg" /> 
             
-            <div class="speech-bubble speech-bubble-top-left">
-              <div class="speech-bubble-back"></div>
-              <div class="speech-bubble-fore">
-                These guys are different than regular marketers we come across. They really seem to get it.
+            <div class="position-relative" style="top: -50px; left: 100px;">
+
+              <div class="speech-bubble speech-bubble-top-left mb-5">
+                <div class="speech-bubble-back"></div>
+                <div class="speech-bubble-fore">
+                  These guys are different than regular marketers we come across. They really seem to get it.
+                </div>
+              </div>
+  
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h4><b>Loet Rammelaarsburg</b></h4>
+                  <p>Chief Operations at StartLife</p>
+                </div>
+                <!-- TODO: Change to Startlife logo -->
+                <img width="174" src="/assets/images/new-web/logo.svg" /> 
               </div>
             </div>
 
-            <div class="d-flex justify-content-between">
-              <div>
-                <h4><b>Loet Rammelaarsburg</b></h4>
-                <p>Chief Operations at StartLife</p>
-              </div>
-              <!-- TODO: Change to Startlife logo -->
-              <img width="174" src="/assets/images/new-web/logo.svg" /> 
-            </div>
           </div>
 
           <div class="col-md-6 text-center">
@@ -228,13 +240,13 @@
         <div class="row">
           <div class="col-md-6">
             <h2>“I need you guys to scale my business…”</h2>
-            <h4>Excellent. Here’s how we help:</h4>
+            <p class="lead">Excellent. Here’s how we help:</p>
           </div>
             
           <div class="col-md-6">
             {% for item in page.how_we_help %}
-            <div>
-              <h4>{{ item.title }}</h4>
+            <div style="min-height: 220px;">
+              <h4 class="mb-4">{{ item.title }}</h4>
               <p>{{ item.content }}</p>
             </div>
             {% endfor %}
@@ -248,12 +260,12 @@
     <section id="clients">
       <div class="container">
 
-        <div class="text-center">
-          <h2>More work we’re proud of…</h2>
-          <h4>The software availability is the key to why Windows wins over Linux in this competition.</h4>
+        <div class="mb-5 text-center ml-auto mr-auto" style="max-width: 680px;">
+          <h2 class="mb-4">More work we’re proud of…</h2>
+          <p class="lead">The software availability is the key to why Windows wins over Linux in this competition.</p>
         </div>
         
-        <div class="d-flex flex-wrap p-0 m-auto text-light" style="max-width: 1026px;">
+        <div class="d-flex flex-wrap p-0 ml-auto mr-auto text-light" style="max-width: 1026px; margin-top: 70px;">
 
           <div class="col-md-8 p-0 d-flex flex-wrap">
             <div class="col-md-6 p-2">
@@ -317,10 +329,11 @@
     </section>
 
     <!-- SECTION: Academy -->
-    <section id="academy" class="bg-secondary">
+    <section id="academy">
       <div class="container">
         
-        <div class="paper position-relative bg-light text-center">
+        <div class="paper position-relative bg-white text-center">
+          <div class="paper_shadow"></div>
           <div class="paper_corner">
             <div class="paper_corner_triangle text-light">
               <div class="paper_corner_triangle-inner">
@@ -329,16 +342,19 @@
               </div>
             </div>
           </div>
-          <div class="paper_content">
-            <img width="150" src="/assets/images/new-web/logo.png" />
-            <p><b>Academy</b></p>
-            <h2>The most popular course on growth marketing</h2>
-            <h4>7 Lessons of Online Course</h4>
+          <div class="paper_content bg-white position-relative">
+            
+            <div class="m-auto pb-4" style="max-width: 688px; ">
+              <img width="150" src="/assets/images/new-web/logo.png" />
+              <p><b>Academy</b></p>
+              <h2>The most popular course on growth marketing</h2>
+              <p class="lead mt-4">7 Lessons of Online Course</p>
+            </div>
 
-            <div class="row">
+            <div class="row mt-5 pb-5">
 
-              <div class="col-md-6">
-                <div class="speech-bubble speech-bubble-bottom-left">
+              <div class="col-md-6 pr-4">
+                <div class="speech-bubble speech-bubble-bottom-left mb-5">
                   <div class="speech-bubble-back"></div>
                   <div class="speech-bubble-fore">
                     As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
@@ -355,8 +371,8 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
-                <div class="speech-bubble speech-bubble-bottom-left">
+              <div class="col-md-6 pl-4">
+                <div class="speech-bubble speech-bubble-bottom-left mb-5">
                   <div class="speech-bubble-back"></div>
                   <div class="speech-bubble-fore">
                     Large businesses require a lot of IT infrastructure and a department to look after it.
@@ -376,9 +392,9 @@
 
             </div>
 
-            <p>Join over 15,271 others to learn from one of our founders how modern, systematic growth marketing works. It’s a great way to get to know us better, too!</p>
+            <p class="mt-4 mb-5">Join over 15,271 others to learn from one of our founders how modern, systematic growth marketing works. It’s a great way to get to know us better, too!</p>
           
-            <a href="#" class="btn btn-primary">Join Now</a>
+            <a href="/#contact" class="btn btn-primary btn-shadow">Join Now</a>
 
           </div>
 
