@@ -195,4 +195,46 @@ section#how-we-work {
   }
 }
 
+// Speech bubble
+.speech-bubble {
+  position: relative;
+  
+}
 
+.speech-bubble-fore {
+  background: $secondary-color;
+  z-index: 1;
+  position: relative;
+}
+
+.speech-bubble-back {
+  bottom: -15px;
+  right: -15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: $primary-color;
+}
+
+.speech-bubble-fore:after {
+  border-left-color: $secondary-color!important;
+}
+
+.speech-bubble-back:after {
+  border-left-color: $primary-color!important;
+}
+
+.speech-bubble-back:after,
+.speech-bubble-fore:after {
+  content: '';
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+  margin-right: -20px;
+}
