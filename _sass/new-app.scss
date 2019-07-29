@@ -166,7 +166,6 @@ section.alternate-section {
 
 // SECTION: Intro
 section#intro {
-  
   .title {
     max-width: 645px;
   }
@@ -184,7 +183,6 @@ section#intro {
 
 // SECTION: How we work
 section#how-we-work {
-  
   .checklist li img {
     border-radius: 100%;
     opacity: 0.15;
@@ -198,13 +196,15 @@ section#how-we-work {
 // Speech bubble
 .speech-bubble {
   position: relative;
-  
+  text-align: left;
 }
 
 .speech-bubble-fore {
   background: $secondary-color;
   z-index: 1;
   position: relative;
+  padding: 1.5rem;
+  color: #fff;
 }
 
 .speech-bubble-back {
@@ -216,25 +216,99 @@ section#how-we-work {
   background: $primary-color;
 }
 
-.speech-bubble-fore:after {
-  border-left-color: $secondary-color!important;
-}
-
-.speech-bubble-back:after {
-  border-left-color: $primary-color!important;
-}
-
 .speech-bubble-back:after,
 .speech-bubble-fore:after {
-  content: '';
-	position: absolute;
-	right: 0;
-	top: 10px;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -10px;
-  margin-right: -20px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+}
+
+// Speech bubble: Right-Top
+.speech-bubble.speech-bubble-right-top {
+  .speech-bubble-fore:after,
+  .speech-bubble-back:after {
+    content: "";
+    right: 0;
+    top: 10px;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -10px;
+    margin-right: -20px;
+  }
+
+  .speech-bubble-fore:after {
+    border-left-color: $secondary-color !important;
+  }
+
+  .speech-bubble-back:after {
+    border-left-color: $primary-color !important;
+  }
+}
+
+// Speech bubble: Top-Right
+.speech-bubble.speech-bubble-top-right {
+  .speech-bubble-fore:after,
+  .speech-bubble-back:after {
+    content: "";
+    top: 0;
+    right: 0;
+    border-top: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .speech-bubble-fore:after {
+    border-bottom-color: $secondary-color !important;
+  }
+
+  .speech-bubble-back:after {
+    border-bottom-color: $primary-color !important;
+  }
+}
+
+// Speech bubble: Top-Left
+.speech-bubble.speech-bubble-top-left {
+  .speech-bubble-fore:after,
+  .speech-bubble-back:after {
+    content: "";
+    top: 0;
+    left: 10px;
+    border-top: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .speech-bubble-fore:after {
+    border-bottom-color: $secondary-color !important;
+  }
+
+  .speech-bubble-back:after {
+    border-bottom-color: $primary-color !important;
+  }
+}
+
+// Speech bubble: Bottom-Left
+.speech-bubble.speech-bubble-bottom-left {
+  .speech-bubble-fore:after,
+  .speech-bubble-back:after {
+    content: "";
+    bottom: 0;
+    left: 10px;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+  }
+
+  .speech-bubble-fore:after {
+    border-top-color: $secondary-color !important;
+  }
+
+  .speech-bubble-back:after {
+    border-top-color: $primary-color !important;
+  }
 }
