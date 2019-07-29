@@ -5,42 +5,55 @@
   <body>
 
     <!-- Header -->
-    <nav>
-      <img src="/assets/images/new-web/logo.png" />
-    </nav>
+    <header class="pt-5 pb-5">
+      <div class="container">
+        <nav class="d-flex justify-content-between align-items-center">
+          <img width="120" src="/assets/images/new-web/logo.svg" />
+          <div class="menu">
+            <a href="#contact" class="text-secondary"><b>Contact</b></a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <!-- SECTION: Intro -->
-    <section id="intro" style="text-align: center;">
+    <section id="intro" class="pt-5 text-center">
       <div class="container">
-        <h3>We work for startups that need</h3>
-        <h1><span>more</span> <span class="text-primary">revenue</span></h1>
-        <h4>Double is a growth marketing agency. <strong>We help startups scale.</strong></h4>
+        <h3 class="mb-4">We work for startups <br> that need</h3>
+        <h1 class="title m-auto d-flex justify-content-between">
+          <span class="left">more</span> 
+          <span class="right text-primary">revenue</span>
+        </h1>
+        <p class="lead mt-5">Double is a growth marketing agency. <br> <b>We help startups scale.</b></p>
         <img class="img-fluid" src="/assets/images/new-web/intro_hero.png" />
       </div>
     </section>
 
     <!-- SECTION: How we work -->
-    <section id="how-we-work" class="pt-0 text-center">
+    <section id="how-we-work" class="pt-0">
       <div class="container">
-        <img class="img-fluid" src="/assets/images/new-web/intro_hero_overlay.png" style="margin-top: -355px;" />
-        <h3 class="d-inline" style="
-        top: -30px;
-        position: relative;
-        margin: 0;
-        background: #fff;
-        padding: 0 3px;">Systematic growth marketing</h3>
-        <p>Double brings you your own dedicated growth team, always led by one of our 3 partners. You’ll work with experienced marketers with a proven track record in scaling startups into international brands.</p>
-        
+
+        <div class="text-center mb-5">
+          <img class="img-fluid" src="/assets/images/new-web/intro_hero_overlay.png" style="margin-top: -355px;" />
+          <h3 class="d-inline pl-1 pr-1 m-0 position-relative bg-white" style="top: -30px;">Systematic growth marketing</h3>
+          <p>Double brings you your own dedicated growth team, always led by one of our 3 partners. You’ll work with experienced marketers with a proven track record in scaling startups into international brands.</p>
+        </div>
+
         <div class="row">
-          <div class="col-md-6">
-            <h2>How we work?</h2>
+          <div class="col-md-4">
+            <h2 class="mt-5">How we work?</h2>
           </div>
-          <div class="col-md-6">
-            <ul class="text-left">
+          <div class="col-md-8">
+            <ul class="text-left checklist">
               {% for item in page.how_it_works %}
-              <li class="d-flex align-items-center">
-                <img width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
-                {{ item | markdownify }}
+              <!-- TODO: Remove "active" if statement -->
+              <li class="d-flex align-items-center {% if forloop.index < 3 %}active{% endif %}" style="min-height: 160px;">
+                <div class="col-md-2">
+                  <img width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
+                </div>
+                <div class="col">
+                  <p class="m-0">{{ item }}</p>
+                </div>
               </li>
               {% endfor %}
             </ul>
@@ -53,14 +66,17 @@
     <!-- SECTION: Our promise -->
     <section id="our-promise" class="alternate-section text-center">
       <div class="container">
-        <h2>Our promise</h2>
-        <h4>Double is your dedicated marketing team. Here’s what you can expect from us:</h4>
+        
+        <div class="ml-auto mr-auto mb-5" style="max-width: 680px;">
+          <h2 class="mb-3">Our promise</h2>
+          <p class="lead">Double is your dedicated marketing team. Here’s what you can expect from us:</p>
+        </div>
 
-        <div class="row">
+        <div class="mt-5 row">
           {% for item in page.our_promise %}
           <div class="col-md-3">
-            <img width="70" height="70" src="{{ item.image }}" />
-            <h4>{{ item.title }}</h4>
+            <img class="mb-4" width="70" height="70" src="{{ item.image }}" />
+            <h4 class="mb-4">{{ item.title }}</h4>
             <p>{{ item.content }}</p>
           </div>
           {% endfor %}
@@ -75,11 +91,12 @@
         <div class="row">
           <div class="col-md"></div>
 
-          <div class="col-md-5">
+          <div style="min-width: 512px;">
             <h3>Hey! We’re</h3>
             <img width="350" src="/assets/images/new-web/logo.svg" />
             <h4>Your dedicated team of growth marketing super-nerds.</h4>
             <img class="img-fluid" src="/assets/images/new-web/about.png" />
+
             <ul class="text-left">
               {% for item in page.about_points %}
               <li class="d-flex justify-content-between">
@@ -88,6 +105,7 @@
               </li>
               {% endfor %}
             </ul>
+            
           </div>
 
           <div class="col-md"></div>
@@ -202,7 +220,7 @@
           <h4>The software availability is the key to why Windows wins over Linux in this competition.</h4>
         </div>
         
-        <div class="d-flex flex-wrap p-0 m-auto text-light" style="width: 1026px;">
+        <div class="d-flex flex-wrap p-0 m-auto text-light" style="max-width: 1026px;">
 
           <div class="col-md-8 p-0 d-flex flex-wrap">
             <div class="col-md-6 p-2">

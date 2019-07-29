@@ -1,11 +1,11 @@
 ---
 layout: pages/new-home
 how_it_works:
-  - "**Build systems** for durable, scalable pathways to growth"
-  - "**A structural, long-term partner**, rather than hiring freelancers on project-based stuff"
-  - "**Qualified experts** on fields from paid ads to copywriting, and sales funnels to analytics"
-  - "**A fast, iterative approach** with a cadence of high-tempo adjustments & experimentation"
-  - '**We take full ownership over your growth**—as your Head of Growth we’ll do whatever is needed to hit your growth targets… even if some of that work is technically not “marketing”'
+  - "<b>Build systems</b> for durable, scalable pathways to growth"
+  - "<b>A structural, long-term partner</b>, rather than hiring freelancers on project-based stuff"
+  - "<b>Qualified experts</b> on fields from paid ads to copywriting, and sales funnels to analytics"
+  - "<b>A fast, iterative approach</b> with a cadence of high-tempo adjustments & experimentation"
+  - '<b>We take full ownership over your growth</b>—as your Head of Growth we’ll do whatever is needed to hit your growth targets… even if some of that work is technically not “marketing”'
 
 our_promise:
   - image: /assets/images/new-web/full_ownership-icon.svg
