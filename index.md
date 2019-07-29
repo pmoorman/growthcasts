@@ -66,6 +66,17 @@ how_we_help:
   - title: Analytics & data analysis
     content: Setting up analytics tools and crunching data to draw proper conclusions on retention, LTV, cohort performance or channel attribution.
 
+academy_testimonials:
+  - name: Lillian Goodwin
+    position: Founder at Company
+    image: /assets/images/new-web/lillian_goodwill.png
+    content: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
+
+  - name: Albert Cobb
+    position: CEO at Firm
+    image: /assets/images/new-web/lillian_goodwill.png # TODO: Change image 
+    content: Large businesses require a lot of IT infrastructure and a department to look after it.
+
 our_process:
   - title: Growth Strategy
     content: |

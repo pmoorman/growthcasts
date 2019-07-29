@@ -223,6 +223,74 @@ section#academy {
   padding-bottom: 0;
 }
 
+// SECTION: Our process
+section#our-process {
+  .step-number {
+    font-size: 28px;
+    font-weight: 300;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #e7e9f3;
+    border-radius: 35px;
+    padding: 13px 27px;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+  }
+
+  .step-checked {
+    text-align: center;
+    position: relative;
+    top: -70px;
+    z-index: 3;
+  }
+
+  .full-line {
+    width: 2px;
+    height: calc(100% + 100px);
+    position: relative;
+    top: -70px;
+    background: #e7e9f3;
+  }
+
+  .pct-line {
+    position: absolute;
+    height: calc(30% + 100px);
+    width: 2px;
+    top: 0;
+    left: 64px;
+  }
+
+  .process-step:not(.active) {
+    .step-checked,
+    .pct-line {
+      display: none;
+    }
+  }
+
+  .process-step:last-child {
+    .full-line,
+    .pct-line {
+      display: none;
+    }
+  }
+}
+
+// Form box 
+.form_box {
+  .input-group {
+    box-shadow: 14px 14px 0 0 #D4D7E1;
+  }
+  input {
+    border-radius: 0;
+    height: 51px;
+  }
+  button {
+    border-radius: 0;
+    font-weight: 600;
+  }
+}
+
 // Speech bubble
 .speech-bubble {
   position: relative;
