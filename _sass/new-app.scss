@@ -217,6 +217,28 @@ section#how-we-work {
   }
 }
 
+// SECTION: Partnerships
+section#partnerships {
+  .empty_bubbles {
+    position: absolute;
+    width: 635px;
+    height: 635px;
+    right: 0;
+    bottom: 0;
+
+    .bubble-2 {
+      position: absolute;
+      right: 0;
+    }
+
+    .bubble-3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
 // SECTION: Academy
 section#academy {
   background: linear-gradient(180deg, $secondary-color 55%, #fff 45%);
@@ -276,10 +298,10 @@ section#our-process {
   }
 }
 
-// Form box 
+// Form box
 .form_box {
   .input-group {
-    box-shadow: 14px 14px 0 0 #D4D7E1;
+    box-shadow: 14px 14px 0 0 #d4d7e1;
   }
   input {
     border-radius: 0;

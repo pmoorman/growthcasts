@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="398px" viewBox="0 0 160 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>94A5BB92-B041-4F61-A114-6BD19420C344svg</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 77 0 0 21.0638298 21 99 21 99 77"></polygon>
+        <filter x="-4.0%" y="-5.2%" width="116.2%" height="120.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="8" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.580392157   0 0 0 0 0.603921569   0 0 0 0 0.705882353  0 0 0 0.287751311 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-1440" transform="translate(-1280.000000, -6838.000000)">
+            <g id="Group-28" transform="translate(1280.000000, 6838.000000)">
+                <rect id="Rectangle" fill="#D4D6E2" opacity="0.600000024" x="0" y="0" width="248" height="361"></rect>
+                <g id="Group-12" transform="translate(86.000000, 313.000000)">
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="Oval" fill="#979CB6" cx="28.0851064" cy="50" rx="7.0212766" ry="7"></ellipse>
+                    <ellipse id="Oval" fill="#E6E8F2" cx="49.1489362" cy="50" rx="7.0212766" ry="7"></ellipse>
+                    <ellipse id="Oval" fill="#D4D6E2" cx="70.212766" cy="50" rx="7.0212766" ry="7"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
