@@ -69,12 +69,12 @@ how_we_help:
 academy_testimonials:
   - name: Lillian Goodwin
     position: Founder at Company
-    image: /assets/images/new-web/lillian_goodwill.png
+    image: /assets/images/new-web/testimonial_1.png
     content: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
 
   - name: Albert Cobb
     position: CEO at Firm
-    image: /assets/images/new-web/lillian_goodwill.png # TODO: Change image 
+    image: /assets/images/new-web/testimonial_2.png
     content: Large businesses require a lot of IT infrastructure and a department to look after it.
 
 our_process:
