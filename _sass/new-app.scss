@@ -53,7 +53,7 @@ $container-max-widths: (
   xl: 1040px
 ) !default;
 
-@import "./vendors/bootstrap/bootstrap.scss";
+@import "vendors/bootstrap/bootstrap";
 
 html {
   overflow-x: hidden;
