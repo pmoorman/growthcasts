@@ -179,16 +179,18 @@ section.alternate-section {
 section#intro {
   .title {
     max-width: 645px;
-  }
 
-  .title .left {
-    border-bottom: 4px solid #181d33;
-    padding-bottom: 15px;
-  }
+    span {
+      padding-bottom: 15px;
+    }
 
-  .title .right {
-    border-bottom: 4px solid $primary-color;
-    padding-bottom: 15px;
+    .left {
+      border-bottom: 4px solid #181d33;
+    }
+
+    .right {
+      border-bottom: 4px solid $primary-color;
+    }
   }
 }
 
@@ -440,5 +442,36 @@ section#our-process {
 
   .speech-bubble-back:after {
     border-top-color: $primary-color !important;
+  }
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -2.5px;
+    line-height: 72px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 34px;
+  }
+
+  p.lead {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+
+  // SECTION: Intro
+  section#intro {
+    .title span {
+      padding-bottom: 0;
+    }
   }
 }
