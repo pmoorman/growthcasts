@@ -46,10 +46,12 @@
           <div class="col-md-8">
             <ul class="text-left checklist pl-0">
               {% for item in page.how_it_works %}
-              <!-- TODO: Remove "active" if statement -->
-              <li class="d-flex flex-column flex-md-row mt-3 mt-md-0 text-center text-md-left align-items-center {% if forloop.index < 3 %}active{% endif %}" style="min-height: 160px;">
+              <li class="d-flex flex-column flex-md-row mt-3 mt-md-0 text-center text-md-left align-items-center" style="min-height: 160px;">
                 <div class="col-md-2 mb-3 mb-md-0">
-                  <img width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
+                  <img class="fore" width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
+                  <div class="back">
+                    <img width="70" height="70" src="/assets/images/new-web/check_icon_back.png" />
+                  </div>
                 </div>
                 <div class="col">
                   <p class="m-0">{{ item }}</p>

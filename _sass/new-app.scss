@@ -4,8 +4,7 @@
   font-weight: 300;
   src: url("../assets/fonts/poppins-v8-latin-300.eot");
   src: local("Poppins Light"), local("Poppins-Light"),
-    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
@@ -18,8 +17,7 @@
   font-weight: 400;
   src: url("../assets/fonts/poppins-v8-latin-regular.eot");
   src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
@@ -32,8 +30,7 @@
   font-weight: 600;
   src: url("../assets/fonts/poppins-v8-latin-600.eot");
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
@@ -199,12 +196,34 @@ section#how-we-work {
   .checklist li img {
     border-radius: 100%;
     opacity: 0.15;
-    transition: 0.8s;
+    transition: 0.5s;
   }
-  .checklist li.active img {
-    opacity: 1;
-    box-shadow: 8px 10px 0 0 $primary-color;
+  .checklist { 
+    li.active img {
+      opacity: 1;
+    }
+    li.active .fore {
+      animation: fore .5s linear both;
+    }
+    li.active .back {
+      animation: back .5s linear both;
+    }
+    .back {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
   }
+}
+
+@keyframes fore {
+  from {transform: translate(0, 0)}
+  to {transform: translate(-4px, -5px)}
+}
+
+@keyframes back {
+  from {transform: translate(0, 0)}
+  to {transform: translate(4px, 5px)}
 }
 
 // SECTION: About us
