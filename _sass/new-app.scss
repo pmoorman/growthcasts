@@ -315,8 +315,16 @@ section#our-process {
     left: 64px;
   }
 
+  .process-step .step-checked {
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .process-step.active .step-checked {
+    opacity: 1;
+  }
+
   .process-step:not(.active) {
-    .step-checked,
     .pct-line {
       display: none;
     }

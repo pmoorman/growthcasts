@@ -1,10 +1,27 @@
+$(document).ready(function() {
+  $('#how-we-help-sidebar').stickySidebar({
+    topSpacing: 60,
+    bottomSpacing: 60,
+    containerSelector: '#how-we-help-container',
+    innerWrapperSelector: '.sidebar__inner'
+});
+})
+
 $(window).on('scroll', function(){
+  
   $("#how-we-work .checklist li").each(function() {
     if (isOverCenterScreen(this, 150)) {
       // console.log($(this))
       $(this).addClass("active");
      }
-  })
+  });
+
+  $("#our-process .process-step").each(function() {
+    if (isOverCenterScreen(this, 150)) {
+      // console.log($(this))
+      $(this).addClass("active");
+     }
+  });
   
 });
 
