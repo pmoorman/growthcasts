@@ -179,6 +179,7 @@ section#intro {
 
     span {
       padding-bottom: 15px;
+      transition: 1s;
     }
 
     .left {
@@ -189,6 +190,26 @@ section#intro {
       border-bottom: 4px solid $primary-color;
     }
   }
+
+  .title.active {
+    .left {
+      animation: titleLeftAnimation .5s ease-out both;
+    }
+
+    .right {
+      animation: titleRightAnimation .5s ease-out both;
+    }
+  }
+}
+
+@keyframes titleRightAnimation {
+  from{transform: translateX(-50px); opacity: 0}
+  to{transform: translateX(0px); opacity: 1}
+}
+
+@keyframes titleLeftAnimation {
+  from{transform: translateX(50px);}
+  to{transform: translateX(0px);}
 }
 
 // SECTION: How we work
@@ -309,10 +330,11 @@ section#our-process {
 
   .pct-line {
     position: absolute;
-    height: calc(30% + 100px);
+    height: 0;
     width: 2px;
     top: 0;
     left: 64px;
+    z-index: 2;
   }
 
   .process-step .step-checked {
@@ -515,5 +537,79 @@ section#our-process {
     .title span {
       padding-bottom: 0;
     }
+  }
+}
+
+.slide-right, .slide-top {
+  opacity: 0;
+}
+
+.slide-top.active {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-right.active {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
   }
 }

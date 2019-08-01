@@ -77,9 +77,11 @@
         <div class="mt-5 row">
           {% for item in page.our_promise %}
           <div class="col-md-3">
-            <img class="mb-4" width="70" height="70" src="{{ item.image }}" />
-            <h4 class="mb-4">{{ item.title }}</h4>
-            <p>{{ item.content }}</p>
+            <img class="mb-4 slide-right" width="70" height="70" src="{{ item.image }}" />
+            <div class="slide-top">
+              <h4 class="mb-4">{{ item.title }}</h4>
+              <p>{{ item.content }}</p>
+            </div>
           </div>
           {% endfor %}
         </div>
@@ -425,13 +427,15 @@
 
         <div class="mt-4">
           {% for item in page.our_process %}
-          <div class="process-step d-flex justify-content-between {% if forloop.index == 1 %}active{% endif %}" style="padding-bottom: 100px;">
+          <div class="process-step d-flex justify-content-between" style="padding-bottom: 100px;">
             <div class="col-md-5 d-flex">
               <div class="col-md-4">
                 <div class="step-number m-auto">{{ forloop.index }}</div>
                 <div class="step-checked"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
                 <div class="full-line ml-auto mr-auto"></div>
+                {% if forloop.index == 1 %}
                 <div class="pct-line bg-primary ml-auto mr-auto"></div>
+                {% endif %}
               </div>
               <div class="col">
                 <h3>{{ item.title }}</h3>
