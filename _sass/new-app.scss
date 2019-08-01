@@ -540,7 +540,7 @@ section#our-process {
   }
 }
 
-.slide-right, .slide-top {
+.slide-right, .slide-left, .slide-bottom, .slide-top {
   opacity: 0;
 }
 
@@ -549,9 +549,19 @@ section#our-process {
 	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.slide-bottom.active {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .slide-right.active {
 	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-left.active {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /**
@@ -586,6 +596,36 @@ section#our-process {
 
 /**
  * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
  * animation slide-right
  * ----------------------------------------
  */
@@ -605,6 +645,36 @@ section#our-process {
   0% {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
             opacity: 0;
   }
   100% {

@@ -76,8 +76,13 @@
 
         <div class="mt-5 row">
           {% for item in page.our_promise %}
+          {% if forloop.index <= 2 %}
+            {% assign image_slide = "slide-right" %}
+          {% else %}
+            {% assign image_slide = "slide-left" %}
+          {% endif %}
           <div class="col-md-3">
-            <img class="mb-4 slide-right" width="70" height="70" src="{{ item.image }}" />
+            <img class="mb-4 {{ image_slide }}" width="70" height="70" src="{{ item.image }}" />
             <div class="slide-top">
               <h4 class="mb-4">{{ item.title }}</h4>
               <p>{{ item.content }}</p>
@@ -96,7 +101,7 @@
 
           <div class="col-md-2 position-relative" style="margin-top: 200px;">
             <div class="position-relative" style="z-index: 1;">
-              <div class="quick_intro_box ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-column justify-content-between mb-5">
+              <div class="quick_intro_box slide-bottom ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-column justify-content-between mb-5">
                 <div class="text-light">
                   <img width="10" src="/assets/images/new-web/play_triangle.png" />
                 </div>
@@ -105,7 +110,7 @@
                   <p class="duration mb-0">1:52</p>
                 </div>
               </div>
-              <img class="about-4 mt-5" src="/assets/images/new-web/about4.png" />
+              <img class="about-4 mt-5 slide-right" src="/assets/images/new-web/about4.png" />
             </div>
           </div>
 
@@ -120,7 +125,7 @@
     
             </div>
     
-            <img style="z-index: 1; position: relative;" class="img-fluid" src="/assets/images/new-web/about.png" />
+            <img style="z-index: 1; position: relative;" class="img-fluid slide-top" src="/assets/images/new-web/about.png" />
     
             <div class="p-5 m-auto position-relative" style="margin-top: -130px!important; padding-top: 150px!important; width: 864px; background: #fff; box-shadow: 12px 12px 0 0 rgba(148,154,180,0.4);">
     
@@ -147,8 +152,8 @@
 
           <div class="col-md-2">
             <div class="position-relative" style="left: -150px;">
-              <img class="about-2 mb-5" src="/assets/images/new-web/about2.png" />
-              <img class="about-3 pt-5" src="/assets/images/new-web/about3.png" />
+              <img class="about-2 mb-5 slide-bottom" src="/assets/images/new-web/about2.png" />
+              <img class="about-3 pt-5 slide-left" src="/assets/images/new-web/about3.png" />
             </div>
           </div>
 
@@ -176,7 +181,7 @@
   
           <div class="row mt-5 justify-content-between align-items-center">
 
-            <div class="speech-bubble speech-bubble-right-top" style="max-width: 670px;">
+            <div class="speech-bubble speech-bubble-right-top slide-right" style="max-width: 670px;">
               <div class="speech-bubble-back"></div>
               <div class="speech-bubble-fore">
                   Double’s team is extremely forthcoming with ideas to engage our costumer further. 
@@ -219,7 +224,7 @@
               <h4 class="mb-0"><b>Cecelia Knight</b></h4>
               <p class="mb-0">CEO at BABB</p>
             </div>
-            <div class="speech-bubble speech-bubble-top-right position-relative" style="top: -60px;">
+            <div class="speech-bubble speech-bubble-top-right slide-top position-relative" style="top: -60px;">
               <div class="speech-bubble-back"></div>
               <div class="speech-bubble-fore">
                   Every product that is labeled as a PC must be accompanied with specific software to operate the unit and must feature a touchscreen.
@@ -238,7 +243,7 @@
             
             <div class="position-relative" style="top: -50px; left: 100px;">
 
-              <div class="speech-bubble speech-bubble-top-left mb-5">
+              <div class="speech-bubble speech-bubble-top-left slide-top mb-5">
                 <div class="speech-bubble-back"></div>
                 <div class="speech-bubble-fore">
                   These guys are different than regular marketers we come across. They really seem to get it.
@@ -391,11 +396,11 @@
               
               {% for item in page.academy_testimonials %}
               <div class="col-md-6 pl-4 pr-4">
-                <div class="speech-bubble speech-bubble-bottom-left mb-5">
+                <div class="speech-bubble speech-bubble-bottom-left slide-bottom mb-5">
                   <div class="speech-bubble-back"></div>
                   <div class="speech-bubble-fore">{{ item.content }}</div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center slide-left">
                   <div class="image">
                     <img width="70" src="{{ item.image }}" />
                   </div>

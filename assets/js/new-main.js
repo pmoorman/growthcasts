@@ -45,7 +45,7 @@ $(window).on('scroll', function(){
      }
   });
 
-  $(".slide-top, .slide-right").each(function() {
+  $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
     if (isOverCenterScreen(this, 150)) {
       // console.log($(this))
       $(this).addClass("active");
