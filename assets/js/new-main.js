@@ -3,6 +3,7 @@ $(document).ready(function() {
   animateIntroTitle();
   processSteps();
   onWindowsScroll();
+  _viewportAnimations();
 });
 
 function animateIntroTitle() {
@@ -75,25 +76,32 @@ function processSteps() {
 }
 
 function onWindowsScroll() {
-  $(window).on('scroll', function(){
-  
-    $("#how-we-work .checklist li").each(function() {
-      if (_isOverCenterScreen(this, 150)) {
-        $(this).addClass("active");
-       }
-    });
-  
-    $("#our-process .process-step").each(function() {
-      if (_isOverCenterScreen(this, 150)) {
-        $(this).addClass("active");
-       }
-    });
-  
-    $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
-      if (_isOverCenterScreen(this, 150)) {
-        $(this).addClass("active");
-       }
-    });
+  $(window).on('scroll', _viewportAnimations);
+}
+
+function _viewportAnimations() {
+  $('.animated-logo').each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass('active');
+    }
+  });
+
+  $("#how-we-work .checklist li").each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass("active");
+     }
+  });
+
+  $("#our-process .process-step").each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass("active");
+     }
+  });
+
+  $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass("active");
+     }
   });
 }
 

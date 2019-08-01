@@ -1,3 +1,10 @@
+{% capture logo %}
+  <div class="animated-logo position-relative">
+    <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.svg" />
+    <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.svg" />
+  </div>
+{% endcapture %}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include new-head.html %}
@@ -8,7 +15,7 @@
     <header class="pt-5 pb-5">
       <div class="container">
         <nav class="d-flex justify-content-between align-items-center">
-          <img width="120" src="/assets/images/new-web/logo.svg" />
+          <div style="width: 120px">{{ logo }}</div>
           <div class="menu">
             <a href="#contact" class="text-secondary"><b>Contact</b></a>
           </div>
@@ -47,7 +54,7 @@
             <ul class="text-left checklist pl-0">
               {% for item in page.how_it_works %}
               <li class="d-flex flex-column flex-md-row mt-3 mt-md-0 text-center text-md-left align-items-center" style="min-height: 160px;">
-                <div class="col-md-2 mb-3 mb-md-0">
+                <div class="col-md-2 w-auto mb-3 mb-md-0 position-relative">
                   <img class="fore" width="70" height="70" src="/assets/images/new-web/check_icon_fore.png" />
                   <div class="back">
                     <img width="70" height="70" src="/assets/images/new-web/check_icon_back.png" />
@@ -119,7 +126,9 @@
 
               <div class="mb-5">
                 <h3 class="mb-4">Hey! We’re</h3>
-                <img width="350" src="/assets/images/new-web/logo.svg" />
+                <div class="m-auto text-left" style="width: 350px;">
+                  {{ logo }}
+                </div>
                 <p class="lead mt-5">Your dedicated team of growth marketing super-nerds.</p>
               </div>
     
@@ -163,7 +172,8 @@
     </section>
 
     <!-- SECTION: Klooker -->
-    <section id="klooker" class="text-light" style="background: url(/assets/images/new-web/klooker.png); background-size: cover; background-position: center;">
+    <section id="klooker" class="text-light position-relative">
+      <img class="position-absolute bg-image" src="/assets/images/new-web/klooker.png" />
       
       <div style="min-height: 1000px;" class="container d-flex mt-5 flex-column justify-content-between">
 
@@ -173,7 +183,7 @@
         </h2>
 
         <div>
-          <div style="max-width: 425px;">
+          <div class="text-center text-md-left" style="max-width: 425px;">
             <img class="mb-5" width="158" src="/assets/images/new-web/klooker_logo_wit.png" /> 
             <p class="lead">Working with Dennis from Day 0, we led the growth efforts that grew Klooker <b>from zero to over 5,000 recurring revenue customers</b>. We are currently helping Klooker expand towards it’s milestone of 50,000 customers. Exciting!</p>
             <a href="#" class="btn btn-link">Visit the site <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
@@ -386,7 +396,9 @@
           <div class="paper_content bg-white position-relative">
             
             <div class="m-auto pb-4" style="max-width: 688px; ">
-              <img width="150" src="/assets/images/new-web/logo.png" />
+              <div class="text-left m-auto" style="width: 150px;">
+                {{ logo }}
+              </div>
               <p><b>Academy</b></p>
               <h2>The most popular course on growth marketing</h2>
               <p class="lead mt-4">7 Lessons of Online Course</p>

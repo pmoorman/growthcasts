@@ -125,6 +125,37 @@ section.alternate-section {
   padding: 15px 30px;
 }
 
+// Animated logo
+.animated-logo {
+  img {
+    transition: 1s;
+  }
+
+  .fore {
+    top: 0;
+  }
+
+  &.active {
+    .fore {
+      animation: animatedLogoFore .5s ease-in both;
+    }
+
+    .back {
+      animation: animatedLogoBack .5s ease-in both;
+    }
+  }
+}
+
+@keyframes animatedLogoFore {
+  from{transform: translateX(0)}
+  to{transform: translateX(-3%)}
+}
+
+@keyframes animatedLogoBack {
+  from{transform: translateX(0)}
+  to{transform: translateX(3%)}
+}
+
 // Paper
 .paper .paper_corner {
   position: absolute;
@@ -289,6 +320,22 @@ section#partnerships {
       right: 0;
       bottom: 0;
     }
+  }
+}
+
+// SECTION: Klooker
+section#klooker {
+  overflow: hidden;
+
+  .bg-image {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 }
 
@@ -532,10 +579,23 @@ section#our-process {
     line-height: 24px;
   }
 
+  section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   // SECTION: Intro
   section#intro {
     .title span {
       padding-bottom: 0;
+    }
+  }
+
+  // SECTION: Klooker
+  section#klooker {
+    .bg-image {
+      object-position: 68% 72%;
+      height: 130%;
     }
   }
 }
