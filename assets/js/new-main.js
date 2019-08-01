@@ -1,18 +1,10 @@
 $(document).ready(function() {
   affixHowWeHelpTitle();
   animateIntroTitle();
-})
+  processSteps();
+  onWindowsScroll();
+});
 
-function affixHowWeHelpTitle() {
-  $('#how-we-help-sidebar').stickySidebar({
-    topSpacing: 60,
-    bottomSpacing: 60,
-    containerSelector: '#how-we-help-container',
-    innerWrapperSelector: '.sidebar__inner'
-  });
-}
-
-// TODO: Animate only when in viewport
 function animateIntroTitle() {
   let titleEl = $('#intro .title');
   let rightEl = $('#intro .title .right');
@@ -29,64 +21,86 @@ function animateIntroTitle() {
   }, 3000);  
 }
 
-$(window).on('scroll', function(){
+function affixHowWeHelpTitle() {
+  const offset = 60;
+  const offsetPx = offset + 'px';
+  const container = $("#how-we-help");
+  const sidebar = $("#how-we-help #how-we-help-sidebar");
+  const sidebarWidth = sidebar.width();
+  const sidebarHeight = sidebar.height();
+
+  $(window).on('scroll', function() {
+    container.each(function() {
+      const docViewTop = $(window).scrollTop();
   
-  $("#how-we-work .checklist li").each(function() {
-    if (isOverCenterScreen(this, 150)) {
-      // console.log($(this))
-      $(this).addClass("active");
-     }
-  });
-
-  $("#our-process .process-step").each(function() {
-    if (isOverCenterScreen(this, 150)) {
-      // console.log($(this))
-      $(this).addClass("active");
-     }
-  });
-
-  $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
-    if (isOverCenterScreen(this, 150)) {
-      // console.log($(this))
-      $(this).addClass("active");
-     }
-  });
-
-  processSteps();
+      const containerTop = $(this).offset().top;
+      const containerBottom = containerTop + $(this).height();
   
-});
+      if (docViewTop > (containerTop + offset)) {
+        sidebar.css('top', offsetPx);
+        sidebar.css('bottom', '');
+        sidebar.css('width', sidebarWidth);
+        sidebar.css('position', 'fixed');
+      } else {
+        sidebar.css('position', 'absolute');
+        sidebar.css('top', '')
+      }
+  
+      if (docViewTop > (containerBottom - sidebarHeight)) {
+        sidebar.css('bottom', offsetPx);
+        sidebar.css('top', '');
+        sidebar.css('position', 'absolute');
+      }
+    })
+  });
+}
 
 function processSteps() {
   const first = $("#our-process .process-step:first-child");
   const last = $("#our-process .process-step:last-child");
   const line = $("#our-process .pct-line");
+  const buffer = 50;
   const maxLength = last.offset().top - first.offset().top;
 
+  $(window).on('scroll', function() {
+    const maxLength = last.offset().top - first.offset().top;
+    const overScreen = _isOverCenterScreen(first[0], 150);
+    const currentHeight = line.height();
+    const newHeight = Math.min(maxLength, overScreen);
 
-  let overScreen = isOverCenterScreen(first[0], 150);
-
-  if (overScreen && overScreen <= (maxLength + 50)) {
-    line.css('height', overScreen + 'px');
-  }
+    if (overScreen && newHeight > currentHeight) {
+      line.css('height', newHeight + 'px');
+    }
+  });
 }
 
-function isScrolledIntoView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
-
-  console.log('docViewTop ' + docViewTop)
-  console.log('elemTop ' + elemTop)
-
-  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+function onWindowsScroll() {
+  $(window).on('scroll', function(){
+  
+    $("#how-we-work .checklist li").each(function() {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass("active");
+       }
+    });
+  
+    $("#our-process .process-step").each(function() {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass("active");
+       }
+    });
+  
+    $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass("active");
+       }
+    });
+  });
 }
 
-function isOverCenterScreen(elem, offset) {
+function _isOverCenterScreen(elem, offset) {
   var windowCenter =  $(window).height() / 2;
   var elemTop = elem.getBoundingClientRect().top;
-  console.log('-----------------');
-
-  return (windowCenter + offset) > elemTop ? (windowCenter + offset) - elemTop : false ;
+  return (windowCenter + offset) > elemTop 
+    ? (windowCenter + offset) - elemTop 
+    : false;
 }
