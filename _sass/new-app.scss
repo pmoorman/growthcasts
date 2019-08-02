@@ -269,6 +269,9 @@ section#intro {
 
 // SECTION: How we work
 section#how-we-work {
+  position: relative;
+  top: -140px;
+
   .checklist li img {
     border-radius: 100%;
     opacity: 0.15;
@@ -324,6 +327,29 @@ section#about-us {
       font-size: 14px;
       letter-spacing: -0.5px;
       line-height: 25px;
+    }
+  }
+
+  .first-col {
+    position: relative;
+    top: -100px;
+  }
+
+  .middle-col .list-items {
+    margin-top: -130px !important;
+    padding-top: 150px !important;
+    width: 864px;
+    background: #fff;
+    box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
+    max-width: 100%;
+  }
+
+  .last-col {
+    position: relative;
+    top: -300px;
+
+    > div {
+      left: -150px;
     }
   }
 
@@ -401,12 +427,12 @@ section#klooker {
 
 // SECTION: Clients
 section#clients {
-  .clients_vertical_box {
+  .client_vertical_box {
     height: 684px;
   }
 
-  .clients_horizontal_box,
-  .clients_square_box {
+  .client_horizontal_box,
+  .client_square_box {
     height: 326px;
   }
 }
@@ -742,6 +768,63 @@ section#packages {
     }
   }
 
+  // SECTION: How we work
+  section#how-we-work {
+    top: 0;
+  }
+
+  // SECTION: About us
+  section#about-us {
+    .quick_intro_box {
+      width: 100%;
+      height: auto;
+
+      a {
+        margin-right: 10px;
+      }
+    }
+
+    .first-col {
+      top: 0;
+    }
+
+    .middle-col .list-items {
+      padding-top: 550px !important;
+    }
+
+    .last-col {
+      position: relative;
+      top: -300px;
+
+      > div {
+        left: 0;
+        top: -420px;
+      }
+    }
+
+    img.about-4 {
+      position: absolute;
+      left: -20px;
+      top: 292px;
+      width: 300px;
+    }
+
+    img.about-3 {
+      position: absolute;
+      left: -15px;
+      top: 110px;
+      z-index: 1;
+      width: 200px;
+    }
+
+    img.about-2 {
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      width: 300px;
+    }
+  }
+
   // SECTION: Klooker
   section#klooker {
     .title > div {
@@ -814,9 +897,9 @@ section#packages {
 
   // SECTION: Clients
   section#clients {
-    .clients_horizontal_box,
-    .clients_square_box,
-    .clients_vertical_box {
+    .client_horizontal_box,
+    .client_square_box,
+    .client_vertical_box {
       height: auto;
     }
   }

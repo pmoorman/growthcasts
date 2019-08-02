@@ -1,7 +1,7 @@
 ---
 layout: pages/new-home
 
-quick_intro_show: false
+quick_intro_show: true
 quick_intro_video_url: https://player.vimeo.com/video/329342289
 
 how_it_works:

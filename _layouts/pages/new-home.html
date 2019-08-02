@@ -32,7 +32,7 @@
           <span class="right d-inline-block text-primary">revenue</span>
         </h1>
         <p class="lead mt-5">Double is a growth marketing agency. <br> <b>We help startups scale.</b></p>
-        <img class="img-fluid" src="/assets/images/new-web/intro_hero.png" />
+        <img class="img-fluid" src="/assets/images/new-web/intro_hero_full.jpg" />
       </div>
     </section>
 
@@ -41,7 +41,7 @@
       <div class="container">
 
         <div class="text-center mb-5">
-          <img class="img-fluid" src="/assets/images/new-web/intro_hero_overlay.png" style="margin-top: -355px;" />
+        <!--  <img class="img-fluid" src="/assets/images/new-web/intro_hero_overlay.png" style="position: relative; top: -160px;" /> -->
           <h3 class="d-inline pl-1 pr-1 m-0 position-relative bg-white" style="top: -30px;">Systematic growth marketing</h3>
           <p>Double brings you your own dedicated growth team, always led by one of our 3 partners. You’ll work with experienced marketers with a proven track record in scaling startups into international brands.</p>
         </div>
@@ -99,41 +99,45 @@
     <section id="about-us" class="pb-0 text-center position-relative" style="margin-bottom: -100px;">
 
       <div class="container" style="max-width: 1440px;">
+        <div class="m-auto" style="max-width: 512px;">
+
+          <div class="mb-5">
+            <h3 class="mb-4">Hey! We’re</h3>
+            <div class="m-auto text-left" style="width: 350px;">
+              {{ logo }}
+            </div>
+            <p class="lead mt-5">Your dedicated team of growth marketing super-nerds.</p>
+          </div>
+
+        </div>
         <div class="row">
 
-          <div class="col-md-2 position-relative" style="margin-top: 200px;">
+          <div class="first-col col-md-2 position-relative">
             <div class="position-relative" style="z-index: 1;">
               {% if page.quick_intro_show %}
-              <div class="quick_intro_box slide-bottom ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-column justify-content-between mb-5">
-                <a href="#quick-intro-video" class="modal-btn text-light">
-                  <img width="10" src="/assets/images/new-web/play_triangle.png" />
-                </a>
-                <div>
+
+              <div class="quick_intro_box flex-row slide-bottom ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-md-column justify-content-between mb-5">
+                <div class="d-flex flex-row flex-md-column col justify-content-md-between p-0">
+                  <a href="#quick-intro-video" class="modal-btn text-light">
+                    <img width="10" src="/assets/images/new-web/play_triangle.png" />
+                  </a>
                   <p class="lead text-light mb-0"><b>Quick Intro</b></p>
+                </div>
+                <div>
                   <p class="duration mb-0">1:52</p>
                 </div>
               </div>
+
               {% endif %}
               <img class="about-4 mt-5 slide-right" src="/assets/images/new-web/about4.png" />
             </div>
           </div>
 
-          <div class="col-md-8">
-            <div class="m-auto" style="max-width: 512px;">
-
-              <div class="mb-5">
-                <h3 class="mb-4">Hey! We’re</h3>
-                <div class="m-auto text-left" style="width: 350px;">
-                  {{ logo }}
-                </div>
-                <p class="lead mt-5">Your dedicated team of growth marketing super-nerds.</p>
-              </div>
-    
-            </div>
+          <div class="middle-col col-md-8">
     
             <img style="z-index: 1; position: relative;" class="img-fluid slide-top" src="/assets/images/new-web/about.png" />
     
-            <div class="p-5 m-auto position-relative" style="margin-top: -130px!important; padding-top: 150px!important; width: 864px; background: #fff; box-shadow: 12px 12px 0 0 rgba(148,154,180,0.4);">
+            <div class="p-5 m-auto position-relative list-items">
     
               <div class="m-auto" style="max-width: 512px;">
     
@@ -156,8 +160,8 @@
             </div>
           </div>
 
-          <div class="col-md-2">
-            <div class="position-relative" style="left: -150px;">
+          <div class="last-col col-md-2">
+            <div class="position-relative">
               <img class="about-2 mb-5 slide-bottom" src="/assets/images/new-web/about2.png" />
               <img class="about-3 pt-5 slide-left" src="/assets/images/new-web/about3.png" />
             </div>
@@ -198,7 +202,7 @@
             <div class="text-right">
               <h4 class="mb-0"><b>Dennis Kamst</b></h4>
               <p class="mb-0">Founder & CEO at klooker</p>
-            </div>
+            </div>  
           </div>
         </div>
 
