@@ -959,11 +959,12 @@ section#packages {
     }
   }
 
-  // SECTION: Contact
-  section#contact {
+  // Form box
+  .form_box {
     .input-group {
       flex-direction: column;
-
+      
+      button,
       input {
         width: 100%;
       }
