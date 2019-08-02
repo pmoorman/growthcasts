@@ -26,7 +26,7 @@ function animateIntroTitle() {
 
 function affixHowWeHelpTitle() {
   const offset = 60;
-  const offsetPx = offset + 'px';
+  const lineHeightDiff = 12;
   const container = $("#how-we-help");
   const sidebar = $("#how-we-help #how-we-help-sidebar");
   const sidebarWidth = sidebar.width();
@@ -40,7 +40,7 @@ function affixHowWeHelpTitle() {
       const containerBottom = containerTop + $(this).height();
   
       if (docViewTop > (containerTop + offset)) {
-        sidebar.css('top', offsetPx);
+        sidebar.css('top', (offset + lineHeightDiff) + 'px');
         sidebar.css('bottom', '');
         sidebar.css('width', sidebarWidth);
         sidebar.css('position', 'fixed');
@@ -50,7 +50,7 @@ function affixHowWeHelpTitle() {
       }
   
       if (docViewTop > (containerBottom - sidebarHeight)) {
-        sidebar.css('bottom', offsetPx);
+        sidebar.css('bottom', (offset - lineHeightDiff) + 'px');
         sidebar.css('top', '');
         sidebar.css('position', 'absolute');
       }

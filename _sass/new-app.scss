@@ -133,15 +133,18 @@ section.alternate-section {
 
   .fore {
     top: 0;
+    left: 0;
   }
 
   &.active {
     .fore {
-      animation: animatedLogoFore .5s ease-in both;
+      -webkit-animation: animatedLogoFore .5s ease-in both;
+              animation: animatedLogoFore .5s ease-in both;
     }
 
     .back {
-      animation: animatedLogoBack .5s ease-in both;
+      -webkit-animation: animatedLogoBack .5s ease-in both;
+              animation: animatedLogoBack .5s ease-in both;
     }
   }
 }

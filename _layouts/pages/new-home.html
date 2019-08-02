@@ -17,7 +17,7 @@
         <nav class="d-flex justify-content-between align-items-center">
           <div style="width: 120px">{{ logo }}</div>
           <div class="menu">
-            <a href="#contact" class="text-secondary"><b>Contact</b></a>
+            <a href="mailto:pieter@double-agency.com" class="text-secondary"><b>Contact</b></a>
           </div>
         </nav>
       </div>
@@ -83,13 +83,8 @@
 
         <div class="mt-5 row">
           {% for item in page.our_promise %}
-          {% if forloop.index <= 2 %}
-            {% assign image_slide = "slide-right" %}
-          {% else %}
-            {% assign image_slide = "slide-left" %}
-          {% endif %}
           <div class="col-md-3">
-            <img class="mb-4 {{ image_slide }}" width="70" height="70" src="{{ item.image }}" />
+            <img class="mb-4 slide-right" width="70" height="70" src="{{ item.image }}" />
             <div class="slide-top">
               <h4 class="mb-4">{{ item.title }}</h4>
               <p>{{ item.content }}</p>
@@ -108,6 +103,7 @@
 
           <div class="col-md-2 position-relative" style="margin-top: 200px;">
             <div class="position-relative" style="z-index: 1;">
+              {% if page.quick_intro_show %}
               <div class="quick_intro_box slide-bottom ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-column justify-content-between mb-5">
                 <a href="#quick-intro-video" class="modal-btn text-light">
                   <img width="10" src="/assets/images/new-web/play_triangle.png" />
@@ -117,6 +113,7 @@
                   <p class="duration mb-0">1:52</p>
                 </div>
               </div>
+              {% endif %}
               <img class="about-4 mt-5 slide-right" src="/assets/images/new-web/about4.png" />
             </div>
           </div>
