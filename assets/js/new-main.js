@@ -60,8 +60,6 @@ function processSteps() {
   const first = $("#our-process .process-step:first-child");
   const last = $("#our-process .process-step:last-child");
   const line = $("#our-process .pct-line");
-  const buffer = 50;
-  const maxLength = last.offset().top - first.offset().top;
 
   $(window).on('scroll', function() {
     const maxLength = last.offset().top - first.offset().top;
