@@ -96,14 +96,14 @@
     </section>
 
     <!-- SECTION: About us -->
-    <section id="about-us" class="pb-0 text-center position-relative" style="margin-bottom: -100px;">
+    <section id="about-us" class="pb-0 text-center position-relative">
 
       <div class="container" style="max-width: 1440px;">
         <div class="m-auto" style="max-width: 512px;">
 
           <div class="mb-5">
             <h3 class="mb-4">Hey! We’re</h3>
-            <div class="m-auto text-left" style="width: 350px;">
+            <div class="m-auto text-left max-w-95" style="width: 350px;">
               {{ logo }}
             </div>
             <p class="lead mt-5">Your dedicated team of growth marketing super-nerds.</p>
@@ -133,7 +133,7 @@
             </div>
           </div>
 
-          <div class="middle-col col-md-8">
+          <div class="middle-col col-md-8 px-0 px-md-3">
     
             <img style="z-index: 1; position: relative;" class="img-fluid slide-top" src="/assets/images/new-web/about.png" />
     
@@ -174,36 +174,41 @@
 
     <!-- SECTION: Klooker -->
     <section id="klooker" class="text-light position-relative">
-      <img class="position-absolute bg-image" src="/assets/images/new-web/klooker.png" />
+      <img class="position-absolute bg-image d-none d-md-block" src="/assets/images/new-web/klooker.png" />
+      <img class="position-absolute bg-image d-block d-md-none" src="/assets/images/new-web/klooker_mobile.png" />
       
-      <div style="min-height: 1000px;" class="container d-flex mt-5 flex-column justify-content-md-between">
+      <div class="content container d-flex mt-0 mt-md-5 flex-column justify-content-md-between">
 
         <h2 class="title text-center ml-auto mr-auto" style="max-width: 800px;">
           We grow startups for a living
           <div class="w-100 d-block mt-3 mt-md-0 d-md-inline"> …and we love it</div>
         </h2>
 
-        <div>
-          <div class="text-center text-md-left mt-4 mt-md-0" style="max-width: 425px;">
-            <img class="mb-3 mb-md-5" width="158" src="/assets/images/new-web/klooker_logo_wit.png" /> 
-            <p class="lead">Working with Dennis from Day 0, we led the growth efforts that grew Klooker <b>from zero to over 5,000 recurring revenue customers</b>. We are currently helping Klooker expand towards it’s milestone of 50,000 customers. Exciting!</p>
-            <a href="#" class="btn btn-link font-weight-bold">Visit the site <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
-          </div>
-  
-          <div class="row mt-5 justify-content-between align-items-center">
+        <div class="flex-fill d-none d-md-flex"></div>
 
-            <div class="speech-bubble speech-bubble-right-top slide-right" style="max-width: 670px;">
-              <div class="speech-bubble-back"></div>
-              <div class="speech-bubble-fore">
-                  Double’s team is extremely forthcoming with ideas to engage our costumer further. 
-              </div>
-            </div>
+        <div class="text-center text-md-left mt-4 mt-md-0 mx-auto mx-md-0" style="max-width: 425px;">
+          <img class="mb-3 mb-md-5" width="158" src="/assets/images/new-web/klooker_logo_wit.png" /> 
+          <p class="lead">Working with Dennis from Day 0, we led the growth efforts that grew Klooker <b>from zero to over 5,000 recurring revenue customers</b>. We are currently helping Klooker expand towards it’s milestone of 50,000 customers. Exciting!</p>
+          <a href="#" class="btn btn-link font-weight-bold">Visit the site <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
+        </div>
 
-            <div class="text-right">
-              <h4 class="mb-0"><b>Dennis Kamst</b></h4>
-              <p class="mb-0">Founder & CEO at klooker</p>
-            </div>  
-          </div>
+        <div class="row mt-5 px-4 px-md-0 d-flex flex-column flex-md-row justify-content-between align-items-center flex-fill">
+
+          {% include new-web/speech_bubble.html 
+            direction="right-top" 
+            class="slide-right d-none d-md-block" 
+            content="Double’s team is extremely forthcoming with ideas to engage our costumer further." %}
+
+          {% include new-web/speech_bubble.html 
+            direction="bottom-left" 
+            class="slide-right d-block d-md-none" 
+            content="Double’s team is extremely forthcoming with ideas to engage our costumer further." %}
+
+          <div class="klooker_name text-left text-md-right w-md-auto align-self-end align-self-md-center">
+            <h4 class="mb-0"><b>Dennis Kamst</b></h4>
+            <p class="mb-0">Founder & CEO at klooker</p>
+          </div> 
+
         </div>
 
       </div>
@@ -325,6 +330,7 @@
           <div class="col-md-8 p-0 d-flex flex-wrap">
             <div class="col-md-6 p-2">
               {% include new-web/vertical-box.html
+                href="#"
                 logo="/assets/images/new-web/peg_logo.png"
                 logo_width="135"
                 headline="$1M+"
@@ -335,6 +341,7 @@
             </div>
             <div class="col-md-6 p-2">
               {% include new-web/vertical-box.html
+                href="#"
                 logo="/assets/images/new-web/radiantly_alive_logo.png"
                 logo_width="82"
                 headline="400%"
@@ -346,6 +353,7 @@
 
             <div class="col-md-12 p-2">
               {% include new-web/horizontal-box.html
+                href="#"
                 logo="/assets/images/new-web/diesel_logo_white.png"
                 logo_width="182"
                 headline="+44%"
@@ -359,6 +367,7 @@
           <div class="col-md-4 p-0 d-flex flex-wrap">
             <div class="col-md-12 p-2">
               {% include new-web/square-box.html
+                href="#"
                 logo="/assets/images/new-web/switchcm_logo_light.png"
                 logo_width="150"
                 name="Switch.cm"
@@ -368,6 +377,7 @@
 
             <div class="col-md-12 p-2">
               {% include new-web/vertical-box.html
+                href="#"
                 logo="/assets/images/new-web/rchain_logo.png"
                 logo_width="93"
                 headline="Long-term"

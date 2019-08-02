@@ -4,8 +4,7 @@
   font-weight: 300;
   src: url("../assets/fonts/poppins-v8-latin-300.eot");
   src: local("Poppins Light"), local("Poppins-Light"),
-    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
@@ -18,8 +17,7 @@
   font-weight: 400;
   src: url("../assets/fonts/poppins-v8-latin-regular.eot");
   src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
@@ -32,8 +30,7 @@
   font-weight: 600;
   src: url("../assets/fonts/poppins-v8-latin-600.eot");
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix")
-      format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
@@ -126,6 +123,10 @@ section.alternate-section {
   border-radius: 0;
   font-weight: 700;
   padding: 15px 30px;
+}
+
+.max-w-95 {
+  max-width: 95%;
 }
 
 // Animated logo
@@ -315,6 +316,8 @@ section#how-we-work {
 
 // SECTION: About us
 section#about-us {
+  margin-bottom: 100px;
+
   .quick_intro_box {
     height: 160px;
     width: 160px;
@@ -406,6 +409,10 @@ section#partnerships {
 // SECTION: Klooker
 section#klooker {
   overflow: hidden;
+  
+  .content {
+    min-height: 1000px;
+  }
 
   .title > div {
     font-size: 22px;
@@ -423,10 +430,25 @@ section#klooker {
     height: 100%;
     z-index: -1;
   }
+
+  .speech-bubble {
+    width: 670px;
+    max-width: 100%;
+  }
 }
 
 // SECTION: Clients
 section#clients {
+  a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    opacity: 0.85;
+    color: #fff;
+  }
+
   .client_vertical_box {
     height: 684px;
   }
@@ -763,6 +785,9 @@ section#packages {
 
   // SECTION: Intro
   section#intro {
+    .title {
+      max-width: 300px;
+    }
     .title span {
       padding-bottom: 0;
     }
@@ -775,6 +800,8 @@ section#packages {
 
   // SECTION: About us
   section#about-us {
+    margin-bottom: 0;
+
     .quick_intro_box {
       width: 100%;
       height: auto;
@@ -789,7 +816,8 @@ section#packages {
     }
 
     .middle-col .list-items {
-      padding-top: 550px !important;
+      padding-top: 620px !important;
+      box-shadow: none;
     }
 
     .last-col {
@@ -798,7 +826,7 @@ section#packages {
 
       > div {
         left: 0;
-        top: -420px;
+        top: -460px;
       }
     }
 
@@ -813,7 +841,7 @@ section#packages {
       position: absolute;
       left: -15px;
       top: 110px;
-      z-index: 1;
+      z-index: 3;
       width: 200px;
     }
 
@@ -827,15 +855,19 @@ section#packages {
 
   // SECTION: Klooker
   section#klooker {
+    .content {
+      min-height: 1330px;
+    }
+
     .title > div {
       font-size: 16px;
       font-weight: 300;
       letter-spacing: 0.5px;
       line-height: 24px;
     }
-    .bg-image {
-      object-position: 68% 72%;
-      height: 130%;
+
+    .klooker_name {
+      width: 100%;
     }
   }
 
