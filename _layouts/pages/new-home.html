@@ -437,15 +437,15 @@
     </section>
 
     <!-- SECTION: Our process -->
-    <section id="our-process" class="pb-0">
+    <section id="our-process" class="pb-0 text-center text-md-left">
       <div class="container">
         <h2 class="text-center mb-5 pb-5">Our process</h2>
 
         <div class="mt-4">
           {% for item in page.our_process %}
-          <div class="process-step d-flex justify-content-between" style="padding-bottom: 100px;">
-            <div class="col-md-5 d-flex">
-              <div class="col-md-4">
+          <div class="process-step d-flex justify-content-md-between flex-column flex-md-row">
+            <div class="col-md-5 d-flex flex-column flex-md-row">
+              <div class="col-md-4 step-col">
                 <div class="step-number m-auto">{{ forloop.index }}</div>
                 <div class="step-checked"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
                 <div class="full-line ml-auto mr-auto"></div>
@@ -469,18 +469,18 @@
     <section id="packages" class="pt-0 pb-0 text-center">
       <div class="container">
         <h2 class="mb-5">Packages</h2>
-        <p class="mb-5">Weekly sprints, billed monthly. All prices in EUR.</p>
+        <p class="mb-0 mb-md-5">Weekly sprints, billed monthly. All prices in EUR.</p>
 
-        <div class="row mt-5">
+        <div class="row mt-2 mt-md-5">
           {% for item in page.packages %}
-          <div class="col-md-3 p-2 slide-top" style="min-height: 289px;">
-            <div class="p-4 text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
+          <div class="col-md-3 p-2 slide-top package-item">
+            <div class="p-2 p-md-4 text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
               <div class="upper">
                 <h4 class="font-weight-normal">{{ item.title }}</h4>
                 <p>{{ item.content }}</p>
               </div>
               <div class="lower">
-                <p class="text-primary font-weight-bold">{{ item.price }}</p>
+                <p class="text-primary font-weight-bold mb-0">{{ item.price }}</p>
               </div>
             </div>
           </div>

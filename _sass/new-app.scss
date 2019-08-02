@@ -456,6 +456,10 @@ section#our-process {
     z-index: 2;
   }
 
+  .process-step {
+    padding-bottom: 100px;
+  }
+
   .process-step .step-checked {
     opacity: 0;
     transition: 0.5s;
@@ -476,6 +480,13 @@ section#our-process {
     .pct-line {
       display: none;
     }
+  }
+}
+
+// SECTION: Packages
+section#packages {
+  .package-item {
+    min-height: 289px;
   }
 }
 
@@ -807,6 +818,30 @@ section#our-process {
     .clients_square_box,
     .clients_vertical_box {
       height: auto;
+    }
+  }
+
+  // SECTION: Our process
+  section#our-process {
+    .process-step {
+      padding-bottom: 30px;
+
+      .step-col {
+        height: 90px;
+      }
+    }
+
+    .full-line,
+    .pct-line {
+      display: none;
+    }
+  }
+
+
+  // SECTION: Packages
+  section#packages {
+    .package-item {
+      min-height: auto;
     }
   }
 
