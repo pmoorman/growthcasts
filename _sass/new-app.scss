@@ -800,12 +800,12 @@ section#packages {
         position: absolute;
         width: 150px;
       }
-  
+
       .bubble-2 {
         width: 100px;
         bottom: 100px;
       }
-  
+
       .bubble-3 {
         display: none;
       }
@@ -837,11 +837,38 @@ section#packages {
     }
   }
 
-
   // SECTION: Packages
   section#packages {
     .package-item {
       min-height: auto;
+    }
+  }
+
+  // SECTION: Contact
+  section#contact {
+    .input-group {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    h4 {
+      font-size: 22px;
+      letter-spacing: 0.7px;
+      line-height: 24px;
+      font-weight: normal;
+      padding-top: 25px;
+      margin-top: 10px;
+      border-top: 1px solid #e7e9f33d;
+    }
+
+    .main-links a {
+      line-height: 35px;
     }
   }
 

@@ -490,15 +490,19 @@
     </section>
 
     <!-- SECTION: Contact -->
-    <section id="contact" class="pb-0">
+    <section id="contact" class="pb-0 text-center text-md-left">
       <div class="container">
         <div class="row align-items-end">
 
           <div class="col-md-7 mb-5">
             
-            <div class="mb-5">
-                <h2>Still here? <br> We should talk</h2>
+            <div class="mb-0 mb-md-5">
+                <h2>Still here?<br>We should talk</h2>
                 <p>Not about the fact that you’re here (although we like that, too), but about how we can partner up to scale your company. That’s even more exciting to us.</p>
+            </div>
+
+            <div class="pieter-mobile-img d-block d-md-none">
+              <img class="img-fluid" src="/assets/images/new-web/pieter_mobile.png" />
             </div>
 
             <div class="person mb-4">
@@ -511,7 +515,7 @@
               <p><b>WhatsApp:</b> <a class="text-dark" href="https://wa.me/447700005858">+44 770 000 5858</a></p>
             </div>
 
-            <div class="p-5 form_box" style="background-color: #EFF0F6;">
+            <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
               <h4 class="font-weight-bold">Leave your contact info</h4>
               <p>and we’ll call you back.</p>
               <form netlify>
@@ -526,7 +530,7 @@
 
           </div>
 
-          <div class="col-md-5">
+          <div class="col-md-5 d-none d-md-block">
             <img width="671" src="/assets/images/new-web/pieter.svg" />
           </div>
 
@@ -534,86 +538,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer" class="p-5 text-light bg-secondary">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-3 font-weight-bold"><a class="text-light" href=" /#our-process">How we work?</a></div>
-          <div class="col-md-3 font-weight-bold"><a class="text-light" href="/#clients">Portfolio</a></div>
-          <div class="col-md-3 font-weight-bold"><a class="text-light" href="https://blog.double-agency.com">Blog</a></div>
-          <div class="col-md-3 font-weight-bold"><a class="text-light" href="/#academy">Double Academy</a></div>
-        </div>
-
-        <hr class="mt-5 mb-5" style="background-color: #E7E9F3; opacity: 0.1;">
-
-        <div class="row">
-
-          <div class="col-md-4">
-            <h4 class="mb-4">Blog</h4>
-
-            <a href="#" class="text-light d-flex align-items-center mb-4">
-              <img width="72" src="/assets/images/new-web/blog_pic_1.jpeg" />
-              <p class="mb-0 ml-3">Pos Hardware More Options In Less Space</p>
-            </a>
-
-            <a href="#" class="text-light d-flex align-items-center mb-4">
-              <img width="72" src="/assets/images/new-web/blog_pic_2.jpg" />
-              <p class="mb-0 ml-3">How To Excel In A Technical Job Interview</p>
-            </a>
-
-            <a href="#" class="text-light d-flex align-items-center mb-4">
-              <img width="72" src="/assets/images/new-web/blog_pic_3.jpg" />
-              <p class="mb-0 ml-3">Download Free Song For Ipod</p>
-            </a>
-
-            <a href="#" class="text-light d-flex align-items-center mb-4">
-              <img width="72" src="/assets/images/new-web/blog_pic_4.jpg" />
-              <p class="mb-0 ml-3">Becoming A Dvd Repair Expert Online</p>
-            </a>
-
-          </div>
-
-          <div class="col-md-4">
-            <h4 class="mb-4">About us</h4>
-            <p>Double is a growth marketing agency. When startups are ready to scale, we step on board to build out their sales funnels, unlock new acquisition channels, and rework their overall growth strategy to find scalable, durable pathways to growth.</p>
-          </div>
-
-          <div class="col-md-4">
-            <h4 class="mb-4">Contact</h4>
-
-            <div class="channels mb-4">
-              <div class="pt-2"><b>Email:</b> <a class="text-light" href="mailto:pieter@double-agency.com">pieter@double-agency.com</a></div>
-              <div class="pt-2"><b>WhatsApp:</b> <a class="text-light" href="https://wa.me/447700005858">+44 770 000 5858</a></div>
-              <div class="pt-2"><b>Telegram:</b> @doubleagency</div>
-            </div>
-
-            <div class="mb-4">
-              <div class="mb-2"><b>Amsterdam:</b></div>
-              Plantage Middenlaan 62,<br>
-              1018 DH Amsterdam
-            </div>
-
-            <div>
-              <div class="mb-2"><b>Bali:</b></div>
-              Canggu, Echo Beach<br>
-              Kuta Utara, Kabupaten Badung<br>
-              Bali, Indonesia 80361
-            </div>
-          </div>
-
-        </div>
-
-        <hr class="mt-5 mb-5" style="background-color: #E7E9F3; opacity: 0.1;">
-
-        <div class="copyright">
-          <p style="font-size: 14px;">Copyright © 2019 Double Agency. All Rights Reserved.</p>
-        </div>
-
-      </div>
-
-
-    </footer>
+    {% include new-web/footer.html %}
     {% include new-web/modal_iframe.html src=page.quick_intro_video_url id="quick-intro-video" %}
     {% include new-web/modal_form.html id="join-the-course" %}
 
