@@ -109,9 +109,9 @@
           <div class="col-md-2 position-relative" style="margin-top: 200px;">
             <div class="position-relative" style="z-index: 1;">
               <div class="quick_intro_box slide-bottom ml-auto pl-4 pr-4 pt-3 pb-3 text-left d-flex flex-column justify-content-between mb-5">
-                <div class="text-light">
+                <a href="#quick-intro-video" class="modal-btn text-light">
                   <img width="10" src="/assets/images/new-web/play_triangle.png" />
-                </div>
+                </a>
                 <div>
                   <p class="lead text-light mb-0"><b>Quick Intro</b></p>
                   <p class="duration mb-0">1:52</p>
@@ -428,7 +428,7 @@
 
             <p class="mt-4 mb-5">Join over 15,271 others to learn from one of our founders how modern, systematic growth marketing works. It’s a great way to get to know us better, too!</p>
           
-            <a href="/#contact" class="btn btn-primary btn-shadow">Join Now</a>
+            <a href="#join-the-course" class="modal-btn btn btn-primary btn-shadow">Join Now</a>
 
           </div>
 
@@ -515,12 +515,14 @@
             <div class="p-5 form_box" style="background-color: #EFF0F6;">
               <h4 class="font-weight-bold">Leave your contact info</h4>
               <p>and we’ll call you back.</p>
-              <div class="input-group mb-3 slide-top" >
-                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">Join Now</button>
+              <form netlify>
+                <div class="input-group mb-3 slide-top" >
+                  <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Join Now</button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
 
           </div>
@@ -613,6 +615,9 @@
 
 
     </footer>
+    {% include new-web/modal_iframe.html src=page.quick_intro_video_url id="quick-intro-video" %}
+    {% include new-web/modal_form.html id="join-the-course" %}
+
     <script src="{{ "/assets/js/new-main.js" | relative_url }}"></script>
   </body>
 </html>

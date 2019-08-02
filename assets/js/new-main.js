@@ -3,6 +3,7 @@ $(document).ready(function() {
   animateIntroTitle();
   processSteps();
   onWindowsScroll();
+  modalListener();
   _viewportAnimations();
 });
 
@@ -110,3 +111,44 @@ function _isOverCenterScreen(elem, offset) {
     ? (windowCenter + offset) - elemTop 
     : false;
 }
+
+function modalListener() {
+  $('.modal-btn').each(function() {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      const target = $(this).attr('href');
+      const modal = $(target);
+
+      modal.toggleClass('modal--visible');
+
+      modal.on('click', function(e) {
+        if (e.target.classList.contains("modal_background")) {
+          modal.removeClass("modal--visible");
+          modal.find('iframe').each(function() {
+            $(this).attr('src', $(this).attr('src'));
+          });
+        }
+      });
+    });
+  });
+}
+
+
+// for (let i = 0; i < this._modalButton.length; i++) {
+//   this._modalButton[i].addEventListener("click", e => {
+//     e.preventDefault();
+
+//     let target = e.currentTarget.getAttribute("href");
+//     let modal = document.querySelector(target);
+
+//     this._isVisible = true;
+//     modal.classList.toggle("modal--visible");
+
+//     if (this._isVisible) {
+//       modal.addEventListener("click", e => {
+//         this._isVisible = false;
+//         e.target.classList.contains("jsModalBg") ? modal.classList.remove("modal--visible") : null;
+//       });
+//     }
+//   });
+// }

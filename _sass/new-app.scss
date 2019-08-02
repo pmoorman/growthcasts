@@ -542,6 +542,58 @@ section#our-process {
   }
 }
 
+// MODAL
+.modal {
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 300ms opacity;
+
+  .modal_content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal_iframe iframe {
+    width: 700px;
+    height: 400px;
+    max-width: 100%;
+  }
+
+  &.modal--visible {
+    width: 100%;
+
+    .modal_background {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .modal_background {
+    width: 0;
+    opacity: 0;
+    transition: ease 300ms opacity;
+  }
+
+  .modal_background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000ab;
+    z-index: -1;
+  }
+
+  .modal_form {
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    z-index: 99;
+  }
+}
+
 // RESPONSIVE
 @media only screen and (max-width: 600px) {
   h1 {
