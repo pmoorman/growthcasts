@@ -4,7 +4,8 @@
   font-weight: 300;
   src: url("../assets/fonts/poppins-v8-latin-300.eot");
   src: local("Poppins Light"), local("Poppins-Light"),
-    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
@@ -17,7 +18,8 @@
   font-weight: 400;
   src: url("../assets/fonts/poppins-v8-latin-regular.eot");
   src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
@@ -30,7 +32,8 @@
   font-weight: 600;
   src: url("../assets/fonts/poppins-v8-latin-600.eot");
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
@@ -138,25 +141,33 @@ section.alternate-section {
 
   &.active {
     .fore {
-      -webkit-animation: animatedLogoFore .5s ease-in both;
-              animation: animatedLogoFore .5s ease-in both;
+      -webkit-animation: animatedLogoFore 0.5s ease-in both;
+      animation: animatedLogoFore 0.5s ease-in both;
     }
 
     .back {
-      -webkit-animation: animatedLogoBack .5s ease-in both;
-              animation: animatedLogoBack .5s ease-in both;
+      -webkit-animation: animatedLogoBack 0.5s ease-in both;
+      animation: animatedLogoBack 0.5s ease-in both;
     }
   }
 }
 
 @keyframes animatedLogoFore {
-  from{transform: translateX(0)}
-  to{transform: translateX(-5%)}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5%);
+  }
 }
 
 @keyframes animatedLogoBack {
-  from{transform: translateX(0)}
-  to{transform: translateX(4%)}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4%);
+  }
 }
 
 // Paper
@@ -227,23 +238,33 @@ section#intro {
 
   .title.active {
     .left {
-      animation: titleLeftAnimation .5s ease-out both;
+      animation: titleLeftAnimation 0.5s ease-out both;
     }
 
     .right {
-      animation: titleRightAnimation .5s ease-out both;
+      animation: titleRightAnimation 0.5s ease-out both;
     }
   }
 }
 
 @keyframes titleRightAnimation {
-  from{transform: translateX(-50px); opacity: 0}
-  to{transform: translateX(0px); opacity: 1}
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes titleLeftAnimation {
-  from{transform: translateX(50px);}
-  to{transform: translateX(0px);}
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 
 // SECTION: How we work
@@ -253,15 +274,15 @@ section#how-we-work {
     opacity: 0.15;
     transition: 0.5s;
   }
-  .checklist { 
+  .checklist {
     li.active img {
       opacity: 1;
     }
     li.active .fore {
-      animation: fore .5s linear both;
+      animation: fore 0.5s linear both;
     }
     li.active .back {
-      animation: back .5s linear both;
+      animation: back 0.5s linear both;
     }
     .back {
       position: absolute;
@@ -272,13 +293,21 @@ section#how-we-work {
 }
 
 @keyframes fore {
-  from {transform: translate(0, 0)}
-  to {transform: translate(-4px, -5px)}
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-4px, -5px);
+  }
 }
 
 @keyframes back {
-  from {transform: translate(0, 0)}
-  to {transform: translate(4px, 5px)}
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(4px, 5px);
+  }
 }
 
 // SECTION: About us
@@ -312,6 +341,7 @@ section#partnerships {
     height: 635px;
     right: 0;
     bottom: 0;
+    max-width: 100%;
 
     .bubble-2 {
       position: absolute;
@@ -324,11 +354,38 @@ section#partnerships {
       bottom: 0;
     }
   }
+
+  .cecelia_knight {
+    img {
+      left: 100px;
+    }
+
+    .info {
+      top: 50%;
+      transform: translateY(-100%);
+      position: absolute;
+    }
+
+    .speech-bubble {
+      top: -60px;
+    }
+  }
+
+  .loet {
+    top: -50px;
+    left: 100px;
+  }
 }
 
 // SECTION: Klooker
 section#klooker {
   overflow: hidden;
+
+  .title > div {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+  }
 
   .bg-image {
     top: 0;
@@ -339,6 +396,18 @@ section#klooker {
     width: 100%;
     height: 100%;
     z-index: -1;
+  }
+}
+
+// SECTION: Clients
+section#clients {
+  .clients_vertical_box {
+    height: 684px;
+  }
+
+  .clients_horizontal_box,
+  .clients_square_box {
+    height: 326px;
   }
 }
 
@@ -389,7 +458,7 @@ section#our-process {
 
   .process-step .step-checked {
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .process-step.active .step-checked {
@@ -437,6 +506,10 @@ section#our-process {
   position: relative;
   padding: 2.5rem;
   color: #fff;
+
+  p {
+    margin: 0;
+  }
 }
 
 .speech-bubble-back {
@@ -620,6 +693,13 @@ section#our-process {
     line-height: 34px;
   }
 
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+
   p {
     font-size: 16px;
     font-weight: 300;
@@ -639,6 +719,11 @@ section#our-process {
     padding-bottom: 70px;
   }
 
+  // Speech bubble
+  .speech-bubble-fore {
+    padding: 1.3rem;
+  }
+
   // SECTION: Intro
   section#intro {
     .title span {
@@ -648,35 +733,109 @@ section#our-process {
 
   // SECTION: Klooker
   section#klooker {
+    .title > div {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
     .bg-image {
       object-position: 68% 72%;
       height: 130%;
     }
   }
+
+  // SECTION: Partnerships
+  section#partnerships {
+    .cecelia_knight {
+      img {
+        left: initial;
+      }
+
+      .info {
+        position: initial;
+      }
+
+      .speech-bubble {
+        top: -100px;
+        margin-right: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .speech-bubble-back {
+          right: 0;
+          width: calc(100% - 15px);
+          left: 15px;
+        }
+      }
+    }
+
+    .loet {
+      padding-left: 15px;
+      padding-right: 20px;
+      left: 0;
+    }
+
+    .empty_bubbles {
+      position: absolute;
+      width: 635px;
+      height: 635px;
+      right: 0;
+      bottom: 0;
+
+      .bubble-1 {
+        left: 0;
+        bottom: 100px;
+        position: absolute;
+        width: 150px;
+      }
+  
+      .bubble-2 {
+        width: 100px;
+        bottom: 100px;
+      }
+  
+      .bubble-3 {
+        display: none;
+      }
+    }
+  }
+
+  // SECTION: Clients
+  section#clients {
+    .clients_horizontal_box,
+    .clients_square_box,
+    .clients_vertical_box {
+      height: auto;
+    }
+  }
 }
 
-.slide-right, .slide-left, .slide-bottom, .slide-top {
+.slide-right,
+.slide-left,
+.slide-bottom,
+.slide-top {
   opacity: 0;
 }
 
 .slide-top.active {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-bottom.active {
-	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-right.active {
-	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-left.active {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -684,28 +843,28 @@ section#our-process {
  * animation slide-top
  * ----------------------------------------
  */
- @-webkit-keyframes slide-top {
+@-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-            opacity: 0;
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes slide-top {
   0% {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-            opacity: 0;
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -714,28 +873,28 @@ section#our-process {
  * animation slide-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes slide-bottom {
+@-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-            opacity: 0;
+    transform: translateY(-50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-            opacity: 0;
+    transform: translateY(-50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -744,28 +903,28 @@ section#our-process {
  * animation slide-right
  * ----------------------------------------
  */
- @-webkit-keyframes slide-right {
+@-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-            opacity: 0;
+    transform: translateX(-50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-            opacity: 0;
+    transform: translateX(-50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -774,27 +933,27 @@ section#our-process {
  * animation slide-left
  * ----------------------------------------
  */
- @-webkit-keyframes slide-left {
+@-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-            opacity: 0;
+    transform: translateX(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-            opacity: 0;
+    transform: translateX(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }

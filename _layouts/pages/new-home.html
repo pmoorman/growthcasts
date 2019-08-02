@@ -172,18 +172,18 @@
     <section id="klooker" class="text-light position-relative">
       <img class="position-absolute bg-image" src="/assets/images/new-web/klooker.png" />
       
-      <div style="min-height: 1000px;" class="container d-flex mt-5 flex-column justify-content-between">
+      <div style="min-height: 1000px;" class="container d-flex mt-5 flex-column justify-content-md-between">
 
-        <h2 class="text-center ml-auto mr-auto" style="max-width: 800px;">
+        <h2 class="title text-center ml-auto mr-auto" style="max-width: 800px;">
           We grow startups for a living
-          <span style="font-size: 22px; font-weight: 300; letter-spacing: 0.7px;"> …and we love it</span>
+          <div class="w-100 d-block mt-3 mt-md-0 d-md-inline"> …and we love it</div>
         </h2>
 
         <div>
-          <div class="text-center text-md-left" style="max-width: 425px;">
-            <img class="mb-5" width="158" src="/assets/images/new-web/klooker_logo_wit.png" /> 
+          <div class="text-center text-md-left mt-4 mt-md-0" style="max-width: 425px;">
+            <img class="mb-3 mb-md-5" width="158" src="/assets/images/new-web/klooker_logo_wit.png" /> 
             <p class="lead">Working with Dennis from Day 0, we led the growth efforts that grew Klooker <b>from zero to over 5,000 recurring revenue customers</b>. We are currently helping Klooker expand towards it’s milestone of 50,000 customers. Exciting!</p>
-            <a href="#" class="btn btn-link">Visit the site <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
+            <a href="#" class="btn btn-link font-weight-bold">Visit the site <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
           </div>
   
           <div class="row mt-5 justify-content-between align-items-center">
@@ -219,22 +219,22 @@
         <div class="row d-flex align-items-center mb-5">
           
           <!-- PARTNER: Babb -->
-          <div class="col-md-6">
+          <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
             <img class="mb-4" width="193" src="/assets/images/new-web/babb_logo.png" /> 
             <p class="lead mb-4">For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!</p>
             <a href="#" class="btn btn-link"><b>Visit the site</b> <img width="11" src="/assets/images/new-web/arrow_right.svg" /></a>
           </div>
 
-          <div class="col-md-6 position-relative">
-            <img class="img-fluid position-relative" style="left: 100px;" src="/assets/images/new-web/cecelia_knight.png" /> 
-            <div class="position-absolute" style="top: 50%; transform: translateY(-100%);">
+          <div class="col-md-6 d-flex flex-column position-relative px-0 px-md-3 cecelia_knight">
+            <img class="img-fluid position-relative" src="/assets/images/new-web/cecelia_knight.png" /> 
+            <div class="info order-2 order-md-1 px-3 px-0">
               <h4 class="mb-0"><b>Cecelia Knight</b></h4>
               <p class="mb-0">CEO at BABB</p>
             </div>
-            <div class="speech-bubble speech-bubble-top-right slide-top position-relative" style="top: -60px;">
+            <div class="speech-bubble speech-bubble-top-right slide-top position-relative order-1 order-md-2">
               <div class="speech-bubble-back"></div>
               <div class="speech-bubble-fore">
-                  Every product that is labeled as a PC must be accompanied with specific software to operate the unit and must feature a touchscreen.
+                <p>Every product that is labeled as a PC must be accompanied with specific software to operate the unit and must feature a touchscreen.</p>
               </div>
             </div>
             
@@ -245,10 +245,10 @@
         <div class="row d-flex mt-5">
 
           <!-- PARTNER: Start life -->
-          <div class="col-md-6 mt-5">
+          <div class="col-md-6 mt-5 order-2 order-md-1 px-0 px-md-3">
             <img class="img-fluid" src="/assets/images/new-web/loet_rammelaarsburg.svg" /> 
             
-            <div class="position-relative" style="top: -50px; left: 100px;">
+            <div class="loet position-relative">
 
               <div class="speech-bubble speech-bubble-top-left slide-top mb-5">
                 <div class="speech-bubble-back"></div>
@@ -258,25 +258,27 @@
               </div>
   
               <div class="d-flex justify-content-between aling-items-center">
-                <div>
+                <div class="pr-3">
                   <h4 class="mb-0"><b>Loet Rammelaarsburg</b></h4>
                   <p class="mb-0">Chief Operations at StartLife</p>
                 </div>
-                <div>
-                  <img width="174" src="/assets/images/new-web/startlife_logo.png" /> 
+                <div >
+                  <img width="174" class="img-fluid" src="/assets/images/new-web/startlife_logo.png" /> 
                 </div>
               </div>
             </div>
 
           </div>
 
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center order-1 order-md-2">
             <h2>Partnerships</h2>
             <p>We partner with accelerators and universities to be their 'preferred marketing partner' in crime. Besides free workshops and training, we work directly for those in need of dedicated help. That's how we already helped several startups from wageningen university accelerator Startlife to overcome their growth stagnation and become a grown up company. </p>
           </div>
 
         </div>
       </div>
+
+      <div class="d-block d-sm-none" style="height: 300px;"></div>
 
     </section>
 
@@ -285,7 +287,7 @@
       <div id="how-we-help-container" class="container">
 
         <div class="row">
-          <div class="col-md-6 pl-0 position-relative">
+          <div class="col-md-6 px-3 p-md-0 text-center text-md-left position-relative">
             <div id="how-we-help-sidebar">
               <h2>“I need you guys to scale my business…”</h2>
               <p class="lead">Excellent. Here’s how we help:</p>
@@ -294,7 +296,7 @@
             
           <div class="col-md-6">
             {% for item in page.how_we_help %}
-            <div style="min-height: 220px;">
+            <div class="text-center text-md-left" style="min-height: 220px;">
               <h4 class="mb-4">{{ item.title }}</h4>
               <p>{{ item.content }}</p>
             </div>
@@ -309,7 +311,7 @@
     <section id="clients">
       <div class="container">
 
-        <div class="mb-5 text-center ml-auto mr-auto" style="max-width: 680px;">
+        <div class="mb-0 mb-md-5 text-center ml-auto mr-auto" style="max-width: 680px;">
           <h2 class="mb-4">More work we’re proud of…</h2>
           <p class="lead">The software availability is the key to why Windows wins over Linux in this competition.</p>
         </div>

@@ -1,11 +1,15 @@
 $(document).ready(function() {
-  affixHowWeHelpTitle();
   animateIntroTitle();
   processSteps();
   onWindowsScroll();
   modalListener();
   smoothScroll();
   _viewportAnimations();
+
+  if (window.matchMedia("(min-width: 600px)").matches) {
+    console.log('matched');
+    affixHowWeHelpTitle();
+  }
 });
 
 function animateIntroTitle() {
