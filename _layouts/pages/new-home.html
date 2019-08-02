@@ -451,27 +451,29 @@
     </section>
 
     <!-- SECTION: Our process -->
-    <section id="our-process" class="pb-0 text-center text-md-left">
+    <section id="our-process" class="pb-0 text-center text-lg-left">
       <div class="container">
         <h2 class="text-center mb-5 pb-5">Our process</h2>
 
         <div class="mt-4">
           {% for item in page.our_process %}
-          <div class="process-step d-flex justify-content-md-between flex-column flex-md-row">
-            <div class="col-md-5 d-flex flex-column flex-md-row">
-              <div class="col-md-4 step-col">
+          <div class="process-step d-flex justify-content-lg-between flex-column flex-lg-row">
+            <div class="col-lg-5 d-flex align-items-center align-items-lg-start flex-column flex-lg-row">
+              <div class="step-col position-relative" style="width: 70px;">
                 <div class="step-number m-auto">{{ forloop.index }}</div>
-                <div class="step-checked"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
-                <div class="full-line ml-auto mr-auto"></div>
+                <div class="step-checked position-absolute position-lg-relative"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
+                {% if forloop.last == false %}
+                <div class="full-line ml-auto mr-auto d-none d-lg-block"></div>
+                {% endif %}
                 {% if forloop.index == 1 %}
-                <div class="pct-line bg-primary ml-auto mr-auto"></div>
+                <div class="pct-line bg-primary ml-auto mr-auto d-none d-lg-block"></div>
                 {% endif %}
               </div>
               <div class="col">
                 <h3>{{ item.title }}</h3>
               </div>
             </div>
-            <div class="offset-md-1 col-md-6">{{ item.content | markdownify }}</div>
+            <div class="offset-lg-1 col-lg-6">{{ item.content | markdownify }}</div>
           </div>
           {% endfor %}
         </div>

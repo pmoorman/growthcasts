@@ -7,7 +7,6 @@ $(document).ready(function() {
   _viewportAnimations();
 
   if (window.matchMedia("(min-width: 600px)").matches) {
-    console.log('matched');
     affixHowWeHelpTitle();
   }
 });
