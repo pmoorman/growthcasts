@@ -809,6 +809,27 @@ section#our-process {
       height: auto;
     }
   }
+
+  // Paper
+  .paper .paper_corner {
+    width: 80px;
+    height: 80px;
+
+    .paper_corner_triangle {
+      border-width: 0 80px 80px 0;
+
+      .paper_corner_triangle-inner {
+        left: 5px;
+        bottom: -30px;
+      }
+    }
+  }
+  .paper .paper_shadow:after {
+    border-width: 0 80px 80px 0;
+  }
+  .paper .paper_content {
+    padding: 90px 10px;
+  }
 }
 
 .slide-right,
