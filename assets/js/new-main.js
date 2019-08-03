@@ -27,16 +27,12 @@ function animateIntroTitle() {
 function affixHowWeHelpTitle() {
   let offset = 60;
   let lineHeightDiff = 12;
-  let container = $("#how-we-help");
-  let sidebar = $("#how-we-help #how-we-help-sidebar");
-  let sidebarWidth = sidebar.width();
-  let sidebarHeight = sidebar.height();
+  const container = $("#how-we-help");
+  const sidebar = $("#how-we-help #how-we-help-sidebar");
+  const sidebarWidth = sidebar.width();
+  const sidebarHeight = sidebar.height();
 
   $(window).on('resize', function() {
-    offset = 60;
-    lineHeightDiff = 12;
-    container = $("#how-we-help");
-    sidebar = $("#how-we-help #how-we-help-sidebar");
     sidebarWidth = sidebar.width();
     sidebarHeight = sidebar.height();
   })
@@ -79,11 +75,20 @@ function processSteps() {
   const first = $("#our-process .process-step:first-child");
   const last = $("#our-process .process-step:last-child");
   const line = $("#our-process .pct-line");
+  let maxLength = last.offset().top - first.offset().top;
+  let currentHeight = line.height();
+
+  $(window).on('resize', function() {
+    maxLength = last.offset().top - first.offset().top;
+    currentHeight = line.height();
+    const newHeight = Math.min(maxLength, currentHeight);
+    line.css('height', newHeight + 'px');
+  })
 
   $(window).on('scroll', function() {
-    const maxLength = last.offset().top - first.offset().top;
+    maxLength = last.offset().top - first.offset().top;
+    currentHeight = line.height();
     const overScreen = _isOverCenterScreen(first[0], 150);
-    const currentHeight = line.height();
     const newHeight = Math.min(maxLength, overScreen);
 
     if (overScreen && newHeight > currentHeight) {
