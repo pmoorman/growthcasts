@@ -4,11 +4,8 @@ $(document).ready(function() {
   onWindowsScroll();
   modalListener();
   smoothScroll();
+  affixHowWeHelpTitle();
   _viewportAnimations();
-
-  if (window.matchMedia("(min-width: 600px)").matches) {
-    affixHowWeHelpTitle();
-  }
 });
 
 function animateIntroTitle() {
@@ -28,14 +25,31 @@ function animateIntroTitle() {
 }
 
 function affixHowWeHelpTitle() {
-  const offset = 60;
-  const lineHeightDiff = 12;
-  const container = $("#how-we-help");
-  const sidebar = $("#how-we-help #how-we-help-sidebar");
-  const sidebarWidth = sidebar.width();
-  const sidebarHeight = sidebar.height();
+  let offset = 60;
+  let lineHeightDiff = 12;
+  let container = $("#how-we-help");
+  let sidebar = $("#how-we-help #how-we-help-sidebar");
+  let sidebarWidth = sidebar.width();
+  let sidebarHeight = sidebar.height();
+
+  $(window).on('resize', function() {
+    offset = 60;
+    lineHeightDiff = 12;
+    container = $("#how-we-help");
+    sidebar = $("#how-we-help #how-we-help-sidebar");
+    sidebarWidth = sidebar.width();
+    sidebarHeight = sidebar.height();
+  })
 
   $(window).on('scroll', function() {
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      sidebar.css('top', '');
+      sidebar.css('bottom', '');
+      sidebar.css('width', '');
+      sidebar.css('position', '');
+      return;
+    }
+
     container.each(function() {
       const docViewTop = $(window).scrollTop();
   
