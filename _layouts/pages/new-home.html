@@ -26,10 +26,10 @@
     <!-- SECTION: Intro -->
     <section id="intro" class="pt-5 text-center">
       <div class="container">
-        <h3 class="mb-4">We work for startups <br> that need</h3>
-        <h1 class="title m-auto">
-          <span class="left d-inline-block">more</span> 
-          <span class="right d-inline-block text-primary">revenue</span>
+        <h3 class="mb-4 notof-setif-jp">We work for startups <br> that need</h3>
+        <h1 class="title m-auto d-flex align-items-center justify-content-center flex-column flex-md-row">
+          <span class="left d-inline-block m-2">more</span> 
+          <span class="right d-inline-block text-primary m-2">revenue</span>
         </h1>
         <p class="lead mt-5">Double is a growth marketing agency. <br> <b>We help startups scale.</b></p>
         <img class="img-fluid" src="/assets/images/new-web/intro_hero_full.jpg" />
@@ -477,13 +477,14 @@
         <div class="row mt-2 mt-md-5">
           {% for item in page.packages %}
           <div class="col-md-3 p-2 slide-top package-item">
-            <div class="p-2 p-md-4 text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
+            <div class="p-2 p-md-4 text-dark text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
               <div class="upper">
                 <h4 class="font-weight-normal">{{ item.title }}</h4>
                 <p>{{ item.content }}</p>
               </div>
               <div class="lower">
-                <p class="text-primary font-weight-bold mb-0">{{ item.price }}</p>
+                <p class="price text-primary font-weight-bold mb-0">{{ item.price }}</p>
+                <a href="mailto:pieter@double-agency.com" class="btn btn-primary btn-shadow">Email us</a>
               </div>
             </div>
           </div>

@@ -29,8 +29,8 @@ function affixHowWeHelpTitle() {
   let lineHeightDiff = 12;
   const container = $("#how-we-help");
   const sidebar = $("#how-we-help #how-we-help-sidebar");
-  const sidebarWidth = sidebar.width();
-  const sidebarHeight = sidebar.height();
+  let sidebarWidth = sidebar.width();
+  let sidebarHeight = sidebar.height();
 
   $(window).on('resize', function() {
     sidebarWidth = sidebar.width();
@@ -124,6 +124,18 @@ function _viewportAnimations() {
     if (_isOverCenterScreen(this, 150)) {
       $(this).addClass("active");
      }
+  });
+}
+
+function packagesAnimations() {
+  const box = $('.package-item > div');
+  const price = $('.package-item > div .lower p');
+  const btn = $('.package-item > div .lower a');
+  
+  $('.package-item a').each(function() {
+    $(this).on('hover', function(e) {
+
+    })
   });
 }
 
