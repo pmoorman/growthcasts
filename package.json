@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "gumshoejs": "^3.5.0",
+    "rollup": "^1.17.0",
     "scrollspy-js": "^0.1.3",
     "smooth-scroll": "^12.1.5",
     "swiper": "^4.1.6"
