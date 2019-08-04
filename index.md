@@ -1,7 +1,7 @@
 ---
 layout: pages/new-home
 
-quick_intro_show: true
+quick_intro_show: false
 quick_intro_video_url: https://player.vimeo.com/video/329342289
 
 how_it_works:
@@ -71,20 +71,20 @@ how_we_help:
     content: Setting up analytics tools and crunching data to draw proper conclusions on retention, LTV, cohort performance or channel attribution.
 
 academy_testimonials:
-  - name: Lillian Goodwin
-    position: Founder at Company
+  - name: Frank Maat
+    position: Head IT @ MindSpace
     image: /assets/images/new-web/testimonial_1.png
     content: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
 
-  - name: Albert Cobb
-    position: CEO at Firm
+  - name: Lilian Delacroix
+    position: Founder @ BeYourBest
     image: /assets/images/new-web/testimonial_2.png
-    content: Large businesses require a lot of IT infrastructure and a department to look after it.
+    content: Was afraid it would only have growth hacking tricks, but it was something different. Completely changed my picture of marketing.
 
 our_process:
   - title: Growth Strategy
     content: |
-      To double or quadruple your revenue and user base starts with making strong strategic decisions. As startups scales, they need mature growth systems to drive stable flows of users into their business.
+      Doubling your revenue and user base starts with making strong strategic decisions. As startups scales, they need mature growth systems to drive stable flows of users into their business.
 
       Our first job is to architect a high-level growth strategy that makes acquisition and customer retention stable, predictable & systematic. This is the “blueprint” we’ll later execute against...
 
