@@ -14,7 +14,7 @@ how_it_works:
 our_promise:
   - image: /assets/images/new-web/full_ownership-icon.svg
     title: Full ownership
-    content: We typically come onboard as your first Head of Growth. We take ownership over everything from growth strategy to execution.
+    content: <br>We typically come onboard as your first Head of Growth. We take ownership over everything from growth strategy to execution.
 
   - image: /assets/images/new-web/performance_oriented-icon.svg
     title: Performance-oriented
@@ -22,7 +22,7 @@ our_promise:
 
   - image: /assets/images/new-web/strategic_clarity-icon.svg
     title: Strategic clarity
-    content: Growth starts with clear and focused strategy. In fact, strategic clarity and systems-thinking beats “growth hacking” any day of the week.
+    content: <br>Growth starts with clear and focused strategy. In fact, strategic clarity and systems-thinking beats “growth hacking” any day of the week.
 
   - image: /assets/images/new-web/experienced_execution-icon.svg
     title: Experienced execution
