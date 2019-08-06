@@ -121,21 +121,10 @@ function _viewportAnimations() {
   });
 
   $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
-    if (_isOverCenterScreen(this, 150)) {
+    const offset = $(this).attr('slide-offset') || 150;
+    if (_isOverCenterScreen(this, parseInt(offset, 10))) {
       $(this).addClass("active");
      }
-  });
-}
-
-function packagesAnimations() {
-  const box = $('.package-item > div');
-  const price = $('.package-item > div .lower p');
-  const btn = $('.package-item > div .lower a');
-  
-  $('.package-item a').each(function() {
-    $(this).on('hover', function(e) {
-
-    })
   });
 }
 
