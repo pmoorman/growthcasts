@@ -451,7 +451,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_30 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">30% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">30% Discount on Double Elite</p>
                               </div>
                               <div class="grid__column">
                                 <div class="grid grid--center grid--middle">
@@ -498,7 +498,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_50 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">50% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">50% Discount on Double Elite</p>
                               </div>
                               <div class="grid__column">
                                 <div class="grid grid--center grid--middle">
@@ -568,7 +568,7 @@ window.drip_plinko = function(drip, page) {
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$349</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/JkIeL">
                             Get it now
@@ -605,7 +605,7 @@ window.drip_plinko = function(drip, page) {
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$249</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
                             Get it now
@@ -642,7 +642,7 @@ window.drip_plinko = function(drip, page) {
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$499</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/elitepro">
                             Get it now

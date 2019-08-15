@@ -42,6 +42,6 @@ As a growth marketing consultant, I was able to help 4 startups scale *incredibl
 
 Of course, those consulting gigs paid incredibly well. I was doing all the work while sitting in Bali or traveling the world… *yet the results kept rolling in.*
 
-I started to document everything. To create a “playbook”. Friends started using this system too… and they got excellent results. Today, that 6-part system has turned into our flagship product, called **“Growthcasts Elite”**. It’s a premium offering, that every entrepreneur can us himself, to learn these skills.
+I started to document everything. To create a “playbook”. Friends started using this system too… and they got excellent results. Today, that 6-part system has turned into our flagship product, called **Double Elite”**. It’s a premium offering, that every entrepreneur can us himself, to learn these skills.
 
 So, I want to introduce you to something exciting…

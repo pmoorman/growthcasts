@@ -21,7 +21,7 @@ Let me give you some example of business that have different LTV/CAC ratios:
 
 - SaaS rule of thumb: ±30% of LTV for acquisition
 - Physical businesses: ±1/4th of LTV for acquisition 
-- Growthcasts: ±80% CAC for LTV still work.
+- Double: ±80% CAC for LTV still work.
 
 
 ### Measure your CAC with all things considered.

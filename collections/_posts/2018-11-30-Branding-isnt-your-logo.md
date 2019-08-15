@@ -59,7 +59,7 @@ To improve your branding, you want to first decide what “name space” you wan
 
 
 - **Problem you’re solving**
-  This is the most fundamental building block. Defines the category you’re in, so people can mentally “archive” you into a certain label.  Tesla makes “cars”. Growthcasts “teaches you marketing”.
+  This is the most fundamental building block. Defines the category you’re in, so people can mentally “archive” you into a certain label.  Tesla makes “cars”. Double “teaches you marketing”.
 
 
 - **Unique approach / magic sauce**
@@ -70,13 +70,13 @@ To improve your branding, you want to first decide what “name space” you wan
 
 
 - **Audience**
-  The people that you serve, and maybe the location that you’re in. Even though there are millions of Thai restaurants, you can own the best one in town. Growthcasts is online, but teaches to entrepreneurs. That’s an audience.
+  The people that you serve, and maybe the location that you’re in. Even though there are millions of Thai restaurants, you can own the best one in town. Double is online, but teaches to entrepreneurs. That’s an audience.
   
 - **Tone of voice**
   How do you communicate? How do you talk? Do you speak the language that someone expects from a business like yours? If it’s unexpected, is it unexpected in a way that supports your brand?
   
 - **Visual identity**
-  Yeah, finally! Your visual style either supports or conflicts the other components of your branding. Growthcasts stands for storytelling and “making things simple”… so our visual style focuses on readability and keeps things plain and simple.
+  Yeah, finally! Your visual style either supports or conflicts the other components of your branding. Double stands for storytelling and “making things simple”… so our visual style focuses on readability and keeps things plain and simple.
   
 - **Origin story**
   How did you end up here? Why do you care? Who’s behind this? —Your origin story tells where you come from. Explaining your history helps people understand where you’re headed, too.
