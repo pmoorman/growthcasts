@@ -617,6 +617,43 @@ window.drip_plinko = function(drip, page) {
           discount: discount_template_50
           }
       }
+  else if (drip.has_tag('70%_discount')) {
+        response = {
+          // PRO
+          pricetable: '<p class="price__current-price paragraph">149</p><p class="price__old-price paragraph h2">499</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70discount">
+                          <span>Get it now</span>
+                          <div class="grid grid--gapeless grid--middle">
+                            <span>$149</span>
+                            <span class="button__icon">
+                              <img src="icons/shopping-basket.svg" alt="">
+                            </span>
+                          </div>
+                        </a>`,
+          // Core
+          pricetable2: '<p class="price__current-price paragraph">139</p><p class="price__old-price paragraph h2">469</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70core">
+                            <span>Get it now</span>
+                            <div class="grid grid--gapeless grid--middle">
+                              <span>$139</span>
+                              <span class="button__icon">
+                                <img src="icons/shopping-basket.svg" alt="">
+                              </span>
+                            </div>
+                          </a>`,
+          // Banner
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$149</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/70discount">
+                            Get it now
+                            <span class="button__icon">
+                              <img src="icons/shopping-basket-white.svg" alt="">
+                            </span>
+                          </a>`,
+          // Discount timer
+          discount: discount_template_50
+          }
+      }
   else {
         response = {
           // PRO
