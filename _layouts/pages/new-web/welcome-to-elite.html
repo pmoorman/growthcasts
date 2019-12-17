@@ -2,17 +2,42 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include new-web/head.html %}
 
-  <body>
+  <body class="welcome-to-elite">
     {% include new-web/header.html %}
+
+    <section class="text-center font-weight-bold text-light py-3" style="background: #51abff;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Success - Welcome inside this course!
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="container">
-        <div class="paper position-relative bg-white">
-          <div class="paper_shadow"></div>
+        <div class="row">
+          <div class="col-md-4">
+            <p><b>Before we start...</b></p>
+          </div>
+          <div class="col-md-8">
 
-          {% for item in page.questions %}
-          <div>{{ item }}</div>
-          {% endfor %}
+            <div class="position-relative bg-white">
+             
+              {% for item in page.questions %}
+              {% if forloop.index != 1 %}
+              <hr>
+              {% endif %}
+              <div>
+                <div style="padding-left: 12px;"><b>{{ item }}</b></div>
+                <textarea style="border: 0;" rows="5" class="form-control" type="text" placeholder="Type your answer here... "></textarea>
+              </div>
+              {% endfor %}
+
+              <a href="#" class="btn btn-primary btn-shadow">Submit answers</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
