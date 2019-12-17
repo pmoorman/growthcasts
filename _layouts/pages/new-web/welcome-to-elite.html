@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include new-web/head.html %}
+
+  <body>
+    {% include new-web/header.html %}
+
+    <section>
+      <div class="container">
+        <div class="paper position-relative bg-white">
+          <div class="paper_shadow"></div>
+
+          {% for item in page.questions %}
+          <div>{{ item }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    {% include new-web/footer.html %}
+  </body>
+</html>
