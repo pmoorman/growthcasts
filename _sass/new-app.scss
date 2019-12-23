@@ -108,7 +108,7 @@ h4 {
   line-height: 32px;
 }
 
-b {
+b, strong {
   font-weight: 600;
 }
 
@@ -292,46 +292,6 @@ section#intro {
 section#how-we-work {
   position: relative;
   top: -140px;
-
-  .checklist li img {
-    border-radius: 100%;
-    opacity: 0.15;
-    transition: 0.5s;
-  }
-  .checklist {
-    li.active img {
-      opacity: 1;
-    }
-    li.active .fore {
-      animation: fore 0.5s linear both;
-    }
-    li.active .back {
-      animation: back 0.5s linear both;
-    }
-    .back {
-      position: absolute;
-      top: 0;
-      z-index: -1;
-    }
-  }
-}
-
-@keyframes fore {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-4px, -5px);
-  }
-}
-
-@keyframes back {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(4px, 5px);
-  }
 }
 
 // SECTION: About us
@@ -1258,5 +1218,47 @@ section#packages {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+// CHECKLIST
+
+.checklist li img {
+  border-radius: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+.checklist {
+  li.active img {
+    opacity: 1;
+  }
+  li.active .fore {
+    animation: fore 0.5s linear both;
+  }
+  li.active .back {
+    animation: back 0.5s linear both;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes fore {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-4px, -5px);
+  }
+}
+
+@keyframes back {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(4px, 5px);
   }
 }
