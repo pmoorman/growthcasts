@@ -541,10 +541,10 @@
       </div>
     </section>
 
-    {% include new-web/footer.html %}
+    <script src="{{ "/assets/js/new-main.js" | relative_url }}"></script>
     {% include new-web/modal_iframe.html src=page.quick_intro_video_url id="quick-intro-video" %}
     {% include new-web/modal_form.html id="join-the-course" %}
+    {% include new-web/footer.html %}
 
-    <script src="{{ "/assets/js/new-main.js" | relative_url }}"></script>
   </body>
 </html>

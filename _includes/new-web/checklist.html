@@ -13,3 +13,23 @@
   </li>
   {% endfor %}
 </ul>
+
+<script>
+$(window).on('scroll', _viewportAnimations);
+
+function _viewportAnimations() {
+  $(".checklist li").each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass("active");
+     }
+  });
+}
+
+function _isOverCenterScreen(elem, offset) {
+  var windowCenter =  $(window).height() / 2;
+  var elemTop = elem.getBoundingClientRect().top;
+  return (windowCenter + offset) > elemTop 
+    ? (windowCenter + offset) - elemTop 
+    : false;
+}
+</script>
