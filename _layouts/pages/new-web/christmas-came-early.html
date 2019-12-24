@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include new-web/head.html %}
+
+<body>
+  {% include new-web/header.html %}
+
+  <!-- SECTION: random gif -->
+  <section class="pb-0 pt-4">
+    <div class="container">
+      <div class="row">
+        {% include new-web/random-gif.html %}
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: content -->
+  <section class="pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <strong class="text-primary">{{ page.title }}</strong>
+          <div>{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
