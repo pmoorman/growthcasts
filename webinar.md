@@ -1,7 +1,7 @@
 ---
 layout: pages/new-web/webinar
 
-intro_image: /assets/images/new-web/about.png
+intro_video: https://player.vimeo.com/video/209943347
 intro_title: "Case study: RadiantlyAlive breaking the $1MM mark in yoga"
 intro_lead: In this free webinar, we'll take you on a tour throuigh the RadiantyAlive project, and show you how we broke throuigh the $1MM annual revenue milestone
 intro_button_text: Download The Workbook
