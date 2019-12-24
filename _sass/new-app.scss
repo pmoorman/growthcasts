@@ -126,6 +126,23 @@ p.lead {
   line-height: 32px;
 }
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
 section {
   padding-top: 140px;
   padding-bottom: 140px;
@@ -1222,7 +1239,6 @@ section#packages {
 }
 
 // CHECKLIST
-
 .checklist li img {
   border-radius: 100%;
   opacity: 0.15;
@@ -1261,4 +1277,23 @@ section#packages {
   to {
     transform: translate(4px, 5px);
   }
+}
+
+// BOXES & SHADOW
+.bg-primary {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  color: #fff;
+  background-color: $secondary-color;
+}
+
+.shadow-primary {
+  box-shadow: 14px 14px 0 0 $primary-color;
+}
+
+.shadow-grey {
+  box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
 }

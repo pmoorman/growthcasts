@@ -5,7 +5,7 @@
   <body class="welcome-to-elite">
     {% include new-web/header.html %}
 
-    <section class="text-center font-weight-bold text-light py-3" style="background: #51abff;">
+    <section class="text-center font-weight-bold bg-primary py-3">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -15,15 +15,17 @@
       </div>
     </section>
 
-    <section>
+    <section class="pb-0">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <p><b>Before we start...</b></p>
+        <div class="row justify-content-between">
+          <div class="col-md-2 ml-auto mr-auto">
+            <div class="bg-secondary shadow-primary p-3">
+              <p><b>Before we start...</b></p>
+            </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
 
-            <div class="position-relative bg-white">
+            <div class="position-relative bg-white shadow-grey p-5">
              
               {% for item in page.questions %}
               {% if forloop.index != 1 %}
@@ -31,16 +33,27 @@
               {% endif %}
               <div>
                 <div style="padding-left: 12px;"><b>{{ item }}</b></div>
-                <textarea style="border: 0;" rows="5" class="form-control" type="text" placeholder="Type your answer here... "></textarea>
+                <textarea style="border: 0;" rows="4" class="form-control" type="text" placeholder="Type your answer here... "></textarea>
               </div>
               {% endfor %}
-
-              <a href="#" class="btn btn-primary btn-shadow">Submit answers</a>
+              <div class="mt-4">
+                <a href="#" class="btn btn-primary btn-shadow">Submit answers</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    {% capture pieterfooterinner %}
+      <a href="#" class="btn btn-primary btn-shadow">Open the course</a>
+    {% endcapture %}
+
+    {% include new-web/pieter-footer.html
+      title="Growth starts here"
+      lead="Time we explore the couse! Click hjere to get started."
+      content=pieterfooterinner
+      class="pt-3" %}
 
     {% include new-web/footer.html %}
   </body>
