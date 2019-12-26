@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include new-web/head.html %}
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<body class="pb-5">
+  {% include new-web/header.html %}
+
+  <!-- SECTION: random gif -->
+  <section class="pb-4 pt-2">
+    <div class="container">
+      <div class="row flex-column text-center">
+        <div class="pb-3">
+          {% include new-web/random-video.html %}
+        </div>
+        <div><strong>Thanks for clicking!</strong></div>
+        <div>We'll be sure to remember that..</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: content -->
+  <section class="pt-0">
+    <div class="container">
+      <div class="row">
+        <div id="slider">
+          <div>sss</div>
+          <div>sss</div>
+          <div>sss</div>
+          <div>sss</div>
+          <div>sss</div>
+
+          <div>sss</div><div>sss</div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('#slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 1,
+    });
+  </script>
+
+</body>
+
+</html>

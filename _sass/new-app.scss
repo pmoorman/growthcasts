@@ -1344,7 +1344,7 @@ section#packages {
 }
 
 .random-video video {
-  height: 100%;
+  object-fit: cover;
   position: absolute;
-  left: -25%;
+  left: 0;
 }
