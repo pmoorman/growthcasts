@@ -4,7 +4,7 @@ layout: pages/new-web/christmas-came-early
 questions:  
   - "What do you most want to learrn from us?"
   - "What's your primary business goal (focus), right now?"
-  - "anything else you want to add ;)"
+  - "Anything else you want to add ;)"
 ---
 
 ### **Here is a little deal I want to telll you about:**

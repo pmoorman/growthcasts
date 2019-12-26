@@ -2,14 +2,18 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {% include new-web/head.html %}
 
-<body>
+<body class="pb-5">
   {% include new-web/header.html %}
 
   <!-- SECTION: random gif -->
-  <section class="pb-0 pt-4">
+  <section class="pb-4 pt-2">
     <div class="container">
-      <div class="row">
-        {% include new-web/random-gif.html %}
+      <div class="row flex-column text-center">
+        <div class="pb-3">
+          {% include new-web/random-video.html %}
+        </div>
+        <div><strong>Booyakashaa!</strong></div>
+        <div>We have got that on the record now</div>
       </div>
     </div>
   </section>
@@ -25,6 +29,20 @@
       </div>
     </div>
   </section>
+
+  <!-- SECTION: form -->
+  {% for item in page.questions %}
+  {% if forloop.index != 1 %}
+  <hr>
+  {% endif %}
+  <div>
+    <div style="padding-left: 12px;"><b>{{ item }}</b></div>
+    <textarea style="border: 0;" rows="4" class="form-control" type="text" placeholder="Type your answer here... "></textarea>
+  </div>
+  {% endfor %}
+  <div class="mt-4 text-center">
+    <a href="#" class="btn btn-primary btn-shadow">Send me details</a>
+  </div>
 
 </body>
 

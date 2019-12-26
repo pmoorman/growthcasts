@@ -42,16 +42,22 @@
 
 /* noto-serif-jp-200 - latin */
 @font-face {
-  font-family: 'Noto Serif JP';
+  font-family: "Noto Serif JP";
   font-style: normal;
   font-weight: 200;
-  src: url('../assets/fonts/noto-serif-jp-v7-latin-200.eot'); /* IE9 Compat Modes */
-  src: local('Noto Serif JP ExtraLight'), local('NotoSerifJP-ExtraLight'),
-       url('../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/noto-serif-jp-v7-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/noto-serif-jp-v7-latin-200.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/noto-serif-jp-v7-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP') format('svg'); /* Legacy iOS */
+  src: url("../assets/fonts/noto-serif-jp-v7-latin-200.eot"); /* IE9 Compat Modes */
+  src: local("Noto Serif JP ExtraLight"), local("NotoSerifJP-ExtraLight"),
+    url("../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/noto-serif-jp-v7-latin-200.woff") format("woff"),
+    /* Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP")
+      format("svg"); /* Legacy iOS */
 }
 
 $primary-color: #3497f3;
@@ -108,7 +114,8 @@ h4 {
   line-height: 32px;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600;
 }
 
@@ -126,11 +133,11 @@ p.lead {
   line-height: 32px;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
@@ -138,8 +145,8 @@ button:hover,
 label:focus,
 .btn:active,
 .btn.active {
-  outline:0px !important;
-  -webkit-appearance:none;
+  outline: 0px !important;
+  -webkit-appearance: none;
   box-shadow: none !important;
 }
 
@@ -153,7 +160,7 @@ section.alternate-section {
 }
 
 .notof-setif-jp {
-  font-family: 'Noto Serif JP', serif!important;
+  font-family: "Noto Serif JP", serif !important;
 }
 
 .btn-shadow {
@@ -259,7 +266,6 @@ section.alternate-section {
 // SECTION: Intro
 section#intro {
   .title {
-    
     span {
       padding-bottom: 15px;
       transition: 1s;
@@ -558,18 +564,18 @@ section#packages {
   }
 
   .package-item > div {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
 
       .lower {
         a {
-          animation: fadeIn .5s both;
+          animation: fadeIn 0.5s both;
         }
 
         p {
-          animation: fadeOut .5s both;
+          animation: fadeOut 0.5s both;
         }
       }
     }
@@ -578,8 +584,9 @@ section#packages {
   .package-item .lower {
     position: relative;
 
-    p, a {
-      transition: all .5s ease-in-out;
+    p,
+    a {
+      transition: all 0.5s ease-in-out;
     }
 
     a {
@@ -593,13 +600,21 @@ section#packages {
 }
 
 @keyframes fadeIn {
-  from{opacity: 0}
-  to{opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  from{opacity: 1}
-  to{opacity: 0}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 // Form box
@@ -1056,7 +1071,7 @@ section#packages {
 @media only screen and (min-width: 996px) {
   section#about-us {
     .about_images {
-      height: auto!important;
+      height: auto !important;
 
       .quick_intro_box {
         position: absolute;
@@ -1084,7 +1099,7 @@ section#packages {
       }
     }
   }
-  
+
   // Section: Klooker
   section#klooker {
     margin-top: -200px;
@@ -1302,17 +1317,34 @@ section#packages {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
 }
 
-// VIDEO WRAPPER 
+// VIDEO WRAPPER
 .video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 .video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// RANDOM VIDEO
+.random-video {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 10px solid #eff0f6;
+}
+
+.random-video video {
+  height: 100%;
+  position: absolute;
+  left: -25%;
 }
