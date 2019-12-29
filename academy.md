@@ -28,4 +28,15 @@ carousel_items:
     body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
     image: /assets/images/new-web/testimonial_1.png
 
+steps_carousel:
+  - title: Getting users matters
+    subtitle: "Day 1:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 2:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 3:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 ---

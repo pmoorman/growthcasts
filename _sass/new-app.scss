@@ -757,7 +757,7 @@ section#packages {
 }
 
 // MODAL
-.modal {
+.modal:not(.bs) {
   width: 0;
   display: flex;
   align-items: center;

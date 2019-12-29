@@ -1,3 +1,9 @@
+<!-- vars
+class: string (optional)
+title: string
+lead: string
+content: inner html
+-->
 <section class="pb-0 text-center text-md-left {{ include.class | default '' }}">
   <div class="container">
     <div class="row align-items-center">
@@ -11,6 +17,11 @@
 
         <div class="pieter-mobile-img d-block d-md-none">
           <img class="img-fluid" src="/assets/images/new-web/pieter_mobile.png" />
+        </div>
+
+        <div class="person mb-4">
+          <h4 class="mb-0"><b>Pieter Moorman</b></h4>
+          <p>Partner / consultant</p>
         </div>
 
         {{ include.content }}

@@ -10,14 +10,14 @@ items: list
 
 {% assign id = include.id | default 'carousel' %}
 
-<div id="carousel">
+<div id="{{ id }}">
   {% for item in include.items %}
   {% if item.image_position == 'left' %}
   {% assign image_position = 'left: -20px;' %}
   {% else %}
   {% assign image_position = 'right: 20px;' %}
   {% endif %}
-  <div class="shadow-grey border-grey m-4 position-relative p-4">
+  <div class="shadow-grey bg-white border-grey m-4 position-relative p-4">
     <div class="position-absolute" style="width: 50px; top: -15px; {{ image_position }}">
       <img class="img-fluid" src="{{ item.image }}">
     </div>
@@ -31,5 +31,5 @@ items: list
   {% endfor %}
 </div>
 <script>
-  $('#carousel').slick({ centerMode: true, centerPadding: '20px', slidesToShow: 1 });
+  $('#{{id}}').slick({ centerMode: true, centerPadding: '20px', slidesToShow: 1 });
 </script>
