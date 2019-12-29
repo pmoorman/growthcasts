@@ -1309,12 +1309,20 @@ section#packages {
   background-color: #eff0f6;
 }
 
+.bg-white {
+  background-color: #ffffff;
+}
+
 .shadow-primary {
   box-shadow: 14px 14px 0 0 $primary-color;
 }
 
 .shadow-grey {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
+}
+
+.border-grey {
+  border: 1px solid #eff0f6;
 }
 
 // VIDEO WRAPPER

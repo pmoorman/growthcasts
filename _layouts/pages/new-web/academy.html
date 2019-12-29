@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include new-web/head.html %}
+
+  <body>
+    {% include new-web/header.html %}
+
+    <section class="text-center py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img class="img-fluid" src="{{ page.top_image }}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center font-weight-bold bg-primary py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            {{ page.tagline }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>{{ page.intro }}</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include new-web/checklist-with-title.html 
+      title=page.learn_how_to_title
+      items=page.learn_how_to_items
+      class="py-0" %}
+
+    <section class="py-5 px-0">
+      <div class="container">
+
+        {% include new-web/carousel-1.html
+          items=page.carousel_items %}
+
+      </div>
+    </section>
+
+    {% include new-web/footer.html %}
+  </body>
+</html>
