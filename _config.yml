@@ -33,6 +33,7 @@ collections_dir: collections
 collections:
   posts:
     output: true
+    permalink: /blog/:year/:month/:day/:title
 # collections:
 #   - sales-header
 #   - intro
