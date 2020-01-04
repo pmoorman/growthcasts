@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pages/new-web/post
 current: post
-cover:  assets/images/blogpic6.png
+cover:  /assets/images/blogpic6.png
 navigation: True
 title: Branding isn't your logo
 date: 2017-07-27 10:00:00

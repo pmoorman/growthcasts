@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pages/new-web/post
 current: post
-cover: assets/images/blogpic3.jpg
+cover: /assets/images/blogpic3.jpg
 navigation: True
 title: Stop marketing. Start making your customers happy.
 date: 2018-08-10 09:15:41

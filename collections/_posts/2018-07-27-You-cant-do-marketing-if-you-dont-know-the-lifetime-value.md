@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pages/new-web/post
 current: post
-cover: assets/images/blogpic1.jpeg
+cover: /assets/images/blogpic1.jpeg
 navigation: True
 title: You can’t do marketing if you don’t know the lifetime value of your customers
 date: 2018-07-27 11:10:11

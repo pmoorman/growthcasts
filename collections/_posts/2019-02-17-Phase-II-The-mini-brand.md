@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pages/new-web/post
 current: post
-cover: assets/images/blogpic4.jpg
+cover: /assets/images/blogpic4.jpg
 navigation: True
 title: Phase II, The mini-brand
 date: 2019-02-17 11:07:01

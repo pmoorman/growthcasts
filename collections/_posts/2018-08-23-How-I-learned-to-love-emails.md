@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pages/new-web/post
 current: post
-cover: assets/images/blogpic7.jpeg
+cover: /assets/images/blogpic7.jpeg
 navigation: True
 title: How I learned to love emails
 date: 2018-08-17 09:07:01

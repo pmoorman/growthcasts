@@ -159,6 +159,15 @@ section.alternate-section {
   background-color: #eff0f6;
 }
 
+blockquote {
+  font-size: 28px;
+  width: calc(100% + 100px);
+  max-width: 100vw;
+  margin-left: -50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .notof-setif-jp {
   font-family: "Noto Serif JP", serif !important;
 }
@@ -618,19 +627,15 @@ section#packages {
 }
 
 // Form box
-.form_box {
-  .input-group {
-    box-shadow: 14px 14px 0 0 #d4d7e1;
-  }
+.input-group {
+  box-shadow: 14px 14px 0 0 #d4d7e1;
+
   input {
-    border-radius: 0;
-    height: 51px;
-  }
-  button {
-    border-radius: 0;
-    font-weight: 600;
+    border-radius: 0!important;
+    height: 51px!important;
   }
 }
+
 
 // Speech bubble
 .speech-bubble {
