@@ -12,3 +12,7 @@ growthcasts website (Jekyll)
 * random-video
 * form-1
 * animated-logo
+
+## New layouts for all new page
+
+* /_layouts/default.html

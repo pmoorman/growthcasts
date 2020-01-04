@@ -1,0 +1,137 @@
+---
+layout: "default"
+hide_footer: true
+
+tagline: "Join 15,271+ others:"
+intro: "Modern growth marketing & user acquisition techniques"
+top_image: /assets/images/napkin.png
+learn_how_to_title: Learn how to
+learn_how_to_items:
+  - "**Design sales machines** that work on autopilot"
+  - "Learn the **6-step framework** to unlock virtually limitless growth"
+  - 'Leverage the **"power low of channels"** from traffic generation'
+  - "Execute coherent growth strategies as you scale."
+  - "Design sales machines that work **on autopilot**"
+
+carousel_items:
+  - title: Lillian Goodwin
+    subtitle: Founder
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    image: /assets/images/new-web/testimonial_1.png
+    image_position: left
+  - title: Lillian Goodwin
+    subtitle: Founder
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    image: /assets/images/new-web/testimonial_1.png
+  - title: Lillian Goodwin
+    subtitle: Founder
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    image: /assets/images/new-web/testimonial_1.png
+
+steps_carousel:
+  - title: Getting users matters
+    subtitle: "Day 1:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 2:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 3:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+---
+
+<section class="text-center py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="img-fluid" src="{{ page.top_image }}" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-center font-weight-bold bg-primary py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{ page.tagline }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>{{ page.intro }}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include new-web/checklist-with-title.html 
+  title=page.learn_how_to_title
+  items=page.learn_how_to_items
+  class="py-0" %}
+
+<section class="pt-0">
+  <div class="container">
+    <div class="text-center">
+      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+        Join Now - It's Free
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 px-0 alternate-section">
+  <div class="container">
+    {% include new-web/carousel-1.html
+      id="carousel-1"
+      items=page.carousel_items %}
+  </div>
+</section>
+
+<section class="py-5 px-0">
+  <div class="container">
+    {% include new-web/carousel-2.html
+      id="carousel-2"
+      items=page.steps_carousel %}
+
+    <div class="row text-center my-5">
+      <div class="col">
+        <p><strong>Swipe to explore email course</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include new-web/email-submit-modal.html %}
+
+{% capture pieterfooterinner %}
+<div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
+  <h4 class="font-weight-bold">Leave your contact info</h4>
+  <p>and we’ll contact you today!</p>
+  <form>
+    <div class="input-group mb-3">
+      <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
+      <div class="input-group-append">
+        <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now - It's Free">
+      </div>
+    </div>
+  </form>
+</div>
+{% endcapture %}
+
+{% include new-web/pieter-footer.html
+  title="Still here?<br>Let's grow your biz"
+  lead="Not about the fact that you’re here (although we like that, too), but about how we can partner up to scale your company. That’s even more exciting to us."
+  content=pieterfooterinner %}
+
+{% include new-web/email-submit-modal.html 
+  id="join-modal"
+  title="14 step-by-step lessons on modern startup growth:"
+  subtitle="Email course"
+  button_text="Get the email course >>" %}

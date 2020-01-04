@@ -1,0 +1,39 @@
+---
+layout: default
+hide_footer: true
+items:
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    subtitle: Case Studies
+    image: /assets/images/new-web/about4.png
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    subtitle: Case Studies
+    image: /assets/images/new-web/about4.png
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    subtitle: Case Studies
+    image: /assets/images/new-web/about4.png
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    subtitle: Case Studies
+    image: /assets/images/new-web/about4.png
+---
+
+<!-- SECTION: random gif -->
+  <section class="pb-4 pt-2">
+    <div class="container">
+      <div class="row flex-column text-center">
+        <div class="pb-3">
+          {% include new-web/random-video.html %}
+        </div>
+        <div><strong>Thanks for clicking!</strong></div>
+        <div>We'll be sure to remember that..</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: slider -->
+  <section class="py-5 px-0 alternate-section">
+    <div class="container">
+      {% include new-web/carousel-3.html
+        id="carousel-3"
+        items=page.items %}
+    </div>
+  </section>
