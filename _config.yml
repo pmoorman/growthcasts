@@ -31,17 +31,22 @@ plugins:
 # Collections
 collections_dir: collections
 collections:
-  - sales-header
-  - intro
-  - course
-  - bonuses
-  - prices
-  - faq
-  - testimonials
-  - parts
-  - slides
-  - consulting-offers
-  - videos
+  posts:
+    output: true
+# collections:
+#   - sales-header
+#   - intro
+#   - course
+#   - bonuses
+#   - prices
+#   - faq
+#   - testimonials
+#   - parts
+#   - slides
+#   - consulting-offers
+#   - videos
+
+permalink:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -62,3 +67,25 @@ exclude:
 
 include:
   - _redirects
+
+##
+# From blog
+##
+
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: growthcasts # replace by your username
+facebook: growthcasts # replace by your username
+
+# Disqus
+disqus: False
+disqus_shortname: jekyller # replace with your disqus username
+
+# Google Analytics
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+
+# Permalinks
+permalink: /:title
