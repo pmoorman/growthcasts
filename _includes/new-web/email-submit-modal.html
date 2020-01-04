@@ -1,25 +1,35 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModasssl">
-  Launch demo modal
-</button>
+<!-- vars
+id: string
+subtitle: string
+title: string
+button_text: string
+-->
+<div id="{{ include.id }}" class="modal bs fade" role="dialog" style="padding: 0;">
+  <div class="modal-dialog m-0 m-md-auto">
 
-<!-- Modal -->
-<div class="modal bs modal-dialog-centered" id="exampleModasssl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="modal-content bg-grey">
+      <div class="modal-header" style="border: 0;">
+        <div class="m-auto" style="width: 150px;">
+          {% include new-web/animated-logo.html %}
+        </div>
       </div>
+
       <div class="modal-body">
-        ssssssssssssssss
+        <h4 style="font-size: 18px;" class="text-primary font-weight-bold">{{ include.subtitle }}</h4>
+        <h1 style="font-size: 24px; letter-spacing: 2px; line-height: 35px;" class="font-weight-bold">{{ include.title }}</h1>
+
+        <form class="py-4">
+          <form netlify>
+            <input style="border: 0; height: 50px;" type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
+            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" type="submit">{{ include.button_text }}</button>
+          </form>
+        </form>
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+
   </div>
 </div>

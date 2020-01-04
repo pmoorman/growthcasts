@@ -11,3 +11,4 @@ growthcasts website (Jekyll)
 * pieter-footer
 * random-video
 * form-1
+* animated-logo
