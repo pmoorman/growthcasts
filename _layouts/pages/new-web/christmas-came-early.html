@@ -19,7 +19,7 @@
   </section>
 
   <!-- SECTION: content -->
-  <section class="pt-0">
+  <section class="pt-0 pb-4">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -31,18 +31,9 @@
   </section>
 
   <!-- SECTION: form -->
-  {% for item in page.questions %}
-  {% if forloop.index != 1 %}
-  <hr>
-  {% endif %}
-  <div>
-    <div style="padding-left: 12px;"><b>{{ item }}</b></div>
-    <textarea style="border: 0;" rows="4" class="form-control" type="text" placeholder="Type your answer here... "></textarea>
-  </div>
-  {% endfor %}
-  <div class="mt-4 text-center">
-    <a href="#" class="btn btn-primary btn-shadow">Send me details</a>
-  </div>
+  {% include new-web/form-1.html 
+    fields=page.questions 
+    button_text="Send me details" %}
 
 </body>
 

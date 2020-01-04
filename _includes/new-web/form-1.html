@@ -1,0 +1,26 @@
+<!-- vars
+button_text: string (optional)
+fields: list
+  - "question 1"
+  - "question 2"
+-->
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {% for item in include.fields %}
+        {% if forloop.index != 1 %}
+        <hr>
+        {% endif %}
+        <div>
+          <div><b>{{ item }}</b></div>
+          <textarea style="border: 0;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
+        </div>
+        {% endfor %}
+        <div class="mt-4 text-center">
+          <a href="#" class="btn btn-primary btn-shadow">{{ include.button_text | default "submit" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
