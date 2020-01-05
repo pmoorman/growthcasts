@@ -159,6 +159,11 @@ blockquote {
   margin-left: -50px;
   margin-top: 25px;
   margin-bottom: 25px;
+
+  @media only screen and (max-width: 720px) {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 .notof-setif-jp {
@@ -1363,4 +1368,17 @@ section#packages {
 
 .slick-slide {
   height: inherit !important;
+}
+
+//
+// Blog single
+//
+.blog-post {
+  .hero-text {
+    position: absolute;
+
+    @media only screen and (max-width: 720px) {
+      position: relative;
+    }
+  }
 }

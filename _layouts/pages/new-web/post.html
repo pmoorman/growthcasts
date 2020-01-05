@@ -3,14 +3,15 @@
 
   {% include new-web/head.html %}
 
-  <body>
+  <body class="blog-post">
     {% include new-web/header.html %}
 
     <section class="py-0">
       <div class="container">
 
         <div class="row position-relative align-items-center">
-          <div style="position: absolute; background: #fff; z-index: 1;" class="col-md-7 p-4">
+
+          <div style="background: #fff; z-index: 1;" class="hero-text col-md-7 p-4">
             <h4 style="font-size: 18px;" class="text-primary font-weight-bold">{{ page.tags }}</h4>
             <h1 style="font-size: 32px; letter-spacing: 0px; line-height: 50px;" class="font-weight-bold">{{ page.title }}</h1>
             <p style="font-size: 18px;">{{ page.subtitle }}</p>
@@ -32,14 +33,14 @@
           <div class="col-md-8">
             {{ content }}
 
-            <div class="bg-grey p-5 mt-5">
+            <div class="bg-grey p-4 p-md-5 mt-5">
               <h4 class="font-weight-bold">
                 Join 15,281 others - our most popular course on growth marketing is now available for free
               </h4>
               <p>
                 Modern growth marketing & user acquisition techniques
               </p>
-              <form name="blog-post" netlify>
+              <form class="form_box" name="blog-post" netlify>
                 <div class="input-group mb-3" >
                   <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
                   <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
