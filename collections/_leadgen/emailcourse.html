@@ -72,6 +72,14 @@ steps_carousel:
   </div>
 </section>
 
+<section class="pb-5 pt-4">
+  <div class="container px-0">
+    <div style="overflow: hidden;">
+      <img src="/assets/images/new-web/striped_bg.jpg" />
+    </div>
+  </div>
+</section>
+
 {% include new-web/checklist-with-title.html 
   title=page.learn_how_to_title
   items=page.learn_how_to_items
@@ -97,17 +105,23 @@ steps_carousel:
 
 <section class="py-5 px-0">
   <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h3>14 step-by-step lessons on modern startup growth:</h3>
+      </div>
+    </div>
+
     {% include new-web/carousel-2.html
       id="carousel-2"
       items=page.steps_carousel %}
 
-    <div class="row text-center my-5">
-      <div class="col">
-        <p><strong>Swipe to explore email course</strong></p>
-      </div>
-    </div>
   </div>
 </section>
+
+{% include new-web/text-with-striped-bg.html
+  text="Swipe to explore email course >>" %}
+
 
 {% capture pieterfooterinner %}
 <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
