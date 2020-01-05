@@ -1,5 +1,7 @@
 <!-- vars
 button_text: string (optional)
+form_action: string (optional)
+form_name: string
 fields: list
   - "question 1"
   - "question 2"
@@ -7,20 +9,24 @@ fields: list
 <section class="{{ include.class }}">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <form 
+        netlify
+        class="col"
+        {% if include.form_action %}action="{{ include.form_action }}"{% endif %}
+        name="{{ include.form_name }}">
         {% for item in include.fields %}
         {% if forloop.index != 1 %}
         <hr>
         {% endif %}
         <div>
           <div><b>{{ item }}</b></div>
-          <textarea style="border: 0;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
+          <textarea name="{{ item | replace: ' ', '_' }}" style="border: 0;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
         </div>
         {% endfor %}
         <div class="mt-4 text-center">
-          <a href="#" class="btn btn-primary btn-shadow">{{ include.button_text | default "submit" }}</a>
+          <a type="submit" class="btn btn-primary btn-shadow">{{ include.button_text | default "submit" }}</a>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </section>
