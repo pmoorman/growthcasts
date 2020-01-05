@@ -14,13 +14,9 @@ into the {body} of the default.hbs template -->
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
-                {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
-                {% else %}
-                    {{ site.title }}
-                {% endif %}
+                <img class="site-logo" src="/assets/images/double_logo_blog.png" alt="Double Blog"/>
             </h1>
-            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+            <h2 class="site-description">Growth marketing for startups</h2>
         </div>
         {% include site-nav.html %}
     </div>

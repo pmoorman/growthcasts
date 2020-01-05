@@ -1,4 +1,26 @@
 <div class="animated-logo position-relative">
   <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.png" />
   <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.png" />
-</div>
+</div> 
+
+<script>
+(() => {
+$(window).on('scroll', _viewportAnimations);
+
+function _viewportAnimations() {
+  $('.animated-logo').each(function() {
+    if (_isOverCenterScreen(this, 150)) {
+      $(this).addClass('active');
+    }
+  });
+}
+
+function _isOverCenterScreen(elem, offset) {
+  var windowCenter =  $(window).height() / 2;
+  var elemTop = elem.getBoundingClientRect().top;
+  return (windowCenter + offset) > elemTop 
+    ? (windowCenter + offset) - elemTop 
+    : false;
+}
+})()
+</script>

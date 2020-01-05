@@ -15,6 +15,7 @@
 </ul>
 
 <script>
+(() => {
 $(window).on('scroll', _viewportAnimations);
 
 function _viewportAnimations() {
@@ -32,4 +33,5 @@ function _isOverCenterScreen(elem, offset) {
     ? (windowCenter + offset) - elemTop 
     : false;
 }
+})()
 </script>

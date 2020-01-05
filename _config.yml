@@ -34,6 +34,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title
+  leadgen:
+    output: true
+    permalink: /:slug
 # collections:
 #   - sales-header
 #   - intro

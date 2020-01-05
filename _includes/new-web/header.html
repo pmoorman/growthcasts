@@ -1,14 +1,7 @@
-{% capture logo %}
-  <div class="animated-logo position-relative">
-    <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.png" />
-    <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.png" />
-  </div>
-{% endcapture %}
-
 <header class="pt-5 pb-5">
   <div class="container">
     <nav class="d-flex justify-content-between align-items-center">
-      <div style="width: 120px">{{ logo }}</div>
+      <div style="width: 120px">{% include new-web/animated-logo.html %}</div>
       <div class="menu">
         <a href="mailto:pieter@double-agency.com" class="text-secondary"><b>Contact</b></a>
       </div>
