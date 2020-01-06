@@ -4,7 +4,7 @@ font_weight: string (optional)
 font_size: string (optional)
 -->
 
-{% assign font-weight = include.font_weight | default 'bold' %}
+{% assign font-weight = include.font_weight | default: 'bold' %}
 
 <section class="pb-4 pt-0 px-0">
   <div class="container">
@@ -15,7 +15,7 @@ font_size: string (optional)
           <div class="text-center">
             <p>
               <span style="
-                font-weight: {{ include.font-weight }}; 
+                font-weight: {{ font-weight }}; 
                 {% if include.font_size %}font-size: {{ include.font_size }}px;{% endif %}
                 {% if include.font_size %}line-height: {{ include.font_size | plus: 5 }}px;{% endif %} 
                 padding-left: 10px; 
