@@ -1,4 +1,4 @@
-<footer id="footer" class="px-3 px-md-5 py-5 text-light bg-secondary">
+<footer id="footer" class="px-3 px-md-5 py-5 text-light" style="background-color: #181d33;">
   <div class="container">
     <div class="row main-links text-center text-md-left">
       <div class="col-md-3 font-weight-bold">
@@ -22,7 +22,7 @@
 
     <div class="row">
       <div class="col-md-4">
-        <h4 class="mb-4">Blog</h4>
+        <h4 class="mb-4 text-light">Blog</h4>
 
         {% for post in site.posts limit:5 %}
         <a
@@ -36,7 +36,7 @@
       </div>
 
       <div class="col-md-4  text-center text-md-left">
-        <h4 class="mb-4">About us</h4>
+        <h4 class="mb-4 text-light">About us</h4>
         <p>
           Double is a growth marketing agency. When startups are ready to scale,
           we step on board to build out their sales funnels, unlock new
@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-md-4  text-center text-md-left">
-        <h4 class="mb-4">Contact</h4>
+        <h4 class="mb-4 text-light">Contact</h4>
 
         <div class="channels mb-4">
           <div class="pt-2">
@@ -88,3 +88,17 @@
     </div>
   </div>
 </footer>
+
+<style>
+  footer h4 {
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+
+  footer .main-links a {
+    line-height: 35px;
+  }
+</style>
