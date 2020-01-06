@@ -37,20 +37,17 @@ collections:
   leadgen:
     output: true
     permalink: /:slug
-# collections:
-#   - sales-header
-#   - intro
-#   - course
-#   - bonuses
-#   - prices
-#   - faq
-#   - testimonials
-#   - parts
-#   - slides
-#   - consulting-offers
-#   - videos
-
-permalink:
+  sales-header:
+  intro:
+  course:
+  bonuses:
+  prices:
+  faq:
+  testimonials:
+  parts:
+  slides:
+  consulting-offers:
+  videos:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include salespage_head.html %}
+
+  <body>
+    {% unless page.hide_header %}
+    {% include new-web/header.html %}
+    {% endunless %}
+
+    {{ content }}
+    
+    {% unless page.hide_footer %}
+    {% include new-web/footer.html %}
+    {% endunless %}
+  </body>
+</html>
