@@ -102,25 +102,3 @@
     line-height: 35px;
   }
 </style>
-
-<script>
-  _viewportAnimations();
-  $(window).on('scroll', _viewportAnimations);
-
-  function _viewportAnimations() {
-    $(".slide-top, .slide-bottom, .slide-left, .slide-right").each(function() {
-      const offset = $(this).attr('slide-offset') || 150;
-      if (_isOverCenterScreen(this, parseInt(offset, 10))) {
-        $(this).addClass("active");
-       }
-    });
-  }
-  
-  function _isOverCenterScreen(elem, offset) {
-    var windowCenter =  $(window).height() / 2;
-    var elemTop = elem.getBoundingClientRect().top;
-    return (windowCenter + offset) > elemTop 
-      ? (windowCenter + offset) - elemTop 
-      : false;
-  }
-</script>
