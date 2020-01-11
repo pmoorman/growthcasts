@@ -1401,3 +1401,8 @@ section#packages {
     min-width: auto;
   }
 }
+
+// carousel
+.slick-prev:before, .slick-next:before {
+  color: $primary-color!important;
+}
