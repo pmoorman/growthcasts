@@ -47,7 +47,6 @@ function _viewportAnimations() {
 }
 
 function _isOverCenterScreen(elem, offset) {
-  console.log(window.screen.height)
   var windowCenter =  window.screen.height / 2;
   var elemTop = elem.getBoundingClientRect().top;
   return (windowCenter + offset) > elemTop 
