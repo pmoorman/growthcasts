@@ -15,43 +15,45 @@ the_content: |
   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 ---
 
-<!-- SECTION: random gif -->
-<section class="pb-4 pt-2">
-  <div class="container">
-    <div class="row flex-column text-center">
-      <div class="pb-3">
-        {% include new-web/random-video.html %}
-      </div>
-      <div><strong>Booyakashaa!</strong></div>
-      <div>We have got that on the record now</div>
-    </div>
-  </div>
-</section>
-
-<section class="pb-5 pt-4">
-  <div class="container px-0">
-    <div style="overflow: hidden;">
-      <img src="/assets/images/new-web/striped_bg.jpg" />
-    </div>
-  </div>
-</section>
-
-<!-- SECTION: content -->
-<section class="pt-0 pb-4">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <strong class="text-primary">{{ page.title }}</strong>
-        <div>{{ page.the_content | markdownify }}</div>
+<div style="max-width: 800px;" class="m-auto">
+  <!-- SECTION: random gif -->
+  <section class="pb-4 pt-2">
+    <div class="container">
+      <div class="row flex-column text-center">
+        <div class="pb-3">
+          {% include new-web/random-video.html %}
+        </div>
+        <div><strong>Booyakashaa!</strong></div>
+        <div>We have got that on the record now</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SECTION: form -->
-{% include new-web/form-1.html 
-  form_name="christmas-came-early"
-  form_action="/my-man"
-  fields=page.questions 
-  button_text="Send me details"
-  class="pt-0" %}
+  <section class="pb-5 pt-4">
+    <div class="container px-0">
+      <div style="overflow: hidden;">
+        <img src="/assets/images/new-web/striped_bg.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: content -->
+  <section class="pt-0 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <strong class="text-primary">{{ page.title }}</strong>
+          <div>{{ page.the_content | markdownify }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: form -->
+  {% include new-web/form-1.html 
+    form_name="christmas-came-early"
+    form_action="/my-man"
+    fields=page.questions 
+    button_text="Send me details"
+    class="pt-0" %}
+</div>
