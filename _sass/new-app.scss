@@ -1390,3 +1390,14 @@ section#packages {
     }
   }
 }
+
+// Square box
+.square-box {
+  min-height: 130px;
+  min-width: 130px;
+
+  @media only screen and (max-width: 499px) {
+    min-height: auto;
+    min-width: auto;
+  }
+}
