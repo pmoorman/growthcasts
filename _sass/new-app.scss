@@ -166,6 +166,10 @@ blockquote {
   }
 }
 
+*:focus {
+  outline: 0;
+}
+
 .notof-setif-jp {
   font-family: "Noto Serif JP", serif !important;
 }
