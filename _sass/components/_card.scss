@@ -72,8 +72,8 @@
   }
 
   &--primary {
-    background: color('primary');
-    color: color(white);
+    background: color('primary')!important;
+    color: color(white)!important;
   }
 
   &--secondary {

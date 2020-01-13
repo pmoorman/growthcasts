@@ -1,0 +1,76 @@
+ghost:
+  username: ghost
+  name: Ghost
+  url_full: http://jekyller.github.io/jasper2/
+  url: jekyller.github.io/jasper2
+  bio: The professional publishing platform
+  picture: assets/images/ghost.png
+  facebook: ghost
+  twitter: tryghost
+  cover: False
+pieter:
+  username: pieter
+  name: Pieter Moorman
+  location: Ubud, Bali
+  url_full: http://growthcasts.co/story
+  url: growthcasts.co
+  bio: Pieter is the founder and senior partner at Growthcasts. He spends his days looking after the Elite community, writing content & ensuring Growthcasts is a happy place.
+  picture: assets/images/pieter.png
+  facebook: pieter.moorman
+  twitter: False
+  cover: False # set cover image with e.g. assets/images/hannah-cover.jpg
+caspar:
+  username: caspar
+  name: Caspar Lusink
+  location: Amsterdam, The Netherlands
+  url_full: http://
+  url: linkedin.com
+  bio: Senior partner at Growthcasts. Writes about growth marketing (duh!), startup life, business strategy, and branding. Travels the world for fun and profit.
+  picture: assets/images/caspar_smaller.jpg
+  facebook: False
+  twitter: False
+  cover: False
+lewis:
+  username: lewis
+  name: Lewis Carroll
+  location: Cheshire, England
+  url_full: False
+  url: False
+  bio: My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.
+  picture: assets/images/lewis.jpeg
+  facebook: False
+  twitter: False
+  cover: False
+abraham:
+  username: abraham
+  name: Abraham Lincoln
+  location: Kentucky, USA
+  url_full: False
+  url: False
+  bio: I was the 16th president of the USA until I was assassinated in April of 1865. I led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.
+  picture: assets/images/abraham.jpg
+  facebook: False
+  twitter: False
+  cover: False
+edgar:
+  username: edgar
+  name: Edgar Rice Burroughs
+  location: Chicago, Illinois
+  url_full: False
+  url: False
+  bio: I'm an American novelist, best known for my work writing about a brave jungle hero called Tarzan and his muse, Jane.
+  picture: assets/images/edgar.gif
+  facebook: False
+  twitter: False
+  cover: False
+martin:
+  username: martin
+  name: Martin Luther King
+  location: Memphis, Tennessee
+  url_full: False
+  url: False
+  bio: An American pastor, activist, humanitarian. People know me for leading the African-American Civil Rights movement using nonviolent civil disobedience.
+  picture: assets/images/martin.jpg
+  facebook: False
+  twitter: False
+  cover: False

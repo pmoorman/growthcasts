@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include new-web/head.html %}
+
+  <body class="blog-post">
+    {% include new-web/header.html %}
+
+    <section class="py-0">
+      <div class="container">
+
+        <div class="row position-relative align-items-center">
+
+          <div style="background: #fff; z-index: 1;" class="hero-text col-md-7 p-4">
+            <h4 style="font-size: 18px;" class="text-primary font-weight-bold">{{ page.tags }}</h4>
+            <h1 style="font-size: 46px; letter-spacing: 0px; line-height: 50px;" class="font-weight-bold">{{ page.title }}</h1>
+            <p style="font-size: 18px;">{{ page.subtitle }}</p>
+          </div>
+          <div class="col-md-9 offset-md-3">
+            <img class="img-fluid shadow-grey" src="{{ page.cover }}">
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
+          </div>
+          <div class="col-md-9">
+            {{ content }}
+
+            <div class="bg-grey p-4 p-md-5 mt-5">
+              <h4 class="font-weight-bold">
+                Join 15,281 others - our most popular course on growth marketing is now available for free
+              </h4>
+              <p>
+                Modern growth marketing & user acquisition techniques
+              </p>
+              <form class="form_box" name="blog-post" netlify>
+                <div class="input-group mb-3" >
+                  <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
+                  <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
+                  <div class="input-group-append">
+                    <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include new-web/footer.html %}
+  </body>
+</html>

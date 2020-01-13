@@ -1,12 +1,18 @@
 ---
-layout: post
-title:  <b>Mind state & pattern interrupts</b>
-layout: post
-date:   2018-11-23 12:12:11 -0600
+layout: pages/new-web/post
+current: post
+cover: /assets/images/blogpic5.jpg
+navigation: True
+title: Mind state & pattern interrupts
+subtitle: "3 little thought experiments, that immediately help you write better ads…"
+date: 2018-11-23 12:12:11
+tags: Copywriting
+class: post-template
+subclass: 'post'
+author: pieter
 ---
 
-##### *3 little thought experiments, that immediately help you write better ads…*
-
+<br>
 Here are the 3 questions:
 
 1. Assuming you have a Facebook account… *when exactly* do you scroll through your Facebook news feed?  —what “state of mind” are you in, when you’re on Facebook?
@@ -23,19 +29,19 @@ Here’s my guess…
 **Facebook**<br>
 The only likely reason why you’re on your Facebook news feed… is because you’re waiting for the bus, and bored out of your skull. Or maybe it’s 4:30pm at the office, and you need to stay till 5. You’re looking for a quick shot of entertainment, or anything to not be bored!! 
 <br>
-<blockquote><i>People are on Facebook because they’re bored</i></blockquote>
+<blockquote>People are on Facebook because they’re bored</blockquote>
 
 
 **Google**<br>
 If you search Google, it’s almost always because you’re in “research mode”. You need an answer to a question. Ideally, you’d be served a blog post or an article that gives you the exact answer you were looking for.
 <br>
-<blockquote><i>People are on Google because they need a answer—right now!</i></blockquote>
+<blockquote>People are on Google because they need a answer—right now!</blockquote>
 
 
 **Email**<br>
 When do you check your email? Maybe first thing in the morning, over a cup of coffee. Or maybe while you’re sitting in a taxi or metro, on the way to work. You also check email while you’re at the office, but your mind is numb and you don’t feel like doing anything “productive”.
 <br>
-<blockquote><i>People check their email in moments of “down time”, in-between more important things</i></blockquote>
+<blockquote>People check their email in moments of “down time”, in-between more important things</blockquote>
 
 
 See where I’m going at?
@@ -44,7 +50,7 @@ See where I’m going at?
 
 To write a successful ad, you need to match exactly against that mind state. No matter the platform you’re on—Facebook, Google, email or any other platform… 
 <br>
-<blockquote><b>Make sure you know what mind state they’re in</b></blockquote>
+<blockquote>Make sure you know what mind state they’re in</blockquote>
 
 
 Emails need to be “*easy to digest*”, and fun to read. So the next time they see your name pop up in their inbox they’ll think… “*let’s start with that one. That one’s probably fun!*”
@@ -74,6 +80,3 @@ But you see where I’m going at, right?
 **»Match their mind state«**
 
 Give them exactly what they want. It does wonders for “hooking” people… and it’s a great way to start building a connection based on relevancy & understanding.
-
-
-

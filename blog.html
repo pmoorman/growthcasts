@@ -1,0 +1,36 @@
+---
+title: Blog - Double
+layout: pages/new-web/blog
+current: home
+class: 'home-template'
+navigation: True
+---
+
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer" style="background-image:  url(/assets/images/blog-cover-2.jpg)">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                <img class="site-logo" src="/assets/images/double_logo_blog.png" alt="Double Blog"/>
+            </h1>
+            <h2 class="site-description">Growth marketing for startups</h2>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
+
+    </div>
+</main>

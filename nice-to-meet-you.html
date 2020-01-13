@@ -1,0 +1,53 @@
+---
+title: Nice to meet you
+layout: pages/new-web/default
+questions:
+  - What is your main reason for buying Elite? What do you hope to learn and achieve with the knowledge?
+  - What subject we've covered in the email course are you most interested in?
+  - What are you biggest doubts for joining Elite?
+  - What changes those doubts?
+---
+
+<section class="text-center font-weight-bold bg-primary py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        Success - Welcome inside this course!
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-0">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-2 ml-auto mr-auto">
+        <div class="bg-secondary shadow-primary p-3">
+          <p class="m-0"><b>Before we start...</b></p>
+        </div>
+      </div>
+      <div class="col-md-9">
+
+        <div class="position-relative bg-white shadow-grey p-5">
+
+          {% include new-web/form-1.html
+            form_name="nice-to-meet-you"
+            fields=page.questions
+            button_text="Submit Answers"
+            class="py-0" %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% capture pieterfooterinner %}
+  <a href="#" class="btn btn-primary btn-shadow">Open the course</a>
+{% endcapture %}
+
+{% include new-web/pieter-footer.html
+  title="Growth starts here"
+  lead="Time we explore the couse! Click hjere to get started."
+  content=pieterfooterinner
+  class="pt-5 pt-md-3" %}

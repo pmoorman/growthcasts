@@ -1,0 +1,101 @@
+---
+title: Success
+layout: pages/new-web/default
+hide_footer: true
+
+steps_carousel:
+  - title: Getting users matters
+    subtitle: "Day 1:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 2:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 3:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 1:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 2:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Getting users matters
+    subtitle: "Day 3:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+what_others_say:
+  - name: Frank Maat
+    position: Head IT @ MindSpace
+    image: /assets/images/new-web/testimonial_1.png
+    content: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
+
+  - name: Lilian Delacroix
+    position: Founder @ BeYourBest
+    image: /assets/images/new-web/testimonial_2.png
+    content: Was afraid it would only have growth hacking tricks, but it was something different. Completely changed my picture of marketing.
+---
+
+<section class="text-center font-weight-bold bg-primary py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        Success - Welcome inside this course!
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 px-0">
+  <div class="container">
+
+    {% include new-web/carousel-2.html
+      id="carousel-2"
+      items=page.steps_carousel %}
+
+  </div>
+</section>
+
+{% include new-web/text-with-striped-bg.html
+  text="Swipe to explore email course >>" %}
+
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 text-center">
+        <h2 class="pb-5">What others say:</h2>
+      </div>
+
+      {% for item in page.what_others_say %}
+      <div class="col-md-6 px-4 mb-5">
+        
+        {% include new-web/speech_bubble.html 
+          direction="bottom-left" 
+          class="slide-bottom mb-5" 
+          content=item.content %}
+
+        <div class="d-flex align-items-center slide-left">
+          <div class="image">
+            <img width="70" src="{{ item.image }}" />
+          </div>
+          <div class="text text-left ml-4">
+            <h4 class="mb-0"><b>{{ item.name }}</b></h4>
+            <p class="mb-0">{{ item.position }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pt-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="btn btn-primary btn-shadow">Join Now</a>
+      </div>
+    </div>
+  </div>
+</section>

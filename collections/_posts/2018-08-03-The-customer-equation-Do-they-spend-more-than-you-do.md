@@ -1,14 +1,21 @@
 ---
-layout: post
-title:  <b>The customer equation, Do they spend more than you do?</b>
-date:   2018-08-03 08:12:01 -0600
+layout: pages/new-web/post
+current: post
+cover: /assets/images/blogpic2.jpg
+navigation: True
+title: The customer equation, Do they spend more than you do?
+date: 2018-08-03 08:12:01
+tags: Data and Analytics
+class: post-template
+subclass: 'post'
+author: caspar
 ---
 
 Business try to make more money than they spend. More specifically, they try to get customers for less than they have to spend to acquire them. Sounds obvious, but for many businesses it’s hard to figure out how much they spend per customer. This spend is called the Customer Acquisition Cost and it’s closely linked to the LifeTime Value (LTV: click to read about that)
 
 The LTV is the value that one customer brings (on average). If you know the LTV of your customers, you can estimate how much you will be able to spend to acquire new ones. This simplified equation describes that relation:
 
-***(Marginal)Profit = LTV - CAC***
+<blockquote><i><b>(Marginal)Profit = LTV - CAC</b></i></blockquote>
 
 High-school math, just three terms, where we want the left side to be as high as possible. But the only thing we can control is the right side: the hard part.
 
@@ -21,14 +28,14 @@ Let me give you some example of business that have different LTV/CAC ratios:
 
 - SaaS rule of thumb: ±30% of LTV for acquisition
 - Physical businesses: ±1/4th of LTV for acquisition 
-- Double: ±80% CAC for LTV still work.
+- Growthcasts: ±80% CAC for LTV still work.
 
 
 ### Measure your CAC with all things considered.
 
 How do you measure your CAC properly? Keep in mind that you want to make a 'fully loaded’ calculation, with *all the costs* included. If you buy paid ads, the costs are obvious. But what about that content writer, do you include that? If those blogs bring in customers: Yes! And what about sales: if you do it yourself, include your salary. If you hire a sales team, include costs like the sales manager, the training, and the bonuses! 
 
-***You want all the costs that are included in acquiring 1 customer in your calculation.***
+<blockquote><i><b>You want all the costs that are included in acquiring 1 customer in your calculation.</b></i></blockquote>
 
 Once we have the basics down, it’s also a good idea to split the performance per marketing channel. Aggregate data hides the real insights: perhaps the Facebook ads you run perform (much) better than your Google ads (or the other way around), but if you dump them together under “paid ads”, you’d never know. If you split it out, you’ll get a better grip on the real cost of acquiring one additional customer through each channel. 
 
@@ -53,5 +60,3 @@ A better strategy would be to start with a direct-response channel and build an 
 ### NEXT STEPS
 
 Take out pen and paper and match your own LTV with your 'fully loaded' CAC and calculate the ideal LTV/CAC ratio. *Be aware*, match the right CAC with the right LTV: read more on that here.
-
-

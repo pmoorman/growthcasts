@@ -1,0 +1,133 @@
+---
+title: Elite
+layout: pages/new-web/sales
+---
+
+<main id="get-started">
+    <div id="top"></div>
+
+<div class="sections" id="intro">
+  {% for section in site.intro %}
+    <section class="section">
+      {{ section }}
+    </section>
+  {% endfor %}
+</div>
+
+<div class="sections sections--gray" id="course">
+  {% for module in site.course %}
+    <section class="section">
+      {{ module }}
+    </section>
+  {% endfor %}
+</div>
+
+<div class="sections" id="bonus">
+  {% for bonus in site.bonuses %}
+    {% assign i = forloop.index | modulo: 2 %}
+    <section class="section">
+      <div class="wrapper container container--large">
+        <div class="bonus {% if forloop.index == 3 %}bonus--first {% endif %} grid grid--space grid--middle grid--stackable {% if i == 0 %}grid--reversable {% endif %}">
+          {{ bonus }}
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+
+  <section class="section">
+    <div class="wrapper container container--large">
+      {% include buy-banner.html %}
+
+      <!--<div class="slider swiper-container jsSwiper1">
+        <div class="slider__wrapper swiper-wrapper">
+        {% for slide in site.slides %}
+          {{ slide }}
+        {% endfor %}
+      </div>
+
+        <div class="swiper-pagination jsSwiperPagination1 slider__pagination grid grid--gapeless grid--space"></div>
+      </div>
+    </div>-->
+    <center>
+    <img src="/assets/images/quickfix-testimonial.png" alt="" style="width:100%;height:auto;border:0;">
+  </center>
+  </section>
+</div>
+
+<section class="section section--gray pricing" id="pricing">
+  <div class="wrapper container container--xlarge">
+    {% include choose-plan.html %}
+  </div>
+
+  <div class="wrapper container container--large jsPricing1">
+    <div class="grid grid--stackable grid--center grid--middle">
+      {% for price in site.prices %}
+        <div class="grid__column">
+          <div class="price card card--white">
+            {{ price }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="sections" id="faq">
+  <section class="faq section">
+    {% include faq.html %}
+  </section>
+
+  <section class="section">
+    <div class="wrapper container container--xlarge">
+      <h2 class="ta-c h1">Here's what others say about us...</h2>
+
+      <div class="testimonials swiper-container jsSwiper2">
+        <div class="testimonials__slider swunderlineiper-wrapper">
+          {% for testimonial in site.testimonials %}
+            <div class="testimonials__slide card card--white swiper-slide">
+              {{ testimonial }}
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="swiper-pagination jsSwiperPagination2"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section" id="note">
+  {% for part in site.parts %}
+    {{ part }}
+  {% endfor %}
+
+  <div class="wrapper container container--large jsPricing2">
+    <div class="grid grid--stackable grid--center grid--middle">
+      {% for price in site.prices %}
+        <div class="grid__column">
+          <div class="price card card--white">
+            {{ price }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% for video in site.videos %}
+<div class="modal jsModal" id="{{ video.video_id }}">
+  <div class="modal__background jsModalBg"></div>
+
+  <div class="modal__content">
+    <div class="modal__video">
+      <iframe src="{{ video.video_link }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</main>
+
+{% include discount.html %}
+
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+

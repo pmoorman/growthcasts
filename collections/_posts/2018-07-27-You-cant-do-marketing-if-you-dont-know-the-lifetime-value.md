@@ -1,7 +1,14 @@
 ---
-layout: post
-title:  <b>You can’t do marketing if you don’t know the lifetime value of your customers</b>
-date:   2018-07-27 11:10:11 -0600
+layout: pages/new-web/post
+current: post
+cover: /assets/images/blogpic1.jpeg
+navigation: True
+title: You can’t do marketing if you don’t know the lifetime value of your customers
+date: 2018-07-27 11:10:11
+tags: Data and Analytics
+class: post-template
+subclass: 'post'
+author: caspar
 ---
 
 Calculating the lifetime value of your customers is an essential step in (data-driven) marketing.
@@ -12,7 +19,7 @@ Well, think of a toothbrush company that sells its toothbrushes at a price of 2 
  
 To put it simply
  
-***‘If you don’t know what you can spend, you can’t judge if campaigns are working or not, and thus you can’t scale’***
+<blockquote><i><b>‘If you don’t know what you can spend, you can’t judge if campaigns are working or not, and thus you can’t scale’</b></i></blockquote>
 
 It sounds a bit stupid, right?
 
@@ -20,7 +27,7 @@ To put it in perspective, let’s take an actual company as an example: UBER. Th
 
 Let’s say on average an UBER customer pays 10 dollars per use and uses the app 8 times, resulting in a LTV of 80$. Comparing this to the consumers of  toothbrush company, which have a LVT of 2$, UBER could easily budget way more. Logical right?
 
-***“Depending on the LVT you should choose your marketing strategies”***
+<blockquote><i><b>“Depending on the LVT you should choose your marketing strategies”</b></i></blockquote>
  
 This illustrates how important it is to know the Lifetime value of paying customers and thus how much you can spend on your marketing strategies and still break-even.
  
@@ -35,7 +42,7 @@ But how can you know?
            
 This is the key: you want to accurately calculate your customers Lifetime value. Knowing that, you can feasibly choose which marketing channel you want to pick and how much you can spend on it.
  
-***You are probably thinking right know: ‘But isn’t every customer totally unique?’***
+<blockquote><i><b>You are probably thinking right know: ‘But isn’t every customer totally unique?’</b></i></blockquote>
 
 Well they are! That why it is so important to work with averages. Knowing the average makes way more sense because at the end you are choosing strategies  not based on individuals but on the sum of your customers.
  
@@ -59,7 +66,7 @@ So the above game plan does not fit well in this situation; a customer being bro
  
 Take away leads from different channels are almost certainly of different quality and therefore different value.
  
-***So, you have to split your costs and Lifetime Values per channel.***
+<blockquote><i><b>So, you have to split your costs and Lifetime Values per channel.</b></i></blockquote>
 
 This makes sense, right? Just like UBER splitting up their LVT’s per city and because of that using different marketing strategies.
  
@@ -68,4 +75,3 @@ This makes sense, right? Just like UBER splitting up their LVT’s per city and 
 - A business needs to make money, so you can’t sustainably spend more than you earn, duh!
 - Having accurate figures, such as LTV, allows your marketing team to make far smarter decisions and be way more efficient.
 - These tactics will be a great start to making your enterprise become more data-driven in marketing
-
