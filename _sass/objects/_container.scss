@@ -8,7 +8,7 @@
 
   @each $size, $width in $breakpoints {
     &--#{$size} {
-      max-width: $width;
+      max-width: $width!important;
     }
   }
 }
