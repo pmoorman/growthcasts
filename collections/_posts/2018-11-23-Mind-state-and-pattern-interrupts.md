@@ -4,7 +4,7 @@ current: post
 cover: /assets/images/blogpic5.jpg
 navigation: True
 title: Mind state & pattern interrupts
-subtitle: "*3 little thought experiments, that immediately help you write better ads…"
+subtitle: "3 little thought experiments, that immediately help you write better ads…"
 date: 2018-11-23 12:12:11
 tags: Copywriting
 class: post-template
@@ -12,7 +12,6 @@ subclass: 'post'
 author: pieter
 ---
 
-#### *3 little thought experiments, that immediately help you write better ads…*
 <br>
 Here are the 3 questions:
 
