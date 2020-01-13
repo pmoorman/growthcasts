@@ -3,7 +3,9 @@ id: string
 subtitle: string
 title: string
 button_text: string
+drip_id: string
 -->
+
 <div id="{{ include.id }}" class="modal bs fade" role="dialog" style="padding: 0;">
   <div class="modal-dialog modal-dialog-centered m-0 m-md-auto">
 
@@ -19,10 +21,9 @@ button_text: string
         <h1 style="font-size: 24px; letter-spacing: 2px; line-height: 35px;" class="font-weight-bold">{{ include.title }}</h1>
 
         <div class="py-4">
-          <form name="{{ include.form_name }}" netlify>
-            <input type="hidden"  name="page_title" value="{{ page.title }}">
-            <input style="border: 0; height: 50px;" type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
-            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" type="submit">{{ include.button_text }}</button>
+          <form action="https://www.getdrip.com/forms/{{ include.drip_id }}/submissions" method="post" data-drip-embedded-form="{{ include.drip_id }}">
+            <input style="border: 0; height: 50px;" type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" type="submit" data-drip-attribute="sign-up-button">{{ include.button_text }}</button>
           </form>
         </form>
       </div>
