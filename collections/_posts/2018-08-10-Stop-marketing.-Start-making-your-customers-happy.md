@@ -5,7 +5,7 @@ cover: /assets/images/blogpic3.jpg
 navigation: True
 title: Stop marketing. Start making your customers happy.
 date: 2018-08-10 09:15:41
-tags: Onboarding and Retention
+tags: Onboarding and Retention
 class: post-template
 subclass: 'post'
 author: caspar

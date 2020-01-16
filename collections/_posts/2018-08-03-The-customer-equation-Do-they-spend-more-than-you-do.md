@@ -5,7 +5,7 @@ cover: /assets/images/blogpic2.jpg
 navigation: True
 title: The customer equation, Do they spend more than you do?
 date: 2018-08-03 08:12:01
-tags: Data and Analytics
+tags: [Data and Analytics]
 class: post-template
 subclass: 'post'
 author: caspar

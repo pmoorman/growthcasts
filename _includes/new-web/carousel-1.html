@@ -14,17 +14,18 @@ items: list
   {% for item in include.items %}
   {% if item.image_position == 'left' %}
   {% assign image_position = 'left: -20px;' %}
+  {% assign height_position = 'height: auto;' %}
   {% else %}
   {% assign image_position = 'right: 20px;' %}
   {% endif %}
   <div class="shadow-grey bg-white border-grey m-4 position-relative p-4">
-    <div class="position-absolute" style="width: 50px; top: -15px; {{ image_position }}">
-      <img class="img-fluid" src="{{ item.image }}">
+    <div class="position-absolute" style="width: 50px; top: -25px; {{ image_position }}">
+      <img class="img-fluid " src="{{ item.image }}">
     </div>
 
     <div>
       <p class="pt-2 mb-0 font-weight-bold">{{ item.title }}</p>
-      <p style="color: #d5d7e1;"><strong>{{ item.subtitle }}</strong></p>
+      <p style="color: #d5d7e1;">{{ item.subtitle }}</p>
       <p>{{ item.body }}</p>
     </div>
   </div>
