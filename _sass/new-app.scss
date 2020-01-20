@@ -75,6 +75,10 @@ body {
   color: #181d33;
   font-family: Poppins;
   overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 28px;
 }
 
 body:not(.blog) {
@@ -161,6 +165,12 @@ footer {
 
 *:focus {
   outline: 0;
+}
+
+li {
+  margin: .5em 0;
+  padding-left: .3em;
+  line-height: 1.6em;
 }
 
 .container.container-wider {
