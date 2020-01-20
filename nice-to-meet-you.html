@@ -18,23 +18,23 @@ questions:
   </div>
 </section>
 
-<section class="pb-0">
+<section class="pb-0 pt-5 mt-5">
   <div class="container">
     <div class="row justify-content-between">
-      <div class="col-md-2 ml-auto mr-auto">
-        <div class="bg-secondary shadow-primary p-3 square-box">
+      <div class="col-md-2">
+        <div class="bg-secondary shadow-primary p-3 square-box d-flex align-items-center">
           <p class="m-0"><b>Tell us about your business</b></p>
         </div>
       </div>
       <div class="col-md-9">
 
-        <div class="position-relative bg-white shadow-grey p-5">
+        <div class="position-relative bg-white shadow-grey px-0 pt-5 pb-5 pl-md-5 pr-md-5">
 
           {% include new-web/form-1.html
             form_name="nice-to-meet-you"
             fields=page.questions
             button_text="Submit Answers"
-            class="py-0" %}
+            class="py-0 px-0 px-md-5" %}
 
         </div>
       </div>
@@ -43,11 +43,11 @@ questions:
 </section>
 
 {% capture pieterfooterinner %}
-  <a href="#" class="btn btn-primary btn-shadow">Open the course</a>
+  <a href="/" class="btn btn-primary btn-shadow">Back to the site</a>
 {% endcapture %}
 
 {% include new-web/pieter-footer.html
-  title="Growth starts here"
-  lead="Time we explore the couse! Click here to get started."
+  title="Nice to meet you"
+  lead="If you made it here, I'm sure you're dedicated in growing your business. I'd love to help you out with that, so please tell me a little bit more about that!"
   content=pieterfooterinner
   class="pt-5 pt-md-3" %}
