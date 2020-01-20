@@ -130,6 +130,8 @@ p.lead {
   line-height: 32px;
 }
 
+input,
+button,
 textarea:hover,
 input:hover,
 textarea:active,
@@ -144,6 +146,21 @@ label:focus,
 .btn.active {
   outline: 0px !important;
   -webkit-appearance: none;
+  border: 0!important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
   box-shadow: none !important;
 }
 
@@ -181,15 +198,17 @@ li {
   font-family: "Noto Serif JP", serif !important;
 }
 
-.btn-shadow {
+button.btn-shadow,
+a.btn-shadow {
   box-shadow: 14px 14px 0 0 #d4d7e1;
-  border-radius: 0;
+  border-radius: 0!important;
   font-weight: 700;
   padding: 15px 30px;
 }
 
-.btn-shadow:hover {
-  box-shadow: none;
+button.btn-shadow:hover,
+a.btn-shadow:hover {
+  box-shadow: none!important;
 }
 
 .max-w-95 {
