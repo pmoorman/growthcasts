@@ -1411,18 +1411,23 @@ section#packages {
 
 // Square box
 .square-box {
-  min-height: 130px;
-  min-width: 130px;
-
-  @media only screen and (max-width: 499px) {
-    min-height: auto;
-    min-width: auto;
-  }
+  height: 130px;
+  width: 130px;
 }
 
 // carousel
 .slick-prev:before, .slick-next:before {
   color: $primary-color!important;
+}
+
+.notification-bar {
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
 }
 
 // OVERRIDE HOMPAGE FONT SIZES

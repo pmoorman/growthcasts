@@ -8,7 +8,7 @@ questions:
   - What changes those doubts?
 ---
 
-<section class="text-center font-weight-bold bg-primary py-3">
+<section class="notification-bar">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -18,23 +18,23 @@ questions:
   </div>
 </section>
 
-<section class="pb-0">
+<section class="pb-0 pt-5 mt-5">
   <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-md-2 ml-auto mr-auto">
-        <div class="bg-secondary shadow-primary p-3 square-box">
+    <div class="row justify-content-between">
+      <div class="col-md-2">
+        <div class="d-flex align-items-center bg-secondary shadow-primary p-3 square-box">
           <p class="m-0"><b>Before we start...</b></p>
         </div>
       </div>
       <div class="col-md-9">
 
-        <div class="position-relative bg-white shadow-grey p-5">
+        <div class="position-relative bg-white shadow-grey px-0 pt-5 pb-5 pl-md-5 pr-md-5">
 
           {% include new-web/form-1.html
             form_name="welcome-to-elite"
             fields=page.questions
-            button_text="Submit Answers"
-            class="py-0" %}
+            button_text="Submit Answers >>"
+            class="py-0 px-0 px-md-5" %}
 
         </div>
       </div>
@@ -43,11 +43,12 @@ questions:
 </section>
 
 {% capture pieterfooterinner %}
-  <a href="#" class="btn btn-primary btn-shadow">Open the course</a>
+  <a href="#" style="padding: 25px 70px;" class="btn btn-primary btn-shadow">Open the course >></a>
 {% endcapture %}
 
 {% include new-web/pieter-footer.html
   title="Growth starts here"
+  hide_name="true"
   lead="Time we explore the course! Click here to get started."
   content=pieterfooterinner
   class="pt-5 pt-md-3" %}

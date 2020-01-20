@@ -23,7 +23,7 @@ fields: list
           <textarea name="{{ item | replace: ' ', '_' }}" style="border: 0;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
         </div>
         {% endfor %}
-        <div class="mt-4 text-center">
+        <div class="mt-4">
           <button type="submit" class="btn btn-primary btn-shadow">{{ include.button_text | default "submit" }}</button>
         </div>
       </form>

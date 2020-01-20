@@ -19,10 +19,12 @@ content: inner html
           <img class="img-fluid" src="/assets/images/new-web/pieter_mobile.png" />
         </div>
 
+        {% unless include.hide_name %}
         <div class="person mb-4">
           <h4 class="mb-0"><b>Pieter Moorman</b></h4>
           <p>Partner / consultant</p>
         </div>
+        {% endunless %}
 
         {{ include.content }}
 
