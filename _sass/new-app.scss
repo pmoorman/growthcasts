@@ -111,6 +111,36 @@ body:not(.blog) {
   }
 }
 
+body:not(.blog):not(.homepage) {
+  h2 {
+    @media only screen and (max-width: 720px) {
+      font-size: 48px;
+      line-height: 1.13;
+      letter-spacing: -2px;
+    }
+  }
+
+  h3 {
+    font-size: 42px;
+    line-height: 1.24;
+    letter-spacing: -0.43px;
+
+    @media only screen and (max-width: 720px) {
+      font-size: 28px;
+      line-height: 1.21;
+      letter-spacing: 0.9px;
+      font-weight: normal;
+    }
+  }
+
+  p.lead {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.38;
+    letter-spacing: 0.81px;
+  }
+}
+
 b,
 strong {
   font-weight: 600;
@@ -1358,7 +1388,7 @@ section#packages {
 }
 
 .border-grey {
-  border: 1px solid #eff0f6;
+  border: 2px solid #eff0f6;
 }
 
 // VIDEO WRAPPER
@@ -1408,19 +1438,16 @@ section#packages {
 // Blog single
 //
 .blog-post {
-  h3 {
-    font-size: 38px!important;
-    font-weight: bold!important;
-    margin-bottom: 25px;
-  }
   blockquote {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 300;
     letter-spacing: 1.31px;
     line-height: 48px;
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+    line-height: 1.46;
+    letter-spacing: 1.5px;
   }
   .hero-text {
     position: absolute;
