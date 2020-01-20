@@ -1,8 +1,10 @@
 <!-- vars
 id: string (optional). Needed if multiple carousels on the same page
+auto_height: boolean (optional)
 items: list
   - title: Lillian Goodwin
     subtitle: Founder
+    
     body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
     image: /assets/images/new-web/testimonial_1.png
     image_position: left
@@ -10,17 +12,16 @@ items: list
 
 {% assign id = include.id | default 'carousel' %}
 
-<div id="{{ id }}">
+<div class="carousel-1" id="{{ id }}">
   {% for item in include.items %}
   {% if item.image_position == 'left' %}
   {% assign image_position = 'left: -20px;' %}
-  {% assign height_position = 'height: auto;' %}
   {% else %}
   {% assign image_position = 'right: 20px;' %}
   {% endif %}
-  <div class="shadow-grey bg-white border-grey m-4 position-relative p-4">
+  <div class="shadow-grey bg-white border-grey m-4 position-relative p-4" {% if include.auto_height %}style="height: 100%!important;"{% endif %}>
     <div class="position-absolute" style="width: 50px; top: -25px; {{ image_position }}">
-      <img class="img-fluid " src="{{ item.image }}">
+      <img class="avatar-img img-fluid" src="{{ item.image }}">
     </div>
 
     <div>
@@ -31,6 +32,13 @@ items: list
   </div>
   {% endfor %}
 </div>
+
+<style>
+  .carousel-1 .avatar-img {
+    border: 4px solid #fff;
+    border-radius: 100%;
+  }
+</style>
 <script>
   $('#{{id}}').slick({ 
     mobileFirst:true,
