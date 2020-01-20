@@ -2,6 +2,7 @@
 button_text: string (optional)
 form_action: string (optional)
 form_name: string
+form_honeypot: string
 fields: list
   - "question 1"
   - "question 2"
@@ -10,17 +11,23 @@ fields: list
   <div class="container">
     <div class="row">
       <form 
-        netlify
-        class="col"
         {% if include.form_action %}action="{{ include.form_action }}"{% endif %}
+        {% if include.form_honeypot %}data-netlify-honeypot="{{ include.form_honeypot }}"{% endif %}
+        data-netlify
+        class="col"
         name="{{ include.form_name }}">
+
+        {% if include.form_honeypot %}
+        <input type="hidden" type="text" name="{{ include.form_honeypot }}">
+        {% endif %}
+
         {% for item in include.fields %}
         {% if forloop.index != 1 %}
         <hr>
         {% endif %}
         <div>
           <div><b>{{ item }}</b></div>
-          <textarea name="{{ item | replace: ' ', '_' }}" style="border: 0;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
+          <textarea name="{{ item | replace: ' ', '_' }}" style="border: 0; font-weight: 300;" rows="4" class="px-0 form-control" type="text" placeholder="Type your answer here..."></textarea>
         </div>
         {% endfor %}
         <div class="mt-4">

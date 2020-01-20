@@ -18,7 +18,7 @@ questions:
   </div>
 </section>
 
-<section class="pb-0 pt-5 mt-5">
+<section class="form-section" class="pb-0 pt-5 mt-5">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-md-2">
@@ -32,6 +32,7 @@ questions:
 
           {% include new-web/form-1.html
             form_name="welcome-to-elite"
+            form_honeypot="name"
             fields=page.questions
             button_text="Submit Answers >>"
             class="py-0 px-0 px-md-5" %}
@@ -41,6 +42,17 @@ questions:
     </div>
   </div>
 </section>
+
+<script>
+  $("form[name='welcome-to-elite']").submit(function(e) {
+    e.preventDefault();
+  
+    const $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      $('.form-section').hide();
+    });
+  });
+</script>
 
 {% capture pieterfooterinner %}
   <a href="#" style="padding: 25px 70px;" class="btn btn-primary btn-shadow">Open the course >></a>
