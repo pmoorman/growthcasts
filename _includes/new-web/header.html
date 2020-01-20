@@ -1,10 +1,15 @@
 <header class="pt-5 pb-5">
   <div class="container">
-    <nav class="d-flex justify-content-between align-items-center">
+    <nav class="d-flex
+      justify-content-{% unless page.header_logo_only %}between{% else %}center{% endunless %}
+      align-items-center">
       <div style="width: 120px">{% include new-web/animated-logo.html %}</div>
+
+      {% unless page.header_logo_only %}
       <div class="menu">
         <a href="mailto:pieter@double-agency.com" class="text-secondary"><b>Contact</b></a>
       </div>
+      {% endunless %}
     </nav>
   </div>
 </header>
