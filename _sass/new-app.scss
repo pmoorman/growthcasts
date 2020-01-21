@@ -1465,6 +1465,14 @@ section#packages {
     }
   }
 
+  .date {
+    color: #a1a6bc;
+    margin-left: -65px;
+    @media only screen and (max-width: 720px) {
+      margin-left: 0;
+    }
+  }
+
   blockquote,
   .pre-footer {
     margin-left: -50px;

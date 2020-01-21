@@ -28,7 +28,7 @@
 
         <div class="row position-relative align-items-center">
 
-          <div style="background: #fff; z-index: 1;" class="hero-text col-md-6 p-4">
+          <div style="background: #fff; z-index: 1;" class="hero-text col-md-6 p-4 pt-md-4 pr-md-4 pb-md-4 pl-md-0">
             <p class="text-primary font-weight-bold"><strong>{{ page.tags }}</strong></h4>
             <h3 class="font-weight-bold mb-3">{{ page.title }}</h3>
             <p class="lead">{{ page.subtitle }}</p>
@@ -45,9 +45,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <p class="date" style="color: #a1a6bc;">{{ page.date | date: '%d %B %Y'}}</p>
+            <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
           </div>
-          <div class="col-md-6 px-0">
+          <div class="col-md-6 px-md-0">
             {{ content }}
 
             <div class="pre-footer bg-grey p-4 p-md-5 mt-5">
