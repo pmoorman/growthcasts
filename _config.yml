@@ -33,6 +33,7 @@ collections_dir: collections
 collections:
   posts:
     output: true
+    permalink: /blog/:slug
   leadgen:
     output: true
     permalink: /:slug
