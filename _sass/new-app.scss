@@ -133,6 +133,20 @@ body:not(.blog):not(.homepage) {
     }
   }
 
+  h4 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+  }
+
+  h5 {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+  }
+
   p.lead {
     font-size: 26px;
     font-weight: 300;
