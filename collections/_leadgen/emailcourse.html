@@ -2,11 +2,12 @@
 title: Email course
 layout: pages/new-web/default
 hide_footer: true
+header_logo_only: false
 
 tagline: "Join 15,271+ others:"
 intro: "Modern growth marketing & user acquisition techniques"
 top_image: /assets/images/napkin1.png
-learn_how_to_title: Learn how to
+learn_how_to_title: "Learn how to:"
 learn_how_to_items:
   - "**Design sales machines** that work on autopilot"
   - "Learn the **6-step framework** to unlock virtually limitless growth"
@@ -80,7 +81,7 @@ steps_carousel:
   </div>
 </section>
 
-<section class="text-center font-weight-bold bg-primary py-3">
+<section class="notification-bar">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -91,7 +92,7 @@ steps_carousel:
 </section>
 
 <section class="py-5">
-  <div class="container text-left">
+  <div class="container text-left text-md-center">
     <div class="row">
       <div class="col">
         <h3>{{ page.intro }}</h3>
@@ -127,6 +128,7 @@ steps_carousel:
   <div class="container">
     {% include new-web/carousel-1.html
       id="carousel-1"
+      auto_height="true"
       items=page.carousel_items %}
   </div>
 </section>
@@ -135,7 +137,7 @@ steps_carousel:
   <div class="container">
 
     <div class="row">
-      <div class="col text-center text-md-left">
+      <div class="col text-center text-left text-md-center">
         <h3>15 step-by-step lessons on modern startup growth:</h3>
       </div>
     </div>
@@ -174,6 +176,7 @@ steps_carousel:
 {% include new-web/email-submit-modal.html 
   id="join-modal"
   drip_id="277204824"
+  form_label="Email address:"
   title="14 step-by-step lessons on modern startup growth:"
   subtitle="Email course"
   button_text="Get the email course >>" %}

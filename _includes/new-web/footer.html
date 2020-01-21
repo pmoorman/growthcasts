@@ -21,7 +21,7 @@
     />
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 blog-posts">
         <h4 class="mb-4 text-light">Blog</h4>
 
         {% for post in site.posts limit:5 %}
@@ -29,7 +29,9 @@
           href="{{ post.url }}"
           class="text-light d-flex align-items-center mb-4"
         >
-          <img width="72" src="{{ post.cover }}" />
+          <div class="image">
+            <img src="{{ post.cover }}" />
+          </div>
           <p class="mb-0 ml-3">{{ post.title }}</p>
         </a>
         {% endfor %}

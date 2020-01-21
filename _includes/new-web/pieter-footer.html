@@ -8,9 +8,9 @@ content: inner html
   <div class="container">
     <div class="row align-items-center">
 
-      <div class="col-md-7 mb-5">
+      <div class="col-md-7 px-0 px-md-1">
 
-        <div class="mb-0 mb-md-5">
+        <div class="mb-0 mb-md-5 px-1 px-md-0">
           <h2>{{ include.title }}</h2>
           <p>{{ include.lead }}</p>
         </div>
@@ -19,10 +19,12 @@ content: inner html
           <img class="img-fluid" src="/assets/images/new-web/pieter_mobile.png" />
         </div>
 
+        {% unless include.hide_name %}
         <div class="person mb-4">
           <h4 class="mb-0"><b>Pieter Moorman</b></h4>
           <p>Partner / consultant</p>
         </div>
+        {% endunless %}
 
         {{ include.content }}
 
