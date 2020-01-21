@@ -15,11 +15,12 @@ Business try to make more money than they spend. More specifically, they try to 
 
 The LTV is the value that one customer brings (on average). If you know the LTV of your customers, you can estimate how much you will be able to spend to acquire new ones. This simplified equation describes that relation:
 
-<blockquote><i><b>(Marginal)Profit = LTV - CAC</b></i></blockquote>
+<blockquote>(Marginal)Profit = LTV - CAC</blockquote>
 
 High-school math, just three terms, where we want the left side to be as high as possible. But the only thing we can control is the right side: the hard part.
 
-### How much do you allow your CAC to be?
+
+#### **How much do you allow your CAC to be?**
 
 As discussed in our other post, the LTV can differ a lot per company. Well, this time it ain’t gonna be different. Often CAC differs even more per company. It depends on many things, like how much profit you want to make. For early-stage startups, the profit margin can be very low (or even negative) in order to build a user base and gain market share. While for others profit is more important, if you have a lot of demanding shareholders, for instance. 
 
@@ -31,11 +32,11 @@ Let me give you some example of business that have different LTV/CAC ratios:
 - Growthcasts: ±80% CAC for LTV still work.
 
 
-### Measure your CAC with all things considered.
+#### **Measure your CAC with all things considered.**
 
 How do you measure your CAC properly? Keep in mind that you want to make a 'fully loaded’ calculation, with *all the costs* included. If you buy paid ads, the costs are obvious. But what about that content writer, do you include that? If those blogs bring in customers: Yes! And what about sales: if you do it yourself, include your salary. If you hire a sales team, include costs like the sales manager, the training, and the bonuses! 
 
-<blockquote><i><b>You want all the costs that are included in acquiring 1 customer in your calculation.</b></i></blockquote>
+<blockquote>You want all the costs that are included in acquiring 1 customer in your calculation.</blockquote>
 
 Once we have the basics down, it’s also a good idea to split the performance per marketing channel. Aggregate data hides the real insights: perhaps the Facebook ads you run perform (much) better than your Google ads (or the other way around), but if you dump them together under “paid ads”, you’d never know. If you split it out, you’ll get a better grip on the real cost of acquiring one additional customer through each channel. 
 
@@ -46,7 +47,8 @@ Let’s look at an example of a hard to measure marketing strategy to illustrate
 A better strategy would be to start with a direct-response channel and build an initial user base. And than try to create some hype or friction with a branding campaign, that starts with your core customer segment. You could clearly measure your CAC in every stage, hence significantly improve your chances for success.
 
 
-### The takeaways:
+#### **The takeaways:**
+
 - Find your the LTV of your customers
   - To measure the success of a marketing campaign, you need to know how much a customer is worth. Read more here.
 - Estimate the LTV/CAC ratio of your business
@@ -57,6 +59,6 @@ A better strategy would be to start with a direct-response channel and build an 
   - Different channels have different cost structures, aggregate calculations don’t mean anything is one performs very different than the other.
 
 
-### NEXT STEPS
+#### **Next Steps**
 
 Take out pen and paper and match your own LTV with your 'fully loaded' CAC and calculate the ideal LTV/CAC ratio. *Be aware*, match the right CAC with the right LTV: read more on that here.

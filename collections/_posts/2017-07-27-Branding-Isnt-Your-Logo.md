@@ -17,7 +17,8 @@ Yet, branding is an incredibly powerful vector in your overall growth mix.
 
 But here’s the problem…
 
-## Entrepreneurs misunderstand what branding is
+
+#### **Entrepreneurs misunderstand what branding is**
 
 When most startups decide they need to do a “rebranding”, they focus on a new logo, and maybe style directions like fonts, colors, and other such matters.
 
@@ -28,7 +29,8 @@ That confusion of terms is widespread, and regretful… because we’ve just red
 
 So what’s branding then?
 
-> ### *Branding is about owning a concept or a “name space” in a prospect’s mind*
+
+#### **Branding is about owning a concept or a “name space” in a prospect’s mind**
 
 The most powerful concept in marketing is owning a word in the prospect’s mind. It connects your product to an identity. For instance…
 
@@ -51,7 +53,8 @@ But in either case, someone owns that concept.
 
 Okay, let’s move on…
 
-## How you can improve your branding
+
+#### **How you can improve your branding**
 
 The first thing to realize, is that against the previous definition, your logo won’t make a massive difference to your brand. I don’t know what the logo of that cocktail place looks like… and frankly, I don’t care.
 
