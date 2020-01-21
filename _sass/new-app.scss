@@ -1448,13 +1448,20 @@ section#packages {
 //
 // SLICK
 //
-// .slick-track {
-//   display: flex !important;
-// }
+.slick-track {
+  display: flex !important;
+}
 
-// .slick-slide {
-//   height: inherit !important;
-// }
+.slick-slide {
+  height: inherit !important;
+  min-width: 0px;
+}
+
+.slick-initialized {
+  display: block;
+  height: 100%; 
+  width: 100% !important; 
+}
 
 //
 // Blog single
