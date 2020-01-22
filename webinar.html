@@ -19,7 +19,7 @@ webinar_items:
 <section class="pb-0 pt-4">
   <div class="container container-wider">
     <div class="row">
-      <div class="col-md-3 pr-md-0">
+      <div class="col-md-3 pr-md-0 order-2 order-md-1">
         <div class="d-flex flex-column justify-content-between bg-grey p-4 h-100">
           <div>
             <h5><strong>{{ page.intro_title }}</strong></h5>
@@ -30,8 +30,8 @@ webinar_items:
           </a>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="video-wrapper">
+      <div class="col-md-9 order-1 order-md-2 mb-4 mb-md-0">
+        <div class="video-wrapper shadow-secondary">
           <iframe src="{{ page.intro_video }}?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>

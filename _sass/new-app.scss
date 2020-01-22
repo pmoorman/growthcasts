@@ -1405,6 +1405,10 @@ section#packages {
   box-shadow: 14px 14px 0 0 $primary-color;
 }
 
+.shadow-secondary {
+  box-shadow: 14px 14px 0 0 $secondary-color;
+}
+
 .shadow-grey {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
 }
