@@ -1,5 +1,6 @@
 <!-- vars
 id: string (optional). Needed if multiple carousels on the same page
+hide_next_slide: boolean (optional)
 items: list
   - title: Lillian Goodwin
     subtitle: Founder
@@ -25,6 +26,7 @@ items: list
 <script>
   $('#{{id}}').slick({ 
     mobileFirst:true,
+    centerMode: !{{ include.hide_next_slide }},
     centerPadding: '20px', 
     slidesToShow: 1,
     arrows: false,

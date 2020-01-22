@@ -1,6 +1,7 @@
 <!-- vars
 id: string (optional). Needed if multiple carousels on the same page
 auto_height: boolean (optional)
+hide_next_slide: boolean (optional)
 items: list
   - title: Lillian Goodwin
     subtitle: Founder
@@ -39,10 +40,12 @@ items: list
     border-radius: 100%;
   }
 </style>
+
 <script>
   $('#{{id}}').slick({ 
     mobileFirst:true,
-    centerPadding: '20px', 
+    centerMode: !{{ include.hide_next_slide }},
+    centerPadding: '30px',
     slidesToShow: 1,
     arrows: false,
     dots: true,
