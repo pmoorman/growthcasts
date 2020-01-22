@@ -8,6 +8,11 @@ items: list
 -->
 
 {% assign id = include.id | default 'carousel' %}
+{% if include.hide_next_slide %}
+{% assign hide_next_slide = include.hide_next_slide %}
+{% else %}
+{% assign hide_next_slide = 'false' %}
+{% endif %}
 
 <div id="{{ id }}">
   {% for item in include.items %}
@@ -26,7 +31,7 @@ items: list
 <script>
   $('#{{id}}').slick({ 
     mobileFirst:true,
-    centerMode: !{{ include.hide_next_slide }},
+    centerMode: !{{ hide_next_slide }},
     centerPadding: '20px', 
     slidesToShow: 1,
     arrows: false,
