@@ -12,12 +12,14 @@
           flex-md-row
           justify-content-between
           align-items-center">
-          <div class="mb-4 mb-md-0" style="width: 120px">{% include new-web/animated-logo.html %}</div>
+          <div class="mb-4 mb-md-0" style="width: 120px">
+            <a href="/">{% include new-web/animated-logo.html %}</a>
+          </div>
     
           <div class="menu d-flex">
-            <a href="/academy" class="text-secondary mx-2 d-flex"><b>Academy</b></a>
-            <a href="/blog" class="text-secondary mx-2 d-flex"><b>Blog</b></a>
-            <a href="mailto:pieter@double-agency.com" class="text-secondary mx-2 d-flex"><b>Contact</b></a>
+            <a href="/academy" class="text-secondary mx-3 d-flex"><b>Academy</b></a>
+            <a href="/blog" class="text-secondary mx-3 d-flex"><b>Blog</b></a>
+            <a href="mailto:pieter@double-agency.com" class="text-secondary mx-3 d-flex"><b>Contact</b></a>
           </div>
         </nav>
       </div>
@@ -28,12 +30,12 @@
 
         <div class="row position-relative align-items-center">
 
-          <div style="background: #fff; z-index: 1;" class="hero-text col-md-7 p-4">
+          <div style="background: #fff; z-index: 1;" class="hero-text col-md-6 p-4 pt-md-4 pr-md-4 pb-md-4 pl-md-0">
             <p class="text-primary font-weight-bold"><strong>{{ page.tags }}</strong></h4>
-            <h3 class="font-weight-bold mb-3">{{ page.title }}</h3>
+            <h3 class="font-weight-bold mb-3 mt-0">{{ page.title }}</h3>
             <p class="lead">{{ page.subtitle }}</p>
           </div>
-          <div class="col-md-9 offset-md-3">
+          <div class="col-md-9 offset-md-3 cover-image">
             <img class="img-fluid shadow-grey" src="{{ page.cover }}">
           </div>
         </div>
@@ -45,15 +47,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <p class="date" style="color: #a1a6bc;">{{ page.date | date: '%d %B %Y'}}</p>
+            <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-7 px-md-0">
             {{ content }}
 
             <div class="pre-footer bg-grey p-4 p-md-5 mt-5">
-              <h4 class="font-weight-bold">
+              <h5 class="font-weight-bold mt-0">
                 Join 15,281 others - our most popular course on growth marketing is now available for free
-              </h4>
+              </h5>
               <p>
                 Modern growth marketing & user acquisition techniques
               </p>

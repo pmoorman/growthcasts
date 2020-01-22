@@ -10,21 +10,33 @@ font_size: string (optional)
   <div class="container">
     <div class="col">
       <div class="position-relative">
-        <img style="position: absolute; z-index: -1; left: 0; top: 50%; height: 15px; transform: translateY(-50%);" class="img-fluid"
+        <img class="striped-bg img-fluid"
           src="/assets/images/new-web/striped_bg.jpg" />
-          <div class="text-center">
-            <p>
-              <span style="
-                font-weight: {{ font-weight }}; 
-                {% if include.font_size %}font-size: {{ include.font_size }}px;{% endif %}
-                {% if include.font_size %}line-height: {{ include.font_size | plus: 5 }}px;{% endif %} 
+          <div class="text-center d-flex">
+            <span style="
+                margin: auto;
                 padding-left: 10px; 
                 padding-right: 10px; 
-                background: #fff;">{{ include.text }}</span>
-            </p>
+                background: #fff;">{{ include.text | html }}</span>
           </div>
         
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .striped-bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    height: 15px;
+    transform: translateY(-50%);
+  }  
+  @media only screen and (max-width: 720px) {
+    .striped-bg {
+      top: -30px;
+    }
+  }
+</style>

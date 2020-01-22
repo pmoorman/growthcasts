@@ -10,6 +10,7 @@ tags: Copywriting
 class: post-template
 subclass: 'post'
 author: pieter
+excerpt: 3 little thought experiments, that immediately help you write better ads…
 ---
 
 **Here are the 3 questions:**

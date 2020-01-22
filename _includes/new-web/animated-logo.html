@@ -36,8 +36,10 @@
 
 <script>
 (() => {
-$('.animated-logo').each(function() {
-  $(this).addClass('active');
-});
+setTimeout(() => {
+  $('.animated-logo').each(function() {
+    $(this).addClass('active');
+  });
+}, 500);
 })()
 </script>

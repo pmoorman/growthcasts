@@ -133,6 +133,20 @@ body:not(.blog):not(.homepage) {
     }
   }
 
+  h4 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+  }
+
+  h5 {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+  }
+
   p.lead {
     font-size: 26px;
     font-weight: 300;
@@ -176,7 +190,7 @@ label:focus,
 .btn.active {
   outline: 0px !important;
   -webkit-appearance: none;
-  border: 0!important;
+  border: 0 !important;
 }
 
 textarea:hover,
@@ -223,8 +237,8 @@ footer {
 }
 
 li {
-  margin: .5em 0;
-  padding-left: .3em;
+  margin: 0.5em 0;
+  padding-left: 0.3em;
   line-height: 1.6em;
 }
 
@@ -239,14 +253,14 @@ li {
 button.btn-shadow,
 a.btn-shadow {
   box-shadow: 14px 14px 0 0 #d4d7e1;
-  border-radius: 0!important;
+  border-radius: 0 !important;
   font-weight: 700;
   padding: 15px 30px;
 }
 
 button.btn-shadow:hover,
 a.btn-shadow:hover {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .max-w-95 {
@@ -1391,6 +1405,10 @@ section#packages {
   box-shadow: 14px 14px 0 0 $primary-color;
 }
 
+.shadow-secondary {
+  box-shadow: 14px 14px 0 0 $secondary-color;
+}
+
 .shadow-grey {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
 }
@@ -1434,25 +1452,42 @@ section#packages {
 //
 // SLICK
 //
-// .slick-track {
-//   display: flex !important;
-// }
+.slick-track {
+  display: flex !important;
+}
 
-// .slick-slide {
-//   height: inherit !important;
-// }
+.slick-slide {
+  height: inherit !important;
+  min-width: 0px;
+}
+
+.slick-initialized {
+  display: block;
+  height: 100%;
+  width: 100% !important;
+}
 
 //
 // Blog single
 //
 .blog-post {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
   blockquote {
     font-size: 26px;
     font-weight: 300;
     letter-spacing: 1.31px;
     line-height: 48px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     line-height: 1.46;
     letter-spacing: 1.5px;
@@ -1462,6 +1497,29 @@ section#packages {
 
     @media only screen and (max-width: 720px) {
       position: relative;
+    }
+  }
+
+  .cover-image {
+    width: 884px;
+    height: 526px;
+
+    @media only screen and (max-width: 720px) {
+      height: 250px;
+    }
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .date {
+    color: #a1a6bc;
+    font-size: 14px;
+    margin-left: -65px;
+    @media only screen and (max-width: 720px) {
+      margin-left: 0;
     }
   }
 
@@ -1485,8 +1543,9 @@ section#packages {
 }
 
 // carousel
-.slick-prev:before, .slick-next:before {
-  color: $primary-color!important;
+.slick-prev:before,
+.slick-next:before {
+  color: $primary-color !important;
 }
 
 .notification-bar {
@@ -1498,5 +1557,3 @@ section#packages {
   padding-bottom: 1rem !important;
   padding-top: 1rem !important;
 }
-
-// OVERRIDE HOMPAGE FONT SIZES

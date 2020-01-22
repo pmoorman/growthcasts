@@ -2,7 +2,7 @@
 title: 
 layout: pages/new-web/default
 hide_footer: true
-
+header_logo_only: true
 ---
 
 <!-- SECTION: random gif -->
@@ -12,7 +12,7 @@ hide_footer: true
       <div class="pb-3">
         {% include new-web/random-video.html %}
       </div>
-      <div><h5><strong>Thanks for clicking!</strong></h5></div>
+      <div><p class="mb-0"><strong>Thanks for clicking!</strong></p class="mb-0"></div>
       <div>We'll be sure to remember that..</div>
     </div>
   </div>
@@ -36,4 +36,4 @@ hide_footer: true
 </section>
 
 {% include new-web/text-with-striped-bg.html
-  text="Swipe to explore more articles >>" %}
+  text="<span class='font-weight-bold'>Swipe to explore more articles >></span>" %}

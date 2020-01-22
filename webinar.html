@@ -19,19 +19,19 @@ webinar_items:
 <section class="pb-0 pt-4">
   <div class="container container-wider">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3 pr-md-0 order-2 order-md-1">
         <div class="d-flex flex-column justify-content-between bg-grey p-4 h-100">
           <div>
             <h5><strong>{{ page.intro_title }}</strong></h5>
             <p>{{ page.intro_lead }}</p>
           </div>
-          <a href="{{ page.intro_button_link }}" class="btn btn-primary btn-shadow">
+          <a href="{{ page.intro_button_link }}" class="btn btn-primary btn-shadow px-2" style="font-size: 14px;">
             {{ page.intro_button_text }}
           </a>
         </div>
       </div>
-      <div class="col-md-8">
-        <div class="video-wrapper">
+      <div class="col-md-9 order-1 order-md-2 mb-4 mb-md-0">
+        <div class="video-wrapper shadow-secondary">
           <iframe src="{{ page.intro_video }}?autoplay=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
@@ -52,8 +52,8 @@ webinar_items:
 
         {% include new-web/text-with-striped-bg.html
           font_size="42"
-          font_weight="400"
-          text="This is a limited-time offer:" %}
+          font_weight="300"
+          text="<h3 class='mb-0'>This is a limited-time offer:</h3>" %}
         
         <p>Double brings you your own dedicated growth team, always led by one of our 3 partners. You’ll work with experienced marketers with a proven track record in scaling startups into international brands.</p>
         <a href="#" class="mt-3 btn btn-primary btn-shadow">Get 30% Off Elite</a>
