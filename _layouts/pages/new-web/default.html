@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include new-web/head.html %}
 
-  <body>
+  <body class="{{ page.body_class }}">
     {% unless page.hide_header %}
     {% include new-web/header.html %}
     {% endunless %}
