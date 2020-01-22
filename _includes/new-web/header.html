@@ -1,9 +1,13 @@
 <header class="pt-5 pb-5">
   <div class="container">
     <nav class="d-flex
-      justify-content-{% unless page.header_logo_only %}between{% else %}center{% endunless %}
+      {% unless page.header_logo_only %}justify-content-between{% else %}justify-content-center justify-content-md-start{% endunless %}
       align-items-center">
-      <div style="width: 120px">{% include new-web/animated-logo.html %}</div>
+      <div style="width: 120px">
+        {% unless page.header_logo_only %}<a href="/">{% endunless %}
+          {% include new-web/animated-logo.html %}
+        {% unless page.header_logo_only %}</a>{% endunless %}
+      </div>
 
       {% unless page.header_logo_only %}
       <div class="menu">
