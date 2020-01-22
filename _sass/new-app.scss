@@ -190,7 +190,7 @@ label:focus,
 .btn.active {
   outline: 0px !important;
   -webkit-appearance: none;
-  border: 0!important;
+  border: 0 !important;
 }
 
 textarea:hover,
@@ -237,8 +237,8 @@ footer {
 }
 
 li {
-  margin: .5em 0;
-  padding-left: .3em;
+  margin: 0.5em 0;
+  padding-left: 0.3em;
   line-height: 1.6em;
 }
 
@@ -253,14 +253,14 @@ li {
 button.btn-shadow,
 a.btn-shadow {
   box-shadow: 14px 14px 0 0 #d4d7e1;
-  border-radius: 0!important;
+  border-radius: 0 !important;
   font-weight: 700;
   padding: 15px 30px;
 }
 
 button.btn-shadow:hover,
 a.btn-shadow:hover {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .max-w-95 {
@@ -1459,15 +1459,20 @@ section#packages {
 
 .slick-initialized {
   display: block;
-  height: 100%; 
-  width: 100% !important; 
+  height: 100%;
+  width: 100% !important;
 }
 
 //
 // Blog single
 //
 .blog-post {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
   }
@@ -1533,8 +1538,9 @@ section#packages {
 }
 
 // carousel
-.slick-prev:before, .slick-next:before {
-  color: $primary-color!important;
+.slick-prev:before,
+.slick-next:before {
+  color: $primary-color !important;
 }
 
 .notification-bar {
@@ -1546,5 +1552,3 @@ section#packages {
   padding-bottom: 1rem !important;
   padding-top: 1rem !important;
 }
-
-// OVERRIDE HOMPAGE FONT SIZES

@@ -12,16 +12,12 @@ font_size: string (optional)
       <div class="position-relative">
         <img class="striped-bg img-fluid"
           src="/assets/images/new-web/striped_bg.jpg" />
-          <div class="text-center">
-            <p>
-              <span style="
-                font-weight: {{ font-weight }}; 
-                {% if include.font_size %}font-size: {{ include.font_size }}px;{% endif %}
-                {% if include.font_size %}line-height: {{ include.font_size | plus: 5 }}px;{% endif %} 
+          <div class="text-center d-flex">
+            <span style="
+                margin: auto;
                 padding-left: 10px; 
                 padding-right: 10px; 
-                background: #fff;">{{ include.text }}</span>
-            </p>
+                background: #fff;">{{ include.text | html }}</span>
           </div>
         
       </div>
