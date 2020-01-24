@@ -83,6 +83,7 @@ steps_carousel:
       id="carousel-2"
       items=page.steps_carousel %}
   </div>
+</section>
 
 <section class="pt-0">
   <div class="container">
@@ -148,6 +149,7 @@ steps_carousel:
   </div>
 </section>
 
+
 <section class="pt-5 pb-0 my-0 px-0 alternate-section">
   <div class="container-fluid px-0">
     {% include new-web/carousel-1.html
@@ -156,3 +158,12 @@ steps_carousel:
       items=page.carousel_items %}
   </div>
 </section>
+
+
+{% include new-web/email-submit-modal.html 
+  id="join-modal"
+  drip_id="277204824"
+  form_label="Email address:"
+  title="15 step-by-step lessons on modern startup growth:"
+  subtitle="Email course"
+  button_text="Get the email course >>" %}
