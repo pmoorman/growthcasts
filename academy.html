@@ -1,6 +1,7 @@
 ---
 title: Academy
-layout: "pages/new-web/default"
+layout: pages/new-web/default
+hide_footer: true
 
 tagline: "Join 15,271+ people in the most popular growth marketing course online"
 intro: "A complete account of modern growth marketing & user acquisition"
@@ -149,8 +150,8 @@ steps_carousel:
 
 {% capture pieterfooterinner %}
 <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
-  <h4 class="font-weight-bold">Leave your contact info</h4>
-  <p>and we’ll contact you today!</p>
+  <h5 class="mb-0 font-weight-bold">Leave your email</h5>
+  <p>and receive the first lesson right away!</p>
   <form action="https://www.getdrip.com/forms/277204824/submissions" method="post" data-drip-embedded-form="277204824">
     <div class="input-group mb-3">
       <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
@@ -164,7 +165,7 @@ steps_carousel:
 
 {% include new-web/pieter-footer.html
   title="Want to learn about growth marketing?"
-  lead="Leave your email and enroll in our <i>free</i> 2-week course. Enjoy!"
+  lead="Great! Leave your email and enroll in our <i>free</i> 2-week course. Enjoy!"
   content=pieterfooterinner %}
 
 {% include new-web/email-submit-modal.html 
