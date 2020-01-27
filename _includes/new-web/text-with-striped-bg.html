@@ -9,7 +9,7 @@ font_size: string (optional)
 <section class="pb-4 pt-0 px-0">
   <div class="container">
     <div class="col">
-      <div class="position-relative">
+      <div id="desktop-stripes" class="position-relative">
         <img class="striped-bg img-fluid"
           src="/assets/images/new-web/striped_bg.jpg" />
           <div class="text-center d-flex">
@@ -17,7 +17,8 @@ font_size: string (optional)
                 margin: auto;
                 padding-left: 10px; 
                 padding-right: 10px; 
-                background: #fff;">{{ include.text | html }}</span>
+                background: #fff;
+                overflow: hidden;">{{ include.text | html }}</span>
           </div>
         
       </div>
@@ -37,6 +38,11 @@ font_size: string (optional)
   @media only screen and (max-width: 720px) {
     .striped-bg {
       top: -30px;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    #text-under-swipe {
+      display:none;
     }
   }
 </style>
