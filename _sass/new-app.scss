@@ -1413,6 +1413,10 @@ section#packages {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
 }
 
+.no-shadow {
+  box-shadow: none!important;
+}
+
 .border-grey {
   border: 2px solid #eff0f6;
 }

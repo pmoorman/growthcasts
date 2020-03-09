@@ -19,9 +19,10 @@
     </section>
 
     <section>
+      
+      {% for post in site.posts %}
+      {% assign remainder = forloop.index | modulo: 2 %}
       <div class="container">
-        {% for post in site.posts %}
-        {% assign remainder = forloop.index | modulo: 2 %}
         <div class="row align-items-center">
           <div class="col-md-7 my-5 py-5 px-5 order-{% if remainder == 0 %}2{% else %}1{% endif %}">
             <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></h4>
@@ -37,8 +38,32 @@
             <img class="img-fluid shadow-grey" style="height: 507px; width: 422px; object-fit: cover;" src="{{ post.cover }}">
           </div> 
         </div>
-        {% endfor %}
       </div>
+
+      {% if forloop.index == 2 %}
+      <div class="bg-secondary py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <p style="font-size: 30px; font-weight: 600; line-height: 1.63; letter-spacing: 0.5px;">Our popular course on growth marketing is available for free:</p>
+              <p class="mb-0">Join thousands of others. Become a confident growth marketer…</p>
+            </div>
+            <div class="col-md-5">
+              <form>
+                <div class="input-group mb-3 no-shadow">
+                  <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+                  <div class="input-group-append">
+                    <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now" data-drip-attribute="sign-up-button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      
     </section>
 
     {% include new-web/footer.html %}
