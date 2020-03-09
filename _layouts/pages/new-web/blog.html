@@ -18,7 +18,7 @@
       </div>
     </section>
 
-    <section>
+    <section style="padding-bottom: 100px;">
       
       {% for post in site.posts %}
       {% assign remainder = forloop.index | modulo: 2 %}
@@ -66,14 +66,14 @@
       
     </section>
 
-    <div class="pre-footer bg-grey py-5 py-md-5">
+    <div class="pre-footer bg-grey">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <h5 class="font-weight-bold mt-0">
-              Join 15,281 others - our most popular course on growth marketing is now available for free
-            </h5>
-            <p>
+          <div class="col-md-7" style="border-right: 2px solid rgba(148, 154, 180, 0.4); padding-top: 65px; padding-bottom: 65px;">
+            <p style="font-size: 30px; font-weight: 600; line-height: 1.63; letter-spacing: 0.5px;" class="font-weight-bold mt-0">
+              Join 15,281 others: Our much-loved email course is now available for free!
+            </p>
+            <p class="mb-0">
               Modern growth marketing & user acquisition techniques
             </p>
             <form class="form_box mt-5" name="blog-post" netlify>
@@ -86,10 +86,10 @@
               </div>
             </form>
           </div>
-          <div class="col-md-5">
-            <h5>More on the blog:</h5>
-            {% for post in site.posts limit:3 %}
-            <a href="{{ post.url }}" class="d-flex align-items-center mb-4">
+          <div class="col-md-5 px-5" style="padding-top: 68px; padding-bottom: 65px;">
+            <h5 class="mb-4"><strong>More on the blog:</strong></h5>
+            {% for post in site.posts limit:4 %}
+            <a href="{{ post.url }}" style="color: black;" class="d-flex align-items-center mb-4">
               {{ post.title }}
             </a>
             {% endfor %}
