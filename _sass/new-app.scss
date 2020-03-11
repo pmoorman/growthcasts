@@ -1526,28 +1526,6 @@ section#packages {
       margin-left: 0;
     }
   }
-
-  .pre-footer {
-    padding-left: 85px;
-    padding-right: 85px;
-
-    @media only screen and (max-width: 720px) {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-  }
-
-  blockquote,
-  .pre-footer {
-    margin-left: -85px;
-    width: calc(100% + 170px);
-    max-width: 100vw;
-
-    @media only screen and (max-width: 720px) {
-      margin-left: 0;
-      max-width: 100%;
-    }
-  }
 }
 
 // Square box

@@ -1,4 +1,6 @@
-<ul class="text-left checklist pl-0 w-100 checklist-c">
+{% assign size = include.size | default '' %}
+
+<ul class="text-left checklist pl-0 w-100 checklist-c {{ size }}">
   {% for item in include.items %}
   <li class="d-flex my-4 my-md-5 py-md-2 align-items-center">
     <div class="w-auto position-relative">
@@ -30,6 +32,16 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.checklist-c.sm .back img,
+.checklist-c.sm .fore {
+  width: 40px;
+  height: 40px;
+}
+.checklist.sm li {
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
 }
 </style>
 

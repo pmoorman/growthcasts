@@ -20,7 +20,9 @@
   }
 </style>
 
-<div class="pre-footer bg-grey">
+{% assign paddingtop = include.paddingtop | default '0' %}
+
+<div class="pre-footer bg-grey" style="padding-top: {{ paddingtop }};">
   <div class="container">
     <div class="row">
       <div class="col-md-8 first-half">
@@ -43,7 +45,7 @@
         </form>
       </div>
       <div class="col-md-4 px-4 px-md-5 second-half">
-        <h5 class="mb-4"><strong>More on the blog:</strong></h5>
+        <h5 class="mb-4 mt-0"><strong>More on the blog:</strong></h5>
         {% for post in site.posts limit:3 %}
         <a href="{{ post.url }}" style="color: black;" class="d-flex align-items-center mb-4">
           {{ post.title }}
