@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+<head>
   {% include new-web/head.html %}
-  <body>
-    {% include new-web/blog-header.html %}
 
-    <section class="pb-0">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <h2 class="mb-4">The Double blog</h2>
-            <p class="lead m-auto" style="max-width: 776px;">
-              “The customer wants to derive value from every interaction so that it’s not a silly waste of their time.”
-            </p>
-          </div>
+  <style>
+    a.readmore-btn {
+      text-decoration: none;
+      border: solid 2.3px #3497f3;
+      text-align: center;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    a.readmore-btn:hover {
+      color: #fff;
+      background: #3497f3;
+    }
+
+    .article-img {
+      height: 507px;
+      width: 422px;
+      object-fit: cover;
+    }
+
+    .intro {
+      padding-top: 100px;
+    }
+
+    @media only screen and (max-width: 499px) {
+      .article-img {
+        height: auto;
+        width: 100%;
+      }
+
+      .intro {
+        padding-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  {% include new-web/blog-header.html %}
+
+  <section class="pb-0 intro">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h2 class="mb-4">The Double blog</h2>
+          <p class="lead m-auto" style="max-width: 776px;">
+            “The customer wants to derive value from every interaction so that it’s not a silly waste of their time.”
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section style="padding-bottom: 100px;">
-      
-      {% for post in site.posts %}
-      {% assign remainder = forloop.index | modulo: 2 %}
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-7 my-5 py-5 px-5 order-{% if remainder == 0 %}2{% else %}1{% endif %}">
-            <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></h4>
+  <section style="padding-top: 60px; padding-bottom: 80px;">
+
+    {% for post in site.posts %}
+    {% assign remainder = forloop.index | modulo: 2 %}
+    <article class="container mb-5 mb-md-0">
+      <div class="row align-items-center">
+        <div
+          class="col-md-7 my-4 my-md-5 py-0 py-md-5 px-4 px-md-5 order-2 order-md-{% if remainder == 0 %}2{% else %}1{% endif %}">
+          <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></h4>
             <h3><strong>{{ post.title }}</strong></h3>
             <p>{{ post.excerpt | truncatewords: 50, "..." }}</p>
             <div class="mt-5">
-              <a href="{{ post.url }}" style="text-decoration: none; border: solid 2.3px #3497f3; text-align: center; padding: 15px 30px; font-size: 16px; font-weight: 600;">
+              <a class="readmore-btn" href="{{ post.url }}">
                 Read the Article
               </a>
             </div>
-          </div>
-          <div class="col-md-5 my-5 py-5 text-right order-{% if remainder == 0 %}1{% else %}2{% endif %}">
-            <img class="img-fluid shadow-grey" style="height: 507px; width: 422px; object-fit: cover;" src="{{ post.cover }}">
-          </div> 
+        </div>
+        <div
+          class="col-md-5 my-4 my-md-5 py-0 py-md-5 text-right order-1 order-md-{% if remainder == 0 %}1{% else %}2{% endif %}">
+          <img class="article-img img-fluid shadow-grey" src="{{ post.cover }}">
         </div>
       </div>
+    </article>
 
-      {% if forloop.index == 2 %}
-      <div class="bg-secondary py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-7">
-              <p style="font-size: 30px; font-weight: 600; line-height: 1.63; letter-spacing: 0.5px;">Our popular course on growth marketing is available for free:</p>
-              <p class="mb-0">Join thousands of others. Become a confident growth marketer…</p>
-            </div>
-            <div class="col-md-5">
-              <form>
-                <div class="input-group mb-3 no-shadow">
-                  <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
-                  <div class="input-group-append">
-                    <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now" data-drip-attribute="sign-up-button">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-      
-    </section>
-
-    <div class="pre-footer bg-grey">
+    {% if forloop.index == 2 %}
+    <div class="bg-secondary py-5 mb-4 mb-md-0">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7" style="border-right: 2px solid rgba(148, 154, 180, 0.4); padding-top: 65px; padding-bottom: 65px;">
-            <p style="font-size: 30px; font-weight: 600; line-height: 1.63; letter-spacing: 0.5px;" class="font-weight-bold mt-0">
-              Join 15,281 others: Our much-loved email course is now available for free!
-            </p>
-            <p class="mb-0">
-              Modern growth marketing & user acquisition techniques
-            </p>
-            <form class="form_box mt-5" name="blog-post" netlify>
-              <div class="input-group mb-3" style="width: 350px; max-width: 100%;">
-                <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
-                <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <p class="header" style="font-size: 30px; font-weight: 600; line-height: 40px; letter-spacing: 0.3px;">Our
+              popular course on growth marketing is available for free:</p>
+            <p class="mb-0">Join thousands of others. Become a confident growth marketer…</p>
+          </div>
+          <div class="col-md-5">
+            <form class="mt-4 mt-md-0">
+              <div class="input-group mb-3 no-shadow">
+                <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email"
+                  aria-label="Enter your email">
                 <div class="input-group-append">
-                  <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now">
+                  <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now"
+                    data-drip-attribute="sign-up-button">
                 </div>
               </div>
             </form>
           </div>
-          <div class="col-md-5 px-5" style="padding-top: 68px; padding-bottom: 65px;">
-            <h5 class="mb-4"><strong>More on the blog:</strong></h5>
-            {% for post in site.posts limit:4 %}
-            <a href="{{ post.url }}" style="color: black;" class="d-flex align-items-center mb-4">
-              {{ post.title }}
-            </a>
-            {% endfor %}
-          </div>
         </div>
       </div>
-      
     </div>
+    {% endif %}
+    {% endfor %}
 
-    {% include new-web/footer.html %}
-  </body>
+  </section>
+  {% include new-web/blog-prefooter.html %}
+  {% include new-web/footer.html %}
+</body>
+
 </html>

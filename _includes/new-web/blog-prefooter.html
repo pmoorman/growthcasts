@@ -1,0 +1,55 @@
+<style>
+  .first-half {
+    border-right: 2px solid rgba(148, 154, 180, 0.4);
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .second-half {
+    padding-top: 68px;
+    padding-bottom: 65px;
+  }
+
+  @media only screen and (max-width: 499px) {
+    .first-half {
+      border: none;
+    }
+    .second-half {
+      padding-top: 0;
+    }
+  }
+</style>
+
+<div class="pre-footer bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 first-half">
+        <p style="font-size: 30px; font-weight: 600; line-height: 42px; letter-spacing: 0.5px;"
+          class="font-weight-bold mt-0">
+          Join 15,281 others: Our much-loved email course is now available for free!
+        </p>
+        <p class="mb-0">
+          Modern growth marketing & user acquisition techniques
+        </p>
+        <form class="form_box mt-4" name="blog-post" netlify>
+          <div class="input-group mb-3" style="max-width: 450px;">
+            <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
+            <input type="email" class="form-control" name="email" placeholder="Enter your email"
+              aria-label="Enter your email">
+            <div class="input-group-append">
+              <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4 px-4 px-md-5 second-half">
+        <h5 class="mb-4"><strong>More on the blog:</strong></h5>
+        {% for post in site.posts limit:3 %}
+        <a href="{{ post.url }}" style="color: black;" class="d-flex align-items-center mb-4">
+          {{ post.title }}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
