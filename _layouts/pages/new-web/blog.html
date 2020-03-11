@@ -92,13 +92,13 @@
             <p class="mb-0">Join thousands of others. Become a confident growth marketer…</p>
           </div>
           <div class="col-md-5">
-            <form class="mt-4 mt-md-0">
+            <form class="mt-4 mt-md-0" netlify>
               <div class="input-group mb-3 no-shadow">
-                <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email"
+                <input type="hidden" class="form-control" name="blog_title" value="blog_index">
+                <input type="email" class="form-control" name="email" placeholder="Enter your email"
                   aria-label="Enter your email">
                 <div class="input-group-append">
-                  <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now"
-                    data-drip-attribute="sign-up-button">
+                  <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now">
                 </div>
               </div>
             </form>
