@@ -133,7 +133,7 @@ body:not(.blog):not(.homepage) {
     }
   }
 
-  h4 {
+  footer:not(#footer) h4 {
     font-size: 34px;
     font-weight: normal;
     letter-spacing: 0.7px;
