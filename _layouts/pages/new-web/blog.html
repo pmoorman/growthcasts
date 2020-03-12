@@ -62,10 +62,17 @@
 
     {% for post in site.posts %}
     {% assign remainder = forloop.index | modulo: 2 %}
+    {% assign text_class = "order-md-1 pl-md-0 pr-md-5" %}
+    {% assign image_class = "order-md-2 pr-md-0 pl-md-5" %}
+    {% if remainder == 0 %}
+    {% assign text_class = "order-md-2 pr-md-0 pl-md-5" %}
+    {% assign image_class = "order-md-1 pl-md-0 pr-md-5" %}
+    {% endif %}
+
     <article class="container mb-5 mb-md-0">
       <div class="row align-items-center">
         <div
-          class="col-md-7 my-4 my-md-5 py-0 py-md-5 px-4 px-md-5 order-2 order-md-{% if remainder == 0 %}2{% else %}1{% endif %}">
+          class="col-md-7 my-4 my-md-5 py-0 py-md-5 px-4 order-2 {{ text_class }}">
           <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></h4>
             <h3><strong>{{ post.title }}</strong></h3>
             <p>{{ post.excerpt | truncatewords: 50, "..." }}</p>
@@ -76,7 +83,7 @@
             </div>
         </div>
         <div
-          class="col-md-5 my-4 my-md-5 py-0 py-md-5 text-right order-1 order-md-{% if remainder == 0 %}1{% else %}2{% endif %}">
+          class="col-md-5 my-4 my-md-5 py-0 py-md-5 order-1 {{ image_class }}">
           <img class="article-img img-fluid shadow-grey" src="{{ post.cover }}">
         </div>
       </div>
