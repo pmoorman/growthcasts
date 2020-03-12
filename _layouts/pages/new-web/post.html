@@ -3,6 +3,25 @@
 
   <head>
     {% include new-web/head.html %}
+    <style>
+      .summary-block {
+        margin-left: 0;
+        padding-left: 15px;
+        width: 100%;
+        padding-right: 15px;
+      }
+      @media only screen and (min-width: 499px) {
+        .blog-content {
+          margin-left: -35px;
+        }
+        .summary-block {
+          margin-left: -135px;
+          padding-left: 105px;
+          width: calc(100% + 235px);
+          padding-right: 120px;
+        }
+      }
+    </style>
   </head>
 
   <body class="blog-post">
@@ -32,7 +51,7 @@
           <div class="col-md-3 pt-5">
             <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
           </div>
-          <div class="col-md-7 px-md-0 pt-0 pt-md-5">
+          <div class="col-md-7 px-md-0 pt-0 pt-md-5 blog-content">
             {{ content }}
           </div>
         </div>
@@ -42,8 +61,13 @@
     <section class="py-0">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 offset-md-3">
-            <div class="shadow-grey" style="background: #fff; position: relative; z-index: 1; width: calc(100% + 210px); margin-left: -105px; padding-left: 105px; padding-right: 140px; padding-bottom: 50px; margin-bottom: -80px;">
+          <div class="col-md-7 offset-md-3 pl-0 pl-md-0">
+            <div class="shadow-grey summary-block" style="
+              background: #fff;
+              position: relative;
+              z-index: 1;
+              padding-bottom: 50px;
+              margin-bottom: -80px;">
               <h4><strong>In summary:</strong></h4>
               <div>
                 {% include new-web/checklist.html items=page.summary_items size="sm" %}
