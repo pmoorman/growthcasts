@@ -29,6 +29,20 @@
       padding-top: 100px;
     }
 
+    @media only screen and (min-width: 499px) {
+      .article-info-left > div {
+        position: relative;
+        left: -50px;
+        width: calc(100% + 50px);
+        padding-right: 40px;
+      }
+      .article-info-right > div {
+        position: relative;
+        right: -20px;
+        width: calc(100% + 50px);
+      }
+    }
+
     @media only screen and (max-width: 499px) {
       .article-img {
         height: auto;
@@ -62,10 +76,10 @@
 
     {% for post in site.posts %}
     {% assign remainder = forloop.index | modulo: 2 %}
-    {% assign text_class = "order-md-1 pl-md-0 pr-md-5" %}
-    {% assign image_class = "order-md-2 pr-md-0 pl-md-5" %}
+    {% assign text_class = "article-info-left order-md-1 pl-md-0 pr-md-5" %}
+    {% assign image_class = "order-md-2 pr-md-0 pl-md-0" %}
     {% if remainder == 0 %}
-    {% assign text_class = "order-md-2 pr-md-0 pl-md-5" %}
+    {% assign text_class = "article-info-right order-md-2 pr-md-0 pl-md-5" %}
     {% assign image_class = "order-md-1 pl-md-0 pr-md-5" %}
     {% endif %}
 
@@ -73,7 +87,8 @@
       <div class="row align-items-center">
         <div
           class="col-md-7 my-4 my-md-5 py-0 py-md-5 px-4 order-2 {{ text_class }}">
-          <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></h4>
+          <div>
+            <p class="text-primary font-weight-bold"><strong>{{ post.tags }}</strong></p>
             <h3><strong>{{ post.title }}</strong></h3>
             <p>{{ post.excerpt | truncatewords: 50, "..." }}</p>
             <div class="mt-5">
@@ -81,6 +96,7 @@
                 Read the Article
               </a>
             </div>
+          </div>
         </div>
         <div
           class="col-md-5 my-4 my-md-5 py-0 py-md-5 order-1 {{ image_class }}">
@@ -93,7 +109,7 @@
     <div class="bg-secondary py-5 mb-4 mb-md-0">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-7">
+          <div class="col-md-7 pl-3 pl-md-0">
             <p class="header" style="font-size: 30px; font-weight: 600; line-height: 40px; letter-spacing: 0.3px;">Our
               popular course on growth marketing is available for free:</p>
             <p class="mb-0">Join thousands of others. Become a confident growth marketer…</p>
