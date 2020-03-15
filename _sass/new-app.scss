@@ -1364,6 +1364,15 @@ section#packages {
   }
 }
 
+.checklist.sm {
+  li.active .fore {
+    animation: foreSm 0.5s linear both;
+  }
+  li.active .back {
+    animation: backSm 0.5s linear both;
+  }
+}
+
 @keyframes fore {
   from {
     transform: translate(0, 0);
@@ -1379,6 +1388,24 @@ section#packages {
   }
   to {
     transform: translate(4px, 5px);
+  }
+}
+
+@keyframes foreSm {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-2px, -2.5px);
+  }
+}
+
+@keyframes backSm {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2px, 2.5px);
   }
 }
 
