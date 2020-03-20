@@ -1,9 +1,23 @@
 ---
 title: Elite
 layout: pages/new-web/default
+marketing_game:
+  - image: /assets/images/new-web/elite/marketing_game-1.svg
+    text: Facebook and Google ads become more prohibitively expensive every year…
+  - image: /assets/images/new-web/elite/marketing_game-2.svg
+    text: …content marketing and SEO are over-saturated…
+  - image: /assets/images/new-web/elite/marketing_game-3.svg
+    text: …and “social sharing” is something only crazy aunt Jenny does, nowadays.
 ---
 
 <style>
+  #sales p {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+  }
+
   #sales #intro h1 {
     font-size: 100px;
     line-height: 0.94;
@@ -32,4 +46,30 @@ layout: pages/new-web/default
       <div class="col-md-6"></div>
     </div>
   </section>
+
+  <!-- SECTION: Marketing game -->
+<section id="marketing-game" class="alternate-section">
+  <div id="marketing-game" class="container">
+
+    <div class="row">
+      <div class="col-md-6 px-3 p-md-0 text-center text-md-left position-relative">
+        <div id="marketing-game this-sidebar">
+          <h3>You might have noticed this:</h3>
+          <p class="lead">The online marketing game is changing in a BIG way—what used to work before, simply <strong>isn’t working anymore.</strong></p>
+        </div>
+      </div>
+        
+      <div class="col-md-6">
+        {% for item in page.marketing_game %}
+        <div class="text-center text-md-left" style="min-height: 220px;">
+          <img src="{{ item.image }}" />
+          <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </main>
