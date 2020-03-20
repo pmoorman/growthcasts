@@ -11,7 +11,7 @@ marketing_game:
 ---
 
 <style>
-  #sales p {
+  #sales p.lead {
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 0.7px;
@@ -48,28 +48,95 @@ marketing_game:
   </section>
 
   <!-- SECTION: Marketing game -->
-<section id="marketing-game" class="alternate-section">
-  <div id="marketing-game" class="container">
+  <section id="marketing-game">
+    <div id="marketing-game" class="container">
 
-    <div class="row">
-      <div class="col-md-6 px-3 p-md-0 text-center text-md-left position-relative">
-        <div id="marketing-game this-sidebar">
-          <h3>You might have noticed this:</h3>
-          <p class="lead">The online marketing game is changing in a BIG way—what used to work before, simply <strong>isn’t working anymore.</strong></p>
+      <div class="row">
+        <div class="col-md-6 px-3 p-md-0 text-center text-md-left position-relative">
+          <div id="marketing-game this-sidebar">
+            <h3>You might have noticed this:</h3>
+            <p class="lead">The online marketing game is changing in a BIG way—what used to work before, simply <strong>isn’t working anymore.</strong></p>
+          </div>
         </div>
-      </div>
-        
-      <div class="col-md-6">
-        {% for item in page.marketing_game %}
-        <div class="text-center text-md-left" style="min-height: 220px;">
-          <img src="{{ item.image }}" />
-          <p>{{ item.text }}</p>
+          
+        <div class="col-md-6">
+          {% for item in page.marketing_game %}
+          <div class="text-center text-md-left" style="min-height: 220px;">
+            <img src="{{ item.image }}" />
+            <p>{{ item.text }}</p>
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- SECTION: No -->
+  <section id="no" class="py-0">
+    <div class="container position-relative">
+      <div class="p-5" style="max-width: 512px;">
+        <h3>So what’s a business owner to do?</h3>
+        <p class="lead">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+      </div>
+    </div>
+
+    <section class="alternate-section py-0">
+      <div class="container">
+        <img src="/assets/images/new-web/elite/no.svg">
+      </div>
+    </section>
+
+    <div class="container position-relative">
+      <div class="p-5 ml-auto" style="max-width: 512px;">
+        <p class="lead"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
+        <p>Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Understanding -->
+  <section id="understanding">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h3><strong>Understanding</strong> is the key here.</h3>
+        </div>
+        <div class="col-md-6">
+          <div>
+            You don’t need hacks.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            You need <strong>clarity of thought.</strong>
+          </div>
+        </div>
+        <div class="col-md-12">
+          What you need is a stronger mental model to scaffold your thoughts and decision making on.
+          <p class="lead">
+            <strong>Something like the growth stack.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="p-5" style="max-width: 512px;">
+        
+        <p class="lead">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+      </div>
+    </div>
+
+    <section class="alternate-section py-0">
+      <div class="container">
+        <img src="/assets/images/new-web/elite/no.svg">
+      </div>
+    </section>
+
+    <div class="container position-relative">
+      <div class="p-5 ml-auto" style="max-width: 512px;">
+        <p class="lead"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
+        <p>Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+      </div>
+    </div>
+  </section>
 
 </main>
