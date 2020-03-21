@@ -8,6 +8,14 @@ marketing_game:
     text: …content marketing and SEO are over-saturated…
   - image: /assets/images/new-web/elite/marketing_game-3.svg
     text: …and “social sharing” is something only crazy aunt Jenny does, nowadays.
+
+layer_items:
+  - title: Strategic clarity
+    body: You know that real growth is driven by systems design, and you need the strategic clarity to see how 3 core systems interplay to create a so-called “growth loop” — I’ll explain the details below.
+  - title: Skills
+    body: You know that real growth is driven by systems design, and you need the strategic clarity to see how 3 core systems interplay to create a so-called “growth loop” — I’ll explain the details below.
+  - title: Data infrastructure
+    body: You know that real growth is driven by systems design, and you need the strategic clarity to see how 3 core systems interplay to create a so-called “growth loop” — I’ll explain the details below.
 ---
 
 <style>
@@ -30,7 +38,33 @@ marketing_game:
     font-size: 22px;
     line-height: 32px;
   }
+
+  #sales .accordion-item.active {
+    transform: scale(1.05);
+  }
+  #sales .accordion-item .accordion-item-header button {
+    color: #181d33;
+    opacity: 0.4;
+    text-decoration: none;
+  }
+  #sales .accordion-item.active .accordion-item-header button {
+    opacity: 1;
+  }
 </style>
+
+<script>
+  $(document).ready(function() {
+
+  $('.collapse').on('show.bs.collapse', function () {
+      $(this).parent('.accordion-item').addClass('active');
+  });
+
+  $('.collapse').on('hide.bs.collapse', function () {
+      $(this).parent('.accordion-item').removeClass('active');
+  });
+
+});
+</script>
 
 <main id="sales">
 
@@ -124,17 +158,60 @@ marketing_game:
         <p class="lead">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
       </div>
     </div>
+  </section>
 
-    <section class="alternate-section py-0">
-      <div class="container">
-        <img src="/assets/images/new-web/elite/no.svg">
+  <!-- SECTION: Framework -->
+  <section id="framework">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>The <strong>Growth Stack</strong> is the simplest framework to quickly understand modern growth marketing</h3>
+          <p>In order to unlock explosive product growth for a startup company or high-growth venture, you need mastery over 3 different areas. Three fundamental “layers” of the growth stack: </p>
+        </div>
+        <div class="col-md-12">
+          <div class="shadow-grey" style="width: 100%; height: 578px;">
+            IMG
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="container position-relative">
-      <div class="p-5 ml-auto" style="max-width: 512px;">
-        <p class="lead"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
-        <p>Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+  <!-- SECTION: Layers -->
+  <section id="layers" class="alternate-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Shall I quickly define each layer for you, so we’re on the same page?</p>
+          <h3>Okay, here they are:</h3>
+        </div>
+        <div class="col-md-6">
+          <div class="accordion" id="layers-accordion" style="width: 100%; height: 578px;">
+            {% for item in page.layer_items %}
+            <div class="accordion-item p-5 position-relative {% if forloop.index == 1 %}active{% endif %}" 
+              style="z-index: {{ page.layer_items.size | minus: forloop.index }}; background: #fff; box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);">
+              <div class="accordion-item-header" id="heading-{{ forloop.index }}">
+                <h3 class="mb-0">
+                  <button 
+                    style="font-size: 22px; color: #181d33; font-weight: bold;"
+                    class="btn btn-link d-flex align-items-center pl-0" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <div style="background: #181d33; color: #fff; height: 40px; width: 40px; padding-top: 3px; border-radius: 100%; margin-right: 10px;">
+                      {{ forloop.index }}
+                    </div>
+                    {{ item.title }}
+                  </button>
+                </h3>
+              </div>
+          
+              <div id="collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#layers-accordion">
+                <div class="accordion-item-body">
+                  {{ item.body }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </section>
