@@ -66,21 +66,24 @@ pillars_row2:
     body: Foundation of the growth loops architecture
 
 package_core:
-  - list_title: Module 1: Growth strategy
-  - list_title: Module 2: Sales funnels
-  - list_title: Module 3: Growth engines
-  - list_title: Module 4: Copy & conversion
-  - list_title: Module 5: Engagement & retention
+  - list_title: "**Module 1:** Growth strategy"
+  - list_title: "**Module 2:** Sales funnels"
+  - list_title: "**Module 3:** Growth engines"
+  - list_title: "**Module 4:** Copy & conversion"
+  - list_title: "**Module 5:** Engagement & retention"
 
 package_execution:
-  - list_title: Module 6: Advanced strategy
-  - list_title: Module 7: Video case studies (13x)
-  - list_title: Module 8: Growth skills (advanced)
-  - list_title: Operational support
+  - list_title: "**Module 6:** Advanced strategy"
+  - list_title: "**Module 7:** Video case studies (13x)"
+  - list_title: "**Module 8:** Growth skills (advanced)"
+  - list_title: "**Operational support**"
 
 ---
 
 <style>
+  #sales h3 {
+    letter-spacing: 1.5px;
+  }
   #sales p.lead {
     font-size: 22px;
     font-weight: 300;
@@ -670,17 +673,42 @@ package_execution:
           <p>If you want to leverage your entrepreneurial energy to scale your companies bigger, better and faster, then this is the place to do it. You will become a confident growth practitioner, while following our exact step-by-step execution.</p>
           <p class="lead"><strong>The Growth MBA includes:</strong></p>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
 
-        {% assign package_core = [] %}
+        {% assign package_core = "" | split: ',' %}
         {% for item in page.package_core %}
-          {% package_core[forloop.index] = item.list_title %}
+          {% assign package_core = package_core | push: item.list_title %}
+        {% endfor %}
+
+        {% assign package_execution = "" | split: ',' %}
+        {% for item in page.package_execution %}
+          {% assign package_execution = package_execution | push: item.list_title %}
         {% endfor %}
 
 
         <div class="col-md-6">
           <h3><strong>Level 1</strong> Core</h3>
           {% include new-web/checklist.html 
+            size="md"
             items=package_core %}
+        </div>
+        <div class="col-md-6">
+          <h3><strong>Level 2</strong> Execution</h3>
+          {% include new-web/checklist.html 
+            size="md"
+            items=package_execution %}
+        </div>
+
+        <div class="col-md-12 text-center">
+          <p>The Growth MBA is an intermediate & advanced education. 
+            Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
+        </div>
+        <div class="d-flex m-auto">
+          <button class="mx-2">Download Full Syllabus</button>
+          <button class="mx-2">Explore The Growth MBA</button>
         </div>
       </div>
     </div>
