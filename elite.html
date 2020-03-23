@@ -1,6 +1,7 @@
 ---
 title: Elite
 layout: pages/new-web/default
+include_swiper: true
 marketing_game:
   - image: /assets/images/new-web/elite/marketing_game-1.svg
     text: Facebook and Google ads become more prohibitively expensive every year…
@@ -714,4 +715,47 @@ package_execution:
     </div>
   </section>
 
+  <!-- SECTION: testimonials -->
+  <section id="testimonials">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Here's what others <strong>say about us...</strong></h3>
+          <p>Morgan loved how simple Elite was to implement in real life:</p>
+        </div>
+        <div class="col-md-12">
+          <div class="testimonials swiper-container testimonials-swiper">
+            <div class="testimonials__slider swiper-wrapper">
+              {% for testimonial in site.testimonials %}
+                <div class="testimonials__slide swiper-slide p-5 shadow-grey" style="width: calc(100% - 15px);">
+                  {{ testimonial }}
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="swiper-pagination testimonials-swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 </main>
+
+<script>
+(() => {
+  const swiper = new Swiper(document.querySelector(".testimonials-swiper"), {
+    speed: 800,
+    spaceBetween: 300,
+    loop: true,
+    autoplay: {
+      delay: 20000,
+    },
+    pagination: {
+      el: ".testimonials-swiper-pagination",
+      clickable: true
+    }
+  })
+})()
+</script>
