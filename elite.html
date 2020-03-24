@@ -28,27 +28,27 @@ strategy_layer_items:
 
 pillars_row1:
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: Growth Strategy1
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: Operational Skills2
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: sasdaadsasdwe3
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: wewewe4
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: asdsfda ewfdsc5
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: eafrwecvwsd6
     body: Foundation of the growth loops architecture
 
 pillars_row2:
   - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
+    title: wefewsdfwgyt
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
     title: Growth Strategy
@@ -195,12 +195,18 @@ pieter_note_points:
   }
 
   /* Pillars */
+  #sales .pillar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   #sales .pillar-top {
     position: relative;
-    top: 130px;
+    bottom: -130px;
     z-index: 1;
-    height: 335px;
     width: 160px;
+    height: 534px;
+    max-height: 20%;
   }
   #sales .pillar-top .right-shadow,
   #sales .pillar-top .left-shadow {
@@ -260,6 +266,15 @@ pieter_note_points:
   #sales .pillar-top-inner:after {
     border-top-color: #3497f3;
     border-top: 50px solid #3497f3;
+  }
+
+  #sales .pillar.active .pillar-top {
+    animation: slide 2s ease both;
+  }
+  
+  @keyframes slide {
+    0%   { max-height:   20%; }
+    100% { max-height: 100%; }
   }
 </style>
 
@@ -639,48 +654,56 @@ pieter_note_points:
       </div>
     </div>
     <div class="container px-0">
-      <div class="d-flex justify-content-between">
-        {% for item in page.pillars_row1 %}
-        <div class="pillar">
-          <div class="pillar-top">
-            <div class="pillar-top-inner">
-              <img src="{{ item.image }}" />
+      <div class="pillar-group">
+        <div class="d-flex justify-content-between">
+          {% for item in page.pillars_row1 %}
+          <div class="pillar">
+            <div class="pillar-top">
+              <div class="pillar-top-inner">
+                <img src="{{ item.image }}" />
+              </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
             </div>
-            <div class="left-shadow"></div>
-            <div class="right-shadow"></div>
-          </div>
-          <div class="pillar-bottom">
-            <div class="pillar-floor-inner"></div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="row text-center">
-        <div class="col text-light">
-          <p class="lead">Operational Skills</p>
-          <p>Especially copywriting—the primary “driver” and backbone skill</p>
-        </div>
-      </div>
-      <div class="d-flex justify-content-between">
-        {% for item in page.pillars_row2 %}
-        <div class="pillar">
-          <div class="pillar-top">
-            <div class="pillar-top-inner">
-              <img src="{{ item.image }}" />
+            <div class="pillar-bottom">
+              <div class="pillar-floor-inner"></div>
             </div>
-            <div class="left-shadow"></div>
-            <div class="right-shadow"></div>
           </div>
-          <div class="pillar-bottom">
-            <div class="pillar-floor-inner"></div>
+          {% endfor %}
+        </div>
+        <div class="row text-center">
+          <div class="col text-light">
+            <p class="pillar-title lead"
+              {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row1.first.title }}</p>
+            <p class="pillar-body"
+              {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row1.first.body }}</p>
           </div>
         </div>
-        {% endfor %}
       </div>
-      <div class="row text-center">
-        <div class="col text-light">
-          <p class="lead">Operational Skills</p>
-          <p>Especially copywriting—the primary “driver” and backbone skill</p>
+      <div class="pillar-group">
+        <div class="d-flex justify-content-between">
+          {% for item in page.pillars_row2 %}
+          <div class="pillar">
+            <div class="pillar-top">
+              <div class="pillar-top-inner">
+                <img src="{{ item.image }}" />
+              </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+            </div>
+            <div class="pillar-bottom">
+              <div class="pillar-floor-inner"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row text-center">
+          <div class="col text-light">
+            <p class="pillar-title lead"
+              {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row2.first.title }}</p>
+            <p class="pillar-body"
+              {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row2.first.body }}</p>
+          </div>
         </div>
       </div>
 
@@ -1139,5 +1162,38 @@ pieter_note_points:
   $('.collapse').on('hide.bs.collapse', function () {
     $(this).closest('.accordion-item').removeClass('active');
   });
+
+  $(window).on('scroll', _pillarAnimations);
+
+  function _pillarAnimations() {
+    $(".pillar-group").each(function() {
+      const pillarTitle = $(this).find(".pillar-title");
+      const pillarBody = $(this).find(".pillar-body");
+      const pillars = $(this).find(".pillar");
+      pillars.each(function(index, el) {
+        if (_isOverCenterScreen(this, 100 * (pillars.length - index))) {
+          if (!$(this).hasClass('active')) {
+            const title = pillarTitle.attr(`item-${index}`);
+            const body = pillarBody.attr(`item-${index}`);
+            pillarTitle.fadeOut(function() {
+              $(this).text(title).fadeIn();
+            });
+            pillarBody.fadeOut(function() {
+              $(this).text(body).fadeIn();
+            });
+          }
+          $(this).addClass("active");
+        }
+      });
+    })
+  }
+  
+  function _isOverCenterScreen(elem, offset) {
+    const windowCenter =  $(window).height() / 2;
+    const elemBottom = elem.getBoundingClientRect().bottom;
+    return (windowCenter + offset) > elemBottom 
+      ? (windowCenter + offset) - elemBottom 
+      : false;
+  }
 })()
 </script>
