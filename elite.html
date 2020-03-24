@@ -289,6 +289,8 @@ pieter_note_points:
 {% endfor %}
 
 {% capture pricing_table %}
+  {% assign package_extra = "Full money-back guarantee" | split: ',' %}
+  {% assign package_extra2 = package_extra | push: "Operational support" %}
 <div class="row shadow-grey">
 
   <!-- PRICING TABLE -->
@@ -436,7 +438,9 @@ pieter_note_points:
     <section class="alternate-section py-0">
       <div class="container">
         <div style="
-        background-image: url('/assets/images/new-web/elite/no.svg'); height: 500px; background-attachment: fixed;
+        background-image: url('/assets/images/new-web/elite/no.svg'); 
+        height: 500px; 
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto;"></div>
@@ -950,8 +954,6 @@ pieter_note_points:
   </section>
 
   <section style="background-image: linear-gradient(to bottom, #eff0f6, #ffffff 20%);">
-    {% assign package_extra = "Full money-back guarantee" | split: ',' %}
-    {% assign package_extra2 = package_extra | push: "Operational support" %}
 
     <div class="container">
       <div class="row text-center">
