@@ -79,6 +79,38 @@ package_execution:
   - list_title: "**Module 8:** Growth skills (advanced)"
   - list_title: "**Operational support**"
 
+faq_general:
+  - q: How does this course help my business?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: What previous experience is needed?
+    a: |
+      Elite is an intermediate/advanced level course. It assumes you already have basic business experience. If you don't have much previous experience, you should be ready for an aggressive learning curve. 
+      All modules start with a quick intro to cover the basics, but then go straight to intermediate and advanced strategies and tactics. It's not a 'marketing for dummies' course, by any means.
+  - q: Which practical skills will I learn?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: How much do growth marketers earn?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+
+faq_what_to_expect:
+  - q: Will I be able to work abroad after this course?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: Pieter, how did you gain this experience?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: Can I get 1-on-1 support if I get stuck?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: Is this an entire growth marketing blueprint?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+
+faq_pricing:
+  - q: Which package should I buy?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: What is the refund policy?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: For how long do I gain access?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+  - q: What's stopping you from buying Elite, right now?
+    a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
+
 ---
 
 <style>
@@ -105,18 +137,7 @@ package_execution:
     line-height: 32px;
   }
 
-  #sales .accordion-item.active {
-    transform: scale(1.05);
-  }
-  #sales .accordion-item .accordion-item-header button {
-    color: #181d33;
-    opacity: 0.4;
-    text-decoration: none;
-  }
-  #sales .accordion-item.active .accordion-item-header button {
-    opacity: 1;
-  }
-
+  /* Container */
   #sales .container-narrow {
     max-width: 688px;
   }
@@ -124,6 +145,46 @@ package_execution:
     max-width: 864px;
   }
 
+  /* Accordion */
+  #sales .accordion-item.accordion-item-style1.active {
+    transform: scale(1.05);
+  }
+  #sales .accordion-item.accordion-item-style1 .accordion-item-header button {
+    color: #181d33;
+    opacity: 0.4;
+    text-decoration: none;
+  }
+  #sales .accordion-item.accordion-item-style1.active .accordion-item-header button {
+    opacity: 1;
+  }
+
+  #sales .accordion-item.accordion-item-style2 {
+    background-color:#eff0f6;
+    margin-bottom: 5px;
+    padding: 1rem 2rem;
+  }
+  #sales .accordion-item.accordion-item-style2 .accordion-item-header button {
+    text-align: left;
+    color: #181d33;
+    text-decoration: none;
+  }
+  #sales .accordion-item.accordion-item-style2.active {
+    background-color: #181d33;
+    box-shadow: 12px 12px 0 0 #3497f3;
+    color: #fff;
+    left: -12px;
+    margin-bottom: 15px;
+    padding: 2rem;
+    padding-top: 1.7rem;
+  }
+  #sales .accordion-item.accordion-item-style2.active .accordion-item-header button {
+    color: #fff;
+  }
+  #sales .accordion-item.accordion-item-style2.active .accordion-item-header button .arrow {
+    display: none;
+  }
+
+  /* Pillars */
   #sales .pillar-top {
     position: relative;
     top: 130px;
@@ -191,20 +252,6 @@ package_execution:
     border-top: 50px solid #3497f3;
   }
 </style>
-
-<script>
-  $(document).ready(function() {
-
-  $('.collapse').on('show.bs.collapse', function () {
-      $(this).parent('.accordion-item').addClass('active');
-  });
-
-  $('.collapse').on('hide.bs.collapse', function () {
-      $(this).parent('.accordion-item').removeClass('active');
-  });
-
-});
-</script>
 
 {% assign package_core = "" | split: ',' %}
 {% for item in page.package_core %}
@@ -338,7 +385,7 @@ package_execution:
         <div class="col-md-6">
           <div class="accordion" id="layers-accordion" style="width: 100%; height: 578px;">
             {% for item in page.layer_items %}
-            <div class="accordion-item p-5 position-relative {% if forloop.index == 1 %}active{% endif %}" 
+            <div class="accordion-item accordion-item-style1 p-5 position-relative {% if forloop.index == 1 %}active{% endif %}" 
               style="z-index: {{ page.layer_items.size | minus: forloop.index }}; background: #fff; box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <h3 class="mb-0">
@@ -740,7 +787,7 @@ package_execution:
   </section>
 
   <!-- SECTION: -->
-  <section>
+  <section class="alternate-section">
     <div class="container container-narrow-md">
       <div class="row">
         <div>
@@ -764,26 +811,31 @@ package_execution:
           <p>I’ve seen it, and I know that after you see it… you’ll feel the same. And I’m willing to put my money where my mouth is and make this 100% risk-free for you.</p>
           <p>Seemed like a fair solution 🙂</p>
         </div>
-        <div class="col-md-12">
-          <hr>
-        </div>
       </div>
-      <div class="row text-center">
-        <div class="col">
-          <p class="lead">Let’s get this going:</p>
-        </div>
-      </div>
+      
     </div>
+  </section>
 
+  <section style="background-image: linear-gradient(to bottom, #eff0f6, #ffffff 20%);">
     {% assign package_extra = "Full money-back guarantee" | split: ',' %}
     {% assign package_extra2 = package_extra | push: "Operational support" %}
 
     <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <hr>
+        </div>
+
+        <div class="col-md-12">
+          <p class="lead">Let’s get this going:</p>
+        </div>
+      </div>
+
       <div class="row shadow-grey">
 
         <!-- PRICING TABLE -->
         <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px; padding-right: 40px;">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
             <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
             <div class="flex-grow-1">
               {% include new-web/checklist.html 
@@ -802,7 +854,7 @@ package_execution:
               {% endfor %}
             </div>
           </div>
-          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; position: relative; padding-top: 35px!important;">
+          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;">
             <h3>$479</h3>
             <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;"">
               Get it now
@@ -812,7 +864,7 @@ package_execution:
 
         <!-- PRICING TABLE -->
         <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: -1; padding-left: 40px; padding-right: 40px;">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: 1; padding-left: 40px; padding-right: 40px;">
             <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
             <div class="flex-grow-1">
               {% include new-web/checklist.html 
@@ -841,7 +893,7 @@ package_execution:
 
         <!-- PRICING TABLE -->
         <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px; padding-right: 40px;">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
             <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
             <div class="flex-grow-1">
               {% include new-web/checklist.html 
@@ -875,6 +927,107 @@ package_execution:
     </div>
   </section>
 
+  <!-- SECTION: Faq -->
+  <section id="faq">
+    <div class="container container-narrow">
+      <div class="row">
+        <div class="col text-center">
+          <h3>Frequently Asked Questions</h3>
+          <p>These are the questions people ask me all the time. If you ever have any other question, you can easily reach me. Just send me an email, I'll generally get back within 24 hours:</p>
+          <p class="lead"><a href="mailto:pieter@double-agency.com"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <!-- FAQ ITEMS-->
+        <div class="col-md-6">
+          <h3 class="text-center" style="font-size: 32px;">General</h3>
+          <div class="accordion" id="faq_general-accordion">
+            {% for item in page.faq_general %}
+            <div class="accordion-item accordion-item-style2 position-relative">
+              <div class="accordion-item-header" id="heading-{{ forloop.index }}">
+                <p class="lead mb-0">
+                  <button 
+                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_generalcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <strong>{{ item.q }}</strong>
+                    <div class="arrow">
+                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                    </div>
+                  </button>
+                </p>
+              </div>
+          
+              <div id="faq_generalcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_general-accordion">
+                <div class="accordion-item-body">
+                  {{ item.a }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- FAQ ITEMS-->
+        <div class="col-md-6">
+          <h3 class="text-center" style="font-size: 32px;">What To Expect</h3>
+          <div class="accordion" id="faq_what_to_expect-accordion">
+            {% for item in page.faq_what_to_expect %}
+            <div class="accordion-item accordion-item-style2 position-relative">
+              <div class="accordion-item-header" id="heading-{{ forloop.index }}">
+                <p class="lead mb-0">
+                  <button 
+                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_what_to_expectcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <strong>{{ item.q }}</strong>
+                    <div class="arrow">
+                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                    </div>
+                  </button>
+                </p>
+              </div>
+          
+              <div id="faq_what_to_expectcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_what_to_expect-accordion">
+                <div class="accordion-item-body">
+                  {{ item.a }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- FAQ ITEMS-->
+        <div class="col-md-12">
+          <h3 class="text-center" style="font-size: 32px;">Pricing</h3>
+          <div class="accordion" id="faq_pricing-accordion">
+            {% for item in page.faq_pricing %}
+            <div class="accordion-item accordion-item-style2 position-relative">
+              <div class="accordion-item-header" id="heading-{{ forloop.index }}">
+                <p class="lead mb-0">
+                  <button 
+                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_pricingcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <strong>{{ item.q }}</strong>
+                    <div class="arrow">
+                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                    </div>
+                  </button>
+                </p>
+              </div>
+          
+              <div id="faq_pricingcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_pricing-accordion">
+                <div class="accordion-item-body">
+                  {{ item.a }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <script>
@@ -890,6 +1043,13 @@ package_execution:
       el: ".testimonials-swiper-pagination",
       clickable: true
     }
+  });
+  $('.collapse').on('show.bs.collapse', function () {
+    $(this).closest('.accordion-item').addClass('active');
+  });
+
+  $('.collapse').on('hide.bs.collapse', function () {
+    $(this).closest('.accordion-item').removeClass('active');
   });
 })()
 </script>
