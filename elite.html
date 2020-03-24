@@ -111,6 +111,16 @@ faq_pricing:
   - q: What's stopping you from buying Elite, right now?
     a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
 
+pieter_note_points:
+  - I do all the “heavy lifting”
+  - It’s clear, and focused
+  - These models are proven
+  - This is not for Silicon Valley unicorns
+  - The growth loops paradigm works
+  - Practical, step-by-step execution
+  - You get personal support
+  - An excellent guarantee
+
 ---
 
 <style>
@@ -1023,6 +1033,72 @@ faq_pricing:
             </div>
             {% endfor %}
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Pieter note -->
+  <section id="pieter-note" style="background-image: linear-gradient(to bottom, #a1a6bc, #eff0f6); margin-top: 100px;">
+    <div class="container" style="position: relative;">
+      <div class="p-5" style="
+        width: 636px;
+        height: 828px; 
+        box-shadow: 14px 14px 0 0 rgba(24, 29, 51, 0.1);
+        background-color: #181d33;
+        color: #fff;
+        position: absolute;
+        top: -255px;
+        z-index: 1;
+        left: 100px;">
+        <h3><strong>Learn more about the Growth MBA</strong></h3>
+        <p class="lead">From Pieter himself…</p>
+      </div>
+      
+      <div class="d-flex">
+        <div style="z-index: 3;     position: absolute;
+        left: -55px;
+        top: 55px;">
+          <img src="/assets/images/new-web/elite/pieter-note.png" />
+        </div>
+        <div style="
+          padding: 5.5rem 5rem;
+          z-index: 2;
+          position: relative;
+          margin-left: auto; width: 776px; 
+          box-shadow: 14px 14px 0 0 rgba(24, 29, 51, 0.1);
+          background-color: #ffffff;">
+        
+          <h3>Hey, it’s Pieter here.</h3>
+          <p>The truth of the matter is simple: for almost all startup companies — whether eCommerce, SaaS, mobile or B2B — the <strong>defining moment</strong> is when they find a scalable, predictable pathway to acquire customers.</p>
+          <p>Or, as Peter Thiel says:</p>
+          <p class="lead"><strong>“Distribution matters, and it’s harder than it seems”</strong></p>
+          <p>Growth marketing is the profession of designing automated systems to run user acquisition, engagement and retention. It’s an engineering mindset, applied to customer acquisition at scale.</p>
+          <p>And the best news is…</p>
+          <p class="lead"><strong>There is absolutely nothing standing in your way from becoming an expert at this</strong></p>
+          <p>Over the last few years, what used to be called “growth hacking” has evolved into a set of clear playbooks, strategies and mental models that — together — make it reasonable for a layman to understand how a startup grows. </p>
+          <p>The “magic” of growth hacking, is replaced by a systematic approach to user acquisition, engagement and retention that’s clear and focused     growth marketing.</p>
+          <p>Growth loops, systems-thinking and high-tempo testing are the foundational components. </p>
+          <p>If you want to learn this profession, I have a simple promise to make:</p>
+          <p class="lead"><strong>This training—the Growth MBA—is the simplest, most predictable path to get there</strong></p>
+          {% for item in page.pieter_note_points %}
+            {% capture checkmark %}
+              <p class="ml-3"><strong>{{ item }}</strong></p>
+            {% endcapture %}
+            {% include new-web/checkmark.html
+                class="align-items-center"
+                content=checkmark %}
+          {% endfor %}
+          <p>Some text goes here…</p>
+          <p class="lead"><strong>However, it’s not for everyone</strong></p>
+          <p>I’ll be the first to tell you…</p>
+          <p class="lead"><strong>The best entrepreneurs are all growth experts</strong></p>
+          <p>It’s commonly known that <strong>every day your business is not getting new customers, you’re losing money and momentum.</strong></p>
+          <p>If you’re not totally delighted with your enrollment in the Growth MBA, you will receive a full, prompt, and courteous refund. In fact, you have 365 days to decide if the strategies I teach will work for you. </p>
+          <p>If you’re not absolutely delighted with the material, just email me at pieter@double-agency.com and receive a full refund. No questions asked.</p>
+          <h3>Pieter</h3>
+          <p class="lead"><strong>Pieter Moorman</strong></p>
+          <p>Creator & teacher</p>
         </div>
       </div>
     </div>
