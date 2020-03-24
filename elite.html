@@ -779,55 +779,87 @@ package_execution:
     {% assign package_extra2 = package_extra | push: "Operational support" %}
 
     <div class="container">
-      <div class="row shadow-grey py-5">
-        <div class="col d-flex flex-column">
-          <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
-          <div class="flex-grow-1">
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_core %}
+      <div class="row shadow-grey">
+
+        <!-- PRICING TABLE -->
+        <div class="col d-flex flex-column px-0">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px; padding-right: 40px;">
+            <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
+            <div class="flex-grow-1">
+              {% include new-web/checklist.html 
+                size="md"
+                items=package_core %}
+            </div>
+            <div><hr></div>
+            <div style="height: 128px;">
+              {% for item in package_extra %}
+                {% capture checkmark %}
+                  <p class="ml-3"><strong>{{ item }}</strong></p>
+                {% endcapture %}
+                {% include new-web/checkmark.html
+                    class="align-items-center"
+                    content=checkmark %}
+              {% endfor %}
+            </div>
           </div>
-          <div><hr></div>
-          <div style="height: 128px;">
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_extra %}
-          </div>
-        </div>
-        <div class="col d-flex flex-column">
-          <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
-          <div class="flex-grow-1">
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_execution %}
-          </div>
-          <div><hr></div>
-          <div style="height: 128px;">
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_extra2 %}
+          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff;">
+            <h3>$479</h3>
           </div>
         </div>
-        <div class="col d-flex flex-column">
-          <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
-          <div class="flex-grow-1">
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_core %}
-            {% include new-web/checklist.html 
-              size="md"
-              items=package_execution %}
+
+        <!-- PRICING TABLE -->
+        <div class="col d-flex flex-column px-0">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: -1; padding-left: 40px; padding-right: 40px;">
+            <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
+            <div class="flex-grow-1">
+              {% include new-web/checklist.html 
+                size="md"
+                items=package_execution %}
+            </div>
+            <div><hr></div>
+            <div style="height: 128px;">
+              {% for item in package_extra2 %}
+                {% capture checkmark %}
+                  <p class="ml-3"><strong>{{ item }}</strong></p>
+                {% endcapture %}
+                {% include new-web/checkmark.html
+                    class="align-items-center"
+                    content=checkmark %}
+              {% endfor %}
+            </div>
           </div>
-          <div><hr></div>
-          <div class="px-4" style="height: 128px;">
-            {% for item in package_extra2 %}
-              {% capture checkmark %}
-                <p class="ml-3"><strong>{{ item }}</strong></p>
-              {% endcapture %}
-              {% include new-web/checkmark.html
-                  class="align-items-center"
-                  content=checkmark %}
-            {% endfor %}
+          <div class="p-5" style="height: 174px; background-color: #23283d; color: #fff;">
+            <h3>$479</h3>
+          </div>
+        </div>
+
+        <!-- PRICING TABLE -->
+        <div class="col d-flex flex-column px-0">
+          <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px; padding-right: 40px;">
+            <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
+            <div class="flex-grow-1">
+              {% include new-web/checklist.html 
+                size="md"
+                items=package_core %}
+              {% include new-web/checklist.html 
+                size="md"
+                items=package_execution %}
+            </div>
+            <div><hr></div>
+            <div style="height: 128px;">
+              {% for item in package_extra2 %}
+                {% capture checkmark %}
+                  <p class="ml-3"><strong>{{ item }}</strong></p>
+                {% endcapture %}
+                {% include new-web/checkmark.html
+                    class="align-items-center"
+                    content=checkmark %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff;">
+            <h3><strong>$479</strong></h3>
+            <p><strong>save $459 today</strong></p>
           </div>
         </div>
       </div>
