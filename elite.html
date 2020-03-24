@@ -206,6 +206,16 @@ package_execution:
 });
 </script>
 
+{% assign package_core = "" | split: ',' %}
+{% for item in page.package_core %}
+  {% assign package_core = package_core | push: item.list_title %}
+{% endfor %}
+
+{% assign package_execution = "" | split: ',' %}
+{% for item in page.package_execution %}
+  {% assign package_execution = package_execution | push: item.list_title %}
+{% endfor %}
+
 <main id="sales">
 
   <section id="intro">
@@ -679,17 +689,6 @@ package_execution:
     <div class="container">
       <div class="row">
 
-        {% assign package_core = "" | split: ',' %}
-        {% for item in page.package_core %}
-          {% assign package_core = package_core | push: item.list_title %}
-        {% endfor %}
-
-        {% assign package_execution = "" | split: ',' %}
-        {% for item in page.package_execution %}
-          {% assign package_execution = package_execution | push: item.list_title %}
-        {% endfor %}
-
-
         <div class="col-md-6">
           <h3><strong>Level 1</strong> Core</h3>
           {% include new-web/checklist.html 
@@ -765,6 +764,9 @@ package_execution:
           <p>I’ve seen it, and I know that after you see it… you’ll feel the same. And I’m willing to put my money where my mouth is and make this 100% risk-free for you.</p>
           <p>Seemed like a fair solution 🙂</p>
         </div>
+        <div class="col-md-12">
+          <hr>
+        </div>
       </div>
       <div class="row text-center">
         <div class="col">
@@ -773,6 +775,63 @@ package_execution:
       </div>
     </div>
 
+    {% assign package_extra = "Full money-back guarantee" | split: ',' %}
+    {% assign package_extra2 = package_extra | push: "Operational support" %}
+
+    <div class="container">
+      <div class="row shadow-grey py-5">
+        <div class="col d-flex flex-column">
+          <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
+          <div class="flex-grow-1">
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_core %}
+          </div>
+          <div><hr></div>
+          <div style="height: 128px;">
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_extra %}
+          </div>
+        </div>
+        <div class="col d-flex flex-column">
+          <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
+          <div class="flex-grow-1">
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_execution %}
+          </div>
+          <div><hr></div>
+          <div style="height: 128px;">
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_extra2 %}
+          </div>
+        </div>
+        <div class="col d-flex flex-column">
+          <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
+          <div class="flex-grow-1">
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_core %}
+            {% include new-web/checklist.html 
+              size="md"
+              items=package_execution %}
+          </div>
+          <div><hr></div>
+          <div class="px-4" style="height: 128px;">
+            {% for item in package_extra2 %}
+              {% capture checkmark %}
+                <p class="ml-3"><strong>{{ item }}</strong></p>
+              {% endcapture %}
+              {% include new-web/checkmark.html
+                  class="align-items-center"
+                  content=checkmark %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -790,6 +849,6 @@ package_execution:
       el: ".testimonials-swiper-pagination",
       clickable: true
     }
-  })
+  });
 })()
 </script>
