@@ -273,6 +273,102 @@ pieter_note_points:
   {% assign package_execution = package_execution | push: item.list_title %}
 {% endfor %}
 
+{% capture pricing_table %}
+<div class="row shadow-grey">
+
+  <!-- PRICING TABLE -->
+  <div class="col d-flex flex-column px-0">
+    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
+      <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
+      <div class="flex-grow-1">
+        {% include new-web/checklist.html 
+          size="md"
+          items=package_core %}
+      </div>
+      <div><hr></div>
+      <div style="height: 128px;">
+        {% for item in package_extra %}
+          {% capture checkmark %}
+            <p class="ml-3"><strong>{{ item }}</strong></p>
+          {% endcapture %}
+          {% include new-web/checkmark.html
+              class="align-items-center"
+              content=checkmark %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;">
+      <h3>$479</h3>
+      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;"">
+        Get it now
+      </button>
+    </div>
+  </div>
+
+  <!-- PRICING TABLE -->
+  <div class="col d-flex flex-column px-0">
+    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: 1; padding-left: 40px; padding-right: 40px;">
+      <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
+      <div class="flex-grow-1">
+        {% include new-web/checklist.html 
+          size="md"
+          items=package_execution %}
+      </div>
+      <div><hr></div>
+      <div style="height: 128px;">
+        {% for item in package_extra2 %}
+          {% capture checkmark %}
+            <p class="ml-3"><strong>{{ item }}</strong></p>
+          {% endcapture %}
+          {% include new-web/checkmark.html
+              class="align-items-center"
+              content=checkmark %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="p-5" style="height: 174px; background-color: #23283d; color: #fff; position: relative; padding-top: 35px!important;">
+      <h3>$479</h3>
+      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
+        Get it now
+      </button>
+    </div>
+  </div>
+
+  <!-- PRICING TABLE -->
+  <div class="col d-flex flex-column px-0">
+    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
+      <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
+      <div class="flex-grow-1">
+        {% include new-web/checklist.html 
+          size="md"
+          items=package_core %}
+        {% include new-web/checklist.html 
+          size="md"
+          items=package_execution %}
+      </div>
+      <div><hr></div>
+      <div style="height: 128px;">
+        {% for item in package_extra2 %}
+          {% capture checkmark %}
+            <p class="ml-3"><strong>{{ item }}</strong></p>
+          {% endcapture %}
+          {% include new-web/checkmark.html
+              class="align-items-center"
+              content=checkmark %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; position: relative; padding-top: 35px!important;">
+      <h3><strong>$479</strong></h3>
+      <p><strong>save $459 today</strong></p>
+      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
+        Get it now
+      </button>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
 <main id="sales">
 
   <section id="intro">
@@ -841,99 +937,7 @@ pieter_note_points:
         </div>
       </div>
 
-      <div class="row shadow-grey">
-
-        <!-- PRICING TABLE -->
-        <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
-            <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
-            <div class="flex-grow-1">
-              {% include new-web/checklist.html 
-                size="md"
-                items=package_core %}
-            </div>
-            <div><hr></div>
-            <div style="height: 128px;">
-              {% for item in package_extra %}
-                {% capture checkmark %}
-                  <p class="ml-3"><strong>{{ item }}</strong></p>
-                {% endcapture %}
-                {% include new-web/checkmark.html
-                    class="align-items-center"
-                    content=checkmark %}
-              {% endfor %}
-            </div>
-          </div>
-          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;">
-            <h3>$479</h3>
-            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;"">
-              Get it now
-            </button>
-          </div>
-        </div>
-
-        <!-- PRICING TABLE -->
-        <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: 1; padding-left: 40px; padding-right: 40px;">
-            <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
-            <div class="flex-grow-1">
-              {% include new-web/checklist.html 
-                size="md"
-                items=package_execution %}
-            </div>
-            <div><hr></div>
-            <div style="height: 128px;">
-              {% for item in package_extra2 %}
-                {% capture checkmark %}
-                  <p class="ml-3"><strong>{{ item }}</strong></p>
-                {% endcapture %}
-                {% include new-web/checkmark.html
-                    class="align-items-center"
-                    content=checkmark %}
-              {% endfor %}
-            </div>
-          </div>
-          <div class="p-5" style="height: 174px; background-color: #23283d; color: #fff; position: relative; padding-top: 35px!important;">
-            <h3>$479</h3>
-            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
-              Get it now
-            </button>
-          </div>
-        </div>
-
-        <!-- PRICING TABLE -->
-        <div class="col d-flex flex-column px-0">
-          <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
-            <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
-            <div class="flex-grow-1">
-              {% include new-web/checklist.html 
-                size="md"
-                items=package_core %}
-              {% include new-web/checklist.html 
-                size="md"
-                items=package_execution %}
-            </div>
-            <div><hr></div>
-            <div style="height: 128px;">
-              {% for item in package_extra2 %}
-                {% capture checkmark %}
-                  <p class="ml-3"><strong>{{ item }}</strong></p>
-                {% endcapture %}
-                {% include new-web/checkmark.html
-                    class="align-items-center"
-                    content=checkmark %}
-              {% endfor %}
-            </div>
-          </div>
-          <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; position: relative; padding-top: 35px!important;">
-            <h3><strong>$479</strong></h3>
-            <p><strong>save $459 today</strong></p>
-            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
-              Get it now
-            </button>
-          </div>
-        </div>
-      </div>
+      {{ pricing_table }}
     </div>
   </section>
 
@@ -1039,7 +1043,7 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Pieter note -->
-  <section id="pieter-note" style="background-image: linear-gradient(to bottom, #a1a6bc, #eff0f6); margin-top: 100px;">
+  <section id="pieter-note" style="background-image: linear-gradient(to bottom, #a1a6bc, #eff0f6); margin-top: 100px; padding-bottom: 300px;">
     <div class="container" style="position: relative;">
       <div class="p-5" style="
         width: 636px;
@@ -1056,7 +1060,8 @@ pieter_note_points:
       </div>
       
       <div class="d-flex">
-        <div style="z-index: 3;     position: absolute;
+        <div style="z-index: 3;     
+        position: absolute;
         left: -55px;
         top: 55px;">
           <img src="/assets/images/new-web/elite/pieter-note.png" />
@@ -1065,7 +1070,8 @@ pieter_note_points:
           padding: 5.5rem 5rem;
           z-index: 2;
           position: relative;
-          margin-left: auto; width: 776px; 
+          margin-left: auto; 
+          width: 776px; 
           box-shadow: 14px 14px 0 0 rgba(24, 29, 51, 0.1);
           background-color: #ffffff;">
         
@@ -1101,6 +1107,12 @@ pieter_note_points:
           <p>Creator & teacher</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: -280px;">
+    <div class="container" style="top: -280px; position: relative;">
+      {{ pricing_table }}
     </div>
   </section>
 
