@@ -343,6 +343,7 @@ pieter_note_points:
   }
 
   /* Understanding */
+  #sales #understanding .button-2:not(.scrolled),
   #sales #understanding .button-1 {
     top: 15px; 
     height: 137px; 
@@ -352,6 +353,12 @@ pieter_note_points:
   #sales #understanding .button-2 {
     height: 137px; 
     width: 100%;
+    transition: all .5s ease-in-out;
+  }
+  #sales #understanding .button-2:not(.scrolled) {
+    box-shadow: none!important;
+    color: initial;
+    position: relative;
   }
 
   /* Framework */
@@ -679,7 +686,7 @@ pieter_note_points:
           </div>
         </div>
         <div class="col-md-6">
-          <button class="btn btn-primary btn-shadow shadow-secondary button-2">
+          <button class="btn btn-primary btn-shadow shadow-secondary button-2 active-inview">
             <p class="lead mb-0">You need <strong>clarity of thought.</strong></p>
           </button>
         </div>
@@ -871,7 +878,7 @@ pieter_note_points:
           <p>They form a circular system together:</p>
         </div>
         {% for item in page.strategy_layer_items %}
-        <div class="col-md-12 mb-4">
+        <div class="col-md-12 mb-4 px-0">
           <div class="d-flex">
             <div class="checkmark d-flex mr-3">
               <div class="w-auto position-relative">
@@ -1476,7 +1483,10 @@ pieter_note_points:
     $(this).closest('.accordion-item').removeClass('active');
   });
 
-  $(window).on('scroll', _pillarAnimations);
+  $(window).on('scroll', () => {
+    _viewportAnimations();
+    _pillarAnimations();
+  });
 
   function _pillarAnimations() {
     $(".pillar-group").each(function() {
@@ -1521,6 +1531,14 @@ pieter_note_points:
   //       );
   //   }, 200 * index)
   // });
+
+  function _viewportAnimations() {
+    $('.active-inview').each(function() {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass('scrolled');
+      }
+    });
+  }
 
   function affixTitle(_container, _sidebar) {
     const offset = 60;
