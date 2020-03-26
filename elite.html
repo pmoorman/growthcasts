@@ -169,8 +169,34 @@ pieter_note_points:
   }
 
   /* Accordion */
-  #sales .accordion-item.accordion-item-style1.active {
-    transform: scale(1.05);
+  #sales .accordion-item.accordion-item-style1 {
+    background: #fff; 
+    box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);
+  }
+  #sales .accordion-item.accordion-item-style1 .checkmark .fore {
+    margin-right: 15px; 
+    background: #181d33; 
+    border-radius: 100%; 
+    color: #fff; 
+    width: 40px; 
+    height: 40px; 
+    padding-top: 6px; 
+    font-size: 18px;
+  }
+  #sales .accordion-item.accordion-item-style1 .checkmark .back > img {
+    width: 40px; 
+    height: 40px;
+  }
+  #sales .accordion-item.accordion-item-style1:not(.active) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  #sales .accordion-item.accordion-item-style1:not(.active) .checkmark .back {
+    display: none;
+  }
+  #sales .accordion-item.accordion-item-style1 {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
   }
   #sales .accordion-item.accordion-item-style1 .accordion-item-header button {
     color: #181d33;
@@ -324,6 +350,11 @@ pieter_note_points:
     position: absolute; 
     right: 0; 
     left: 0;
+  }
+
+  /* Layers */
+  #sales #layers {
+    padding-top: calc(160px + 289px);
   }
 
   /* Pillars */
@@ -652,33 +683,45 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Layers -->
-  <section id="layers" class="alternate-section" style="padding-top: calc(160px + 289px);">
+  <section id="layers" class="alternate-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p>Shall I quickly define each layer for you, so we’re on the same page?</p>
+        <div class="col-md-6 px-6">
+          <p class="mb-5">Shall I quickly define each layer for you, so we’re on the same page?</p>
           <h3>Okay, here they are:</h3>
         </div>
-        <div class="col-md-6">
-          <div class="accordion" id="layers-accordion" style="width: 100%; height: 578px;">
+        <div class="col-md-6 px-0">
+          <div class="accordion" id="layers-accordion">
             {% for item in page.layer_items %}
-            <div class="accordion-item accordion-item-style1 p-5 position-relative {% if forloop.index == 1 %}active{% endif %}" 
-              style="z-index: {{ page.layer_items.size | minus: forloop.index }}; background: #fff; box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);">
+            {% assign accordion_width_minus = forloop.index0 | times: 20 %}
+            {% assign accordion_width = 512 | minus: accordion_width_minus %}
+            <div 
+            class="accordion-item accordion-item-style1 pr-5 m-auto position-relative {% if forloop.index == 1 %}active{% endif %}" 
+              style="max-width: {{ accordion_width }}px; 
+                z-index: {{ page.layer_items.size | minus: forloop.index }};
+                padding-left: calc(3rem - {{ accordion_width_minus | divided_by: 2 }}px);">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <h3 class="mb-0">
-                  <button 
-                    style="font-size: 22px; color: #181d33; font-weight: bold;"
+                  <button
                     class="btn btn-link d-flex align-items-center pl-0" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    <div style="background: #181d33; color: #fff; height: 40px; width: 40px; padding-top: 3px; border-radius: 100%; margin-right: 10px;">
-                      {{ forloop.index }}
+                    <div class="checkmark d-flex active {{ include.class }}">
+                      <div class="w-auto position-relative">
+                        <div class="fore">
+                          {{ forloop.index }}
+                        </div>
+                        <div class="back">
+                          <img src="/assets/images/new-web/check_icon_back.png" />
+                        </div>
+                      </div>
                     </div>
-                    {{ item.title }}
+                    <p class="lead mb-0"><strong>{{ item.title }}</strong></p>
                   </button>
                 </h3>
               </div>
           
               <div id="collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#layers-accordion">
                 <div class="accordion-item-body">
+                  <hr class="mt-2 mb-4">
                   {{ item.body }}
                 </div>
               </div>
@@ -882,16 +925,16 @@ pieter_note_points:
           <p class="lead"><strong>Level 1</strong> Core</p>
           <p class="lead">Module</p>
           {% for item in page.package_core %}
-          <div class="checkmark d-flex my-4 my-md-5 py-md-2 {{ include.class }}">
-            <div class="w-auto position-relative">
-              <div class="fore" style="background: #181d33; border-radius: 100%; color: #fff; width: 40px; height: 40px;">
-                {{ forloop.index }}
-              </div>
-              <div class="back">
-                <img style="width: 40px; height: 40px; padding-top: 6px;"  src="/assets/images/new-web/check_icon_back.png" />
+            <div class="checkmark d-flex my-4 my-md-5 py-md-2 {{ include.class }}">
+              <div class="w-auto position-relative">
+                <div class="fore" style="background: #181d33; border-radius: 100%; color: #fff; width: 40px; height: 40px;">
+                  {{ forloop.index }}
+                </div>
+                <div class="back">
+                  <img style="width: 40px; height: 40px; padding-top: 6px;"  src="/assets/images/new-web/check_icon_back.png" />
+                </div>
               </div>
             </div>
-          </div>
           {% endfor %}
         </div>
 
