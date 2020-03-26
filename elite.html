@@ -79,6 +79,14 @@ package_execution:
   - list_title: "**Module 8:** Growth skills (advanced)"
   - list_title: "**Operational support**"
 
+build_measure_learn_items:
+  - title: you have an idea
+    subtitle: beginning of a strategy
+  - title: you build it
+    subtitle: implementation
+  - title: you measure it
+    subtitle: data
+
 faq_general:
   - q: How does this course help my business?
     a: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a hic libero voluptate, ullam ad vero et, corporis perferendis quam quidem dicta, laboriosam velit magnam saepe. Quaerat quo quidem unde!
@@ -167,6 +175,9 @@ pieter_note_points:
   #sales .container-narrow-md {
     max-width: 864px;
   }
+  #sales .container-narrow-lg {
+    max-width: 920px;
+  }
 
   /* Accordion */
   #sales .accordion-item.accordion-item-style1 {
@@ -205,6 +216,9 @@ pieter_note_points:
   }
   #sales .accordion-item.accordion-item-style1.active .accordion-item-header button {
     opacity: 1;
+  }
+  #sales .accordion-item.accordion-item-style1.active .accordion-item-header button .arrow {
+    display: none;
   }
 
   #sales .accordion-item.accordion-item-style2 {
@@ -355,6 +369,20 @@ pieter_note_points:
   /* Layers */
   #sales #layers {
     padding-top: calc(160px + 289px);
+  }
+
+  /* Build, measure, learn */
+  #sales #build-measure-learn .step-item {
+    width: 180px; 
+    height: 180px; 
+    color: #fff; 
+    background: #181d33;
+  }
+  #sales #build-measure-learn .step-inner-text {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 40px;
   }
 
   /* Pillars */
@@ -696,25 +724,30 @@ pieter_note_points:
             {% assign accordion_width_minus = forloop.index0 | times: 20 %}
             {% assign accordion_width = 512 | minus: accordion_width_minus %}
             <div 
-            class="accordion-item accordion-item-style1 pr-5 m-auto position-relative {% if forloop.index == 1 %}active{% endif %}" 
+            class="accordion-item accordion-item-style1 pr-4 m-auto position-relative {% if forloop.index == 1 %}active{% endif %}" 
               style="max-width: {{ accordion_width }}px; 
                 z-index: {{ page.layer_items.size | minus: forloop.index }};
                 padding-left: calc(3rem - {{ accordion_width_minus | divided_by: 2 }}px);">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <h3 class="mb-0">
                   <button
-                    class="btn btn-link d-flex align-items-center pl-0" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    <div class="checkmark d-flex active {{ include.class }}">
-                      <div class="w-auto position-relative">
-                        <div class="fore">
-                          {{ forloop.index }}
-                        </div>
-                        <div class="back">
-                          <img src="/assets/images/new-web/check_icon_back.png" />
+                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <div class="d-flex align-items-center">
+                      <div class="checkmark d-flex active {{ include.class }}">
+                        <div class="w-auto position-relative">
+                          <div class="fore">
+                            {{ forloop.index }}
+                          </div>
+                          <div class="back">
+                            <img src="/assets/images/new-web/check_icon_back.png" />
+                          </div>
                         </div>
                       </div>
+                      <p class="lead mb-0"><strong>{{ item.title }}</strong></p>
                     </div>
-                    <p class="lead mb-0"><strong>{{ item.title }}</strong></p>
+                    <div class="arrow">
+                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                    </div>
                   </button>
                 </h3>
               </div>
@@ -734,30 +767,29 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Build measure learn -->
-  <section id="build-measure-learn" class="alternate-section">
-    <div class="container">
+  <section id="build-measure-learn" class="pt-0 alternate-section">
+    <div class="container container-narrow-lg">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 px-0 mb-5 text-center">
           <p class="lead">It’s actually an old idea — in lean startup parlance, this is called the <strong>“build-measure-learn”</strong> loop:</p>
         </div>
-        <div class="col-md-12 text-center" style="padding-left: 90px; padding-right: 90px;">
-          <div class="d-flex justify-content-between align-items-center">
-            <div style="width: 180px; height: 180px; color: #fff; background: #181d33;" class="p-3 d-flex justify-content-center align-items-center flex-column">
-              <p class="lead mb-0"><strong>you have an idea</strong></p>
-              <p class="mb-0">beginning of a strategy</p>
+        <div class="col-md-12 px-2 text-center">
+          <div class="d-flex px-4 justify-content-between align-items-center">
+            {% for item in page.build_measure_learn_items %}
+            <div class="step-item p-4 d-flex justify-content-center align-items-center flex-column">
+              <p class="lead mb-0"><strong>{{ item.title }}</strong></p>
+              <p class="mb-0">{{ item.subtitle }}</p>
             </div>
-            <div style="width: 180px; height: 180px; color: #fff; background: #181d33;" class="p-3 d-flex justify-content-center align-items-center flex-column">
-              <p class="lead mb-0"><strong>you build it</strong></p>
-              <p class="mb-0">implementation</p>
+            {% if forloop.index != page.build_measure_learn_items.size %}
+            <div>
+              <img src="/assets/images/new-web/elite/step_arrow_right.svg" />
             </div>
-            <div style="width: 180px; height: 180px; color: #fff; background: #181d33;" class="p-3 d-flex justify-content-center align-items-center flex-column">
-              <p class="lead mb-0"><strong>you measure it</strong></p>
-              <p class="mb-0">data</p>
-            </div>
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
         <div class="col-md-12 text-center mt-5 position-relative">
-          <div style="position: absolute; left: 50%; transform: translateX(-50%); top: 40px;">
+          <div class="step-inner-text">
             <p class="lead mb-0"><strong>you learn from it</strong></p>
             <p class="mb-0">strategy, again</p>
           </div>
