@@ -170,7 +170,7 @@ pieter_note_points:
 
   /* Container */
   #sales .container-narrow {
-    max-width: 688px;
+    max-width: 693px;
   }
   #sales .container-narrow-md {
     max-width: 864px;
@@ -393,15 +393,15 @@ pieter_note_points:
   }
   #sales .pillar-top {
     position: relative;
-    bottom: -130px;
+    bottom: -90px;
     z-index: 1;
     width: 160px;
-    height: 534px;
+    height: 334px;
     max-height: 20%;
   }
   #sales .pillar-top .right-shadow,
   #sales .pillar-top .left-shadow {
-    height: calc(100% - 130px);
+    height: calc(100% - 90px);
     position: absolute;
     top: 75px;
     width: 50%;
@@ -460,6 +460,17 @@ pieter_note_points:
   }
   #sales .pillar.active .pillar-top {
     animation: slide 2s ease both;
+  }
+  #sales .pillar:not(.active) .pillar-top {
+    opacity: 0.4;
+  }
+  #sales .pillar:not(.active) .pillar-top-inner {
+    border-bottom-color: #1d3558;
+    border-bottom: 50px solid #1d3558;
+  }
+  #sales .pillar:not(.active) .pillar-top-inner:after {
+    border-top-color: #1d3558;
+    border-top: 50px solid #1d3558;
   }
   
   @keyframes slide {
@@ -804,29 +815,38 @@ pieter_note_points:
     </div>
   </section>
 
-  <section class="alternate-section text-center">
-    <div class="container">
+  <section class="alternate-section text-center py-0">
+    <div class="container container-narrow mb-5">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 px-0">
           <p>You want to iterate through that loop as quickly as possible, to ultimately end up with a growth model that works for your unique product and unique situation:</p>
         </div>
-        <div class="col-md-12">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 px-0">
           <div class="shadow-grey" style="width: 100%; height: 578px; background: #fff;">
             IMG
           </div>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <p class="lead">Let’s explore what this strategy looks like…</p>
+    </div>
+  </section>
+
+  <section style="background-image: linear-gradient(to top, #ffffff, #eff0f6);">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 px-0">
+          <p class="lead mb-0">Let’s explore what this strategy looks like…</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SECTION: Strategy layer -->
-  <section id="strategy-layer" class="alternate-section">
-    <div class="container container-narrow-md text-center">
+  <section id="strategy-layer" class="pt-0">
+    <div class="container container-narrow-md text-center mb-4">
       <div class="row">
         <div class="col-md-12">
           <h3><strong>The strategy layer:</strong> durable, scalable sources of new users are built on growth loops</h3>
@@ -835,36 +855,54 @@ pieter_note_points:
     </div>
     <div class="container container-narrow">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 px-0">
           <p>Growth strategies anchor marketing and distribution deep inside the product experience: the product gets engineered like a virus. Growth loops are cycles where every users generates opportunities to “infect” new people and spread to other users—like how an infectious virus spreads from one person to others.</p>
         </div>
         <div class="col-md-12">
+          <div style="height: 500px;"></div>
+        </div>
+        <div class="col-md-12 px-0 mb-4">
           <p class="lead">It’s for a reason that “growth hacking” started off as essentially viral marketing—that’s still the core of the design process, even though there are many more options now.</p>
           <p>Over time a product can even develop multiple growth loops, and they can reinforce each other. But the key notion is that you’ll need this “engineered virality” that comes from a growth loop.</p>
           <p>In order to reason about those loops, we break loops down into 3 components or “systems”.</p>
           <p>They form a circular system together:</p>
         </div>
         {% for item in page.strategy_layer_items %}
-        <div class="col-md-12">
+        <div class="col-md-12 mb-4">
           <div class="d-flex">
-            <div>
-              <div style="background: blue; width: 24px; height: 24px; border-radius: 100%; margin-right: 15px;"></div> 
+            <div class="checkmark d-flex mr-3">
+              <div class="w-auto position-relative">
+                <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.png" />
+                <div class="back">
+                  <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+                </div>
+              </div>
             </div>
-            <div>
+            <div class="pt-2">
               <p class="lead"><strong>{{ item.title }}</strong></p>
               <p>{{ item.body }}</p>
             </div>
           </div>
         </div>
         {% endfor %}
-        <div class="col-md-12">
+        <div class="col-md-12 px-0 mb-4">
           <p>These 3 systems—and the various ways in which they interplay—make up the core of the strategy layer.</p>
         </div>
-        <div class="col-md-12 text-center">
-          <p class="lead">Now, here’s the cool thing…</p>
+        <div class="col-md-12 text-center pt-4">
+          <p class="lead mb-0">Now, here’s the cool thing…</p>
+        </div>
+      </div>
+    </div>
+    <div class="container container-narrow-md text-center my-5">
+      <div class="row">
+        <div class="col-md-12 px-0">
           <h3>There are over 25+ growth loops currently known — and <strong>each of them</strong> can turn a struggling business into a revenue-generating powerhouse</h3>
         </div>
-        <div class="col-md-12">
+      </div>
+    </div>
+    <div class="container container-narrow">
+      <div class="row">
+        <div class="col-md-12 px-0">
           <p>Modern growth marketing is fundamentally about systems-thinking: build automated systems that allow you to scale your marketing from “hustling harder” to actually scaling <strong>systematically</strong> and <strong>predictably</strong>.</p>
           <p>Growth is about framing marketing as an engineering problem: user acquisition can be systemized, fine-tuned and executed as an automated system.</p>
           <p>In order to get there, you obviously need more than just the right strategy: you also need the right <strong>skills</strong> to execute your strategy, and you need a <strong>data foundation</strong> to tell what’s working and what’s not.</p>
@@ -876,16 +914,16 @@ pieter_note_points:
 
   <!-- SECTION: Pillars -->
   <section id="pillars" class="alternate-section" style="background: #181d33;">
-    <div class="container container-narrow-md text-center">
+    <div class="container container-narrow-md text-center mb-5">
       <div class="row">
-        <div class="col-md-12 text-light">
+        <div class="col-md-12 px-0 text-light">
           <h3>Out of these simple ideas evolved the
-            <strong>“6 Pillars of Growth”</strong> that you might have heard about…</h3>
+            <strong class="text-primary">“6 Pillars of Growth”</strong> that you might have heard about…</h3>
         </div>
       </div>
     </div>
-    <div class="container px-0">
-      <div class="pillar-group">
+    <div class="container px-0 pt-5">
+      <div class="pillar-group mb-5">
         <div class="d-flex justify-content-between">
           {% for item in page.pillars_row1 %}
           <div class="pillar">
@@ -902,11 +940,11 @@ pieter_note_points:
           </div>
           {% endfor %}
         </div>
-        <div class="row text-center">
+        <div class="row text-center mt-4">
           <div class="col text-light">
-            <p class="pillar-title lead"
+            <p class="pillar-title lead mb-3"
               {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row1.first.title }}</p>
-            <p class="pillar-body"
+            <p class="pillar-body" style="color: #979cb6;"
               {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row1.first.body }}</p>
           </div>
         </div>
@@ -928,21 +966,24 @@ pieter_note_points:
           </div>
           {% endfor %}
         </div>
-        <div class="row text-center">
+        <div class="row text-center mt-4">
           <div class="col text-light">
-            <p class="pillar-title lead"
+            <p class="pillar-title lead mb-3"
               {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row2.first.title }}</p>
-            <p class="pillar-body"
+            <p class="pillar-body" style="color: #979cb6;"
               {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row2.first.body }}</p>
           </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  <section class="alternate-section pt-0" style="background: #181d33;">
+    <div class="container">
       <div class="row text-center text-light">
         <div class="col-md-12">
-          <p class="lead">Here’s the magic:</p>
-          <h3><strong>that’s all you will ever need.</strong></h3>
-          <img src="/assets/images/new-web/elite/pillars.svg" />
+          <p class="lead mb-4">Here’s the magic:</p>
+          <h3 class="mb-5"><strong>that’s all you will ever need.</strong></h3>
+          <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
           <p>Together, these 6 pillars form the full growth stack…</p>
         </div>
       </div>
@@ -1427,7 +1468,7 @@ pieter_note_points:
       const pillarBody = $(this).find(".pillar-body");
       const pillars = $(this).find(".pillar");
       pillars.each(function(index, el) {
-        if (_isOverCenterScreen(this, 100 * (pillars.length - index))) {
+        if (_isOverCenterScreen(this, -150 + (100 * (pillars.length - index)))) {
           if (!$(this).hasClass('active')) {
             const title = pillarTitle.attr(`item-${index}`);
             const body = pillarBody.attr(`item-${index}`);
