@@ -149,6 +149,9 @@ pieter_note_points:
   #sales .pt-6 {
     padding-top: 65px;
   }
+  #sales p {
+    margin-bottom: 25px;
+  }
   #sales p.lead {
     font-size: 22px;
     font-weight: 300;
@@ -714,7 +717,7 @@ pieter_note_points:
       <div class="row">
         <div class="col-md-12">
           <div class="image shadow-grey">
-            IMG
+            
           </div>
         </div>
       </div>
@@ -827,7 +830,7 @@ pieter_note_points:
       <div class="row">
         <div class="col-md-12 px-0">
           <div class="shadow-grey" style="width: 100%; height: 578px; background: #fff;">
-            IMG
+
           </div>
         </div>
       </div>
@@ -872,7 +875,7 @@ pieter_note_points:
           <div class="d-flex">
             <div class="checkmark d-flex mr-3">
               <div class="w-auto position-relative">
-                <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.png" />
+                <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
                 <div class="back">
                   <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
                 </div>
@@ -990,49 +993,28 @@ pieter_note_points:
     </div>
   </section>
 
-  <!-- SECTION: Package core -->
-  <section id="package-core">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p class="lead"><strong>Level 1</strong> Core</p>
-          <p class="lead">Module</p>
-          {% for item in page.package_core %}
-            <div class="checkmark d-flex my-4 my-md-5 py-md-2 {{ include.class }}">
-              <div class="w-auto position-relative">
-                <div class="fore" style="background: #181d33; border-radius: 100%; color: #fff; width: 40px; height: 40px;">
-                  {{ forloop.index }}
-                </div>
-                <div class="back">
-                  <img style="width: 40px; height: 40px; padding-top: 6px;"  src="/assets/images/new-web/check_icon_back.png" />
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- SECTION:  -->
-  <section>
-    <div class="container text-center">
+  <section style="background-image: linear-gradient(to top, #ffffff, #eff0f6);">
+    <div class="container container-narrow-md text-center">
       <div class="row">
-        <div class="col-md-12">
-          <p class="lead">This is the essence of startup marketing and user growth.</p>
+        <div class="col-md-12 mb-5">
+          <p class="lead mb-4">This is the essence of startup marketing and user growth.</p>
           <h3>What you need is a clean framework, that’s easy to reason about.</h3>
         </div>
-        <div class="col-md-12">
-          <div class="shadow-grey" style="width: 100%; height: 578px;">
-            IMG
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-12 px-0">
+          <div class="shadow-grey" style="width: 100%; height: 578px; background: #fff;">
+
           </div>
         </div>
       </div>
     </div>
-    <div class="container container-narrow text-center">
+    <div class="container container-narrow text-center pt-4">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 px-0">
           <p>You need a stronger mental model to scaffold your thoughts and decision making on.</p>
           <p>I’m both delighted and shocked by the payoff. I’ve never been more convinced that systematic growth marketing will revolutionize the way we think about marketing & user acquisition. <strong>The results are transformational.</strong></p>
         </div>
@@ -1041,15 +1023,15 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Feedback -->
-  <section id="feedback">
-    <div class="container container-narrow-md text-center">
+  <section id="feedback" class="pt-0">
+    <div class="container container-narrow-md text-center mb-5">
       <div class="row">
         <div class="col-md-12">
           <h3><strong>Here is some feedback we received from other entrepreneurs</strong>—like yourself—that started to apply these growth concepts.</h3>
         </div>
       </div>
     </div>
-    <div class="container" style="margin-bottom: -1000px;">
+    <div class="container pt-5" style="margin-bottom: -1000px;">
       
       <!-- FEEDBACK -->
       <div class="feedback-item d-flex position-relative" style="left: -200px;">
@@ -1072,11 +1054,11 @@ pieter_note_points:
       </div>
 
       <!-- FEEDBACK -->
-      <div class="feedback-item d-flex flex-column align-items-end position-relative" style="top: -200px; right: -150px;">
+      <div class="feedback-item d-flex flex-column align-items-end position-relative" style="top: -185px; right: -150px;">
         <div>
           <img class="position-relative" src="/assets/images/new-web/elite/feedback-2.jpg" />
         </div>
-        <div class="d-flex flex-column position-relative px-0 px-md-3" style="width: 423px; left: -155px; top: -60px;">
+        <div class="d-flex flex-column position-relative px-0 px-md-3" style="width: 423px; left: -185px; top: -40px;">
           
           <div class="speech-bubble speech-bubble-top-right slide-top position-relative">
             <div class="speech-bubble-back"></div>
@@ -1096,7 +1078,7 @@ pieter_note_points:
         <div class="position-relative" style="left: -100px;">
           <img class="position-relative" src="/assets/images/new-web/elite/feedback-3.jpg" />
         </div>
-        <div class="d-flex flex-column position-relative px-0 px-md-3" style="width: 423px; top: -30px;">
+        <div class="d-flex flex-column position-relative px-0 px-md-3" style="width: 423px; top: -30px; right: -4px;">
           
           <div class="speech-bubble speech-bubble-top-left slide-top position-relative">
             <div class="speech-bubble-back"></div>
@@ -1112,7 +1094,7 @@ pieter_note_points:
       </div>
 
       <!-- FEEDBACK -->
-      <div class="feedback-item d-flex flex-column align-items-end position-relative" style="top: -965px; right: -150px;">
+      <div class="feedback-item d-flex flex-column align-items-end position-relative" style="top: -965px; left: 45px;">
         <div>
           <img class="position-relative" src="/assets/images/new-web/elite/feedback-4.jpg" />
         </div>
@@ -1135,16 +1117,16 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Growth MBA -->
-  <section id="growth-mba">
-    <div class="container text-center">
+  <section id="growth-mba" class="pt-0">
+    <div class="container container-narrow text-center" style="margin-bottom: 100px;">
       <div class="row">
         <div class="col-md-12">
-          <p class="lead">Today, that 6-part system has turned into our flagship educational product: <strong>The Growth MBA</strong>.</p>
+          <p class="lead mb-5">Today, that 6-part system has turned into our flagship educational product: <strong>The Growth MBA</strong>.</p>
           <p>Let me introduce you to that… </p>
         </div>
       </div>
     </div>
-    <div class="container text-center d-flex" style="max-width: 1440px; height: 665px; background: url('/assets/images/new-web/elite/growth-mba.svg')">
+    <div class="container text-center d-flex" style="margin-bottom: 100px; max-width: 1440px; height: 665px; background: url('/assets/images/new-web/elite/growth-mba.svg')">
       <div style="max-width: 340px; color: #fff; margin: auto; padding-bottom: 50px;">
         <h1 style="font-size: 92px; line-height: 90px; font-weight: 600;">The Growth MBA</h1>
         <p class="lead">Our <strong>best-in-class</strong> growth marketing education</p>
@@ -1152,30 +1134,64 @@ pieter_note_points:
     </div>
     <div class="container container-narrow text-center">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 px-0">
           <p class="lead">Our blockbuster growth marketing education teaches entrepreneurs how to apply systematic growth marketing… to drive traffic, users and revenue virtually on autopilot.</p>
           <p>If you want to leverage your entrepreneurial energy to scale your companies bigger, better and faster, then this is the place to do it. You will become a confident growth practitioner, while following our exact step-by-step execution.</p>
-          <p class="lead"><strong>The Growth MBA includes:</strong></p>
+          <p class="lead my-5"><strong>The Growth MBA includes:</strong></p>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container container-narrow-lg pb-5">
       <div class="row">
-
-        <div class="col-md-6">
-          <h3><strong>Level 1</strong> Core</h3>
-          {% include new-web/checklist.html 
-            size="md"
-            items=package_core %}
+        <div class="col-md-6" style="border-right: 1px solid #e7e7e7;">
+          <div class="pt-3">
+            <h3 class="mb-4"><strong>Level 1</strong> Core</h3>
+            <div>
+              {% for item in package_core %}
+              <div class="d-flex">
+                <div class="checkmark d-flex mr-3">
+                  <div class="w-auto position-relative">
+                    <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+                    <div class="back">
+                      <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <p>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                </div>
+              </div>
+            {% endfor %}
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h3><strong>Level 2</strong> Execution</h3>
-          {% include new-web/checklist.html 
-            size="md"
-            items=package_execution %}
+        <div class="col-md-6 pl-6">
+          <div class="pt-3">
+            <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
+            <div>
+              {% for item in package_execution %}
+              <div class="d-flex">
+                <div class="checkmark d-flex mr-3">
+                  <div class="w-auto position-relative">
+                    <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+                    <div class="back">
+                      <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <p>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                </div>
+              </div>
+            {% endfor %}
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-12 text-center">
+      </div>
+    </div>
+    <div class="container container-narrow text-center mt-5">
+      <div class="row">
+        <div class="col-md-12">
           <p>The Growth MBA is an intermediate & advanced education. 
             Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
         </div>
