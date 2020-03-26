@@ -126,6 +126,7 @@ pieter_note_points:
 <style>
   #sales h3 {
     letter-spacing: 1.5px;
+    line-height: 56px;
   }
   #sales .px-6 {
     padding-left: 65px; 
@@ -198,6 +199,9 @@ pieter_note_points:
   }
 
   /* Hero */
+  #sales #hero {
+    padding-bottom: 40px;
+  }
   #sales #hero .bg-image {
     position: absolute; right: 0; bottom: 0;
   }
@@ -238,6 +242,11 @@ pieter_note_points:
     width: 340px;
     height: 100px;
     background-color: #d2d3d7;
+  }
+
+  /* Marketing game */
+  #sales #marketing-game .items {
+    margin-top: 350px;
   }
 
   /* Pillars */
@@ -314,7 +323,7 @@ pieter_note_points:
 
   #sales .pillar.active .pillar-top {
     animation: slide 2s ease both;
-  }
+  }tyle="padding-top: 40px;"
   
   @keyframes slide {
     0%   { max-height:   20%; }
@@ -457,21 +466,21 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Marketing game -->
-  <section id="marketing-game">
-    <div id="marketing-game" class="container">
+  <section id="marketing-game" class="pb-0">
+    <div class="container">
 
       <div class="row">
-        <div class="col-md-6 px-3 p-md-0 text-center text-md-left position-relative">
-          <div id="marketing-game this-sidebar">
-            <h3>You might have noticed this:</h3>
-            <p class="lead">The online marketing game is changing in a BIG way—what used to work before, simply <strong>isn’t working anymore.</strong></p>
+        <div class="col-md-6 px-0 text-center text-md-left position-relative">
+          <div id="marketing-game-sidebar">
+            <h3 class="mb-4 px-6">You might have noticed this:</h3>
+            <p class="lead px-6 mb-0">The online marketing game is changing in a BIG way—what used to work before, simply <strong>isn’t working anymore.</strong></p>
           </div>
         </div>
           
-        <div class="col-md-6">
+        <div class="items col-md-6 px-6">
           {% for item in page.marketing_game %}
-          <div class="text-center text-md-left" style="min-height: 220px;">
-            <img src="{{ item.image }}" />
+          <div class="text-center text-md-left mb-5">
+            <img class="mb-4" src="{{ item.image }}" />
             <p>{{ item.text }}</p>
           </div>
           {% endfor %}
@@ -1204,6 +1213,8 @@ pieter_note_points:
 
 <script>
 (() => {
+  affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar');
+  
   const swiper = new Swiper(document.querySelector(".testimonials-swiper"), {
     speed: 800,
     spaceBetween: 300,
@@ -1269,6 +1280,53 @@ pieter_note_points:
   //       );
   //   }, 200 * index)
   // });
+
+  function affixTitle(_container, _sidebar) {
+    const offset = 60;
+    const lineHeightDiff = 12;
+    const container = $(_container);
+    const sidebar = $(_sidebar);
+    const sidebarWidth = sidebar.width();
+    const sidebarHeight = sidebar.height();
+  
+    $(window).on('resize', function() {
+      sidebarWidth = sidebar.width();
+      sidebarHeight = sidebar.height();
+    })
+  
+    $(window).on('scroll', function() {
+      if (window.matchMedia("(max-width: 720px)").matches) {
+        sidebar.css('top', '');
+        sidebar.css('bottom', '');
+        sidebar.css('width', '');
+        sidebar.css('position', '');
+        return;
+      }
+  
+      container.each(function() {
+        const docViewTop = $(window).scrollTop();
+    
+        const containerTop = $(this).offset().top;
+        const containerBottom = containerTop + $(this).height();
+    
+        if (docViewTop > (containerTop + offset)) {
+          sidebar.css('top', (offset + lineHeightDiff) + 'px');
+          sidebar.css('bottom', '');
+          sidebar.css('width', sidebarWidth);
+          sidebar.css('position', 'fixed');
+        } else {
+          sidebar.css('position', 'absolute');
+          sidebar.css('top', '')
+        }
+    
+        if ((docViewTop - lineHeightDiff) > (containerBottom - sidebarHeight)) {
+          sidebar.css('bottom', (offset - lineHeightDiff) + 'px');
+          sidebar.css('top', '');
+          sidebar.css('position', 'absolute');
+        }
+      })
+    });
+  }
     
 })()
 </script>
