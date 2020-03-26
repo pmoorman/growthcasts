@@ -127,6 +127,10 @@ pieter_note_points:
   #sales h3 {
     letter-spacing: 1.5px;
   }
+  #sales .px-6 {
+    padding-left: 65px; 
+    padding-right: 65px;
+  }
   #sales p.lead {
     font-size: 22px;
     font-weight: 300;
@@ -136,15 +140,14 @@ pieter_note_points:
 
   #sales #hero h1 {
     font-size: 100px;
-    line-height: 0.94;
+    line-height: 94px;
+    letter-spacing: -3.66px;
   }
   #sales #hero h3 {
     font-size: 48px;
-    line-height: 0.94;
-  }
-  #sales #hero p {
-    font-size: 22px;
-    line-height: 32px;
+    line-height: 1;
+    letter-spacing: -1.75px;
+    font-weight: normal;
   }
 
   /* Container */
@@ -192,6 +195,49 @@ pieter_note_points:
   }
   #sales .accordion-item.accordion-item-style2.active .accordion-item-header button .arrow {
     display: none;
+  }
+
+  /* Hero */
+  #sales #hero .bg-image {
+    position: absolute; right: 0; bottom: 0;
+  }
+  #sales #hero .hero-stack > div {
+    position: relative;
+    margin: auto;
+  }
+  #sales #hero .hero-stack > div:first-child {
+    z-index: 5;
+    width: 416px;
+    height: 136px;
+    box-shadow: 0 25px 0 -4px rgba(3, 4, 8, 0.3);
+    background-color: #3497f3;
+  }
+  #sales #hero .hero-stack > div:nth-child(2) {
+    z-index: 4;
+    width: 392px;
+    height: 115px;
+    box-shadow: 0 12px 0 -4px rgba(24, 29, 51, 0.26);
+    background-color: #181d33;
+  }
+  #sales #hero .hero-stack > div:nth-child(3) {
+    z-index: 3;
+    width: 369px;
+    height: 111px;
+    box-shadow: 0 8px 0 -4px rgba(24, 29, 51, 0.15);
+    background-color: #3d4153;
+  }
+  #sales #hero .hero-stack > div:nth-child(4) {
+    z-index: 2;
+    width: 353px;
+    height: 105px;
+    box-shadow: 0 2px 0 0 rgba(24, 29, 51, 0.1);
+    background-color: #7e818c;
+  }
+  #sales #hero .hero-stack > div:nth-child(5) {
+    z-index: 1;
+    width: 340px;
+    height: 100px;
+    background-color: #d2d3d7;
   }
 
   /* Pillars */
@@ -261,10 +307,8 @@ pieter_note_points:
   }
   #sales .pillar-top-inner {
     border-bottom-color: #3497f3;
-    border-bottom: 50px solid #3497f3;
-  }
-  #sales .pillar-top-inner:after {
-    border-top-color: #3497f3;
+    border-bottom: 50px sstyle="
+    "#3497f3;
     border-top: 50px solid #3497f3;
   }
 
@@ -388,63 +432,24 @@ pieter_note_points:
 
 <main id="sales">
 
+  <!-- SECTION: Hero -->
   <section id="hero">
-    <div class="container">
+    <div class="container position-relative">
+      <img class="bg-image" src="/assets/images/new-web/elite/hero-bg.svg" />
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 px-6">
           <h3>The</h3>
-          <h1>Growth</h2>
-          <h1>Stack</h2>
+          <h1 class="mb-4">Growth Stack</h1>
           <p class="lead">Say goodbye to the unstructured madness of endless “growth hacks”… <strong>and hello to a simple, structured framework for growth.</strong></p>
         </div>
     
         <div class="col-md-6">
           <div class="hero-stack">
-            <div style="
-              z-index: 5;
-              position: relative;
-              margin: auto;
-              width: 416px;
-              height: 136px;
-              box-shadow: 0 25px 0 -4px rgba(3, 4, 8, 0.3);
-              background-color: #3497f3;">
-            </div>
-            <div style="
-            
-              z-index: 4;
-              position: relative;
-              margin: auto;
-              width: 392px;
-              height: 115px;
-              box-shadow: 0 12px 0 -4px rgba(24, 29, 51, 0.26);
-              background-color: #181d33;">
-            </div>
-            <div style="
-              z-index: 3;
-              position: relative;
-              margin: auto;
-              width: 369px;
-              height: 111px;
-              box-shadow: 0 8px 0 -4px rgba(24, 29, 51, 0.15);
-              background-color: #3d4153;">
-            </div>
-            <div style="
-              z-index: 2;
-              position: relative;
-              margin: auto;
-              width: 353px;
-              height: 105px;
-              box-shadow: 0 2px 0 0 rgba(24, 29, 51, 0.1);
-              background-color: #7e818c;">
-            </div>
-            <div style="
-              z-index: 1;
-              position: relative;
-              margin: auto;
-              width: 340px;
-              height: 100px;
-              background-color: #d2d3d7;">
-            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
