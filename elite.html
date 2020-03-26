@@ -132,6 +132,15 @@ pieter_note_points:
     padding-left: 65px; 
     padding-right: 65px;
   }
+  #sales .pr-6 {
+    padding-right: 65px;
+  }
+  #sales .pl-6 {
+    padding-left: 65px;
+  }
+  #sales .pt-6 {
+    padding-top: 65px;
+  }
   #sales p.lead {
     font-size: 22px;
     font-weight: 300;
@@ -249,6 +258,48 @@ pieter_note_points:
     margin-top: 350px;
   }
 
+  /* No */
+  #sales #no .block-1 > div {
+    max-width: 512px;
+    bottom: -58px;
+    position: relative;
+    background: #fff;
+  }
+  #sales #no .block-1 .shadow {
+    box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4); 
+    position: absolute; 
+    height: 70px; 
+    right: 0; 
+    left: 0; 
+    bottom: 0;
+  }
+  #sales #no .block-2 {
+    z-index: 1;    
+  }
+  #sales #no .block-2 > div {
+    max-width: 512px; 
+    background: #fff; 
+    top: -59px;
+  }
+  #sales #no .block-2 .shadow {
+    box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4); 
+    position: absolute; 
+    height: 47px; 
+    right: 0; 
+    left: 0; 
+    top: 0; 
+    z-index: -1;
+  }
+
+  #sales #no .parallax-bg {
+    background-image: url('/assets/images/new-web/elite/no.svg'); 
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
   /* Pillars */
   #sales .pillar {
     display: flex;
@@ -316,14 +367,15 @@ pieter_note_points:
   }
   #sales .pillar-top-inner {
     border-bottom-color: #3497f3;
-    border-bottom: 50px sstyle="
-    "#3497f3;
+    border-bottom: 50px solid #3497f3;
+  }
+  #sales .pillar-top-inner:after {
+    border-top-color: #3497f3;
     border-top: 50px solid #3497f3;
   }
-
   #sales .pillar.active .pillar-top {
     animation: slide 2s ease both;
-  }tyle="padding-top: 40px;"
+  }
   
   @keyframes slide {
     0%   { max-height:   20%; }
@@ -492,28 +544,24 @@ pieter_note_points:
 
   <!-- SECTION: No -->
   <section id="no" class="py-0">
-    <div class="container position-relative">
-      <div class="p-5" style="max-width: 512px;">
+    <div class="container position-relative block-1">
+      <div class="pl-5 pt-5 pb-5 pr-6">
         <h3>So what’s a business owner to do?</h3>
-        <p class="lead">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+        <p class="lead mb-0">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
+        <div class="shadow"></div>
       </div>
     </div>
 
     <section class="alternate-section py-0">
       <div class="container">
-        <div style="
-        background-image: url('/assets/images/new-web/elite/no.svg'); 
-        height: 500px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;"></div>
+        <div class="parallax-bg"></div>
       </div>
     </section>
 
-    <div class="container position-relative">
-      <div class="p-5 ml-auto" style="max-width: 512px;">
-        <p class="lead"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
+    <div class="container position-relative block-2">
+      <div class="pl-6 pt-5 pb-5 pr-5 ml-auto position-relative">
+        <div class="shadow"></div>
+        <p class="lead mt-1"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
         <p>Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
       </div>
     </div>
