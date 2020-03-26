@@ -265,7 +265,7 @@ pieter_note_points:
     position: relative;
     background: #fff;
   }
-  #sales #no .block-1 .shadow {
+  #sales #no .block-1 .block-shadow {
     box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4); 
     position: absolute; 
     height: 70px; 
@@ -281,7 +281,7 @@ pieter_note_points:
     background: #fff; 
     top: -59px;
   }
-  #sales #no .block-2 .shadow {
+  #sales #no .block-2 .block-shadow {
     box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4); 
     position: absolute; 
     height: 47px; 
@@ -290,7 +290,6 @@ pieter_note_points:
     top: 0; 
     z-index: -1;
   }
-
   #sales #no .parallax-bg {
     background-image: url('/assets/images/new-web/elite/no.svg'); 
     height: 500px; 
@@ -298,6 +297,18 @@ pieter_note_points:
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+  }
+
+  /* Understanding */
+  #sales #understanding .button-1 {
+    top: 15px; 
+    height: 137px; 
+    width: 100%; 
+    background-color: #eff0f6;
+  }
+  #sales #understanding .button-2 {
+    height: 137px; 
+    width: 100%;
   }
 
   /* Pillars */
@@ -548,7 +559,7 @@ pieter_note_points:
       <div class="pl-5 pt-5 pb-5 pr-6">
         <h3>So what’s a business owner to do?</h3>
         <p class="lead mb-0">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
-        <div class="shadow"></div>
+        <div class="block-shadow"></div>
       </div>
     </div>
 
@@ -560,7 +571,7 @@ pieter_note_points:
 
     <div class="container position-relative block-2">
       <div class="pl-6 pt-5 pb-5 pr-5 ml-auto position-relative">
-        <div class="shadow"></div>
+        <div class="block-shadow"></div>
         <p class="lead mt-1"><strong>There’s no substance there.</strong> Tactical “growth hacking” tips are a fad and an illusion.</h3>
         <p>Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
       </div>
@@ -568,32 +579,32 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Understanding -->
-  <section id="understanding">
+  <section id="understanding" class="pt-0">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-5">
           <h3><strong>Understanding</strong> is the key here.</h3>
         </div>
         <div class="col-md-6">
-          <div>
-            You don’t need hacks.
+          <div class="d-flex align-items-center justify-content-center position-relative button-1">
+            <p class="lead mb-0">You don’t need hacks.</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div>
-            You need <strong>clarity of thought.</strong>
-          </div>
+          <button class="btn btn-primary btn-shadow shadow-secondary button-2">
+            <p class="lead mb-0">You need <strong>clarity of thought.</strong></p>
+          </button>
         </div>
-        <div class="col-md-12">
+      </div>
+    </div>
+    <div class="container container-narrow text-center mt-5 pt-4">
+      <div class="row">
+        <div class="col px-0">
           What you need is a stronger mental model to scaffold your thoughts and decision making on.
-          <p class="lead">
+          <p class="lead mt-4">
             <strong>Something like the growth stack.</strong>
           </p>
         </div>
-      </div>
-      <div class="p-5" style="max-width: 512px;">
-        
-        <p class="lead">Chase that white rabbit down into the tactical madness of manipulative “growth hacks” and sketchy SEO tactics?</p>
       </div>
     </div>
   </section>
