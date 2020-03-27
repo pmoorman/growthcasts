@@ -136,6 +136,9 @@ pieter_note_points:
     letter-spacing: 1.5px;
     line-height: 56px;
   }
+  #sales .p-6 {
+    padding: 65px;
+  }
   #sales .px-6 {
     padding-left: 65px; 
     padding-right: 65px;
@@ -157,6 +160,9 @@ pieter_note_points:
     font-weight: 300;
     letter-spacing: 0.7px;
     line-height: 32px;
+  }
+  #sales .checkmark {
+    z-index: 1;
   }
 
   #sales #hero h1 {
@@ -227,7 +233,7 @@ pieter_note_points:
   #sales .accordion-item.accordion-item-style2 {
     background-color:#eff0f6;
     margin-bottom: 5px;
-    padding: 1rem 2rem;
+    padding: 1rem 2.8rem;
   }
   #sales .accordion-item.accordion-item-style2 .accordion-item-header button {
     text-align: left;
@@ -393,6 +399,26 @@ pieter_note_points:
     left: 50%; 
     transform: translateX(-50%); 
     top: 40px;
+  }
+
+  /* Testimonials */
+  #sales #testimonials {
+    background: linear-gradient(0deg, #eff0f6 40%, #181d33 40%);
+    color: #fff;
+  }
+  #sales #testimonials .swiper-pagination-wrapper {
+    position: relative;
+    top: 10px;
+  }
+  #sales #testimonials .swiper-pagination .swiper-pagination-bullet {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #sales #testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #181d33;
+  }
+  #sales #testimonials .testimonials {
+    padding-bottom: 15px;
   }
 
   /* Pillars */
@@ -1198,13 +1224,17 @@ pieter_note_points:
     </div>
     <div class="container container-narrow text-center mt-5">
       <div class="row">
-        <div class="col-md-12">
-          <p>The Growth MBA is an intermediate & advanced education. 
+        <div class="col-md-12 mb-4">
+          <p>The Growth MBA is an intermediate & advanced education. <br>
             Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
         </div>
         <div class="d-flex m-auto">
-          <button class="mx-2">Download Full Syllabus</button>
-          <button class="mx-2">Explore The Growth MBA</button>
+          <button class="mr-4 btn btn-primary btn-shadow font-weight-bold" style="width: 250px; height: 60px;">Download Full Syllabus</button>
+          <button class="ml-4 btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
+            <img src="/assets/images/new-web/elite/play-icon.svg" />
+            <div>Explore The Growth MBA </div>
+            <div style="color: #a1a6bc; font-weight: 300;">4.32</div>
+          </button>
         </div>
       </div>
     </div>
@@ -1214,20 +1244,23 @@ pieter_note_points:
   <section id="testimonials">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12">
-          <h3>Here's what others <strong>say about us...</strong></h3>
+        <div class="col-md-12 mb-4">
+          <h3 class="mb-5">Here's what others <strong>say about us...</strong></h3>
           <p>Morgan loved how simple Elite was to implement in real life:</p>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 px-0 pt-2">
           <div class="testimonials swiper-container testimonials-swiper">
             <div class="testimonials__slider swiper-wrapper">
               {% for testimonial in site.testimonials %}
-                <div class="testimonials__slide swiper-slide p-5 shadow-grey" style="width: calc(100% - 15px);">
-                  {{ testimonial }}
+                <div class="testimonials__slide swiper-slide" >
+                  <div class="p-6 shadow-grey" style="width: calc(100% - 15px); height: calc(100% - 15px); background: #fff;">
+                    {{ testimonial }}
+                  </div>
                 </div>
               {% endfor %}
             </div>
-
+          </div>
+          <div class="d-flex justify-content-center swiper-pagination-wrapper">
             <div class="swiper-pagination testimonials-swiper-pagination"></div>
           </div>
         </div>
@@ -1236,28 +1269,55 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: -->
-  <section class="alternate-section">
+  <section class="alternate-section pt-5 pb-0">
     <div class="container container-narrow-md">
       <div class="row">
-        <div>
+        <div class="mr-4">
           <img src="/assets/images/new-web/elite/guarantee_icon.svg" />
         </div>
-        <div class="col">
+        <div class="col pr-2">
           <p class="lead">
             If by the end of the Growth MBA, this isn’t an obviously fantastic investment, all you have to do is let me know — up to 1 year after your purchase — <strong>and I’ll refund 100% of your purchase.</strong>
           </p>
-          <p class="lead">You don’t need to explain.</p>
-          <p class="lead">You don’t have to convince me.</p>
+          <div class="d-flex align-items-center">
+            <div class="checkmark d-flex mr-3">
+              <div class="w-auto position-relative">
+                <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+                <div class="back">
+                  <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="lead mb-0">You don’t need to explain.</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="checkmark d-flex mr-3">
+              <div class="w-auto position-relative">
+                <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+                <div class="back">
+                  <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="lead mb-0">You don’t have to convince me.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12 my-2 px-0">
+          <hr class="my-5">
+        </div>
+        <div class="col-md-6 pl-0 pr-5">
           <p>Plain and simple — if this isn’t awesome for you, I don’t want to keep your money.</p>
           <p>You can watch every video and get every ounce of knowledge from me, and if at the end you don’t think we have delivered everything you were looking for, still get 100% of your money back.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pr-0 pl-5">
           <p><strong>I offer this, quite simply, because I know that people get results with this program. </strong></p>
-          <p>I’ve seen it, and I know that after you see it… you’ll feel the same. And I’m willing to put my money where my mouth is and make this 100% risk-free for you.</p>
+          <p>I’ve seen it, and I know that after you see it… you’ll feel the same. <br> And I’m willing to put my money where my mouth is and make this 100% risk-free for you.</p>
           <p>Seemed like a fair solution 🙂</p>
         </div>
       </div>
@@ -1265,20 +1325,22 @@ pieter_note_points:
     </div>
   </section>
 
-  <section style="background-image: linear-gradient(to bottom, #eff0f6, #ffffff 20%);">
+  <section class="pt-4" style="background-image: linear-gradient(to bottom, #eff0f6, #ffffff 20%);">
 
     <div class="container">
       <div class="row text-center">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-5">
           <hr>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 mb-5">
           <p class="lead">Let’s get this going:</p>
         </div>
       </div>
 
-      {{ pricing_table }}
+      <div class="pt-4">
+        {{ pricing_table }}
+      </div>
     </div>
   </section>
 
@@ -1298,15 +1360,17 @@ pieter_note_points:
 
         <!-- FAQ ITEMS-->
         <div class="col-md-6">
-          <h3 class="text-center" style="font-size: 32px;">General</h3>
+          <h3 class="text-center mb-4" style="font-size: 32px;">General</h3>
           <div class="accordion" id="faq_general-accordion">
             {% for item in page.faq_general %}
             <div class="accordion-item accordion-item-style2 position-relative">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <p class="lead mb-0">
                   <button 
-                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_generalcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    <strong>{{ item.q }}</strong>
+                    class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#faq_generalcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <p class="lead mb-0">
+                      <strong>{{ item.q }}</strong>
+                    </p>
                     <div class="arrow">
                       <img src="/assets/images/new-web/elite/arrow_right.svg" />
                     </div>
@@ -1315,7 +1379,7 @@ pieter_note_points:
               </div>
           
               <div id="faq_generalcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_general-accordion">
-                <div class="accordion-item-body">
+                <div class="accordion-item-body pt-3">
                   {{ item.a }}
                 </div>
               </div>
@@ -1326,15 +1390,17 @@ pieter_note_points:
 
         <!-- FAQ ITEMS-->
         <div class="col-md-6">
-          <h3 class="text-center" style="font-size: 32px;">What To Expect</h3>
+          <h3 class="text-center mb-4" style="font-size: 32px;">What To Expect</h3>
           <div class="accordion" id="faq_what_to_expect-accordion">
             {% for item in page.faq_what_to_expect %}
             <div class="accordion-item accordion-item-style2 position-relative">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <p class="lead mb-0">
                   <button 
-                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_what_to_expectcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    <strong>{{ item.q }}</strong>
+                    class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#faq_what_to_expectcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <p class="lead mb-0">
+                      <strong>{{ item.q }}</strong>
+                    </p>
                     <div class="arrow">
                       <img src="/assets/images/new-web/elite/arrow_right.svg" />
                     </div>
@@ -1343,7 +1409,7 @@ pieter_note_points:
               </div>
           
               <div id="faq_what_to_expectcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_what_to_expect-accordion">
-                <div class="accordion-item-body">
+                <div class="accordion-item-body pt-3">
                   {{ item.a }}
                 </div>
               </div>
@@ -1353,16 +1419,18 @@ pieter_note_points:
         </div>
 
         <!-- FAQ ITEMS-->
-        <div class="col-md-12">
-          <h3 class="text-center" style="font-size: 32px;">Pricing</h3>
+        <div class="col-md-12 mt-5">
+          <h3 class="text-center mb-4" style="font-size: 32px;">Pricing</h3>
           <div class="accordion" id="faq_pricing-accordion">
             {% for item in page.faq_pricing %}
             <div class="accordion-item accordion-item-style2 position-relative">
               <div class="accordion-item-header" id="heading-{{ forloop.index }}">
                 <p class="lead mb-0">
                   <button 
-                    class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#faq_pricingcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    <strong>{{ item.q }}</strong>
+                    class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#faq_pricingcollapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    <p class="lead mb-0">
+                      <strong>{{ item.q }}</strong>
+                    </p>
                     <div class="arrow">
                       <img src="/assets/images/new-web/elite/arrow_right.svg" />
                     </div>
@@ -1371,7 +1439,7 @@ pieter_note_points:
               </div>
           
               <div id="faq_pricingcollapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#faq_pricing-accordion">
-                <div class="accordion-item-body">
+                <div class="accordion-item-body pt-3">
                   {{ item.a }}
                 </div>
               </div>

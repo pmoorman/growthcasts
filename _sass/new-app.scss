@@ -1430,7 +1430,7 @@ section#packages {
 }
 
 .shadow-primary {
-  box-shadow: 14px 14px 0 0 $primary-color;
+  box-shadow: 14px 14px 0 0 $primary-color!important;
 }
 
 .shadow-secondary {
