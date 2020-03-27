@@ -81,6 +81,61 @@ package_execution:
   - list_title: "**Module 8:** Growth skills (advanced)"
   - list_title: "**Operational support**"
 
+modules_core:
+  - name: Growth Strategy
+    nav: 1
+    description: Where we lay out the Foundation of the Growth Loops Architecture
+    videos:
+      - title: "Systems: 6 pillars of Growth"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+      - title: "Focus & Clarity"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+      - title: "Crafting your Growth Strategy"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+    learn:
+      - Identify the best traction channels for your business type
+      - Understand over 25 acquisition channels that growth marketers use
+      - How to build a coherent growth loops architecture into your product fabric
+      - Growth process & execution velocity to breach through scaling barriers
+      - How to leverage the “power law of channels” for fast traffic generation
+      - Craft both inbound, outbound & product-based loops effectively
+      - Learn to confidently drive acquisition & generate gobs of traffic
+    testimonial:
+      body: "Above all else: Clarity & Focus on how to craft a coherent growth strategy—with those growth loops"
+      name: Irina Bykowa
+      title: works with Slack
+      thumbnail: ""
+    core_content_summary: 6 videos, 64 min
+    core_content_items:
+      - title: Introduction
+        subtitle: "3:25 min"
+      - title: Growth Systems
+        subtitle: "3:25 min"
+      - title: Process & lean
+        subtitle: "3:25 min"
+      - title: Growth Loops, part 1
+        subtitle: "3:25 min"
+      - title: Laws of Distribution
+        subtitle: "3:25 min"
+      - title: Growth Loops, part II
+        subtitle: "3:25 min"
+    bonus_content:
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+
 build_measure_learn_items:
   - title: you have an idea
     subtitle: beginning of a strategy
@@ -166,6 +221,19 @@ pieter_note_points:
     position: absolute;
     top: 0;
     z-index: -1;
+  }
+  .checkmark-number {
+    text-align: center;
+  }
+  .checkmark-number .fore {
+    margin-right: 15px; 
+    background: #181d33; 
+    border-radius: 100%; 
+    color: #fff; 
+    width: 40px; 
+    height: 40px; 
+    padding-top: 6px; 
+    font-size: 18px;
   }
 
   .checkmark.active .fore {
@@ -253,16 +321,6 @@ pieter_note_points:
   #sales .accordion-item.accordion-item-style1 {
     background: #fff; 
     box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);
-  }
-  #sales .accordion-item.accordion-item-style1 .checkmark .fore {
-    margin-right: 15px; 
-    background: #181d33; 
-    border-radius: 100%; 
-    color: #fff; 
-    width: 40px; 
-    height: 40px; 
-    padding-top: 6px; 
-    font-size: 18px;
   }
   #sales .accordion-item.accordion-item-style1 .checkmark .back > img {
     width: 40px; 
@@ -596,19 +654,38 @@ pieter_note_points:
     <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
       <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
       <div class="flex-grow-1">
-        {% include new-web/checklist.html 
-          size="md"
-          items=package_core %}
+        {% for item in package_core %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
+          </div>
+        </div>
+        {% endfor %}
       </div>
       <div><hr></div>
       <div style="height: 128px;">
         {% for item in package_extra %}
-          {% capture checkmark %}
-            <p class="ml-3 mb-0"><strong>{{ item }}</strong></p>
-          {% endcapture %}
-          {% include new-web/checkmark.html
-              class="align-items-center"
-              content=checkmark %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0"><strong>{{ item }}</strong></p>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>
@@ -625,19 +702,38 @@ pieter_note_points:
     <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: 1; padding-left: 40px; padding-right: 40px;">
       <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
       <div class="flex-grow-1">
-        {% include new-web/checklist.html 
-          size="md"
-          items=package_execution %}
+        {% for item in package_execution %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
+          </div>
+        </div>
+        {% endfor %}
       </div>
       <div><hr></div>
       <div style="height: 128px;">
         {% for item in package_extra2 %}
-          {% capture checkmark %}
-            <p class="ml-3 mb-0"><strong>{{ item }}</strong></p>
-          {% endcapture %}
-          {% include new-web/checkmark.html
-              class="align-items-center"
-              content=checkmark %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0"><strong>{{ item }}</strong></p>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>
@@ -654,22 +750,53 @@ pieter_note_points:
     <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
       <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
       <div class="flex-grow-1">
-        {% include new-web/checklist.html 
-          size="md"
-          items=package_core %}
-        {% include new-web/checklist.html 
-          size="md"
-          items=package_execution %}
+        {% for item in package_core %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
+          </div>
+        </div>
+        {% endfor %}
+        {% for item in package_execution %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
+          </div>
+        </div>
+        {% endfor %}
       </div>
       <div><hr></div>
       <div style="height: 128px;">
         {% for item in package_extra2 %}
-          {% capture checkmark %}
-            <p class="ml-3 mb-0"><strong>{{ item }}</strong></p>
-          {% endcapture %}
-          {% include new-web/checkmark.html
-              class="align-items-center"
-              content=checkmark %}
+        <div class="d-flex align-items-center my-md-3">
+          <div class="checkmark d-flex mr-3">
+            <div class="w-auto position-relative">
+              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+              <div class="back">
+                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="mb-0"><strong>{{ item }}</strong></p>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>
@@ -841,7 +968,7 @@ pieter_note_points:
                   <button
                     class="btn btn-link d-flex align-items-center justify-content-between pl-0 w-100" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
                     <div class="d-flex align-items-center">
-                      <div class="checkmark d-flex active {{ include.class }}">
+                      <div class="checkmark checkmark-number d-flex active {{ include.class }}">
                         <div class="w-auto position-relative">
                           <div class="fore">
                             {{ forloop.index }}
@@ -1211,7 +1338,7 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Growth MBA -->
-  <section id="growth-mba" class="pt-0">
+  <section id="growth-mba" class="pt-0" style="background-image: linear-gradient(to bottom, #ffffff, #eff0f6);">
     <div class="container container-narrow text-center" style="margin-bottom: 100px;">
       <div class="row">
         <div class="col-md-12">
@@ -1290,7 +1417,7 @@ pieter_note_points:
             Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
         </div>
         <div class="d-flex m-auto">
-          <button class="mr-4 btn btn-primary btn-shadow font-weight-bold" style="width: 250px; height: 60px;">Download Full Syllabus</button>
+          <button class="mr-4 btn btn-secondary  btn-shadow font-weight-bold" style="width: 250px; height: 60px;">Download Full Syllabus</button>
           <button class="ml-4 btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
             <img src="/assets/images/new-web/elite/play-icon.svg" />
             <div>Explore The Growth MBA </div>
@@ -1299,6 +1426,72 @@ pieter_note_points:
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- SECTION: Modules core -->
+  <section id="modules-core">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+          <p class="lead mb-0"><strong>Level 1</strong> Core</p>
+          {% for item in page.modules_core %}
+          <div class="checkmark checkmark-number d-flex active mx-4">
+            <div class="w-auto position-relative">
+              <div class="fore">
+                {{ item.nav }}
+              </div>
+              <div class="back">
+                <img style="width:40px; height: 40px;" src="/assets/images/new-web/check_icon_back.png" />
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- SLIDE module -->
+    {% for item in page.modules_core %}
+    <div class="container container-narrow">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="mb-4"><strong>{{ item.name }}</strong></h3>
+          <p class="lead">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {% assign accordion_key = "modules-core-" | append: forloop.index %}
+          <div class="accordion" id="{{ accordion_key }}-accordion" style="width: 433px;">
+            {% for video in item.videos %}
+            <div class="accordion-item accordion-item-style2 position-relative">
+              <div class="accordion-item-header" id="{{ accordion_key }}heading-{{ forloop.index }}">
+                <p class="lead mb-0">
+                  <button 
+                    class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
+                    <p class="lead mb-0">
+                      <strong>{{ video.title }}</strong>
+                    </p>
+                    <div class="arrow">
+                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                    </div>
+                  </button>
+                </p>
+              </div>
+          
+              <div id="{{ accordion_key }}collapse-{{ forloop.index }}" class="collapse" aria-labelledby="{{ accordion_key }}heading-{{ forloop.index }}" data-parent="#{{ accordion_key }}-accordion">
+                <div class="accordion-item-body pt-3">
+                  {{ video.body }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </section>
 
   <!-- SECTION: testimonials -->
@@ -1407,12 +1600,12 @@ pieter_note_points:
 
   <!-- SECTION: Faq -->
   <section id="faq" class="pt-5">
-    <div class="container container-narrow">
+    <div class="container container-narrow mb-5">
       <div class="row">
         <div class="col text-center">
           <h3>Frequently Asked Questions</h3>
           <p>These are the questions people ask me all the time. If you ever have any other question, you can easily reach me. Just send me an email, I'll generally get back within 24 hours:</p>
-          <p class="lead"><a href="mailto:pieter@double-agency.com"></a></p>
+          <p class="lead"><a href="mailto:pieter@double-agency.com">pieter@double-agency.com</a></p>
         </div>
       </div>
     </div>
