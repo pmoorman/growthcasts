@@ -2,6 +2,7 @@
 title: Elite
 layout: pages/new-web/default
 header_title: The Growth Stack
+hide_footer: true
 include_swiper: true
 marketing_game:
   - image: /assets/images/new-web/elite/marketing_game-1.svg
@@ -133,6 +134,65 @@ pieter_note_points:
 ---
 
 <style>
+  .checkmark .back img,
+  .checkmark .fore {
+    width: 30px;
+    height: 30px;
+  }
+  .checkmark p {
+    margin-bottom: 0;
+  }
+
+  .checkmark {
+    margin-top: 8px!important;
+    margin-bottom: 8px!important;
+  }
+  .checkmark img {
+    border-radius: 100%;
+    opacity: 0.15;
+    transition: 0.5s;
+  }
+
+  .checkmark.active img {
+    opacity: 1;
+  }
+  .checkmark.active .fore {
+    animation: fore 0.5s linear both;
+  }
+  .checkmark.active .back {
+    animation: back 0.5s linear both;
+  }
+  .checkmark .back {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .checkmark.active .fore {
+    animation: fore 0.5s linear both;
+  }
+  .checkmark.active .back {
+    animation: back 0.5s linear both;
+  }
+
+  @keyframes fore {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-2px, -2.5px);
+    }
+  }
+
+  @keyframes back {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(2px, 2.5px);
+    }
+  }
+
   #sales h3 {
     letter-spacing: 1.5px;
     line-height: 56px;
@@ -1346,7 +1406,7 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Faq -->
-  <section id="faq">
+  <section id="faq" class="pt-5">
     <div class="container container-narrow">
       <div class="row">
         <div class="col text-center">
@@ -1520,7 +1580,7 @@ pieter_note_points:
     </div>
   </section>
 
-  <section style="margin-bottom: -280px;">
+  <section class="pb-0">
     <div class="container" style="top: -280px; position: relative;">
       {{ pricing_table }}
     </div>
@@ -1606,6 +1666,11 @@ pieter_note_points:
       if (_isOverCenterScreen(this, 150)) {
         $(this).addClass('scrolled');
       }
+    });
+    $(".checkmark").each(function() {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass("active");
+       }
     });
   }
 

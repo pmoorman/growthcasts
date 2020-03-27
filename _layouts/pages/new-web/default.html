@@ -11,6 +11,16 @@
     
     {% unless page.hide_footer %}
     {% include new-web/footer.html %}
+    {% else %}
+    <footer class="bg-secondary py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center" style="font-size: 14px; opacity: 0.6;">
+            Copyright © 2020 Double LLC. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
     {% endunless %}
 
     <script>
