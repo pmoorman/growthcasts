@@ -136,6 +136,60 @@ modules_core:
       - title: Channels Strategy Guide
         subtitle: PDF
 
+  - name: Growth Strategy2
+    nav: 2
+    description: Where we lay out the Foundation of the Growth Loops Architecture
+    videos:
+      - title: "Systems: 6 pillars of Growth"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+      - title: "Focus & Clarity"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+      - title: "Crafting your Growth Strategy"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: ""
+    learn:
+      - Identify the best traction channels for your business type
+      - Understand over 25 acquisition channels that growth marketers use
+      - How to build a coherent growth loops architecture into your product fabric
+      - Growth process & execution velocity to breach through scaling barriers
+      - How to leverage the “power law of channels” for fast traffic generation
+      - Craft both inbound, outbound & product-based loops effectively
+      - Learn to confidently drive acquisition & generate gobs of traffic
+    testimonial:
+      body: "Above all else: Clarity & Focus on how to craft a coherent growth strategy—with those growth loops"
+      name: Irina Bykowa
+      title: works with Slack
+      thumbnail: ""
+    core_content_summary: 6 videos, 64 min
+    core_content_items:
+      - title: Introduction
+        subtitle: "3:25 min"
+      - title: Growth Systems
+        subtitle: "3:25 min"
+      - title: Process & lean
+        subtitle: "3:25 min"
+      - title: Growth Loops, part 1
+        subtitle: "3:25 min"
+      - title: Laws of Distribution
+        subtitle: "3:25 min"
+      - title: Growth Loops, part II
+        subtitle: "3:25 min"
+    bonus_content:
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+
 build_measure_learn_items:
   - title: you have an idea
     subtitle: beginning of a strategy
@@ -1433,9 +1487,9 @@ pieter_note_points:
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-12 d-flex align-items-center justify-content-center">
-          <p class="lead mb-0"><strong>Level 1</strong> Core</p>
+          <p class="lead mb-0 mr-4"><strong>Level 1</strong> Core</p>
           {% for item in page.modules_core %}
-          <div class="checkmark checkmark-number d-flex active mx-4">
+          <div class="checkmark checkmark-number d-flex active" modules-core-goto-slide="{{ forloop.index0 }}">
             <div class="w-auto position-relative">
               <div class="fore">
                 {{ item.nav }}
@@ -1450,48 +1504,62 @@ pieter_note_points:
       </div>
     </div>
     <!-- SLIDE module -->
-    {% for item in page.modules_core %}
-    <div class="container container-narrow">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="mb-4"><strong>{{ item.name }}</strong></h3>
-          <p class="lead">{{ item.description }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          {% assign accordion_key = "modules-core-" | append: forloop.index %}
-          <div class="accordion" id="{{ accordion_key }}-accordion" style="width: 433px;">
-            {% for video in item.videos %}
-            <div class="accordion-item accordion-item-style2 position-relative">
-              <div class="accordion-item-header" id="{{ accordion_key }}heading-{{ forloop.index }}">
-                <p class="lead mb-0">
-                  <button 
-                    class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
-                    <p class="lead mb-0">
-                      <strong>{{ video.title }}</strong>
-                    </p>
-                    <div class="arrow">
-                      <img src="/assets/images/new-web/elite/arrow_right.svg" />
-                    </div>
-                  </button>
-                </p>
-              </div>
-          
-              <div id="{{ accordion_key }}collapse-{{ forloop.index }}" class="collapse" aria-labelledby="{{ accordion_key }}heading-{{ forloop.index }}" data-parent="#{{ accordion_key }}-accordion">
-                <div class="accordion-item-body pt-3">
-                  {{ video.body }}
-                </div>
-              </div>
+    <div class="modules-core-slider">
+      {% for item in page.modules_core %}
+      <div>
+        <div class="container container-narrow">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="mb-4"><strong>{{ item.name }}</strong></h3>
+              <p class="lead">{{ item.description }}</p>
             </div>
-            {% endfor %}
+          </div>
+        </div>
+        <div class="container">
+          <div class="row flex-nowrap align-items-center">
+            <div class="col" style="z-index: 1;">
+              {% assign accordion_key = "modules-core-" | append: forloop.index %}
+              <div class="accordion" id="{{ accordion_key }}-accordion" style="width: 433px;">
+                {% for video in item.videos %}
+                <div class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}">
+                  <div class="accordion-item-header" id="{{ accordion_key }}heading-{{ forloop.index }}">
+                    <p class="lead mb-0">
+                      <button 
+                        class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
+                        <p class="lead mb-0">
+                          <strong>{{ video.title }}</strong>
+                        </p>
+                        <div class="arrow">
+                          <img src="/assets/images/new-web/elite/arrow_right.svg" />
+                        </div>
+                      </button>
+                    </p>
+                  </div>
+              
+                  <div id="{{ accordion_key }}collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="{{ accordion_key }}heading-{{ forloop.index }}" data-parent="#{{ accordion_key }}-accordion">
+                    <div class="accordion-item-body pt-3">
+                      {{ video.body }}
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              
+            </div>
+            <div class="video" style="position: relative; left: -90px;">
+              <div class="d-flex justify-content-center align-items-center" style="width: 888px;
+              height: 608px;
+              background-color: #cfd1d8;">
+                <div class="bg-secondary shadow-primary" style="width: 60px; height: 60px;">
+                  <img src="/assets/images/new-web/elite/play-icon.svg" />
+                </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </section>
 
   <!-- SECTION: testimonials -->
@@ -1804,6 +1872,17 @@ pieter_note_points:
   $('.collapse').on('hide.bs.collapse', function () {
     $(this).closest('.accordion-item').removeClass('active');
   });
+
+  const modulesCoreSlider = $('.modules-core-slider').slick({
+    
+  });
+  $('[modules-core-goto-slide]').each(function() {
+    const index = $(this).attr('modules-core-goto-slide');
+    $(this).click(function(e) {
+      $('.modules-core-slider').slick("slickGoTo", parseInt(index, 10));
+    })
+  })
+  
 
   $(window).on('scroll', () => {
     _viewportAnimations();
