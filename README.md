@@ -10,3 +10,8 @@ growthcasts website (Jekyll)
 - Pricing table button shadows
 - Fix Pricing table data
 - Hero animation
+
+# To get
+
+- Module section arrows
+  - 
