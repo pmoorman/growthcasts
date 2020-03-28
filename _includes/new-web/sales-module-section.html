@@ -227,10 +227,17 @@
 
   readmoreBtns.each(function() {
     $(this).click(function() {
-      $(this)
+      const section = $(this)
         .closest('.slider-item')
-        .find('.what-you-will-learn')
-        .slideToggle();
+        .find('.what-you-will-learn');
+
+      
+
+      section.slideToggle(null, () => {
+        section.is(':visible')
+          ? $(this).text('Read less')
+          : $(this).text('Read more');
+      });
     })
   });
 
