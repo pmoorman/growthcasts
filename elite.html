@@ -190,6 +190,115 @@ modules_core:
       - title: Channels Strategy Guide
         subtitle: PDF
 
+modules_execution:
+  - name: Growth Strategy6
+    nav: 6
+    description: Where we lay out the Foundation of the Growth Loops Architecture
+    videos:
+      - title: "Systems: 6 pillars of Growth"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/329342289"
+      - title: "Focus & Clarity"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/209943347"
+      - title: "Crafting your Growth Strategy"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/209943347"
+    learn:
+      - Identify the best traction channels for your business type
+      - Understand over 25 acquisition channels that growth marketers use
+      - How to build a coherent growth loops architecture into your product fabric
+      - Growth process & execution velocity to breach through scaling barriers
+      - How to leverage the “power law of channels” for fast traffic generation
+      - Craft both inbound, outbound & product-based loops effectively
+      - Learn to confidently drive acquisition & generate gobs of traffic
+    testimonial:
+      body: "Above all else: Clarity & Focus on how to craft a coherent growth strategy—with those growth loops"
+      name: Irina Bykowa
+      title: works with Slack
+      thumbnail: "/assets/images/new-web/elite/feedback-2.jpg"
+    core_content_summary: 6 videos, 64 min
+    core_content_items:
+      - title: Introduction
+        subtitle: "3:25 min"
+      - title: Growth Systems
+        subtitle: "3:25 min"
+      - title: Process & lean
+        subtitle: "3:25 min"
+      - title: Growth Loops, part 1
+        subtitle: "3:25 min"
+      - title: Laws of Distribution
+        subtitle: "3:25 min"
+      - title: Growth Loops, part II
+        subtitle: "3:25 min"
+    bonus_content_items:
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+
+  - name: Growth Strategy2
+    nav: Operational support
+    description: Where we lay out the Foundation of the Growth Loops Architecture
+    videos:
+      - title: "Systems: 6 pillars of Growth"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/329342289"
+      - title: "Focus & Clarity"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/329342289"
+      - title: "Crafting your Growth Strategy"
+        body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
+        link: "https://player.vimeo.com/video/329342289"
+    learn:
+      - Identify the best traction channels for your business type
+      - Understand over 25 acquisition channels that growth marketers use
+      - How to build a coherent growth loops architecture into your product fabric
+      - Growth process & execution velocity to breach through scaling barriers
+      - How to leverage the “power law of channels” for fast traffic generation
+      - Craft both inbound, outbound & product-based loops effectively
+      - Learn to confidently drive acquisition & generate gobs of traffic
+    testimonial:
+      body: "Above all else: Clarity & Focus on how to craft a coherent growth strategy—with those growth loops"
+      name: Irina Bykowa
+      title: works with Slack
+      thumbnail: ""
+    core_content_summary: 6 videos, 64 min
+    core_content_items:
+      - title: Introduction
+        subtitle: "3:25 min"
+      - title: Growth Systems
+        subtitle: "3:25 min"
+      - title: Process & lean
+        subtitle: "3:25 min"
+      - title: Growth Loops, part 1
+        subtitle: "3:25 min"
+      - title: Laws of Distribution
+        subtitle: "3:25 min"
+      - title: Growth Loops, part II
+        subtitle: "3:25 min"
+    bonus_content:
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+      - title: Channels Strategy Guide
+        subtitle: PDF
+
 build_measure_learn_items:
   - title: you have an idea
     subtitle: beginning of a strategy
@@ -688,6 +797,25 @@ pieter_note_points:
   }
 
   /* Modules section */
+  #sales .module-section .video {
+    position: relative; 
+    left: -90px;
+  }
+  #sales .module-section .video-selectors {
+    z-index: 1;
+  }
+  #sales .module-section.style2 .modulevideo-wrapper {
+    justify-content: flex-end;
+  }
+  #sales .module-section.style2 .video {
+    order: 1;
+    right: -90px;
+    left: initial;
+  }
+  #sales .module-section.style2 .video-selectors {
+    order: 2;
+  }
+  
   #sales .module-section .nav-item {
     cursor: pointer;
   }
@@ -696,8 +824,15 @@ pieter_note_points:
     position: relative;
     opacity: 0.4;
   }
-  #sales .module-section .nav-item:not(.selected) .back {
-    display: none;
+  #sales .module-section .nav-item.selected .fore {
+    box-shadow: 5px 5px #3397f3;
+  }
+  #sales .module-section .nav-item .fore,
+  #sales .module-section .nav-item .back {
+    width: auto;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 </style>
 
@@ -1499,7 +1634,17 @@ pieter_note_points:
   <section id="modules-core">
     {% include new-web/sales-module-section.html
       container="modules_core"
+      title="**Level 1** Core"
       module=page.modules_core %}
+  </section>
+
+  <!-- SECTION: Modules execution -->
+  <section id="modules-execution" class="pt-0">
+    {% include new-web/sales-module-section.html
+      container="modules_execution"
+      title="**Level 2** Execution"
+      style="style2"
+      module=page.modules_execution %}
   </section>
 
   <!-- SECTION: testimonials -->

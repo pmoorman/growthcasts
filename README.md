@@ -14,7 +14,7 @@ growthcasts website (Jekyll)
   - Readmore arrow
   - DONE Readmore change to read less when opened
   - DONE Change video on accordion selected
-  - Align left and right elements
+  - DONE Align left and right elements
 
 # To get
 
