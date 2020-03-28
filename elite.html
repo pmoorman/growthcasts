@@ -12,6 +12,8 @@ marketing_game:
   - image: /assets/images/new-web/elite/marketing_game-3.svg
     text: …and “social sharing” is something only crazy aunt Jenny does, nowadays.
 
+explore_growth_mba_video_url: "https://player.vimeo.com/video/329342289"
+
 layer_items:
   - title: Strategic clarity
     body: You know that real growth is driven by systems design, and you need the strategic clarity to see how 3 core systems interplay to create a so-called “growth loop” — I’ll explain the details below.
@@ -1564,11 +1566,11 @@ pieter_note_points:
         </div>
         <div class="d-flex m-auto">
           <button class="mr-4 btn btn-secondary  btn-shadow font-weight-bold" style="width: 250px; height: 60px;">Download Full Syllabus</button>
-          <button class="ml-4 btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
+          <a href="#explore-growth-mba" class="ml-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
             <img src="/assets/images/new-web/elite/play-icon.svg" />
             <div>Explore The Growth MBA </div>
             <div style="color: #a1a6bc; font-weight: 300;">4.32</div>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -1878,6 +1880,8 @@ pieter_note_points:
 
 </main>
 
+{% include new-web/modal_iframe.html src=page.explore_growth_mba_video_url id="explore-growth-mba" %}
+
 <script>
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar');
@@ -2010,6 +2014,25 @@ pieter_note_points:
       })
     });
   }
+
+  $('.modal-btn').each(function() {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      const target = $(this).attr('href');
+      const modal = $(target);
+
+      modal.toggleClass('modal--visible');
+
+      modal.on('click', function(e) {
+        if (e.target.classList.contains("modal_background")) {
+          modal.removeClass("modal--visible");
+          modal.find('iframe').each(function() {
+            $(this).attr('src', $(this).attr('src'));
+          });
+        }
+      });
+    });
+  });
     
 })()
 </script>
