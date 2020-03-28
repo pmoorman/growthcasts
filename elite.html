@@ -69,17 +69,55 @@ pillars_row2:
     body: Foundation of the growth loops architecture
 
 package_core:
-  - list_title: "**Module 1:** Growth strategy"
-  - list_title: "**Module 2:** Sales funnels"
-  - list_title: "**Module 3:** Growth engines"
-  - list_title: "**Module 4:** Copy & conversion"
-  - list_title: "**Module 5:** Engagement & retention"
+  - "**Module 1:** Growth strategy"
+  - "**Module 2:** Sales funnels"
+  - "**Module 3:** Growth engines"
+  - "**Module 4:** Copy & conversion"
+  - "**Module 5:** Engagement & retention"
 
 package_execution:
-  - list_title: "**Module 6:** Advanced strategy"
-  - list_title: "**Module 7:** Video case studies (13x)"
-  - list_title: "**Module 8:** Growth skills (advanced)"
-  - list_title: "**Operational support**"
+  - "**Module 6:** Advanced strategy"
+  - "**Module 7:** Video case studies (13x)"
+  - "**Module 8:** Growth skills (advanced)"
+  - "**Operational support**"
+
+pricing_table:
+  - title: "**Level 1** <br> Core"
+    items:
+      - "**Module 1:** Growth strategy"
+      - "**Module 2:** Sales funnels"
+      - "**Module 3:** Growth engines"
+      - "**Module 4:** Copy & conversion"
+      - "**Module 5:** Engagement & retention"
+    extra_items: 
+      - "Full money-back guarantee"
+    price: "$479"
+
+  - title: "**Level 2** <br> Execution"
+    items:
+      - "**Module 6:** Advanced strategy"
+      - "**Module 7:** Video case studies (13x)"
+      - "**Module 8:** Growth skills (advanced)"
+    extra_items: 
+      - "Full money-back guarantee"
+      - "Operational support"
+    price: "$479"
+
+  - title: "**Full Access** <br> Level 1+2"
+    items:
+      - "**Module 1:** Growth strategy"
+      - "**Module 2:** Sales funnels"
+      - "**Module 3:** Growth engines"
+      - "**Module 4:** Copy & conversion"
+      - "**Module 5:** Engagement & retention"
+      - "**Module 6:** Advanced strategy"
+      - "**Module 7:** Video case studies (13x)"
+      - "**Module 8:** Growth skills (advanced)"
+    extra_items: 
+      - "Full money-back guarantee"
+      - "Operational support"
+    price: "**$479**"
+    subprice: "**save $459 today**"
 
 modules_core:
   - name: Growth Strategy
@@ -422,6 +460,13 @@ pieter_note_points:
     to {
       transform: translate(2px, 2.5px);
     }
+  }
+
+  .pricing-table .pricing-table-item {
+    background: #fff;
+  }
+  .pricing-table .pricing-table-item:nth-child(2) {
+    background: #f9f9f9;
   }
 
   #sales h3 {
@@ -846,27 +891,19 @@ pieter_note_points:
   }
 </style>
 
-{% assign package_core = "" | split: ',' %}
-{% for item in page.package_core %}
-  {% assign package_core = package_core | push: item.list_title %}
-{% endfor %}
-
-{% assign package_execution = "" | split: ',' %}
-{% for item in page.package_execution %}
-  {% assign package_execution = package_execution | push: item.list_title %}
-{% endfor %}
-
 {% capture pricing_table %}
-  {% assign package_extra = "Full money-back guarantee" | split: ',' %}
-  {% assign package_extra2 = package_extra | push: "Operational support" %}
-<div class="row shadow-grey">
+<div class="pricing-table row shadow-grey">
 
   <!-- PRICING TABLE -->
-  <div class="col d-flex flex-column px-0">
-    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
-      <h3 class="mb-4"><strong>Level 1</strong><br> Core</h3>
+  {% for package in page.pricing_table %}
+  <div class="pricing-table-item col d-flex flex-column px-0">
+    <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px;  padding-right: 40px;  z-index: 1;">
+      <h3 class="mb-4">
+        {{ package.title | markdownify | remove: '<p>' | remove: '</p>' }}
+      </h3>
+
       <div class="flex-grow-1">
-        {% for item in package_core %}
+        {% for item in package.items %}
         <div class="d-flex align-items-center my-md-3">
           <div class="checkmark d-flex mr-3">
             <div class="w-auto position-relative">
@@ -884,7 +921,7 @@ pieter_note_points:
       </div>
       <div><hr></div>
       <div style="height: 128px;">
-        {% for item in package_extra %}
+        {% for item in package.extra_items %}
         <div class="d-flex align-items-center my-md-3">
           <div class="checkmark d-flex mr-3">
             <div class="w-auto position-relative">
@@ -902,124 +939,14 @@ pieter_note_points:
       </div>
     </div>
     <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;">
-      <h3>$479</h3>
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;"">
+      <h3>{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+      <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
         Get it now
       </button>
     </div>
   </div>
-
-  <!-- PRICING TABLE -->
-  <div class="col d-flex flex-column px-0">
-    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #f9f9f9; z-index: 1; padding-left: 40px; padding-right: 40px;">
-      <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
-      <div class="flex-grow-1">
-        {% for item in package_execution %}
-        <div class="d-flex align-items-center my-md-3">
-          <div class="checkmark d-flex mr-3">
-            <div class="w-auto position-relative">
-              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-              <div class="back">
-                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div><hr></div>
-      <div style="height: 128px;">
-        {% for item in package_extra2 %}
-        <div class="d-flex align-items-center my-md-3">
-          <div class="checkmark d-flex mr-3">
-            <div class="w-auto position-relative">
-              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-              <div class="back">
-                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="mb-0"><strong>{{ item }}</strong></p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="p-5" style="height: 174px; background-color: #23283d; color: #fff; position: relative; padding-top: 35px!important;">
-      <h3>$479</h3>
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
-        Get it now
-      </button>
-    </div>
-  </div>
-
-  <!-- PRICING TABLE -->
-  <div class="col d-flex flex-column px-0">
-    <div class="d-flex flex-column py-5 flex-grow-1" style="background: #fff; padding-left: 40px; padding-right: 40px; z-index: 1; ">
-      <h3 class="mb-4"><strong>Full Access</strong> Level 1+2</h3>
-      <div class="flex-grow-1">
-        {% for item in package_core %}
-        <div class="d-flex align-items-center my-md-3">
-          <div class="checkmark d-flex mr-3">
-            <div class="w-auto position-relative">
-              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-              <div class="back">
-                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
-          </div>
-        </div>
-        {% endfor %}
-        {% for item in package_execution %}
-        <div class="d-flex align-items-center my-md-3">
-          <div class="checkmark d-flex mr-3">
-            <div class="w-auto position-relative">
-              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-              <div class="back">
-                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="mb-0">{{ item | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div><hr></div>
-      <div style="height: 128px;">
-        {% for item in package_extra2 %}
-        <div class="d-flex align-items-center my-md-3">
-          <div class="checkmark d-flex mr-3">
-            <div class="w-auto position-relative">
-              <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-              <div class="back">
-                <img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="mb-0"><strong>{{ item }}</strong></p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; position: relative; padding-top: 35px!important;">
-      <h3><strong>$479</strong></h3>
-      <p><strong>save $459 today</strong></p>
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" style="bottom: -30px; position: absolute;">
-        Get it now
-      </button>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 {% endcapture %}
 
@@ -1587,7 +1514,7 @@ pieter_note_points:
           <div class="pt-3">
             <h3 class="mb-4"><strong>Level 1</strong> Core</h3>
             <div>
-              {% for item in package_core %}
+              {% for item in page.package_core %}
               <div class="d-flex">
                 <div class="checkmark d-flex mr-3">
                   <div class="w-auto position-relative">
@@ -1609,7 +1536,7 @@ pieter_note_points:
           <div class="pt-3">
             <h3 class="mb-4"><strong>Level 2</strong> Execution</h3>
             <div>
-              {% for item in package_execution %}
+              {% for item in page.package_execution %}
               <div class="d-flex">
                 <div class="checkmark d-flex mr-3">
                   <div class="w-auto position-relative">

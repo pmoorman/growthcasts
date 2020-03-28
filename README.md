@@ -6,8 +6,8 @@ growthcasts website (Jekyll)
 - Add lightbox on video button
 - DONE Change header
 - DONE Change footer
-- Pricing table button shadows
-- Fix Pricing table data
+- DONE Pricing table button shadows
+- DONE Fix Pricing table data
 - Hero animation
 - Add module sections
   - Arrows
