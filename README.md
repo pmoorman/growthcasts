@@ -2,7 +2,7 @@
 growthcasts website (Jekyll)
 
 # TODO
-- Add background boxes in "feedback" section
+- DONE Add background boxes in "feedback" section
 - Add lightbox on video button
 - DONE Change header
 - DONE Change footer
