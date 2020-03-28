@@ -88,13 +88,13 @@ modules_core:
     videos:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/209943347"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/209943347"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -142,13 +142,13 @@ modules_core:
     videos:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/329342289"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: ""
+        link: "https://player.vimeo.com/video/329342289"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -687,16 +687,16 @@ pieter_note_points:
     100% { max-height: 100%; }
   }
 
-  /* Modules core */
-  #sales #modules-core .modules-core-nav-item {
+  /* Modules section */
+  #sales .module-section .nav-item {
     cursor: pointer;
   }
-  #sales #modules-core .modules-core-nav-item:not(.selected) .fore {
+  #sales .module-section .nav-item:not(.selected) .fore {
     top: 3px;
     position: relative;
     opacity: 0.4;
   }
-  #sales #modules-core .modules-core-nav-item:not(.selected) .back {
+  #sales .module-section .nav-item:not(.selected) .back {
     display: none;
   }
 </style>
@@ -1497,171 +1497,9 @@ pieter_note_points:
 
   <!-- SECTION: Modules core -->
   <section id="modules-core">
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-md-12 d-flex align-items-center justify-content-center">
-          <p class="lead mb-0 pr-2 mr-4">
-            <strong>Level 1</strong> Core
-            <span class="ml-3 mr-4" style="border-right: 1px solid #d8d8d8;"></span>
-            <strong>Module</strong>
-          </p>
-          {% for item in page.modules_core %}
-          <div class="checkmark checkmark-number d-flex modules-core-nav-item {% if forloop.index == 1 %}selected{% endif %} active" modules-core-goto-slide="{{ forloop.index0 }}">
-            <div class="w-auto position-relative">
-              <div class="fore">
-                {{ item.nav }}
-              </div>
-              <div class="back">
-                <img style="width:40px; height: 40px;" src="/assets/images/new-web/check_icon_back.png" />
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDE module -->
-    <div class="modules-core-slider">
-      {% for item in page.modules_core %}
-      <div class="modules-core-item">
-        <div class="container container-narrow mb-5">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3 class="mb-4"><strong>{{ item.name }}</strong></h3>
-              <p class="lead">{{ item.description }}</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row flex-nowrap align-items-center">
-            <div class="col" style="z-index: 1;">
-              {% assign accordion_key = "modules-core-" | append: forloop.index %}
-              <div class="accordion" id="{{ accordion_key }}-accordion" style="width: 433px;">
-                {% for video in item.videos %}
-                <div class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}">
-                  <div class="accordion-item-header" id="{{ accordion_key }}heading-{{ forloop.index }}">
-                    <p class="lead mb-0">
-                      <button 
-                        class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100" type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
-                        <p class="lead mb-0">
-                          <strong>{{ video.title }}</strong>
-                        </p>
-                        <div class="arrow">
-                          <img src="/assets/images/new-web/elite/arrow_right.svg" />
-                        </div>
-                      </button>
-                    </p>
-                  </div>
-              
-                  <div id="{{ accordion_key }}collapse-{{ forloop.index }}" class="collapse {% if forloop.index == 1 %}show{% endif %}" aria-labelledby="{{ accordion_key }}heading-{{ forloop.index }}" data-parent="#{{ accordion_key }}-accordion">
-                    <div class="accordion-item-body pt-3">
-                      {{ video.body }}
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-              
-            </div>
-            <div class="video" style="position: relative; left: -90px;">
-              <div class="d-flex justify-content-center align-items-center" style="width: 888px;
-              height: 608px;
-              background-color: #cfd1d8;">
-                <div class="bg-secondary shadow-primary d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
-                  <img src="/assets/images/new-web/elite/play-icon.svg" />
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="row mb-3 mt-5 pt-4">
-            <div class="col-md-12 text-center">
-              <a class="readmore-btn" style="font-size: 32px; color: initial; text-decoration: none;">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="container what-you-will-learn" style="display: none;">
-          <div class="row py-4">
-            <div class="col-md-12 text-center">
-              <h3 style="font-size: 32px;">What you will learn?</h3>
-            </div>
-          </div>
-          <div class="row mt-5 pb-5">
-            {% for l in item.learn %}
-            <div class="col-md-4 px-4">
-              <div class="mb-4">
-                <div class="checkmark checkmark d-flex">
-                  <div class="w-auto position-relative">
-                    <img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
-                    <div class="back">
-                      <img style="width:30px; height: 30px;" src="/assets/images/new-web/check_icon_back.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <p>{{ l | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-              </div>
-            </div>
-            {% endfor %}
-            <div class="col-md-8">
-              <div class="mt-5">
-                <div class="d-flex flex-column position-relative px-0 px-md-3">
-                  
-                  <div class="speech-bubble speech-bubble-bottom-right slide-top position-relative">
-                    <div class="speech-bubble-back"></div>
-                    <div class="speech-bubble-fore">
-                      <p class="mb-0">{{ item.testimonial.body }}</p>
-                    </div>
-                  </div>
-                  <div class="d-flex aling-items-center justify-content-end px-0 text-left mt-5 mr-3">
-                    <div class="d-flex flex-column justify-content-center">
-                      <p class="mb-0 lead"><b>{{ item.testimonial.name }}</b></p>
-                      <p class="mb-0">{{ item.testimonial.title }}</p>
-                    </div>
-                    <div class="ml-3">
-                      <img style="width: 72px; height: 72px; border-radius: 100%;" class="position-relative" src="{{ item.testimonial.thumbnail }}" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row px-6 py-5 mt-5" style="background-color: #eff0f6;">
-            <div class="px-4 col-md-12">
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="mb-0" style="font-size: 32px;">What you will learn?</h3>
-                </div>
-                <div class="col-md-12">
-                  <hr class="my-4">
-                </div>
-                <div class="col-md-6 pr-5">
-                  <p class="lead"><strong>Core Content:</strong> {{ item.core_content_summary }}</p>
-                  {% for content in item.core_content_items %}
-                  <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid #d3d6e5;">
-                    <div><p class="mb-0"><strong>{{ content.title }}</strong></p></div>
-                    <div><p class="mb-0">{{ content.subtitle }}</p></div>
-                  </div>
-                  {% endfor %}
-                </div>
-                <div class="col-md-6 pl-5">
-                  <p class="lead"><strong>Bonus Content</strong></p>
-                  {% for content in item.bonus_content_items %}
-                  <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid #d3d6e5;">
-                    <div><p class="mb-0"><strong>{{ content.title }}</strong></p></div>
-                    <div><p class="mb-0">{{ content.subtitle }}</p></div>
-                  </div>
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+    {% include new-web/sales-module-section.html
+      container="modules_core"
+      module=page.modules_core %}
   </section>
 
   <!-- SECTION: testimonials -->
@@ -1973,40 +1811,7 @@ pieter_note_points:
 
   $('.collapse').on('hide.bs.collapse', function () {
     $(this).closest('.accordion-item').removeClass('active');
-  });
-
-  const modulesCoreSlider = $('.modules-core-slider').slick({
-
-  });
-
-  $('.modules-core-slider').on("beforeChange", ((slick, index, currentSlide, nextSlide) => {
-    $('#modules-core').find('.modules-core-nav-item').each(function() {
-      const index = $(this).attr('modules-core-goto-slide');
-      if (index == nextSlide) {
-        $(this).addClass('selected');
-      } else {
-        $(this).removeClass('selected');
-      }
-    })
-  }));
-
-  $('[modules-core-goto-slide]').each(function() {
-    const index = $(this).attr('modules-core-goto-slide');
-    $(this).click(function(e) {
-      $('.modules-core-slider').slick("slickGoTo", parseInt(index, 10));
-    })
-  })
-
-  $('#modules-core').find('.readmore-btn').each(function() {
-    console.log($(this))
-    $(this).click(function() {
-      $(this)
-        .closest('.modules-core-item')
-        .find('.what-you-will-learn')
-        .slideToggle();
-    })
-  })
-  
+  });  
 
   $(window).on('scroll', () => {
     _viewportAnimations();
