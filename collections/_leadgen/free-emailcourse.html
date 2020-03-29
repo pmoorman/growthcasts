@@ -96,127 +96,129 @@ steps_carousel:
     body: The second week will dive deeper into the dynamics of growth. I'll show you how you can build growth into the 'DNA of you business'.
 ---
 
-<section class="text-center py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img class="img-fluid" src="{{ page.top_image }}" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="notification-bar">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        {{ page.tagline }}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pt-5 pb-0">
-  <div class="container text-left text-md-center">
-    <div class="row">
-      <div class="col">
-        <h3>{{ page.intro }}</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pb-0 pb-md-5 pt-4">
-  <div class="container px-0">
-    <div style="overflow: hidden;">
-      <img src="/assets/images/new-web/striped_bg.jpg" />
-    </div>
-  </div>
-</section>
-
-  <!-- SECTION: content -->
-<div style="max-width: 800px;" class="m-auto">   
-  <section class="pt-0 pb-4">
+<div>
+  <section class="text-center py-3">
     <div class="container">
       <div class="row">
         <div class="col">
-          <strong class="text-primary">{{ page.title }}</strong>
-          <div>{{ page.the_content | markdownify }}</div>
+          <img class="img-fluid" src="{{ page.top_image }}" />
         </div>
       </div>
     </div>
   </section>
-</div>
-
-<section class="pt-0">
-  <div class="container">
-    <div class="text-center">
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
-        Ready? Let’s go
-      </button>
-    </div>
-  </div>
-</section>
-
-{% include new-web/checklist-with-title.html 
-  title=page.learn_how_to_title
-  items=page.learn_how_to_items
-  class="py-0" %}
-
-<section class="pt-5 px-0 alternate-section">
-  <div class="container-fluid px-0">
-    {% include new-web/carousel-1.html
-      id="carousel-1"
-      auto_height="true"
-      items=page.carousel_items %}
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col text-left text-md-center">
-        <h3>15 step-by-step lessons on modern startup growth:</h3>
+  
+  <section class="notification-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {{ page.tagline }}
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid px-0">
-    {% include new-web/carousel-2.html
-      id="carousel-2"
-      items=page.steps_carousel %}
-  </div>
-
-
-</section>
-
-{% include new-web/text-with-striped-bg.html
-  text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
-
-
-{% capture pieterfooterinner %}
-<div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
-  <h5 class="mb-0 font-weight-bold">Leave your email</h5>
-  <p>and receive the first lesson right away!</p>
-  <form action="https://www.getdrip.com/forms/665859352/submissions" method="post" data-drip-embedded-form="665859352">
-    <div class="input-group mb-3">
-      <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
-      <div class="input-group-append">
-        <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
+  </section>
+  
+  <section class="pt-5 pb-0">
+    <div class="container text-left text-md-center">
+      <div class="row">
+        <div class="col">
+          <h3>{{ page.intro }}</h3>
+        </div>
       </div>
     </div>
-  </form>
+  </section>
+  
+  <section class="pb-0 pb-md-5 pt-4">
+    <div class="container px-0">
+      <div style="overflow: hidden;">
+        <img src="/assets/images/new-web/striped_bg.jpg" />
+      </div>
+    </div>
+  </section>
+  
+    <!-- SECTION: content -->
+  <div style="max-width: 800px;" class="m-auto">   
+    <section class="pt-0 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <strong class="text-primary">{{ page.title }}</strong>
+            <div>{{ page.the_content | markdownify }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-center">
+        <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+          Ready? Let’s go
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  {% include new-web/checklist-with-title.html 
+    title=page.learn_how_to_title
+    items=page.learn_how_to_items
+    class="py-0" %}
+  
+  <section class="pt-5 px-0 alternate-section">
+    <div class="container-fluid px-0">
+      {% include new-web/carousel-1.html
+        id="carousel-1"
+        auto_height="true"
+        items=page.carousel_items %}
+    </div>
+  </section>
+  
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-left text-md-center">
+          <h3>15 step-by-step lessons on modern startup growth:</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      {% include new-web/carousel-2.html
+        id="carousel-2"
+        items=page.steps_carousel %}
+    </div>
+  
+  
+  </section>
+  
+  {% include new-web/text-with-striped-bg.html
+    text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
+  
+  
+  {% capture pieterfooterinner %}
+  <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
+    <h5 class="mb-0 font-weight-bold">Leave your email</h5>
+    <p>and receive the first lesson right away!</p>
+    <form action="https://www.getdrip.com/forms/665859352/submissions" method="post" data-drip-embedded-form="665859352">
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+        <div class="input-group-append">
+          <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
+        </div>
+      </div>
+    </form>
+  </div>
+  {% endcapture %}
+  
+  {% include new-web/pieter-footer.html
+    title="Hey you.<br>Nice to meet you!"
+    lead="That you arrived on my doorstep means you're interested in growing businesses. Great, I can tell you a whole lot about that, <i>all for free.</i> Leave your email and I'll tell you more."
+    content=pieterfooterinner %}
+  
+  {% include new-web/email-submit-modal.html 
+    id="join-modal"
+    drip_id="665859352"
+    form_label="Email address:"
+    title="15 step-by-step lessons on modern startup growth:"
+    subtitle="Email course"
+    button_text="Get the email course >>" %}
 </div>
-{% endcapture %}
-
-{% include new-web/pieter-footer.html
-  title="Hey you.<br>Nice to meet you!"
-  lead="That you arrived on my doorstep means you're interested in growing businesses. Great, I can tell you a whole lot about that, <i>all for free.</i> Leave your email and I'll tell you more."
-  content=pieterfooterinner %}
-
-{% include new-web/email-submit-modal.html 
-  id="join-modal"
-  drip_id="665859352"
-  form_label="Email address:"
-  title="15 step-by-step lessons on modern startup growth:"
-  subtitle="Email course"
-  button_text="Get the email course >>" %}

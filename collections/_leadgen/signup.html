@@ -39,79 +39,81 @@ steps_carousel:
 
 ---
 
-<section class="pt-0 pb-0">
-  <div class="container text-left text-md-center">
-    <div class="row">
-      <div class="col">
-        <h3>{{ page.intro }}</h3>
+<div>
+  <section class="pt-0 pb-0">
+    <div class="container text-left text-md-center">
+      <div class="row">
+        <div class="col">
+          <h3>{{ page.intro }}</h3>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="text-center py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img class="img-fluid" src="{{ page.top_image }}" />
+  </section>
+  
+  <section class="text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid" src="{{ page.top_image }}" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="pb-0 pb-md-5 pt-4">
-  <div class="container px-0">
-    <div style="overflow: hidden;">
-      <img src="/assets/images/new-web/striped_bg.jpg" />
-    </div>
-  </div>
-</section>
-
-<section class="pt-0">
-  <div class="container">
-    <div class="text-center">
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
-         Join 25,271+ Others
-      </button>
-    </div>
-  </div>
-</section>
-
-<section class="notification-bar">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        {{ page.tagline }}
+  </section>
+  
+  <section class="pb-0 pb-md-5 pt-4">
+    <div class="container px-0">
+      <div style="overflow: hidden;">
+        <img src="/assets/images/new-web/striped_bg.jpg" />
       </div>
     </div>
-  </div>
-</section>
-
-  <div class="container-fluid px-0">
-    {% include new-web/carousel-2.html
-      id="carousel-2"
-      items=page.steps_carousel %}
-  </div>
-</section>
-
-
-{% include new-web/text-with-striped-bg.html
-  text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
-
-<section class="pt-0">
-  <div class="container">
-    <div class="text-center">
-      <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
-        Sign up for the most popular online course on growth marketing
-      </button>
+  </section>
+  
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-center">
+        <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+           Join 25,271+ Others
+        </button>
+      </div>
     </div>
-  </div>
-</section>
-
-{% include new-web/email-submit-modal.html 
-  id="join-modal"
-  drip_id="277204824"
-  form_label="Email address:"
-  title="15 step-by-step lessons on modern startup growth:"
-  subtitle="Email course"
-  button_text="Get the email course >>" %}
+  </section>
+  
+  <section class="notification-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {{ page.tagline }}
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <div class="container-fluid px-0">
+      {% include new-web/carousel-2.html
+        id="carousel-2"
+        items=page.steps_carousel %}
+    </div>
+  </section>
+  
+  
+  {% include new-web/text-with-striped-bg.html
+    text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
+  
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-center">
+        <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+          Sign up for the most popular online course on growth marketing
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  {% include new-web/email-submit-modal.html 
+    id="join-modal"
+    drip_id="277204824"
+    form_label="Email address:"
+    title="15 step-by-step lessons on modern startup growth:"
+    subtitle="Email course"
+    button_text="Get the email course >>" %}
+</div>
