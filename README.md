@@ -12,6 +12,7 @@ growthcasts website (Jekyll)
 - MBA growth animations
 - DONE Note from Pieter animaties
 - DONE Pricing tables hover column color
+- Discount timer
 - Add module sections
   - Arrows
   - Readmore arrow
@@ -24,3 +25,7 @@ growthcasts website (Jekyll)
 # To get
 
 - Module section arrows
+- Hero animatie Video or GIF
+- The growth MBA separate images for:
+  - Center block
+  - background video boxes

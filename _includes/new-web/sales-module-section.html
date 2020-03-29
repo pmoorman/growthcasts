@@ -1,4 +1,31 @@
 <div id="{{include.container}}" class="module-section {{ include.style }}">
+
+  <div class="sticky-nav d-flex align-items-center" style="position: fixed; z-index: 999999; top: 99999px; width: 100%; height: 96px; box-shadow: 0 8px 0 0 rgba(24, 29, 51, 0.15); background-color: #ffffff;">
+    <div class="container">
+      <div class="row aling-items-center">
+        <div class="col d-flex align-items-center">
+
+          <strong class="mr-4">Module</strong>
+          {% for item in include.module %}
+          <div
+            class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
+            goto-slide="{{ forloop.index0 }}">
+            <div class="w-auto position-relative">
+              <div class="fore" style="height: 32px; min-width: 32px;     padding-left: 10px;
+              padding-right: 10px;
+              padding-top: 2px;">
+                {{ item.nav }}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <span class="ml-2 mr-4" style="border-right: 1px solid #d8d8d8; height: 50%;"></span>
+          <p class="mb-0 lead"><strong class="module-name">{{ include.module.first.name }}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container mb-5">
     <div class="row">
       <div class="col-md-12 d-flex align-items-center justify-content-center">
@@ -47,7 +74,7 @@
                     <button class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100"
                       type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}"
                       aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
-                      <p class="lead mb-0">
+                      <p class="lead mb-0">    z-index: 999;
                         <strong>{{ video.title }}</strong>
                       </p>
                       <div class="arrow">
@@ -185,12 +212,15 @@
 
 <script>
 (() => {
-  const videos = {
+  const modules = {
     {% for item in include.module %}
     {{ forloop.index0 }}: {
-      {% for video in item.videos %}
-        {{ forloop.index0 }}: "{{ video.link }}",
-      {% endfor %}
+      name: "{{ item.name }}",
+      videos: {
+        {% for video in item.videos %}
+          {{ forloop.index0 }}: "{{ video.link }}",
+        {% endfor %}
+      }
     },
     {% endfor %}
   };
@@ -200,15 +230,31 @@
   }
   const container = '#{{ include.container }}';
   const slider = $(`${container} .slider`).slick(sliderConfig);
+  const stickyNav = $(`${container} .sticky-nav`); 
+  const stickyNavModuleName = stickyNav.find(`.module-name`); 
   const navItems = $(`${container} .nav-item`);
   const readmoreBtns = $(`${container} .readmore-btn`);
   const collapse = $(`${container} .collapse`);
   const videoIframe = $(`${container} .video iframe`);
+
+  // Sticky header
+  $(window).scroll(function() {
+    const top = $(container).offset().top;
+    const bottom = top + document.querySelector(container).getBoundingClientRect().height;
+    const windowtop = $(window).scrollTop();
+
+    if ((windowtop < bottom) && (windowtop > top)) {
+      stickyNav.css('top', 0);
+    } else {
+      stickyNav.css('top', '99999px');
+    }
+  }); 
   
   slider.on('beforeChange', ((slick, index, currentSlide, nextSlide) => {
     navItems.each(function() {
       const index = $(this).attr('goto-slide');
       if (index == nextSlide) {
+        stickyNavModuleName.text(modules[nextSlide].name);
         $(this).addClass('selected');
       } else {
         $(this).removeClass('selected');
@@ -255,7 +301,7 @@
     const videoIndex = item.attr('video-index');
     const slideIndex = item.closest('.slider-item').attr('slide-index');
 
-    const video = videos[slideIndex][videoIndex];
+    const video = modules[slideIndex].videos[videoIndex];
     videoIframe.attr('src', video);
   });
 
