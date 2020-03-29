@@ -16,6 +16,7 @@ growthcasts website (Jekyll)
   - DONE Readmore change to read less when opened
   - DONE Change video on accordion selected
   - DONE Align left and right elements
+  - Add sticky navigation
 
 # To get
 
