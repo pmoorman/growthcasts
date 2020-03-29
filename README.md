@@ -10,6 +10,8 @@ growthcasts website (Jekyll)
 - DONE Fix Pricing table data
 - Hero animation
 - MBA growth animations
+- Note from Pieter animaties
+- DONE Pricing tables hover column color
 - Add module sections
   - Arrows
   - Readmore arrow
@@ -17,6 +19,7 @@ growthcasts website (Jekyll)
   - DONE Change video on accordion selected
   - DONE Align left and right elements
   - Add sticky navigation
+- Responsiveness
 
 # To get
 

@@ -214,6 +214,19 @@
         $(this).removeClass('selected');
       }
     });
+
+    // remove all active classess
+    slider.find('.active:not(.accordion-item)').each(function() {
+      $(this).removeClass('active');
+    });
+
+    // close all readmore sections
+    readmoreBtns.each(function() {
+      $(this).text('Read more')
+    });
+    slider.find('.what-you-will-learn').each(function() {
+      $(this).slideUp();
+    });
   }));
 
   navItems.each(function() {
