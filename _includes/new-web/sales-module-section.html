@@ -1,8 +1,16 @@
 <div id="{{include.container}}" class="module-section {{ include.style }}">
 
-  <div class="sticky-nav d-flex align-items-center" style="position: fixed; z-index: 999999; top: 99999px; width: 100%; height: 96px; box-shadow: 0 8px 0 0 rgba(24, 29, 51, 0.15); background-color: #ffffff;">
+  <div class="sticky-nav d-flex align-items-center">
+    
+    <button class="prev-btn" disabled="true">
+      <img src="/assets/images/new-web/elite/arrow_left_big.svg" />
+    </button>
+    <button class="next-btn">
+      <img src="/assets/images/new-web/elite/arrow_left_big.svg" />
+    </button>
+
     <div class="container">
-      <div class="row aling-items-center">
+      <div class="row align-items-center justify-content-between">
         <div class="col d-flex align-items-center">
 
           <strong class="mr-4">Module</strong>
@@ -19,14 +27,21 @@
             </div>
           </div>
           {% endfor %}
-          <span class="ml-2 mr-4" style="border-right: 1px solid #d8d8d8; height: 50%;"></span>
+          <span class="ml-2 mr-4" style="border-right: 1px solid #d8d8d8; height: 25px;"></span>
           <p class="mb-0 lead"><strong class="module-name">{{ include.module.first.name }}</strong></p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mb-5">
+  <div class="slider-nav container mb-5">
+    <button class="prev-btn" disabled="true">
+      <strong><</strong>
+    </button>
+    <button class="next-btn">
+      <strong>></strong>
+    </button>
+
     <div class="row">
       <div class="col-md-12 d-flex align-items-center justify-content-center">
         <p class="lead mb-0 pr-2 mr-4">
@@ -112,7 +127,10 @@
         </div>
         <div class="row mb-3 pt-4">
           <div class="col-md-12 text-center">
-            <a class="readmore-btn" style="font-size: 32px; color: initial; text-decoration: none;">Read more</a>
+            <button class="readmore-btn" style="font-size: 32px; color: initial; text-decoration: none; background: none;">
+              <span>Read more</span> 
+              <div style="transform: rotate(90deg);"><strong>></strong></div>
+            </button>
           </div>
         </div>
       </div>
@@ -230,6 +248,8 @@
   }
   const container = '#{{ include.container }}';
   const slider = $(`${container} .slider`).slick(sliderConfig);
+  const prevBtns = $(`${container} .prev-btn`);
+  const nextBtns = $(`${container} .next-btn`);
   const stickyNav = $(`${container} .sticky-nav`); 
   const stickyNavModuleName = stickyNav.find(`.module-name`); 
   const navItems = $(`${container} .nav-item`);
@@ -268,12 +288,27 @@
 
     // close all readmore sections
     readmoreBtns.each(function() {
-      $(this).text('Read more')
+      updateReadmoreTextClose($(this));
     });
     slider.find('.what-you-will-learn').each(function() {
       $(this).slideUp();
     });
+
+    // disable next & prev buttons if last
+    prevBtns.each(function() {
+        $(this).attr('disabled', (nextSlide == 0));
+    });
+    nextBtns.each(function() {
+      $(this).attr('disabled', (document.querySelectorAll(`${container} .slick-slide`).length - 1 == nextSlide));
+    })
   }));
+
+  prevBtns.each(function() {
+    $(this).click(() => slider.slick('slickPrev'));
+  });
+  nextBtns.each(function() {
+    $(this).click(() => slider.slick('slickNext'));
+  })
 
   navItems.each(function() {
     const index = $(this).attr('goto-slide');
@@ -290,11 +325,20 @@
 
       section.slideToggle(null, () => {
         section.is(':visible')
-          ? $(this).text('Read less')
-          : $(this).text('Read more');
+          ? updateReadmoreTextOpen($(this))
+          : updateReadmoreTextClose($(this));
       });
     })
   });
+
+  function updateReadmoreTextOpen(el) {
+    $(el).find('span').text('Read less');
+    $(el).find('div').css('transform', 'rotate(-90deg)');
+  }
+  function updateReadmoreTextClose(el) {
+    $(el).find('span').text('Read more');
+    $(el).find('div').css('transform', 'rotate(90deg)');
+  }
 
   collapse.on('show.bs.collapse', function () {
     const item = $(this).parent('.accordion-item');
@@ -305,5 +349,5 @@
     videoIframe.attr('src', video);
   });
 
-})()
+})();
 </script>

@@ -14,12 +14,12 @@ growthcasts website (Jekyll)
 - DONE Pricing tables hover column color
 - Discount timer
 - Add module sections
-  - Arrows
-  - Readmore arrow
+  - DONE Arrows
+  - DONE Readmore arrow
   - DONE Readmore change to read less when opened
   - DONE Change video on accordion selected
   - DONE Align left and right elements
-  - Add sticky navigation
+  - DONE Add sticky navigation
 - Responsiveness
 
 # To get
