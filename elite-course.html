@@ -951,6 +951,44 @@ pieter_note_points:
     right: 0;
   }
 
+  /* Growth MBA */
+  #sales #growth-mba .growth-blocks div:first-child {
+    width: 298px; height: 171px; left: 12%; top: 70px;
+  }
+  #sales #growth-mba .growth-blocks div:first-child img {
+    opacity: 0.8;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(2) {
+    width: 209px; height: 120px; left: 0; top: 300px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(2) img {
+    opacity: 0.3;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(3) {
+    width: 375px; height: 215px; left: 18%; top: 300px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(3) img {
+    opacity: 0.6;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(4) {
+    width: 375px; height: 215px; right: 10%; top: 70px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(4) img {
+    opacity: 0.7;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(5) {
+    width: 298px; height: 171px; right: 16%; top: 350px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(5) img {
+    opacity: 0.9;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(6) {
+    width: 193px; height: 120px; right: 0; top: 350px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(6) img {
+    opacity: 0.3;
+  }
+
 </style>
 
 {% capture pricing_table %}
@@ -1556,10 +1594,26 @@ pieter_note_points:
       </div>
     </div>
 
-    <div class="container text-center d-flex" style="margin-bottom: 100px; max-width: 1440px; height: 665px; background: url('/assets/images/new-web/elite/growth-mba.svg')">
-      <div style="max-width: 340px; color: #fff; margin: auto; padding-bottom: 50px;">
-        <h1 style="font-size: 92px; line-height: 90px; font-weight: 600;">The Growth MBA</h1>
-        <p class="lead">Our <strong>best-in-class</strong> growth marketing education</p>
+    <div class="container text-center d-flex position-relative" style="margin-bottom: 100px; max-width: 1440px;">
+      <div class="growth-blocks">
+        <div class="position-absolute slide-bottom"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-left"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-right"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-bottom"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-right"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-left"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+      </div>
+
+
+      <div class="slide-bottom" style="color: #fff; margin: auto; padding-bottom: 50px; position: relative;">
+        <img class="img-fluid" src="/assets/images/new-web/elite/growth_mba_block.png" />
+        <div class="position-absolute" style="    top: calc(50% - 45px);
+        transform: translateY(-50%);
+        left: 50px;
+        right: 65px;">
+          <h1 class="mb-3" style="font-size: 92px; line-height: 90px; font-weight: 600;">The Growth MBA</h1>
+          <p class="lead">Our <strong>best-in-class</strong> growth marketing education</p>
+        </div>
       </div>
     </div>
 
