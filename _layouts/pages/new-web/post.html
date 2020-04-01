@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include new-web/head.html %}
+  <head>
+    {% include new-web/head.html %}
+    <style>
+      .summary-block {
+        margin-left: 0;
+        padding-left: 15px;
+        width: 100%;
+        padding-right: 15px;
+      }
+      @media only screen and (min-width: 499px) {
+        .blog-content {
+          margin-left: -35px;
+        }
+        .summary-block {
+          margin-left: -140px;
+          padding-left: 105px;
+          width: calc(100% + 280px);
+          padding-right: 160px;
+        }
+      }
+    </style>
+  </head>
 
   <body class="blog-post">
-    <header class="pt-5 pb-5">
-      <div class="container">
-        <nav class="
-          d-flex
-          flex-column
-          flex-md-row
-          justify-content-between
-          align-items-center">
-          <div class="mb-4 mb-md-0" style="width: 120px">
-            <a href="/">{% include new-web/animated-logo.html %}</a>
-          </div>
-    
-          <div class="menu d-flex">
-            <a href="/academy" class="text-secondary mx-3 d-flex"><b>Academy</b></a>
-            <a href="/blog" class="text-secondary mx-3 d-flex"><b>Blog</b></a>
-            <a href="mailto:pieter@double-agency.com" class="text-secondary mx-3 d-flex"><b>Contact</b></a>
-          </div>
-        </nav>
-      </div>
-    </header>
+    {% include new-web/blog-header.html %}
 
     <section class="py-0">
       <div class="container container-wider">
 
         <div class="row position-relative align-items-center">
 
-          <div style="background: #fff; z-index: 1;" class="hero-text col-md-6 p-4 pt-md-4 pr-md-4 pb-md-4 pl-md-0">
+          <div style="background: #fff; z-index: 1; width: 611px;" class="hero-text p-4 pt-md-4 pr-md-4 pb-md-4 pl-md-0">
             <p class="text-primary font-weight-bold"><strong>{{ page.tags }}</strong></h4>
             <h3 class="font-weight-bold mb-3 mt-0">{{ page.title }}</h3>
             <p class="lead">{{ page.subtitle }}</p>
@@ -43,36 +45,40 @@
       </div>
     </section>
 
-    <section class="py-5 mb-5">
+    <section class="py-0 mb-0">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 pt-5">
             <p class="date">{{ page.date | date: '%d %B %Y'}}</p>
           </div>
-          <div class="col-md-7 px-md-0">
+          <div class="col-md-7 px-md-0 pt-0 pt-md-5 blog-content">
             {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="pre-footer bg-grey py-4 py-md-5 mt-5">
-              <h5 class="font-weight-bold mt-0">
-                Join 15,281 others - our most popular course on growth marketing is now available for free
-              </h5>
-              <p>
-                Modern growth marketing & user acquisition techniques
-              </p>
-              <form class="form_box mt-5" name="blog-post" netlify>
-                <div class="input-group mb-3" style="width: 350px; max-width: 100%;">
-                  <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
-                  <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Enter your email">
-                  <div class="input-group-append">
-                    <input class="btn btn-primary font-weight-bold px-4" type="submit" value="Join Now">
-                  </div>
-                </div>
-              </form>
+    <section class="py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 offset-md-3 pl-0 pl-md-0">
+            <div class="shadow-grey summary-block" style="
+              background: #fff;
+              position: relative;
+              z-index: 1;
+              padding-bottom: 50px;
+              margin-bottom: -80px;">
+              <h4><strong>In summary:</strong></h4>
+              <div>
+                {% include new-web/checklist.html items=page.summary_items size="sm" %}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    {% include new-web/blog-prefooter.html paddingtop="90px" %}
 
     {% include new-web/footer.html %}
   </body>
