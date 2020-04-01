@@ -651,10 +651,47 @@ pieter_note_points:
   #sales #feedback {
     position: relative;
   }
-  #sales #feedback .bg-boxes div {
-    background-color: #eff0f6;
+  #sales #feedback .bg-boxes > div {
     position: absolute;
-    opacity: 0.5;
+  }
+  #sales #feedback .bg-boxes > div > div {
+    background-color: #eff0f6;
+  }
+  #sales #feedback .bg-boxes > div:first-child {
+    top: -50px; right: -135px;
+  }
+  #sales #feedback .bg-boxes > div:first-child > div {
+    opacity: 0.3;  width: 130px; height: 190px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(2) {
+    top: 300px; left: 55%;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(2) > div {
+    opacity: 1;  width: 316px; height: 234px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(3) {
+    top: 500px; left: 20%;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(3) > div {
+    opacity: 0.6;  width: 316px; height: 432px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(4) {
+    bottom: 1400px; left: -150px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(4) > div {
+    opacity: 0.4; width: 268px; height: 234px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(5) {
+    bottom: 1050px; left: 200px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(5) > div {
+    opacity: 0.5; width: 262px; height: 249px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(6) {
+    bottom: 1400px; right: -150px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(6) > div {
+    opacity: 0.5; width: 411px; height: 334px;
   }
 
   /* No */
@@ -1487,11 +1524,12 @@ pieter_note_points:
     </div>
     <div class="container pt-5 position-relative" style="margin-bottom: -1000px;">
       <div class="bg-boxes">
-        <div class="slide-top" style="top: 300px; left: 55%; width: 316px; height: 234px;"></div>
-        <div class="slide-left" style="top: 500px; left: 20%; width: 316px; height: 432px;"></div>
-        <div class="slide-bottom" style="bottom: 1400px; left: -150px; width: 268px; height: 234px;"></div>
-        <div class="slide-right" style="bottom: 1050px; left: 200px; width: 262px; height: 249px;"></div>
-        <div class="slide-bottom" style="bottom: 1400px; right: -150px; width: 411px; height: 334px;"></div>
+        <div class="slide-top"><div></div></div>
+        <div class="slide-top"><div></div></div>
+        <div class="slide-left"><div></div></div>
+        <div class="slide-bottom"><div></div></div>
+        <div class="slide-right"><div></div></div>
+        <div class="slide-bottom"><div></div></div>
       </div>
       
       <!-- FEEDBACK -->
