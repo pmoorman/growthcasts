@@ -31,7 +31,9 @@ strategy_layer_items:
   - title: Sales funnel
     body: Once you have distribution, you need to turn that traffic into signups, and those signups into customers. — this is often a process, and we could go into depth about it… but for now, let’s just say a sales funnel is a predictable, scalable process that turns traffic into signups or customers.
 
-pillars_row1:
+pillars_final_title: Final title
+pillars_final_body: Final body
+pillars_row:
   - image: /assets/images/new-web/elite/pillar-1.svg
     title: Growth Strategy1
     body: Foundation of the growth loops architecture
@@ -49,26 +51,6 @@ pillars_row1:
     body: Foundation of the growth loops architecture
   - image: /assets/images/new-web/elite/pillar-1.svg
     title: eafrwecvwsd6
-    body: Foundation of the growth loops architecture
-
-pillars_row2:
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: wefewsdfwgyt
-    body: Foundation of the growth loops architecture
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
-    body: Foundation of the growth loops architecture
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
-    body: Foundation of the growth loops architecture
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
-    body: Foundation of the growth loops architecture
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
-    body: Foundation of the growth loops architecture
-  - image: /assets/images/new-web/elite/pillar-1.svg
-    title: Growth Strategy
     body: Foundation of the growth loops architecture
 
 package_core:
@@ -126,16 +108,16 @@ modules_core:
   - name: Growth Strategy
     nav: 1
     description: Where we lay out the Foundation of the Growth Loops Architecture
-    videos:
+    video:
+      url: https://player.vimeo.com/video/329342289
+      thumbnail: /assets/images/new-web/elite/feedback-2.jpg
+    accordion:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/209943347"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/209943347"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -180,16 +162,16 @@ modules_core:
   - name: Growth Strategy2
     nav: 2
     description: Where we lay out the Foundation of the Growth Loops Architecture
-    videos:
+    video:
+      url: https://player.vimeo.com/video/329342289
+      thumbnail: /assets/images/new-web/elite/feedback-2.jpg
+    accordion:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -235,16 +217,16 @@ modules_execution:
   - name: Growth Strategy6
     nav: 6
     description: Where we lay out the Foundation of the Growth Loops Architecture
-    videos:
+    video:
+      url: https://player.vimeo.com/video/329342289
+      thumbnail: /assets/images/new-web/elite/feedback-2.jpg
+    accordion:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/209943347"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/209943347"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -289,16 +271,16 @@ modules_execution:
   - name: Growth Strategy2
     nav: Operational support
     description: Where we lay out the Foundation of the Growth Loops Architecture
-    videos:
+    video:
+      url: https://player.vimeo.com/video/329342289
+      thumbnail: /assets/images/new-web/elite/feedback-2.jpg
+    accordion:
       - title: "Systems: 6 pillars of Growth"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Focus & Clarity"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
       - title: "Crafting your Growth Strategy"
         body: "Struggling to acquire users effectively? Learn the basic 6-step framework to unlock virtually unlimited growth opportunities..."
-        link: "https://player.vimeo.com/video/329342289"
     learn:
       - Identify the best traction channels for your business type
       - Understand over 25 acquisition channels that growth marketers use
@@ -611,6 +593,7 @@ pieter_note_points:
   #sales #hero .hero-stack > div {
     position: relative;
     margin: auto;
+    opacity: 0;
   }
   #sales #hero .hero-stack > div:first-child {
     z-index: 5;
@@ -646,20 +629,99 @@ pieter_note_points:
     height: 100px;
     background-color: #d2d3d7;
   }
+  #sales #hero .hero-stack > div.active {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  #sales #hero .bg-image-overlay.active {
+    -webkit-animation: bg-image-overlay 1.15s linear both;
+    animation: bg-image-overlay 1.15s linear both;
+  }
 
-  /* Marketing game */
-  #sales #marketing-game .items {
-    margin-top: 350px;
+  @-webkit-keyframes bg-image-overlay {
+    0% { bottom: 0%; }
+    100% { bottom: 100%; }
+  }
+  @keyframes bg-image-overlay {
+    0% { bottom: 0%; }
+    100% { bottom: 100%; }
+  }
+  
+  /**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   /* Feedback */
   #sales #feedback {
     position: relative;
   }
-  #sales #feedback .bg-boxes div {
-    background-color: #eff0f6;
+  #sales #feedback .bg-boxes > div {
     position: absolute;
-    opacity: 0.5;
+  }
+  #sales #feedback .bg-boxes > div > div {
+    background-color: #eff0f6;
+  }
+  #sales #feedback .bg-boxes > div:first-child {
+    top: -50px; right: -135px;
+  }
+  #sales #feedback .bg-boxes > div:first-child > div {
+    opacity: 0.3;  width: 130px; height: 190px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(2) {
+    top: 300px; left: 55%;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(2) > div {
+    opacity: 1;  width: 316px; height: 234px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(3) {
+    top: 500px; left: 20%;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(3) > div {
+    opacity: 0.6;  width: 316px; height: 432px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(4) {
+    bottom: 1400px; left: -150px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(4) > div {
+    opacity: 0.4; width: 268px; height: 234px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(5) {
+    bottom: 1050px; left: 200px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(5) > div {
+    opacity: 0.5; width: 262px; height: 249px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(6) {
+    bottom: 1400px; right: -150px;
+  }
+  #sales #feedback .bg-boxes > div:nth-child(6) > div {
+    opacity: 0.5; width: 411px; height: 334px;
   }
 
   /* No */
@@ -695,7 +757,7 @@ pieter_note_points:
     z-index: -1;
   }
   #sales #no .parallax-bg {
-    background-image: url('/assets/images/new-web/elite/no.svg'); 
+    background-image: url('/assets/images/new-web/elite/no.png'); 
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -706,7 +768,6 @@ pieter_note_points:
   /* Understanding */
   #sales #understanding .button-2:not(.scrolled),
   #sales #understanding .button-1 {
-    top: 15px; 
     height: 137px; 
     width: 100%; 
     background-color: #eff0f6;
@@ -909,7 +970,7 @@ pieter_note_points:
   }
   #sales .module-section .sticky-nav {
     position: fixed; 
-    z-index: 999999; 
+    z-index: 99; 
     top: 99999px; 
     width: 100%; 
     height: 96px; 
@@ -943,12 +1004,50 @@ pieter_note_points:
   #sales .module-section .slider-nav .next-btn {
     position: absolute;
     bottom: -95px;
-    z-index: 99999;
+    z-index: 98;
     font-size: 60px;
     background: none;
   }
   #sales .module-section .slider-nav .next-btn {
     right: 0;
+  }
+
+  /* Growth MBA */
+  #sales #growth-mba .growth-blocks div:first-child {
+    width: 298px; height: 171px; left: 12%; top: 70px;
+  }
+  #sales #growth-mba .growth-blocks div:first-child img {
+    opacity: 0.8;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(2) {
+    width: 209px; height: 120px; left: 0; top: 300px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(2) img {
+    opacity: 0.3;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(3) {
+    width: 375px; height: 215px; left: 18%; top: 300px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(3) img {
+    opacity: 0.6;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(4) {
+    width: 375px; height: 215px; right: 10%; top: 70px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(4) img {
+    opacity: 0.7;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(5) {
+    width: 298px; height: 171px; right: 16%; top: 350px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(5) img {
+    opacity: 0.9;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(6) {
+    width: 193px; height: 120px; right: 0; top: 350px;
+  }
+  #sales #growth-mba .growth-blocks div:nth-child(6) img {
+    opacity: 0.3;
   }
 
 </style>
@@ -1012,12 +1111,31 @@ pieter_note_points:
 </div>
 {% endcapture %}
 
+<script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
+  
+  <!-- Drip
+/////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script>
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '3029595';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/3029595.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
 <main id="sales">
 
   <!-- SECTION: Hero -->
   <section id="hero">
     <div class="container position-relative">
       <img class="bg-image" src="/assets/images/new-web/elite/hero-bg.svg" />
+      <div class="bg-image-overlay" style="background-color: white; width: 20px; position: absolute; right: 0; bottom: 0%; top: 0;"></div>
       <div class="row">
         <div class="col-md-6 px-6">
           <h3>The</h3>
@@ -1347,10 +1465,10 @@ pieter_note_points:
         </div>
       </div>
     </div>
-    <div class="container px-0 pt-5">
-      <div class="pillar-group mb-5">
+    <div class="container pillar-group-container px-0 pt-5">
+      <div class="pillar-group mb-5" style="width: 1040px; height: 100vh; display: flex; flex-direction: column; justify-content: center;">
         <div class="d-flex justify-content-between">
-          {% for item in page.pillars_row1 %}
+          {% for item in page.pillars_row %}
           <div class="pillar">
             <div class="pillar-top">
               <div class="pillar-top-inner">
@@ -1368,35 +1486,9 @@ pieter_note_points:
         <div class="row text-center mt-4">
           <div class="col text-light">
             <p class="pillar-title lead mb-3"
-              {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row1.first.title }}</p>
+              {% for item in page.pillars_row %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %} item-final="{{ page.pillars_final_title }}">{{ page.pillars_row.first.title }}</p>
             <p class="pillar-body" style="color: #979cb6;"
-              {% for item in page.pillars_row1 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row1.first.body }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="pillar-group">
-        <div class="d-flex justify-content-between">
-          {% for item in page.pillars_row2 %}
-          <div class="pillar">
-            <div class="pillar-top">
-              <div class="pillar-top-inner">
-                <img src="{{ item.image }}" />
-              </div>
-              <div class="left-shadow"></div>
-              <div class="right-shadow"></div>
-            </div>
-            <div class="pillar-bottom">
-              <div class="pillar-floor-inner"></div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="row text-center mt-4">
-          <div class="col text-light">
-            <p class="pillar-title lead mb-3"
-              {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %}>{{ page.pillars_row2.first.title }}</p>
-            <p class="pillar-body" style="color: #979cb6;"
-              {% for item in page.pillars_row2 %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %}>{{ page.pillars_row2.first.body }}</p>
+              {% for item in page.pillars_row %} item-{{ forloop.index0 }}="{{ item.body }}" {% endfor %} item-final="{{ page.pillars_final_body }}">{{ page.pillars_row.first.body }}</p>
           </div>
         </div>
       </div>
@@ -1409,7 +1501,7 @@ pieter_note_points:
           <p class="lead mb-4">Here’s the magic:</p>
           <h3 class="mb-5"><strong>that’s all you will ever need.</strong></h3>
           <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
-          <p>Together, these 6 pillars form the full growth stack…</p>
+          <p style="color: #979cb6;">Together, these 6 pillars form the full growth stack…</p>
         </div>
       </div>
     </div>
@@ -1455,11 +1547,12 @@ pieter_note_points:
     </div>
     <div class="container pt-5 position-relative" style="margin-bottom: -1000px;">
       <div class="bg-boxes">
-        <div class="slide-top" style="top: 300px; left: 55%; width: 316px; height: 234px;"></div>
-        <div class="slide-left" style="top: 500px; left: 20%; width: 316px; height: 432px;"></div>
-        <div class="slide-bottom" style="bottom: 1400px; left: -150px; width: 268px; height: 234px;"></div>
-        <div class="slide-right" style="bottom: 1050px; left: 200px; width: 262px; height: 249px;"></div>
-        <div class="slide-bottom" style="bottom: 1400px; right: -150px; width: 411px; height: 334px;"></div>
+        <div class="slide-top"><div></div></div>
+        <div class="slide-top"><div></div></div>
+        <div class="slide-left"><div></div></div>
+        <div class="slide-bottom"><div></div></div>
+        <div class="slide-right"><div></div></div>
+        <div class="slide-bottom"><div></div></div>
       </div>
       
       <!-- FEEDBACK -->
@@ -1556,10 +1649,26 @@ pieter_note_points:
       </div>
     </div>
 
-    <div class="container text-center d-flex" style="margin-bottom: 100px; max-width: 1440px; height: 665px; background: url('/assets/images/new-web/elite/growth-mba.svg')">
-      <div style="max-width: 340px; color: #fff; margin: auto; padding-bottom: 50px;">
-        <h1 style="font-size: 92px; line-height: 90px; font-weight: 600;">The Growth MBA</h1>
-        <p class="lead">Our <strong>best-in-class</strong> growth marketing education</p>
+    <div class="container text-center d-flex position-relative" style="margin-bottom: 100px; max-width: 1440px;">
+      <div class="growth-blocks">
+        <div class="position-absolute slide-bottom"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-left"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-right"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-bottom"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-right"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+        <div class="position-absolute slide-left"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
+      </div>
+
+
+      <div class="slide-bottom" style="color: #fff; margin: auto; padding-bottom: 50px; position: relative;">
+        <img class="img-fluid" src="/assets/images/new-web/elite/growth_mba_block.png" />
+        <div class="position-absolute" style="    top: calc(50% - 45px);
+        transform: translateY(-50%);
+        left: 50px;
+        right: 65px;">
+          <h1 class="mb-3" style="font-size: 92px; line-height: 90px; font-weight: 600;">The Growth MBA</h1>
+          <p class="lead">Our <strong>best-in-class</strong> growth marketing education</p>
+        </div>
       </div>
     </div>
 
@@ -1627,7 +1736,7 @@ pieter_note_points:
             Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
         </div>
         <div class="d-flex m-auto">
-          <button class="mr-4 btn btn-secondary  btn-shadow font-weight-bold" style="width: 250px; height: 60px;">Download Full Syllabus</button>
+          <button class="mr-4 btn btn-secondary  btn-shadow font-weight-bold" style="min-width: 250px; height: 60px;">Download Full Syllabus</button>
           <a href="#explore-growth-mba" class="ml-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
             <img src="/assets/images/new-web/elite/play-icon.svg" />
             <div>Explore The Growth MBA </div>
@@ -1943,17 +2052,19 @@ pieter_note_points:
 </main>
 
 {% include new-web/modal_iframe.html src=page.explore_growth_mba_video_url id="explore-growth-mba" %}
+{% include discount.html %}
 
 <script>
 (() => {
-  affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar');
+  affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', 60, 12);
+  affixTitle('.pillar-group-container', '.pillar-group-container .pillar-group');
   
   const swiper = new Swiper(document.querySelector(".testimonials-swiper"), {
     speed: 800,
     spaceBetween: 300,
     loop: true,
     autoplay: {
-      delay: 20000,
+      delay: 3000,
     },
     pagination: {
       el: ".testimonials-swiper-pagination",
@@ -1968,32 +2079,56 @@ pieter_note_points:
     $(this).closest('.accordion-item').removeClass('active');
   });  
 
-  $(window).on('scroll', () => {
-    _viewportAnimations();
-    _pillarAnimations();
+  const pillarsSection = $('.pillar-group');
+  const pillarTitle = pillarsSection.find(".pillar-title");
+  const pillarBody = pillarsSection.find(".pillar-body");
+  pillarsSection.parent().css({
+    height: '5000px',
+    position: 'relative'
+  })
+
+  $(window).on('scroll touchmove mousewheel', (e) => {
+    _viewportAnimations(e);
+    _pillarAnimation()
   });
 
-  function _pillarAnimations() {
-    $(".pillar-group").each(function() {
-      const pillarTitle = $(this).find(".pillar-title");
-      const pillarBody = $(this).find(".pillar-body");
-      const pillars = $(this).find(".pillar");
-      pillars.each(function(index, el) {
-        if (_isOverCenterScreen(this, -150 + (100 * (pillars.length - index)))) {
-          if (!$(this).hasClass('active')) {
-            const title = pillarTitle.attr(`item-${index}`);
-            const body = pillarBody.attr(`item-${index}`);
-            pillarTitle.fadeOut(function() {
-              $(this).text(title).fadeIn();
-            });
-            pillarBody.fadeOut(function() {
-              $(this).text(body).fadeIn();
-            });
-          }
-          $(this).addClass("active");
-        }
+  function _pillarAnimation() {
+    const chunk = 500;
+
+    if ($(window).scrollTop() > pillarsSection.parent().offset().top) {
+      const over = $(window).scrollTop() - pillarsSection.parent().offset().top;
+      const pillars = pillarsSection.find('.pillar');
+      const activePillars = pillars.filter((index, el) => {
+        return over > (index + 1) * chunk;
       });
-    })
+
+      if (activePillars.length == pillars.length && over > (pillars.length * chunk) + chunk) {
+        const title = pillarTitle.attr(`item-final`);
+        const body = pillarBody.attr(`item-final`);
+
+        if (pillarTitle.text() != title && pillarBody.text() != body) {
+          changeTitleAndBody(title, body);
+        }
+      }
+
+      activePillars.each(function(index, el) {
+        if (!$(this).hasClass('active')) {
+          const title = pillarTitle.attr(`item-${index}`);
+          const body = pillarBody.attr(`item-${index}`);
+          changeTitleAndBody(title, body);
+        }
+        $(this).addClass("active");
+      });
+
+      function changeTitleAndBody(title, body) {
+        pillarTitle.fadeOut(function() {
+          $(this).text(title).fadeIn();
+        });
+        pillarBody.fadeOut(function() {
+          $(this).text(body).fadeIn();
+        });
+      }
+    }
   }
   
   function _isOverCenterScreen(elem, offset) {
@@ -2004,18 +2139,14 @@ pieter_note_points:
       : false;
   }
 
-  // const heroStacks = $(".hero-stack > div");
-  // heroStacks.each(function(index, el) {
-  //   const i = heroStacks.length - (index + 1);
-  //   setTimeout(() => {
-  //     $(heroStacks[i])
-  //       .css('opacity', 0)
-  //       .animate(
-  //         { opacity: 1, transform: 'scaleY(1)' },
-  //         { queue: false, duration: 'slow' }
-  //       );
-  //   }, 200 * index)
-  // });
+  $('#hero').find('.bg-image-overlay').addClass('active');
+  const heroStacks = $(".hero-stack > div");
+  heroStacks.each(function(index, el) {
+    const i = heroStacks.length - (index + 1);
+    setTimeout(() => {
+      $(heroStacks[i]).addClass('active')
+    }, 200 * index)
+  });
 
   function _viewportAnimations() {
     $('.active-inview').each(function() {
@@ -2030,9 +2161,9 @@ pieter_note_points:
     });
   }
 
-  function affixTitle(_container, _sidebar) {
-    const offset = 60;
-    const lineHeightDiff = 12;
+  function affixTitle(_container, _sidebar, _offset = 0, _lineHeightDiff = 0) {
+    const offset = _offset;
+    const lineHeightDiff = _lineHeightDiff;
     let container = $(_container);
     let sidebar = $(_sidebar);
     let sidebarWidth = sidebar.width();
