@@ -1,0 +1,61 @@
+<style>
+  .pre-footer .first-half {
+    border-right: 1px solid rgba(148, 154, 180, 0.4);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 80px;
+  }
+
+  .pre-footer .second-half {
+    padding-top: 93px;
+    padding-bottom: 90px;
+    padding-left: 80px;
+  }
+
+  @media only screen and (max-width: 499px) {
+    .pre-footer .first-half {
+      border: none;
+      padding-right: 15px;
+    }
+    .pre-footer .second-half {
+      padding-top: 0;
+      padding-left: 15px;
+    }
+  }
+</style>
+
+{% assign paddingtop = include.paddingtop | default '10px' %}
+
+<div class="pre-footer bg-grey" style="padding-top: {{ paddingtop }};">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 first-half pl-3 pl-md-0">
+        <p style="margin-bottom: 30px; font-size: 30px; font-weight: 600; line-height: 42px; letter-spacing: 0.5px;"
+          class="font-weight-bold mt-0">
+          Join 15,281 others: Our much-loved email course is now available for free!
+        </p>
+        <p style="margin-bottom: 35px;">
+          Modern growth marketing & user acquisition techniques
+        </p>
+        <form class="form_box mt-4" name="blog-post" netlify>
+          <div class="input-group mb-3" style="max-width: 430px;">
+            <input type="hidden" class="form-control" name="blog_title" value="{{ page.title }}">
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" style="padding-left: 22px;"
+              aria-label="Enter your email">
+            <div class="input-group-append">
+              <input class="btn btn-primary font-weight-bold px-5" type="submit" value="Join Now" style="font-size: 14px;">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4 second-half pr-3 pr-md-0">
+        <h5 class="mb-4 mt-0"><strong>More on the blog:</strong></h5>
+        {% for post in site.posts limit:3 %}
+        <a href="{{ post.url }}" style="color: black;" class="d-flex align-items-center mb-3">
+          {{ post.title }}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

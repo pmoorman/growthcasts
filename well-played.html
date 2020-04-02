@@ -1,0 +1,41 @@
+---
+title: Easter Egg
+layout: pages/new-web/default
+hide_footer: true
+header_logo_only: true
+---
+
+<!-- SECTION: random gif -->
+<section class="pb-4 pt-2">
+  <div class="container">
+    <div class="row flex-column text-center">
+      <div class="pb-3">
+        {% include new-web/random-video.html %}
+      </div>
+      <div><p class="mb-0"><strong>Thanks for clicking!</strong></p class="mb-0"></div>
+      <div>We've noted that.. A special email is on its way!</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="pt-5 pb-0 px-0">
+  <div class="container">
+    <div class="col">
+      <h3 class="text-center">While you wait for your email, check out our blog:</h3>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: slider -->
+<section class="py-5 px-0">
+  <div class="container-fluid px-0">
+    {% include new-web/carousel-3.html
+      id="carousel-3"
+      items=site.posts %}
+  </div>
+</section>
+
+{% include new-web/text-with-striped-bg.html
+  text="<span class='font-weight-bold text-under-swipe'>Swipe to explore more articles >></span>" %}

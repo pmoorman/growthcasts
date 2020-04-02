@@ -9,6 +9,12 @@ tags: Copywriting
 class: post-template
 subclass: 'post'
 author: pieter
+summary_items:
+    - Plenty of people don’t remember life before the Internet. Dominique Essig isn’t one of them.
+    - A Duke graduate, Essig spent more than a decade at Travelocity before taking a leap into the world of fashion ecommerce.
+    - The Bonobos Chief Experience Officer remembers the first wave of internet businesses in the mid-’90s.
+    - Of course, it isn’t always easy.
+
 ---
 
 Seems like many startups —especially bootstrapped ones— hit a plateau of sorts after a year or two in business.
