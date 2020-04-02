@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="675" viewBox="0 0 1440 675">
+    <defs>
+        <filter id="prefix__a" width="134.8%" height="134.8%" x="-8.7%" y="-8.7%" filterUnits="objectBoundingBox">
+            <feOffset dx="8" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__c" width="134.8%" height="134.8%" x="-8.7%" y="-8.7%" filterUnits="objectBoundingBox">
+            <feOffset dx="8" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__e" width="137.3%" height="137.3%" x="-9.3%" y="-9.3%" filterUnits="objectBoundingBox">
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__g" width="137.3%" height="137.3%" x="-9.3%" y="-9.3%" filterUnits="objectBoundingBox">
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__i" width="138%" height="138%" x="-9.5%" y="-9.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="11" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__k" width="138%" height="138%" x="-9.5%" y="-9.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="11" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.090034965 0"/>
+        </filter>
+        <filter id="prefix__n" width="107.8%" height="106.6%" x="-2%" y="-1.7%" filterUnits="objectBoundingBox">
+            <feOffset dx="20" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.0941176471 0 0 0 0 0.11372549 0 0 0 0 0.2 0 0 0 0.05 0"/>
+        </filter>
+        <filter id="prefix__o" width="174.1%" height="175.5%" x="-18.5%" y="-18.9%" filterUnits="objectBoundingBox">
+            <feOffset dx="20" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.952941176 0 0 0 0 0.952941176 0 0 0 0 0.960784314 0 0 0 1 0"/>
+        </filter>
+        <path id="prefix__b" d="M126 63H172V109H126z"/>
+        <path id="prefix__d" d="M126 63H172V109H126z"/>
+        <path id="prefix__f" d="M88.2 44.1H120.4V76.30000000000001H88.2z"/>
+        <path id="prefix__h" d="M88.2 44.1H120.4V76.30000000000001H88.2z"/>
+        <path id="prefix__j" d="M158.76 79.38H216.72V137.34H158.76z"/>
+        <path id="prefix__l" d="M158.76 79.38H216.72V137.34H158.76z"/>
+        <path id="prefix__m" d="M0 0L512 0 512 100 512 602 0 602z"/>
+        <path id="prefix__p" d="M0 0L54 0 54 53 27 43 0 53z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g opacity=".8" transform="translate(186 70)">
+            <path fill="#E2E4EE" d="M0 0H298V171H0z"/>
+            <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+            <use fill="#181D33" xlink:href="#prefix__b"/>
+            <path fill="#FFF" d="M144 93L144 79 154 86z"/>
+        </g>
+        <g opacity=".9" transform="translate(892 345)">
+            <path fill="#E2E4EE" d="M0 0H298V171H0z"/>
+            <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__d"/>
+            <use fill="#181D33" xlink:href="#prefix__d"/>
+            <path fill="#FFF" d="M144 93L144 79 154 86z"/>
+        </g>
+        <g opacity=".3" transform="translate(0 299)">
+            <path fill="#E2E4EE" d="M0 0H208.6V119.7H0z"/>
+            <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+            <use fill="#181D33" xlink:href="#prefix__f"/>
+            <path fill="#FFF" d="M100.8 65.1L100.8 55.3 107.8 60.2z"/>
+        </g>
+        <g opacity=".3" transform="translate(1247 345)">
+            <path fill="#E2E4EE" d="M0 0H193V119.7H0z"/>
+            <use fill="#000" filter="url(#prefix__g)" xlink:href="#prefix__h"/>
+            <use fill="#181D33" xlink:href="#prefix__h"/>
+            <path fill="#FFF" d="M100.8 65.1L100.8 55.3 107.8 60.2z"/>
+        </g>
+        <g opacity=".6" transform="translate(264 299)">
+            <path fill="#E2E4EE" d="M0 0H375.48V215.46H0z"/>
+            <use fill="#000" filter="url(#prefix__i)" xlink:href="#prefix__j"/>
+            <use fill="#181D33" xlink:href="#prefix__j"/>
+            <path fill="#FFF" d="M181.44 117.18L181.44 99.54 194.04 108.36z"/>
+        </g>
+        <g opacity=".7" transform="translate(928 76)">
+            <path fill="#E2E4EE" d="M0 0H375.48V215.46H0z"/>
+            <use fill="#000" filter="url(#prefix__k)" xlink:href="#prefix__l"/>
+            <use fill="#181D33" xlink:href="#prefix__l"/>
+            <path fill="#FFF" d="M181.44 117.18L181.44 99.54 194.04 108.36z"/>
+        </g>
+        <g transform="translate(464)">
+            <use fill="#000" filter="url(#prefix__n)" xlink:href="#prefix__m"/>
+            <use fill="#181D33" xlink:href="#prefix__m"/>
+        </g>
+        <g transform="translate(484 602)">
+            <use fill="#000" filter="url(#prefix__o)" xlink:href="#prefix__p"/>
+            <use fill="#3497F3" xlink:href="#prefix__p"/>
+            <path fill="#181D33" fill-opacity=".246" d="M0 0H54V10H0z"/>
+        </g>
+    </g>
+</svg>
