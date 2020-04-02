@@ -1129,6 +1129,24 @@ pieter_note_points:
 </div>
 {% endcapture %}
 
+<script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
+  
+  <!-- Drip
+/////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script>
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '3029595';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/3029595.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
 <main id="sales">
 
   <!-- SECTION: Hero -->
@@ -2052,6 +2070,7 @@ pieter_note_points:
 </main>
 
 {% include new-web/modal_iframe.html src=page.explore_growth_mba_video_url id="explore-growth-mba" %}
+{% include discount.html %}
 
 <script>
 (() => {
