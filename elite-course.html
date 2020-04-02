@@ -611,6 +611,7 @@ pieter_note_points:
   #sales #hero .hero-stack > div {
     position: relative;
     margin: auto;
+    opacity: 0;
   }
   #sales #hero .hero-stack > div:first-child {
     z-index: 5;
@@ -645,6 +646,53 @@ pieter_note_points:
     width: 340px;
     height: 100px;
     background-color: #d2d3d7;
+  }
+  #sales #hero .hero-stack > div.active {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  #sales #hero .bg-image-overlay.active {
+    -webkit-animation: bg-image-overlay 1.15s linear both;
+    animation: bg-image-overlay 1.15s linear both;
+  }
+
+  @-webkit-keyframes bg-image-overlay {
+    0% { bottom: 0%; }
+    100% { bottom: 100%; }
+  }
+  @keyframes bg-image-overlay {
+    0% { bottom: 0%; }
+    100% { bottom: 100%; }
+  }
+  
+  /**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   /* Feedback */
@@ -1087,6 +1135,7 @@ pieter_note_points:
   <section id="hero">
     <div class="container position-relative">
       <img class="bg-image" src="/assets/images/new-web/elite/hero-bg.svg" />
+      <div class="bg-image-overlay" style="background-color: white; width: 20px; position: absolute; right: 0; bottom: 0%; top: 0;"></div>
       <div class="row">
         <div class="col-md-6 px-6">
           <h3>The</h3>
@@ -2119,18 +2168,14 @@ pieter_note_points:
       : false;
   }
 
-  // const heroStacks = $(".hero-stack > div");
-  // heroStacks.each(function(index, el) {
-  //   const i = heroStacks.length - (index + 1);
-  //   setTimeout(() => {
-  //     $(heroStacks[i])
-  //       .css('opacity', 0)
-  //       .animate(
-  //         { opacity: 1, transform: 'scaleY(1)' },
-  //         { queue: false, duration: 'slow' }
-  //       );
-  //   }, 200 * index)
-  // });
+  $('#hero').find('.bg-image-overlay').addClass('active');
+  const heroStacks = $(".hero-stack > div");
+  heroStacks.each(function(index, el) {
+    const i = heroStacks.length - (index + 1);
+    setTimeout(() => {
+      $(heroStacks[i]).addClass('active')
+    }, 200 * index)
+  });
 
   function _viewportAnimations() {
     $('.active-inview').each(function() {
