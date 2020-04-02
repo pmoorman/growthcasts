@@ -65,6 +65,8 @@ $container-max-widths: (
 ) !default;
 
 @import "vendors/bootstrap/bootstrap";
+@import "components/timer";
+@import "components/discount";
 
 html {
   overflow-x: hidden;
