@@ -79,21 +79,21 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="modulevideo-wrapper row flex-nowrap align-items-center">
           <div class="col video-selectors">
             
             <div class="accordion" id="{{ key }}-accordion" style="width: 433px;">
-              {% for video in item.accordion %}
+              {% for acc in item.accordion %}
               <div
-                class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}" video-index="{{ forloop.index0 }}">
+                class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}">
                 <div class="accordion-item-header" id="{{ key }}heading-{{ forloop.index }}">
                   <p class="lead mb-0">
                     <button class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100"
                       type="button" data-toggle="collapse" data-target="#{{ key }}collapse-{{ forloop.index }}"
                       aria-expanded="true" aria-controls="{{ key }}collapse-{{ forloop.index }}">
-                      <p class="lead mb-0">    z-index: 999;
-                        <strong>{{ video.title }}</strong>
+                      <p class="lead mb-0"> 
+                        <strong>{{ acc.title }}</strong>
                       </p>
                       <div class="arrow">
                         <img src="/assets/images/new-web/elite/arrow_right.svg" />
@@ -107,7 +107,7 @@
                   aria-labelledby="{{ key }}heading-{{ forloop.index }}"
                   data-parent="#{{ key }}-accordion">
                   <div class="accordion-item-body pt-3">
-                    {{ video.body }}
+                    {{ acc.body }}
                   </div>
                 </div>
               </div>
