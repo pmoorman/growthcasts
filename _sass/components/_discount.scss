@@ -24,6 +24,7 @@
 
   > .container {
     padding: 0;
+    max-width: 1040px!important;
   }
 
   &__body {
@@ -36,6 +37,13 @@
 
     @media(min-width: 1200px) {
       flex-direction: row;
+    }
+
+    > div {
+      flex: initial;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -61,12 +69,6 @@
 
     @media(min-width: 1200px) {
       display: inline-block;
-      box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.19);
-      background-color: #181d33;
-      height: 95px;
-      display: flex;
-      align-items: center;
-      padding: 0 30px;
     }
   }
 
@@ -74,6 +76,15 @@
     color: #fff;
     font-weight: 600;
     font-size: 22px;
+    background-color: #181d33;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 220px;
+    box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.19);
   }
   a:hover {
     color: #fff;
