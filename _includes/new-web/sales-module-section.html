@@ -143,6 +143,46 @@
           </div>
         </div>
         <div class="row mt-5 pb-5 justify-content-between">
+          {% if include.style == 'style2' %}
+          {% assign testimonial_index = item.learn.size | minus: 1 %}
+          {% assign testimonial_class = 'speech-bubble-bottom-left' %}
+          {% assign testimonial_person_class = 'justify-content-start' %}
+          {% assign testimonial_person_meta_class = 'order-2' %}
+          {% assign testimonial_person_img_class = 'mr-3 order-1' %}
+          {% else %}
+          {% assign testimonial_index = item.learn.size %}
+          {% assign testimonial_class = 'speech-bubble-bottom-right' %}
+          {% assign testimonial_person_class = 'justify-content-end' %}
+          {% assign testimonial_person_meta_class = 'order-1' %}
+          {% assign testimonial_person_img_class = 'ml-3 order-2' %}
+          {% endif %}
+
+          {% capture testimonial %}
+          <div class="col-md-8 px-0">
+            <div class="mt-5">
+              <div class="d-flex flex-column position-relative px-0 pr-md-3">
+  
+                <div class="speech-bubble {{ testimonial_class }} slide-top position-relative">
+                  <div class="speech-bubble-back"></div>
+                  <div class="speech-bubble-fore">
+                    <p class="mb-0">{{ item.testimonial.body }}</p>
+                  </div>
+                </div>
+                <div class="d-flex aling-items-center {{ testimonial_person_class }} px-0 text-left mt-5 mr-3">
+                  <div class="{{ testimonial_person_meta_class }} d-flex flex-column justify-content-center">
+                    <p class="mb-0 lead"><b>{{ item.testimonial.name }}</b></p>
+                    <p class="mb-0">{{ item.testimonial.title }}</p>
+                  </div>
+                  <div class="{{ testimonial_person_img_class }}">
+                    <img style="width: 72px; height: 72px; border-radius: 100%;" class="position-relative"
+                      src="{{ item.testimonial.thumbnail }}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endcapture %}
+
           {% for l in item.learn %}
           <div class="px-0" style="width: 305px;">
             <div class="mb-4">
@@ -159,33 +199,13 @@
               <p>{{ l | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             </div>
           </div>
+
+          {% if forloop.index == testimonial_index %}
+          {{ testimonial }}
+          {% endif %}
           {% endfor %}
-          <div class="col-md-8">
-            <div class="mt-5">
-              <div class="d-flex flex-column position-relative px-0 px-md-3">
-  
-                <div class="speech-bubble speech-bubble-bottom-right slide-top position-relative">
-                  <div class="speech-bubble-back"></div>
-                  <div class="speech-bubble-fore">
-                    <p class="mb-0">{{ item.testimonial.body }}</p>
-                  </div>
-                </div>
-                <div class="d-flex aling-items-center justify-content-end px-0 text-left mt-5 mr-3">
-                  <div class="d-flex flex-column justify-content-center">
-                    <p class="mb-0 lead"><b>{{ item.testimonial.name }}</b></p>
-                    <p class="mb-0">{{ item.testimonial.title }}</p>
-                  </div>
-                  <div class="ml-3">
-                    <img style="width: 72px; height: 72px; border-radius: 100%;" class="position-relative"
-                      src="{{ item.testimonial.thumbnail }}" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
         </div>
-  
+          
         <div class="row px-6 py-5 mt-5" style="background-color: #eff0f6;">
           <div class="px-4 col-md-12">
             <div class="row">
