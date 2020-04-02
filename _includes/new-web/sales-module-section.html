@@ -67,6 +67,9 @@
   <!-- SLIDE module -->
   <div class="slider">
     {% for item in include.module %}
+    {% assign key = include.container | append: forloop.index %}
+    {% assign video_key = key | append: '-video' %}
+
     <div class="slider-item" slide-index="{{ forloop.index0 }}">
       <div class="container container-narrow">
         <div class="row">
@@ -79,16 +82,16 @@
       <div class="container">
         <div class="modulevideo-wrapper row flex-nowrap align-items-center">
           <div class="col video-selectors">
-            {% assign accordion_key = include.container | append: forloop.index %}
-            <div class="accordion" id="{{ accordion_key }}-accordion" style="width: 433px;">
-              {% for video in item.videos %}
+            
+            <div class="accordion" id="{{ key }}-accordion" style="width: 433px;">
+              {% for video in item.accordion %}
               <div
                 class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}" video-index="{{ forloop.index0 }}">
-                <div class="accordion-item-header" id="{{ accordion_key }}heading-{{ forloop.index }}">
+                <div class="accordion-item-header" id="{{ key }}heading-{{ forloop.index }}">
                   <p class="lead mb-0">
                     <button class="btn btn-link d-flex align-items-center justify-content-between px-0 w-100"
-                      type="button" data-toggle="collapse" data-target="#{{ accordion_key }}collapse-{{ forloop.index }}"
-                      aria-expanded="true" aria-controls="{{ accordion_key }}collapse-{{ forloop.index }}">
+                      type="button" data-toggle="collapse" data-target="#{{ key }}collapse-{{ forloop.index }}"
+                      aria-expanded="true" aria-controls="{{ key }}collapse-{{ forloop.index }}">
                       <p class="lead mb-0">    z-index: 999;
                         <strong>{{ video.title }}</strong>
                       </p>
@@ -99,10 +102,10 @@
                   </p>
                 </div>
   
-                <div id="{{ accordion_key }}collapse-{{ forloop.index }}"
+                <div id="{{ key }}collapse-{{ forloop.index }}"
                   class="collapse {% if forloop.index == 1 %}show{% endif %}"
-                  aria-labelledby="{{ accordion_key }}heading-{{ forloop.index }}"
-                  data-parent="#{{ accordion_key }}-accordion">
+                  aria-labelledby="{{ key }}heading-{{ forloop.index }}"
+                  data-parent="#{{ key }}-accordion">
                   <div class="accordion-item-body pt-3">
                     {{ video.body }}
                   </div>
@@ -114,18 +117,17 @@
           </div>
           <div class="video">
             <div class="d-flex justify-content-center align-items-center">
-              <!-- <div class="bg-secondary shadow-primary d-flex justify-content-center align-items-center"
+              <a href="#{{ video_key }}" class="modal-btn btn btn-secondary btn-shadow shadow-primary bg-secondary d-flex justify-content-center align-items-center"
                 style="width: 60px; height: 60px; position: absolute;">
                 <img src="/assets/images/new-web/elite/play-icon.svg" />
-              </div> -->
+              </a>
               <div>
-                <iframe height="608" width="888" src="{{ item.videos.first.link }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <img height="608" width="888" src="{{ item.video.thumbnail }}" />
               </div>
-              
             </div>
           </div>
         </div>
-        <div class="row mb-3 pt-4">
+        <div class="row mb-3 pt-4 mt-5">
           <div class="col-md-12 text-center">
             <button class="readmore-btn" style="font-size: 32px; font-weight: 300; color: initial; text-decoration: none; background: none;">
               <span>Read more</span> 
@@ -224,9 +226,16 @@
         </div>
       </div>
     </div>
+
     {% endfor %}
   </div>
 </div>
+
+{% for item in include.module %}
+{% assign key = include.container | append: forloop.index %}
+{% assign video_key = key | append: '-video' %}
+{% include new-web/modal_iframe.html src=item.video.url id=video_key %}
+{% endfor %}
 
 <script>
 (() => {
@@ -234,11 +243,6 @@
     {% for item in include.module %}
     {{ forloop.index0 }}: {
       name: "{{ item.name }}",
-      videos: {
-        {% for video in item.videos %}
-          {{ forloop.index0 }}: "{{ video.link }}",
-        {% endfor %}
-      }
     },
     {% endfor %}
   };
@@ -339,15 +343,6 @@
     $(el).find('span').text('Read more');
     $(el).find('div').css('transform', 'rotate(90deg)');
   }
-
-  collapse.on('show.bs.collapse', function () {
-    const item = $(this).parent('.accordion-item');
-    const videoIndex = item.attr('video-index');
-    const slideIndex = item.closest('.slider-item').attr('slide-index');
-
-    const video = modules[slideIndex].videos[videoIndex];
-    videoIframe.attr('src', video);
-  });
 
 })();
 </script>
