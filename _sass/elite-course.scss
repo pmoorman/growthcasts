@@ -588,6 +588,17 @@
 #sales .pillar-group-container {
   width: 1040px;
 }
+#sales .pillars-block {
+  @media only screen and (max-width: 599px) {
+    transform: translateX(10%);
+  }
+}
+#sales .pillars-text {
+  @media only screen and (max-width: 599px) {
+    width: 100vw;
+    margin: 0;
+  }
+}
 #sales .pillar {
   display: flex;
   flex-direction: column;

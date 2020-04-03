@@ -780,7 +780,7 @@ pieter_note_points:
   <section id="pillars" class="alternate-section" style="background: #181d33;">
     <div class="container container-narrow-md text-center mb-5">
       <div class="row">
-        <div class="col-md-12 px-0 text-light">
+        <div class="col-md-12 px-md-0 px-4 text-light">
           <h3>Out of these simple ideas evolved the
             <strong class="text-primary">“6 Pillars of Growth”</strong> that you might have heard about…</h3>
         </div>
@@ -1414,34 +1414,22 @@ pieter_note_points:
   });
 
   function _pillarAnimation() {
-    const chunk = 500;
-
     if ($(window).scrollTop() > pillarsSection.parent().offset().top) {
       const over = $(window).scrollTop() - pillarsSection.parent().offset().top;
       const overPercentage = (over / pillarsSection.parent().height()) * 100;
       const pillars = pillarsSection.find('.pillar');
       const activePillars = pillars.filter((index, el) => {
-        return overPercentage > (index) * 17;
+        return overPercentage > index * 17;
       });
 
-//      7 23 40 57 74 91
-
-      if (true) {
+      if (window.matchMedia("(max-width: 720px)").matches) {
         const pillarsBlock = $('.pillars-block');
-        const pillarsText = $('.pillars-text');
-        pillarsText.css({
-          width: '100vw'
-        });
         pillarsBlock.css({
           transform: `translateX(${-overPercentage + 10}%)`
         });
       }
 
-      console.log('height ', pillarsSection.parent().height())
-      console.log('over ', over)
-      console.log('percentage ', (over / pillarsSection.parent().height()) * 100)
-
-      if (activePillars.length == pillars.length && over > (pillars.length * chunk) + chunk) {
+      if (activePillars.length == pillars.length && overPercentage > (pillars.length * 17) - 10) {
         const title = pillarTitle.attr(`item-final`);
         const body = pillarBody.attr(`item-final`);
 
