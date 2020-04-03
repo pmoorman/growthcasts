@@ -551,17 +551,62 @@
 }
 
 /* Build, measure, learn */
+#sales #build-measure-learn .step-wrapper {
+  z-index: 1;
+
+  @media only screen and (max-width: 599px) {
+    left: -20px;
+  }
+}
 #sales #build-measure-learn .step-item {
   width: 180px; 
   height: 180px; 
   color: #fff; 
   background: #181d33;
+
+  @media only screen and (max-width: 599px) {
+    width: 275px;
+    height: 97px; 
+  }
 }
 #sales #build-measure-learn .step-inner-text {
   position: absolute; 
   left: 50%; 
   transform: translateX(-50%); 
   top: 40px;
+
+  @media only screen and (max-width: 599px) {
+    text-align: left;
+    top: 10px;
+    left: 37%;
+  }
+}
+
+#sales #build-measure-learn .arrow-vertical  {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 44px);
+  transform: translateX(-25%);
+}
+
+@media only screen and (max-width: 599px) {
+  #sales #build-measure-learn .arrow  {
+    height: 70px;
+    display: flex;
+    left: -117px;
+    position: relative;
+  }
+  
+  #sales #build-measure-learn .arrow img  {
+    transform: rotate(-270deg);
+    width: 30px;
+  }
+  #sales #build-measure-learn .step-outer-text  {
+    position: relative;
+    text-align: right;
+    bottom: -160%;
+    right: 10%;
+  }
 }
 
 /* Testimonials */
