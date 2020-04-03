@@ -1,6 +1,6 @@
 <div id="{{include.container}}" class="module-section {{ include.style }}">
 
-  <div class="sticky-nav d-flex align-items-center">
+  <div class="sticky-nav d-none d-md-flex align-items-center">
     
     <button class="prev-btn" disabled="true">
       <img src="/assets/images/new-web/elite/arrow_left_big.svg" />
@@ -19,9 +19,7 @@
             class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
             goto-slide="{{ forloop.index0 }}">
             <div class="w-auto position-relative">
-              <div class="fore" style="height: 32px; min-width: 32px;     padding-left: 10px;
-              padding-right: 10px;
-              padding-top: 2px;">
+              <div class="fore" style="height: 32px; min-width: 32px; padding-left: 10px; padding-right: 10px; padding-top: 2px;">
                 {{ item.nav }}
               </div>
             </div>
@@ -35,31 +33,32 @@
   </div>
 
   <div class="slider-nav container mb-5">
-    <button class="prev-btn" disabled="true">
+    <button class="prev-btn d-none d-md-flex" disabled="true">
       <strong><</strong>
     </button>
-    <button class="next-btn">
+    <button class="next-btn d-none d-md-flex">
       <strong>></strong>
     </button>
 
     <div class="row">
-      <div class="col-md-12 d-flex align-items-center justify-content-center">
-        <p class="lead mb-0 pr-2 mr-4">
+      <div class="col-md-12 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <p class="title lead mb-0">
           {{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}
-          <span class="ml-3 mr-4" style="border-right: 1px solid #d8d8d8;"></span>
-          <strong>Module</strong>
         </p>
-        {% for item in include.module %}
-        <div
-          class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
-          goto-slide="{{ forloop.index0 }}">
-          <div class="w-auto position-relative">
-            <div class="fore">
-              {{ item.nav }}
+        <div class="module-buttons d-flex align-items-center">
+          <div><p class="lead mb-0 pr-2 mr-4"><strong>Module</strong></p></div>
+          {% for item in include.module %}
+          <div
+            class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
+            goto-slide="{{ forloop.index0 }}">
+            <div class="w-auto position-relative">
+              <div class="fore">
+                {{ item.nav }}
+              </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>

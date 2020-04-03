@@ -827,6 +827,39 @@
   position: relative;
   left: -90px;
 }
+#sales .module-section .module-buttons {
+  position: relative;
+  padding-left: 15px;
+  margin-left: 15px;
+
+  &:after {
+    content: '';
+    height: 70%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    background-color: #d8d8d8;
+  }
+
+  @media only screen and (max-width: 599px) {
+    border-left: none;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+
+    &:after {
+      content: '';
+      width: 0;
+    }
+  }
+}
+
 #sales .module-section .video-selectors {
   z-index: 1;
 }
