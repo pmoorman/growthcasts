@@ -246,6 +246,14 @@
     top: 0;
   }
 }
+#sales #hero .bg-image-overlay {
+  background-color: white; 
+  width: 20px; 
+  position: absolute; 
+  right: 0; 
+  bottom: 0%; 
+  top: 0;
+}
 @media only screen and (max-width: 599px) {
   #sales #hero .bg-image,
   #sales #hero .bg-image-overlay {
