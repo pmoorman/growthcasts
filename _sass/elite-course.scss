@@ -92,6 +92,12 @@
 }
 #sales p {
   margin-bottom: 25px;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
 }
 #sales p.lead {
   font-size: 22px;
@@ -401,6 +407,15 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Strategy layer */
+#sales #strategy-layer {
+  .strategy-layer-item .strategy-layer-item-body {
+    @media only screen and (max-width: 599px) {
+      margin-left: -45px;
+    }
   }
 }
 

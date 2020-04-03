@@ -644,18 +644,19 @@ pieter_note_points:
   <section id="build-measure-learn" class="pt-0 alternate-section">
     <div class="container container-narrow-lg">
       <div class="row">
-        <div class="col-md-12 px-0 mb-5 text-center">
+        <div class="col-md-12 px-md-0 mb-5 text-center">
           <p class="lead">It’s actually an old idea — in lean startup parlance, this is called the <strong>“build-measure-learn”</strong> loop:</p>
         </div>
         <div class="col-md-12 px-2 text-center">
-          <div class="d-flex px-4 justify-content-between align-items-center">
+
+          <div class="d-flex flex-column flex-md-row px-3 px-md-4 justify-content-between align-items-md-center">
             {% for item in page.build_measure_learn_items %}
             <div class="step-item p-4 d-flex justify-content-center align-items-center flex-column">
               <p class="lead mb-0"><strong>{{ item.title }}</strong></p>
               <p class="mb-0">{{ item.subtitle }}</p>
             </div>
             {% if forloop.index != page.build_measure_learn_items.size %}
-            <div>
+            <div class="arrow">
               <img src="/assets/images/new-web/elite/step_arrow_right.svg" />
             </div>
             {% endif %}
@@ -681,7 +682,7 @@ pieter_note_points:
   <section class="alternate-section text-center py-0">
     <div class="container container-narrow mb-5">
       <div class="row">
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 px-md-0">
           <p>You want to iterate through that loop as quickly as possible, to ultimately end up with a growth model that works for your unique product and unique situation:</p>
         </div>
       </div>
@@ -700,7 +701,7 @@ pieter_note_points:
   <section style="background-image: linear-gradient(to top, #ffffff, #eff0f6);">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 px-md-0">
           <p class="lead mb-0">Let’s explore what this strategy looks like…</p>
         </div>
       </div>
@@ -718,20 +719,20 @@ pieter_note_points:
     </div>
     <div class="container container-narrow">
       <div class="row">
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 px-md-0">
           <p>Growth strategies anchor marketing and distribution deep inside the product experience: the product gets engineered like a virus. Growth loops are cycles where every users generates opportunities to “infect” new people and spread to other users—like how an infectious virus spreads from one person to others.</p>
         </div>
         <div class="col-md-12">
           <div style="height: 500px;"></div>
         </div>
-        <div class="col-md-12 px-0 mb-4">
+        <div class="col-md-12 px-md-0 mb-4">
           <p class="lead">It’s for a reason that “growth hacking” started off as essentially viral marketing—that’s still the core of the design process, even though there are many more options now.</p>
           <p>Over time a product can even develop multiple growth loops, and they can reinforce each other. But the key notion is that you’ll need this “engineered virality” that comes from a growth loop.</p>
           <p>In order to reason about those loops, we break loops down into 3 components or “systems”.</p>
           <p>They form a circular system together:</p>
         </div>
         {% for item in page.strategy_layer_items %}
-        <div class="col-md-12 mb-4 px-0">
+        <div class="strategy-layer-item col-md-12 mb-4 px-md-0">
           <div class="d-flex">
             <div class="checkmark d-flex mr-3">
               <div class="w-auto position-relative">
@@ -742,13 +743,13 @@ pieter_note_points:
               </div>
             </div>
             <div class="pt-2">
-              <p class="lead"><strong>{{ item.title }}</strong></p>
-              <p>{{ item.body }}</p>
+              <p class="lead strategy-layer-item-title"><strong>{{ item.title }}</strong></p>
+              <p class="strategy-layer-item-body">{{ item.body }}</p>
             </div>
           </div>
         </div>
         {% endfor %}
-        <div class="col-md-12 px-0 mb-4">
+        <div class="col-md-12 px-md-0 mb-4">
           <p>These 3 systems—and the various ways in which they interplay—make up the core of the strategy layer.</p>
         </div>
         <div class="col-md-12 text-center pt-4">
@@ -758,14 +759,14 @@ pieter_note_points:
     </div>
     <div class="container container-narrow-md text-center my-5">
       <div class="row">
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 px-md-0">
           <h3>There are over 25+ growth loops currently known — and <strong>each of them</strong> can turn a struggling business into a revenue-generating powerhouse</h3>
         </div>
       </div>
     </div>
     <div class="container container-narrow">
       <div class="row">
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 px-md-0">
           <p>Modern growth marketing is fundamentally about systems-thinking: build automated systems that allow you to scale your marketing from “hustling harder” to actually scaling <strong>systematically</strong> and <strong>predictably</strong>.</p>
           <p>Growth is about framing marketing as an engineering problem: user acquisition can be systemized, fine-tuned and executed as an automated system.</p>
           <p>In order to get there, you obviously need more than just the right strategy: you also need the right <strong>skills</strong> to execute your strategy, and you need a <strong>data foundation</strong> to tell what’s working and what’s not.</p>
