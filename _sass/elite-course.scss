@@ -862,6 +862,10 @@
 
 #sales .module-section .video-selectors {
   z-index: 1;
+
+  @media only screen and (max-width: 599px) {
+    order: 2;
+  }
 }
 #sales .module-section.style2 .modulevideo-wrapper {
   justify-content: flex-end;
@@ -935,6 +939,23 @@
 }
 #sales .module-section .slider-nav .next-btn {
   right: 0;
+}
+#sales .module-section .video {
+  .placeholder-img img {
+    object-fit: cover;
+    height: 608px;
+    width: 888px;
+  }
+
+  @media only screen and (max-width: 599px) {
+    left: 0;
+    right: 0;
+    width: 100%;
+    .placeholder-img img {
+      height: 220px;
+      width: 100%;
+    }
+  }
 }
 
 /* Growth MBA */
