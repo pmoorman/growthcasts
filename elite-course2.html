@@ -788,7 +788,7 @@ pieter_note_points:
     </div>
     <div class="container pillar-group-container px-0 pt-5">
       <div class="pillar-group mb-5" style="width: 1040px; height: 100vh; display: flex; flex-direction: column; justify-content: center;">
-        <div class="d-flex justify-content-between">
+        <div class="pillars-block d-flex justify-content-between">
           {% for item in page.pillars_row %}
           <div class="pillar">
             <div class="pillar-top">
@@ -804,7 +804,7 @@ pieter_note_points:
           </div>
           {% endfor %}
         </div>
-        <div class="row text-center mt-4">
+        <div class="pillars-text row text-center mt-4">
           <div class="col text-light">
             <p class="pillar-title lead mb-3"
               {% for item in page.pillars_row %} item-{{ forloop.index0 }}="{{ item.title }}" {% endfor %} item-final="{{ page.pillars_final_title }}">{{ page.pillars_row.first.title }}</p>
@@ -1377,7 +1377,7 @@ pieter_note_points:
 
 <script>
 (() => {
-  affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', 60, 12);
+  affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
   affixTitle('.pillar-group-container', '.pillar-group-container .pillar-group');
   
   const swiper = new Swiper(document.querySelector(".testimonials-swiper"), {
@@ -1418,10 +1418,28 @@ pieter_note_points:
 
     if ($(window).scrollTop() > pillarsSection.parent().offset().top) {
       const over = $(window).scrollTop() - pillarsSection.parent().offset().top;
+      const overPercentage = (over / pillarsSection.parent().height()) * 100;
       const pillars = pillarsSection.find('.pillar');
       const activePillars = pillars.filter((index, el) => {
-        return over > (index + 1) * chunk;
+        return overPercentage > (index) * 17;
       });
+
+//      7 23 40 57 74 91
+
+      if (true) {
+        const pillarsBlock = $('.pillars-block');
+        const pillarsText = $('.pillars-text');
+        pillarsText.css({
+          width: '100vw'
+        });
+        pillarsBlock.css({
+          transform: `translateX(${-overPercentage + 10}%)`
+        });
+      }
+
+      console.log('height ', pillarsSection.parent().height())
+      console.log('over ', over)
+      console.log('percentage ', (over / pillarsSection.parent().height()) * 100)
 
       if (activePillars.length == pillars.length && over > (pillars.length * chunk) + chunk) {
         const title = pillarTitle.attr(`item-final`);
@@ -1482,7 +1500,7 @@ pieter_note_points:
     });
   }
 
-  function affixTitle(_container, _sidebar, _offset = 0, _lineHeightDiff = 0) {
+  function affixTitle(_container, _sidebar, disableOnSmScreen = true, _offset = 0, _lineHeightDiff = 0) {
     const offset = _offset;
     const lineHeightDiff = _lineHeightDiff;
     let container = $(_container);
@@ -1496,7 +1514,7 @@ pieter_note_points:
     })
   
     $(window).on('scroll', function() {
-      if (window.matchMedia("(max-width: 720px)").matches) {
+      if (!disableOnSmScreen && window.matchMedia("(max-width: 720px)").matches) {
         sidebar.css('top', '');
         sidebar.css('bottom', '');
         sidebar.css('width', '');
