@@ -891,7 +891,7 @@ pieter_note_points:
               <p class="mb-0">In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs, the launch and continued operation of the Hubble space telescope probably ranks next to the moon landings and the development.</p>
             </div>
           </div>
-          <div class="info px-0 text-right mt-5">
+          <div class="info px-0 pl-5 pl-md-0 mt-4 mt-md-5 text-md-right">
             <p class="mb-0 lead"><b>Cornelia Stevens</b></p>
             <p class="mb-0">CEO at Company Name</p>
           </div>
@@ -911,7 +911,7 @@ pieter_note_points:
               <p class="mb-0">In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs, the launch and continued operation of the Hubble space telescope probably ranks next to the moon landings and the development.</p>
             </div>
           </div>
-          <div class="info px-0 text-left mt-5">
+          <div class="info pl-5 px-0 pl-md-0 mt-4 mt-md-5 text-left">
             <p class="mb-0 lead"><b>Cornelia Stevens</b></p>
             <p class="mb-0">CEO at Company Name</p>
           </div>
@@ -931,7 +931,7 @@ pieter_note_points:
               <p class="mb-0">In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs, the launch and continued.</p>
             </div>
           </div>
-          <div class="info px-0 text-left mt-5">
+          <div class="info pl-5 pl-md-0 mt-4 mt-md-5 text-left">
             <p class="mb-0 lead"><b>Cornelia Stevens</b></p>
             <p class="mb-0">CEO at Company Name</p>
           </div>
@@ -951,7 +951,7 @@ pieter_note_points:
               <p class="mb-0">In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs, the launch and continued operation of the Hubble space telescope probably ranks next to the moon landings and the development.</p>
             </div>
           </div>
-          <div class="info px-0 text-right mt-5">
+          <div class="info pl-5 pl-md-0 mt-4 mt-md-5 text-md-right">
             <p class="mb-0 lead"><b>Cornelia Stevens</b></p>
             <p class="mb-0">CEO at Company Name</p>
           </div>
@@ -1381,6 +1381,12 @@ pieter_note_points:
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
   affixTitle('.pillar-group-container', '.pillar-group-container .pillar-group');
+
+  if (window.matchMedia("(max-width: 720px)").matches) {
+    $('.speech-bubble')
+      .removeClass('speech-bubble-top-right speech-bubble-bottom-left')
+      .addClass('speech-bubble-top-left')
+  }
   
   const swiper = new Swiper(document.querySelector(".testimonials-swiper"), {
     speed: 800,
