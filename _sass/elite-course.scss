@@ -671,11 +671,13 @@
 }
 #sales #framework .image {
   width: 100%;
-  height: 578px;
   background: #fff;
   position: absolute;
   right: 0;
   left: 0;
+}
+#sales #framework {
+  padding-bottom: 0;
 }
 
 /* Layers */
@@ -683,7 +685,7 @@
   padding-top: calc(160px + 289px);
 
   @media only screen and (max-width: 720px) {
-    padding-top: calc(160px + 225px);
+    padding-top: calc(160px + 100px);
   }
 }
 
