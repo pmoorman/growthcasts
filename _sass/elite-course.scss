@@ -667,25 +667,14 @@
 #sales #framework {
   background: #3497f3;
   color: #fff;
-  padding-bottom: 289px;
 }
-#sales #framework .image {
-  width: 100%;
-  background: #fff;
-  position: absolute;
-  right: 0;
-  left: 0;
-}
-#sales #framework {
-  padding-bottom: 0;
-}
-
-/* Layers */
-#sales #layers {
-  padding-top: calc(160px + 289px);
+#sales #framework-image > .container {
+  position: relative;
+  top: -200px;
+  margin-bottom: -200px;
 
   @media only screen and (max-width: 720px) {
-    padding-top: calc(160px + 100px);
+    top: -150px;
   }
 }
 
