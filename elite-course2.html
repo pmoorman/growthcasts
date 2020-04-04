@@ -423,7 +423,7 @@ pieter_note_points:
       </div>
     </div>
     <div class="price-box p-5 text-center text-md-left">
-      <h3>{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+      <h3 class="mb-0 mb-md-2">{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
       <button class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
         Get it now
@@ -533,7 +533,7 @@ pieter_note_points:
   <section id="understanding" class="pt-0">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12 mb-5">
+        <div class="col-md-12 mb-4 mb-md-5">
           <h3><strong>Understanding</strong> is the key here.</h3>
         </div>
         <div class="col-md-6 pl-md-0 mb-3 mb-md-0">
@@ -548,7 +548,7 @@ pieter_note_points:
         </div>
       </div>
     </div>
-    <div class="container container-narrow text-center mt-5 pt-4">
+    <div class="container container-narrow text-center mt-4 mt-md-5 pt-4">
       <div class="row">
         <div class="col px-md-0">
           What you need is a stronger mental model to scaffold your thoughts and decision making on.
@@ -561,7 +561,7 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Framework -->
-  <section id="framework">
+  <section id="framework" class="ignore-mobile-padding">
     <div class="container container-narrow-md text-center mb-4">
       <div class="row">
         <div class="col-md-12">
@@ -641,7 +641,7 @@ pieter_note_points:
   </section>
 
   <!-- SECTION: Build measure learn -->
-  <section id="build-measure-learn" class="pt-0 alternate-section">
+  <section id="build-measure-learn" class="pt-5 pt-md-0 alternate-section">
     <div class="container container-narrow-lg">
       <div class="row">
         <div class="col-md-12 px-md-0 mb-5 text-center">
@@ -680,7 +680,7 @@ pieter_note_points:
     </div>
   </section>
 
-  <section class="alternate-section text-center pb-0 pt-4 pt-md-0">
+  <section class="alternate-section text-center pb-0 pt-md-4 pt-md-0">
     <div class="container container-narrow mb-5">
       <div class="row">
         <div class="col-md-12 px-md-0">
@@ -702,7 +702,7 @@ pieter_note_points:
   <section style="background-image: linear-gradient(to top, #ffffff, #eff0f6);">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12 px-md-0">
+        <div class="col-md-12 px-4 px-md-0 mt-4 mt-md-0">
           <p class="lead mb-0">Let’s explore what this strategy looks like…</p>
         </div>
       </div>
@@ -860,7 +860,7 @@ pieter_note_points:
 
   <!-- SECTION: Feedback -->
   <section id="feedback" class="pt-0">
-    <div class="container container-narrow-md text-center mb-5">
+    <div class="container container-narrow-md text-center mb-4 mb-md-5">
       <div class="row">
         <div class="col-md-12">
           <h3><strong>Here is some feedback we received from other entrepreneurs</strong>—like yourself—that started to apply these growth concepts.</h3>
@@ -963,7 +963,7 @@ pieter_note_points:
 
   <!-- SECTION: Growth MBA -->
   <section id="growth-mba" class="pt-0" style="background-image: linear-gradient(to bottom, #ffffff, #eff0f6);">
-    <div class="container container-narrow text-center" style="margin-bottom: 100px;">
+    <div class="growth-mba-upper-text container container-narrow text-center">
       <div class="row">
         <div class="col-md-12">
           <p class="lead mb-5">Today, that 6-part system has turned into our flagship educational product: <strong>The Growth MBA</strong>.</p>
@@ -972,7 +972,7 @@ pieter_note_points:
       </div>
     </div>
 
-    <div class="container text-center d-flex position-relative mb-sm-0" style="margin-bottom: 100px; max-width: 1440px;">
+    <div class="growth-mba-middle container text-center d-flex position-relative mb-sm-0">
       <div class="growth-blocks">
         <div class="position-absolute slide-bottom"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
         <div class="position-absolute slide-left"><img class="img-fluid" src="/assets/images/new-web/elite/grow_mba_bgbox.png" /></div>
@@ -997,7 +997,7 @@ pieter_note_points:
         <div class="col-md-12 px-md-0">
           <p class="lead">Our blockbuster growth marketing education teaches entrepreneurs how to apply systematic growth marketing… to drive traffic, users and revenue virtually on autopilot.</p>
           <p>If you want to leverage your entrepreneurial energy to scale your companies bigger, better and faster, then this is the place to do it. You will become a confident growth practitioner, while following our exact step-by-step execution.</p>
-          <p class="lead my-5"><strong>The Growth MBA includes:</strong></p>
+          <p class="lead mb-4 mt-5 mb-md-5"><strong>The Growth MBA includes:</strong></p>
         </div>
       </div>
     </div>
@@ -1049,7 +1049,7 @@ pieter_note_points:
         </div>
       </div>
     </div>
-    <div class="container container-narrow text-center mt-5">
+    <div class="container container-narrow text-center mt-md-5">
       <div class="row">
         <div class="col-md-12 mb-4">
           <p>The Growth MBA is an intermediate & advanced education. <br>
@@ -1179,12 +1179,12 @@ pieter_note_points:
           <hr>
         </div>
 
-        <div class="col-md-12 mb-5">
+        <div class="col-md-12 mb-md-5">
           <p class="lead">Let’s get this going:</p>
         </div>
       </div>
 
-      <div class="pt-4">
+      <div class="pt-md-4">
         {{ pricing_table }}
       </div>
     </div>
@@ -1192,7 +1192,7 @@ pieter_note_points:
 
   <!-- SECTION: Faq -->
   <section id="faq" class="pt-5">
-    <div class="container container-narrow mb-5">
+    <div class="container container-narrow mb-3 mb-md-5">
       <div class="row">
         <div class="col text-center">
           <h3>Frequently Asked Questions</h3>
@@ -1310,7 +1310,7 @@ pieter_note_points:
           <img src="/assets/images/new-web/elite/pieter-note.png" />
         </div>
         <div class="content-block slide-left">
-          <img class="img-fluid" class="mb-5" src="/assets/images/new-web/elite/hey-it-s-pieter-her.png" />
+          <img class="img-fluid mb-4 mb-md-5" src="/assets/images/new-web/elite/hey-it-s-pieter-her.png" />
           <p>The truth of the matter is simple: for almost all startup companies — whether eCommerce, SaaS, mobile or B2B — the <strong>defining moment</strong> is when they find a scalable, predictable pathway to acquire customers.</p>
           <div class="d-block d-md-none mb-4" style="margin-right: -30px;">
             <img class="img-fluid" style="width: 100%;" src="/assets/images/new-web/elite/pieter-note.png" />
@@ -1340,7 +1340,7 @@ pieter_note_points:
           <p>It’s commonly known that <strong>every day your business is not getting new customers, you’re losing money and momentum.</strong></p>
           <p>If you’re not totally delighted with your enrollment in the Growth MBA, you will receive a full, prompt, and courteous refund. In fact, you have 365 days to decide if the strategies I teach will work for you. </p>
           <p>If you’re not absolutely delighted with the material, just email me at pieter@double-agency.com and receive a full refund. No questions asked.</p>
-          <img class="img-fluid" class="mb-4" src="/assets/images/new-web/elite/pieter.png" />
+          <img class="img-fluid mb-4" src="/assets/images/new-web/elite/pieter.png" />
           <p class="lead mb-0"><strong>Pieter Moorman</strong></p>
           <p class="mb-0">Creator & teacher</p>
         </div>

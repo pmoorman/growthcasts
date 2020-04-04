@@ -1,3 +1,11 @@
+@media only screen and (max-width: 720px) {
+  section:not(.ignore-mobile-padding) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+
 .checkmark .back img,
 .checkmark .fore {
   width: 30px;
@@ -95,7 +103,7 @@
   height: 128px;
 }
 .pricing-table {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     .package-title {
       width: 100%!important;
       letter-spacing: 0.9px!important;
@@ -105,7 +113,7 @@
       padding-right: 25px;  
     }
     .pricing-table-item .price-box {
-      height: auto;
+      height: 131px;
 
       button {
         left: 50%;
@@ -122,7 +130,7 @@
   letter-spacing: 1.5px;
   line-height: 56px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     line-height: 34px;
     font-weight: 300;
   }
@@ -130,14 +138,14 @@
 #sales h3.large {
   font-size: 32px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 22px;
   }
 }
 #sales p {
   margin-bottom: 25px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.4px;
@@ -149,7 +157,7 @@
   letter-spacing: 0.7px;
   line-height: 32px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -206,7 +214,7 @@
   background: #fff;
   box-shadow: 0px 12px 0 0 rgba(148, 154, 180, 0.4);
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     padding-left: 25px !important;
   }
 }
@@ -275,6 +283,10 @@
   margin-bottom: 15px;
   padding: 2rem;
   padding-top: 1.7rem;
+
+  @media only screen and (max-width: 720px) {
+    left: 0;
+  }
 }
 #sales .accordion-item.accordion-item-style2.active .accordion-item-header button {
   color: #fff;
@@ -287,7 +299,7 @@
 #sales #hero {
   padding-bottom: 40px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     padding-top: 30px;
   }
 }
@@ -296,7 +308,7 @@
   line-height: 94px;
   letter-spacing: -3.66px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -2.5px;
@@ -308,7 +320,7 @@
   letter-spacing: -1.75px;
   font-weight: normal;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 28px;
     line-height: 24px;
     letter-spacing: 0.9px;
@@ -321,7 +333,7 @@
   bottom: 0;
   height: 100%;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     top: 0;
   }
 }
@@ -333,14 +345,14 @@
   bottom: 0%;
   top: 0;
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 720px) {
   #sales #hero .bg-image,
   #sales #hero .bg-image-overlay {
     right: 20px;
   }
 }
 #sales #hero .hero-stack-col {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     position: relative;
   }
 }
@@ -409,7 +421,7 @@
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 720px) {
   #sales #hero .hero-stack > div:first-child {
     max-width: calc(76% - 15px);
     height: 63px;
@@ -465,7 +477,7 @@
 /* Strategy layer */
 #sales #strategy-layer {
   .strategy-layer-item .strategy-layer-item-body {
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 720px) {
       margin-left: -45px;
     }
   }
@@ -538,14 +550,14 @@
 #sales #feedback .feedback-wrapper {
   margin-bottom: -1000px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     margin-bottom: 0;
   }
 }
 #sales #feedback .feedback-item .image {
   overflow: hidden;
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 720px) {
   #sales #feedback .feedback-item {
     left: 0 !important;
     right: 0 !important;
@@ -598,6 +610,10 @@
   max-width: 512px;
   background: #fff;
   top: -59px;
+
+  @media only screen and (max-width: 720px) {
+    top: 0;
+  }
 }
 #sales #no .block-2 .block-shadow {
   box-shadow: 12px 12px 0 0 rgba(148, 154, 180, 0.4);
@@ -616,8 +632,8 @@
   background-repeat: no-repeat;
   background-size: auto;
 
-  @media only screen and (max-width: 599px) {
-    height: 300px;
+  @media only screen and (max-width: 720px) {
+    height: 280px;
     background-size: contain;
   }
 }
@@ -640,6 +656,13 @@
   position: relative;
 }
 
+@media only screen and (max-width: 720px) {
+  #sales #understanding .button-1,
+  #sales #understanding .button-2 {
+    height: 92px;
+  }
+}
+
 /* Framework */
 #sales #framework {
   background: #3497f3;
@@ -658,13 +681,17 @@
 /* Layers */
 #sales #layers {
   padding-top: calc(160px + 289px);
+
+  @media only screen and (max-width: 720px) {
+    padding-top: calc(160px + 225px);
+  }
 }
 
 /* Build, measure, learn */
 #sales #build-measure-learn .step-wrapper {
   z-index: 1;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     left: -20px;
   }
 }
@@ -674,7 +701,7 @@
   color: #fff;
   background: #181d33;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 275px;
     height: 97px;
   }
@@ -685,7 +712,7 @@
   transform: translateX(-50%);
   top: 40px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     text-align: left;
     top: 10px;
     left: 37%;
@@ -699,7 +726,7 @@
   transform: translateX(-25%);
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 720px) {
   #sales #build-measure-learn .arrow {
     height: 70px;
     display: flex;
@@ -747,14 +774,14 @@
     max-width: 100%;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 100%;
   }
 }
 
 /* Guarantee */
 #sales #guarantee .guarantee-logo {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 100%;
   }
 }
@@ -764,12 +791,12 @@
   width: 1040px;
 }
 #sales .pillars-block {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     transform: translateX(10%);
   }
 }
 #sales .pillars-text {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 100vw;
     margin: 0;
   }
@@ -889,7 +916,7 @@
     background-color: #d8d8d8;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     border-left: none;
     border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
@@ -915,7 +942,7 @@
     max-width: calc(100% + 15px);
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     order: 2;
   }
 }
@@ -927,7 +954,7 @@
   right: -90px;
   left: initial;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     right: 0;
   }
 }
@@ -1003,7 +1030,7 @@
     width: 888px;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     left: 0;
     right: 0;
     width: 100%;
@@ -1016,7 +1043,7 @@
 #sales .module-section .learn-item {
   width: 305px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     margin: auto;
 
     .checkmark-inner {
@@ -1035,7 +1062,7 @@
   left: 12%;
   top: 70px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 162px;
     height: 86px;
     left: -12%;
@@ -1051,7 +1078,7 @@
   left: 0;
   top: 300px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 148px;
     height: 108px;
     left: -9%;
@@ -1061,7 +1088,7 @@
 #sales #growth-mba .growth-blocks div:nth-child(2) img {
   opacity: 0.6;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     opacity: 0.3;
   }
 }
@@ -1071,7 +1098,7 @@
   left: 18%;
   top: 300px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 180px;
     height: 108px;
     right: -10%;
@@ -1082,7 +1109,7 @@
 #sales #growth-mba .growth-blocks div:nth-child(3) img {
   opacity: 0.7;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     opacity: 0.3;
   }
 }
@@ -1092,7 +1119,7 @@
   right: 10%;
   top: 70px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     width: 101px;
     height: 86px;
     top: 46%;
@@ -1102,7 +1129,7 @@
 #sales #growth-mba .growth-blocks div:nth-child(4) img {
   opacity: 0.7;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     opacity: 0.9;
   }
 }
@@ -1112,7 +1139,7 @@
   right: 16%;
   top: 350px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     display: none;
   }
 }
@@ -1125,7 +1152,7 @@
   right: 0;
   top: 350px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     display: none;
   }
 }
@@ -1139,7 +1166,7 @@
   position: relative;
 }
 #sales #growth-mba .centered-block .bg-image {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     max-width: 256px;
   }
 }
@@ -1149,7 +1176,7 @@
   left: 50px;
   right: 65px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     left: 7px;
     right: 15px;
   }
@@ -1159,14 +1186,14 @@
   line-height: 90px;
   font-weight: 600;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     font-size: 50.4px;
     line-height: 47.5px;
     letter-spacing: -2.1px;
   }
 }
 #sales #growth-mba .centered-block .text p {
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     margin-bottom: 0;
   }
 }
@@ -1175,7 +1202,7 @@
     border-right: 1px solid #e7e7e7;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 17px;
@@ -1189,6 +1216,22 @@
     }
   }
 }
+#sales #growth-mba .growth-mba-upper-text {
+  margin-bottom: 100px;
+
+  @media only screen and (max-width: 720px) {
+    margin-bottom: 40px;
+  }
+}
+#sales #growth-mba .growth-mba-middle {
+  margin-bottom: 100px; 
+  max-width: 1440px;
+
+  @media only screen and (max-width: 720px) {
+    margin-bottom: 0;
+  }
+}
+
 
 /* Pieter note */
 #sales #pieter-note {
@@ -1224,7 +1267,7 @@
     background-color: #ffffff;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 720px) {
     .bg-block {
       width: 357px;
       left: 0;
