@@ -70,7 +70,7 @@ package_execution:
   - "**Operational support**"
 
 pricing_table:
-  - title: "**Core** <br>6 Modules"
+  - title: "**Core**<br>Content"
     items:
       - "**Module 1:**<br>Growth strategy"
       - "**Module 2:**<br>Sales funnels"
@@ -81,8 +81,9 @@ pricing_table:
     extra_items: 
       - "Full money-back guarantee"
     price: "$479"
+    gumroadlink: "https://gumroad.com/l/elitepro"
 
-  - title: "**Execution**<br>Bonuses"
+  - title: "**Execution**<br>Content"
     items:
       - "**Video case studies (13x)**"
       - "**PDF Manuals, Swipe Files, Etc.**"
@@ -90,7 +91,8 @@ pricing_table:
       - "**Operational support**"
     extra_items: 
       - "Full money-back guarantee"
-    price: "N/A"
+    price: "$199"
+    gumroadlink: "https://gumroad.com/l/elitepro"
 
   - title: "**Full Access** <br>Core+Execution"
     items:
@@ -108,6 +110,7 @@ pricing_table:
       - "Operational support"
     price: "**$499**"
     subprice: "Get Full Access"
+    gumroadlink: "https://gumroad.com/l/elitepro"
 
 modules_core:
   - name: Growth Strategy
@@ -538,7 +541,7 @@ pieter_note_points:
     <div class="price-box p-5 text-center text-md-left">
       <h3 class="mb-0 mb-md-2">{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      <button href="https://gumroad.com/l/elitepro" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
+      <button onclick="window.location.href = '{{ package.gumroadlink }}';" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
         Get it now
       </button>
     </div>
@@ -1051,7 +1054,7 @@ pieter_note_points:
           <div class="speech-bubble speech-bubble-top-right slide-top position-relative">
             <div class="speech-bubble-back"></div>
             <div class="speech-bubble-fore">
-              <p class="mb-0">I'm trying to supercharge new learning as a growth marketer coming from a traditional marketing background for 20+ years. Just watched the mini webinar. I've been totally blown away how you explain things so simply. You already added so much sense to things that I haven't been able to understand and figure out by myself somehow. Let me thank you for that!</p>
+              <p class="mb-0">Just watched the mini webinar. I've been totally blown away how you explain things so simply. You already added so much sense to things that I haven't been able to understand and figure out by myself somehow. Let me thank you for that!</p>
             </div>
           </div>
           <div class="info pl-5 pl-md-0 mt-4 mt-md-5 text-left">
@@ -1180,7 +1183,7 @@ pieter_note_points:
         </div>
         <div class="d-flex flex-column flex-md-row m-auto">
           <div>
-            <button class="mr-md-4 mb-4 mb-md-0 btn btn-secondary btn-shadow font-weight-bold" style="min-width: 250px; height: 60px;">Download Full Syllabus</button>
+            <!-- <button class="mr-md-4 mb-4 mb-md-0 btn btn-secondary btn-shadow font-weight-bold" style="min-width: 250px; height: 60px;">Download Full Syllabus</button> -->
           </div>
           <a href="#explore-growth-mba" class="ml-md-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
             <img src="/assets/images/new-web/elite/play-icon.svg" />
