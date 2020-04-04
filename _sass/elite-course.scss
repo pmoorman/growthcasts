@@ -1189,3 +1189,52 @@
     }
   }
 }
+
+/* Pieter note */
+#sales #pieter-note {
+  background-image: linear-gradient(to bottom, #a1a6bc, #eff0f6); margin-top: 100px; padding-bottom: 300px;
+
+  .bg-block {
+    width: 636px;
+    height: 828px; 
+    box-shadow: 14px 14px 0 0 rgba(24, 29, 51, 0.1);
+    background-color: #181d33;
+    color: #fff;
+    position: absolute;
+    top: -255px;
+    z-index: 1;
+    left: 100px;
+  }
+
+  .image-block {
+    z-index: 3;     
+    position: absolute;
+    left: -55px;
+    top: 55px;
+  }
+
+  .content-block {
+    padding: 5.5rem 5.5rem;
+    z-index: 2;
+    position: relative;
+    margin-left: auto; 
+    width: 776px; 
+    max-width: 100%;
+    box-shadow: 14px 14px 0 0 rgba(24, 29, 51, 0.1);
+    background-color: #ffffff;
+  }
+
+  @media only screen and (max-width: 599px) {
+    .bg-block {
+      width: 357px;
+      left: 0;
+      top: -190px;
+    }
+    .content-wrapper {
+      margin-right: -15px;
+    }
+    .content-block {
+      padding: 3.5rem 15px;
+    }
+  }
+}
