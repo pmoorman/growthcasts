@@ -83,7 +83,7 @@
   background: #fff;
 }
 .pricing-table .pricing-table-item .package-title {
-  width: 90%;
+  width: 98%;
 }
 .pricing-table .pricing-table-item:hover {
   background: #efefef !important;
@@ -905,6 +905,7 @@
   position: relative;
   padding-left: 15px;
   margin-left: 15px;
+  overflow-x: scroll;
 
   &:after {
     content: "";
