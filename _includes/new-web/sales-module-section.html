@@ -1,6 +1,6 @@
 <div id="{{include.container}}" class="module-section {{ include.style }}">
 
-  <div class="sticky-nav d-flex align-items-center">
+  <div class="sticky-nav d-none d-md-flex align-items-center">
     
     <button class="prev-btn" disabled="true">
       <img src="/assets/images/new-web/elite/arrow_left_big.svg" />
@@ -19,9 +19,7 @@
             class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
             goto-slide="{{ forloop.index0 }}">
             <div class="w-auto position-relative">
-              <div class="fore" style="height: 32px; min-width: 32px;     padding-left: 10px;
-              padding-right: 10px;
-              padding-top: 2px;">
+              <div class="fore" style="height: 32px; min-width: 32px; padding-left: 10px; padding-right: 10px; padding-top: 2px;">
                 {{ item.nav }}
               </div>
             </div>
@@ -35,31 +33,32 @@
   </div>
 
   <div class="slider-nav container mb-5">
-    <button class="prev-btn" disabled="true">
+    <button class="prev-btn d-none d-md-flex" disabled="true">
       <strong><</strong>
     </button>
-    <button class="next-btn">
+    <button class="next-btn d-none d-md-flex">
       <strong>></strong>
     </button>
 
     <div class="row">
-      <div class="col-md-12 d-flex align-items-center justify-content-center">
-        <p class="lead mb-0 pr-2 mr-4">
+      <div class="col-md-12 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <p class="title lead mb-0">
           {{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}
-          <span class="ml-3 mr-4" style="border-right: 1px solid #d8d8d8;"></span>
-          <strong>Module</strong>
         </p>
-        {% for item in include.module %}
-        <div
-          class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
-          goto-slide="{{ forloop.index0 }}">
-          <div class="w-auto position-relative">
-            <div class="fore">
-              {{ item.nav }}
+        <div class="module-buttons d-flex align-items-center">
+          <div><p class="lead mb-0 pr-2 mr-4"><strong>Module</strong></p></div>
+          {% for item in include.module %}
+          <div
+            class="checkmark checkmark-number d-flex nav-item {% if forloop.index == 1 %}selected{% endif %} active"
+            goto-slide="{{ forloop.index0 }}">
+            <div class="w-auto position-relative">
+              <div class="fore">
+                {{ item.nav }}
+              </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>
@@ -75,15 +74,15 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="mb-4"><strong>{{ item.name }}</strong></h3>
-            <p class="lead">{{ item.description }}</p>
+            <p class="lead mb-0 mb-md-4">{{ item.description }}</p>
           </div>
         </div>
       </div>
-      <div class="container mt-5">
-        <div class="modulevideo-wrapper row flex-nowrap align-items-center">
+      <div class="container mt-5 px-0 px-md-3">
+        <div class="modulevideo-wrapper row flex-wrap flex-md-nowrap align-items-center">
           <div class="col video-selectors">
             
-            <div class="accordion" id="{{ key }}-accordion" style="width: 433px;">
+            <div class="accordion" id="{{ key }}-accordion">
               {% for acc in item.accordion %}
               <div
                 class="accordion-item accordion-item-style2 position-relative {% if forloop.index == 1 %}active{% endif %}">
@@ -121,17 +120,16 @@
                 style="width: 60px; height: 60px; position: absolute;">
                 <img src="/assets/images/new-web/elite/play-icon.svg" />
               </a>
-              <div>
-                <img height="608" width="888" src="{{ item.video.thumbnail }}" />
+              <div class="placeholder-img">
+                <img src="{{ item.video.thumbnail }}" />
               </div>
             </div>
           </div>
         </div>
         <div class="row mb-3 pt-4 mt-5">
           <div class="col-md-12 text-center">
-            <button class="readmore-btn" style="font-size: 32px; font-weight: 300; color: initial; text-decoration: none; background: none;">
-              <span>Read more</span> 
-              <div style="transform: rotate(90deg);"><strong>></strong></div>
+            <button class="readmore-btn large" style="text-decoration: none; background: none;">
+              <h3 class="large mb-0">Read more<div style="transform: rotate(90deg);"><strong>></strong></div></h3> 
             </button>
           </div>
         </div>
@@ -139,7 +137,7 @@
       <div class="container what-you-will-learn" style="display: none;">
         <div class="row py-4">
           <div class="col-md-12 text-center">
-            <h3 style="font-size: 32px;">What you will learn?</h3>
+            <h3 class="large">What you will learn?</h3>
           </div>
         </div>
         <div class="row mt-5 pb-5 justify-content-between">
@@ -158,7 +156,7 @@
           {% endif %}
 
           {% capture testimonial %}
-          <div class="col-md-8 px-0">
+          <div class="testimonial-column col-md-8 px-4 px-md-0">
             <div class="mt-5">
               <div class="d-flex flex-column position-relative px-0 pr-md-3">
   
@@ -168,12 +166,12 @@
                     <p class="mb-0">{{ item.testimonial.body }}</p>
                   </div>
                 </div>
-                <div class="d-flex aling-items-center {{ testimonial_person_class }} px-0 text-left mt-5 mr-3">
-                  <div class="{{ testimonial_person_meta_class }} d-flex flex-column justify-content-center">
+                <div class="testimonial-person d-flex aling-items-center {{ testimonial_person_class }} px-0 text-left mt-5 mr-3">
+                  <div class="testimonial-person-meta {{ testimonial_person_meta_class }} d-flex flex-column justify-content-center">
                     <p class="mb-0 lead"><b>{{ item.testimonial.name }}</b></p>
                     <p class="mb-0">{{ item.testimonial.title }}</p>
                   </div>
-                  <div class="{{ testimonial_person_img_class }}">
+                  <div class="testimonial-person-img {{ testimonial_person_img_class }}">
                     <img style="width: 72px; height: 72px; border-radius: 100%;" class="position-relative"
                       src="{{ item.testimonial.thumbnail }}" />
                   </div>
@@ -184,10 +182,10 @@
           {% endcapture %}
 
           {% for l in item.learn %}
-          <div class="px-0" style="width: 305px;">
+          <div class="px-0 learn-item text-center text-md-left">
             <div class="mb-4">
               <div class="checkmark checkmark d-flex">
-                <div class="w-auto position-relative">
+                <div class="checkmark-inner w-auto position-relative">
                   <img class="fore" style="width: 30px; height: 30px;" src="/assets/images/new-web/check_icon_fore.svg" />
                   <div class="back">
                     <img style="width:30px; height: 30px;" src="/assets/images/new-web/check_icon_back.png" />
@@ -210,15 +208,15 @@
           <div class="px-4 col-md-12">
             <div class="row">
               <div class="col-md-12">
-                <h3 class="mb-0" style="font-size: 32px;">What you will learn?</h3>
+                <h3 class="mb-0 large text-center text-md-left">What you will learn?</h3>
               </div>
               <div class="col-md-12">
                 <hr class="my-4">
               </div>
-              <div class="col-md-6 pr-5">
-                <p class="lead"><strong>Core Content:</strong> {{ item.core_content_summary }}</p>
+              <div class="module-content col-md-6 pr-md-5 mb-5 mb-md-0">
+                <p class="lead text-center text-md-left"><strong>Core Content:</strong> {{ item.core_content_summary }}</p>
                 {% for content in item.core_content_items %}
-                <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid #d3d6e5;">
+                <div class="module-content-item d-flex justify-content-between py-2">
                   <div>
                     <p class="mb-0"><strong>{{ content.title }}</strong></p>
                   </div>
@@ -228,10 +226,10 @@
                 </div>
                 {% endfor %}
               </div>
-              <div class="col-md-6 pl-5">
-                <p class="lead"><strong>Bonus Content</strong></p>
+              <div class="module-content col-md-6 pl-md-5">
+                <p class="lead text-center text-md-left"><strong>Bonus Content</strong></p>
                 {% for content in item.bonus_content_items %}
-                <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid #d3d6e5;">
+                <div class="module-content-item d-flex justify-content-between py-2">
                   <div>
                     <p class="mb-0"><strong>{{ content.title }}</strong></p>
                   </div>
@@ -280,6 +278,24 @@
   const readmoreBtns = $(`${container} .readmore-btn`);
   const collapse = $(`${container} .collapse`);
   const videoIframe = $(`${container} .video iframe`);
+
+  if (window.matchMedia("(max-width: 720px)").matches) {
+    $(`${container} .speech-bubble`)
+      .removeClass('speech-bubble-bottom-right')
+      .addClass('speech-bubble-bottom-left');
+    $(`${container} .testimonial-person`)
+      .removeClass('justify-content-end')
+      .addClass('justify-content-start');
+    $(`${container} .testimonial-person-meta`)
+      .removeClass('order-1')
+      .addClass('order-2');
+    $(`${container} .testimonial-person-img`)
+      .removeClass('ml-3 order-2')
+      .addClass('mr-3 order-1');
+      $(`${container} .testimonial-column`).css({
+        order: 10
+      })
+  }
 
   // Sticky header
   $(window).scroll(function() {
