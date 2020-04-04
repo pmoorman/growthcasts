@@ -213,17 +213,10 @@
   opacity: 0.4;
   text-decoration: none;
 }
-#sales
-  .accordion-item.accordion-item-style1.active
-  .accordion-item-header
-  button {
+#sales .accordion-item.accordion-item-style1.active .accordion-item-header button {
   opacity: 1;
 }
-#sales
-  .accordion-item.accordion-item-style1.active
-  .accordion-item-header
-  button
-  .arrow {
+#sales .accordion-item.accordion-item-style1.active .accordion-item-header button .arrow {
   display: none;
 }
 
@@ -246,17 +239,10 @@
   padding: 2rem;
   padding-top: 1.7rem;
 }
-#sales
-  .accordion-item.accordion-item-style2.active
-  .accordion-item-header
-  button {
+#sales .accordion-item.accordion-item-style2.active .accordion-item-header button {
   color: #fff;
 }
-#sales
-  .accordion-item.accordion-item-style2.active
-  .accordion-item-header
-  button
-  .arrow {
+#sales .accordion-item.accordion-item-style2.active .accordion-item-header button .arrow {
   display: none;
 }
 
@@ -709,14 +695,24 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-#sales
-  #testimonials
-  .swiper-pagination
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+#sales #testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #181d33;
 }
 #sales #testimonials .testimonials {
   padding-bottom: 15px;
+}
+#sales #testimonials .testimonials__slide > div {
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  background: #fff;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: 599px) {
+    width: 100%;
+  }
 }
 
 /* Pillars */
@@ -840,7 +836,7 @@
   margin-left: 15px;
 
   &:after {
-    content: '';
+    content: "";
     height: 70%;
     width: 1px;
     position: absolute;
@@ -861,7 +857,7 @@
     width: 100%;
 
     &:after {
-      content: '';
+      content: "";
       width: 0;
     }
   }
@@ -1112,7 +1108,7 @@
   @media only screen and (max-width: 599px) {
     left: 7px;
     right: 15px;
-  }  
+  }
 }
 #sales #growth-mba .centered-block .text h1 {
   font-size: 92px;
@@ -1125,23 +1121,23 @@
     letter-spacing: -2.1px;
   }
 }
-#sales #growth-mba .centered-block .text p {  
+#sales #growth-mba .centered-block .text p {
   @media only screen and (max-width: 599px) {
     margin-bottom: 0;
   }
 }
-#sales #growth-mba .mba-includes > div { 
+#sales #growth-mba .mba-includes > div {
   &:first-child {
     border-right: 1px solid #e7e7e7;
   }
-  
+
   @media only screen and (max-width: 599px) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 17px;
     padding-top: 20px;
-    margin-left: 40px; 
-    margin-right: 40px; 
+    margin-left: 40px;
+    margin-right: 40px;
 
     &:first-child {
       border-right: 0;
