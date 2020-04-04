@@ -90,6 +90,13 @@
     font-weight: 300;
   }
 }
+#sales h3.large {
+  font-size: 32px;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 22px;
+  }
+}
 #sales p {
   margin-bottom: 25px;
 
@@ -863,6 +870,11 @@
 #sales .module-section .video-selectors {
   z-index: 1;
 
+  .accordion {
+    width: 433px;
+    max-width: calc(100% + 15px);
+  }
+
   @media only screen and (max-width: 599px) {
     order: 2;
   }
@@ -874,6 +886,10 @@
   order: 1;
   right: -90px;
   left: initial;
+
+  @media only screen and (max-width: 599px) {
+    right: 0;
+  }
 }
 #sales .module-section.style2 .video-selectors {
   order: 2;
@@ -956,6 +972,20 @@
       width: 100%;
     }
   }
+}
+#sales .module-section .learn-item {
+  width: 305px;
+
+  @media only screen and (max-width: 599px) {
+    margin: auto;
+
+    .checkmark-inner {
+      margin: auto;
+    }
+  }
+}
+#sales .module-section .module-content .module-content-item:not(:last-child) {
+  border-bottom: 1px solid #d3d6e5;
 }
 
 /* Growth MBA */
