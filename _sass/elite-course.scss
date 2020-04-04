@@ -74,11 +74,48 @@
 .pricing-table .pricing-table-item {
   background: #fff;
 }
+.pricing-table .pricing-table-item .package-title {
+  width: 90%;
+}
 .pricing-table .pricing-table-item:hover {
   background: #efefef !important;
 }
 .pricing-table .pricing-table-item:nth-child(2) {
   background: #f9f9f9;
+}
+.pricing-table .pricing-table-item .pricing-table-item-upper {
+  padding-left: 40px;  
+  padding-right: 40px;  
+  z-index: 1;
+}
+.pricing-table .pricing-table-item .price-box {
+  height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;
+}
+.pricing-table .pricing-table-item .extra-items {
+  height: 128px;
+}
+.pricing-table {
+  @media only screen and (max-width: 599px) {
+    .package-title {
+      width: 100%!important;
+      letter-spacing: 0.9px!important;
+    }
+    .pricing-table-item .pricing-table-item-upper {
+      padding-left: 25px;  
+      padding-right: 25px;  
+    }
+    .pricing-table-item .price-box {
+      height: auto;
+
+      button {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .pricing-table-item .extra-items {
+      height: auto;
+    }
+  }
 }
 
 #sales h3 {

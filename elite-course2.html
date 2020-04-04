@@ -69,7 +69,7 @@ package_execution:
   - "**Operational support**"
 
 pricing_table:
-  - title: "**Level 1** <br> Core"
+  - title: "**Level 1** Core"
     items:
       - "**Module 1:** Growth strategy"
       - "**Module 2:** Sales funnels"
@@ -80,7 +80,7 @@ pricing_table:
       - "Full money-back guarantee"
     price: "$479"
 
-  - title: "**Level 2** <br> Execution"
+  - title: "**Level 2** Execution"
     items:
       - "**Module 6:** Advanced strategy"
       - "**Module 7:** Video case studies (13x)"
@@ -90,7 +90,7 @@ pricing_table:
       - "Operational support"
     price: "$479"
 
-  - title: "**Full Access** <br> Level 1+2"
+  - title: "**Full Access** Level 1+2"
     items:
       - "**Module 1:** Growth strategy"
       - "**Module 2:** Sales funnels"
@@ -380,9 +380,9 @@ pieter_note_points:
 
   <!-- PRICING TABLE -->
   {% for package in page.pricing_table %}
-  <div class="pricing-table-item col d-flex flex-column px-0">
-    <div class="d-flex flex-column py-5 flex-grow-1" style="padding-left: 40px;  padding-right: 40px;  z-index: 1;">
-      <h3 class="mb-4">
+  <div class="pricing-table-item col d-flex flex-column px-0 mt-5 mt-md-0">
+    <div class="pricing-table-item-upper d-flex flex-column py-5 flex-grow-1">
+      <h3 class="package-title mb-4 text-center text-md-left">
         {{ package.title | markdownify | remove: '<p>' | remove: '</p>' }}
       </h3>
 
@@ -404,7 +404,7 @@ pieter_note_points:
         {% endfor %}
       </div>
       <div><hr></div>
-      <div style="height: 128px;">
+      <div class="extra-items">
         {% for item in package.extra_items %}
         <div class="d-flex align-items-center my-md-3">
           <div class="checkmark d-flex mr-3">
@@ -422,7 +422,7 @@ pieter_note_points:
         {% endfor %}
       </div>
     </div>
-    <div class="p-5" style="height: 174px; background-color: #181d33; color: #fff; z-index: 1; position: relative; padding-top: 35px!important;">
+    <div class="price-box p-5 text-center text-md-left">
       <h3>{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
       <button class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
