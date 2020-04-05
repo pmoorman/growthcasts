@@ -781,6 +781,10 @@
 #sales #guarantee .guarantee-logo {
   @media only screen and (max-width: 720px) {
     width: 100%;
+
+    img {
+      width: 165px;
+    }
   }
 }
 
