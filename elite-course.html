@@ -1581,14 +1581,16 @@ pieter_note_points:
       : false;
   }
 
-  $('#hero').find('.bg-image-overlay').addClass('active');
-  const heroStacks = $(".hero-stack > div");
-  heroStacks.each(function(index, el) {
-    const i = heroStacks.length - (index + 1);
-    setTimeout(() => {
-      $(heroStacks[i]).addClass('active')
-    }, 200 * index)
-  });
+  setTimeout(() => {
+    $('#hero').find('.bg-image-overlay').addClass('active');
+    const heroStacks = $(".hero-stack > div");
+    heroStacks.each(function(index, el) {
+      const i = heroStacks.length - (index + 1);
+      setTimeout(() => {
+        $(heroStacks[i]).addClass('active')
+      }, 200 * index)
+    });
+  }, 500)
 
   function _viewportAnimations() {
     $('.active-inview').each(function() {
