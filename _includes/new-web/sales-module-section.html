@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="container mt-5 px-0 px-md-3">
-        <div class="modulevideo-wrapper row flex-wrap flex-md-nowrap align-items-center">
+        <div class="modulevideo-wrapper row flex-wrap flex-md-nowrap align-items-center mx-0">
           <div class="col video-selectors">
             
             <div class="accordion" id="{{ key }}-accordion">
@@ -126,15 +126,8 @@
             </div>
           </div>
         </div>
-        <div class="row mb-3 pt-4 mt-5">
-          <div class="col-md-12 text-center">
-            <button class="readmore-btn large" style="text-decoration: none; background: none;">
-              <h3 class="large mb-0">Read more<div style="transform: rotate(90deg);"><strong>></strong></div></h3> 
-            </button>
-          </div>
-        </div>
       </div>
-      <div class="container what-you-will-learn" style="display: none;">
+      <div class="container what-you-will-learn mt-4 mt-md-5">
         <div class="row py-4">
           <div class="col-md-12 text-center">
             <h3 class="large">What you will learn?</h3>
@@ -266,7 +259,9 @@
   };
 
   const sliderConfig = {
-    infinite: false
+    infinite: false,
+    centerMode: false,
+    centerPadding: 0
   }
   const container = '#{{ include.container }}';
   const slider = $(`${container} .slider`).slick(sliderConfig);
@@ -275,7 +270,6 @@
   const stickyNav = $(`${container} .sticky-nav`); 
   const stickyNavModuleName = stickyNav.find(`.module-name`); 
   const navItems = $(`${container} .nav-item`);
-  const readmoreBtns = $(`${container} .readmore-btn`);
   const collapse = $(`${container} .collapse`);
   const videoIframe = $(`${container} .video iframe`);
 
@@ -326,14 +320,6 @@
       $(this).removeClass('active');
     });
 
-    // close all readmore sections
-    readmoreBtns.each(function() {
-      updateReadmoreTextClose($(this));
-    });
-    slider.find('.what-you-will-learn').each(function() {
-      $(this).slideUp();
-    });
-
     // disable next & prev buttons if last
     prevBtns.each(function() {
         $(this).attr('disabled', (nextSlide == 0));
@@ -355,30 +341,7 @@
     $(this).click(function(e) {
       slider.slick('slickGoTo', parseInt(index, 10));
     })
-  })
-
-  readmoreBtns.each(function() {
-    $(this).click(function() {
-      const section = $(this)
-        .closest('.slider-item')
-        .find('.what-you-will-learn');
-
-      section.slideToggle(null, () => {
-        section.is(':visible')
-          ? updateReadmoreTextOpen($(this))
-          : updateReadmoreTextClose($(this));
-      });
-    })
   });
-
-  function updateReadmoreTextOpen(el) {
-    $(el).find('span').text('Read less');
-    $(el).find('div').css('transform', 'rotate(-90deg)');
-  }
-  function updateReadmoreTextClose(el) {
-    $(el).find('span').text('Read more');
-    $(el).find('div').css('transform', 'rotate(90deg)');
-  }
 
 })();
 </script>
