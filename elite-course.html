@@ -1550,6 +1550,7 @@ pieter_note_points:
 
         if (pillarTitle.text() != title && pillarBody.text() != body) {
           changeTitleAndBody(title, body);
+          pillarsSection.parent().animate({height: "1000px"}, 500)
         }
       }
 
