@@ -269,6 +269,11 @@
   background-color: #eff0f6;
   margin-bottom: 5px;
   padding: 1rem 2.8rem;
+
+  @media only screen and (max-width: 720px) {
+    width: calc(100% + 15px);
+    left: -15px;
+  }
 }
 #sales .accordion-item.accordion-item-style2 .accordion-item-header button {
   text-align: left;
@@ -285,7 +290,9 @@
   padding-top: 1.7rem;
 
   @media only screen and (max-width: 720px) {
-    left: 0;
+    box-shadow: 0px 12px 0 0 #3497f3;
+    left: -15px;
+    width: calc(100% + 15px);
   }
 }
 #sales .accordion-item.accordion-item-style2.active .accordion-item-header button {
