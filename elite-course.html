@@ -1489,6 +1489,7 @@ pieter_note_points:
 <script>
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
+  _pillarAnimations();
 
   if (window.matchMedia("(max-width: 720px)").matches) {
     $('.feedback-item .speech-bubble')
@@ -1514,125 +1515,7 @@ pieter_note_points:
 
   $('.collapse').on('hide.bs.collapse', function () {
     $(this).closest('.accordion-item').removeClass('active');
-  });  
-
-  const pillarsSection = $('.pillars-inner');
-  const pillarTitle = pillarsSection.find(".pillar-title");
-  const pillarBody = pillarsSection.find(".pillar-body");
-  pillarsSection.parent().css({
-    height: '5000px',
-    position: 'relative'
-  })
-  const halfWindow = $(window).height() / 2;
-  const pillarsCenter = $('.pillar-group').offset().top - ($('.pillar-group').height() / 2);
-  const pillarsView = pillarsCenter - halfWindow;
-  const topOffset = pillarsView - pillarsSection.offset().top;
-  $(window).on('scroll', affixPillars)
-  
-
-  $(window).on('scroll touchmove mousewheel', (e) => {
-    _viewportAnimations(e);
-    _pillarAnimation()
-  });
-
-  let done = false;
-
-  function _pillarAnimation() {
-   if ($(window).scrollTop() > pillarsSection.parent().offset().top) {
-    const pillarUpperHeight = $('.pillar-upper').height();
-    const pillarLowerHeight = $('.pillar-lower').height();
-    const over = (($(window).scrollTop() + (pillarUpperHeight + pillarLowerHeight)) - pillarsSection.parent().offset().top);
-    const overPercentage = (over / pillarsSection.parent().height()) * 100;
-    const pillars = pillarsSection.find('.pillar');
-    const activePillars = pillars.filter((index, el) => {
-       return overPercentage > (index  + 1) * (100 / pillars.length);
-     });
-
-     console.log({overPercentage})
-
-     if (window.matchMedia("(max-width: 720px)").matches) {
-       const pillarsBlock = $('.pillars-block');
-       pillarsBlock.css({
-         transform: `translateX(${-overPercentage + 10}%)`
-       });
-     }
-
-     if (activePillars.length == pillars.length && overPercentage > (pillars.length * 17)) {
-       const title = pillarTitle.attr(`item-final`);
-       const body = pillarBody.attr(`item-final`);
-
-       if (pillarTitle.text() != title && pillarBody.text() != body) {
-         changeTitleAndBody(title, body);
-       }
-     }
-
-     if (!done && $(window).scrollTop() > pillarsSection.offset().top + pillarsSection.height()) {
-      done = true;
-      pillarsSection.parent().css({height: "auto"});
-      $(window).off('scroll', affixPillars);
-      pillarsSection.css({
-       position: 'relative',
-       bottom: 0
-      });
-      window.scrollTo(0, pillarsSection.offset().top + pillarsSection.height());
-     }
-
-     activePillars.each(function(index, el) {
-       if (!$(this).hasClass('active')) {
-         const title = pillarTitle.attr(`item-${index}`);
-         const body = pillarBody.attr(`item-${index}`);
-         changeTitleAndBody(title, body);
-       }
-       $(this).addClass("active");
-     });
-
-     function changeTitleAndBody(title, body) {
-       pillarTitle.fadeOut(function() {
-         $(this).text(title).fadeIn();
-       });
-       pillarBody.fadeOut(function() {
-         $(this).text(body).fadeIn();
-       });
-     }
-   }
-  }
-
-  function affixPillars() {
-    const offset = topOffset + ($(window).height() / 2);
-    const lineHeightDiff = 0;
-    let container = $('#pillars');
-    let sidebar = $('#pillars .pillars-inner');
-    let sidebarWidth = sidebar.width();
-    let sidebarHeight = sidebar.height();
-  
-    $(window).on('resize', function() {
-      sidebarWidth = sidebar.width();
-      sidebarHeight = sidebar.height();
-    })
-  
-    container.each(function() {
-      const docViewTop = $(window).scrollTop();
-  
-      const containerTop = $(this).offset().top;
-      const containerBottom = containerTop + $(this).height();
-  
-      if (docViewTop > (containerTop + -offset)) {
-        sidebar.css('top', (offset + lineHeightDiff) + 'px');
-        sidebar.css('bottom', '');
-        sidebar.css('width', sidebarWidth);
-        sidebar.css('position', 'fixed');
-      } else {
-        sidebar.css('position', 'absolute');
-        sidebar.css('top', '')
-      }
-  
-      if ((docViewTop - lineHeightDiff) > (containerBottom - sidebarHeight)) {
-        sidebar.css('bottom', (-offset - lineHeightDiff) + 'px');
-        sidebar.css('top', '');
-        sidebar.css('position', 'absolute');
-      }
-    });
-  }
+  });    
   
   function _isOverCenterScreen(elem, offset) {
     const windowCenter =  $(window).height() / 2;
@@ -1731,6 +1614,133 @@ pieter_note_points:
       });
     });
   });
+
+  let pillarsCompleted = false;
+  function _pillarAnimations() {
+    const pillarsSection = $(".pillars-inner");
+    const pillarsBlock = $(".pillars-block");
+    const pillarTitle = pillarsSection.find(".pillar-title");
+    const pillarBody = pillarsSection.find(".pillar-body");
+    pillarsSection.parent().css({
+      height: "5000px",
+      position: "relative",
+    });
+
+    $(window).on("scroll", affixPillars);
+    $(window).on("scroll touchmove mousewheel", _pillarAnimation);
+
+    function _pillarAnimation() {
+      if ($(window).scrollTop() > pillarsSection.parent().offset().top)  {
+        const pillarUpperHeight = $(".pillar-upper").height();
+        const pillarLowerHeight = $(".pillar-lower").height();
+        const over =
+          $(window).scrollTop() +
+          (pillarUpperHeight + pillarLowerHeight) -
+          pillarsSection.parent().offset().top;
+        const overPercentage = (over / pillarsSection.parent().height()) * 100;
+        const pillars = pillarsSection.find(".pillar");
+        const chunk = (100 / pillars.length);
+        const activePillars = pillars.filter((index, el) => {
+          return overPercentage * 1.8 - 10 > (index + 1) * chunk;
+        });
+
+        const allAreActive = () => activePillars.length == pillars.length;
+        const sectionBottom = () => pillarsSection.offset().top + pillarsSection.height();
+        const reachedSectionBottom = () => $(window).scrollTop() > sectionBottom();
+  
+        if (overPercentage < 64 && window.matchMedia("(max-width: 720px)").matches) {
+          pillarsBlock.css({
+            transform: `translateX(${
+              (-(overPercentage * 1.8) + 1.8 * chunk) + 10
+            }%)`,
+          });
+        }
+  
+        if (allAreActive() && overPercentage > pillars.length * 13) {
+          const title = pillarTitle.attr(`item-final`);
+          const body = pillarBody.attr(`item-final`);
+  
+          if (pillarTitle.text() != title && pillarBody.text() != body) {
+            changeTitleAndBody(title, body);
+          }
+        }
+
+        if (!pillarsCompleted && reachedSectionBottom()) {
+          pillarsCompleted = true;
+          pillarsSection.parent().css({ height: "auto" });
+          $(window).off("scroll", affixPillars);
+          pillarsSection.css({
+            position: "relative",
+            bottom: 0,
+          });
+          window.scrollTo(0, sectionBottom());
+        }
+  
+        activePillars.each(function (index, el) {
+          if (!$(this).hasClass("active")) {
+            const title = pillarTitle.attr(`item-${index}`);
+            const body = pillarBody.attr(`item-${index}`);
+            changeTitleAndBody(title, body);
+          }
+          $(this).addClass("active");
+        });
+  
+        function changeTitleAndBody(title, body) {
+          pillarTitle.fadeOut(function () {
+            $(this).text(title).fadeIn();
+          });
+          pillarBody.fadeOut(function () {
+            $(this).text(body).fadeIn();
+          });
+        }
+      }
+    }
+  
+    function affixPillars() {
+      const offset = getTopOffset() + $(window).height() / 2;
+      const lineHeightDiff = 0;
+      let container = $("#pillars");
+      let sidebar = $("#pillars .pillars-inner");
+      let sidebarWidth = sidebar.width();
+      let sidebarHeight = sidebar.height();
+  
+      $(window).on("resize", function () {
+        sidebarWidth = sidebar.width();
+        sidebarHeight = sidebar.height();
+      });
+  
+      container.each(function () {
+        const docViewTop = $(window).scrollTop();
+  
+        const containerTop = $(this).offset().top;
+        const containerBottom = containerTop + $(this).height();
+  
+        if (docViewTop > containerTop + -offset) {
+          sidebar.css("top", offset + lineHeightDiff + "px");
+          sidebar.css("bottom", "");
+          sidebar.css("width", sidebarWidth);
+          sidebar.css("position", "fixed");
+        } else {
+          sidebar.css("position", "absolute");
+          sidebar.css("top", "");
+        }
+  
+        if (docViewTop - lineHeightDiff > containerBottom - sidebarHeight) {
+          sidebar.css("bottom", -offset - lineHeightDiff + "px");
+          sidebar.css("top", "");
+          sidebar.css("position", "absolute");
+        }
+      });
+    }
+
+    function getTopOffset() {
+      const pillarGroupEl = $(".pillar-group");
+      const halfWindow = $(window).height() / 2;
+      const pillarsCenter = pillarGroupEl.offset().top - pillarGroupEl.height() / 2;
+      const pillarsView = pillarsCenter - halfWindow;
+      return pillarsView - pillarsSection.offset().top;
+    }
+  } 
     
 })()
 </script>
