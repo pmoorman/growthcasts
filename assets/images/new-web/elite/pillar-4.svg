@@ -1,3 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="47" height="36" viewBox="0 0 47 36">
-    <path fill="#5D80A0" fill-rule="evenodd" d="M23.5 0C26.525 0 29 1.575 29 3.5S26.525 7 23.5 7 18 5.425 18 3.5 20.475 0 23.5 0zM47 13.467H31.333V36h-5.222V25.6H20.89V36h-5.222V13.467H0V10h47v3.467z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="36px" viewBox="0 0 47 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>mask</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-16.000000, -178.000000)" fill="#FFFFFF">
+            <g id="mask" transform="translate(16.000000, 178.000000)">
+                <path d="M23.5,0 C26.525,0 29,1.575 29,3.5 C29,5.425 26.525,7 23.5,7 C20.475,7 18,5.425 18,3.5 C18,1.575 20.475,0 23.5,0 Z M47,13.467 L31.333,13.467 L31.333,36 L26.111,36 L26.111,25.6 L20.89,25.6 L20.89,36 L15.668,36 L15.668,13.467 L0,13.467 L0,10 L47,10 L47,13.467 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
 </svg>
