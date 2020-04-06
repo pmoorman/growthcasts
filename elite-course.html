@@ -1490,6 +1490,7 @@ pieter_note_points:
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
   _pillarAnimations();
+  $(window).on("scroll", _viewportAnimations);
 
   if (window.matchMedia("(max-width: 720px)").matches) {
     $('.feedback-item .speech-bubble')
