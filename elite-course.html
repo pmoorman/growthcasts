@@ -1698,7 +1698,8 @@ pieter_note_points:
     }
   
     function affixPillars() {
-      const offset = getTopOffset() + 200;
+      const minOffset = $(window).height() - $(".pillar-group").height() / 2 - 40;
+      const offset = Math.min(minOffset, getTopOffset() + $(window).height() / 2.5);
       const lineHeightDiff = 0;
       let container = $("#pillars");
       let sidebar = $("#pillars .pillars-inner");
