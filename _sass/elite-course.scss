@@ -789,13 +789,22 @@
 }
 
 /* Pillars */
+#sales .pillar-upper {
+  margin-bottom: 80px;
+  @media only screen and (max-width: 720px) {
+    margin: 0;
+    max-width: 100vw;
+  }
+}
+#sales .pillar-lower {
+  margin-top: 200px;
+  @media only screen and (max-width: 720px) {
+    margin: 0;
+    max-width: 100vw;
+  }
+}
 #sales .pillar-group-container {
   width: 1040px;
-}
-#sales .pillars-block {
-  @media only screen and (max-width: 720px) {
-    transform: translateX(10%);
-  }
 }
 #sales .pillars-text {
   @media only screen and (max-width: 720px) {
