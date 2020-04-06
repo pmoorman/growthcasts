@@ -185,6 +185,24 @@
     padding-top: 65px !important;
   }
 }
+@media only screen and (min-width: 1200px) {
+  #sales .p-lg-6 {
+    padding: 65px !important;
+  }
+  #sales .px-lg-6 {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+  }
+  #sales .pr-lg-6 {
+    padding-right: 65px !important;
+  }
+  #sales .pl-lg-6 {
+    padding-left: 65px !important;
+  }
+  #sales .pt-6 {
+    padding-top: 65px !important;
+  }
+}
 
 /* Video modal */
 #explore-growth-mba .modal_content {
