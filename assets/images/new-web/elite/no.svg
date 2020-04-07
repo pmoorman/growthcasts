@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="921" height="516" viewBox="0 0 921 516">
-    <path fill="#181D33" d="M104.217 517V159.531L337.783 517H442V0H337.783v357.469L104.217 0H0v517h104.217zm604.674 6c60.11 0 110.489-19.45 151.137-58.35C900.676 425.752 921 374.789 921 311.762c0-63.026-20.2-113.743-60.602-152.15C819.996 121.204 769.863 102 710 102s-109.996 19.204-150.398 57.61C519.201 198.019 499 248.736 499 311.762c0 63.027 19.954 113.99 59.863 152.89C598.773 503.55 648.782 523 708.891 523zm-.502-88c-29.12 0-53.798-10.577-74.035-31.732C614.118 382.113 604 351.858 604 312.5c0-39.357 10.118-69.613 30.354-90.768C654.591 200.577 679.392 190 708.76 190c29.367 0 54.415 10.577 75.145 31.732C804.635 242.887 815 273.02 815 312.13c0 39.111-10.488 69.367-31.465 90.768C762.558 424.3 737.51 435 708.39 435z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="891px" height="535px" viewBox="0 0 891 535" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Poppins-SemiBold, Poppins" font-size="700" font-weight="500" letter-spacing="23">
+        <text id="N" fill="#181D33">
+            <tspan x="-32.8" y="510">N</tspan>
+        </text>
+        <text id="o" fill="#181D33">
+            <tspan x="446.25" y="507">o</tspan>
+        </text>
+    </g>
 </svg>

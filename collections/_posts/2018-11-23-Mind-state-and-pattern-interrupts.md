@@ -11,6 +11,10 @@ class: post-template
 subclass: 'post'
 author: pieter
 excerpt: 3 little thought experiments, that immediately help you write better ads…
+summary_items:
+    - On every platform, people are in a different mindstate
+    - You should speak to the mindstate your customers is in.
+    - This is important in ads, emails, website copy, product copy, and in life ;)
 ---
 
 **Here are the 3 questions:**

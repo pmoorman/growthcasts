@@ -9,6 +9,7 @@ tags: Copywriting
 class: post-template
 subclass: 'post'
 author: pieter
+excerpt: Seems like many startups —especially bootstrapped ones— hit a plateau of sorts after a year or two in business.
 summary_items:
     - Plenty of people don’t remember life before the Internet. Dominique Essig isn’t one of them.
     - A Duke graduate, Essig spent more than a decade at Travelocity before taking a leap into the world of fashion ecommerce.

@@ -9,6 +9,14 @@ tags: Copywriting
 class: post-template
 subclass: 'post'
 author: caspar
+excerpt: A slippery slope of persuasion
+summary_items:
+    - Dont kiss a girl before talking to her.
+    - Don’t go for the sale right away, first introduce yourself to your potential customers
+    - Sales is a gradual process
+    - Give a good introduction, provide value, work slowly. Design a sales funnel
+    - Website visitors won’t buy your product right away, ask their email address!
+    - When you have their email, you won’t lose them as easy and you can give a quality pitch, give demo’s or provide discounts.
 ---
 
 I’ll tell you a classic story about the typical Friday night. I went out with my friends, we had a couple of drinks (a bit too many), and went to a club. The place was nice and there was this one girl that really caught my eye. She was stunning and I couldn’t stop looking at her. After some casual staring and some extra shots with my friends, I finally found the courage to approach her. I started dancing with her and she actually started dancing ‘back’. So that went pretty well so far, but then the shots started doing their job and I got a little bit overconfident. Without even speaking a word with the girl, I went for it and tried to kiss her. Rooky mistake. Well in her right, she pushed me away and I never saw her again.
@@ -34,13 +42,3 @@ The sales equivalence for scoring a number is to get someone’s email address. 
 <blockquote>Hoping that people will land on your website and just start buying stuff is a lost case, you first need to introduce yourself (and your product</blockquote>
 
 There are many types of sales funnels, but we’ll not talk about that today (you can read about it here: if that’s finished). The main take-away of today is that you need to ask for an email address. So what can you do right now to make your sales process more smooth (thus more effective)? First start by mapping out the whole process (or funnel) and see where you are ‘forcing’ things. Try to smooth them out and try to ask the smallest possible commitments every time (further reading: [micro-commitments](https://www.crazyegg.com/blog/science-of-micro-commitments/)). And just don’t forget, instead of asking for a purchase, just ask their email address (or ask their number, if you like calling ;).
-
-
-#### **Key insights**
-
-- Don’t kiss a girl before talking to her
-  - Don’t go for the sale right away, first introduce yourself to your potential customers
-- Sales is a gradual process
-  - Give a good introduction, provide value, work slowly. Design a sales funnel
-- Website visitors won’t buy your product right away, ask their email address!
-  - When you have their email, you won’t lose them as easy and you can give a quality pitch, give demo’s or provide discounts.
