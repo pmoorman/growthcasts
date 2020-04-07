@@ -583,13 +583,13 @@ window.drip_plinko = function(drip, page) {
   else if (drip.has_tag('50%_discount')) {
         response = {
           elite1_price: '$234<span class="old-price">$469<span>',
-          elite1_link: '<a href="https://gum.co/EjSco" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite1_link: '<a href="https://gum.co/iouqertiqhexl" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite2_price: '$199<span class="old-price"><span>',
           elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite3_price: '$249<span class="old-price">$499<span>',
-          elite3_link: '<a href="https://gum.co/tPjm" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite3_link: '<a href="https://gum.co/bjfvbhksvbk" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           // PRO
           pricetable: '<p class="price__current-price paragraph">249</p><p class="price__old-price paragraph h2">499</p>',
@@ -657,13 +657,13 @@ window.drip_plinko = function(drip, page) {
   else {
         response = {
           elite1_price: '$479<span class="old-price"><span>',
-          elite1_link: '<a href="https://gumroad.com/l/elitecore" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite1_link: '<a href="https://gumroad.com/l/core-content" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite2_price: '$199<span class="old-price"><span>',
           elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite3_price: '$499<span class="old-price"><span>',
-          elite3_link: '<a href="https://gumroad.com/l/elitepro" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite3_link: '<a href="https://gumroad.com/l/full-access-elite" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           // PRO
           pricetable: '<p class="price__current-price price__current-price--center paragraph">499</p>',
