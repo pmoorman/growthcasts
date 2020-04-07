@@ -1700,8 +1700,9 @@ pieter_note_points:
     }
   
     function affixPillars() {
-      const minOffset = $(window).height() - $(".pillar-group").height() / 2 - 40;
-      const offset = Math.min(minOffset, getTopOffset() + $(window).height() / 2.5);
+      const minOffset = $(window).height() - $(".pillar-group").height();
+      const offset = -($(window).height() / 4) - (window.matchMedia("(max-width: 720px)").matches ? 50 : 100);
+      console.log({ offset })
       const lineHeightDiff = 0;
       let container = $("#pillars");
       let sidebar = $("#pillars .pillars-inner");
@@ -1729,8 +1730,8 @@ pieter_note_points:
           sidebar.css("top", "");
         }
   
-        if (docViewTop - lineHeightDiff > containerBottom - sidebarHeight) {
-          sidebar.css("bottom", -offset - lineHeightDiff + "px");
+        if (docViewTop + offset > containerBottom - sidebarHeight) {
+          sidebar.css("bottom", 0 + "px");
           sidebar.css("top", "");
           sidebar.css("position", "absolute");
         }
