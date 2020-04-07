@@ -83,7 +83,6 @@ pricing_table:
     extra_items: 
       - "Full money-back guarantee"
     placeholder_prefix: "elite1"
-    gumroadlink: "https://gumroad.com/l/elitepro"
 
   - title: "**Execution**<br>Content"
     items:
@@ -91,10 +90,9 @@ pricing_table:
       - "**PDF Manuals, Swipe Files, Etc.**"
       - "**Treasure Vault**"
       - "**Operational support**"
-    extra_items: 
+    extra_items:
       - "Full money-back guarantee"
     placeholder_prefix: "elite2"
-    gumroadlink: "https://gumroad.com/l/elitepro"
 
   - title: "**Full Access** <br>Core+Execution"
     items:
@@ -112,7 +110,6 @@ pricing_table:
       - "Operational support"
     placeholder_prefix: "elite3"
     subprice: "Get Full Access"
-    gumroadlink: "https://gumroad.com/l/elitepro"
 
 modules_core:
   - name: Growth Strategy
@@ -543,9 +540,7 @@ pieter_note_points:
     <div class="price-box p-5 text-center text-md-left">
       <h3 class="mb-0 mb-md-2" data-placeholder="{{ package.placeholder_prefix }}_price"></h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      <a href="{{ package.gumroadlink }}" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
-        Get it now
-      </a>
+      <div data-placeholder="{{ package.placeholder_prefix }}_link"> </div>
     </div>
   </div>
   {% endfor %}
@@ -1143,7 +1138,7 @@ pieter_note_points:
       <div class="row mba-includes">
         <div class="col-md-6">
           <div class="pt-3">
-            <h3 class="mb-4 text-center text-md-left"><strong>Elite</strong></h3>
+            <h3 class="mb-4 text-center text-md-left"><strong>Elite</strong> Core</h3>
             <div>
               {% for item in page.package_core %}
               <div class="d-flex">
@@ -1165,7 +1160,7 @@ pieter_note_points:
         </div>
         <div class="col-md-6 pl-md-6">
           <div class="pt-3">
-            <h3 class="mb-4"><strong>Elite</strong> Bonusses</h3>
+            <h3 class="mb-4"><strong>Elite</strong> Execution</h3>
             <div>
               {% for item in page.package_execution %}
               <div class="d-flex">
