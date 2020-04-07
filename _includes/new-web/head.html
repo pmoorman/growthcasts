@@ -58,6 +58,10 @@
   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   {% endif %}
+
+  {% for script in page.scripts %}
+  <script src="{{ script }}"></script>
+  {% endfor %}
    
   <!-- Drip
   /////////////////////////////////////////////////////////////////////////////////////////////// -->
