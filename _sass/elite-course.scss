@@ -102,6 +102,12 @@
 .pricing-table .pricing-table-item .extra-items {
   height: 128px;
 }
+.pricing-table .old-price {
+  text-decoration: line-through;
+  color: #a0a4b1;
+  font-size: 22px;
+  margin-left: 10px;
+}
 .pricing-table {
   @media only screen and (max-width: 720px) {
     .package-title {
