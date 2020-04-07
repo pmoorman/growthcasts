@@ -543,9 +543,9 @@ pieter_note_points:
     <div class="price-box p-5 text-center text-md-left">
       <h3 class="mb-0 mb-md-2">{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      <button onclick="window.location.href = '{{ package.gumroadlink }}';" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
+      <a href="{{ package.gumroadlink }}" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
         Get it now
-      </button>
+      </a>
     </div>
   </div>
   {% endfor %}
