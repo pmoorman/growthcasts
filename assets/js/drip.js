@@ -545,6 +545,15 @@ window.drip_plinko = function(drip, page) {
 
   if (drip.has_tag('30%_discount')) {
         response = {
+          elite1_price: '$479<span class="old-price">$479<span>',
+          elite1_link: 'https://gumroad.com/l/elitepro',
+
+          elite2_price: '$199<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
+          elite3_price: '$479<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
           // PRO
           pricetable: '<p class="price__current-price paragraph">349</p><p class="price__old-price paragraph h2">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/JkIeL">
@@ -573,6 +582,15 @@ window.drip_plinko = function(drip, page) {
       }
   else if (drip.has_tag('50%_discount')) {
         response = {
+          elite1_price: '$479<span class="old-price">$479<span>',
+          elite1_link: 'https://gumroad.com/l/elitepro',
+
+          elite2_price: '$199<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
+          elite3_price: '$479<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
           // PRO
           pricetable: '<p class="price__current-price paragraph">249</p><p class="price__old-price paragraph h2">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
@@ -601,6 +619,15 @@ window.drip_plinko = function(drip, page) {
       }
   else if (drip.has_tag('70%_discount')) {
         response = {
+          elite1_price: '$479<span class="old-price">$479<span>',
+          elite1_link: 'https://gumroad.com/l/elitepro',
+
+          elite2_price: '$199<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
+          elite3_price: '$479<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
           // PRO
           pricetable: '<p class="price__current-price paragraph">149</p><p class="price__old-price paragraph h2">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70discount">
@@ -629,6 +656,15 @@ window.drip_plinko = function(drip, page) {
       }
   else {
         response = {
+          elite1_price: '$479<span class="old-price">$479<span>',
+          elite1_link: 'https://gumroad.com/l/elitepro',
+
+          elite2_price: '$199<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
+          elite3_price: '$479<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
           // PRO
           pricetable: '<p class="price__current-price price__current-price--center paragraph">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitepro">

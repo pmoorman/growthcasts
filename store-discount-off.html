@@ -516,6 +516,7 @@ It's advised to pass in your own overrides in your initializer vs. overriding th
 
     DripPro.prototype.renderers = {
       replacer: function(intent, content) {
+        console.log('dddd')
         this.debug('Rendering HTML in placeholder: ' + intent)
         jQuery('[data-placeholder='+intent+']').html(content).addClass(intent)
       }

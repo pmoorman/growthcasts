@@ -6,6 +6,8 @@ hide_footer: true
 include_swiper: true
 stylesheets:
   - /assets/elite-course.css
+scripts:
+  - https://gumroad.com/js/gumroad.js
 
 marketing_game:
   - image: /assets/images/new-web/elite/marketing_game-1.svg
@@ -80,7 +82,7 @@ pricing_table:
       - "**Module 6:**<br>Advanced strategy"
     extra_items: 
       - "Full money-back guarantee"
-    price: "$479"
+    placeholder_prefix: "elite1"
     gumroadlink: "https://gumroad.com/l/elitepro"
 
   - title: "**Execution**<br>Content"
@@ -91,7 +93,7 @@ pricing_table:
       - "**Operational support**"
     extra_items: 
       - "Full money-back guarantee"
-    price: "$199"
+    placeholder_prefix: "elite2"
     gumroadlink: "https://gumroad.com/l/elitepro"
 
   - title: "**Full Access** <br>Core+Execution"
@@ -108,7 +110,7 @@ pricing_table:
     extra_items: 
       - "Full money-back guarantee"
       - "Operational support"
-    price: "**$499**"
+    placeholder_prefix: "elite3"
     subprice: "Get Full Access"
     gumroadlink: "https://gumroad.com/l/elitepro"
 
@@ -539,11 +541,11 @@ pieter_note_points:
       </div>
     </div>
     <div class="price-box p-5 text-center text-md-left">
-      <h3 class="mb-0 mb-md-2">{{ package.price | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+      <h3 class="mb-0 mb-md-2" data-placeholder="{{ package.placeholder_prefix }}_price"></h3>
       <p>{{ package.subprice | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      <button onclick="window.location.href = '{{ package.gumroadlink }}';" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
+      <a href="{{ package.gumroadlink }}" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;"">
         Get it now
-      </button>
+      </a>
     </div>
   </div>
   {% endfor %}
@@ -1698,8 +1700,9 @@ pieter_note_points:
     }
   
     function affixPillars() {
-      const minOffset = $(window).height() - $(".pillar-group").height() / 2 - 40;
-      const offset = Math.min(minOffset, getTopOffset() + $(window).height() / 2.5);
+      const minOffset = $(window).height() - $(".pillar-group").height();
+      const offset = -($(window).height() / 4) - (window.matchMedia("(max-width: 720px)").matches ? 50 : 100);
+      console.log({ offset })
       const lineHeightDiff = 0;
       let container = $("#pillars");
       let sidebar = $("#pillars .pillars-inner");
@@ -1727,8 +1730,8 @@ pieter_note_points:
           sidebar.css("top", "");
         }
   
-        if (docViewTop - lineHeightDiff > containerBottom - sidebarHeight) {
-          sidebar.css("bottom", -offset - lineHeightDiff + "px");
+        if (docViewTop + offset > containerBottom - sidebarHeight) {
+          sidebar.css("bottom", 0 + "px");
           sidebar.css("top", "");
           sidebar.css("position", "absolute");
         }
