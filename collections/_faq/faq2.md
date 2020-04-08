@@ -1,9 +1,10 @@
+
 ---
 layout: faq-item
 heading: Are we a match?
 faq:
 - Who is this for?: >
-    Growthcasts Elite is primarily focused on early-stage startups, with high-growth / high-impact ambitions.<br><br>
+    Double Elite is primarily focused on early-stage startups, with high-growth / high-impact ambitions.<br><br>
     Because the framework is quite universal, this approach works very well for both SaaS, mobile apps or eCommerce... but it works equally well for 'traditional' businesses, B2B startups or even non-profits.<br><br>
     People that buy Elite, typically fall in one the following 3 buckets:<br><br>
     <b>A) You’re a startup founder,</b> and you’d like to incorporate this kind of thing into your business —You want to stop doing traditional marketing, and instead start building “growth loops”. <br>

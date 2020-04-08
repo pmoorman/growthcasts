@@ -1,0 +1,63 @@
+---
+title: Case study Elite offer
+layout: pages/new-web/default
+hide_footer: true
+header_logo_only: true
+
+the_content: |
+  ### **Here is a little deal I want to telll you about:**
+
+  We are currently in the process of updating our flagship educational product, the blockbuster 'Double Elite'. I want to recruit a handfull of active readers to enroll in Elite —at a spectacular discount— in exchange for us tracking your progress and use you as a 'guinnee pig' case study.
+
+  Would you be interested in that?
+
+  If so, please click the button below to request an invite. Caspar will then email you about it within the next 24 hours.
+
+  For more info, read the details by <a href="https://docs.google.com/document/d/16cu_C5buGaKGQZ2HOYQE_nmZbvrciER1eGVgHmu-3gc/edit?usp=sharing">clicking over here</a> (opens a Google Doc file).
+---
+
+<div style="max-width: 800px;" class="m-auto">
+  <!-- SECTION: random gif -->
+  <section class="pb-4 pt-2">
+    <div class="container">
+      <div class="row flex-column text-center">
+        <div class="pb-3">
+          {% include new-web/random-video.html %}
+        </div>
+        <div><strong>Booyakashaa!</strong></div>
+        <div>We have got that on the record now</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5 pt-4">
+    <div class="container px-0">
+      <div style="overflow: hidden;">
+        <img src="/assets/images/new-web/striped_bg.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: content -->
+  <section class="pt-0 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <strong class="text-primary">{{ page.title }}</strong>
+          <div>{{ page.the_content | markdownify }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SECTION: button (borrowed from Webinar) -->
+<section class="pt-0 pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-5">
+        <a href="https://drip.la/c/eyJhY2NvdW50X2lkIjoiMzAyOTU5NSIsInRyaWdnZXJfaWQiOiI3MzMwNzI0OTkiLCJkeW5hbWljX3VybCI6bnVsbCwidXJsIjoiaHR0cHM6Ly9kb3VibGUtYWdlbmN5LmNvbS9jbGlja3Rocm91Z2gifQ" class="mt-3 btn btn-primary btn-shadow">Send me the details</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

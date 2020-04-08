@@ -1,0 +1,39 @@
+<!-- vars
+class: string (optional)
+title: string
+lead: string
+content: inner html
+-->
+<section class="pb-0 text-center text-md-left {{ include.class | default '' }}">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-7 px-0 px-md-1">
+
+        <div class="mb-0 mb-md-5 px-1 px-md-0">
+          <h2>{{ include.title }}</h2>
+          <p>{{ include.lead }}</p>
+        </div>
+
+        <div class="pieter-mobile-img d-block d-md-none">
+          <img class="img-fluid" src="/assets/images/new-web/pieter_mobile.png" />
+        </div>
+
+        {% unless include.hide_name %}
+        <div class="person mb-4">
+          <h5 class="mb-0 font-weight-bold"><b>Pieter Moorman</b></h5>
+          <p>Partner / consultant</p>
+        </div>
+        {% endunless %}
+
+        {{ include.content }}
+
+      </div>
+
+      <div class="col-md-5 d-none d-md-block">
+        <img width="671" src="/assets/images/new-web/pieter.svg" />
+      </div>
+
+    </div>
+  </div>
+</section>

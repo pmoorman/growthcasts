@@ -1,0 +1,74 @@
+<!-- vars
+id: string (optional). Needed if multiple carousels on the same page
+hide_next_slide: boolean (optional)
+items: list
+  - title: Getting users matters
+    subtitle: "Day 1:"
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-->
+
+{% assign id = include.id | default 'carousel' %}
+{% if include.hide_next_slide %}
+{% assign hide_next_slide = include.hide_next_slide %}
+{% else %}
+{% assign hide_next_slide = 'false' %}
+{% endif %}
+
+<div id="{{id}}">
+  {% for item in include.items %}
+  <div class="shadow-grey bg-white border-grey mx-2 mx-md-3 my-4 position-relative p-4">
+    <div class="text-center">
+      <p class="mb-0">{{ item.subtitle }}</p>
+      <p class="pt-2 mb-0 font-weight-bold">{{ item.title }}</p>
+    </div>
+
+    <div class="pt-5">
+      <p>{{ item.body }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<script>
+  $('#{{id}}').slick({ 
+    mobileFirst:true,
+    centerMode: !{{ hide_next_slide }},
+    centerPadding: '35px',
+    slidesToShow: 1,
+    infinite: false,
+    arrows: false,
+    dots: false,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: true,
+        centerPadding: '50px',
+        initialSlide: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,        
+        infinite: false,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+      }
+    }
+  ]
+ });
+</script>

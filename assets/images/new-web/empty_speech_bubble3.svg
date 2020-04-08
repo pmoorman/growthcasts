@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="186px" viewBox="0 0 202 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>C1444CC1-2D6B-4C3C-8E16-AA6B6FD9C284svg</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="99 0 84.0967742 16.5701037 84.0967742 48 66.2038435 48 1.51276841e-14 48 1.51276841e-14 0"></polygon>
+        <filter x="-3.0%" y="-6.2%" width="112.1%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.580392157   0 0 0 0 0.603921569   0 0 0 0 0.705882353  0 0 0 0.13633632 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-1440" transform="translate(-1238.000000, -7338.000000)">
+            <g id="Group-29" transform="translate(1238.000000, 7338.000000)">
+                <rect id="Rectangle" fill="#EFF0F6" x="42" y="0" width="248" height="186"></rect>
+                <g id="Group-12" transform="translate(0.000000, 32.000000)">
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="Oval" fill="#979CB6" cx="24" cy="25" r="6"></circle>
+                    <circle id="Oval" fill="#E6E8F2" cx="42" cy="25" r="6"></circle>
+                    <circle id="Oval" fill="#D4D6E2" cx="60" cy="25" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

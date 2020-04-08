@@ -1,0 +1,45 @@
+<div class="animated-logo position-relative">
+  <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.png" />
+  <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.png" />
+</div> 
+
+<style>
+
+  .animated-logo img {
+    transition: 1s;
+  }
+
+  .animated-logo .fore {
+    top: 0;
+    left: 0;
+  }
+
+  .animated-logo.active .fore {
+    -webkit-animation: animatedLogoFore 0.5s ease-in both;
+    animation: animatedLogoFore 0.5s ease-in both;
+  }
+  .animated-logo.active .back {
+    -webkit-animation: animatedLogoBack 0.5s ease-in both;
+    animation: animatedLogoBack 0.5s ease-in both;
+  }
+
+  @keyframes animatedLogoFore {
+    from { transform: translateX(0); }
+    to { transform: translateX(-5%); }
+  }
+  
+  @keyframes animatedLogoBack {
+    from { transform: translateX(0); }
+    to { transform: translateX(4%); }
+  }
+</style>
+
+<script>
+(() => {
+setTimeout(() => {
+  $('.animated-logo').each(function() {
+    $(this).addClass('active');
+  });
+}, 500);
+})()
+</script>

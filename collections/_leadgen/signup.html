@@ -1,0 +1,151 @@
+---
+title: Email course
+layout: pages/new-web/default
+hide_footer: true
+header_logo_only: true
+
+tagline: "Join 15,271+ others:"
+intro: "Modern growth marketing & user acquisition techniques"
+top_image: /assets/images/Napkin_HQ.png
+learn_how_to_title: "Learn how to:"
+learn_how_to_items:
+  - "**Design sales machines** that work on autopilot"
+  - "Learn the **6-step framework** to unlock virtually limitless growth"
+  - 'Leverage the **"power law of channels"** for ultimate traffic generation'
+  - "Execute **coherent growth strategies** as you scale"
+
+carousel_items:
+  - title: Joseph
+    subtitle: Singapore
+    body: Am subbed to your introductory growth systems email course and love it! :) Love your direct, candid and humorous style.
+    image_position: right
+    image: /assets/images/new-web/testimonial_joseph.png
+  - title: Morgan
+    subtitle: USA
+    body: Your course is very simple to understand, and I really love how you focus on systematic execution to focus on what works and what doesn't. 
+    image_position: right
+    image: /assets/images/new-web/testimonial_8.png
+  - title: Marvin
+    subtitle: France
+    body: My biggest concern was that I don't speak fluent English, but all the course itself is very informative, fun and easy to read.
+    image_position: right
+    image: /assets/images/new-web/testimonial_3.png
+  - title: Alex
+    subtitle: USA
+    body: I totally dig this kind of thinking Pieter! Love your emails, very easy to read.
+    image_position: right
+    image: /assets/images/new-web/testimonial_4.png
+  - title: Frank
+    subtitle: Netherlands
+    body: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
+    image_position: right
+    image: /assets/images/new-web/testimonial_1.png
+
+steps_carousel:
+  - title: Growth Marketing
+    subtitle: "Day 1:"
+    body: From the age of classic advertisement to the era of growth.
+  - title: System Thinking
+    subtitle: "Day 2:"
+    body: How you can create a business that is an automated set of systems.
+  - title: Growth is not Hacks
+    subtitle: "Day 3:"
+    body: You're not gonna hack your way to growth these days. The real magic comes from growth strategy.
+  - title: Radical Empathy
+    subtitle: "Day 4:"
+    body: How to understand your customers and make yourself wanna be heard.
+  - title: Copywriting
+    subtitle: "Day 5:"
+    body: Automate your sales, by learning how you can write to sell.
+  - title: Risk Elimination
+    subtitle: "Day 6:"
+    body: The only failproof businessplan is focussed on the risks your business is taking. Learn how to focus on the right objectives to minimize your risks!
+  - title: Growth Loops
+    subtitle: "Day 7:"
+    body: Growth happens in loops. These growth loops are the foundation of your marketing. Learn about the numerous amount of growth loops out there.
+  - title: Week 2
+    subtitle: "Day 8-15"
+    body: The second week will dive deeper into the dynamics of growth. I'll show you how you can build growth into the 'DNA of you business'.
+
+
+---
+
+
+<div>
+  <section class="pt-0 pb-0">
+    <div class="container text-left text-md-center">
+      <div class="row">
+        <div class="col">
+          <h3>{{ page.intro }}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid" src="{{ page.top_image }}" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pb-0 pb-md-5 pt-4">
+    <div class="container px-0">
+      <div style="overflow: hidden;">
+        <img src="/assets/images/new-web/striped_bg.jpg" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-center">
+        <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+           Join 25,271+ Others
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="notification-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {{ page.tagline }}
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <div class="container-fluid px-0">
+      {% include new-web/carousel-2.html
+        id="carousel-2"
+        items=page.steps_carousel %}
+    </div>
+  </section>
+  
+  
+  {% include new-web/text-with-striped-bg.html
+    text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
+  
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-center">
+        <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
+          Sign up for the most popular online course on growth marketing
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  {% include new-web/email-submit-modal.html 
+    id="join-modal"
+    drip_id="277204824"
+    form_label="Email address:"
+    title="15 step-by-step lessons on modern startup growth:"
+    subtitle="Email course"
+    button_text="Get the email course >>" %}
+</div>

@@ -451,7 +451,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_30 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">30% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">30% Discount <span>on</span> Double Elite</p>
                               </div>
                               <div class="grid__column">
                                 <div class="grid grid--center grid--middle">
@@ -461,17 +461,20 @@ window.drip_plinko = function(drip, page) {
                                         <span data-timer="days0">0</span>
                                         <span data-timer="days1">0</span>
                                         <p class="paragraph">days</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="hours0">0</span>
                                         <span data-timer="hours1">0</span>
                                         <p class="paragraph">hours</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="minutes0">0</span>
                                         <span data-timer="minutes1">0</span>
                                         <p class="paragraph">minutes</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="seconds0">0</span>
                                         <span data-timer="seconds1">0</span>
@@ -479,18 +482,15 @@ window.drip_plinko = function(drip, page) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="grid__column discount__button">
-                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/JkIeL">
-                                      <span>Get it now</span>
-                                      <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$349</span>
-                                        <span class="button__icon">
-                                          <img src="icons/shopping-basket.svg" alt="">
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </div>
                                 </div>
+                              </div>
+                              <div class="grid__column discount__button">
+                                <a class="button btn button--primary button--rounded button--shadow" href="https://gum.co/JkIeL">
+                                  <span>Get it now</span>
+                                  <div class="wrapper grid grid--gapeless grid--middle">
+                                    <span>$349</span>
+                                  </div>
+                                </a>
                               </div>
                             </div>
                           </div>`
@@ -498,7 +498,7 @@ window.drip_plinko = function(drip, page) {
   var discount_template_50 = `<div class="container container--xxlarge">
                             <div class="discount__body grid grid--middle grid--gapeless">
                               <div class="grid__column">
-                                <p class="discount__heading heading">50% Discount on Growthcasts Elite</p>
+                                <p class="discount__heading heading">50% Discount <span>on</span> Double Elite</p>
                               </div>
                               <div class="grid__column">
                                 <div class="grid grid--center grid--middle">
@@ -508,17 +508,20 @@ window.drip_plinko = function(drip, page) {
                                         <span data-timer="days0">0</span>
                                         <span data-timer="days1">0</span>
                                         <p class="paragraph">days</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="hours0">0</span>
                                         <span data-timer="hours1">0</span>
                                         <p class="paragraph">hours</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="minutes0">0</span>
                                         <span data-timer="minutes1">0</span>
                                         <p class="paragraph">minutes</p>
-                                      </div> :
+                                      </div> 
+                                      <div class="separator">:</div>
                                       <div class="timer__item">
                                         <span data-timer="seconds0">0</span>
                                         <span data-timer="seconds1">0</span>
@@ -526,18 +529,15 @@ window.drip_plinko = function(drip, page) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="grid__column discount__button">
-                                    <a class="button button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
-                                      <span>Get it now</span>
-                                      <div class="wrapper grid grid--gapeless grid--middle">
-                                        <span>$249</span>
-                                        <span class="button__icon">
-                                          <img src="icons/shopping-basket.svg" alt="">
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </div>
                                 </div>
+                              </div>
+                              <div class="grid__column discount__button">
+                                <a class="button btn button--primary button--rounded button--shadow" href="https://gum.co/tPjm">
+                                  <span>Get it now</span>
+                                  <div class="wrapper grid grid--gapeless grid--middle">
+                                    <span>$249</span>
+                                  </div>
+                                </a>
                               </div>
                             </div>
                           </div>`
@@ -545,15 +545,21 @@ window.drip_plinko = function(drip, page) {
 
   if (drip.has_tag('30%_discount')) {
         response = {
+          elite1_price: '$479<span class="old-price">$479<span>',
+          elite1_link: 'https://gumroad.com/l/elitepro',
+
+          elite2_price: '$199<span class="old-price">$479<span>',
+          elite2_link: 'https://gumroad.com/l/bonuses',
+
+          elite3_price: '$479<span class="old-price">$479<span>',
+          elite3_link: 'https://gumroad.com/l/elitepro',
+
           // PRO
           pricetable: '<p class="price__current-price paragraph">349</p><p class="price__old-price paragraph h2">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/JkIeL">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$349</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
                           </div>
                         </a>`,
           // Core
@@ -562,19 +568,13 @@ window.drip_plinko = function(drip, page) {
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$321</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$349</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/JkIeL">
                             Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
                           </a>`,
           // Discount timer
           discount: discount_template_30
@@ -582,15 +582,21 @@ window.drip_plinko = function(drip, page) {
       }
   else if (drip.has_tag('50%_discount')) {
         response = {
+          elite1_price: '$234<span class="old-price">$469<span>',
+          elite1_link: '<a href="https://gum.co/iouqertiqhexl" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite2_price: '$199<span class="old-price"><span>',
+          elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite3_price: '$249<span class="old-price">$499<span>',
+          elite3_link: '<a href="https://gum.co/bjfvbhksvbk" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
           // PRO
           pricetable: '<p class="price__current-price paragraph">249</p><p class="price__old-price paragraph h2">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$249</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
                           </div>
                         </a>`,
           // Core
@@ -599,19 +605,50 @@ window.drip_plinko = function(drip, page) {
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$234</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
-                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$249</span></p>`,
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$249d</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
                             Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
+                          </a>`,
+          // Discount timer
+          discount: discount_template_50
+          }
+      }
+  else if (drip.has_tag('70%_discount')) {
+        response = {
+          elite1_price: '$139<span class="old-price">$479<span>',
+          elite1_link: '<a href="https://gumroad.com/l/70core" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite2_price: '$199<span class="old-price"><span>',
+          elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite3_price: '$149<span class="old-price">$499<span>',
+          elite3_link: '<a href="https://gumroad.com/l/70discount" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          // PRO
+          pricetable: '<p class="price__current-price paragraph">149</p><p class="price__old-price paragraph h2">499</p>',
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70discount">
+                          <span>Get it now</span>
+                          <div class="grid grid--gapeless grid--middle">
+                            <span>$149</span>
+                          </div>
+                        </a>`,
+          // Core
+          pricetable2: '<p class="price__current-price paragraph">139</p><p class="price__old-price paragraph h2">469</p>',
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70core">
+                            <span>Get it now</span>
+                            <div class="grid grid--gapeless grid--middle">
+                              <span>$139</span>
+                            </div>
+                          </a>`,
+          // Banner
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
+                          <p class="paragraph">With all the bonuses for just <span class="t--bold">$149</span></p>`,
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/70discount">
+                            Get it now
                           </a>`,
           // Discount timer
           discount: discount_template_50
@@ -619,15 +656,21 @@ window.drip_plinko = function(drip, page) {
       }
   else {
         response = {
+          elite1_price: '$479<span class="old-price"><span>',
+          elite1_link: '<a href="https://gumroad.com/l/core-content" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite2_price: '$199<span class="old-price"><span>',
+          elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
+          elite3_price: '$499<span class="old-price"><span>',
+          elite3_link: '<a href="https://gumroad.com/l/full-access-elite" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+
           // PRO
           pricetable: '<p class="price__current-price price__current-price--center paragraph">499</p>',
           price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitepro">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$499</span>
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket.svg" alt="">
-                            </span>
                           </div>
                         </a>`,
           // Core
@@ -636,19 +679,13 @@ window.drip_plinko = function(drip, page) {
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$469</span>
-                              <span class="button__icon">
-                                <img src="icons/shopping-basket.svg" alt="">
-                              </span>
                             </div>
                           </a>`,
           // Banner
-          banner_header: `<h3 class="heading h3 c--white">Buy Growthcasts Elite</h3>
+          banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$499</span></p>`,
           banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/elitepro">
                             Get it now
-                            <span class="button__icon">
-                              <img src="icons/shopping-basket-white.svg" alt="">
-                            </span>
                           </a>`
         }
   }

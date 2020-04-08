@@ -1,0 +1,111 @@
+---
+title: Success
+layout: pages/new-web/success-core
+hide_footer: true
+
+steps_carousel:
+  - title: Growth Marketing
+    subtitle: "Day 1:"
+    body: From the age of classic advertisement to the era of growth.
+  - title: System Thinking
+    subtitle: "Day 2:"
+    body: How you can create a business that is an automated set of systems.
+  - title: Growth is not Hacks
+    subtitle: "Day 3:"
+    body: You're not gonna hack your way to growth these days. The real magic comes from growth strategy.
+  - title: Radical Empathy
+    subtitle: "Day 4:"
+    body: How to understand your customers and make yourself wanna be heard.
+  - title: Copywriting
+    subtitle: "Day 5:"
+    body: Automate your sales, by learning how you can write to sell.
+  - title: Risk Elimination
+    subtitle: "Day 6:"
+    body: The only failproof businessplan is focussed on the risks your business is taking. Learn how to focus on the right objectives to minimize your risks!
+  - title: Growth Loops
+    subtitle: "Day 7:"
+    body: Growth happens in loops. These growth loops are the foundation of your marketing. Learn about the numerous amount of growth loops out there.
+  - title: Week 2
+    subtitle: "Day 8-15"
+    body: The second week will dive deeper into the dynamics of growth. I'll show you how you can build growth into the 'DNA of you business'.
+
+what_others_say:
+  - name: Frank Maat
+    position: Head IT @ MindSpace
+    image: /assets/images/new-web/testimonial_1.png
+    content: As one of the first students, I can say it's one of the most informative and complete courses on marketing out there!
+
+  - name: Joseph Kalaivanar
+    position: Founder @ Bee Advantage
+    image: /assets/images/new-web/testimonial_joseph.png
+    content: Am subbed to your introductory growth systems email course and love it! :) Learning a lot from your awesome emails dude! Love your direct, candid and humorous style.
+---
+
+<div>
+  <section class="notification-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Success - Welcome inside this course!
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-5 px-0">
+    <div class="container-fluid px-0">
+  
+      {% include new-web/carousel-2.html
+        id="carousel-2"
+        items=page.steps_carousel %}
+  
+    </div>
+  </section>
+  
+  {% include new-web/text-with-striped-bg.html
+    text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
+  
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-md-12 text-center">
+          <h2 class="pb-5">What others say:</h2>
+        </div>
+  
+        {% for item in page.what_others_say %}
+        <div class="col-md-6 px-4 mb-5">
+          
+          {% include new-web/speech_bubble.html 
+            direction="bottom-left" 
+            class="slide-bottom mb-5" 
+            content=item.content %}
+  
+          <div class="d-flex align-items-center slide-left">
+            <div class="image">
+              <img width="70" src="{{ item.image }}" />
+            </div>
+            <div class="text text-left ml-4">
+              <p class="mb-0"><b>{{ item.name }}</b></p>
+              <p class="mb-0">{{ item.position }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  <section class="pt-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h4>Check your email for the first lesson!</h4>
+          <p>Our first lesson is making it's way to your inbox. For further reading, please view our agency page or explore our blog.</p>
+          <a href="/" class="mx-xl-5 mt-3 btn btn-primary btn-shadow">About our Agency</a>
+          <a href="/blog" class="mx-xl-5 mt-3 btn btn-primary btn-shadow">Explore our Blog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

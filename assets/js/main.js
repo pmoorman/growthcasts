@@ -1241,31 +1241,31 @@ class SwiperClass {
 
 var updateSize = function () {
   const swiper = this;
-  let width$$1;
-  let height$$1;
+  let width;
+  let height;
   const $el = swiper.$el;
   if (typeof swiper.params.width !== 'undefined') {
-    width$$1 = swiper.params.width;
+    width = swiper.params.width;
   } else {
-    width$$1 = $el[0].clientWidth;
+    width = $el[0].clientWidth;
   }
   if (typeof swiper.params.height !== 'undefined') {
-    height$$1 = swiper.params.height;
+    height = swiper.params.height;
   } else {
-    height$$1 = $el[0].clientHeight;
+    height = $el[0].clientHeight;
   }
-  if (width$$1 === 0 && swiper.isHorizontal() || height$$1 === 0 && swiper.isVertical()) {
+  if (width === 0 && swiper.isHorizontal() || height === 0 && swiper.isVertical()) {
     return;
   }
 
   // Subtract paddings
-  width$$1 = width$$1 - parseInt($el.css('padding-left'), 10) - parseInt($el.css('padding-right'), 10);
-  height$$1 = height$$1 - parseInt($el.css('padding-top'), 10) - parseInt($el.css('padding-bottom'), 10);
+  width = width - parseInt($el.css('padding-left'), 10) - parseInt($el.css('padding-right'), 10);
+  height = height - parseInt($el.css('padding-top'), 10) - parseInt($el.css('padding-bottom'), 10);
 
   Utils.extend(swiper, {
-    width: width$$1,
-    height: height$$1,
-    size: swiper.isHorizontal() ? width$$1 : height$$1
+    width,
+    height,
+    size: swiper.isHorizontal() ? width : height
   });
 };
 
@@ -1489,8 +1489,8 @@ var updateAutoHeight = function () {
   // Find new height from highest slide in view
   for (i = 0; i < activeSlides.length; i += 1) {
     if (typeof activeSlides[i] !== 'undefined') {
-      const height$$1 = activeSlides[i].offsetHeight;
-      newHeight = height$$1 > newHeight ? height$$1 : newHeight;
+      const height = activeSlides[i].offsetHeight;
+      newHeight = height > newHeight ? height : newHeight;
     }
   }
 
@@ -5906,12 +5906,12 @@ const Controller = {
       let maxIndex;
       let minIndex;
       let guess;
-      return (array, val$$1) => {
+      return (array, val) => {
         minIndex = -1;
         maxIndex = array.length;
         while (maxIndex - minIndex > 1) {
           guess = maxIndex + minIndex >> 1;
-          if (array[guess] <= val$$1) {
+          if (array[guess] <= val) {
             minIndex = guess;
           } else {
             maxIndex = guess;
@@ -7253,7 +7253,7 @@ function createCommonjsModule(fn, module) {
 var gumshoe_min = createCommonjsModule(function (module, exports) {
 /*! gumshoejs v3.5.0 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
 !function (e, t) {
-  "function" == typeof undefined && undefined.amd ? undefined([], t(e)) : module.exports = t(e);
+    module.exports = t(e) ;
 }("undefined" != typeof commonjsGlobal ? commonjsGlobal : commonjsGlobal.window || commonjsGlobal.global, function (e) {
   var t,
       n,
@@ -7384,9 +7384,7 @@ class Slider$1 {
 var smoothScroll_min = createCommonjsModule(function (module, exports) {
 /*! smooth-scroll v12.1.5 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
 !function (e, t) {
-  "function" == typeof undefined && undefined.amd ? undefined([], function () {
-    return t(e);
-  }) : module.exports = t(e);
+    module.exports = t(e) ;
 }("undefined" != typeof commonjsGlobal ? commonjsGlobal : "undefined" != typeof window ? window : commonjsGlobal, function (e) {
   var t = "querySelector" in document && "addEventListener" in e && "requestAnimationFrame" in e && "closest" in e.Element.prototype,
       n = { ignore: "[data-scroll-ignore]", header: null, speed: 500, offset: 0, easing: "easeInOutCubic", customEasing: null, before: function () {}, after: function () {} },

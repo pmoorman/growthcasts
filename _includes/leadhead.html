@@ -2,48 +2,121 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% feed_meta %}
+  <title>{{ page.title }}{%if page.title %} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/new-main.css" | relative_url }}">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/new-web/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/new-web/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/new-web/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/new-web/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/new-web/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/new-web/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/new-web/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/new-web/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-128.png" sizes="128x128" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/assets/images/new-web/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/assets/images/new-web/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/assets/images/new-web/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/assets/images/new-web/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="/assets/images/new-web/mstile-310x310.png" />
+
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-  <script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
-  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <!-- <script type="text/javascript">
+    window.mp = ['Viewed Test Page']
+  </script> -->
 
-  <!-- Drip 
-    ///////////////////////////////////////////////////////// -->
-    <script>
-      var _dcq = _dcq || [];
-      var _dcs = _dcs || {};
-      _dcs.account = '3029595';
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      (function() {
-        var dc = document.createElement('script');
-        dc.type = 'text/javascript'; dc.async = true;
-        dc.src = '//tag.getdrip.com/3029595.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(dc, s);
-      })();
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+  <!-- Drip
+  /////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <script>
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {};
+    _dcs.account = '3029595';
 
-    </script>
+    (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true;
+      dc.src = '//tag.getdrip.com/3029595.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+  </script>
 
-  <!-- Facebook Pixel Code 
-    //////////////////////////////////////////////////////////////////////////// -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157579030-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    fbq('init', '153108165298396');
-    fbq('track', "Lead");</script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=153108165298396&ev=PageView&noscript=1"
-    /></noscript>
+  gtag('config', 'UA-157579030-1');
+</script>
+
+
+  <!-- Facebook Pixel Code
+  /////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1613747988773735');
+    fbq('track', 'PageView');
+    fbq('track', "Lead")
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1613747988773735&ev=PageView&noscript=1"/>
+  </noscript>
+
+
+  <!-- Begin Inspectlet JS Code
+  /////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <script type="text/javascript" id="inspectletjs">
+  (function() {
+  var insp_ab_loader = true; // set this boolean to false to disable the A/B testing loader
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 371952256]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=371952256&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 1200; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+
+
+  <!-- Quora Pixel Code (JS Helper) 
+  /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <script>
+  !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+  qp('init', '734fe9ad62044edc880c170a76f4f321');
+  qp('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/734fe9ad62044edc880c170a76f4f321/pixel?tag=ViewContent&noscript=1"/></noscript>
+  <!-- End of Quora Pixel Code -->
+  <script>qp('track', 'GenerateLead');</script>
+  <!-- End of Quora Event Pixel Code -->
+
+
 
 </head>

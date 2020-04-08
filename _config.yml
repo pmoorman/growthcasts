@@ -13,35 +13,42 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Growthcasts
+title: Double
 description: >- # this means to ignore newlines until "baseurl:"
   Growthmarketing and Growth Hacking are new business strategies for startups that incorporate marketing within your product and core business values.
   Build growth right into the hard of your company, by using feedback and customer data to test, enhance your product, build a lean and sustainable business and become a master entrepreneur.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://growthcasts.co/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://double-agency.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  pmoorman
-email: pieter@growthcasts.co
+email: pieter@double-agency.co
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
 
 # Collections
 collections_dir: collections
 collections:
-  - sales-header
-  - intro
-  - course
-  - bonuses
-  - prices
-  - faq
-  - testimonials
-  - parts
-  - slides
-  - consulting-offers
-  - videos
+  posts:
+    output: true
+    permalink: /blog/:slug
+  leadgen:
+    output: true
+    permalink: /:slug
+  sales-header:
+  intro:
+  course:
+  bonuses:
+  prices:
+  faq:
+  testimonials:
+  parts:
+  slides:
+  consulting-offers:
+  videos:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -62,3 +69,25 @@ exclude:
 
 include:
   - _redirects
+
+##
+# From blog
+##
+
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: double-agency # replace by your username
+facebook: Double # replace by your username
+
+# Disqus
+disqus: False
+disqus_shortname: jekyller # replace with your disqus username
+
+# Google Analytics
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+
+# Permalinks
+permalink: /:title

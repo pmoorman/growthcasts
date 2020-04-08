@@ -1,41 +1,51 @@
 .timer {
   display: inline;
-  font-family: 'Averta', 'Helvetica Neue';
   text-align: right;
   padding-top: 1rem;
   text-align: center;
 
-  @media(min-width: breakpoint('xlarge')) {
+  @media(min-width: 1200px) {
     text-align: right;
   }
 
   &__item {
     display: inline-block;
     text-align: center;
+    margin-top: 7px;
 
     span {
       display: inline-block;
       width: 30px;
-      padding: 5px 0;
-      background: lighten(color('secondary'), 72%);
-      border-radius: 4px;
+      height: 48px;
+      padding: 4px 0;
+      background: #fff;
       line-height: 1.8;
-      font-size: 14px;
-      font-weight: 600;
-
-      @media(min-width: breakpoint('medium')) {
-        font-size: 18px;
-      }
+      font-size: 22px;
+      font-weight: 300;
+      color: initial;
     }
 
     p {
       font-size: 10px;
-      text-transform: uppercase;
+      text-transform: capitalize;
       font-weight: 600;
+      margin-bottom: 0;
 
-      @media(min-width: breakpoint('medium')) {
-        font-size: 12px;
+      @media(min-width: 768px) {
+        font-size: 14px;
       }
+    }
+  }
+
+  .jsTimer {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+
+    .separator {
+      font-size: 22px;
+      position: relative;
+      top: 15px;
     }
   }
 }

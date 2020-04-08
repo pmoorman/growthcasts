@@ -1,0 +1,48 @@
+<!-- vars
+id: string
+subtitle: string
+title: string
+button_text: string
+drip_id: string
+-->
+
+<div id="{{ include.id }}" class="modal bs fade email-submit-modal" role="dialog" style="padding: 0;">
+  <div class="modal-dialog modal-dialog-centered m-0 m-md-auto">
+
+    <div class="modal-content bg-grey">
+      <div class="modal-header" style="border: 0;">
+        <div class="m-auto pt-4" style="width: 120px; opacity: .6">
+          {% include new-web/animated-logo.html %}
+        </div>
+      </div>
+
+      <div class="modal-body pl-md-5 pr-md-5 pt-md-5">
+        <h4 style="font-size: 18px;" class="text-primary font-weight-bold">{{ include.subtitle }}</h4>
+        <h1 style="font-size: 24px; letter-spacing: 2px; line-height: 35px;" class="font-weight-bold">{{ include.title }}</h1>
+
+        <div class="py-4">
+          <label class="mb-0" style="font-weight: 600; font-size: 14px;">{{ include.form_label }}</label>
+          <form action="https://www.getdrip.com/forms/{{ include.drip_id }}/submissions" method="post" data-drip-embedded-form="{{ include.drip_id }}">
+            <input style="border: 0; height: 50px;" type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+            <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" type="submit" data-drip-attribute="sign-up-button">{{ include.button_text }}</button>
+          </form>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+@media only screen and (max-width: 700px) {
+  .email-submit-modal .modal-content {
+    height: 100vh;
+    border: 0;
+    border-radius: 0;
+  }
+}
+</style>

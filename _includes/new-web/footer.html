@@ -1,0 +1,112 @@
+<footer id="footer" class="px-3 px-md-5 py-5 text-light" style="background-color: #181d33;">
+  <div class="container">
+    <div class="row main-links text-center text-md-left justify-content-between flex-column flex-md-row mb-4 mb-md-0">
+      <div class="font-weight-bold">
+        <a class="text-light" href=" /#our-process">How we work?</a>
+      </div>
+      <div class="font-weight-bold">
+        <a class="text-light" href="/#clients">Portfolio</a>
+      </div>
+      <div class="font-weight-bold">
+        <a class="text-light" href="/blog">Blog</a>
+      </div>
+      <div class="font-weight-bold">
+        <a class="text-light" href="/academy">Double Academy</a>
+      </div>
+    </div>
+
+    <div class="row mt-5 mb-5 d-none d-md-block">
+      <div class="col px-2 px-md-0">
+        <hr style="background-color: #E7E9F3; opacity: 0.1;" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 blog-posts pl-2 pl-md-0">
+        <h4 class="mb-4 text-light">Blog</h4>
+
+        {% for post in site.posts limit:5 %}
+        <a
+          href="{{ post.url }}"
+          class="text-light d-flex align-items-center mb-4"
+        >
+          <div class="image">
+            <img src="{{ post.cover }}" />
+          </div>
+          <p class="mb-0 ml-3">{{ post.title }}</p>
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="col-md-4  text-center text-md-left d-flex flex-column align-items-center">
+        <div>
+          <h4 class="mb-4 text-light">About us</h4>
+          <p>
+            Double is a growth marketing agency. When startups are ready to scale,
+            we step on board to build out their sales funnels, unlock new
+            acquisition channels, and rework their overall growth strategy to find
+            scalable, durable pathways to growth.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4  text-center text-md-left d-flex flex-column align-items-center align-items-md-end  pr-3 pr-md-0">
+        <div class="channels mb-4">
+          <h4 class="mb-4 text-light">Contact</h4>
+          <div>
+            <b>Email:</b>
+            <a class="text-light" href="mailto:pieter@double-agency.com" >
+              pieter@double-agency.com
+            </a>
+          </div>
+          <div class="pt-2">
+            <b>WhatsApp:</b>
+            <a class="text-light" href="https://wa.me/447700005858">
+              +44 770 000 5858
+            </a>
+          </div>
+          <div class="pt-2 mb-4"><b>Telegram:</b> @doubleagency</div>
+        
+          <div class="mb-4">
+            <div><b>Amsterdam:</b></div>
+            Plantage Middenlaan 62,<br />
+            1018 DH Amsterdam
+          </div>
+
+          <div>
+            <div><b>Bali:</b></div>
+            Canggu, Echo Beach<br />
+            Kuta Utara, Kabupaten Badung<br />
+            Bali, Indonesia 80361
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 px-3 px-md-0">
+        <hr class="mt-5 mb-5" style="background-color: #E7E9F3; opacity: 0.1;" />
+
+        <div class="copyright  text-center text-md-left">
+          <p style="font-size: 14px;">
+            Copyright © 2020 Double LLC. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer h4 {
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 10px!important;
+  }
+
+  footer .main-links a {
+    line-height: 35px;
+  }
+</style>
