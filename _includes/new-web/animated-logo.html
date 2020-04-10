@@ -1,4 +1,4 @@
-<div class="animated-logo position-relative">
+<div class="animated-logo not-scroll position-relative">
   <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.png" />
   <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.png" />
 </div> 
@@ -36,20 +36,8 @@
 
 <script>
 (() => {
-  $(window).on('scroll', () => {
-    setTimeout(() => {
-      if (_isOverCenterScreen(this, 150)) {
-        $(this).addClass('active');
-      }
-    }, 500);
-  });
-
-  function _isOverCenterScreen(elem, offset) {
-    var windowCenter =  $(window).height() / 2;
-    var elemTop = elem.getBoundingClientRect().top;
-    return (windowCenter + offset) > elemTop 
-      ? (windowCenter + offset) - elemTop 
-      : false;
-  }
+  setTimeout(() => {
+    $('.animated-logo.not-scroll').addClass('active');
+  }, 500);
 })()
 </script>
