@@ -36,10 +36,20 @@
 
 <script>
 (() => {
-setTimeout(() => {
-  $('.animated-logo').each(function() {
-    $(this).addClass('active');
+  $(window).on('scroll', () => {
+    setTimeout(() => {
+      if (_isOverCenterScreen(this, 150)) {
+        $(this).addClass('active');
+      }
+    }, 500);
   });
-}, 500);
+
+  function _isOverCenterScreen(elem, offset) {
+    var windowCenter =  $(window).height() / 2;
+    var elemTop = elem.getBoundingClientRect().top;
+    return (windowCenter + offset) > elemTop 
+      ? (windowCenter + offset) - elemTop 
+      : false;
+  }
 })()
 </script>
