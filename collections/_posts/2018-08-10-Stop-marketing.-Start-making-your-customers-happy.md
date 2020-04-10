@@ -3,12 +3,19 @@ layout: pages/new-web/post
 current: post
 cover: /assets/images/blogpic3.jpg
 navigation: True
-title: Stop marketing. Start making your customers happy.
+title: Stop marketing now.
+subtitle: "Start making your customers happy."
 date: 2018-08-10 09:15:41
 tags: Onboarding and Retention
 class: post-template
 subclass: 'post'
 author: caspar
+excerpt: Start making your customers happy. How the relationship with your customers is so much more important than you think. In every stage of your business.
+summary_items:
+    - Happy customers bring in more leads, more returning sales, and help you improve your business
+    - Good customers bring in more leads, more returning sales, and help you improve your business.
+    - In many cases this means that you can pay way more for a happy customer than an unhappy one.
+    - The way to increase your customer's happiness is by creating great retention and onboarding systems.
 ---
 
 Many marketers focus primarily on the acquisition of customers and they often don’t worry about the 'quality' of a customer. As I will explain in a bit, the quality of a customer is way more important than many people think. To generate sustainable growth, you should consider the entire lifetime of a customer.  
@@ -72,14 +79,3 @@ There are many ways to increase retention and most of them boil down to one simp
 It turns out that by far the biggest factor to increasing retention, is to increase your onboarding. If you fix onboarding, you’ll massively impact retention. Onboarding is actually a whole set of ideas, designed to get your users ‘on board’ as easy as possible. Most of the drop-outs happen right at the start, if it takes too much effort to get to know your product, people chip out. <a href="ttps://www.useronboard.com/bulletproof-user-onboarding/" target="_blank">Here</a> is a good post that breaks this down to the bone. Also we cover it in our email course, for which you can subscribe below!
 
 Working to increase retention rates is a great way to increase your growth that many people forget about. For the records: working on retention is also one of those areas where growth is clearly [different from traditional marketing](http://link-naar-een-blog-post-van-ons-hierover.com), and produces an outsized impact on the success of a business.
-
-
-#### **Key insights**
-
-- Happy users are worth much more than not-happy users
-  - Follow the obvious life lesson: Make people happy
-- Retention (retaining customers for a longer time) is the key for high-growth businesses
-  - It increases the LTV of your customers and they offer great feedback (!important!)
-- Retention increases virality and enables you to spend more on marketing
-  - More money to marketing means decreased cycle time, equals increased Growth!
-- The best way to increase your retention is by enhancing your onboarding flow.
