@@ -3,12 +3,19 @@ layout: pages/new-web/post
 current: post
 cover: /assets/images/blogpic1.jpg
 navigation: True
-title: You can’t do marketing if you don’t know the lifetime value of your customers
+title: What's a customer worth?
+subtitle: You can’t do marketing if you don’t know the lifetime value of your customers
 date: 2018-07-27 11:10:11
 tags: Data and Analytics
 class: post-template
 subclass: 'post'
 author: caspar
+excerpt: Calculating the lifetime value of your customers is an essential step in (data-driven) marketing. Without that, you can't evaluate your kpi's and marketing campaigns.
+summary_items:
+    - The customer equation equals the lifetime value with the customer acquisition cost
+    - A business needs to make money, so you can’t sustainably spend more than you earn.
+    - Having accurate figures, such as LTV, allows your marketing team to make far smarter decisions and be way more efficient.
+    - These tactics will be a great start to making your enterprise become more data-driven in marketing
 ---
 
 Calculating the lifetime value of your customers is an essential step in (data-driven) marketing.

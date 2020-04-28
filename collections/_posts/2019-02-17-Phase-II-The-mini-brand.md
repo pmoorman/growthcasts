@@ -4,6 +4,7 @@ current: post
 cover: /assets/images/blogpic4.jpg
 navigation: True
 title: Phase II, The mini-brand
+subtitle: "What happens when the startup phase is over"
 date: 2019-02-17 11:07:01
 tags: Copywriting
 class: post-template
@@ -11,11 +12,10 @@ subclass: 'post'
 author: pieter
 excerpt: Seems like many startups —especially bootstrapped ones— hit a plateau of sorts after a year or two in business.
 summary_items:
-    - Plenty of people don’t remember life before the Internet. Dominique Essig isn’t one of them.
-    - A Duke graduate, Essig spent more than a decade at Travelocity before taking a leap into the world of fashion ecommerce.
-    - The Bonobos Chief Experience Officer remembers the first wave of internet businesses in the mid-’90s.
-    - Of course, it isn’t always easy.
-
+    - Many startups reach a point after 2-3 years, where the initial hype is starting to cool.
+    - At that point it's time to turn things around. It's time to grow up.
+    - The phase II of a startup is about branding, you want to build a mini-brand
+    - There are 4 stages of adolescence: Consolidation, thinking bigger, brand upgrading, growth.
 ---
 
 Seems like many startups —especially bootstrapped ones— hit a plateau of sorts after a year or two in business.

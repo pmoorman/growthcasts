@@ -4,11 +4,17 @@ current: post
 cover:  /assets/images/blogpic6.png
 navigation: True
 title: Branding isn't your logo
+subtitle: It is the name you own in someone's mind
 date: 2017-07-27 10:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
 author: pieter
+excerpt: Branding is an incredibly powerful vector in your overall growth mix. But you have to understand what it is actually about.
+summary_items:
+    - Branding is much more than just your logo
+    - It's about owning a concept or word in your audience's head.
+    - There are many ways to improve you branding, but it's most important that you stay consistent.
 ---
 
 Branding isn’t the first thing you think about when you talk about growth marketing. Growth has a reputation of being data nerds, that stay away from “fluffy” things like branding.

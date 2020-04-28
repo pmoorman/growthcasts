@@ -3,12 +3,19 @@ layout: pages/new-web/post
 current: post
 cover: /assets/images/blogpic2.jpg
 navigation: True
-title: The customer equation, Do they spend more than you do?
+title: The customer equation
+subtitle: Do they spend more than you do?
 date: 2018-08-03 08:12:01
 tags: [Data and Analytics]
 class: post-template
 subclass: 'post'
 author: caspar
+excerpt: There is one gold equation in every business. And it goes like this. Business try to make more money than they spend.
+summary_items:
+    - The customer equation equals the lifetime value with the customer acquisition cost
+    - To measure the success of a marketing campaign, you need to know how much one customer is worth and how much one costs to acquire.
+    - Make this calculation with all costs included, to make a fully loaded decision
+    - Different channels have different cost structures, so you have to make this calculation for every channel separate. 
 ---
 
 Business try to make more money than they spend. More specifically, they try to get customers for less than they have to spend to acquire them. Sounds obvious, but for many businesses it’s hard to figure out how much they spend per customer. This spend is called the Customer Acquisition Cost and it’s closely linked to the LifeTime Value (LTV: click to read about that)
@@ -45,18 +52,6 @@ In many cases this calculating is hard or even impossible to make. For early sta
 Let’s look at an example of a hard to measure marketing strategy to illustrate this. A young business that considers to build their brand to bring in customers, will need a lot of initial investment to get things started. From that point on, you are waiting for customers to start to discover and like your brand. It’s mere speculation to find out which campaign actually paid off, let alone calculating how much you actually spend per customer. If you don’t have the coolest brand of the year, chances are, you will have a small chance of success.
 
 A better strategy would be to start with a direct-response channel and build an initial user base. And than try to create some hype or friction with a branding campaign, that starts with your core customer segment. You could clearly measure your CAC in every stage, hence significantly improve your chances for success.
-
-
-#### **The takeaways:**
-
-- Find your the LTV of your customers
-  - To measure the success of a marketing campaign, you need to know how much a customer is worth. Read more here.
-- Estimate the LTV/CAC ratio of your business
-  - This is not easy, but for different types of businesses, there is usually a ‘standard’ ratio.
-- Make a 'fully loaded' calculation
-  - Get every cost that is used for your acquisition in your calculation, otherwise you can’t make ‘honest’ decisions.
-- Split you CAC per channel
-  - Different channels have different cost structures, aggregate calculations don’t mean anything is one performs very different than the other.
 
 
 #### **Next Steps**
