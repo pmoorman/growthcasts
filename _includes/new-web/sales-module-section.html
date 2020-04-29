@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="slider-nav container mb-5">
+<!--   <div class="slider-nav container mb-5">
     <button class="prev-btn d-none d-md-flex" disabled="true">
       <strong><</strong>
     </button>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <!-- SLIDE module -->
   <div class="slider">
@@ -69,7 +69,7 @@
     {% assign key = include.container | append: forloop.index %}
     {% assign video_key = key | append: '-video' %}
 
-    <div class="slider-item" slide-index="{{ forloop.index0 }}">
+    <div class="slider-item" slide-index="{{ forloop.index0 }}" style="padding-top: 75px; padding-bottom: 75px;">
       <div class="container container-narrow">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -121,7 +121,7 @@
                 <img src="/assets/images/new-web/elite/play-icon.svg" />
               </a>
               <div class="placeholder-img">
-                <img src="{{ item.video.thumbnail }}" />
+                <script src="https://fast.wistia.com/embed/medias/fhtt4eaurn.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_fhtt4eaurn popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:600px;position:relative;width:1067px">&nbsp;</span>
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@
 {% include new-web/modal_iframe.html src=item.video.url id=video_key %}
 {% endfor %}
 
-<script>
+<!-- <script>
 (() => {
   const modules = {
     {% for item in include.module %}
@@ -344,4 +344,4 @@
   });
 
 })();
-</script>
+</script> -->
