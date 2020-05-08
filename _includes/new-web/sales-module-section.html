@@ -116,12 +116,12 @@
           </div>
           <div class="video">
             <div class="d-flex justify-content-center align-items-center">
-              <a href="#{{ video_key }}" class="modal-btn btn btn-secondary btn-shadow shadow-primary bg-secondary d-flex justify-content-center align-items-center"
+              <!-- <a href="#{{ video_key }}" class="modal-btn btn btn-secondary btn-shadow shadow-primary bg-secondary d-flex justify-content-center align-items-center"
                 style="width: 60px; height: 60px; position: absolute;">
                 <img src="/assets/images/new-web/elite/play-icon.svg" />
-              </a>
+              </a> -->
               <div class="placeholder-img">
-                <img src="{{ item.video.thumbnail }}" />
+                <script src="https://fast.wistia.com/embed/medias/{{ video_key }}.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_fhtt4eaurn popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:500px;position:relative;width:888px">&nbsp;</span>
               </div>
             </div>
           </div>
