@@ -15,7 +15,7 @@ summary_items:
     - Many startups reach a point after 2-3 years, where the initial hype is starting to cool.
     - At that point it's time to turn things around. It's time to grow up.
     - The phase II of a startup is about branding, you want to build a mini-brand
-    - There are 4 stages of adolescence: Consolidation, thinking bigger, brand upgrading, growth.
+    - There are 4 stages of adolescence → Consolidation, thinking bigger, brand upgrading, growth.
 ---
 
 Seems like many startups —especially bootstrapped ones— hit a plateau of sorts after a year or two in business.

@@ -83,8 +83,7 @@ pricing_table:
       - "**Module 4:**<br>Copy & conversion"
       - "**Module 5:**<br>Engagement & retention"
       - "**Module 6:**<br>Advanced strategy"
-    extra_items: 
-      - "Full money-back guarantee"
+      - "**Full money-back guarantee**"   
     placeholder_prefix: "elite1"
 
   - title: "**Pro** <br>Core + Bonuses"
@@ -95,12 +94,12 @@ pricing_table:
       - "**Module 4:**<br>Copy & conversion"
       - "**Module 5:**<br>Engagement & retention"
       - "**Module 6:**<br>Advanced strategy"
-      - "**Video case studies (13x)**"
-      - "**PDF Manuals, Swipe Files, Etc.**"
-      - "**Treasure Vault**"
+      - "**Full money-back guarantee**"      
     extra_items: 
-      - "Full money-back guarantee"
       - "Operational support"
+      - "Video case studies (13x)"
+      - "PDF Manuals, Swipe Files, Etc."
+      - "Treasure Vault"
     placeholder_prefix: "elite3"
     subprice: "Get Full Access"
 
@@ -512,7 +511,7 @@ pieter_note_points:
         {% endfor %}
       </div>
       <div><hr></div>
-      <div class="extra-items">
+      <div class="flex-grow-1">
         {% for item in package.extra_items %}
         <div class="d-flex align-items-center my-md-3">
           <div class="checkmark d-flex mr-3">
@@ -913,7 +912,7 @@ pieter_note_points:
           </div>
         </div>
       </div>
-      <div class="container pillar-group-container px-0 pt-5">
+      <div class="hide-on-mobile container pillar-group-container px-0 pt-5">
         <div class="pillar-group mb-5" style=" display: flex; flex-direction: column; justify-content: center;">
           <div class="pillars-block d-flex justify-content-between">
             {% for item in page.pillars_row %}
@@ -941,7 +940,24 @@ pieter_note_points:
           </div>
         </div>
       </div>
-      <div class="pillar-lower container">
+      <div class="hide-on-desktop pillar-lower container">
+        <div class="row text-center text-light">
+          <div class="col-md-12">
+          <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
+            <h3 class="lead mb-4"><strong>The six pillars of growth</strong></h3>
+          <ol style="text-align: left">
+            <li><b>Strategy:</b> Foundation of the growth loops architecture.</li>
+            <li><b>Growth Engine:</b> The system that drives traffic.</li>
+            <li><b>Sales Funnel:</b> A process to convert the traffic.</li>
+            <li><b>Retention System:</b> A way to activate and retain those conversions.</li>
+            <li><b>Conversion Drivers:</b> The skills that improves every part of the loop.</li>
+            <li><b>Growth Process:</b> A process to make the whole loop go round.</li>
+          </ol>
+            <p style="color: #979cb6;">Together, these 6 pillars form the full growth stack…</p>          
+          </div>
+        </div>
+      </div>
+      <div class="hide-on-mobile pillar-lower container">
         <div class="row text-center text-light">
           <div class="col-md-12">
             <p class="lead mb-4">Here’s the magic:</p>

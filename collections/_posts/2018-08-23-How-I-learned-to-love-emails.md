@@ -12,7 +12,7 @@ subclass: 'post'
 author: caspar
 excerpt: An introduction into sales, and how you've probably done it before.
 summary_items:
-    - Dont kiss a girl before talking to her.
+    - Don't kiss a girl before talking to her.
     - Don’t go for the sale right away, first introduce yourself to your potential customers
     - Sales is a gradual process
     - Give a good introduction, provide value, work slowly. Design a sales funnel
@@ -50,11 +50,11 @@ Another problem you will encounter, is that the girl of your dreams visits your 
 
 The sales equivalence for scoring a number is to get someone’s email address. If anyone visits your website, this should be your main goal. When you have the email address, you can *slowly* start introducing yourself and your product. 
 
-You’re not in a hurry, the email won’t expire. 
+<blockquote>You’re not in a hurry, the email won’t expire.</blockquote>
 
 This way you can give a quality pitch, perhaps already provide some valuable content/demo’s/discounts. This is the way to go. Don’t be too pushy, and ask for their email address. This gradual process is called a sales funnel, and it’s the way to get the dream girl or guy buy your product.
 
-<blockquote>Hoping that people will land on your website and just start buying stuff is a lost case, you first need to introduce yourself (and your product</blockquote>
+<blockquote>Hoping that people will land on your website and just start buying stuff is a lost case, you first need to introduce yourself (and your product)</blockquote>
 
 There are many types of sales funnels, but we’ll not talk about that today (you can read about it here: if that’s finished). The main take-away of today is that you need to ask for an email address. So what can you do right now to make your sales process more smooth (thus more effective)? 
 
