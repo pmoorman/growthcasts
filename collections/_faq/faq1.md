@@ -2,7 +2,7 @@
 layout: faq-item
 heading: General
 faq:
-- How does this course help my business?: >
+- How does this course help my businesssss?: >
     Building Growth in your business is a scalable and save way to build your company. You'll also learn all the skills an entrepreneur needs.
 - What previous experience is needed?: >
     Elite is an intermediate/advanced level course. It assumes you already have basic business experience. If you don't have much previous experience, you should be ready for an aggressive learning curve. <br><br>
@@ -13,7 +13,7 @@ faq:
     <br>
     * How to choose the best traction channels for a startup<br>
     * Which channels to use once you hit initial scale<br>
-    * How you can take a marketing campaign (maybe Google ads, or content marketing, or SEO) from 'initial validation' to fast scaling <br>
+    * How you can take a marketing campaign (maybe Google ads, or content marketing, or SEO) from 'initial validation' to fast scaling<br>
     * How you write hard-hitting copy that actually gets people to buy<br>
     * How you create a 'risk roadmap' for ultimate focus,<br>
     * How you uncover hidden benefits, that strengthen your pitch & selling proposition<br>

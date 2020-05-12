@@ -4,7 +4,7 @@ layout: faq-item
 heading: Are we a match?
 faq:
 - Who is this for?: >
-    Double Elite is primarily focused on early-stage startups, with high-growth / high-impact ambitions.<br><br>
+    Double Elite is primarily focused on early-stage startups to scale-ups, with high-growth / high-impact ambitions.<br><br>
     Because the framework is quite universal, this approach works very well for both SaaS, mobile apps or eCommerce... but it works equally well for 'traditional' businesses, B2B startups or even non-profits.<br><br>
     People that buy Elite, typically fall in one the following 3 buckets:<br><br>
     <b>A) You’re a startup founder,</b> and you’d like to incorporate this kind of thing into your business —You want to stop doing traditional marketing, and instead start building “growth loops”. <br>
@@ -14,7 +14,7 @@ faq:
     Elite works best for people that are 100% sure they have the entrepreneurial blood going throught their veins. The people that are hungry for success.<br><br>
     Besides that you also need to be able to dedicate at least 4-6 hours per week to your business, to see real significant growth.
 - What products is this best for?: >
-    There is most value if you're an early-stage startup, because the content is focused on getting you to ~$15.000-25.000 in monthly revenue quickly.<br><br>
+    There is most value if you're an early-stage startup or young scale-up, because the content is focused on getting you to ~$15.000-25.000 in monthly revenue quickly.<br><br>
     If you're already past that stage, some modules might be less interesting / relevant. If you want to work as a freelance growth consultant, you'll find the content very valuable, too.<br><b>Products that Elite works well for are:</b><br>
     - Software products (mobile apps, SaaS, etc.)<br>
     - eCommerce products / webshops<br>

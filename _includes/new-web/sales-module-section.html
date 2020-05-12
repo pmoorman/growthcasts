@@ -121,7 +121,7 @@
                 <img src="/assets/images/new-web/elite/play-icon.svg" />
               </a> -->
               <div class="placeholder-img">
-                <script src="https://fast.wistia.com/embed/medias/{{ video_key }}.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_fhtt4eaurn popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:500px;position:relative;width:888px">&nbsp;</span>
+                <script src="https://fast.wistia.com/embed/medias/{{ item.video.url }}.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_{{ item.video.url }} popover=true popoverAnimateThumbnail=true popoverBorderColor=000000 popoverContent=thumbnail" style="display:inline-block;height:500px;position:relative;width:888px">&nbsp;</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@
 {% for item in include.module %}
 {% assign key = include.container | append: forloop.index %}
 {% assign video_key = key | append: '-video' %}
-{% include new-web/modal_iframe.html src=item.video.url id=video_key %}
+<!--- {% include new-web/modal_iframe.html src=item.video.url id=video_key %} -->
 {% endfor %}
 
 <!-- <script>
