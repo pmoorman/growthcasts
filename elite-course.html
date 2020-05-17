@@ -984,7 +984,8 @@ pieter_note_points:
   <!-- SECTION: Pillars -->
   <section class="pt-0" style="background: #181d33; position: relative; top: 1px;"></section>
   <section id="pillars" class="py-0 alternate-section" style="background: #181d33;">
-    <div class="pillars-inner" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
+    <!-- Desktop version -->
+    <div class="pillars-inner hide-on-mobile" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
       <div class="pillar-upper container container-narrow-md text-center">
         <div class="row">
           <div class="col-md-12 px-md-0 px-4 text-light">
@@ -993,7 +994,7 @@ pieter_note_points:
           </div>
         </div>
       </div>
-      <div class="hide-on-mobile container pillar-group-container px-0 pt-5">
+      <div class="container pillar-group-container px-0 pt-5">
         <div class="pillar-group mb-5" style=" display: flex; flex-direction: column; justify-content: center;">
           <div class="pillars-block d-flex justify-content-between">
             {% for item in page.pillars_row %}
@@ -1021,7 +1022,29 @@ pieter_note_points:
           </div>
         </div>
       </div>
-      <div class="hide-on-desktop pillar-lower container">
+      <div class="pillar-lower container">
+        <div class="row text-center text-light">
+          <div class="col-md-12">
+            <p class="lead mb-4">Here’s the magic:</p>
+            <h3 class="mb-5"><strong>that’s all you will ever need.</strong></h3>
+            <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
+            <p style="color: #979cb6;">Together, these 6 pillars form the full growth stack…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile version -->
+    <div class="hide-on-desktop" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
+      <div class="pillar-upper container container-narrow-md text-center">
+        <div class="row">
+          <div class="col-md-12 px-md-0 px-4 text-light">
+            <h3>Out of these simple ideas evolved the
+              <strong class="text-primary">“6 Pillars of Growth”</strong> that you might have heard about…</h3>
+          </div>
+        </div>
+      </div>
+      <div class="pillar-lower container">
         <div class="row text-center text-light">
           <div class="col-md-12">
           <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
@@ -1035,16 +1058,6 @@ pieter_note_points:
             <li><b>Growth Process:</b> A process to make the whole loop go round.</li>
           </ol>
             <p style="color: #979cb6;">Together, these 6 pillars form the full growth stack…</p>          
-          </div>
-        </div>
-      </div>
-      <div class="hide-on-mobile pillar-lower container">
-        <div class="row text-center text-light">
-          <div class="col-md-12">
-            <p class="lead mb-4">Here’s the magic:</p>
-            <h3 class="mb-5"><strong>that’s all you will ever need.</strong></h3>
-            <img class="pt-4 mb-3" src="/assets/images/new-web/elite/pillars.svg" />
-            <p style="color: #979cb6;">Together, these 6 pillars form the full growth stack…</p>
           </div>
         </div>
       </div>
@@ -1131,7 +1144,7 @@ pieter_note_points:
           <div class="speech-bubble speech-bubble-top-right slide-top position-relative">
             <div class="speech-bubble-back"></div>
             <div class="speech-bubble-fore">
-              <p class="mb-0">Elite is really some next level training. I have not been this impressed with any training for quite a while. I am wondering if you do any personal consultations or if there is any process I can begin to become involved with your agency. Anyway, thank you for the great information.</p>
+              <p class="mb-0">You were the inspiration for Austin and I to get started. <strong>Last year we did about half a mil in revenue</strong> so definitely worked out for us. Elite is really some next level training.</p>
             </div>
           </div>
           <div class="info pl-5 px-0 pl-md-0 mt-4 mt-md-5 text-left">
