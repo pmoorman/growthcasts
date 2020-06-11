@@ -1,0 +1,35 @@
+<!-- vars
+class: string (optional)
+title: string
+lead: string
+content: inner html
+-->
+<section class="pb-0 text-center text-md-left {{ include.class | default '' }}">
+  <div class="container">
+
+      {% unless include.hide_pic %}
+    <div class="row align-items-center">
+      <div class="col-md-7 px-0 px-md-1">
+      {% endunless %}
+
+      {% if include.hide_pic %}
+    <div class="mx-md-5">
+
+      {% endif %}
+        
+        <div class="mb-0 mb-md-5 px-1 px-md-0">
+          <h2>{{ include.title }}</h2>
+          <p>{{ include.lead }}</p>
+        </div>
+
+        {{ include.content }}
+
+      </div>
+        {% unless include.hide_pic %}
+      <div class="col-md-5 d-none d-md-block">
+        <img width="671" src="/assets/images/new-web/funnel-pic.svg" />
+      </div>
+  {% endunless %}
+    </div>
+  </div>
+</section>
