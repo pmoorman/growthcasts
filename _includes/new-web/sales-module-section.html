@@ -68,8 +68,14 @@
     {% for item in include.module %}
     {% assign key = include.container | append: forloop.index %}
     {% assign video_key = key | append: '-video' %}
+    {% assign rest = forloop.index0 | modulo:2 %}
+    {% if rest == 0 %}
+      {% assign style = 'style1' %}
+    {% else %}
+      {% assign style = 'style2' %}
+    {% endif %}
 
-    <div class="slider-item" slide-index="{{ forloop.index0 }}" style="padding-top: 75px; padding-bottom: 75px;">
+    <div class="slider-item {{ style }}" slide-index="{{ forloop.index0 }}" style="padding-top: 75px; padding-bottom: 75px;">
       <div class="container container-narrow">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -141,7 +147,7 @@
           </div>
         </div>
         <div class="row mt-5 pb-5 justify-content-between">
-          {% if include.style == 'style2' %}
+          {% if style == 'style2' %}
           {% assign testimonial_index = item.learn.size | minus: 1 %}
           {% assign testimonial_class = 'speech-bubble-bottom-left' %}
           {% assign testimonial_person_class = 'justify-content-start' %}
