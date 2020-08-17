@@ -126,6 +126,13 @@
             </div>
           </div>
         </div>
+        <div class="readmore-wrapper row mb-3 pt-4 mt-5" style="display: none;">
+          <div class="col-md-12 text-center">
+            <button class="readmore-btn large" style="text-decoration: none; background: none;">
+              <h3 class="large mb-0">Read more<div style="transform: rotate(90deg);"><strong>></strong></div></h3> 
+            </button>
+          </div>
+        </div>
       </div>
       <div class="container what-you-will-learn mt-4 mt-md-5">
         <div class="row py-4">
@@ -247,6 +254,52 @@
 {% assign video_key = key | append: '-video' %}
 <!--- {% include new-web/modal_iframe.html src=item.video.url id=video_key %} -->
 {% endfor %}
+
+<script>
+(() => {
+// Only show Read more button on mobile
+if (window.matchMedia('(max-width: 600px)').matches) {
+  const container = '#{{ include.container }}';
+  const readmoreWrapper = $(`${container} .readmore-wrapper`);
+  const readmoreBtns = $(`${container} .readmore-btn`);
+  const slider = $(`${container} .slider`);
+
+  // close all readmore sections
+  readmoreBtns.each(function() {
+    updateReadmoreTextClose($(this));
+  });
+
+  // show readmore button
+  readmoreWrapper.show();
+
+  slider.find('.what-you-will-learn').each(function() {
+    $(this).slideUp();
+  });
+  
+  readmoreBtns.each(function() {
+    $(this).click(function() {
+      const section = $(this)
+        .closest('.slider-item')
+        .find('.what-you-will-learn');
+
+      section.slideToggle(null, () => {
+        section.is(':visible')
+          ? updateReadmoreTextOpen($(this))
+          : updateReadmoreTextClose($(this));
+      });
+    })
+  });
+  function updateReadmoreTextOpen(el) {
+    $(el).find('span').text('Read less');
+    $(el).find('div').css('transform', 'rotate(-90deg)');
+  }
+  function updateReadmoreTextClose(el) {
+    $(el).find('span').text('Read more');
+    $(el).find('div').css('transform', 'rotate(90deg)');
+  }
+}
+})()
+</script>
 
 <!-- <script>
 (() => {
