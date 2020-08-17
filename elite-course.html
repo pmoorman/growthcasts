@@ -984,7 +984,7 @@ pieter_note_points:
 
   <!-- SECTION: Pillars -->
   <section class="pt-0" style="background: #181d33; position: relative; top: 1px;"></section>
-  <section id="pillars" class="py-0 alternate-section" style="background: #181d33;">
+  <section id="pillars" class="py-0 alternate-section position-relative" style="background: #181d33;">
     <!-- Desktop version -->
     <div class="pillars-inner hide-on-mobile" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
       <div class="pillar-upper container container-narrow-md text-center">
@@ -1625,7 +1625,10 @@ pieter_note_points:
 <script>
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
-  _pillarAnimations();
+  // Only run pillar animations on desktop
+  if (window.matchMedia('(min-width: 600px)').matches) {
+    _pillarAnimations();
+  }
   $(window).on("scroll", _viewportAnimations);
 
   if (window.matchMedia("(max-width: 720px)").matches) {
@@ -1807,17 +1810,8 @@ pieter_note_points:
 
         if (!pillarsCompleted && reachedSectionBottom()) {
           pillarsCompleted = true;
-          const oldSectionBottom = sectionBottom();
-          pillarsSection.parent().css({ height: "auto" });
+          pillarsSection.parent().css({ height: "1800px" });
           $(window).off("scroll", affixPillars);
-          pillarsSection.css({
-            position: "relative",
-            bottom: 0,
-          });
-
-          if (oldSectionBottom + 50 > $(window).scrollTop()) {
-            window.scrollTo(0, sectionBottom());
-          }
         }
   
         activePillars.each(function (index, el) {
