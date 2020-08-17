@@ -621,7 +621,7 @@ pieter_note_points:
 </div>
 {% endcapture %}
 
-<script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
+
   
   <!-- Drip
 /////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -1297,7 +1297,7 @@ pieter_note_points:
           </div> -->
           <script src="https://fast.wistia.com/embed/medias/goaz1dkqer.jsonp" async></script>
           <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverContent=link" style="display:inline;position:relative">
+          <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverBorderColor=000000 popoverContent=link" style="display:inline-block;height:500px;position:relative;width:888px">
             <a href="#" class="ml-md-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
               <img src="/assets/images/new-web/elite/play-icon.svg" />
               <div>Explore Elite </div>
@@ -1621,6 +1621,17 @@ pieter_note_points:
 
 {% include new-web/modal_iframe.html src=page.explore_growth_mba_video_url id="explore-growth-mba" %}
 {% include discount.html %}
+
+<script>
+  // Load drip.js at last, else gumroad won't render correctly
+  window.onload = function() {
+    const head = document.getElementsByTagName('head')[0];
+    const script = document.createElement('script');
+    script.src = '{{ "/assets/js/drip.js" | relative_url }}';
+    script.type = 'text/javascript';
+    head.insertBefore(script, document.getElementsByTagName("script")[0]);
+  }
+</script>
 
 <script>
 (() => {
