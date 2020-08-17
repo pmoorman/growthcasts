@@ -1774,8 +1774,10 @@ pieter_note_points:
     const pillarBody = pillarsSection.find(".pillar-body");
     const sectionBottom = () => pillarsSection.offset().top + pillarsSection.height();
     const reachedSectionBottom = () => $(window).scrollTop() > sectionBottom();
+    const anchorEl = $(window.location.hash);
 
-    if (pillarsSection.offset().top > $(window).scrollTop()) {
+    // Only change the height to have a inifite scroll effect if the there is no anchor in the URL which is below the pillars
+    if ((anchorEl[0] && anchorEl.offset().top < pillarsSection.offset().top) && (pillarsSection.offset().top > $(window).scrollTop())) {
       pillarsSection.parent().css({
         height: "5000px",
         position: "relative",
