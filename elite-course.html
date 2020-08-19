@@ -1297,7 +1297,7 @@ pieter_note_points:
           </div> -->
           <script src="https://fast.wistia.com/embed/medias/goaz1dkqer.jsonp" async></script>
           <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverBorderColor=000000 popoverContent=link" style="display:inline-block;height:500px;position:relative;width:888px">
+          <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverBorderColor=000000 popoverContent=link" style="display:inline-block;position:relative;">
             <a href="#" class="ml-md-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
               <img src="/assets/images/new-web/elite/play-icon.svg" />
               <div>Explore Elite </div>
@@ -1777,7 +1777,7 @@ pieter_note_points:
     const anchorEl = $(window.location.hash);
 
     // Only change the height to have a inifite scroll effect if the there is no anchor in the URL which is below the pillars
-    if ((anchorEl[0] && anchorEl.offset().top < pillarsSection.offset().top) && (pillarsSection.offset().top > $(window).scrollTop())) {
+    if (!(anchorEl[0] && anchorEl.offset().top > pillarsSection.offset().top) && (pillarsSection.offset().top > $(window).scrollTop())) {
       pillarsSection.parent().css({
         height: "5000px",
         position: "relative",
