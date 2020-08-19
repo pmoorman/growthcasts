@@ -113,7 +113,7 @@ body:not(.blog) {
   }
 }
 
-body:not(.blog):not(.homepage) {
+body:not(.blog) {
   h2 {
     @media only screen and (max-width: 720px) {
       font-size: 48px;
@@ -662,7 +662,7 @@ section#packages {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
 
       .lower {
         a {
@@ -989,7 +989,7 @@ section#packages {
   // SECTION: Klooker
   section#klooker {
     .content {
-      min-height: 1220px;
+      min-height: 1100px;
     }
 
     .title > div {
@@ -1476,7 +1476,7 @@ section#packages {
 // VIDEO WRAPPER
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 59.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
 }

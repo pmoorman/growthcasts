@@ -575,7 +575,7 @@ pieter_note_points:
         {{ package.title | markdownify | remove: '<p>' | remove: '</p>' }}
       </h3>
 
-      <div class="flex-grow-1">
+      <div>
         {% for item in package.items %}
         <div class="d-flex align-items-center my-md-3">
           <div class="checkmark d-flex mr-3">
@@ -621,7 +621,7 @@ pieter_note_points:
 </div>
 {% endcapture %}
 
-<script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
+
   
   <!-- Drip
 /////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -984,7 +984,7 @@ pieter_note_points:
 
   <!-- SECTION: Pillars -->
   <section class="pt-0" style="background: #181d33; position: relative; top: 1px;"></section>
-  <section id="pillars" class="py-0 alternate-section" style="background: #181d33;">
+  <section id="pillars" class="py-0 alternate-section position-relative" style="background: #181d33;">
     <!-- Desktop version -->
     <div class="pillars-inner hide-on-mobile" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
       <div class="pillar-upper container container-narrow-md text-center">
@@ -1292,21 +1292,18 @@ pieter_note_points:
           <p>Double Elite is an intermediate & advanced education. <br>
             Each module is approximately 60-90 minutes of high-quality video lectures combined with PDF guides, worksheets, templates and other resources.</p>
         </div>
-        <div class="col-md-6 d-flex flex-column flex-md-row m-auto">
+        <div class="col-md-12 d-flex flex-column flex-md-row m-auto justify-content-center">
            <!-- <div><button class="mr-md-4 mb-4 mb-md-0 btn btn-secondary btn-shadow font-weight-bold" style="min-width: 250px; height: 60px;">Download Full Syllabus</button>
           </div> -->
-          <script src="https://fast.wistia.com/embed/medias/goaz1dkqer.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverContent=link videoFoam=true" style="display:inline;position:relative">
+          <script src="https://fast.wistia.com/embed/medias/goaz1dkqer.jsonp" async></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+          <span class="wistia_embed wistia_async_goaz1dkqer popover=true popoverBorderColor=000000 popoverContent=link" style="display:inline-block;position:relative;">
             <a href="#" class="ml-md-4 modal-btn btn btn-secondary btn-shadow shadow-primary font-weight-bold d-flex align-items-center justify-content-between" style="width: 323px; height: 60px;">
               <img src="/assets/images/new-web/elite/play-icon.svg" />
               <div>Explore Elite </div>
               <div style="color: #a1a6bc; font-weight: 300;">6.02</div>
             </a>
-              </span>
-            </div>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -1626,9 +1623,23 @@ pieter_note_points:
 {% include discount.html %}
 
 <script>
+  // Load drip.js at last, else gumroad won't render correctly
+  window.onload = function() {
+    const head = document.getElementsByTagName('head')[0];
+    const script = document.createElement('script');
+    script.src = '{{ "/assets/js/drip.js" | relative_url }}';
+    script.type = 'text/javascript';
+    head.insertBefore(script, document.getElementsByTagName("script")[0]);
+  }
+</script>
+
+<script>
 (() => {
   affixTitle('#marketing-game', '#marketing-game #marketing-game-sidebar', false, 60, 12);
-  _pillarAnimations();
+  // Only run pillar animations on desktop
+  if (window.matchMedia('(min-width: 600px)').matches) {
+    _pillarAnimations();
+  }
   $(window).on("scroll", _viewportAnimations);
 
   if (window.matchMedia("(max-width: 720px)").matches) {
@@ -1763,8 +1774,10 @@ pieter_note_points:
     const pillarBody = pillarsSection.find(".pillar-body");
     const sectionBottom = () => pillarsSection.offset().top + pillarsSection.height();
     const reachedSectionBottom = () => $(window).scrollTop() > sectionBottom();
+    const anchorEl = $(window.location.hash);
 
-    if (pillarsSection.offset().top > $(window).scrollTop()) {
+    // Only change the height to have a inifite scroll effect if the there is no anchor in the URL which is below the pillars
+    if (!(anchorEl[0] && anchorEl.offset().top > pillarsSection.offset().top) && (pillarsSection.offset().top > $(window).scrollTop())) {
       pillarsSection.parent().css({
         height: "5000px",
         position: "relative",
@@ -1810,17 +1823,8 @@ pieter_note_points:
 
         if (!pillarsCompleted && reachedSectionBottom()) {
           pillarsCompleted = true;
-          const oldSectionBottom = sectionBottom();
-          pillarsSection.parent().css({ height: "auto" });
+          pillarsSection.parent().css({ height: "1800px" });
           $(window).off("scroll", affixPillars);
-          pillarsSection.css({
-            position: "relative",
-            bottom: 0,
-          });
-
-          if (oldSectionBottom + 50 > $(window).scrollTop()) {
-            window.scrollTo(0, sectionBottom());
-          }
         }
   
         activePillars.each(function (index, el) {

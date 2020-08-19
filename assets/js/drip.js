@@ -249,14 +249,14 @@ It's advised to pass in your own overrides in your initializer vs. overriding th
     }
 
     DripPro.prototype.push_survey = function() {
-      var plinko = window[this.settings.survey_fn_name](new this.fn_helper(this))
-      if (!plinko) return
-      var random_keys = _.keys(plinko.answers)
-      if (plinko.random) {
-        random_keys = _.shuffle(random_keys)
-      }
-      plinko.keys = random_keys      
-      this.settings.survey_widget(plinko, this)
+      // var plinko = window[this.settings.survey_fn_name](new this.fn_helper(this))
+      // if (!plinko) return
+      // var random_keys = _.keys(plinko.answers)
+      // if (plinko.random) {
+      //   random_keys = _.shuffle(random_keys)
+      // }
+      // plinko.keys = random_keys      
+      // this.settings.survey_widget(plinko, this)
     }
 
     DripPro.prototype.drip_response_received = function(payload) {
@@ -805,11 +805,11 @@ jQuery(function(){
       }
 
       traits = $.extend(traits, this.custom_fields())
-      analytics.identify(traits.email, traits)
+      // analytics.identify(traits.email, traits)
 
-      if (window.mp) {
-        analytics.track(window.mp[0], window.mp[1])
-      }
+      // if (window.mp) {
+      //   analytics.track(window.mp[0], window.mp[1])
+      // }
 
       if ($('.article-header h1').length) {
         this.add_tag('Read - ' + $('.article-header h1').text())
