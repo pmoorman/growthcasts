@@ -10,6 +10,7 @@ stylesheets:
   - /assets/elite-course.css
 scripts:
   - https://gumroad.com/js/gumroad.js
+  - /assets/js/drip.js
 
 marketing_game:
   - image: /assets/images/new-web/elite/marketing_game-1.svg
@@ -563,6 +564,19 @@ pieter_note_points:
   - <b>You get personal support</b><br>You can always reach me (personally!) directly via email/phone
   - <b>An excellent guarantee</b><br>A full moneyback guarantee, <i>for any reason</i>, valid for 365 days
 ---
+
+<script>
+  (() => {
+    // because gumroad loads only on window load, we manually trigger the window.load event when the gumroad-overlay.js file is loaded
+    
+    const interval = setInterval(() => {
+      if (typeof createGumroadOverlay !== 'undefined') {
+        dispatchEvent(new Event('load'));
+        clearInterval(interval);
+      }
+    }, 100)
+  })()
+</script>
 
 {% capture pricing_table %}
 <div class="pricing-table row shadow-grey">
@@ -1621,17 +1635,6 @@ pieter_note_points:
 
 {% include new-web/modal_iframe.html src=page.explore_growth_mba_video_url id="explore-growth-mba" %}
 {% include discount.html %}
-
-<script>
-  // Load drip.js at last, else gumroad won't render correctly
-  window.onload = function() {
-    const head = document.getElementsByTagName('head')[0];
-    const script = document.createElement('script');
-    script.src = '{{ "/assets/js/drip.js" | relative_url }}';
-    script.type = 'text/javascript';
-    head.insertBefore(script, document.getElementsByTagName("script")[0]);
-  }
-</script>
 
 <script>
 (() => {
