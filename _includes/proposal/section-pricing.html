@@ -1,0 +1,37 @@
+{% assign d = include.data %}
+
+<section class="my-5 py-5">
+	<div class="container">
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12" style="max-width: 686px;">
+				<h3>{{ d.title }}</h3>
+				{{ d.intro | markdownify }}
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center my-5">
+			{% for item in d.items %}
+			<div class="col-md-3 p-2 slide-top package-item">
+				<div class="p-2 p-md-4 text-dark text-center d-flex flex-column justify-content-between" style="height: 100%; border: 1px solid #D4D7E1; box-shadow: 8px 8px 0 0 rgba(148,154,180,0.4);">
+					<div class="upper">
+						<h4 class="font-weight-normal">{{ item.title }}</h4>
+						
+					</div>
+					<div class="lower">
+						<p class="price text-primary font-weight-bold mb-0">{{ item.price }}</p>
+						<p>{{ item.below_price }}</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12" style="max-width: 686px;">
+				{{ d.footer | markdownify }}
+			</div>
+		</div>
+
+	</div>
+</section>
