@@ -21,12 +21,9 @@
           
           <div class="col-md-8" style="max-width: 512px; margin-top: -30px;">
             <h2>{{ section.title }}</h2>
-            {% for block in section.blocks %}
-              {% if block.sub_type == "lead" %}
-              <p class="lead">{{ block.content | markdownify | strip_html }}</p>
-              {% else %}
-              {{ block.content | markdownify }}
-              {% endif %}
+						{% for block in section.blocks %}
+							{% assign partial = "proposal/blocks/" | append: block.type | append: ".html" %}
+							{% include {{ partial }} data=block.data %}
             {% endfor %}
           </div>
         </div>

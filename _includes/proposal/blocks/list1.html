@@ -1,0 +1,22 @@
+<div class="process-steps">
+{% for item in include.data %}
+<div class="process-step d-flex justify-content-lg-between flex-column flex-lg-row">
+	<div class="d-flex align-items-center align-items-lg-start flex-column flex-lg-row">
+		<div class="step-col position-absolute" style="width: 70px; left: -120px;">
+			<div class="step-number m-auto">{{ forloop.index }}</div>
+			<div class="step-checked position-absolute position-lg-relative"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
+			{% if forloop.last == false %}
+			<div class="full-line ml-auto mr-auto d-none d-lg-block"></div>
+			{% endif %}
+			{% if forloop.index == 1 %}
+			<div class="pct-line bg-primary ml-auto mr-auto d-none d-lg-block"></div>
+			{% endif %}
+		</div>
+		<div>
+			<h3>{{ item.title }}</h3>
+			{{ item.content | markdownify }}
+		</div>
+	</div>
+</div>
+{% endfor %}
+</div>

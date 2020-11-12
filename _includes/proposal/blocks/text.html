@@ -1,0 +1,5 @@
+{% if include.data.type == "lead" %}
+<p class="lead">{{ include.data.content | markdownify | strip_html }}</p>
+{% else %}
+{{ include.data.content | markdownify }}
+{% endif %}

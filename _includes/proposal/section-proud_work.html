@@ -11,7 +11,7 @@
 
 		{% for item in d.items %}
 			<div id="work-{{item.name}}" class="py-5">
-				{% assign partial = "proposal/work-" | append: item.name | append: ".html" %}
+				{% assign partial = "proposal/work/" | append: item.name | append: ".html" %}
 				{% include {{ partial }} %}
 			</div>
 		{% endfor %}

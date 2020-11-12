@@ -45,5 +45,63 @@
     <!-- Footer -->
     {% include proposal/section-footer.html data=page.footer %}
 
+    <!-- TODO: Move out to file -->
+    <script>
+      $(document).ready(function() {
+        processSteps();
+        onWindowsScroll();
+      });
+      function processSteps() {
+        const first = $(".process-steps .process-step:first-child");
+        const last = $(".process-steps .process-step:last-child");
+        const line = $(".process-steps .pct-line");
+        let maxLength = last.offset().top - first.offset().top;
+        let currentHeight = line.height();
+
+        console.log({line:line})
+      
+        $(window).on('resize', function() {
+          maxLength = last.offset().top - first.offset().top;
+          currentHeight = line.height();
+          const newHeight = Math.min(maxLength, currentHeight);
+          line.css('height', newHeight + 'px');
+        })
+      
+        $(window).on('scroll', function() {
+          maxLength = last.offset().top - first.offset().top;
+          currentHeight = line.height();
+          const overScreen = _isOverCenterScreen(first[0], 150);
+          const newHeight = Math.min(maxLength, overScreen);
+      
+          if (overScreen && newHeight > currentHeight) {
+            line.css('height', newHeight + 'px');
+          }
+        });
+      }
+
+      function onWindowsScroll() {
+        $(window).on('scroll', _viewportAnimations);
+      }
+
+      function _viewportAnimations() {
+        $(".process-step").each(function() {
+          
+          if (_isOverCenterScreen(this, 150)) {
+            console.log('hola')
+            $(this).addClass("active");
+           }
+        });
+
+      }
+
+      function _isOverCenterScreen(elem, offset) {
+        var windowCenter =  $(window).height() / 2;
+        var elemTop = elem.getBoundingClientRect().top;
+        return (windowCenter + offset) > elemTop 
+          ? (windowCenter + offset) - elemTop 
+          : false;
+      }
+    </script>
+
   </body>
 </html>
