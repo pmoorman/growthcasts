@@ -123,6 +123,13 @@ p.lead {
   line-height: 32px;
 }
 
+.content-section {
+  max-width: 512px;
+}
+.container-narrow {
+  max-width: 710px;
+}
+
 // TODO: Move out to own scss
 .step-number {
   font-size: 28px;

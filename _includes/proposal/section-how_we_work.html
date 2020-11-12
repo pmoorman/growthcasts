@@ -4,7 +4,7 @@
 	<div class="container">
 
 		<div class="row text-center justify-content-center">
-			<div class="col-md-12" style="max-width: 710px;">
+			<div class="col-md-12 container-narrow">
 				<h2>{{ d.title }}</h2>
 				<p class="lead">
 					{{ d.intro | markdownify | strip_html }}
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="row text-center justify-content-center">
-			<div class="col-md-12" style="max-width: 710px;">
+			<div class="col-md-12 container-narrow">
 				{{ d.footer | markdownify }}
 			</div>
 		</div>
