@@ -83,4 +83,20 @@ proud_work:
     - name: tiktok
     - name: sendcloud
     - name: elugie
+
+footer:
+  image: /assets/images/proposals/pieter_large.png
+  title: What’s next?
+  body: |
+    Ready to start? Mail me back to move forward with the project. Have something more to talk about before? Book a call with me.
+  mail_button_title: Mail Me
+  mail_button_subtitle: Move forward with the project.
+  mail_address: "#"
+  call_button_title: Book a Call  
+  call_button_subtitle: Talk more details.
+  call_phone_number: "#"
+  person_name_image: /assets/images/proposals/pieter_name.png
+  person_name: Pieter Moorman
+  person_title: Project Lead
+
 ---
