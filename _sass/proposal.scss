@@ -83,14 +83,15 @@ h1 {
   font-size: 100px;
   font-weight: 600;
   letter-spacing: -3.7px;
-  line-height: 74px;
+  line-height: 94px;
 }
 
 h2 {
   font-size: 64px;
   font-weight: 600;
   letter-spacing: -2.3px;
-  line-height: 94px;
+  line-height: 74px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -98,6 +99,7 @@ h3 {
   font-weight: 300;
   letter-spacing: 1.5px;
   line-height: 56px;
+  margin-bottom: 22px;
 }
 
 h4 {
@@ -211,12 +213,14 @@ p.lead {
   position: absolute;
   left: -35px;
 }
+.checkmark .fore,
 .checkmark img {
   border-radius: 100%;
   opacity: 0.15;
   transition: 0.5s;
 }
 
+.checkmark.active .fore,
 .checkmark.active img {
   opacity: 1;
 }

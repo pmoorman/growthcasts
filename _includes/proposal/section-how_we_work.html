@@ -4,7 +4,7 @@
 	<div class="container">
 
 		<div class="row text-center justify-content-center">
-			<div class="col-md-12" style="max-width: 686px;">
+			<div class="col-md-12" style="max-width: 710px;">
 				<h2>{{ d.title }}</h2>
 				<p class="lead">
 					{{ d.intro | markdownify | strip_html }}
@@ -12,7 +12,7 @@
 			</div>
 		</div>
 
-		<div class="row text-center justify-content-center my-5">
+		<div class="row text-center justify-content-center my-5 pb-5">
 			<div class="col-md-12">
 				<div class="logo-grid" style="display: grid; grid-template-columns: repeat(3, auto [col-start]); background-color: #e0e0e0; grid-gap: 1px;">
 					{% for logo in d.logos %}
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="row text-center justify-content-center">
-			<div class="col-md-12" style="max-width: 686px;">
+			<div class="col-md-12" style="max-width: 710px;">
 				{{ d.footer | markdownify }}
 			</div>
 		</div>

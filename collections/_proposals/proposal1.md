@@ -29,15 +29,16 @@ sections:
 
     - type: list1
       data:
-        - title: Lead Gen Engine
-          body: |
-            Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
-        - title: Sales Funnel/Process
-          body: |
-            Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
-        - title: Retention & Referral
-          body: |
-            A set of processes to onboard, activate customers, and create sharing/viral components in order for the client base to grow exponentially.
+        items:
+          - title: Lead Gen Engine
+            body: |
+              Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
+          - title: Sales Funnel/Process
+            body: |
+              Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
+          - title: Retention & Referral
+            body: |
+              A set of processes to onboard, activate customers, and create sharing/viral components in order for the client base to grow exponentially.
 
 - title: The B2B Growth Model
   blocks:
@@ -56,15 +57,17 @@ sections:
 
     - type: list2
       data:
-        - title: Prospecting
-          body: |
-            The process of locating places where your target audience is hanging out and finding their contact details to reach them. This part is easy to automate/outsource.
-        - title: Outreach
-          body: |
-            Through multiple channels we can reach out to the potential leads. Most popular is LinkedIn, but I think cold emailing and calling can also be very successful.
-        - title: Qualification
-          body: |
-            This is the stage where we need to hand-off the highly qualified leads to the actual sales representatives. These 'reps’ are in the business of relationship building and closing. The prior stages must be done by someone else the reps to keep them focused.
+        type: numbers
+        items:
+          - title: Prospecting
+            body: |
+              The process of locating places where your target audience is hanging out and finding their contact details to reach them. This part is easy to automate/outsource.
+          - title: Outreach
+            body: |
+              Through multiple channels we can reach out to the potential leads. Most popular is LinkedIn, but I think cold emailing and calling can also be very successful.
+          - title: Qualification
+            body: |
+              This is the stage where we need to hand-off the highly qualified leads to the actual sales representatives. These 'reps’ are in the business of relationship building and closing. The prior stages must be done by someone else the reps to keep them focused.
 
     - type: text
       data:
@@ -77,12 +80,13 @@ sections:
 
     - type: list2
       data:
-        - title: Awareness
-          body: |
-            Creating awareness can be done through multiple channels, like content marketing, SEO, Google Ads, LinkedIn Ads, PR, organic SM.
-        - title: Conversion
-          body: |
-            Conversion happens mostly on the website, or by leads emailing directly. Every possible route from first exposure to first content must be as smooth as possible.
+        items:
+          - title: Awareness
+            body: |
+              Creating awareness can be done through multiple channels, like content marketing, SEO, Google Ads, LinkedIn Ads, PR, organic SM.
+          - title: Conversion
+            body: |
+              Conversion happens mostly on the website, or by leads emailing directly. Every possible route from first exposure to first content must be as smooth as possible.
 
     - type: text
       data:
@@ -93,15 +97,16 @@ sections:
 
     - type: list2
       data:
-        - title: Systemised sales process
-          body: |
-            All lead generation efforts must find a good alignment with sales, to ensure a structure that incentivises available talent as effectively as possible.
-        - title: Persuasive email marketing
-          body: |
-            Most sales departments forget to add clients to their email lists to share relevant content and don't keep them warm until it's time to close.
-        - title: Retargeting strategies
-          body: |
-            Retargeting is most popular in B2C businesses, but are under-appreciated by B2B businesses. They provide the perfect reminder and brand building to close the sale.
+        items:
+          - title: Systemised sales process
+            body: |
+              All lead generation efforts must find a good alignment with sales, to ensure a structure that incentivises available talent as effectively as possible.
+          - title: Persuasive email marketing
+            body: |
+              Most sales departments forget to add clients to their email lists to share relevant content and don't keep them warm until it's time to close.
+          - title: Retargeting strategies
+            body: |
+              Retargeting is most popular in B2C businesses, but are under-appreciated by B2B businesses. They provide the perfect reminder and brand building to close the sale.
 
     - type: text
       data:
@@ -112,15 +117,16 @@ sections:
 
     - type: list1
       data:
-        - title: CRM
-          body: |
-            On-point content and personal communication with the current B2B customer base.
-        - title: Referral strategies
-          body: |
-            By creating sharable assets and supply partners with many test products, customers can recommend your products to others. This typically works well in traditional, non-competitive markets.
-        - title: B2B → B2C loops
-          body: |
-            By engaging customers with nice product extras and consumer CRM, you create power users that will return for upsells and returning purchase. Extra engagement with sharable content, product experience and sharing schemes will create brand ambassadors that bring in new customers for free.
+        items:
+          - title: CRM
+            body: |
+              On-point content and personal communication with the current B2B customer base.
+          - title: Referral strategies
+            body: |
+              By creating sharable assets and supply partners with many test products, customers can recommend your products to others. This typically works well in traditional, non-competitive markets.
+          - title: B2B → B2C loops
+            body: |
+              By engaging customers with nice product extras and consumer CRM, you create power users that will return for upsells and returning purchase. Extra engagement with sharable content, product experience and sharing schemes will create brand ambassadors that bring in new customers for free.
 
 
 how_we_work:
