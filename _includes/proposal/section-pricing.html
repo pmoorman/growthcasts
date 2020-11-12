@@ -1,4 +1,4 @@
-{% assign d = include.data %}
+{% assign d = page.pricing | default: site.data.proposal.pricing %}
 
 <section id="pricing" class="my-5 py-5">
 	<div class="container">

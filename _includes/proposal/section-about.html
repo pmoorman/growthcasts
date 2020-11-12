@@ -1,4 +1,4 @@
-{% assign d = include.data %}
+{% assign d = page.about | default: site.data.proposal.about %}
 
 <section id="about" class="my-5 py-5" style="overflow: hidden;">
 	<div class="container position-relative">

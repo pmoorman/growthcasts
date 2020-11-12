@@ -1,4 +1,4 @@
-{% assign d = include.data %}
+{% assign d = page.ready_to_start | default: site.data.proposal.ready_to_start %}
 
 <section id="ready-to-start" class="my-5 py-5">
 	<div class="container">

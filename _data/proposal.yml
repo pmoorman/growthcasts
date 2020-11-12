@@ -1,0 +1,74 @@
+how_we_work:
+  title: How we work
+  intro: |
+    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
+  footer: |
+    We work in weekly sprints, since requirements constantly change, and flexibility and experimentation are essential to finding a strategy that works. Our work will focus on creating the right strategic roadmap, and help execute on a growth model that brings in happy customers.
+  logos:
+    - url: /assets/images/proposals/double_logo.png
+    - url: /assets/images/proposals/double_logo.png
+    - url: /assets/images/proposals/double_logo.png
+    - url: /assets/images/proposals/double_logo.png
+    - url: /assets/images/proposals/double_logo.png
+    - url: /assets/images/proposals/double_logo.png
+
+pricing:
+  title: Pricing
+  intro: |
+    Our services are priced in weekly sprints of a fixed capacity of either 10, 20 or 40 hours/week. Prices are weekly, invoiced monthly at the start of each month. We are typically flexible to adjust capacity as we go:
+  footer: |
+    We suggest to start with the 10 hours/week and scale up after 2~4 weeks, once we have established the strategic foundations.
+  items:
+    - title: Sprints at 10 hours/week
+      price: €900/week
+      below_price: billed monthly
+    - title: Sprints at 20 hours/week
+      price: €1750/week
+      below_price: billed monthly
+    - title: Sprints at 40 hours/week
+      price: €2800/week
+      below_price: billed monthly
+
+ready_to_start:
+  title: Ready to Start?
+  mail_button_title: Mail Me
+  mail_button_subtitle: Move forward with the project.
+  mail_address: "#"
+  call_button_title: Book a Call  
+  call_button_subtitle: Talk more details.
+  call_phone_number: "#"
+  person_image: /assets/images/proposals/pieter_image.png
+  person_name_image: /assets/images/proposals/pieter_name.png
+  person_name: Pieter Moorman
+  person_title: Project Lead
+
+about:
+  image_1: /assets/images/proposals/about1.png
+  image_2: /assets/images/proposals/about2.png
+  image_3: /assets/images/proposals/about3.png
+  image_4: /assets/images/proposals/about4.png
+
+  content: |
+    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
+
+proud_work:
+  title: Work we’re proud of…
+  items:
+    - name: tiktok
+    - name: sendcloud
+    - name: elugie
+
+footer:
+  title: What’s next?
+  body: |
+    Ready to start? Mail me back to move forward with the project. Have something more to talk about before? Book a call with me.
+  mail_button_title: Mail Me
+  mail_button_subtitle: Move forward with the project.
+  mail_address: "#"
+  call_button_title: Book a Call  
+  call_button_subtitle: Talk more details.
+  call_phone_number: "#"
+  person_image: /assets/images/proposals/pieter_large.png
+  person_name_image: /assets/images/proposals/pieter_name.png
+  person_name: Pieter Moorman
+  person_title: Project Lead

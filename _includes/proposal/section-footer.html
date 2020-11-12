@@ -1,4 +1,4 @@
-{% assign d = include.data %}
+{% assign d = page.footer | default: site.data.proposal.footer %}
 
 <footer class="pt-5 mt-5">
 	<div class="container position-relative">
