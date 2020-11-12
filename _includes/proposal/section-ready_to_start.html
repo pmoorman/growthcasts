@@ -1,0 +1,51 @@
+{% assign d = include.data %}
+
+<section class="my-5 py-5">
+	<div class="container">
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12" style="max-width: 686px;">
+				<h2>{{ d.title }}</h2>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-items-center my-5">
+			<div style="max-width: 100%; width: 512px;">
+				<a href="mailto:{{d.mail_address}}" class="text-white text-center d-flex flex-column align-items-center justify-content-center w-100" style="height: 156px; background: #3497F3;">
+					<div class="d-flex align-items-center">
+						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.mail_button_title }}</div>
+						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">></div>
+					</div>
+					<p class="mb-0">{{ d.call_button_subtitle }}</p>
+				</a>
+				<a href="tel:{{d.call_phone_number}}" class="text-white text-center d-flex flex-column align-items-center justify-content-center w-100" style="height: 156px; background: #181D33;">
+					<div class="d-flex align-items-center">
+						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.call_button_title }}</div>
+						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">></div>
+					</div>
+					<p class="mb-0">{{ d.call_button_subtitle }}</p>
+				</a>
+				<div class="d-flex flex-column my-4 w-100 position-relative">
+					<div class="mb-3" style="position: absolute; left: -65px; top: -90px;">
+						<img class="img-fluid" style="height: 130px;" src="{{ d.person_image | relative_url }}" />
+					</div>
+					<div style="left: 90px; position: relative;">
+						<div class="mb-3">
+							<img class="img-fluid" style="height: 28px;" src="{{ d.person_name_image | relative_url }}" />
+						</div>
+						<p class="mb-0" style="font-size: 18px; font-weight: 600;">{{ d.person_name }}</p>
+						<p style="font-size: 14px; font-weight: 300;">{{ d.person_title }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="d-flex flex-column align-items-center" style="font-size: 18px;">
+				<div>More About Double</div>
+				<div>Arrow</div>
+			</div>
+		</div>
+
+	</div>
+</section>

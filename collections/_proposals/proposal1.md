@@ -54,4 +54,18 @@ pricing:
     - title: Sprints at 40 hours/week
       price: €2800/week
       below_price: billed monthly
+
+ready_to_start:
+  title: Ready to Start?
+  mail_button_title: Mail Me
+  mail_button_subtitle: Move forward with the project.
+  mail_address: "#"
+  call_button_title: Book a Call  
+  call_button_subtitle: Talk more details.
+  call_phone_number: "#"
+  person_image: /assets/images/proposals/pieter_image.png
+  person_name_image: /assets/images/proposals/pieter_name.png
+  person_name: Pieter Moorman
+  person_title: Project Lead
+
 ---
