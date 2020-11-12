@@ -1,0 +1,24 @@
+{% assign d = include.data %}
+
+<section class="my-5 py-5" style="overflow: hidden;">
+	<div class="container position-relative">
+
+		<div>
+			<img class="img-fluid" style="width: 375px;" src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
+		</div>
+
+		<div class="row justify-content-center" style="margin-top: 150px; margin-bottom: 150px;">
+			<img class="img-fluid" style="height: 285px; position: absolute; bottom: 220px; left: -14%;" src="{{ d.image_1 | relative_url }}" />
+			<img class="img-fluid" style="height: 341px;" src="{{ d.image_2 | relative_url }}" />
+			<img class="img-fluid" style="height: 317px; position: absolute; top: 0; right: -14%;" src="{{ d.image_3 | relative_url }}" />
+			<img class="img-fluid" style="height: 160px; position: absolute; right: -2%; top: 400px;" src="{{ d.image_4 | relative_url }}" />
+		</div>
+
+		<div class="row justify-content-end">
+			<div class="col-md-6 px-0">
+				<p class="lead">{{ d.content | markdownify | strip_html }}</p>
+			</div>
+		</div>
+
+	</div>
+</section>

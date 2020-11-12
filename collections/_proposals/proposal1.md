@@ -68,4 +68,13 @@ ready_to_start:
   person_name: Pieter Moorman
   person_title: Project Lead
 
+about:
+  image_1: /assets/images/proposals/about1.png
+  image_2: /assets/images/proposals/about2.png
+  image_3: /assets/images/proposals/about3.png
+  image_4: /assets/images/proposals/about4.png
+
+  content: |
+    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
+
 ---
