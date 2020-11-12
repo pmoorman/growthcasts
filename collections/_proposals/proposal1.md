@@ -77,4 +77,10 @@ about:
   content: |
     Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
 
+proud_work:
+  title: Work we’re proud of…
+  items:
+    - name: tiktok
+    - name: sendcloud
+    - name: elugie
 ---
