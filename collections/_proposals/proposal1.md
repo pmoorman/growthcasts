@@ -66,6 +66,63 @@ sections:
           body: |
             This is the stage where we need to hand-off the highly qualified leads to the actual sales representatives. These 'reps’ are in the business of relationship building and closing. The prior stages must be done by someone else the reps to keep them focused.
 
+    - type: text
+      data:
+        body: |
+          ### Inbound Lead Gen engine
+
+          For inbound lead generation there are many options. It is key to prioritise the channels and set up experiments to find the ones that are worth investing in. This part of the growth system relies much on the branding of the company, since conversion and channels performance depend on the status of the brand.
+
+          Inbound lead generation can be divided into two separate stages:
+
+    - type: list2
+      data:
+        - title: Awareness
+          body: |
+            Creating awareness can be done through multiple channels, like content marketing, SEO, Google Ads, LinkedIn Ads, PR, organic SM.
+        - title: Conversion
+          body: |
+            Conversion happens mostly on the website, or by leads emailing directly. Every possible route from first exposure to first content must be as smooth as possible.
+
+    - type: text
+      data:
+        body: |
+          ### Sales Process
+
+          Although the sales process in a traditional market heavily depends on the inner workings of the sales team, there are a few areas that can benefit from a more growth oriented approach.
+
+    - type: list2
+      data:
+        - title: Systemised sales process
+          body: |
+            All lead generation efforts must find a good alignment with sales, to ensure a structure that incentivises available talent as effectively as possible.
+        - title: Persuasive email marketing
+          body: |
+            Most sales departments forget to add clients to their email lists to share relevant content and don't keep them warm until it's time to close.
+        - title: Retargeting strategies
+          body: |
+            Retargeting is most popular in B2C businesses, but are under-appreciated by B2B businesses. They provide the perfect reminder and brand building to close the sale.
+
+    - type: text
+      data:
+        body: |
+          ### Retention & Referral
+
+          The purpose of the last system is to create brand ambassadors and returning customers. Although the quality of the products is key, there are a few marketing strategies that aid customer retention and referral.
+
+    - type: list1
+      data:
+        - title: CRM
+          body: |
+            On-point content and personal communication with the current B2B customer base.
+        - title: Referral strategies
+          body: |
+            By creating sharable assets and supply partners with many test products, customers can recommend your products to others. This typically works well in traditional, non-competitive markets.
+        - title: B2B → B2C loops
+          body: |
+            By engaging customers with nice product extras and consumer CRM, you create power users that will return for upsells and returning purchase. Extra engagement with sharable content, product experience and sharing schemes will create brand ambassadors that bring in new customers for free.
+
+
 how_we_work:
   title: How we work
   intro: |
