@@ -1,32 +1,32 @@
 {% for section in page.sections %}
-    <section class="py-5 my-5">
-      <div class="container">
+<section id="{{ section.title | replace: " " "-" | downcase }}" class="py-5 my-5">
+	<div class="container">
 
-        <!-- Sides -->
-        <div style="position: sticky; top: 20px; bottom: 20px; ">
-          <div class="d-flex justify-content-between">
-            <h4 style="max-width: 200px;">{{ section.title }}</h4>
-            <div class="d-flex flex-column align-items-center">
-              <img style="width: 160px;" class="img-fluid mb-5" src="{{ page.client_logo | relative_url }}" />
-              <div style="height: 30px; top: 15px; position: relative;">
-                <div style="border: 1px solid #181D33; width: 40px; transform: rotate(45deg);"></div>
-                <div style="border: 1px solid #51ABFF; width: 40px; transform: rotate(-45deg);"></div>
-              </div>
-              <img style="width: 160px;" class="img-fluid mt-4" src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
-            </div>
-          </div>
-        </div>
+		<!-- Sides -->
+		<div style="position: sticky; top: 20px; bottom: 20px; ">
+			<div class="d-flex justify-content-between">
+				<h4 style="max-width: 200px;">{{ section.title }}</h4>
+				<div class="d-flex flex-column align-items-center">
+					<img style="width: 160px;" class="img-fluid mb-5" src="{{ page.client_logo | relative_url }}" />
+					<div style="height: 30px; top: 15px; position: relative;">
+						<div style="border: 1px solid #181D33; width: 40px; transform: rotate(45deg);"></div>
+						<div style="border: 1px solid #51ABFF; width: 40px; transform: rotate(-45deg);"></div>
+					</div>
+					<img style="width: 160px;" class="img-fluid mt-4" src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
+				</div>
+			</div>
+		</div>
 
-        <div class="row justify-content-center">
-          
-          <div class="col-md-8" style="max-width: 512px; margin-top: -210px;">
-            <h2>{{ section.title }}</h2>
-						{% for block in section.blocks %}
-							{% assign partial = "proposal/blocks/" | append: block.type | append: ".html" %}
-							{% include {{ partial }} data=block.data %}
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </section>
-    {% endfor %}
+		<div class="row justify-content-center">
+			
+			<div class="col-md-8" style="max-width: 512px; margin-top: -210px;">
+				<h2>{{ section.title }}</h2>
+				{% for block in section.blocks %}
+					{% assign partial = "proposal/blocks/" | append: block.type | append: ".html" %}
+					{% include {{ partial }} data=block.data %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endfor %}
