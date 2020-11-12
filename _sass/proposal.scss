@@ -195,6 +195,81 @@ p.lead {
   }
 }
 
+// TODO: Move to other file
+.checkmark .back img,
+.checkmark .fore {
+  width: 30px;
+  height: 30px;
+}
+.checkmark p {
+  margin-bottom: 0;
+}
+
+.checkmark {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  position: absolute;
+  left: -35px;
+}
+.checkmark img {
+  border-radius: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+
+.checkmark.active img {
+  opacity: 1;
+}
+.checkmark.active .fore {
+  animation: fore 0.5s linear both;
+}
+.checkmark.active .back {
+  animation: back 0.5s linear both;
+}
+.checkmark .back {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.checkmark-number {
+  text-align: center;
+}
+.checkmark-number .fore {
+  margin-right: 15px;
+  background: #181d33;
+  border-radius: 100%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  padding-top: 6px;
+  font-size: 18px;
+}
+
+.checkmark.active .fore {
+  animation: fore 0.5s linear both;
+}
+.checkmark.active .back {
+  animation: back 0.5s linear both;
+}
+
+@keyframes fore {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-2px, -2.5px);
+  }
+}
+
+@keyframes back {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2px, 2.5px);
+  }
+}
+
 // Animations
 .animate-pulse {
   animation: pulse 2s infinite;

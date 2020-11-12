@@ -7,11 +7,11 @@ sections:
     - type: text
       data: 
         type: lead
-        content: |
+        body: |
           Nordic Projekt is the main brand for specialised glasses in Spain, Portugal and Italy. Their growth strategy is traditional and sales-oriented, mainly running through pharmacy retail partners.
     - type: text
       data: 
-        content: |
+        body: |
           To match the pace and competition in the global retail market, they need a more scalable and systematic approach to growth. In order to achieve this, they need to develop a growth model that relies on systems-thinking and leverages digital opportunities.
 
           Nordic Projekt has a strong team that focuses on brand awareness and sales, which can benefit perfectly from the growth-oriented, modern approach that Double has to offer.
@@ -20,7 +20,7 @@ sections:
   blocks:
     - type: text
       data:
-        content: |
+        body: |
           To enable and speed up international expansion, we need to find a scalable system that we can roll out, rinse and repeat in each new market we enter. By starting in one market we can find this repeatable template. Once this approach is validated, we can move towards unlocking new markets.
 
           We would need to work hand in hand with both marketing and sales departments to share current best practices and build out the growth system together with the team.
@@ -30,14 +30,41 @@ sections:
     - type: list1
       data:
         - title: Lead Gen Engine
-          content: |
+          body: |
             Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
         - title: Sales Funnel/Process
-          content: |
+          body: |
             Outbound and/or inbound marketing channels to repeatably bring in quality leads to the brand, and interest them in the product.
         - title: Retention & Referral
-          content: |
+          body: |
             A set of processes to onboard, activate customers, and create sharing/viral components in order for the client base to grow exponentially.
+
+- title: The B2B Growth Model
+  blocks:
+    - type: text
+      data:
+        type: lead
+        body: |
+          Although all Healthee Company brands in both B2B and B2C will require such a system, we'll start in B2B, Italian market for Nordic Projekt. Nordic Projekt already has a significant brand status and market share, it's possible to consider both outbound and inbound channels simultaneously.
+
+    - type: text
+      data:
+        body: |
+          ### Outbound Lead Gen Engine
+
+          To find qualified prospects and hand them over to the sales reps in an efficient way, there are three stages that need to be set up:
+
+    - type: list2
+      data:
+        - title: Prospecting
+          body: |
+            The process of locating places where your target audience is hanging out and finding their contact details to reach them. This part is easy to automate/outsource.
+        - title: Outreach
+          body: |
+            Through multiple channels we can reach out to the potential leads. Most popular is LinkedIn, but I think cold emailing and calling can also be very successful.
+        - title: Qualification
+          body: |
+            This is the stage where we need to hand-off the highly qualified leads to the actual sales representatives. These 'reps’ are in the business of relationship building and closing. The prior stages must be done by someone else the reps to keep them focused.
 
 how_we_work:
   title: How we work

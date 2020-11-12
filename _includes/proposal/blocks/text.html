@@ -1,5 +1,5 @@
 {% if include.data.type == "lead" %}
-<p class="lead">{{ include.data.content | markdownify | strip_html }}</p>
+<p class="lead">{{ include.data.body | markdownify | strip_html }}</p>
 {% else %}
-{{ include.data.content | markdownify }}
+{{ include.data.body | markdownify }}
 {% endif %}

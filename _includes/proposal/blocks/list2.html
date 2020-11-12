@@ -1,0 +1,16 @@
+{% for item in include.data %}
+<div class="d-flex">
+	<div class="checkmark d-flex mr-3">
+		<div class="w-auto position-relative">
+			<img class="fore" style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_fore.svg" />
+			<div class="back">
+				<img style="width: 30px; height: 30px;"  src="/assets/images/new-web/check_icon_back.png" />
+			</div>
+		</div>
+	</div>
+	<div class="pt-2">
+		<p class="lead"><strong>{{ item.title }}</strong></p>
+		<p>{{ item.body }}</p>
+	</div>
+</div>
+{% endfor %}

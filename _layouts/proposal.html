@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ "/assets/proposal.css" | relative_url }}">
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,7 +51,7 @@
 
     <!-- TODO: Move out to file -->
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         processSteps();
         onWindowsScroll();
       });
@@ -62,53 +62,56 @@
         let maxLength = last.offset().top - first.offset().top;
         let currentHeight = line.height();
 
-        console.log({line:line})
-      
-        $(window).on('resize', function() {
+        console.log({ line: line });
+
+        $(window).on("resize", function () {
           maxLength = last.offset().top - first.offset().top;
           currentHeight = line.height();
           const newHeight = Math.min(maxLength, currentHeight);
-          line.css('height', newHeight + 'px');
-        })
-      
-        $(window).on('scroll', function() {
+          line.css("height", newHeight + "px");
+        });
+
+        $(window).on("scroll", function () {
           maxLength = last.offset().top - first.offset().top;
           currentHeight = line.height();
           const overScreen = _isOverCenterScreen(first[0], 150);
           const newHeight = Math.min(maxLength, overScreen);
-      
+
           if (overScreen && newHeight > currentHeight) {
-            line.css('height', newHeight + 'px');
+            line.css("height", newHeight + "px");
           }
         });
       }
 
       function onWindowsScroll() {
-        $(window).on('scroll', _viewportAnimations);
+        $(window).on("scroll", _viewportAnimations);
       }
 
       function _viewportAnimations() {
-        $(".process-step").each(function() {
-          
+        $(".process-step").each(function () {
           if (_isOverCenterScreen(this, 150)) {
-            console.log('hola')
+            console.log("hola");
             $(this).addClass("active");
-           }
-        });
+          }
 
+          $(".checkmark").each(function () {
+            if (_isOverCenterScreen(this, 150)) {
+              $(this).addClass("active");
+            }
+          });
+        });
       }
 
       function _isOverCenterScreen(elem, offset) {
-        var windowCenter =  $(window).height() / 2;
+        var windowCenter = $(window).height() / 2;
         var elemTop = elem.getBoundingClientRect().top;
-        return (windowCenter + offset) > elemTop 
-          ? (windowCenter + offset) - elemTop 
+        return windowCenter + offset > elemTop
+          ? windowCenter + offset - elemTop
           : false;
       }
     </script>
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
