@@ -1,6 +1,7 @@
 ---
 title: Proposal1
 client_logo: /assets/images/proposals/double_logo.png
+password: password
 sections:
 - title: Situation
   blocks:

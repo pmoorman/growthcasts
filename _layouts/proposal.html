@@ -25,6 +25,10 @@
     ></script>
   </head>
   <body>
+
+    <!-- Login -->
+    {% include proposal/auth-login.html %}
+
     <!-- Hero section -->
     {% include proposal/section-hero.html %}
 
@@ -120,12 +124,28 @@
         $(".section-aos-offset").each(_setOasOffset);
       }
 
-      setOasOffset();
-      AOS.init();
+      const onLogin = () => {
+        sessionStorage.setItem('isLoggedIn', true)
+        $("#login-overlay").remove();
+        $("html").css("overflow", "");
 
-      $(window).resize(() => {
         setOasOffset();
+        AOS.init();
+
+        $(window).resize(() => {
+          setOasOffset();
+        })
+      }
+
+      $("#login-form").submit(function(e) {
+        if ($("#login-form #password").first().val() === "{{ page.password }}") {
+          onLogin();
+        }
       })
+
+      if (sessionStorage.getItem('isLoggedIn') === 'true') {
+        onLogin();
+      }
     </script>
   </body>
 </html>
