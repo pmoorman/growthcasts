@@ -18,7 +18,7 @@
 
 	{% for section in page.sections %}
 	{% assign id = section.title | replace: " " "-" | downcase %}
-	<section id="{{ id }}" {% if forloop.last == false %}class="pb-5 mb-5"{% endif %} style="margin-top: -180px;">
+	<section id="{{ id }}" {% if forloop.last == false %}class="pb-5 mb-5"{% endif %}>
 		<div class="container">
 
 			<!-- Sides -->
