@@ -17,7 +17,7 @@
 				<div class="logo-grid" style="display: grid; grid-template-columns: repeat(3, auto [col-start]); background-color: #e0e0e0; grid-gap: 1px;">
 					{% for logo in d.logos %}
 					<div style="background-color: white; padding: 70px 0px;">
-						<img style="width: 160px;" class="img-fluid" src="{{ logo.url | relative_url }}" />
+						<img data-aos="zoom-in" style="width: 160px;" class="img-fluid" src="{{ logo.url | relative_url }}" />
 					</div>
 					{% endfor %}
 				</div>

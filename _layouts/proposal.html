@@ -110,7 +110,22 @@
       }
     </script>
     <script>
+      function _setOasOffset() {
+        const title = $(this);
+        const height = $(window).innerHeight() + 50;
+        title.attr('data-aos-offset', height)
+      }
+
+      const setOasOffset = () => {
+        $(".section-aos-offset").each(_setOasOffset);
+      }
+
+      setOasOffset();
       AOS.init();
+
+      $(window).resize(() => {
+        setOasOffset();
+      })
     </script>
   </body>
 </html>
