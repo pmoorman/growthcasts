@@ -123,6 +123,10 @@ p.lead {
   line-height: 32px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .content-section {
   max-width: 512px;
 }
@@ -282,8 +286,11 @@ p.lead {
 }
 
 // Animations
-.animate-pulse {
+.animate-pulse-vertical {
   animation: pulse 2s infinite;
+}
+.animate-pulse-horizontal {
+  animation: pulsehorizontal 2s infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -304,6 +311,28 @@ p.lead {
   50% {
     -webkit-transform: translate(0, 10px);
             transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes pulsehorizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(10px, 0);
+            transform: translate(10px, 0); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes pulsehorizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(10px, 0);
+            transform: translate(10px, 0); }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
