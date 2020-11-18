@@ -128,5 +128,4 @@ sections:
           - title: B2B → B2C loops
             body: |
               By engaging customers with nice product extras and consumer CRM, you create power users that will return for upsells and returning purchase. Extra engagement with sharable content, product experience and sharing schemes will create brand ambassadors that bring in new customers for free.
-
 ---
