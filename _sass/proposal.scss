@@ -68,6 +68,7 @@ $container-max-widths: (
 
 html {
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 body {

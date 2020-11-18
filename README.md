@@ -23,9 +23,9 @@ Voor de Case studies
 - De Elugie animatie kan wel een triggered animatie zijn, die gewoon in 1 keer door loopt.
 
 Extra
-- Het 'read details' pijltje moet ook een knop zijn die naar het eerste kopje scrollt (smooth scroll.js)
-- BTW: Die bouncende vinkjes vind ik trouwens echt top snelheid hebben (die mag je zo laten)
-- Ik zal het vinkje nog even naar je sturen. Dan kan je die vervangen op alle plekken waar je nu een > gebruikt
+- DONE Het 'read details' pijltje moet ook een knop zijn die naar het eerste kopje scrollt (smooth scroll.js)
+- DONE BTW: Die bouncende vinkjes vind ik trouwens echt top snelheid hebben (die mag je zo laten)
+- DONE Ik zal het vinkje nog even naar je sturen. Dan kan je die vervangen op alle plekken waar je nu een > gebruikt
 
 # To get
 
