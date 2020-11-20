@@ -1,6 +1,6 @@
 ---
 title: Proposal1
-client_logo: /assets/images/proposals/double_logo.png
+client_logo: /assets/images/proposals/nordic_projekt_logo.svg
 password: password
 sections:
 - title: Situation

@@ -5,14 +5,14 @@
 {% assign button_color = include.button_color | default: "#1D97FF" %} 
 {% assign button_link = include.button_link | default: "#" %}
 
-<div class="mb-5">
+<div class="mb-4">
   <img
     class="img-fluid"
     style="height: {{ image_height }};"
     src="{{ image | relative_url }}"
   />
 </div>
-<p class="lead mb-5">{{ body | markdownify | strip_html }}</p>
+<p class="lead mb-4">{{ body | markdownify | strip_html }}</p>
 <a href="{{button_link}}">
   <p class="lead" style="color: {{button_color}};">{{ button_text }} ></p>
 </a>

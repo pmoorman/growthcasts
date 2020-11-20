@@ -16,7 +16,7 @@
 			<div class="col-md-12">
 				<div class="logo-grid" style="display: grid; grid-template-columns: repeat(3, auto [col-start]); background-color: #e0e0e0; grid-gap: 1px;">
 					{% for logo in d.logos %}
-					<div style="background-color: white; padding: 70px 0px;">
+					<div style="background-color: white; padding: 70px 0px; display: flex; justify-content: center;">
 						<img data-aos="fade" style="width: 160px;" class="img-fluid" src="{{ logo.url | relative_url }}" />
 					</div>
 					{% endfor %}
