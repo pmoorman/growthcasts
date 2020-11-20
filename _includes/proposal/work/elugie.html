@@ -1,7 +1,24 @@
 <div class="row justify-content-end">
 	<div class="col-md-6 px-0 position-relative">
-		<div>
-			<div style="width: 85.08px; height: 85.08px; border-radius: 100%; opacity: 90%; background: #2A3687; transform: rotate(10deg); z-index: -1; position: absolute; top: -60px; right: -35px;"></div>
+		<div class="elugie_animation" style="
+		position: absolute;
+		width: 200px;
+		height: 400px;
+    right: 75px;
+		top: -300px;">
+			<div class="elugie_animation-oval" id="elugie_animation-oval" style="z-index: -1; position: absolute;     left: -200px;
+			top: 0;">
+				<img src="/assets/images/proposals/elugie_animatie/oval.svg" />
+			</div>
+			<div class="elugie_animation-halfcircle" id="elugie_animation-halfcircle" style="z-index: -1; position: absolute; bottom: 0; left: 120px;">
+				<img src="/assets/images/proposals/elugie_animatie/geel_half_rondje.svg" />
+			</div>
+			<div class="elugie_animation-path1" id="elugie_animation-path1" style="z-index: -1; position: absolute; bottom: 6px; right: 4px;">
+				<img src="/assets/images/proposals/elugie_animatie/path_1.svg" />
+			</div>
+			<div class="elugie_animation-path2" id="elugie_animation-path2" style="z-index: -1; position: absolute; bottom: 20px; left: 120px;">
+				<img src="/assets/images/proposals/elugie_animatie/path_2.svg" />
+			</div>
 		</div>
 		{% include proposal/work/inner.html
 			image="/assets/images/proposals/Elugie-logo-dark.svg"
@@ -11,3 +28,73 @@
 		%}
 	</div>
 </div>
+
+<style>
+.elugie_animation-oval,
+.elugie_animation-path1,
+.elugie_animation-path2,
+.elugie_animation-halfcircle {
+	transition: .5s linear;
+}
+
+.elugie_animation.active .elugie_animation-oval {
+	animation: oval .5s linear both;
+}
+.elugie_animation.active .elugie_animation-halfcircle {
+	animation: opacity 0s linear both;
+	animation-delay: .4s;
+}
+.elugie_animation.active .elugie_animation-path1 {
+	animation: opacity .5s linear both;
+	animation-delay: .2s;
+}
+.elugie_animation.active .elugie_animation-path2 {
+	animation: opacity .5s linear both;
+	animation-delay: .5s;
+}
+
+@keyframes oval{
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	70% {
+		transform: translate(310px, 306px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(390px, 200px);
+	}
+}
+
+@keyframes opacity{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+
+<script>
+  (() => {
+    const elugieAnimation = document.querySelector(".elugie_animation");
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px",
+      threshold: 1,
+    };
+  
+		const callback = (entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					elugieAnimation.classList.add("active")
+				}
+			})
+    }
+    
+    const observer = new IntersectionObserver(callback, observerOptions);
+		observer.observe(elugieAnimation);
+  })()
+</script>
