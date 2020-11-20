@@ -2,7 +2,7 @@
 {% for item in include.data.items %}
 <div class="process-step d-flex justify-content-lg-between flex-column flex-lg-row {% if forloop.last == true %}pb-0{% endif %}">
 	<div class="d-flex align-items-center align-items-lg-start flex-column flex-lg-row">
-		<div class="step-col position-absolute" style="width: 70px; left: -120px;">
+		<div class="step-col position-absolute" style="width: 70px; left: -90px;">
 			<div class="step-number m-auto">{{ forloop.index }}</div>
 			<div class="step-checked position-absolute position-lg-relative"><img width="70" src="/assets/images/new-web/check_primary.svg" /></div>
 			{% if forloop.last == false %}
