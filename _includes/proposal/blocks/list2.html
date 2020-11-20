@@ -1,5 +1,5 @@
 {% for item in include.data.items %}
-<div class="d-flex">
+<div class="checkmark_list__item d-flex">
 	<div class="checkmark d-flex mr-3">
 		<div class="w-auto position-relative">
 			{% if include.data.type == "numbers" %}
@@ -16,7 +16,7 @@
 	</div>
 	<div class="pt-2">
 		<p class="lead" style="font-weight: 600;">{{ item.title }}</p>
-		<p>{{ item.body }}</p>
+		<p class="checkmark_list__item-body">{{ item.body }}</p>
 	</div>
 </div>
 {% endfor %}

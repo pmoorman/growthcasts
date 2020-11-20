@@ -4,7 +4,8 @@
   font-weight: 300;
   src: url("../assets/fonts/poppins-v8-latin-300.eot");
   src: local("Poppins Light"), local("Poppins-Light"),
-    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
@@ -17,7 +18,8 @@
   font-weight: 400;
   src: url("../assets/fonts/poppins-v8-latin-regular.eot");
   src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
@@ -30,7 +32,8 @@
   font-weight: 600;
   src: url("../assets/fonts/poppins-v8-latin-600.eot");
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
     url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
     url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
@@ -44,24 +47,30 @@
   font-weight: 200;
   src: url("../assets/fonts/noto-serif-jp-v7-latin-200.eot"); /* IE9 Compat Modes */
   src: local("Noto Serif JP ExtraLight"), local("NotoSerifJP-ExtraLight"),
-    url("../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff") format("woff"),
-    /* Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP") format("svg"); /* Legacy iOS */
+    url("../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/noto-serif-jp-v7-latin-200.woff") format("woff"),
+    /* Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP")
+      format("svg"); /* Legacy iOS */
 }
 
 $primary-color: #3497f3;
 $secondary-color: #181d33;
 $theme-colors: (
   primary: $primary-color,
-  secondary: $secondary-color
+  secondary: $secondary-color,
 );
 
 $container-max-widths: (
   md: 720px,
   lg: 960px,
-  xl: 1040px
+  xl: 1040px,
 ) !default;
 
 @import "vendors/bootstrap/bootstrap";
@@ -85,6 +94,11 @@ h1 {
   font-weight: 600;
   letter-spacing: -3.7px;
   line-height: 94px;
+  @include media-breakpoint-down(sm) {
+    font-size: 60px;
+    letter-spacing: -2.5px;
+    line-height: 72px;
+  }
 }
 
 h2 {
@@ -93,6 +107,11 @@ h2 {
   letter-spacing: -2.3px;
   line-height: 74px;
   margin-bottom: 30px;
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    letter-spacing: 0.9px;
+    line-height: 34px;
+  }
 }
 
 h3 {
@@ -101,6 +120,11 @@ h3 {
   letter-spacing: 1.5px;
   line-height: 56px;
   margin-bottom: 22px;
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    letter-spacing: 0.9px;
+    line-height: 34px;
+  }
 }
 
 h4 {
@@ -108,6 +132,11 @@ h4 {
   font-weight: 600;
   letter-spacing: 0.7px;
   line-height: 32px;
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    line-height: 32px;
+  }
 }
 
 p {
@@ -115,6 +144,11 @@ p {
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 28px;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+  }
 }
 
 p.lead {
@@ -122,6 +156,11 @@ p.lead {
   font-weight: 300;
   letter-spacing: 0.7px;
   line-height: 32px;
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
 }
 
 a:hover {
@@ -133,6 +172,17 @@ a:hover {
 }
 .container-narrow {
   max-width: 710px;
+}
+
+// Logo grid
+.logo_grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto [col-start]);
+  background-color: #e0e0e0;
+  grid-gap: 1px;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, auto [col-start]);
+  }
 }
 
 // TODO: Move out to own scss
@@ -209,6 +259,20 @@ a:hover {
   }
 }
 
+.process_step_list__item {
+  &-checkmark {
+    position: absolute;
+    left: -90px;
+  }
+  @include media-breakpoint-down(md) {
+    &-checkmark {
+      position: relative;
+      left: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 // TODO: Move to other file
 .checkmark .back img,
 .checkmark .fore {
@@ -223,7 +287,7 @@ a:hover {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
   position: absolute;
-  left: -35px;
+  left: -35px;  
 }
 .checkmark .fore,
 .checkmark img {
@@ -286,6 +350,19 @@ a:hover {
   }
 }
 
+.checkmark_list__item {
+  @include media-breakpoint-down(sm) {
+    .checkmark {
+      position: initial;
+    }
+    &-body {
+      width: calc(100% + 40px);
+      position: relative;
+      left: -45px;
+    }
+  }
+}
+
 // Animations
 .animate-pulse-vertical {
   animation: pulse 2s infinite;
@@ -297,43 +374,59 @@ a:hover {
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px); }
+    transform: translate(0, 15px);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px); }
+    transform: translate(0, 15px);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 @-webkit-keyframes pulsehorizontal {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0); }
+    transform: translate(15px, 0);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes pulsehorizontal {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0); }
+    transform: translate(15px, 0);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
