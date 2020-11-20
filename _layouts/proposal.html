@@ -24,6 +24,17 @@
       integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const doubleUtils = {
+        getDistancePercentage(el) {
+          const windowOffset = window.pageYOffset;
+          const elOffset = $(el).offset().top;
+          const distance = elOffset - windowOffset;
+          const windowHeight = window.outerHeight - 200;
+          return 100 - (distance / windowHeight) * 100;
+        }
+      }
+    </script>
   </head>
   <body>
 

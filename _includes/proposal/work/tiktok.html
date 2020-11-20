@@ -45,31 +45,32 @@
 </div>
 
 <script>
-  const observerElement = document.querySelector("#item-1");
+  (() => {
+    const observerElement = document.querySelector("#item-1");
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px 0px",
-    threshold: 0,
-  };
-
-  let listener;
-  const rotate = 30;
-  const observer = new IntersectionObserver((entry) => {
-    if (entry[0].intersectionRatio > 0) {
-      listener = window.addEventListener("scroll", function () {
-        const windowOffset = window.pageYOffset;
-        const elOffset = $(observerElement).offset().top;
-        const distance = elOffset - windowOffset;
-        const windowHeight = window.outerHeight - 200;
-        const distancePercentage = 100 - (distance / windowHeight) * 100;
-        const rotateDeg = `${(rotate / 100) * distancePercentage}deg`;
-        observerElement.style.transform = `rotate(${rotateDeg})`;
-        console.log({ distancePercentage, distance, windowOffset, elOffset });
-      });
-    } else {
-      // removes GSAP's ticker
-    }
-  }, observerOptions);
-  observer.observe(observerElement);
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px",
+      threshold: 0,
+    };
+  
+    let listener;
+    const rotate = 30;
+    const observer = new IntersectionObserver((entry) => {
+      if (entry[0].intersectionRatio > 0) {
+        listener = window.addEventListener("scroll", function () {
+          const windowOffset = window.pageYOffset;
+          const elOffset = $(observerElement).offset().top;
+          const distance = elOffset - windowOffset;
+          const windowHeight = window.outerHeight - 200;
+          const distancePercentage = 100 - (distance / windowHeight) * 100;
+          const rotateDeg = `${(rotate / 100) * distancePercentage}deg`;
+         // observerElement.style.transform = `rotate(${rotateDeg})`;
+        });
+      } else {
+        // removes GSAP's ticker
+      }
+    }, observerOptions);
+    observer.observe(observerElement);
+  })()
 </script>
