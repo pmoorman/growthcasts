@@ -31,6 +31,7 @@
 		}
 
 		let listener;
+
 		const callback = (entries) => {
 			entries.forEach(entry => {
 				if (entry.intersectionRatio > 0) {
@@ -41,13 +42,13 @@
 
 						switch (el.getAttribute("id")) {
 							case "soundcloud_clouds__cloud-1":
-								translateEl(el, `-${(100 / 100) * distancePercentage}`);
+								translateEl(el, `-${distancePercentage}`);
 								break;
 							case "soundcloud_clouds__cloud-2":
-								translateEl(el, `-${(100 / 100) * distancePercentage}`);
+								translateEl(el, `-${distancePercentage}`);
 								break;
 							case "soundcloud_clouds__cloud-3":
-								translateEl(el, `${(100 / 100) * distancePercentage}`);
+								translateEl(el, distancePercentage);
 								break;
 						}
 					});

@@ -1,37 +1,50 @@
 <div class="row justify-content-end">
   <div class="col-md-6 px-0 position-relative">
-    <div>
+    <div class="tiktok_elements">
       <div
-        id="item-1"
+        id="tiktok_elements__element-1"
+        class="tiktok_elements__element-1"
         style="
-          transform: rotate(-80deg);
+          transition: .2s all ease-in-out;
+          transform: rotate(-35deg);
           transform-origin: bottom left;
           z-index: -1;
           position: absolute;
-          bottom: 70px;
-          left: -50px;
+          bottom: 45px;
+          left: -40px;
+          opacity: 0.9;
         "
       >
         <img src="/assets/images/proposals/tiktok_animatie/rood_blokje.svg" />
       </div>
       <div
+        id="tiktok_elements__element-2"
+        class="tiktok_elements__element-2"
         style="
-          transform: rotate(-20deg);
+          transition: .1s all linear;
+          transform: rotate(35deg);
+          transform-origin: bottom right;
           z-index: -1;
           position: absolute;
-          top: 50px;
-          right: 0;
+          top: 10px;
+          right: -20px;
+          opacity: 0.9;
         "
       >
         <img src="/assets/images/proposals/tiktok_animatie/groen_blokje.svg" />
       </div>
       <div
+        id="tiktok_elements__element-3"
+        class="tiktok_elements__element-3"
         style="
-          transform: rotate(-330deg);
+          transition: .2s all ease-in-out;
+          transform-origin: bottom right;
+          transform: rotate(10deg);
           z-index: -1;
           position: absolute;
           bottom: -10px;
           right: 120px;
+          opacity: 0.9;
         "
       >
         <img src="/assets/images/proposals/tiktok_animatie/zwart_blokje.svg" />
@@ -46,7 +59,16 @@
 
 <script>
   (() => {
-    const observerElement = document.querySelector("#item-1");
+    const elOne = document.querySelector("#tiktok_elements__element-1");
+		const elTwo = document.querySelector("#tiktok_elements__element-2");
+		const elThree = document.querySelector("#tiktok_elements__element-3");
+
+    const rotateEl = (el, px) => {
+      const distancePercentage = doubleUtils.getDistancePercentage(el);
+      const deg = (px / 100) * distancePercentage;
+      const rotateDeg = distancePercentage > 60 ? `${px - deg}deg` : `${deg}deg`;
+			$(el).css("transform", `rotate(${rotateDeg})`);
+		}
 
     const observerOptions = {
       root: null,
@@ -55,22 +77,32 @@
     };
   
     let listener;
-    const rotate = 30;
-    const observer = new IntersectionObserver((entry) => {
-      if (entry[0].intersectionRatio > 0) {
-        listener = window.addEventListener("scroll", function () {
-          const windowOffset = window.pageYOffset;
-          const elOffset = $(observerElement).offset().top;
-          const distance = elOffset - windowOffset;
-          const windowHeight = window.outerHeight - 200;
-          const distancePercentage = 100 - (distance / windowHeight) * 100;
-          const rotateDeg = `${(rotate / 100) * distancePercentage}deg`;
-         // observerElement.style.transform = `rotate(${rotateDeg})`;
-        });
-      } else {
-        // removes GSAP's ticker
-      }
-    }, observerOptions);
-    observer.observe(observerElement);
+		const callback = (entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+				
+					listener = window.addEventListener("scroll", function () {
+						const el = entry.target;
+
+						switch (el.getAttribute("id")) {
+							case "tiktok_elements__element-1":
+                rotateEl(el, 40);
+								break;
+							case "tiktok_elements__element-2":
+                rotateEl(el, 40);
+								break;
+							case "tiktok_elements__element-3":
+                rotateEl(el, 40);
+								break;
+						}
+					});
+				}
+			})
+    }
+    
+    const observer = new IntersectionObserver(callback, observerOptions);
+		observer.observe(elOne);
+		observer.observe(elTwo);
+		observer.observe(elThree);
   })()
 </script>
