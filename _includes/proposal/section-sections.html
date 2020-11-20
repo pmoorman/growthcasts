@@ -1,9 +1,13 @@
 <div id="content-sections" class="mb-5 pb-5">
+
 	<div class="container" style="position: sticky; top: 20px; bottom: 20px;  height: 0; margin-bottom: 180px;">
-		<div class="section-aos-offset d-flex justify-content-end" data-aos="fade-zoom-in" data-aos-offset="1000">
+		
+		<div class="logo-sidebar section-aos-offset d-flex justify-content-end" data-aos="fade-zoom-in" data-aos-offset="1000" style="position: absolute; right: 0;">
 			<div class="d-flex flex-column align-items-center">
+
 				<img style="width: 160px;" class="img-fluid mb-5" src="{{ page.client_logo | relative_url }}" />
-				<div style="height: 30px; top: 15px; position: relative;">
+				
+				<div class="logo-sidebar__cross" style="height: 30px; top: 15px; position: relative;">
 					<div class="section-aos-offset" data-aos="fade-up-left" data-aos-delay="200">
 						<div style="border: 1px solid #181D33; width: 40px; transform: rotate(45deg);"></div>
 					</div>
@@ -11,19 +15,20 @@
 						<div style="border: 1px solid #51ABFF; width: 40px; transform: rotate(-45deg);"></div>
 					</div>
 				</div>
-				<img style="width: 160px;" data-aos="fade-up" data-aos-delay="300" class="section-aos-offset img-fluid mt-4" src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
+
+				<img class="logo-sidebar__double section-aos-offset img-fluid mt-4" style="width: 160px;" data-aos="fade-up" data-aos-delay="300"  src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
 			</div>
 		</div>
 	</div>
 
 	{% for section in page.sections %}
 	{% assign id = section.title | replace: " " "-" | downcase %}
-	<section id="{{ id }}" {% if forloop.last == false %}class="pb-5 mb-5"{% endif %}>
+	<section id="{{ id }}" class="content-section-{{ forloop.index }} {% if forloop.last == false %}pb-5 mb-5{% endif %}">
 		<div class="container">
 
 			<!-- Sides -->
-			<div style="position: sticky; top: 20px; height: 0; margin-bottom: 64px;">
-				<div class="d-flex justify-content-between">
+			<div style="position: sticky; top: 20px; margin-bottom: 64px;">
+				<div class="d-flex justify-content-between" style="position: absolute; left: 0;">
 					<h4 class="section-aos-offset" style="max-width: 200px; position: relative; left: -80px" data-aos="fade-zoom-in" data-aos-offset="1000">{{ section.title }}</h4>
 				</div>
 			</div>
