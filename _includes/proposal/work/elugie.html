@@ -6,8 +6,7 @@
 		height: 400px;
     right: 75px;
 		top: -300px;">
-			<div class="elugie_animation-oval" id="elugie_animation-oval" style="z-index: -1; position: absolute;     left: -200px;
-			top: 0;">
+			<div class="elugie_animation-oval" id="elugie_animation-oval" style="z-index: -1; position: absolute; left: -80px; top: 0;">
 				<img src="/assets/images/proposals/elugie_animatie/oval.svg" />
 			</div>
 			<div class="elugie_animation-halfcircle" id="elugie_animation-halfcircle" style="z-index: -1; position: absolute; bottom: 0; left: 120px;">
@@ -34,23 +33,24 @@
 .elugie_animation-path1,
 .elugie_animation-path2,
 .elugie_animation-halfcircle {
+	opacity: 0;
 	transition: .5s linear;
 }
 
 .elugie_animation.active .elugie_animation-oval {
-	animation: oval .5s linear both;
+	animation: oval .8s linear both;
 }
 .elugie_animation.active .elugie_animation-halfcircle {
 	animation: opacity 0s linear both;
-	animation-delay: .4s;
+	animation-delay: .6s;
 }
 .elugie_animation.active .elugie_animation-path1 {
-	animation: opacity .5s linear both;
-	animation-delay: .2s;
+	animation: opacity .8s linear both;
+	animation-delay: .5s;
 }
 .elugie_animation.active .elugie_animation-path2 {
-	animation: opacity .5s linear both;
-	animation-delay: .5s;
+	animation: opacity .8s linear both;
+	animation-delay: .7s;
 }
 
 @keyframes oval{
@@ -59,11 +59,12 @@
 		opacity: 0;
 	}
 	70% {
-		transform: translate(310px, 306px);
+		transform: translate(190px, 306px);
 		opacity: 1;
 	}
 	100% {
-		transform: translate(390px, 200px);
+		transform: translate(270px, 200px);
+		opacity: 1;
 	}
 }
 
