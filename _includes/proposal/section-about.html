@@ -1,6 +1,6 @@
 {% assign d = page.about | default: site.data.proposal.about %}
 
-<section id="about" class="my-5 py-5" style="overflow: hidden;">
+<section id="about" class="about my-5 py-5" style="overflow: hidden;">
 	<div class="container position-relative">
 
 		<div>
@@ -8,10 +8,10 @@
 		</div>
 
 		<div class="row justify-content-center" style="margin-top: 150px; margin-bottom: 150px;">
-			<img class="img-fluid" style="height: 285px; position: absolute; bottom: 220px; left: -14%;" src="{{ d.image_1 | relative_url }}" />
+			<img class="about__bg_parallax_img img-fluid" style="height: 205px; position: absolute; bottom: 220px; left: -14%;" src="{{ d.image_1 | relative_url }}" />
+			<img class="about__bg_parallax_img img-fluid" style="height: 237px; position: absolute; top: 0; right: -14%;" src="{{ d.image_3 | relative_url }}" />
+			<img class="about__bg_parallax_img img-fluid" style="height: 110px; position: absolute; right: -2%; top: 400px;" src="{{ d.image_4 | relative_url }}" />
 			<img class="img-fluid" style="height: 341px;" src="{{ d.image_2 | relative_url }}" />
-			<img class="img-fluid" style="height: 317px; position: absolute; top: 0; right: -14%;" src="{{ d.image_3 | relative_url }}" />
-			<img class="img-fluid" style="height: 160px; position: absolute; right: -2%; top: 400px;" src="{{ d.image_4 | relative_url }}" />
 		</div>
 
 		<div class="row justify-content-end">
@@ -22,3 +22,10 @@
 
 	</div>
 </section>
+
+<script>
+	(() => {
+		const images = document.querySelectorAll('.about__bg_parallax_img');
+		images.forEach(image => new simpleParallax(image, { scale: 1.5 }))
+	})()
+</script>

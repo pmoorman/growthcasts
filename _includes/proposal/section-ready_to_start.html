@@ -71,6 +71,8 @@
 </section>
 
 <script>
-	const image = document.getElementsByClassName('ready-to-start__bg_parallax');
-	new simpleParallax(image, { scale: 1.1 });
+	(() => {
+		const image = document.getElementsByClassName('ready-to-start__bg_parallax');
+		new simpleParallax(image, { scale: 1.1 });
+	})()
 </script>
