@@ -137,7 +137,7 @@
       }
 
       const onLogin = () => {
-        sessionStorage.setItem('isLoggedIn', true)
+        sessionStorage.setItem('isLoggedIn', "{{ page.password }}")
         $("#login-overlay").remove();
         $("html").css("overflow", "");
 
@@ -155,8 +155,12 @@
         }
       })
 
-      if (sessionStorage.getItem('isLoggedIn') === 'true') {
+      if (sessionStorage.getItem('isLoggedIn') === "{{ page.password }}") {
         onLogin();
+      }
+
+      if ("{{ page.password }}" === "") {
+        onLogin()
       }
     </script>
 
@@ -198,15 +202,6 @@
                   
                 }
               });
-              // Each entry describes an intersection change for one observed
-              // target element:
-              //   entry.boundingClientRect
-              //   entry.intersectionRatio
-              //   entry.intersectionRect
-              //   entry.isIntersecting
-              //   entry.rootBounds
-              //   entry.target
-              //   entry.time
             }
             
           });
