@@ -17,7 +17,7 @@
 				<div class="logo-grid" style="display: grid; grid-template-columns: repeat(3, auto [col-start]); background-color: #e0e0e0; grid-gap: 1px;">
 					{% for logo in d.logos %}
 					<div style="background-color: white; padding: 70px 0px; display: flex; justify-content: center;">
-						<img data-aos="fade" style="width: 160px;" class="img-fluid" src="{{ logo.url | relative_url }}" />
+						<img data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 150 }}" data-aos-duration="500" data-aos-easing="ease-in-out" style="max-width: 160px; max-height: 80px;" class="img-fluid" src="{{ logo.url | relative_url }}" />
 					</div>
 					{% endfor %}
 				</div>
