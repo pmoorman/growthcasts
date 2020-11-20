@@ -1,9 +1,15 @@
 {% assign d = page.ready_to_start | default: site.data.proposal.ready_to_start %}
 
 <section id="ready-to-start" class="my-5 py-5">
-	<div>
-		<img style="position: absolute; left: 50%; transform: translateX(-50%);" src="/assets/images/proposals/blokjes-ready_to_start-1.png" />
-		<img style="position: absolute; left: 50%; transform: translateX(-50%);" src="/assets/images/proposals/blokjes-ready_to_start-2.png" />
+	
+
+	<div class="ready-to-start__bg" style="top: -150px; position: relative;">
+		<div style="position: absolute; left: 50%; transform: translateX(-50%);  width: 100%; text-align: center;">
+			<img class="ready-to-start__bg_parallax" src="/assets/images/proposals/blokjes-ready_to_start-1.png" />
+		</div>
+		<div style="position: absolute; left: 50%; transform: translateX(-50%); width: 100%; text-align: center;">
+			<img style="width: 100%;" src="/assets/images/proposals/blokjes-ready_to_start-2.png" />
+		</div>
 	</div>
 	<div class="container">
 
@@ -63,3 +69,8 @@
 
 	</div>
 </section>
+
+<script>
+	const image = document.getElementsByClassName('ready-to-start__bg_parallax');
+	new simpleParallax(image, { scale: 1.1 });
+</script>
