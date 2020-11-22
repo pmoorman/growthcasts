@@ -30,6 +30,7 @@
     padding-left: 71px;
     width: calc(50vw - 23px);
     @include media-breakpoint-down(md) {
+      height: 127px;
       width: calc(100vw);
       margin-left: -15px;
       padding-left: 0;
