@@ -2,6 +2,9 @@
   overflow: hidden;
   &__inner {
     min-height: calc(100vh + 10px);
+    @include media-breakpoint-down(md) {
+      min-height: calc(100vh - 50px);
+    }
   }
   &__subtitle {
     line-height: 60px;
