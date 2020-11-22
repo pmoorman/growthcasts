@@ -164,54 +164,6 @@
       }
     </script>
 
-    <script>
-      (() => {
-        const secondContent = document.querySelector(".content-section-2");
-        const sidebarLogo = $(".logo-sidebar__double");
-        sidebarLogo.css("visibility", "hidden");
-        sidebarLogoAosAttr = {
-          "data-aos": sidebarLogo.attr("data-aos"),
-          "data-aos-delay": sidebarLogo.attr("data-aos-delay"),
-          "data-aos-offset": sidebarLogo.attr("data-aos-offset")
-        }
-        Object.keys(sidebarLogoAosAttr).forEach(key => {
-          sidebarLogo.removeAttr(key)
-        })
-  
-        const options = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0
-        }
-  
-        const callback = (entries, observer) => {
-          entries.forEach(entry => {
-            console.log(entry)
-            if (entry.intersectionRatio > 0) {
-              console.log(entry)
-
-              listener = window.addEventListener("scroll", function () {
-                const windowOffset = window.pageYOffset;
-                const elOffset = $(secondContent).offset().top + 150;
-                const distance = elOffset - windowOffset;
-                if (distance < 0) {
-                  sidebarLogo.css("visibility", "unset");
-                  Object.keys(sidebarLogoAosAttr).forEach(key => {
-                    sidebarLogo.attr(key, sidebarLogoAosAttr[key])
-                  })
-                  
-                }
-              });
-            }
-            
-          });
-        }
-        
-        const observer = new IntersectionObserver(callback, options);
-  
-        observer.observe(secondContent)
-      })()
-      
-    </script>
+    
   </body>
 </html>

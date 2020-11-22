@@ -1,26 +1,26 @@
 {% assign d = page.footer | default: site.data.proposal.footer %}
 
-<footer class="pt-5 mt-5">
+<footer class="footer pt-5 mt-5">
 	<div class="container position-relative">
 		<div class="row align-items-center">
 			<div class="col-md-6">
-				<div style="position: absolute; z-index: -1; top: -421px; left: -81px;" data-aos="fade">
-					<img class="img-fluid" style="width: 440px;" src="{{ d.person_image | relative_url }}" />
+				<div class="footer__person" data-aos="fade">
+					<img class="img-fluid" src="{{ d.person_image | relative_url }}" />
 				</div>
 				<h2>{{ d.title }}</h2>
 				{{ d.body | markdownify | strip_html }}
 				<div class="my-5">
 					<div class="mb-3">
-						<img class="img-fluid" style="height: 28px;" src="{{ d.person_name_image | relative_url }}" />
+						<img class="footer__person__name_img" src="{{ d.person_name_image | relative_url }}" />
 					</div>
-					<p class="mb-0" style="font-size: 18px; font-weight: 600;">{{ d.person_name }}</p>
-					<p style="font-size: 14px; font-weight: 300;">{{ d.person_title }}</p>
+					<p class="footer__person__name mb-0">{{ d.person_name }}</p>
+					<p class="footer__person__title">{{ d.person_title }}</p>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<a href="mailto:{{d.mail_address}}" class="text-white d-flex flex-column justify-content-center" style="height: 270px; background: #3497F3; padding-left: 71px; width: calc(50vw - 23px);">
+				<a href="mailto:{{d.mail_address}}" class="footer__button footer__button--1 text-white d-flex flex-column justify-content-center">
 					<div class="d-flex align-items-center">
-						<div style="font-size: 42px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.mail_button_title }}</div>
+						<div class="footer__button__title">{{ d.mail_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
@@ -29,9 +29,9 @@
 					</div>
 					<p class="mb-0">{{ d.mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{d.call_phone_number}}" class="text-white d-flex flex-column justify-content-center" style="height: 270px; background: #181D33; padding-left: 71px; width: calc(50vw - 23px);">
+				<a href="tel:{{d.call_phone_number}}" class="footer__button footer__button--2 text-white d-flex flex-column justify-content-center">
 					<div class="d-flex align-items-center">
-						<div style="font-size: 42px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.call_button_title }}</div>
+						<div class="footer__button__title">{{ d.call_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}

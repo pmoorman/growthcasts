@@ -1,65 +1,3 @@
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../assets/fonts/poppins-v8-latin-300.eot");
-  src: local("Poppins Light"), local("Poppins-Light"),
-    url("../assets/fonts/poppins-v8-latin-300.eot?#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
-    url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
-    url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
-    url("../assets/fonts/poppins-v8-latin-300.svg#Poppins") format("svg");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/poppins-v8-latin-regular.eot");
-  src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
-    url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
-    url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
-    url("../assets/fonts/poppins-v8-latin-regular.svg#Poppins") format("svg");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../assets/fonts/poppins-v8-latin-600.eot");
-  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../assets/fonts/poppins-v8-latin-600.eot?#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
-    url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
-    url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
-    url("../assets/fonts/poppins-v8-latin-600.svg#Poppins") format("svg");
-}
-
-/* noto-serif-jp-200 - latin */
-@font-face {
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../assets/fonts/noto-serif-jp-v7-latin-200.eot"); /* IE9 Compat Modes */
-  src: local("Noto Serif JP ExtraLight"), local("NotoSerifJP-ExtraLight"),
-    url("../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../assets/fonts/noto-serif-jp-v7-latin-200.woff") format("woff"),
-    /* Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP")
-      format("svg"); /* Legacy iOS */
-}
-
 $primary-color: #3497f3;
 $secondary-color: #181d33;
 $theme-colors: (
@@ -74,6 +12,26 @@ $container-max-widths: (
 ) !default;
 
 @import "vendors/bootstrap/bootstrap";
+@import "new_web/generic/font";
+
+// Sections
+@import "proposal/about";
+@import "proposal/footer";
+@import "proposal/hero";
+@import "proposal/how_we_work";
+@import "proposal/pricing";
+@import "proposal/proud_work";
+@import "proposal/ready_to_start";
+@import "proposal/content_sections";
+
+// Components
+@import "components/logo_grid";
+
+.box-with-shadow {
+  height: 100%;
+  border: 1px solid #d4d7e1;
+  box-shadow: 8px 8px 0 0 rgba(148, 154, 180, 0.4);
+}
 
 html {
   overflow-y: auto;
@@ -89,80 +47,6 @@ body {
   line-height: 28px;
 }
 
-h1 {
-  font-size: 100px;
-  font-weight: 600;
-  letter-spacing: -3.7px;
-  line-height: 94px;
-  @include media-breakpoint-down(sm) {
-    font-size: 60px;
-    letter-spacing: -2.5px;
-    line-height: 72px;
-  }
-}
-
-h2 {
-  font-size: 64px;
-  font-weight: 600;
-  letter-spacing: -2.3px;
-  line-height: 74px;
-  margin-bottom: 30px;
-  @include media-breakpoint-down(sm) {
-    font-size: 28px;
-    letter-spacing: 0.9px;
-    line-height: 34px;
-  }
-}
-
-h3 {
-  font-size: 42px;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  line-height: 56px;
-  margin-bottom: 22px;
-  @include media-breakpoint-down(sm) {
-    font-size: 28px;
-    letter-spacing: 0.9px;
-    line-height: 34px;
-  }
-}
-
-h4 {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  line-height: 32px;
-  @include media-breakpoint-down(sm) {
-    font-size: 18px;
-    letter-spacing: 0.6px;
-    line-height: 32px;
-  }
-}
-
-p {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: 28px;
-  @include media-breakpoint-down(sm) {
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    line-height: 24px;
-  }
-}
-
-p.lead {
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 0.7px;
-  line-height: 32px;
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-  }
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -172,17 +56,6 @@ a:hover {
 }
 .container-narrow {
   max-width: 710px;
-}
-
-// Logo grid
-.logo_grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto [col-start]);
-  background-color: #e0e0e0;
-  grid-gap: 1px;
-  @include media-breakpoint-down(md) {
-    grid-template-columns: repeat(2, auto [col-start]);
-  }
 }
 
 // TODO: Move out to own scss
@@ -287,7 +160,7 @@ a:hover {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
   position: absolute;
-  left: -35px;  
+  left: -35px;
 }
 .checkmark .fore,
 .checkmark img {

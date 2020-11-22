@@ -1,47 +1,42 @@
-<div id="content-sections" class="mb-5 pb-5">
+<div id="content-sections" class="content_sections mb-5 pb-5">
 
-	<div class="container d-none d-md-block" style="position: sticky; top: 150px; bottom: 20px;  height: 0; margin-bottom: 180px;">
+	<div class="content_sections__inner container d-none d-md-block">
 		
-		<div class="logo-sidebar section-aos-offset d-flex justify-content-end" data-aos="fade-zoom-in" data-aos-offset="1000" style="position: absolute; right: 0;">
+		<div class="content_sections__logo_sidebar section-aos-offset d-flex justify-content-end" data-aos="fade-zoom-in" data-aos-offset="1000">
 			<div class="d-flex flex-column align-items-center">
 
-				<img style="width: 160px;" class="img-fluid mb-4" src="{{ page.client_logo | relative_url }}" />
+				<img class="content_sections__logo_sidebar__client_logo img-fluid mb-4" src="{{ page.client_logo | relative_url }}" />
 				
-				<div class="logo-sidebar__cross" style="height: 30px; top: 15px; position: relative;">
+				<div class="content_sections__logo_sidebar__cross">
 					<div class="section-aos-offset" data-aos="fade-up-left" data-aos-delay="200">
-						<div style="
-							transform: rotate(45deg);
-							background: black;
-							height: 1px;
-							width: 40px; 
-							transform: rotate(45deg);">
+						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--1">
 						</div>
 					</div>
 					<div class="section-aos-offset" data-aos="fade-down-left" data-aos-delay="200">
-						<div style="
-							transform: rotate(45deg);
-							background: #51ABFF;
-							height: 1px;
-							width: 40px; 
-							transform: rotate(-45deg);">
+						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--2">
 						</div>
 					</div>
 				</div>
 
-				<img class="logo-sidebar__double section-aos-offset img-fluid mt-4" style="width: 160px;" data-aos="fade-up" data-aos-delay="300"  src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
+				<img 
+					class="content_sections__logo_sidebar__double_logo section-aos-offset img-fluid mt-4" 
+					data-aos="fade-up" 
+					data-aos-delay="300"  
+					src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" 
+				/>
 			</div>
 		</div>
 	</div>
 
 	{% for section in page.sections %}
 	{% assign id = section.title | replace: " " "-" | downcase %}
-	<section id="{{ id }}" class="content-section-{{ forloop.index }} {% if forloop.last == false %}pb-5 mb-5{% endif %}">
+	<section id="{{ id }}" class="content_section content_section-{{ forloop.index }} {% if forloop.last == false %}pb-5 mb-5{% endif %}">
 		<div class="container">
 
 			<!-- Sides -->
-			<div class="d-none d-md-block" style="position: sticky; top: 150px; margin-bottom: 64px;">
-				<div class="d-flex justify-content-between" style="position: absolute; left: 0;">
-					<h4 class="section-aos-offset" style="max-width: 200px; position: relative; left: -80px" data-aos="fade-zoom-in" data-aos-offset="1000">{{ section.title }}</h4>
+			<div class="content_sections__nav d-none d-md-block">
+				<div class="content_sections__nav__inner d-flex justify-content-between">
+					<h4 class="content_sections__nav__title section-aos-offset" data-aos="fade-zoom-in" data-aos-offset="1000">{{ section.title }}</h4>
 				</div>
 			</div>
 
@@ -63,3 +58,53 @@
 	</section>
 	{% endfor %}
 </div>
+
+<script>
+	(() => {
+		const secondContent = document.querySelector(".content_section-2");
+		const sidebarLogo = $(".content_sections__logo_sidebar__double_logo");
+		sidebarLogo.css("visibility", "hidden");
+		sidebarLogoAosAttr = {
+			"data-aos": sidebarLogo.attr("data-aos"),
+			"data-aos-delay": sidebarLogo.attr("data-aos-delay"),
+			"data-aos-offset": sidebarLogo.attr("data-aos-offset")
+		}
+		Object.keys(sidebarLogoAosAttr).forEach(key => {
+			sidebarLogo.removeAttr(key)
+		})
+
+		const options = {
+			root: null,
+			rootMargin: '0px',
+			threshold: 0
+		}
+
+		const callback = (entries, observer) => {
+			entries.forEach(entry => {
+				console.log(entry)
+				if (entry.intersectionRatio > 0) {
+					console.log(entry)
+
+					listener = window.addEventListener("scroll", function () {
+						const windowOffset = window.pageYOffset;
+						const elOffset = $(secondContent).offset().top + 150;
+						const distance = elOffset - windowOffset;
+						if (distance < 0) {
+							sidebarLogo.css("visibility", "unset");
+							Object.keys(sidebarLogoAosAttr).forEach(key => {
+								sidebarLogo.attr(key, sidebarLogoAosAttr[key])
+							})
+							
+						}
+					});
+				}
+				
+			});
+		}
+		
+		const observer = new IntersectionObserver(callback, options);
+
+		observer.observe(secondContent)
+	})()
+	
+</script>

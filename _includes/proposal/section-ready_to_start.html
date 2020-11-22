@@ -1,16 +1,16 @@
 {% assign d = page.ready_to_start | default: site.data.proposal.ready_to_start %}
 
-<section id="ready-to-start" class="my-5 pt-5" style="overflow: hidden; padding-bottom: 150px;">
+<section id="ready-to-start" class="ready_to_start my-5 pt-5">
 	
-
-	<div class="ready_to_start__bg" style="top: -150px; position: relative;">
-		<div style="position: absolute; left: 50%; transform: translateX(-50%);  width: 100%; text-align: center;">
-			<img style="max-width: 1440px;" class="ready_to_start__bg_parallax-1" src="/assets/images/proposals/blokjes-ready_to_start-1.png" />
+	<div class="ready_to_start__bg">
+		<div class="ready_to_start__bg_parallax ready_to_start__bg_parallax--1">
+			<img src="/assets/images/proposals/blokjes-ready_to_start-1.png" />
 		</div>
-		<div style="position: absolute; left: 50%; transform: translateX(-50%); width: 100%; text-align: center;">
-			<img style="max-width: 1100px;"  class="ready_to_start__bg_parallax-2" src="/assets/images/proposals/blokjes-ready_to_start-2.png" />
+		<div class="ready_to_start__bg_parallax ready_to_start__bg_parallax--2">
+			<img src="/assets/images/proposals/blokjes-ready_to_start-2.png" />
 		</div>
 	</div>
+
 	<div class="container">
 
 		<div class="row text-center justify-content-center">
@@ -21,9 +21,9 @@
 
 		<div class="d-flex flex-column align-items-center my-5">
 			<div style="max-width: 100%; width: 512px;">
-				<a href="mailto:{{d.mail_address}}" class="text-white text-center d-flex flex-column align-items-center justify-content-center w-100" style="height: 156px; background: #3497F3;">
+				<a href="mailto:{{d.mail_address}}" class="ready_to_start__button ready_to_start__button--1 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
 					<div class="d-flex align-items-center">
-						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.mail_button_title }}</div>
+						<div class="ready_to_start__button__title">{{ d.mail_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
@@ -32,9 +32,9 @@
 					</div>
 					<p class="mb-0">{{ d.mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{d.call_phone_number}}" class="text-white text-center d-flex flex-column align-items-center justify-content-center w-100" style="height: 156px; background: #181D33;">
+				<a href="tel:{{d.call_phone_number}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
 					<div class="d-flex align-items-center">
-						<div style="font-size: 32px; font-weight: 300; line-height: 48px; letter-spacing: 1.1px;">{{ d.call_button_title }}</div>
+						<div class="ready_to_start__button__title">{{ d.call_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
@@ -43,16 +43,16 @@
 					</div>
 					<p class="mb-0">{{ d.call_button_subtitle }}</p>
 				</a>
-				<div class="d-flex flex-column my-4 w-100 position-relative">
-					<div class="mb-3" style="position: absolute; left: -65px; top: -90px;">
-						<img class="img-fluid" style="height: 130px;" src="{{ d.person_image | relative_url }}" />
+				<div class="ready_to_start__person d-flex flex-column my-4 w-100 position-relative">
+					<div class="ready_to_start__person__img mb-3">
+						<img class="img-fluid" src="{{ d.person_image | relative_url }}" />
 					</div>
-					<div style="left: 90px; position: relative;">
-						<div class="mb-3">
-							<img class="img-fluid" style="height: 28px;" src="{{ d.person_name_image | relative_url }}" />
+					<div class="ready_to_start__person__meta">
+						<div class="ready_to_start__person__name_img mb-3">
+							<img class="img-fluid" src="{{ d.person_name_image | relative_url }}" />
 						</div>
-						<p class="mb-0" style="font-size: 18px; font-weight: 600;">{{ d.person_name }}</p>
-						<p style="font-size: 14px; font-weight: 300;">{{ d.person_title }}</p>
+						<p class="ready_to_start__person__name mb-0">{{ d.person_name }}</p>
+						<p class="ready_to_start__person__title">{{ d.person_title }}</p>
 					</div>
 				</div>
 			</div>
@@ -72,8 +72,8 @@
 
 <script>
 	(() => {
-		const item1 = document.getElementsByClassName('ready_to_start__bg_parallax-1');
-		const item2 = document.getElementsByClassName('ready_to_start__bg_parallax-2');
+		const item1 = document.querySelector('.ready_to_start__bg_parallax--1 img');
+		const item2 = document.querySelector('.ready_to_start__bg_parallax--2 img');
 		new simpleParallax(item1, { scale: 1.1 });
 		new simpleParallax(item2, { scale: 1.3 });
 	})()

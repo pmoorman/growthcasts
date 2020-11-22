@@ -1,0 +1,15 @@
+.logo_grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto [col-start]);
+  background-color: #e0e0e0;
+  grid-gap: 1px;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, auto [col-start]);
+	}
+	&__item {
+		background-color: white; padding: 70px 20px; display: flex; justify-content: center;
+		img {
+			max-width: 160px; max-height: 80px;
+		}
+	}
+}
