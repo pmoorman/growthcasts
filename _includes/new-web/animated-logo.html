@@ -36,8 +36,22 @@
 
 <script>
 (() => {
-  setTimeout(() => {
-    $('.animated-logo.not-scroll').addClass('active');
-  }, 500);
+  const animatedLogo = document.querySelector('.animated-logo');
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px 0px",
+    threshold: 1,
+  };
+
+  const callback = (entries) => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        animatedLogo.classList.add("active");
+      }
+    })
+  }
+  
+  const observer = new IntersectionObserver(callback, observerOptions);
+  observer.observe(animatedLogo);
 })()
 </script>
