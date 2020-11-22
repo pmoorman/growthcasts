@@ -5,7 +5,7 @@
     bottom: -33%;
     left: -90px;
   }
-  &__cloud-3 {
+  &__cloud-2 {
     z-index: -1;
     position: absolute;
     top: -105px;
@@ -16,7 +16,22 @@
     position: absolute;
     bottom: -40px;
     right: 170px;
-  }
+	}
+	@include media-breakpoint-down(md) {
+		&__cloud-1 {
+			bottom: 0;
+			left: initial;
+			right: -50px;
+		}
+		&__cloud-2 {
+			top: -105px;
+			right: 30%;
+		}
+		&__cloud-3 {
+			bottom: -60px;
+			right: initial;
+		}
+	}
 }
 
 #work-sendcloud {

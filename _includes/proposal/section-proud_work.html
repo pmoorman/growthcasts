@@ -10,7 +10,7 @@
 		</div>
 
 		{% for item in d.items %}
-			<div id="work-{{item.name}}" class="py-5">
+			<div id="work-{{item.name}}" class="proud_work__item py-5">
 				{% assign partial = "proposal/work/" | append: item.name | append: ".html" %}
 				{% include {{ partial }} %}
 			</div>

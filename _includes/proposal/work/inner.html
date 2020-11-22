@@ -10,7 +10,7 @@
     src="{{ image | relative_url }}"
   />
 </div>
-<p class="lead mb-4 text-center text-md-left">{{ body | markdownify | strip_html }}</p>
+<p class="lead mb-4 text-center text-md-left px-4 px-md-0">{{ body | markdownify | strip_html }}</p>
 <a class="text-center text-md-left" href="{{button_link}}">
   <p class="lead" style="color: {{button_color}};">{{ button_text }} ></p>
 </a>

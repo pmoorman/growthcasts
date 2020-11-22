@@ -26,6 +26,19 @@
       bottom: -10px;
       right: 120px;
     }
+    @include media-breakpoint-down(md) {
+      &-1 {
+        bottom: 135px;
+        left: -10px;
+      }
+      &-2 {
+        right: -40px;
+      }
+      &-3 {
+        bottom: -25px;
+        right: 55px;
+      }
+    }
   }
 }
 
