@@ -7,12 +7,12 @@
 
 				<img class="content_sections__logo_sidebar__client_logo img-fluid mb-4" src="{{ page.client_logo | relative_url }}" />
 				
-				<div class="content_sections__logo_sidebar__cross">
-					<div class="section-aos-offset" data-aos="fade-up-left" data-aos-delay="200">
+				<div class="content_sections__logo_sidebar__cross" style="opacity: 0;">
+					<div class="section-aos-offset">
 						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--1">
 						</div>
 					</div>
-					<div class="section-aos-offset" data-aos="fade-down-left" data-aos-delay="200">
+					<div class="section-aos-offset">
 						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--2">
 						</div>
 					</div>
@@ -20,8 +20,7 @@
 
 				<img 
 					class="content_sections__logo_sidebar__double_logo section-aos-offset img-fluid mt-4" 
-					data-aos="fade-up" 
-					data-aos-delay="300"  
+					style="opacity: 0;"
 					src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" 
 				/>
 			</div>
@@ -63,15 +62,7 @@
 	(() => {
 		const secondContent = document.querySelector(".content_section-2");
 		const sidebarLogo = $(".content_sections__logo_sidebar__double_logo");
-		sidebarLogo.css("visibility", "hidden");
-		sidebarLogoAosAttr = {
-			"data-aos": sidebarLogo.attr("data-aos"),
-			"data-aos-delay": sidebarLogo.attr("data-aos-delay"),
-			"data-aos-offset": sidebarLogo.attr("data-aos-offset")
-		}
-		Object.keys(sidebarLogoAosAttr).forEach(key => {
-			sidebarLogo.removeAttr(key)
-		})
+		const sidebarCross = $(".content_sections__logo_sidebar__cross");
 
 		const options = {
 			root: null,
@@ -79,26 +70,24 @@
 			threshold: 0
 		}
 
+		let listener = {}
 		const callback = (entries, observer) => {
 			entries.forEach(entry => {
-				console.log(entry)
 				if (entry.intersectionRatio > 0) {
-					console.log(entry)
-
-					listener = window.addEventListener("scroll", function () {
-						const windowOffset = window.pageYOffset;
-						const elOffset = $(secondContent).offset().top + 150;
-						const distance = elOffset - windowOffset;
-						if (distance < 0) {
-							sidebarLogo.css("visibility", "unset");
-							Object.keys(sidebarLogoAosAttr).forEach(key => {
-								sidebarLogo.attr(key, sidebarLogoAosAttr[key])
-							})
-							
+					listener = () => {
+						const distancePercentage = doubleUtils.getDistancePercentage(entry.target);
+						if (distancePercentage > 90) {
+							sidebarLogo.css("opacity", 1);
+							sidebarCross.css("opacity", 1);
+						} else {
+							sidebarLogo.css("opacity", 0);
+							sidebarCross.css("opacity", 0);
 						}
-					});
-				}
-				
+					};
+					window.addEventListener("scroll", listener);
+				} else {
+          window.removeEventListener("scroll", listener);
+        }
 			});
 		}
 		
