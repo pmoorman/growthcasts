@@ -30,17 +30,22 @@
 			$(el).css("transform", `translateX(${px}px)`);
 		}
 
-		let listener;
+		const observerOptions = {
+			root: null,
+			rootMargin: "0px 0px",
+			threshold: 0,
+		};
 
+		const listeners = {}
 		const callback = (entries) => {
-			entries.forEach(entry => {
-				if (entry.intersectionRatio > 0) {
+      entries.forEach(entry => {
+        const el = entry.target;
+				const id = el.getAttribute("id");
 				
-					listener = window.addEventListener("scroll", function () {
-						const el = entry.target;
+				if (entry.intersectionRatio > 0) {
+					listeners[id] = () => {
 						const distancePercentage = doubleUtils.getDistancePercentage(el);
-
-						switch (el.getAttribute("id")) {
+						switch (id) {
 							case "soundcloud_clouds__cloud-1":
 								translateEl(el, `-${distancePercentage}`);
 								break;
@@ -51,16 +56,13 @@
 								translateEl(el, distancePercentage);
 								break;
 						}
-					});
-				}
+					};
+					window.addEventListener("scroll", listeners[id]);
+				} else {
+          window.removeEventListener("scroll", listeners[id])
+        }
 			})
 		}
-
-		const observerOptions = {
-			root: null,
-			rootMargin: "0px 0px",
-			threshold: 0,
-		};
 	
 		const observer = new IntersectionObserver(callback, observerOptions);
 		observer.observe(elOne);

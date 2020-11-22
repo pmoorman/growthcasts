@@ -68,31 +68,33 @@
 
     const observerOptions = {
       root: null,
-      rootMargin: "0px 0px",
+      rootMargin: "50px",
       threshold: 0,
     };
   
-    let listener;
+    const listeners = {}
 		const callback = (entries) => {
-			entries.forEach(entry => {
-				if (entry.intersectionRatio > 0) {
-				
-					listener = window.addEventListener("scroll", function () {
-						const el = entry.target;
-
-						switch (el.getAttribute("id")) {
-							case "tiktok_elements__element-1":
+      entries.forEach(entry => {
+        const el = entry.target;
+        const id = el.getAttribute("id")
+        if (entry.intersectionRatio > 0) {
+          listeners[id] = () => {
+            switch (id) {
+              case "tiktok_elements__element-1":
                 rotateEl(el, -20);
-								break;
-							case "tiktok_elements__element-2":
+                break;
+              case "tiktok_elements__element-2":
                 rotateEl(el, 20);
-								break;
-							case "tiktok_elements__element-3":
+                break;
+              case "tiktok_elements__element-3":
                 rotateEl(el, -20);
-								break;
-						}
-					});
-				}
+                break;
+            }
+          }
+					window.addEventListener("scroll", listeners[id]);
+        } else {
+          window.removeEventListener("scroll", listeners[id]);
+        }
 			})
     }
     
