@@ -1,0 +1,39 @@
+.tiktok_elements {
+  &__element {
+    &-1,
+    &-2,
+    &-3 {
+      z-index: -1;
+      position: absolute;
+
+      opacity: 0.9;
+    }
+    &-1 {
+      transform: rotate(-35deg);
+      transform-origin: bottom left;
+      bottom: 45px;
+      left: -40px;
+    }
+    &-2 {
+      transform: rotate(35deg);
+      transform-origin: bottom right;
+      top: 10px;
+      right: -20px;
+    }
+    &-3 {
+      transform-origin: bottom right;
+      transform: rotate(10deg);
+      bottom: -10px;
+      right: 120px;
+    }
+  }
+}
+
+#work-tiktok {
+  .work_logo {
+    height: 70px;
+    @include media-breakpoint-down(md) {
+      height: 57px;
+    }
+  }
+}

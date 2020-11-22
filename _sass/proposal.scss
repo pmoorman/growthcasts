@@ -24,8 +24,15 @@ $container-max-widths: (
 @import "proposal/ready_to_start";
 @import "proposal/content_sections";
 
+// Work
+@import "proposal/work/elugie";
+@import "proposal/work/sendcloud";
+@import "proposal/work/tiktok";
+@import "proposal/work/inner";
+
 // Components
 @import "components/logo_grid";
+@import "components/progress_list";
 
 .box-with-shadow {
   height: 100%;
@@ -56,94 +63,6 @@ a:hover {
 }
 .container-narrow {
   max-width: 710px;
-}
-
-// TODO: Move out to own scss
-.step-number {
-  font-size: 28px;
-  font-weight: 300;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #e7e9f3;
-  border-radius: 35px;
-  padding: 13px 27px;
-  background: #fff;
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-}
-
-.step-checked {
-  text-align: center;
-  top: 0px;
-  left: 0;
-  z-index: 3;
-  position: relative;
-}
-
-.full-line {
-  width: 2px;
-  height: calc(100% + 100px);
-  position: absolute;
-  left: 35px;
-  top: 0;
-  background: #e7e9f3;
-}
-
-.pct-line {
-  position: absolute;
-  height: 0;
-  width: 2px;
-  top: 0;
-  z-index: 2;
-  left: 35px;
-}
-
-.process-step {
-  padding-bottom: 100px;
-}
-
-.process-step .step-checked {
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.process-step.active .step-checked {
-  opacity: 1;
-}
-
-.process-step.active .step-number {
-  opacity: 0;
-}
-
-.process-step:not(.active) {
-  .pct-line {
-    display: none;
-  }
-}
-
-.process-step:last-child {
-  .full-line,
-  .pct-line {
-    display: none;
-  }
-}
-
-.process_step_list__item {
-  &-checkmark {
-    position: absolute;
-    left: -90px;
-  }
-  @include media-breakpoint-down(md) {
-    &-checkmark {
-      position: relative;
-      left: 0;
-      margin-bottom: 20px;
-    }
-  }
 }
 
 // TODO: Move to other file

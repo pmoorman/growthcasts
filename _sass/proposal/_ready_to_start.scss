@@ -1,6 +1,9 @@
 .ready_to_start {
   overflow: hidden;
   padding-bottom: 150px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 80px;
+  }
   &__bg {
     top: -150px;
     position: relative;
@@ -42,8 +45,15 @@
       position: absolute;
       left: -65px;
       top: -90px;
+      @include media-breakpoint-down(md) {
+        left: -2px;
+        top: -60px;
+      }
       img {
         height: 130px;
+        @include media-breakpoint-down(md) {
+          height: 80px;
+        }
       }
     }
     &__meta {

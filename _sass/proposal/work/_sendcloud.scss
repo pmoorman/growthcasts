@@ -1,0 +1,29 @@
+.soundcloud_clouds {
+  &__cloud-1 {
+    z-index: -1;
+    position: absolute;
+    bottom: -33%;
+    left: -90px;
+  }
+  &__cloud-3 {
+    z-index: -1;
+    position: absolute;
+    top: -105px;
+    right: 63%;
+  }
+  &__cloud-3 {
+    z-index: -1;
+    position: absolute;
+    bottom: -40px;
+    right: 170px;
+  }
+}
+
+#work-sendcloud {
+  .work_logo {
+    height: 48px;
+    @include media-breakpoint-down(md) {
+      height: 38px;
+    }
+  }
+}

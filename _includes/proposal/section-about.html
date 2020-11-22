@@ -8,14 +8,14 @@
 		</div>
 
 		<div class="about__bg row justify-content-center">
-			<img class="about__bg-parallax_img about__bg_img-1" src="{{ d.image_1 | relative_url }}" />
-			<img class="about__bg-parallax_img about__bg_img-3" src="{{ d.image_3 | relative_url }}" />
-			<img class="about__bg-parallax_img about__bg_img-4" src="{{ d.image_4 | relative_url }}" />
-			<img class="about__bg_img-2" src="{{ d.image_2 | relative_url }}" />
+			<img class="about__bg-parallax_img about__bg_img about__bg_img-1" src="{{ d.image_1 | relative_url }}" />
+			<img class="about__bg-parallax_img about__bg_img about__bg_img-3" src="{{ d.image_3 | relative_url }}" />
+			<img class="about__bg-parallax_img about__bg_img about__bg_img-4" src="{{ d.image_4 | relative_url }}" />
+			<img class="about__bg_img about__bg_img-2" src="{{ d.image_2 | relative_url }}" />
 		</div>
 
 		<div class="row justify-content-end">
-			<div class="col-md-6 px-0">
+			<div class="col-md-6 px-3 px-md-0 text-center text-md-left">
 				<p class="lead">{{ d.content | markdownify | strip_html }}</p>
 			</div>
 		</div>
@@ -25,7 +25,9 @@
 
 <script>
 	(() => {
-		const images = document.querySelectorAll('.about__bg-parallax_img');
-		images.forEach(image => new simpleParallax(image, { scale: 1.5 }))
+		if (window.matchMedia("(min-width: 700px)").matches) {
+			const images = document.querySelectorAll('.about__bg-parallax_img');
+			images.forEach(image => new simpleParallax(image, { scale: 1.5 }));
+		}
 	})()
 </script>

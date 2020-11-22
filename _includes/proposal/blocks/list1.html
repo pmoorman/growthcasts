@@ -1,6 +1,6 @@
-<div class="process-steps">
+<div class="progress_list">
 {% for item in include.data.items %}
-<div class="process_step_list__item process-step d-flex justify-content-lg-between flex-column flex-lg-row {% if forloop.last == true %}pb-0{% endif %}">
+<div class="progress_list__item process-step d-flex justify-content-lg-between flex-column flex-lg-row {% if forloop.last == true %}pb-0{% endif %}">
 	<div class="d-flex flex-column flex-lg-row">
 		<div class="process_step_list__item-checkmark step-col" style="width: 70px;">
 			<div class="step-number m-auto">{{ forloop.index }}</div>
