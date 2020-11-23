@@ -61,6 +61,9 @@ a:hover {
 
 .content-section {
   max-width: 600px;
+  @include media-breakpoint-between(md, lg) {
+    max-width: 500px;
+  }
 }
 .container-narrow {
   max-width: 710px;

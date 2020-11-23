@@ -18,6 +18,10 @@
       max-width: 200px;
       position: relative;
       left: -80px;
+      @include media-breakpoint-between(md, lg) {
+        left: 0;
+        max-width: 150px;
+      }
     }
   }
   &__logo_sidebar {
