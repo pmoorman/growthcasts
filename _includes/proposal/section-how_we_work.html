@@ -17,7 +17,7 @@
 				<div class="logo_grid">
 					{% for logo in d.logos %}
 					<div class="logo_grid__item">
-						<img data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 50 }}" data-aos-duration="50" data-aos-easing="linear" class="img-fluid" src="{{ logo.url | relative_url }}" />
+						<img data-aos="fade" data-aos-delay="{{ forloop.index | times: 100 }}" data-aos-duration="500" data-aos-easing="linear" class="img-fluid" src="{{ logo.url | relative_url }}" />
 					</div>
 					{% endfor %}
 				</div>
