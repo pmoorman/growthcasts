@@ -51,7 +51,7 @@
           const windowOffset = window.pageYOffset;
           const elOffset = $(el).offset().top;
           const distance = elOffset - windowOffset;
-          const windowHeight = window.outerHeight - 200;
+          const windowHeight = window.outerHeight;
           return 100 - (distance / windowHeight) * 100;
         }
       }

@@ -31,7 +31,7 @@
 
 		const observerOptions = {
 			root: null,
-			rootMargin: "0px 0px",
+			rootMargin: "-100px 0px",
 			threshold: 0,
 		};
 
@@ -40,7 +40,6 @@
       entries.forEach(entry => {
         const el = entry.target;
 				const id = el.getAttribute("id");
-				
 				if (entry.intersectionRatio > 0) {
 					listeners[id] = () => {
 						const distancePercentage = doubleUtils.getDistancePercentage(el);

@@ -4,18 +4,21 @@
     position: absolute;
     bottom: -33%;
     left: -90px;
+    padding-top: 100px;
   }
   &__cloud-2 {
     z-index: -1;
     position: absolute;
-    top: -105px;
+    top: -205px;
     right: 63%;
+    padding-top: 100px;
   }
   &__cloud-3 {
     z-index: -1;
     position: absolute;
     bottom: -40px;
     right: 170px;
+    padding-top: 100px;
 	}
 	@include media-breakpoint-down(md) {
 		&__cloud-1 {
@@ -24,7 +27,7 @@
 			right: -50px;
 		}
 		&__cloud-2 {
-			top: -105px;
+			top: -205px;
 			right: 30%;
 		}
 		&__cloud-3 {
