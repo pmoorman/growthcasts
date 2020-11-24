@@ -38,6 +38,9 @@ collections:
   leadgen:
     output: true
     permalink: /:slug
+  proposals:
+    output: true
+    permalink: /proposals/:slug
   sales-header:
   intro:
   course:
@@ -49,6 +52,13 @@ collections:
   slides:
   consulting-offers:
   videos:
+
+defaults:
+  - scope:
+      path: ""
+      type: "proposals"
+    values:
+      layout: "proposal"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

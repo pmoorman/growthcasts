@@ -1,0 +1,80 @@
+{% assign d = page.ready_to_start | default: site.data.proposal.ready_to_start %}
+
+<section id="ready-to-start" class="ready_to_start my-4 pt-4 my-md-5 pt-md-5">
+	
+	<div class="ready_to_start__bg d-none d-md-block">
+		<div class="ready_to_start__bg_parallax ready_to_start__bg_parallax--1">
+			<img src="/assets/images/proposals/blokjes-ready_to_start-1.png" />
+		</div>
+		<div class="ready_to_start__bg_parallax ready_to_start__bg_parallax--2">
+			<img src="/assets/images/proposals/blokjes-ready_to_start-2.png" />
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12 container-narrow px-4">
+				<h2 class="mb-0">{{ d.title }}</h2>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-items-center my-5">
+			<div style="max-width: 100%; width: 512px;">
+				<a href="mailto:{{d.mail_address}}" class="ready_to_start__button ready_to_start__button--1 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
+					<div class="d-flex align-items-center">
+						<div class="ready_to_start__button__title">{{ d.mail_button_title }}</div>
+						<div class="animate-pulse-horizontal">
+							<div style="width: 20px; transform: rotate(-90deg)">
+								{% include proposal/internal/arrow_white.html %}
+							</div>
+						</div>
+					</div>
+					<p class="mb-0">{{ d.mail_button_subtitle }}</p>
+				</a>
+				<a href="tel:{{d.call_phone_number}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
+					<div class="d-flex align-items-center">
+						<div class="ready_to_start__button__title">{{ d.call_button_title }}</div>
+						<div class="animate-pulse-horizontal">
+							<div style="width: 20px; transform: rotate(-90deg)">
+								{% include proposal/internal/arrow_white.html %}
+							</div>
+						</div>
+					</div>
+					<p class="mb-0">{{ d.call_button_subtitle }}</p>
+				</a>
+				<div class="ready_to_start__person d-flex flex-column my-4 w-100 position-relative">
+					<div class="ready_to_start__person__img mb-3">
+						<img class="img-fluid" src="{{ d.person_image | relative_url }}" />
+					</div>
+					<div class="ready_to_start__person__meta">
+						<div class="ready_to_start__person__name_img mb-3">
+							<img class="img-fluid" src="{{ d.person_name_image | relative_url }}" />
+						</div>
+						<p class="ready_to_start__person__name mb-0">{{ d.person_name }}</p>
+						<p class="ready_to_start__person__title">{{ d.person_title }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="d-flex flex-column align-items-center" style="font-size: 18px;">
+				<div>More About Double</div>
+				<div class="animate-pulse-vertical" style="width: 40px;">
+					{% include proposal/internal/arrow_black.html %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script>
+	(() => {
+		const item1 = document.querySelector('.ready_to_start__bg_parallax--1 img');
+		const item2 = document.querySelector('.ready_to_start__bg_parallax--2 img');
+		new simpleParallax(item1, { scale: 1.4, overflow: true });
+		new simpleParallax(item2, { scale: 1.3, overflow: true, orientation: "down" });
+	})()
+</script>

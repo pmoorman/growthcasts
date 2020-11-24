@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} Proposal - {{ site.title }}</title>
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/new-web/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/new-web/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/new-web/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/new-web/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/new-web/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/new-web/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/new-web/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/new-web/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/images/new-web/favicon-128.png" sizes="128x128" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/assets/images/new-web/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/images/new-web/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/images/new-web/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/images/new-web/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/images/new-web/mstile-310x310.png" />
+
+    <link rel="stylesheet" href="{{ "/assets/proposal.css" | relative_url }}">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const doubleUtils = {
+        getDistancePercentage(el) {
+          const windowOffset = window.pageYOffset;
+          const elOffset = $(el).offset().top;
+          const distance = elOffset - windowOffset;
+          const windowHeight = window.outerHeight;
+          return 100 - (distance / windowHeight) * 100;
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- Mobile header -->
+    {% include proposal/mobile-header.html %}
+
+    <!-- Login -->
+    {% include proposal/auth-login.html %}
+
+    <!-- Hero section -->
+    {% include proposal/section-hero.html %}
+
+    <!-- Content sections -->
+    {% include proposal/section-sections.html %}
+
+    <!-- How we work -->
+    {% include proposal/section-how_we_work.html %}
+
+    <!-- Pricing -->
+    {% include proposal/section-pricing.html %}
+
+    <!-- Ready to start -->
+    {% include proposal/section-ready_to_start.html %}
+
+    <!-- Ready to start -->
+    {% include proposal/section-about.html %}
+
+    <!-- Work we're proud of -->
+    {% include proposal/section-proud_work.html %}
+
+    <!-- Footer -->
+    {% include proposal/section-footer.html %}
+
+    <script>
+      $(document).ready(function () {
+        processSteps();
+        onWindowsScroll();
+      });
+      function processSteps() {
+        $(".progress_list").each(function() {
+          const first = $(this).find(".process-step:first-child");
+          const last = $(this).find(".process-step:last-child");
+          const line = $(this).find(".pct-line");
+          let maxLength = last.offset().top - first.offset().top;
+          let currentHeight = line.height();
+  
+          $(window).on("resize", function () {
+            maxLength = last.offset().top - first.offset().top;
+            currentHeight = line.height();
+            const newHeight = Math.min(maxLength, currentHeight);
+            line.css("height", newHeight + "px");
+          });
+  
+          $(window).on("scroll", function () {
+            maxLength = last.offset().top - first.offset().top;
+            currentHeight = line.height();
+            const overScreen = _isOverCenterScreen(first[0], 150);
+            const newHeight = Math.min(maxLength, overScreen);
+  
+            if (overScreen && newHeight > currentHeight) {
+              line.css("height", newHeight + "px");
+            }
+          });
+        })
+      }
+
+      function onWindowsScroll() {
+        $(window).on("scroll", _viewportAnimations);
+      }
+
+      function _viewportAnimations() {
+        $(".process-step").each(function () {
+          if (_isOverCenterScreen(this, 150)) {
+            $(this).addClass("active");
+          }
+
+          $(".checkmark").each(function () {
+            if (_isOverCenterScreen(this, 150)) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      }
+
+      function _isOverCenterScreen(elem, offset) {
+        var windowCenter = $(window).height() / 2;
+        var elemTop = elem.getBoundingClientRect().top;
+        return windowCenter + offset > elemTop
+          ? windowCenter + offset - elemTop
+          : false;
+      }
+    </script>
+    <script>
+      function _setOasOffset() {
+        const title = $(this);
+        const height = $(window).innerHeight() + 50;
+        title.attr('data-aos-offset', height)
+      }
+
+      const setOasOffset = () => {
+        $(".section-aos-offset").each(_setOasOffset);
+      }
+
+      const onLogin = () => {
+        sessionStorage.setItem('isLoggedIn', "{{ page.password }}")
+        $("#login-overlay").remove();
+        $("html").css("overflow", "");
+
+        setOasOffset();
+        AOS.init({ duration: 1200 });
+
+        $(window).resize(() => {
+          setOasOffset();
+        })
+      }
+
+      $("#login-form").submit(function(e) {
+        if ($("#login-form #password").first().val() === "{{ page.password }}") {
+          onLogin();
+        }
+      })
+
+      if (sessionStorage.getItem('isLoggedIn') === "{{ page.password }}") {
+        onLogin();
+      }
+
+      if ("{{ page.password }}" === "") {
+        onLogin()
+      }
+    </script>
+
+  </body>
+</html>

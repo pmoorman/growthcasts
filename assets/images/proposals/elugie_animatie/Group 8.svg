@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="191px" viewBox="0 0 180 191" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <defs>
+        <linearGradient x1="81.7401047%" y1="22.6432174%" x2="22.0110584%" y2="82.4758848%" id="linearGradient-1">
+            <stop stop-color="#2A3687" offset="0%"></stop>
+            <stop stop-color="#424D95" stop-opacity="0.886487" offset="11.3513%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="proposal-" transform="translate(-1078.000000, -10874.000000)">
+            <g id="Group-8" transform="translate(1078.552977, 10874.062601)">
+                <path d="M14.4690101,162.678556 C-3.33922935,143.419197 -0.144511088,115.515515 22.2112432,94.8549263 L96.9550321,27.9096189 C119.310541,7.24907115 147.385994,6.25338063 165.193907,25.5124122 C169.283842,29.5825162 172.321567,34.5975316 174.118294,40.2453474 C175.915022,45.8927547 176.432751,52.05204 175.638382,58.3404182 C174.844014,64.6283879 172.755119,70.9106383 169.50164,76.7962139 C166.248161,82.6817895 161.899566,88.0448655 156.726363,92.5516796 L81.982574,159.496578 C77.082742,164.299162 71.3938535,168.212394 65.2697786,170.993611 C59.1457037,173.774829 52.7172026,175.363979 46.3847285,175.662609 C40.0518458,175.96083 33.9506539,174.962402 28.459949,172.728604 C22.969244,170.494806 18.2067103,167.073843 14.4690101,162.678556 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.5" transform="translate(89.500000, 93.714144) scale(-1, 1) rotate(-85.000000) translate(-89.500000, -93.714144) "></path>
+                <ellipse id="Oval" fill="#2A3687" fill-rule="nonzero" transform="translate(125.109815, 46.509372) rotate(-91.490009) translate(-125.109815, -46.509372) " cx="125.109815" cy="46.5093725" rx="42.5397194" ry="42.5093725"></ellipse>
+                <path d="M56.1983723,146.730614 C40.9458581,164.633678 43.1125886,191.496677 61.0379976,206.730614" id="Path" stroke="#FCC929" stroke-width="6" transform="translate(53.537998, 176.730614) scale(-1, 1) rotate(-85.000000) translate(-53.537998, -176.730614) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

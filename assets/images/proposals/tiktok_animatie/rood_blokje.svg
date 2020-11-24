@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="61px" viewBox="0 0 62 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="proposal-" transform="translate(-684.000000, -10465.000000)" fill="#FF004F">
+            <path d="M695.146428,10468.6005 L734.146428,10468.6005 C738.564706,10468.6005 742.146428,10472.1822 742.146428,10476.6005 L742.146428,10514.6005 C742.146428,10519.0188 738.564706,10522.6005 734.146428,10522.6005 L695.146428,10522.6005 C690.72815,10522.6005 687.146428,10519.0188 687.146428,10514.6005 L687.146428,10476.6005 C687.146428,10472.1822 690.72815,10468.6005 695.146428,10468.6005 Z" id="Rectangle" transform="translate(714.646428, 10495.600505) rotate(10.000000) translate(-714.646428, -10495.600505) "></path>
+        </g>
+    </g>
+</svg>
