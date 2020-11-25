@@ -5,7 +5,7 @@ cover: /assets/images/blogpic4.jpg
 navigation: True
 title: Phase II, The mini-brand
 subtitle: "What happens when the startup phase is over"
-date: 2019-02-17 11:07:01
+date: 2020-11-17 11:07:01
 tags: Copywriting
 class: post-template
 subclass: 'post'

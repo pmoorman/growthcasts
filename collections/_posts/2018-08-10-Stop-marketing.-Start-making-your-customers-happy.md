@@ -5,7 +5,7 @@ cover: /assets/images/blogpic3.jpg
 navigation: True
 title: Stop marketing now.
 subtitle: "Start making your customers happy."
-date: 2018-08-10 09:15:41
+date: 2019-09-10 09:15:41
 tags: Onboarding and Retention
 class: post-template
 subclass: 'post'

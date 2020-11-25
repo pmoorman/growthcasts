@@ -5,7 +5,7 @@ cover:  /assets/images/blogpic6.png
 navigation: True
 title: Branding isn't your logo
 subtitle: It is the name you own in someone's mind
-date: 2017-07-27 10:00:00
+date: 2020-07-27 10:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'

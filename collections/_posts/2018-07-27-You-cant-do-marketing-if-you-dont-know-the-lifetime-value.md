@@ -5,7 +5,7 @@ cover: /assets/images/blogpic1.jpg
 navigation: True
 title: What's a customer worth?
 subtitle: You can’t do marketing if you don’t know the lifetime value of your customers
-date: 2018-07-27 11:10:11
+date: 2020-08-27 11:10:11
 tags: Data and Analytics
 class: post-template
 subclass: 'post'

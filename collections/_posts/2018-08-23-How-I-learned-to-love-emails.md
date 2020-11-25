@@ -5,7 +5,7 @@ cover: /assets/images/blogpic7.jpeg
 navigation: True
 title: How I learned to love emails
 subtitle: "Creating a slippery slope of persuasion"
-date: 2018-08-17 09:07:01
+date: 2019-12-17 09:07:01
 tags: Copywriting
 class: post-template
 subclass: 'post'
