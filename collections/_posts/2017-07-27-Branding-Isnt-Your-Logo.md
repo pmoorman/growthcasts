@@ -4,12 +4,12 @@ current: post
 cover:  /assets/images/blogpic6.png
 navigation: True
 title: Branding isn't your logo
-subtitle: It is the name you own in someone's mind
+subtitle: It is a concept you own in someone's mind
 date: 2020-07-27 10:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
-author: pieter
+author: caspar
 excerpt: Branding is an incredibly powerful vector in your overall growth mix. But you have to understand what it is actually about.
 summary_items:
     - Branding is much more than just your logo
@@ -17,11 +17,11 @@ summary_items:
     - There are many ways to improve you branding, but it's most important that you stay consistent.
 ---
 
-Branding isn’t the first thing you think about when you talk about growth marketing. Growth has a reputation of being data nerds, that stay away from “fluffy” things like branding.
+Branding isn’t the usual thing that growth marketing nerds talk about. We like to stay away from the *fluffy stuff* and focus on the measurable and data driven.
 
-Yet, branding is an incredibly powerful vector in your overall growth mix.
+Yet, branding is an incredibly powerful vector in your overall growth mix and you can't really ignore it.
 
-But here’s the problem…
+And here lies the problem…
 
 
 #### **Entrepreneurs misunderstand what branding is**
@@ -31,29 +31,32 @@ When most startups decide they need to do a “rebranding”, they focus on a ne
 But that’s not branding.  
 That’s your *visual identity*.
 
-That confusion of terms is widespread, and regretful… because we’ve just reduced something important to something rather marginal. Visual identity isn’t going to make-or-break your startup —but branding is.
+The confusion of marketing limbo is common, but here it hurts… We just reduced something important to something rather marginal. Visual identity isn’t going to make-or-break your startup —branding is.
 
-So what’s branding then?
+So what *is* branding then?
 
 
 #### **Branding is about owning a concept or a “name space” in a prospect’s mind**
 
-The most powerful concept in marketing is owning a word in the prospect’s mind. It connects your product to an identity. For instance…
+The real purpose of your branding must be to own a piece of conceptual property inside your customer's mind. The most powerful version of this is owning an actual word. Or even replacing a word for your brand name. Some examples:
 
-- Do you want to “find an answer”? —> Google
-- Want to drive an electric car”? —> Tesla
+- Do you want to “find an answer online”? —> Google it
+- First "electric car” that comes to mind? —> Tesla (any other?)
+- Wanna grab a cab -> Why don't we just Uber
+- Those sneakers with air inside -> Nike Airmax
+- Cheap shopping -> Amazon (or Alibaba)
 
 Etcetera.
 
 Whenever people think about a certain “concept”, they automatically connect it to a company. That company “owns” that concept, or owns that description (in your head).
 
-This idea applies to much smaller concepts, too. Imagine you want to take your girl out to an expensive cocktail bar.
+This idea applies to much smaller concepts, too. Imagine you want to take your girl out to any expensive cocktail bar in the world.
 
 Think about that for a second…
 
 **Which place would you take her to?**
 
-For me, The Night Rooster in Ubud, Bali pops up. Of course it’s not the same cocktail bar that you had in mind right now… because that image is unique to me, and to you. Even someone who lives right next to you, might have another idea of what “high-end cocktail bar” translates to.
+For me, Speak Low in Shanghai pops up (really nice speak easy bar inside store). Of course it’s not the same cocktail bar that you had in mind right now… because that image is unique to me, and to you. Even someone who lives right next to you, might have another idea of what “high-end cocktail bar” translates to.
 
 But in either case, someone owns that concept.
 
