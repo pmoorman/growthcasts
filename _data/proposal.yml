@@ -1,9 +1,7 @@
 how_we_work:
   title: How we work
   intro: |
-    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
-  footer: |
-    We work in weekly sprints, since requirements constantly change, and flexibility and experimentation are essential to finding a strategy that works. Our work will focus on creating the right strategic roadmap, and help execute on a growth model that brings in happy customers.
+    We work on finding the right strategic roadmap for our clients and build measurable marketing systems that drive predictable and scalable growth. The nature of that work is that requirements constantly change, and that flexibility and experimentation are essential to finding a strategy that works.
   logos:
     - url: /assets/images/proposals/TikTok_logo.svg
     - url: /assets/images/proposals/Diesel.svg
@@ -17,7 +15,7 @@ pricing:
   intro: |
     Our services are priced in weekly sprints of a fixed capacity of either 10, 20 or 40 hours/week. Prices are weekly, invoiced monthly at the start of each month. We are typically flexible to adjust capacity as we go:
   footer: |
-    We suggest to start with the 10 hours/week and scale up after 2~4 weeks, once we have established the strategic foundations.
+    **For MeterInsight, we suggest to start with the 10 hours/week sprint package** for start of the project and scale up when more executionally heavy tasks are required (content generation, sales, etc.).
   items:
     - title: Sprints at 10 hours/week
       price: €900/week
@@ -49,7 +47,7 @@ about:
   image_4: /assets/images/proposals/about4.png
 
   content: |
-    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of building scalable marketing systems for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
+    Double is a growth marketing agency, focused on helping businesses reach scale. We have a track record of generating predictable growth for companies like TikTok, MyKuya, Sendcloud, Diesel, Peg and our own Double Academy.
 
 proud_work:
   title: Work we’re proud of…
