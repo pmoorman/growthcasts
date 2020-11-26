@@ -31,13 +31,13 @@ ready_to_start:
   title: Ready to Start?
   mail_button_title: Mail Me
   mail_button_subtitle: Move forward with the project.
-  mail_address: "#"
+  mail_address: "caspar@double-agency.com"
   call_button_title: Book a Call  
   call_button_subtitle: Talk more details.
-  call_phone_number: "#"
-  person_image: /assets/images/proposals/pieter_image.png
-  person_name_image: /assets/images/proposals/pieter_name.png
-  person_name: Pieter Moorman
+  call_phone_number: "+31645265232"
+  person_image: /assets/images/proposals/caspar_image.png
+  person_name_image: /assets/images/proposals/caspar_name.png
+  person_name: Caspar Moorman
   person_title: Project Lead
 
 about:
@@ -62,11 +62,11 @@ footer:
     Ready to start? Mail me back to move forward with the project. Have something more to talk about before? Book a call with me.
   mail_button_title: Mail Me
   mail_button_subtitle: Move forward with the project.
-  mail_address: "#"
+  mail_address: "caspar@double-agency.com"
   call_button_title: Book a Call  
   call_button_subtitle: Talk more details.
-  call_phone_number: "#"
-  person_image: /assets/images/proposals/pieter_large.png
-  person_name_image: /assets/images/proposals/pieter_name.png
-  person_name: Pieter Moorman
-  person_title: Project Lead
+  call_phone_number: "+31645265232"
+  person_image: /assets/images/proposals/caspar_large.png
+  person_name_image: /assets/images/proposals/caspar_name.png
+  person_name: Caspar Lusink
+  person_title: Agency Director

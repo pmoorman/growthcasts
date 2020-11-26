@@ -54,6 +54,7 @@ sections:
 
           While working on the positioning and communication we can collaborate with the branding agency to get the message and visual identity well aligned. 
 
+          <br>
           ### 2. Inbound Marketing
 
           Once the TimeSeriesXL and other brands have successfully been positioned, we will identify best-performing inbound marketing channels to create a predictable lead flow. 
@@ -68,12 +69,12 @@ sections:
           - title: Social media marketing
           - title: Retargeting campaigns
           - title: LinkedIn Ads
-
     - type: text
       data:
         body: |
           Besides opening these channels, we can help create and distribute thought leadership content to gain a better authority and greater inbound lead flow.
 
+          <br>
           ### 3. Outbound & sales process
           To compliment the inbound process, we can assist in the outbound lead generation and create a oiled sales machine:
     - type: list2
