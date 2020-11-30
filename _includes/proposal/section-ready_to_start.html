@@ -1,4 +1,14 @@
-{% assign d = page.ready_to_start | default: site.data.proposal.ready_to_start %}
+{% assign title = page.ready_to_start.title | default: site.data.proposal.ready_to_start.title %}
+{% assign mail_button_title = page.ready_to_start.mail_button_title | default: site.data.proposal.ready_to_start.mail_button_title %}
+{% assign mail_button_subtitle = page.ready_to_start.mail_button_subtitle | default: site.data.proposal.ready_to_start.mail_button_subtitle %}
+{% assign mail_address = page.ready_to_start.mail_address | default: site.data.proposal.ready_to_start.mail_address %}
+{% assign call_button_title = page.ready_to_start.call_button_title | default: site.data.proposal.ready_to_start.call_button_title %}
+{% assign call_button_subtitle = page.ready_to_start.call_button_subtitle | default: site.data.proposal.ready_to_start.call_button_subtitle %}
+{% assign call_phone_number = page.ready_to_start.call_phone_number | default: site.data.proposal.ready_to_start.call_phone_number %}
+{% assign person_image = page.ready_to_start.person_image | default: site.data.proposal.ready_to_start.person_image %}
+{% assign person_name_image = page.ready_to_start.person_name_image | default: site.data.proposal.ready_to_start.person_name_image %}
+{% assign person_name = page.ready_to_start.person_name | default: site.data.proposal.ready_to_start.person_name %}
+{% assign person_title = page.ready_to_start.person_title | default: site.data.proposal.ready_to_start.person_title %}
 
 <section id="ready-to-start" class="ready_to_start my-4 pt-4 my-md-5 pt-md-5">
 	
@@ -15,44 +25,44 @@
 
 		<div class="row text-center justify-content-center">
 			<div class="col-md-12 container-narrow px-4">
-				<h2 class="mb-0">{{ d.title }}</h2>
+				<h2 class="mb-0">{{ title }}</h2>
 			</div>
 		</div>
 
 		<div class="d-flex flex-column align-items-center my-5">
 			<div style="max-width: 100%; width: 512px;">
-				<a href="mailto:{{d.mail_address}}" class="ready_to_start__button ready_to_start__button--1 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
+				<a href="mailto:{{mail_address}}" class="ready_to_start__button ready_to_start__button--1 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
 					<div class="d-flex align-items-center">
-						<div class="ready_to_start__button__title">{{ d.mail_button_title }}</div>
+						<div class="ready_to_start__button__title">{{ mail_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
 							</div>
 						</div>
 					</div>
-					<p class="mb-0">{{ d.mail_button_subtitle }}</p>
+					<p class="mb-0">{{ mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{d.call_phone_number}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
+				<a href="tel:{{call_phone_number}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
 					<div class="d-flex align-items-center">
-						<div class="ready_to_start__button__title">{{ d.call_button_title }}</div>
+						<div class="ready_to_start__button__title">{{ call_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
 							</div>
 						</div>
 					</div>
-					<p class="mb-0">{{ d.call_button_subtitle }}</p>
+					<p class="mb-0">{{ call_button_subtitle }}</p>
 				</a>
 				<div class="ready_to_start__person d-flex flex-column my-4 w-100 position-relative">
 					<div class="ready_to_start__person__img mb-3">
-						<img class="img-fluid" src="{{ d.person_image | relative_url }}" />
+						<img class="img-fluid" src="{{ person_image | relative_url }}" />
 					</div>
 					<div class="ready_to_start__person__meta">
 						<div class="ready_to_start__person__name_img mb-3">
-							<img class="img-fluid" src="{{ d.person_name_image | relative_url }}" />
+							<img class="img-fluid" src="{{ person_name_image | relative_url }}" />
 						</div>
-						<p class="ready_to_start__person__name mb-0">{{ d.person_name }}</p>
-						<p class="ready_to_start__person__title">{{ d.person_title }}</p>
+						<p class="ready_to_start__person__name mb-0">{{ person_name }}</p>
+						<p class="ready_to_start__person__title">{{ person_title }}</p>
 					</div>
 				</div>
 			</div>

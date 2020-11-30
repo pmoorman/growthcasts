@@ -1,44 +1,55 @@
-{% assign d = page.footer | default: site.data.proposal.footer %}
+{% assign title = page.footer.title | default: site.data.proposal.footer.title %}
+{% assign body = page.footer.body | default: site.data.proposal.footer.body %}
+{% assign mail_button_title = page.footer.mail_button_title | default: site.data.proposal.footer.mail_button_title %}
+{% assign mail_button_subtitle = page.footer.mail_button_subtitle | default: site.data.proposal.footer.mail_button_subtitle %}
+{% assign mail_address = page.footer.mail_address | default: site.data.proposal.footer.mail_address %}
+{% assign call_button_title = page.footer.call_button_title | default: site.data.proposal.footer.call_button_title %}
+{% assign call_button_subtitle = page.footer.call_button_subtitle | default: site.data.proposal.footer.call_button_subtitle %}
+{% assign call_phone_number = page.footer.call_phone_number | default: site.data.proposal.footer.call_phone_number %}
+{% assign person_image = page.footer.person_image | default: site.data.proposal.footer.person_image %}
+{% assign person_name_image = page.footer.person_name_image | default: site.data.proposal.footer.person_name_image %}
+{% assign person_name = page.footer.person_name | default: site.data.proposal.footer.person_name %}
+{% assign person_title = page.footer.person_title | default: site.data.proposal.footer.person_title %}
 
 <footer class="footer pt-md-5 mt-md-5">
 	<div class="container position-relative">
 		<div class="row align-items-center text-center text-md-left">
 			<div class="col-md-6">
 				<div class="footer__person" data-aos="fade">
-					<img class="img-fluid" src="{{ d.person_image | relative_url }}" />
+					<img class="img-fluid" src="{{ person_image | relative_url }}" />
 				</div>
-				<h2>{{ d.title }}</h2>
-				{{ d.body | markdownify | strip_html }}
+				<h2>{{ title }}</h2>
+				{{ body | markdownify | strip_html }}
 				<div class="my-5">
 					<div class="mb-3">
-						<img class="footer__person__name_img" src="{{ d.person_name_image | relative_url }}" />
+						<img class="footer__person__name_img" src="{{ person_name_image | relative_url }}" />
 					</div>
-					<p class="footer__person__name mb-0">{{ d.person_name }}</p>
-					<p class="footer__person__title">{{ d.person_title }}</p>
+					<p class="footer__person__name mb-0">{{ person_name }}</p>
+					<p class="footer__person__title">{{ person_title }}</p>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<a href="mailto:{{d.mail_address}}" class="footer__button footer__button--1 text-white d-flex flex-column justify-content-center">
+				<a href="mailto:{{mail_address}}" class="footer__button footer__button--1 text-white d-flex flex-column justify-content-center">
 					<div class="d-flex align-items-center">
-						<div class="footer__button__title">{{ d.mail_button_title }}</div>
+						<div class="footer__button__title">{{ mail_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
 							</div>
 						</div>
 					</div>
-					<p class="mb-0">{{ d.mail_button_subtitle }}</p>
+					<p class="mb-0">{{ mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{d.call_phone_number}}" class="footer__button footer__button--2 text-white d-flex flex-column justify-content-center">
+				<a href="tel:{{call_phone_number}}" class="footer__button footer__button--2 text-white d-flex flex-column justify-content-center">
 					<div class="d-flex align-items-center">
-						<div class="footer__button__title">{{ d.call_button_title }}</div>
+						<div class="footer__button__title">{{ call_button_title }}</div>
 						<div class="animate-pulse-horizontal">
 							<div style="width: 20px; transform: rotate(-90deg)">
 								{% include proposal/internal/arrow_white.html %}
 							</div>
 						</div>
 					</div>
-					<p class="mb-0">{{ d.call_button_subtitle }}</p>
+					<p class="mb-0">{{ call_button_subtitle }}</p>
 				</a>
 			</div>
 		</div>
