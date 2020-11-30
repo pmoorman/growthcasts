@@ -152,7 +152,8 @@
       function _setOasOffset() {
         const title = $(this);
         const height = $(window).innerHeight() + 50;
-        title.attr('data-aos-offset', height)
+        const percentage = title.attr('data-aos-offset') || 100;
+        title.attr('data-aos-offset', (height / 100) * percentage);
       }
 
       const setOasOffset = () => {
