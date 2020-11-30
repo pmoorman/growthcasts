@@ -7,14 +7,14 @@ pricing:
     **For MeterInsight, we suggest to start with the 10 hours/week sprint package** for start of the project and scale up when more executionally heavy tasks are required (content generation, sales, etc.).
 ready_to_start:
   mail_address: "caspar@double-agency.com"
-  call_phone_number: "+31645265232"
+  call_button_link: "https://calendly.com/double-caspar"
   person_image: /assets/images/proposals/caspar_image.png
   person_name_image: /assets/images/proposals/caspar_name.png
   person_name: Caspar Lusink
   person_title: Project Lead
 footer:
   mail_address: "caspar@double-agency.com"
-  call_phone_number: "+31645265232"
+  call_button_link: "https://calendly.com/double-caspar"
   person_image: /assets/images/proposals/caspar_large.png
   person_name_image: /assets/images/proposals/caspar_name.png
   person_name: Caspar Lusink

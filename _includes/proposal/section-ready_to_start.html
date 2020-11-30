@@ -4,7 +4,7 @@
 {% assign mail_address = page.ready_to_start.mail_address | default: site.data.proposal.ready_to_start.mail_address %}
 {% assign call_button_title = page.ready_to_start.call_button_title | default: site.data.proposal.ready_to_start.call_button_title %}
 {% assign call_button_subtitle = page.ready_to_start.call_button_subtitle | default: site.data.proposal.ready_to_start.call_button_subtitle %}
-{% assign call_phone_number = page.ready_to_start.call_phone_number | default: site.data.proposal.ready_to_start.call_phone_number %}
+{% assign call_button_link = page.ready_to_start.call_button_link | default: site.data.proposal.ready_to_start.call_button_link %}
 {% assign person_image = page.ready_to_start.person_image | default: site.data.proposal.ready_to_start.person_image %}
 {% assign person_name_image = page.ready_to_start.person_name_image | default: site.data.proposal.ready_to_start.person_name_image %}
 {% assign person_name = page.ready_to_start.person_name | default: site.data.proposal.ready_to_start.person_name %}
@@ -42,7 +42,7 @@
 					</div>
 					<p class="mb-0">{{ mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{call_phone_number}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
+				<a href="{{call_button_link}}" class="ready_to_start__button ready_to_start__button--2 text-white text-center d-flex flex-column align-items-center justify-content-center w-100">
 					<div class="d-flex align-items-center">
 						<div class="ready_to_start__button__title">{{ call_button_title }}</div>
 						<div class="animate-pulse-horizontal">

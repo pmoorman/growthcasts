@@ -34,7 +34,7 @@ ready_to_start:
   mail_address: "caspar@double-agency.com"
   call_button_title: Book a Call  
   call_button_subtitle: Talk more details.
-  call_phone_number: "+31645265232"
+  call_button_link: "https://calendly.com/double-caspar"
   person_image: /assets/images/proposals/caspar_image.png
   person_name_image: /assets/images/proposals/caspar_name.png
   person_name: Caspar Lusink
@@ -65,7 +65,7 @@ footer:
   mail_address: "caspar@double-agency.com"
   call_button_title: Book a Call  
   call_button_subtitle: Talk more details.
-  call_phone_number: "+31645265232"
+  call_button_link: "https://calendly.com/double-caspar"
   person_image: /assets/images/proposals/caspar_large.png
   person_name_image: /assets/images/proposals/caspar_name.png
   person_name: Caspar Lusink

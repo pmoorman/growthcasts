@@ -5,7 +5,7 @@
 {% assign mail_address = page.footer.mail_address | default: site.data.proposal.footer.mail_address %}
 {% assign call_button_title = page.footer.call_button_title | default: site.data.proposal.footer.call_button_title %}
 {% assign call_button_subtitle = page.footer.call_button_subtitle | default: site.data.proposal.footer.call_button_subtitle %}
-{% assign call_phone_number = page.footer.call_phone_number | default: site.data.proposal.footer.call_phone_number %}
+{% assign call_button_link = page.footer.call_button_link | default: site.data.proposal.footer.call_button_link %}
 {% assign person_image = page.footer.person_image | default: site.data.proposal.footer.person_image %}
 {% assign person_name_image = page.footer.person_name_image | default: site.data.proposal.footer.person_name_image %}
 {% assign person_name = page.footer.person_name | default: site.data.proposal.footer.person_name %}
@@ -40,7 +40,7 @@
 					</div>
 					<p class="mb-0">{{ mail_button_subtitle }}</p>
 				</a>
-				<a href="tel:{{call_phone_number}}" class="footer__button footer__button--2 text-white d-flex flex-column justify-content-center">
+				<a href="{{call_button_link}}" class="footer__button footer__button--2 text-white d-flex flex-column justify-content-center">
 					<div class="d-flex align-items-center">
 						<div class="footer__button__title">{{ call_button_title }}</div>
 						<div class="animate-pulse-horizontal">
