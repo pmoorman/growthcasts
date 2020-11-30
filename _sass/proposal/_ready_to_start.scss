@@ -11,6 +11,7 @@
       top: -50px;
     }
     &_parallax {
+      z-index: -1;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
