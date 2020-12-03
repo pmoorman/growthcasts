@@ -52,7 +52,14 @@
   </head>
   <body>
 
-		<!-- {% include new-web/header.html %} -->
+    <!-- Header -->
+    {% include new-web/blog-header.html %}
+
+    <div class="mx-auto" style="max-width: 1040px; margin-top: -20px;">
+			<hr class="mb-0" style="color: #E7E8EA" />
+		</div>
+    
+    
 		
 		<!-- Hero section -->
     {% include casestudy/section-hero.html %}
@@ -69,12 +76,13 @@
 		<!-- Tags section -->
     {% include casestudy/section-tags.html %}
 
-    <!-- Tags section -->
+    <!-- Related studies section -->
     {% include casestudy/section-related_studies.html %}
 
 		<!-- Contact section -->
     {% include casestudy/section-contact.html %}
 
+    <!-- Footer -->
     {% include new-web/footer.html %}
 
     <script>
