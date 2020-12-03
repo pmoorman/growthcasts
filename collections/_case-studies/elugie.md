@@ -34,4 +34,6 @@ We compiled emails, came up with scripts for webinars, conducted market research
 
 While successfully setting up marketing funnels we came to the realization that it would be impossible to reach the target of selling 100.000 power plants by 2030. Aiming for buildings with high electricity usage, Elugie’s main target audience consisted of bakers and butchers. However, market research pointed out that the average baker or butcher is 53 years old. Since most of them retire by the age of 60, their investment horizon is simply too short to turn a power plant investment into a profitable one. 
 
+![](/assets/images/casestudy/elugie_1.png)
+
 And so, Elugie suddenly had to focus on a different market segment. While we initially hopped on board to help Elugie set up marketing funnels, we ended up with a totally unexpected but very valuable insight. It goes to show that when it comes to startups, there’s never a dull moment. 

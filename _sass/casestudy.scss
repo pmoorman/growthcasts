@@ -95,3 +95,12 @@ a.btn-shadow:hover {
 .shadow-secondary {
   box-shadow: 14px 14px 0 0 $secondary-color!important;
 }
+
+.content {
+  img {
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
