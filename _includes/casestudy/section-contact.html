@@ -7,36 +7,18 @@
 }
 </style>
 
-<div id="contact" class="position-relative">
+<div id="contact" class="position-relative" style="margin-top: -90px; z-index: -1;">
 	<div style="max-width: 1440px; margin: auto;" class="d-flex justify-content-between">
 		<div class="grid-left">
-			{% for i in (1..28) %}
-				{% assign item = site.data.casestudy.grid_left.[i] %}
-				{% if item.color %}
-					<div style="background: {{ item.color }}"></div>
-				{% elsif item.image %}
-					<div>
-						<img src="{{ item.image }}" />
-					</div>
-				{% else %}
-					<div></div>
-				{% endif %}
-			{% endfor %}
+			{% include casestudy/internal/grid.html 
+				items=site.data.casestudy.grid_left
+				item_count=28 %}
 		</div>
 	
 		<div class="grid-right">
-			{% for i in (1..28) %}
-				{% assign item = site.data.casestudy.grid_right.[i] %}
-				{% if item.color %}
-					<div style="background: {{ item.color }}"></div>
-				{% elsif item.image %}
-					<div>
-						<img src="{{ item.image }}" />
-					</div>
-				{% else %}
-					<div></div>
-				{% endif %}
-			{% endfor %}
+			{% include casestudy/internal/grid.html 
+				items=site.data.casestudy.grid_right
+				item_count=28 %}
 		</div>
 	</div>
 

@@ -4,6 +4,10 @@ date: October 28, 2020
 hero_title: Reaching the right audience the right way
 hero_image: /assets/images/casestudy/elugie_hero.svg
 client_logo: /assets/images/casestudy/elugie_logo.svg
+tags:
+- landing page
+- Facebook
+- sales funnel
 ---
 
 <p class="lead">

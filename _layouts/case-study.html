@@ -50,7 +50,7 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M44383W"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </head>
-  <body class="{{ page.body_class }}">
+  <body>
 
 		<!-- {% include new-web/header.html %} -->
 		
@@ -65,6 +65,12 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Tags section -->
+    {% include casestudy/section-tags.html %}
+
+    <!-- Tags section -->
+    {% include casestudy/section-related_studies.html %}
 
 		<!-- Contact section -->
     {% include casestudy/section-contact.html %}
