@@ -4,11 +4,12 @@
 	display: grid;
 	grid-template-columns: 144px 144px 144px 144px; 
 	grid-template-rows:  144px 144px 144px 144px 144px 144px;
+	max-width: 100%;
 }
 </style>
 
 <div id="contact" class="position-relative" style="margin-top: -90px;">
-	<div style="max-width: 1440px; margin: auto;" class="d-flex justify-content-between">
+	<div style="max-width: 1440px; margin: auto; overflow: hidden;" class="d-flex flex-column flex-md-row justify-content-between">
 		<div class="grid-left">
 			{% include casestudy/internal/grid.html 
 				items=site.data.casestudy.grid_left
