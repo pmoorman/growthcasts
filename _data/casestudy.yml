@@ -1,0 +1,51 @@
+grid_left:
+  2: 
+    color: "#fdfdfe"
+  5: 
+    color: "#fbfcfe"
+  7: 
+    image: /assets/images/casestudy/person_1.svg
+  9: 
+    color: "#add5fa"
+  10: 
+    image: /assets/images/casestudy/person_2.svg
+  13: 
+    color: "#e9f1fb"
+  14: 
+    color: "#d1e8ff"
+  18: 
+    image: /assets/images/casestudy/person_3.svg
+  20: 
+    color: "#f8f9fd"
+  21: 
+    color: "#4c5061"
+  23: 
+    image: /assets/images/casestudy/person_4.svg
+  26: 
+    color: "#53a6f4"
+
+grid_right:
+  3:
+    color: "#f7fafd"
+  6:
+    image: /assets/images/casestudy/person_5.svg
+  8:
+    color: "#b1b2ba"
+  9:
+    color: "#eef4fc"
+  11:
+    image: /assets/images/casestudy/person_6.svg
+  12:
+    color: "#d8ecff"
+  15:
+    color: "#8dc5f8"
+  19:
+    color: "#f8f9fd"
+  20:
+    color: "#626574"
+  22:
+    image: /assets/images/casestudy/person_7.svg
+  24:
+    color: "#baddff"
+  27:
+    color: "#3e4254"

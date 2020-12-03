@@ -78,3 +78,20 @@ blockquote {
     padding-left: 38px;
   }
 }
+
+button.btn-shadow,
+a.btn-shadow {
+  box-shadow: 14px 14px 0 0 #d4d7e1;
+  border-radius: 0 !important;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+
+button.btn-shadow:hover,
+a.btn-shadow:hover {
+  box-shadow: none !important;
+}
+
+.shadow-secondary {
+  box-shadow: 14px 14px 0 0 $secondary-color!important;
+}

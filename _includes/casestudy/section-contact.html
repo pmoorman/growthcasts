@@ -1,1 +1,52 @@
-CONTACT
+<style>
+.grid-right,
+.grid-left {
+	display: grid;
+	grid-template-columns: 144px 144px 144px 144px; 
+	grid-template-rows:  144px 144px 144px 144px 144px 144px;
+}
+</style>
+
+<div id="contact" class="position-relative">
+	<div style="max-width: 1440px; margin: auto;" class="d-flex justify-content-between">
+		<div class="grid-left">
+			{% for i in (1..28) %}
+				{% assign item = site.data.casestudy.grid_left.[i] %}
+				{% if item.color %}
+					<div style="background: {{ item.color }}"></div>
+				{% elsif item.image %}
+					<div>
+						<img src="{{ item.image }}" />
+					</div>
+				{% else %}
+					<div></div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	
+		<div class="grid-right">
+			{% for i in (1..28) %}
+				{% assign item = site.data.casestudy.grid_right.[i] %}
+				{% if item.color %}
+					<div style="background: {{ item.color }}"></div>
+				{% elsif item.image %}
+					<div>
+						<img src="{{ item.image }}" />
+					</div>
+				{% else %}
+					<div></div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+	<div style="position: absolute; width: 100%; top: 61%; transform: translateY(-50%);">
+		<div class="container text-center">
+			<h1>Become Our Next Case</h1>
+			<p class="my-5">Let’s talk about how we can partner up to scale your company.</p>
+			<button class="btn btn-primary btn-shadow shadow-secondary" style="font-size: 18px;">
+				Contact Us
+			</button>
+		</div>
+	</div>
+</div>
