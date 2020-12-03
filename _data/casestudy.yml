@@ -1,51 +1,75 @@
 grid_left:
   2: 
     color: "#fdfdfe"
+    delay: 40
   5: 
     color: "#fbfcfe"
+    delay: 150
   7: 
     image: /assets/images/casestudy/person_1.svg
+    delay: 110
   9: 
     color: "#add5fa"
+    delay: 150
   10: 
     image: /assets/images/casestudy/person_2.svg
+    delay: 110
   13: 
     color: "#e9f1fb"
+    delay: 110
   14: 
     color: "#d1e8ff"
+    delay: 240
   18: 
     image: /assets/images/casestudy/person_3.svg
+    delay: 240
   20: 
     color: "#f8f9fd"
+    delay: 230
   21: 
     color: "#4c5061"
+    delay: 190
   23: 
     image: /assets/images/casestudy/person_4.svg
+    delay: 200
   26: 
     color: "#53a6f4"
+    delay: 200
 
 grid_right:
   3:
     color: "#f7fafd"
+    delay: 30
   6:
     image: /assets/images/casestudy/person_5.svg
+    delay: 150
   8:
     color: "#b1b2ba"
+    delay: 70
   9:
     color: "#eef4fc"
+    delay: 150
   11:
     image: /assets/images/casestudy/person_6.svg
+    delay: 110
   12:
     color: "#d8ecff"
+    delay: 110
   15:
     color: "#8dc5f8"
+    delay: 240
   19:
     color: "#f8f9fd"
+    delay: 240
   20:
     color: "#626574"
+    delay: 230
   22:
     image: /assets/images/casestudy/person_7.svg
+    delay: 190
   24:
     color: "#baddff"
+    delay: 200
   27:
     color: "#3e4254"
+    delay: 200

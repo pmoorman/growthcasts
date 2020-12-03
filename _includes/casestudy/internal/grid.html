@@ -1,9 +1,9 @@
 {% for i in (1..include.item_count) %}
 	{% assign item = include.items.[i] %}
 	{% if item.color %}
-		<div style="background: {{ item.color }}"></div>
+		<div data-aos="fade-in" data-aos-delay="{{item.delay | default: 0}}" data-aos-offset="100" style="background: {{ item.color }}"></div>
 	{% elsif item.image %}
-		<div>
+		<div data-aos="fade-in" data-aos-delay="{{item.delay | default: 0}}" data-aos-offset="100">
 			<img src="{{ item.image }}" />
 		</div>
 	{% else %}
