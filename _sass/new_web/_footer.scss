@@ -1,0 +1,17 @@
+footer {
+	.container {
+		max-width: 1040px!important;
+	}
+  .blog-posts .image {
+    height: 52px;
+    width: 72px;
+  }
+  .blog-posts .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .blog-posts p {
+    flex: 1;
+  }
+}
