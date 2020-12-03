@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="514px" viewBox="0 0 1440 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A6A141F3-BEC2-4C16-89A1-30DCD594709Asvg</title>
+    <defs>
+        <polygon id="path-1" points="0 0 1440 0 1440 514 0 514"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-2" transform="translate(0.000000, -111.000000)">
+            <g id="hero-image" transform="translate(0.000000, 111.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M1228.6,66 L1342.4,66 C1349.91107,66 1356,72.0889276 1356,79.6000004 L1356,191.4 C1356,198.911072 1349.91107,205 1342.4,205 L1228.6,205 C1221.08893,205 1215,198.911072 1215,191.4 L1215,79.6000004 C1215,72.0889276 1221.08893,66 1228.6,66 Z" id="Rectangle" fill="#00F2EA" opacity="0.900000036" mask="url(#mask-2)" transform="translate(1285.500000, 135.500000) rotate(-20.000000) translate(-1285.500000, -135.500000) "></path>
+                <path d="M152.6,211 L219.4,211 C226.911072,211 233,217.088928 233,224.6 L233,289.4 C233,296.911072 226.911072,303 219.4,303 L152.6,303 C145.088928,303 139,296.911072 139,289.4 L139,224.6 C139,217.088928 145.088928,211 152.6,211 Z" id="Rectangle" fill="#FF004F" opacity="0.900000036" mask="url(#mask-2)" transform="translate(186.000000, 257.000000) rotate(20.000000) translate(-186.000000, -257.000000) "></path>
+                <path d="M1046.2,422 L1090.8,422 C1096.4333,422 1101,426.566696 1101,432.2 L1101,474.8 C1101,480.433304 1096.4333,485 1090.8,485 L1046.2,485 C1040.5667,485 1036,480.433304 1036,474.8 L1036,432.2 C1036,426.566696 1040.5667,422 1046.2,422 Z" id="Rectangle" fill="#000000" opacity="0.900000036" mask="url(#mask-2)" transform="translate(1068.500000, 453.500000) rotate(10.000000) translate(-1068.500000, -453.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
