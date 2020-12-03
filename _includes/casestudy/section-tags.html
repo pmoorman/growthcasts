@@ -1,15 +1,7 @@
 <div class="container mt-5 pt-4">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="d-flex">
-				{% for item in page.tags %}
-					{% assign class = "mx-2" %}
-					{% if forloop.index0 == 0 %}
-						{% assign class = "mr-2" %}
-					{% endif %}
-					{% include casestudy/internal/tag.html item=item class=class %}
-				{% endfor %}
-			</div>
+			{% include casestudy/internal/tags.html tags=page.tags %}
 		</div>
 	</div>
 </div>

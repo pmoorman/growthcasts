@@ -4,6 +4,9 @@ date: October 28, 2020
 hero_title: From copywriting to marketing strategy
 hero_image: /assets/images/casestudy/sendcloud_hero.svg
 client_logo: /assets/images/casestudy/sendcloud_logo.svg
+related_1: tiktok
+related_2: sendcloud
+excerpt: We started working on copywriting and ended up updating whole marketing strategy. OOPS!
 tags:
 - landing page
 - Facebook

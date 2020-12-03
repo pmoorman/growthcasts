@@ -1,4 +1,9 @@
-<div class="container mt-5 pt-4">
+{% assign related_1 = site.case-studies | where: 'slug', page.related_1 %}
+{% assign related_1 = related_1[0] %}
+{% assign related_2 = site.case-studies | where: 'slug', page.related_2 %}
+{% assign related_2 = related_2[0] %}
+
+<div class="container mt-5 pt-4" style="z-index: 1; position: relative;">
 	<div class="row">
 		<div class="col-md-12">
 			<p class="mb-0 font-weight-bold" style="font-size: 22px; padding-bottom: 25px; border-bottom: 1px solid #E7E8EA;">You May Also Like</p>
@@ -7,23 +12,25 @@
 	<div class="row">
 		<div class="col-md-6 py-5" style="border-right: 1px solid #E7E8EA;">
 			<div class="d-flex mb-4">
-				{% include casestudy/internal/tag.html item="landing page" %}
+				{% assign tag = related_1.tags[0] } %}
+				{% include casestudy/internal/tag.html item=tag %}
 			</div>
 			<p class="mb-3" style="font-size: 22px; line-height: 32px; letter-spacing: 1px;">
-				Learn how we’ve become TikTok’s technical handymen and scale-up department.
+				{{related_1.excerpt}}
 			</p>
-			<a href="#" class="btn btn-link">
+			<a href="{{related_1.url}}" class="btn btn-link">
 				Go to Case Study >
 			</a>
 		</div>
 		<div class="col-md-6 pl-5 py-5">
 			<div class="d-flex mb-4">
-				{% include casestudy/internal/tag.html item="Facebook" %}
+				{% assign tag = related_2.tags[0] } %}
+				{% include casestudy/internal/tag.html item=tag %}
 			</div>
 			<p class="mb-3" style="font-size: 22px; line-height: 32px; letter-spacing: 1px;">
-				We started working on copywriting and ended up updating whole marketing strategy. OOPS!
+				{{related_2.excerpt}}
 			</p>
-			<a href="#" class="btn btn-link">
+			<a href="{{related_2.url}}" class="btn btn-link">
 				Go to Case Study >
 			</a>
 		</div>

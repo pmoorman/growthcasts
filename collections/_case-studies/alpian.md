@@ -4,6 +4,9 @@ date: October 28, 2020
 hero_title: The Basics Of Buying A Telescope
 hero_image: /assets/images/casestudy/alpian_hero.svg
 client_logo: /assets/images/casestudy/elugie_logo.svg
+related_1: tiktok
+related_2: sendcloud
+excerpt: We started working on copywriting and ended up updating whole marketing strategy. OOPS!
 tags:
 - landing page
 - Facebook

@@ -4,6 +4,9 @@ date: October 28, 2020
 hero_title: How we’ve become TikTok’s handymen?
 hero_image: /assets/images/casestudy/tiktok_hero.svg
 client_logo: /assets/images/casestudy/tiktok_logo.svg
+related_1: tiktok
+related_2: sendcloud
+excerpt: Learn how we’ve become TikTok’s technical handymen and scale-up department.
 tags:
 - landing page
 - Facebook

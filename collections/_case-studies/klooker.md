@@ -4,6 +4,9 @@ date: October 28, 2020
 hero_title: From 0 to over 5,000 recurring customers
 hero_image: /assets/images/casestudy/klooker_hero.svg
 client_logo: /assets/images/casestudy/klooker_logo.svg
+related_1: tiktok
+related_2: sendcloud
+excerpt: We started working on copywriting and ended up updating whole marketing strategy. OOPS!
 tags:
 - landing page
 - Facebook
