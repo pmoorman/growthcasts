@@ -84,7 +84,9 @@
     {% include new-web/footer.html %}
 
     <script>
-      AOS.init();
+      window.onload = function() {
+        AOS.init();
+      }
     </script>
     
     <!--- Linkedin Pixel --->
