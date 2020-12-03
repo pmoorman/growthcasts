@@ -1,0 +1,38 @@
+<div id="hero">
+	<div style="position: absolute; z-index: -1; left: 50%; transform: translateX(-50%);">
+		<img style="width: 1440px;" src="{{ page.hero_image }}" />
+	</div>
+	<div class="container" style="padding-top: 130px; padding-bottom: 50px;">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>{{ page.hero_title }}</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="d-flex align-items-center">
+					<img class="mr-3" style="width: 160px;" src="/assets/images/casestudy/double_logo.svg" />
+					<img class="mx-3" style="width: 45px;" src="/assets/images/casestudy/cross.svg" />
+					<img class="ml-3" style="width: 160px;" src="{{ page.client_logo }}" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container pt-4">
+		<div class="row">
+			<div class="col-md-12">
+				<img style="width: 55px; position: absolute; bottom: 0; right: 0;" src="/assets/images/casestudy/arrow_corner.svg" />
+				<div class="d-flex align-items-center" style="border-bottom: 1px solid #E7E8EA;">
+					<div class="flex-shrink-1 pr-4" style="border-right: 1px solid #E7E8EA; padding-bottom: 20px;">
+						<p class="font-weight-bold">Case Study</p>
+					</div>
+					<div class="px-4" style="padding-bottom: 20px;">
+						<p>{{ page.date | date: '%B %d, %Y' }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
