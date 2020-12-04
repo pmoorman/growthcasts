@@ -3,31 +3,32 @@
 {% assign related_2 = site.case-studies | where: 'slug', page.related_2 %}
 {% assign related_2 = related_2[0] %}
 
-<div id="related-case-studies" class="container mt-5 pt-4" style="z-index: 1; position: relative;">
+<div id="related-case-studies" class="relatedstudies container mt-5 pt-4">
 	<div class="row">
 		<div class="col-md-12">
-			<p class="mb-0 font-weight-bold" style="font-size: 22px; padding-bottom: 25px; border-bottom: 1px solid #E7E8EA;">You May Also Like</p>
+			<p class="relatedstudies__title mb-0 font-weight-bold">You May Also Like</p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-6 pb-5" style="border-right: 1px solid #E7E8EA; padding-top: 35px;">
+	<div class="relatedstudies row">
+		<div class="relatedstudies__item--1 col pb-5">
 			<div class="d-flex mb-4">
 				{% assign tag = related_1.tags[0] } %}
 				{% include casestudy/internal/tag.html item=tag %}
 			</div>
-			<p class="mb-3" style="font-size: 22px; line-height: 32px; letter-spacing: 1px;">
+			<p class="relatedstudies__excerpt mb-3">
 				{{related_1.excerpt}}
 			</p>
 			<a href="{{related_1.url}}" class="btn btn-link">
 				Go to Case Study >
 			</a>
 		</div>
-		<div class="col-md-6 pl-5 pb-5" style="padding-top: 35px;">
+		<div class="relatedstudies__separator"></div>
+		<div class="relatedstudies__item--2 col pl-5 pb-5">
 			<div class="d-flex mb-4">
 				{% assign tag = related_2.tags[0] } %}
 				{% include casestudy/internal/tag.html item=tag %}
 			</div>
-			<p class="mb-3" style="font-size: 22px; line-height: 32px; letter-spacing: 1px;">
+			<p class="relatedstudies__excerpt mb-3">
 				{{related_2.excerpt}}
 			</p>
 			<a href="{{related_2.url}}" class="btn btn-link">

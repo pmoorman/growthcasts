@@ -1,29 +1,19 @@
-<style>
-.grid-right,
-.grid-left {
-	display: grid;
-	grid-template-columns: 144px 144px 144px 144px; 
-	grid-template-rows:  144px 144px 144px 144px 144px 144px;
-	max-width: 100%;
-}
-</style>
-
-<div id="contact" class="position-relative" style="margin-top: -90px;">
-	<div style="max-width: 1440px; margin: auto; overflow: hidden;" class="d-flex flex-column flex-md-row justify-content-between">
-		<div class="grid-left">
+<div id="contact" class="contact position-relative">
+	<div class="contact__grid d-flex flex-column flex-md-row justify-content-between">
+		<div class="contact__grid--left">
 			{% include casestudy/internal/grid.html 
 				items=site.data.casestudy.grid_left
 				item_count=28 %}
 		</div>
 	
-		<div class="grid-right">
+		<div class="contact__grid--right">
 			{% include casestudy/internal/grid.html 
 				items=site.data.casestudy.grid_right
 				item_count=28 %}
 		</div>
 	</div>
 
-	<div style="position: absolute; width: 100%; top: 61%; transform: translateY(-50%);">
+	<div class="contact__content">
 		<div class="container text-center">
 			<h1>Become Our Next Case</h1>
 			<p class="my-5">Let’s talk about how we can partner up to scale your company.</p>

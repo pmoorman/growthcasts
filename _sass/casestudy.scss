@@ -15,6 +15,12 @@ $container-max-widths: (
 @import "new_web/generic/font";
 @import "new_web/footer";
 
+// Sections
+@import "casestudy/hero";
+@import "casestudy/related_studies";
+@import "casestudy/contact";
+@import "casestudy/tags";
+
 h1 {
   font-size: 88px;
   font-weight: 600;

@@ -1,0 +1,21 @@
+.contact {
+  margin-top: -340px;
+  &__grid {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    &--left,
+    &--right {
+      display: grid;
+      grid-template-columns: 144px 144px 144px 144px;
+      grid-template-rows: 144px 144px 144px 144px 144px 144px;
+      max-width: 100%;
+    }
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    top: 61%;
+    transform: translateY(-50%);
+  }
+}
