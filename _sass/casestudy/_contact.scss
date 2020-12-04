@@ -6,12 +6,21 @@
     max-width: 1440px;
     margin: auto;
     overflow: hidden;
+    &--left {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 170px;
+      }
+    }
     &--left,
     &--right {
       display: grid;
       grid-template-columns: 144px 144px 144px 144px;
       grid-template-rows: 144px 144px 144px 144px 144px 144px;
       max-width: 100%;
+      @include media-breakpoint-down(md) {
+        grid-template-columns: 75px 75px 75px 75px 75px;
+        grid-template-rows: 75px 75px 75px;
+      }
     }
   }
   &__content {
@@ -19,5 +28,14 @@
     width: 100%;
     top: 61%;
     transform: translateY(-50%);
+    @include media-breakpoint-down(md) {
+      top: 50%;
+      .container {
+        max-width: 80%;
+      }
+    }
+  }
+  img {
+    width: 100%;
   }
 }

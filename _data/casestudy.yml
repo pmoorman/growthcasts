@@ -73,3 +73,58 @@ grid_right:
   27:
     color: "#3e4254"
     delay: 200
+
+grid_left_mobile:
+  1: 
+    image: /assets/images/casestudy/person_1.svg
+    delay: 40
+  3: 
+    color: "#cce4fb"
+    delay: 150
+  4: 
+    image: /assets/images/casestudy/person_5.svg
+    delay: 110
+  7: 
+    color: "#b2b4bb"
+    delay: 150
+  8: 
+    image: /assets/images/casestudy/person_2.svg
+    delay: 110
+  10: 
+    color: "#fbfcfe"
+    delay: 110
+  11: 
+    color: "#fafbfd"
+    delay: 240
+  14: 
+    color: "#dceeff"
+    delay: 240
+
+grid_right_mobile:
+  1:
+    color: "#c0e0ff"
+    delay: 30
+  5:
+    color: "#5a5d6d"
+    delay: 150
+  6:
+    image: /assets/images/casestudy/person_3.svg
+    delay: 70
+  7:
+    color: "#5babf5"
+    delay: 150
+  9:
+    color: "#dee9fa"
+    delay: 110
+  10:
+    image: /assets/images/casestudy/person_6.svg
+    delay: 240
+  12:
+    image: /assets/images/casestudy/person_4.svg
+    delay: 240
+  13:
+    color: "#dae7f9"
+    delay: 230
+  14:
+    image: /assets/images/casestudy/person_7.svg
+    delay: 190

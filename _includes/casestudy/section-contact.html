@@ -1,5 +1,5 @@
 <div id="contact" class="contact position-relative">
-	<div class="contact__grid d-flex flex-column flex-md-row justify-content-between">
+	<div class="contact__grid d-none d-md-flex flex-column flex-md-row justify-content-between">
 		<div class="contact__grid--left">
 			{% include casestudy/internal/grid.html 
 				items=site.data.casestudy.grid_left
@@ -13,13 +13,27 @@
 		</div>
 	</div>
 
+	<div class="contact__grid d-md-none d-flex flex-column flex-md-row justify-content-between">
+		<div class="contact__grid--left">
+			{% include casestudy/internal/grid.html 
+				items=site.data.casestudy.grid_left_mobile
+				item_count=15 %}
+		</div>
+	
+		<div class="contact__grid--right">
+			{% include casestudy/internal/grid.html 
+				items=site.data.casestudy.grid_right_mobile
+				item_count=15 %}
+		</div>
+	</div>
+
 	<div class="contact__content">
 		<div class="container text-center">
 			<h1>Become Our Next Case</h1>
-			<p class="my-5">Let’s talk about how we can partner up to scale your company.</p>
-			<button class="btn btn-primary btn-shadow shadow-secondary" style="font-size: 18px;">
+			<p class="my-3 my-md-5">Let’s talk about how we can partner up to scale your company.</p>
+			<a href="mailto:pieter@double-agency.com" class="btn btn-primary btn-shadow shadow-secondary" style="font-size: 18px;">
 				Contact Us
-			</button>
+			</a>
 		</div>
 	</div>
 </div>
