@@ -1,6 +1,19 @@
 .relatedstudies {
   z-index: 1;
-  position: relative;
+	position: relative;
+	
+	&__separator {
+		width: 100%;
+		height: 1px;
+		background: #e7e8ea;
+		margin: 0 15px;
+		@include media-breakpoint-up(md) {
+			margin: 0 15px;
+			width: 1px;
+			background: linear-gradient(#e7e8ea, #fff);
+			height: 600px;
+		}
+	}
   &__title {
     font-size: 22px;
     padding-bottom: 25px;
@@ -11,11 +24,6 @@
   }
   &__item--2 {
     padding-top: 35px;
-  }
-  &__separator {
-    width: 1px;
-    background: linear-gradient(#e7e8ea, #fff);
-    height: 600px;
   }
   &__excerpt {
     font-size: 22px;

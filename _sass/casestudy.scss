@@ -19,7 +19,6 @@ $container-max-widths: (
 @import "casestudy/hero";
 @import "casestudy/related_studies";
 @import "casestudy/contact";
-@import "casestudy/tags";
 
 h1 {
   font-size: 88px;
@@ -27,9 +26,9 @@ h1 {
   letter-spacing: -3px;
   line-height: 86px;
   @include media-breakpoint-down(sm) {
-    font-size: 60px;
-    letter-spacing: -2.5px;
-    line-height: 72px;
+    font-size: 36px;
+    letter-spacing: normal;
+    line-height: 41px;
   }
 }
 
@@ -41,9 +40,11 @@ h3 {
   margin-top: 65px;
   margin-bottom: 35px;
   @include media-breakpoint-down(sm) {
-    font-size: 28px;
-    letter-spacing: 0.9px;
-    line-height: 34px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 24px;
   }
 }
 
@@ -76,12 +77,20 @@ body {
 blockquote {
   border-left: 1px solid #E7E8EA;
   margin: 2.8rem 0;
+  @include media-breakpoint-down(sm) {
+    margin: 1.8rem 0;
+  }
   p {
     font-size: 22px;
     font-weight: 300;
     line-height: 32px;
     letter-spacing: 1px;
     padding-left: 38px;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
   }
 }
 

@@ -9,13 +9,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="hero__logos container mb-5">
+	<div class="hero__logos container mb-4 mb-md-5">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="d-flex align-items-center">
-					<img class="hero__logos__item mr-3" src="/assets/images/casestudy/double_logo.svg" />
-					<img class="hero__logos__cross mx-3" src="/assets/images/casestudy/cross.svg" />
-					<img class="hero__logos__item ml-3" src="{{ page.client_logo }}" />
+					<img class="hero__logos__item hero__logos__item--double mr-1 mr-md-3" src="/assets/images/casestudy/double_logo.svg" />
+					<img class="hero__logos__cross mx-1 mx-md-3" src="/assets/images/casestudy/cross.svg" />
+					<img class="hero__logos__item ml-1 ml-md-3" src="{{ page.client_logo }}" />
 				</div>
 			</div>
 		</div>
@@ -23,13 +23,13 @@
 	<div class="hero__date container pt-4">
 		<div class="row">
 			<div class="col-md-12">
-				<img class="hero__date__arrow" src="/assets/images/casestudy/arrow_corner.svg" />
+				<img class="hero__date__arrow d-none d-md-block" src="/assets/images/casestudy/arrow_corner.svg" />
 				<div class="hero__date__box d-flex align-items-center">
 					<div class="hero__date__box--1 flex-shrink-1">
-						<p class="font-weight-bold">Case Study</p>
+						<span class="font-weight-bold">Case Study</span>
 					</div>
 					<div class="hero__date__box--2">
-						<p style="color: #A1A6BC;">{{ page.date | date: '%B %d, %Y' }}</p>
+						<span style="color: #A1A6BC;">{{ page.date | date: '%B %d, %Y' }}</span>
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,7 @@
 .contact {
-  margin-top: -340px;
+  @include media-breakpoint-up(md) {
+    margin-top: -340px;
+  }
   &__grid {
     max-width: 1440px;
     margin: auto;
