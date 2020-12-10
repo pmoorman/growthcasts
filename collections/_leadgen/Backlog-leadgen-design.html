@@ -4,20 +4,22 @@ layout: pages/new-web/default
 hide_footer: true
 header_logo_only: true
 
-tagline: "Join 25,271+ others:"
-intro: "Modern growth marketing & user acquisition techniques"
+tagline: "The key to a successful start-up isn’t marketing, it’s this"
+intro: "15 email that teach you the system behind growth marketing"
+headline: ""
 top_image: /assets/images/Napkin_HQ.png
 learn_how_to_title: "Learn how to:"
 learn_how_to_items:
-  - "**Design sales machines** that work on autopilot"
-  - "Learn the **6-step framework** to unlock virtually limitless growth"
+  - "**Design acquisitions machines** that work on autopilot"
+  - "Use the **6-step framework** to fully understand growth marketing as a whole"
   - 'Leverage the **"power law of channels"** for ultimate traffic generation'
-  - "Execute **coherent growth strategies** as you scale"
+  - "Execute **coherent growth strategies** that work now, ánd when you scale"
+  - "And **much**, ***much*** more..."
 
 carousel_items:
   - title: Morgan
     subtitle: USA
-    body: Your course is very simple to understand, and I really love how you focus on systematic execution to focus on what works and what doesn't. 
+    body: You're a genius at explaining difficult things simply! ... and I really love how you focus on systematic execution to focus on what works and what doesn't. 
     image_position: right
     image: /assets/images/new-web/testimonial_8.png
   - title: Robin
@@ -37,7 +39,7 @@ carousel_items:
     image: /assets/images/new-web/testimonial_joseph.png
   - title: Alex
     subtitle: USA
-    body: I totally dig this kind of thinking Pieter! Love your emails, very easy to read.
+    body: I totally dig this kind of thinking Pieter! Love your emails, reads like a novel.
     image_position: right
     image: /assets/images/new-web/testimonial_4.png
   - title: Mark
@@ -75,7 +77,16 @@ steps_carousel:
 
 ---
 
-<div>
+  <section class="pt-1 pb-0">
+    <div class="container text-left text-md-center">
+      <div class="row">
+        <div class="col">
+          <h3>{{ page.intro }}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="text-center py-3">
     <div class="container">
       <div class="row">
@@ -85,8 +96,8 @@ steps_carousel:
       </div>
     </div>
   </section>
-  
-  <section class="notification-bar">
+
+    <section class="notification-bar">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -95,17 +106,25 @@ steps_carousel:
       </div>
     </div>
   </section>
-  
+
   <section class="pt-5 pb-0">
     <div class="container text-left text-md-center">
-      <div class="row">
-        <div class="col">
-          <h3>{{ page.intro }}</h3>
+  <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
+    <h3 class="mb-0 font-weight-bold">Join 25,271+ others</h3>
+    <h5>Receive the first lesson for free, right away!</h5>
+    <form action="https://www.getdrip.com/forms/813678440/submissions" method="post" data-drip-embedded-form="813678440">
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" name="fields[email]" placeholder="Leave your email" aria-label="Leave your email">
+        <div class="input-group-append">
+          <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now!" data-drip-attribute="sign-up-button">
         </div>
       </div>
+    </form>
+  </div>
     </div>
   </section>
-  
+ <div>
+ 
   <section class="pb-0 pb-md-5 pt-4">
     <div class="container px-0">
       <div style="overflow: hidden;">
@@ -123,13 +142,14 @@ steps_carousel:
     <div class="container">
       <div class="text-center">
         <button class="mt-4 btn btn-primary btn-shadow font-weight-bold" data-toggle="modal" data-target="#join-modal">
-          Join Now - It's Free
+          Enroll now for free
         </button>
       </div>
     </div>
   </section>
   
-  <section class="pt-5 px-0 alternate-section">
+  <section class="pt-5 pb-2 px-0 alternate-section">
+    <h4 class="mb-1 text-center font-weight-bold">Meet our celebrated students</h4>    
     <div class="container-fluid px-0">
       {% include new-web/carousel-1.html
         id="carousel-1"
@@ -138,34 +158,13 @@ steps_carousel:
     </div>
   </section>
   
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col text-left text-md-center">
-          <h3>15 step-by-step lessons on modern startup growth:</h3>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid px-0">
-      {% include new-web/carousel-2.html
-        id="carousel-2"
-        items=page.steps_carousel %}
-    </div>
-  
-  
-  </section>
-  
-  {% include new-web/text-with-striped-bg.html
-    text="<span id='text-under-swipe' class='font-weight-bold'>Swipe to explore email course >></span>" %}
-  
-  
   {% capture pieterfooterinner %}
   <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
     <h5 class="mb-0 font-weight-bold">Leave your email</h5>
     <p>and receive the first lesson right away!</p>
-    <form action="https://www.getdrip.com/forms/898173460/submissions" method="post" data-drip-embedded-form="898173460">
+    <form action="https://www.getdrip.com/forms/199987109/submissions" method="post" data-drip-embedded-form="199987109">
       <div class="input-group mb-3">
-        <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+        <input type="email" class="form-control" name="fields[email]" placeholder="Leave your email" aria-label="Leave your email">
         <div class="input-group-append">
           <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
         </div>
@@ -174,16 +173,17 @@ steps_carousel:
   </div>
   {% endcapture %}
   
-  {% include new-web/pieter-footer.html
-    title="Hey you.<br>Nice to meet you!"
-    lead="That you arrived on my doorstep means you're interested in growing businesses. Great, I can tell you a whole lot about that, <i>all for free.</i> Leave your email and I'll tell you more."
+  {% include new-web/no-pieter-footer.html
+    title="Welcome,<br>to the Double Academy!"
+    lead="We've developed a free email series, where we show you <i>a complete account</i> of modern growth marketing & user acquisition. Over the course of 2 week, we tell you the story of growth marketing, with a new insight every day. Why not try it out?"
+    hide_pic=true
     content=pieterfooterinner %}
   
   {% include new-web/email-submit-modal.html 
     id="join-modal"
-    drip_id="898173460"
-    form_label="Email address:"
-    title="15 step-by-step lessons on modern startup growth:"
-    subtitle="Email course"
-    button_text="Get the email course >>" %}
+    drip_id="199987109"
+    form_label="Email address"
+    title="2 weeks to gain a new perspective on Growth and Marketing"
+    subtitle="Email Series"
+    button_text="Enroll now for free" %}
 </div>
