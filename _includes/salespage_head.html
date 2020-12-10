@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}{%if page.title %} - {% endif %}{{ site.title }}</title>
+  <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% feed_meta %}
 
@@ -34,12 +34,9 @@
     window.mp = ['Viewed Test Page']
   </script> -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="{{ "/assets/js/drip.js" | relative_url }}"></script>
-  <script src="https://gumroad.com/js/gumroad.js"></script>
-  
-   <!-- Drip
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+   
+  <!-- Drip
   /////////////////////////////////////////////////////////////////////////////////////////////// -->
   <script>
     var _dcq = _dcq || [];
@@ -56,7 +53,6 @@
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157579030-1"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -65,7 +61,7 @@ gtag('js', new Date());
 gtag('config', 'UA-157579030-1');
 gtag('config', 'AW-670876710');
 </script>
-
+  
 
   <!-- Facebook Pixel Code
   /////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -84,8 +80,6 @@ gtag('config', 'AW-670876710');
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1613747988773735&ev=PageView&noscript=1"
   /></noscript>
-  <!-- End Facebook Pixel Code -->
-
 
   {% if page.inspectlet_pixel %}
   <!-- Begin Inspectlet JS Code
@@ -113,99 +107,5 @@ gtag('config', 'AW-670876710');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/734fe9ad62044edc880c170a76f4f321/pixel?tag=ViewContent&noscript=1"/></noscript>
   <!-- End of Quora Pixel Code -->
-
-</head>
-
-  <!-- Temporary styling till fully merged with main.css -->
-  <style>
-    @font-face {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 300;
-      src: url("../assets/fonts/poppins-v8-latin-300.eot");
-      src: local("Poppins Light"), local("Poppins-Light"),
-        url("../assets/fonts/poppins-v8-latin-300.eot?#iefix") format("embedded-opentype"),
-        url("../assets/fonts/poppins-v8-latin-300.woff2") format("woff2"),
-        url("../assets/fonts/poppins-v8-latin-300.woff") format("woff"),
-        url("../assets/fonts/poppins-v8-latin-300.ttf") format("truetype"),
-        url("../assets/fonts/poppins-v8-latin-300.svg#Poppins") format("svg");
-    }
-    
-    @font-face {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      src: url("../assets/fonts/poppins-v8-latin-regular.eot");
-      src: local("Poppins Regular"), local("Poppins-Regular"),
-        url("../assets/fonts/poppins-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
-        url("../assets/fonts/poppins-v8-latin-regular.woff2") format("woff2"),
-        url("../assets/fonts/poppins-v8-latin-regular.woff") format("woff"),
-        url("../assets/fonts/poppins-v8-latin-regular.ttf") format("truetype"),
-        url("../assets/fonts/poppins-v8-latin-regular.svg#Poppins") format("svg");
-    }
-    
-    @font-face {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 600;
-      src: url("../assets/fonts/poppins-v8-latin-600.eot");
-      src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-        url("../assets/fonts/poppins-v8-latin-600.eot?#iefix") format("embedded-opentype"),
-        url("../assets/fonts/poppins-v8-latin-600.woff2") format("woff2"),
-        url("../assets/fonts/poppins-v8-latin-600.woff") format("woff"),
-        url("../assets/fonts/poppins-v8-latin-600.ttf") format("truetype"),
-        url("../assets/fonts/poppins-v8-latin-600.svg#Poppins") format("svg");
-    }
-    
-    /* noto-serif-jp-200 - latin */
-    @font-face {
-      font-family: "Noto Serif JP";
-      font-style: normal;
-      font-weight: 200;
-      src: url("../assets/fonts/noto-serif-jp-v7-latin-200.eot"); /* IE9 Compat Modes */
-      src: local("Noto Serif JP ExtraLight"), local("NotoSerifJP-ExtraLight"),
-        url("../assets/fonts/noto-serif-jp-v7-latin-200.eot?#iefix") format("embedded-opentype"),
-        /* IE6-IE8 */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff2") format("woff2"),
-        /* Super Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.woff") format("woff"),
-        /* Modern Browsers */ url("../assets/fonts/noto-serif-jp-v7-latin-200.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("../assets/fonts/noto-serif-jp-v7-latin-200.svg#NotoSerifJP") format("svg"); /* Legacy iOS */
-    }
-
-    body, h1, h2, h3, h4, h5, h6 {
-      color: #181d33;
-      font-family: Poppins !important;
-    }
-    h2 {
-      font-weight: bold!important;
-    }
-    h3 {
-      font-weight: bold!important;
-      margin-bottom: 15px!important;
-      margin-top: 35px!important;
-    }
-    .handwriting {
-      font-weight: 500!important;
-    }
-    .module__testimonial-author p {
-      margin-bottom: 0;
-    }
-    .module__testimonial-quote {
-      font-family: Poppins;
-    }
-    .underline:after {
-      background-image: none;
-    }
-    .faq__question.heading {
-      font-size: 18px;
-      margin-bottom: 0;
-    }
-    .accordion__content p {
-      font-size: 18px;
-      font-weight: 300;
-    }
-    .accordion__content b {
-      font-weight: bold;
-    }
-  </style>
 
 </head>
