@@ -41,6 +41,9 @@ collections:
   proposals:
     output: true
     permalink: /proposals/:slug
+  case-studies:
+    output: true
+    permalink: /case-studies/:slug
   sales-header:
   intro:
   course:
@@ -59,6 +62,11 @@ defaults:
       type: "proposals"
     values:
       layout: "proposal"
+  - scope:
+      path: ""
+      type: "case-studies"
+    values:
+      layout: "case-study"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,122 @@
+$primary-color: #3497f3;
+$secondary-color: #181d33;
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+);
+
+$container-max-widths: (
+  md: 725px,
+  lg: 726px,
+  xl: 727px,
+) !default;
+
+@import "vendors/bootstrap/bootstrap";
+@import "new_web/generic/font";
+@import "new_web/footer";
+
+// Sections
+@import "casestudy/hero";
+@import "casestudy/related_studies";
+@import "casestudy/contact";
+
+h1 {
+  font-size: 88px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  line-height: 86px;
+  @include media-breakpoint-down(sm) {
+    font-size: 36px;
+    letter-spacing: normal;
+    line-height: 41px;
+  }
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 42px;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 24px;
+  }
+}
+
+p.lead {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 38px;
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+}
+
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #181d33;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+blockquote {
+  border-left: 1px solid #E7E8EA;
+  margin: 2.8rem 0;
+  @include media-breakpoint-down(sm) {
+    margin: 1.8rem 0;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding-left: 38px;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+  }
+}
+
+button.btn-shadow,
+a.btn-shadow {
+  box-shadow: 14px 14px 0 0 #d4d7e1;
+  border-radius: 0 !important;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+
+button.btn-shadow:hover,
+a.btn-shadow:hover {
+  box-shadow: none !important;
+}
+
+.shadow-secondary {
+  box-shadow: 14px 14px 0 0 $secondary-color!important;
+}
+
+.content {
+  img {
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+}

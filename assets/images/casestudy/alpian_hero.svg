@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="514px" viewBox="0 0 1440 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C577D10D-0134-444A-8FA0-631ABF11F7FEsvg</title>
+    <defs>
+        <polygon id="path-1" points="0 0 1440 0 1440 514 0 514"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-4" transform="translate(0.000000, -111.000000)">
+            <g id="hero-image" transform="translate(0.000000, 111.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="Group-2" mask="url(#mask-2)" fill="#333B40">
+                    <g transform="translate(91.000000, 218.000000)" id="Rectangle">
+                        <rect x="33" y="4.54747351e-13" width="20" height="85"></rect>
+                        <polygon transform="translate(43.000000, 42.500000) rotate(-270.000000) translate(-43.000000, -42.500000) " points="33 4.83058038e-13 53 4.83058038e-13 53 85 33 85"></polygon>
+                    </g>
+                </g>
+                <g id="Group-2" mask="url(#mask-2)" fill="#025C51">
+                    <g transform="translate(1119.000000, 109.500000)" id="Rectangle">
+                        <rect x="16" y="0.5" width="9" height="40"></rect>
+                        <polygon transform="translate(20.500000, 20.500000) rotate(-270.000000) translate(-20.500000, -20.500000) " points="16 0.5 25 0.5 25 40.5 16 40.5"></polygon>
+                    </g>
+                </g>
+                <g id="Group-2" mask="url(#mask-2)" fill="#E5E5E5">
+                    <g transform="translate(1280.000000, 300.500000)" id="Rectangle">
+                        <rect x="70" y="0.5" width="40" height="179"></rect>
+                        <polygon transform="translate(90.000000, 90.000000) rotate(-270.000000) translate(-90.000000, -90.000000) " points="70 0.5 110 0.5 110 179.5 70 179.5"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

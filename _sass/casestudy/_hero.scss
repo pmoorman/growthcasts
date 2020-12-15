@@ -1,0 +1,57 @@
+.hero {
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px;
+    max-width: 100%;
+  }
+  &__title {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    @include media-breakpoint-down(md) {
+      padding-top: 100px;
+    }
+  }
+  &__logos {
+    &__item {
+      height: 51px;
+      @include media-breakpoint-down(md) {
+        height: 31px;
+      }
+      &--double {
+        @include media-breakpoint-down(md) {
+          height: 23px;
+        }
+      }
+    }
+    &__cross {
+      width: 45px;
+      @include media-breakpoint-down(md) {
+        height: 25px;
+      }
+    }
+  }
+  &__date {
+    &__arrow {
+      width: 55px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &__box {
+      border-bottom: 1px solid #e7e8ea;
+      &--1 {
+        border-right: 1px solid #e7e8ea;
+        padding-bottom: 25px;
+        padding-right: 30px;
+      }
+      &--2 {
+        padding-bottom: 25px;
+        padding-left: 30px;
+        color: #a1a6bc;
+      }
+    }
+  }
+}

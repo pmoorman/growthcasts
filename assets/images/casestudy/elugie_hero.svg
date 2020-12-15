@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="514px" viewBox="0 0 1440 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>32AB606A-25CE-45A7-89CD-A9578E2C6EEDsvg</title>
+    <defs>
+        <polygon id="path-1" points="0 0 1440 0 1440 514 0 514"></polygon>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#26358C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFCE34" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#00AF8F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study" transform="translate(0.000000, -111.000000)">
+            <g id="hero-image" transform="translate(0.000000, 111.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Rectangle" fill="url(#linearGradient-3)" opacity="0.300000012" mask="url(#mask-2)" x="620" y="273" width="647" height="59" rx="29.3999982"></rect>
+                <circle id="Oval" fill="#26358C" mask="url(#mask-2)" cx="1237.5" cy="302.5" r="29.5"></circle>
+                <circle id="Oval" fill="#FFCE34" mask="url(#mask-2)" cx="683.5" cy="69.5" r="29.5"></circle>
+                <circle id="Oval" fill="#00AF8F" mask="url(#mask-2)" cx="278.5" cy="205.5" r="29.5"></circle>
+                <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.300000012" mask="url(#mask-2)" x="-97" y="40" width="810" height="59" rx="29.3999982"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-5)" opacity="0.300000012" mask="url(#mask-2)" x="-37" y="176" width="345" height="59" rx="29.3999982"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
