@@ -18,7 +18,7 @@ summary_items:
     - These tactics will be a great start to making your enterprise become more data-driven in marketing
 ---
 
-Calculating the lifetime value of your customers is an essential step in (data-driven) marketing.
+Calculating the lifetime value (LTV) of your customers is an essential step in (data-driven) marketing.
  
 *How come?*
  
