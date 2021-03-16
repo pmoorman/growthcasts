@@ -1,7 +1,7 @@
 ---
 title: Alpian
 date: October 28, 2020
-hero_title: The Basics Of Buying A Telescope
+hero_title: Scalable growth systems from the ground up
 hero_image: /assets/images/casestudy/alpian_hero.svg
 client_logo: /assets/images/casestudy/alpian_logo.png
 related_1: tiktok
