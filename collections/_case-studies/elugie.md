@@ -1,12 +1,12 @@
 ---
 title: Elugie
 date: October 28, 2020
-hero_title: Reaching the right audience the right way
+hero_title: From a founder-dependent sales process to growth on autopilot
 hero_image: /assets/images/casestudy/elugie_hero.svg
 client_logo: /assets/images/casestudy/elugie_logo.svg
 related_1: tiktok
 related_2: sendcloud
-excerpt: We started working on copywriting and ended up updating whole marketing strategy. OOPS!
+excerpt:
 tags:
 - landing page
 - Facebook
@@ -14,29 +14,30 @@ tags:
 ---
 
 <p class="lead">
-When your dream is to provide every building with self-produced sustainable energy, you need a strong, scalable strategy. Take a peek inside the world of hydrogen power plants - and discover how growth marketing helped Elugie reach the right audience the right way. 
+Over in little Belgium, Elugie is leading the charge for sustainable energy.
+Instead of waiting for large power companies and governments to innovate, they’re flipping the electricity model on its head. How?
 </p>
 
-### A small company with big dreams
+### They’ve created personal hydrogen power plants that can be installed in every home and business.
+Elugie came to us after selling around 400 of them. They knocked on our door and said, *“We’re on a mission to sell 100,000 of these by 2030”*.
 
-Elugie is a Belgian pioneer in hydrogen power plants. These power plants - that Elugie designs, finances, builds, promotes, and sells all on its own with the expert help of various niche partners - ingeniously convert hydrogen into socially responsible electricity for buildings. Elugie strives for a sustainable energy transition for this generation and many more to come. 
+### That meant shedding the startup skin
 
-> The dream is to provide every building with self-produced sustainable energy, thus making a difference for their customers and the planet. 
+At this point, Elugie was still leveraging their founder’s skills to close new deals. While it’s a powerful early-stage sales strategy to lean on a founder’s credibility, it eventually creates a bottleneck. One person can only be in so many places at once.
 
-When Elugie knocked on our door they had sold about 400 power plants in Belgium and were looking to scale up their business. With the vision in mind that many small power plants in people’s attics can replace a large power station, Elugie set a goal to sell 100.000 power plants by 2030. An ambitious plan that needed an effective marketing strategy.
+The fix was transitioning this method to automated marketing funnels for nurturing prospects to the point that they’re ready to talk with the sales team. So, we started on our research...
 
-### From founder dependent to fully automated marketing funnels
 
-As with so many startups Elugie’s founder was responsible for most of the deals they closed. That might be a great way to start a business but it does not hold up if you want the company to grow. What Elugie needed was an effective way to manage their sales pipeline to eventually create a more stable sales cycle with more reliable results. That’s where we came in.
+### And hit a wall
 
-> Together we worked on the company strategy and helped Elugie build proper marketing funnels. 
+Selling 100,000 power plants by 2030 was not going to be likely.
+Elugie had correctly identified butcheries and bakeries as heavy electricity consumers. But, because bakers and butchers were, on-average, 53 years old, these shop owners were likely to retire before seeing a return on their investment!
 
-We compiled emails, came up with scripts for webinars, conducted market research and wrote case studies. Anything to transition Elugie from being fully dependent on their founder to automated marketing and sales funnels.
-
-### Time to focus on a different market segment
-
-While successfully setting up marketing funnels we came to the realization that it would be impossible to reach the target of selling 100.000 power plants by 2030. Aiming for buildings with high electricity usage, Elugie’s main target audience consisted of bakers and butchers. However, market research pointed out that the average baker or butcher is 53 years old. Since most of them retire by the age of 60, their investment horizon is simply too short to turn a power plant investment into a profitable one. 
 
 ![](/assets/images/casestudy/elugie_1.png)
 
-And so, Elugie suddenly had to focus on a different market segment. While we initially hopped on board to help Elugie set up marketing funnels, we ended up with a totally unexpected but very valuable insight. It goes to show that when it comes to startups, there’s never a dull moment. 
+### The fix
+
+Together, we pivoted. Our research uncovered that the property owners leasing buildings to bakers and butchers would be around for much longer. So we focussed on them and built out emails, webinar scripts and case studies.
+
+With new funnels to nurture prospects **without** manual input... Elugie was ready to scale.
