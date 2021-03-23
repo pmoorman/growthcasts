@@ -25,12 +25,13 @@ Elugie came to us after selling around 400 of them. They knocked on our door and
 
 At this point, Elugie was still leveraging their founder’s skills to close new deals. While it’s a powerful early-stage sales strategy to lean on a founder’s credibility, it eventually creates a bottleneck. One person can only be in so many places at once.
 
-The fix was transitioning this method to automated marketing funnels for nurturing prospects to the point that they’re ready to talk with the sales team. So, we started on our research...
+We suggested creating automated marketing funnels to unlock scalable growth. When Elugie gave us the green light, we started our research...
+
 
 
 ### And hit a wall
 
-Selling 100,000 power plants by 2030 was not going to be likely.
+Selling 100,000 power plants by 2030 suddenly looked **very** unlikely.
 Elugie had correctly identified butcheries and bakeries as heavy electricity consumers. But, because bakers and butchers were, on-average, 53 years old, these shop owners were likely to retire before seeing a return on their investment!
 
 
@@ -38,6 +39,6 @@ Elugie had correctly identified butcheries and bakeries as heavy electricity con
 
 ### The fix
 
-Together, we pivoted. Our research uncovered that the property owners leasing buildings to bakers and butchers would be around for much longer. So we focussed on them and built out emails, webinar scripts and case studies.
+Together, we pivoted. The property owners leasing buildings to bakers and butchers looked to be better target customers. So we focussed on them and built out emails, webinar scripts and case studies.
 
 With new funnels to nurture prospects **without** manual input... Elugie was ready to scale.
