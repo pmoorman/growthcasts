@@ -8,8 +8,7 @@ related_1: tiktok
 related_2: sendcloud
 excerpt:
 tags:
-- landing page
-- Facebook
+- copywriting
 - sales funnel
 ---
 

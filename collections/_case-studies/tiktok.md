@@ -15,6 +15,7 @@ tags:
 
 <p class="lead">
 With 500 million monthly active users, a company value of 100 billion and 15,000 employees… TikTok is the leading platform for short-form mobile video.
+
 But when TikTok’s platform exploded, the company’s B2B branch fell behind. They weren’t onboarding new advertisers fast enough to stay on target, and couldn’t see what was causing the holdup. 
 </p>
 
