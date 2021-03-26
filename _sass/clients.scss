@@ -1,0 +1,225 @@
+html > body {
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  // Client box
+  .client-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__logo {
+      height: 220px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__arrow {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+    }
+
+    &__content {
+      padding: 30px;
+      flex: 1;
+
+      &__title {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      &__industry {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 42px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__services {
+      display: flex;
+
+      &__titlebox {
+        background: #359bfa;
+        padding: 0px 30px;
+
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 42px;
+        }
+      }
+
+      &__valuebox {
+        background: #292f47;
+        padding: 15px 30px;
+        height: 72px;
+
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    &__testimonial {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 25px;
+
+      &__line {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      &__name {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      &__jobtitle {
+        font-weight: normal;
+        margin: 0;
+      }
+    }
+  }
+
+  /* SM */
+  .client-box__sm .client-box__logo {
+    border: 1px solid #e5e5e5;
+  }
+  .client-box__sm .client-box__content__industry {
+    color: #359bfa;
+  }
+  .client-box__sm .client-box__content {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  .client-box__sm .client-box__services {
+    flex-direction: column;
+  }
+
+  /* MD */
+  .client-box__md .client-box__content {
+    color: #fff;
+  }
+  .client-box__md .client-box__services__titlebox {
+    display: flex;
+    align-items: center;
+  }
+  .client-box__md .client-box__services__valuebox {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  /* LG */
+  .client-box__lg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 110px;
+    margin-top: 20px;
+
+    .container {
+      padding-top: 200px;
+      color: #fff;
+      position: relative;
+    }
+
+    .row {
+      padding: 0 8px;
+    }
+
+    .client-box {
+      &__logo {
+        width: 100%;
+        min-height: 371px;
+      }
+
+      &__content {
+        padding-right: 0;
+
+        &__inner {
+          padding-right: 30px;
+        }
+
+        &__title {
+          font-weight: 600;
+          font-size: 42px;
+          line-height: 48px;
+          margin-bottom: 0;
+        }
+
+        &__industry {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 42px;
+          margin-bottom: 25px;
+        }
+
+        &__description {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      &__testimonial {
+        &__name {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        &__jobtitle {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      &__services {
+        position: absolute;
+        bottom: -72px;
+        width: 100%;
+        padding: 0 8px;
+
+        &__titlebox {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          p {
+            padding: 0 40px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+
+        &__valuebox {
+          display: flex;
+          align-items: center;
+          p {
+            padding: 0 40px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}
