@@ -4,6 +4,7 @@ layout: pages/new-web/default
 hide_footer: true
 stylesheets:
   - /assets/clients.css
+industries: ['All', 'SaaS', 'Mobile', 'FinTech', 'Customer', 'B2B', 'High-tech']
 clients:
 
   # Klooker
@@ -165,7 +166,54 @@ clients:
     size: sm
 ---
 
-<section>
+<style>
+  html > body h1 {
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 87px;
+  }
+  .hero {
+    padding-bottom: 100px; 
+    padding-top: 100px;
+  }
+  .industry_filters {
+    width: 100%;
+  }
+
+  .industry_filters__item {
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #E5E5E5!important;
+    color: #292F47;
+  }
+</style>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <h1>Clients</h1>
+        <button class="btn btn-link btn-lg">
+          All services
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="industry_filters btn-group" role="group">
+          {% for industry in page.industries %}
+          <button type="button" class="btn industry_filters__item">{{industry}}</button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="pt-0">
   <div class="container">
     <div class="row">
       {% for client in page.clients %} 
