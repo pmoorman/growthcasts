@@ -1,8 +1,62 @@
 html > body {
+  h1 {
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 87px;
+  }
+
   p {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
+  }
+
+  // Hero
+  #hero {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  // Industry filters
+  .industry_filters {
+    width: 100%;
+    margin-top: 100px;
+    &__item {
+      padding: 15px;
+      background: transparent;
+      color: #292f47;
+      font-size: 18px;
+      line-height: 42px;
+      flex: 1 1 auto;
+      position: relative;
+      &:not(.active) {
+        border: 1px solid #e5e5e5!important;
+      }
+      &:not(.active):hover {
+        border: 1px solid #000!important;
+      }
+      &.active {
+        background-color: #3497f3;
+        box-shadow: 12px 12px 0 0 #181d33!important;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
+        left: -12px;
+        bottom: 12px;
+      }
+    }
+  }
+
+  // Service filters
+  .service_filters {
+    &__btn {
+      background-color: transparent;
+      color: #292f47;
+      font-size: 20px;
+      &:after {
+        display: none;
+      }
+    }
   }
 
   // Client box

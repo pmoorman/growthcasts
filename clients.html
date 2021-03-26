@@ -167,56 +167,6 @@ clients:
     size: sm
 ---
 
-<style>
-  html > body h1 {
-    font-weight: 600;
-    font-size: 90px;
-    line-height: 87px;
-  }
-  #hero {
-    padding-bottom: 100px!important;
-    padding-top: 100px!important;
-  }
-  .industry_filters {
-    width: 100%;
-    margin-top: 100px;
-  }
-
-  .industry_filters__item {
-    padding: 15px;
-    background: transparent;
-    border: 1px solid #E5E5E5!important;
-    color: #292F47;
-    font-size: 18px;
-    line-height: 42px;
-    flex: 1 1 auto;
-    position: relative;
-  }
-
-  .industry_filters__item.active {
-    background-color: #3497f3;
-    box-shadow: 12px 12px 0 0 #181d33!important;
-    border: 0!important;
-    color: #fff;
-    font-weight: 600;
-    left: -12px;
-    bottom: 12px;
-  }
-
-  .industry_filters__item:not(.active):hover {
-    border: 1px solid #000!important;
-  }
-
-  .service_filters_btn {
-    background-color: transparent;
-    color: #292F47;
-    font-size: 20px;
-  }
-  .service_filters_btn:after {
-  display: none;
-  }
-</style>
-
 <!-- Hero -->
 <section id="hero">
   <div class="container">
@@ -228,7 +178,7 @@ clients:
 
         <!-- Service filters -->
         <div class="service_filters dropdown">
-          <button class="service_filters_btn btn btn-light dropdown-toggle" type="button" id="service_filters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="service_filters__btn btn btn-light dropdown-toggle" type="button" id="service_filters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="mr-2" src="/assets/images/clients/chevron-down.svg" />
             #All services
           </button>
@@ -272,5 +222,12 @@ clients:
         {% endif %} 
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<!-- Bottom -->
+<section>
+  <div class="container">
+
   </div>
 </section>
