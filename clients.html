@@ -1,0 +1,162 @@
+---
+title: Clients
+layout: pages/new-web/default
+hide_footer: true
+clients:
+  - title: Insecto Cycle
+    logo: /assets/images/clients/insecto_cycle-logo.svg
+    industry: B2B
+    services:
+      - "Instagram & Pinterest ads"
+      - "Funnels"
+      - "Analytics"
+    description: For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!
+    background_color: "#E4F0EC"
+    arrow: dark
+  - title: utrechtinc
+    logo: /assets/images/clients/utrechtinc-logo.svg
+    industry: Customer
+    services:
+      - "Funnels"
+      - "Onboarding"
+    description: We’ve become Insecto Cycle’stechnical handymen and scale-up department.
+    background_color: "#FFFFFF"
+    arrow: dark
+  - title: Peg
+    logo: /assets/images/clients/peg-logo.svg
+    industry: High-tech
+    services:
+      - "Webdesign"
+      - "Linkedin ads"
+      - "Copywriting"
+    description: London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.
+    background_color: "#E94058"
+    arrow: light
+---
+
+<style>
+  h1 {
+    font-size: 90px !important;
+    font-weight: 600 !important;
+  }
+  h2 {
+    font-weight: 600 !important;
+    font-size: 42px !important;
+    line-height: 63px !important;
+  }
+  h3 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 36px !important;
+  }
+  h6 {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  p.lead {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 42px !important;
+  }
+
+  .client-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .client-box__logo {
+    height: 220px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-box__logo__arrow {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .client-box__content {
+    padding: 30px;
+    flex: 1;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  .client-box__content__title {
+    margin-bottom: 0;
+  }
+  .client-box__content__industry {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 42px;
+    color: #359bfa;
+    margin-bottom: 5px;
+  }
+  .client-box__services__titlebox {
+    background: #359bfa;
+    padding: 0px 30px;
+  }
+  .client-box__services__titlebox p {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 42px;
+  }
+  .client-box__services__valuebox {
+    background: #292f47;
+    padding: 15px 30px;
+    height: 72px;
+  }
+  .client-box__services__valuebox p {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+</style>
+
+<section>
+  <div class="container">
+    <div class="row">
+      {% for client in page.clients %}
+      <div class="col-md-4 px-2">
+        <div class="client-box">
+          <div
+            class="client-box__logo"
+            style="background: {{client.background_color}}"
+          >
+            <div class="client-box__logo__arrow">
+              <img
+                src="/assets/images/clients/link_arrow-{{client.arrow}}.svg"
+              />
+            </div>
+            <img src="{{client.logo}}" alt="{{client.title}} logo" />
+          </div>
+          <div class="client-box__content">
+            <h3 class="client-box__content__title">{{client.title}}</h3>
+            <p class="client-box__content__industry">{{client.industry}}</p>
+            <p class="client-box__content__description">
+              {{client.description}}
+            </p>
+          </div>
+          <div class="client-box__services__titlebox">
+            <p>We worked on:</p>
+          </div>
+          <div class="client-box__services__valuebox">
+            <p>{% for service in client.services %} #{{service}}{% endfor %}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
