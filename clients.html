@@ -13,6 +13,7 @@ clients:
     description: For BABB our partner Pieter crafted the strategic messaging & positioning that resulted in them *raising a massive $25MM Initial Coin Offering (ICO)… Wow!
     background_color: "#E4F0EC"
     arrow: dark
+    size: sm
   - title: utrechtinc
     logo: /assets/images/clients/utrechtinc-logo.svg
     industry: Customer
@@ -22,6 +23,7 @@ clients:
     description: We’ve become Insecto Cycle’stechnical handymen and scale-up department.
     background_color: "#FFFFFF"
     arrow: dark
+    size: sm
   - title: Peg
     logo: /assets/images/clients/peg-logo.svg
     industry: High-tech
@@ -32,6 +34,30 @@ clients:
     description: London-based Peg raised a $1M+ Series A round after Pieter set up a stable sales infrastructure and outbound sales engine.
     background_color: "#E94058"
     arrow: light
+    size: sm
+  - title: BABB
+    logo: /assets/images/clients/babb-logo.svg
+    industry: SaaS
+    services:
+      - "Instagram & Pinterest ads"
+      - "Funnels"
+      - "Analytics"
+    description: We already had some cool marketing ideas, but Pieter really helped us shape a clear and successful marketing plan that growth hacked our entire ICO.
+    testimonial_name: Demetrios Zamboglou
+    testimonial_jobtitle: CEO at BABB
+    background_image: /assets/images/clients/babb_background.svg
+    arrow: light
+    size: md
+  - title: sendcloud
+    logo: /assets/images/clients/sendcloud-logo.svg
+    industry: Mobile
+    services:
+      - "Funnels"
+      - "Onboarding"
+    description: We’ve become Insecto Cycle’s technical handymen and scale-up department.
+    background_color: "#EEF6FF"
+    arrow: dark
+    size: sm
 ---
 
 <style>
@@ -73,7 +99,6 @@ clients:
   .client-box__logo {
     height: 220px;
     position: relative;
-    border: 1px solid #e5e5e5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +111,6 @@ clients:
   .client-box__content {
     padding: 30px;
     flex: 1;
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
   }
   .client-box__content__title {
     margin-bottom: 0;
@@ -96,8 +119,10 @@ clients:
     font-weight: 600;
     font-size: 18px;
     line-height: 42px;
-    color: #359bfa;
     margin-bottom: 5px;
+  }
+  .client-box__services {
+    display: flex;
   }
   .client-box__services__titlebox {
     background: #359bfa;
@@ -122,14 +147,61 @@ clients:
     font-size: 14px;
     line-height: 21px;
   }
+  .client-box__testimonial {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 25px;
+  }
+  .client-box__testimonial__line {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .client-box__testimonial__name {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .client-box__testimonial__jobtitle {
+    font-weight: normal;
+    margin: 0;
+  }
+
+  /* SM */
+  .client-box__sm .client-box__logo {
+    border: 1px solid #e5e5e5;
+  }
+  .client-box__sm .client-box__content__industry {
+    color: #359bfa;
+  }
+  .client-box__sm .client-box__content {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  .client-box__sm .client-box__services {
+    flex-direction: column;
+  }
+
+  /* MD */
+  .client-box__md .client-box__content {
+    color: #fff;
+  }
+  .client-box__md .client-box__services__titlebox {
+    display: flex;
+    align-items: center;
+  }
+  .client-box__md .client-box__services__valuebox {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
 </style>
 
 <section>
   <div class="container">
     <div class="row">
-      {% for client in page.clients %}
-      <div class="col-md-4 px-2">
-        <div class="client-box">
+      {% for client in page.clients %} {% if client.size == "sm" %}
+
+      <div class="col-md-4 px-2 mb-3">
+        <div class="client-box client-box__sm">
           <div
             class="client-box__logo"
             style="background: {{client.background_color}}"
@@ -148,15 +220,72 @@ clients:
               {{client.description}}
             </p>
           </div>
-          <div class="client-box__services__titlebox">
-            <p>We worked on:</p>
-          </div>
-          <div class="client-box__services__valuebox">
-            <p>{% for service in client.services %} #{{service}}{% endfor %}</p>
+          <div class="client-box__services">
+            <div class="client-box__services__titlebox">
+              <p>We worked on:</p>
+            </div>
+            <div class="client-box__services__valuebox">
+              <p>
+                {% for service in client.services %} #{{service}}{% endfor %}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      {% endfor %}
+
+      {% elsif client.size == "md" %}
+
+      <div class="col-md-8 px-2 mb-3">
+        <div
+          class="client-box client-box__md"
+          style="background-image: url('{{client.background_image}}')"
+        >
+          <div
+            class="client-box__logo"
+            style="background-color: {{client.background_color}};"
+          >
+            <div class="client-box__logo__arrow">
+              <img
+                src="/assets/images/clients/link_arrow-{{client.arrow}}.svg"
+              />
+            </div>
+            <img src="{{client.logo}}" alt="{{client.title}} logo" />
+          </div>
+          <div class="client-box__content">
+            <h3 class="client-box__content__title">{{client.title}}</h3>
+            <p class="client-box__content__industry">{{client.industry}}</p>
+            <p class="client-box__content__description">
+              {{client.description}}
+            </p>
+            {% if client.testimonial_name %}
+            <div class="client-box__testimonial">
+              <img
+                class="client-box__testimonial__line"
+                src="/assets/images/clients/testimonial_line.svg"
+              />
+              <p class="client-box__testimonial__name">
+                {{client.testimonial_name}}
+              </p>
+              <p class="client-box__testimonial__jobtitle">
+                {{client.testimonial_jobtitle}}
+              </p>
+            </div>
+            {% endif %}
+          </div>
+          <div class="client-box__services">
+            <div class="client-box__services__titlebox">
+              <p>We worked on:</p>
+            </div>
+            <div class="client-box__services__valuebox">
+              <p>
+                {% for service in client.services %} #{{service}}{% endfor %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endif %} {% endfor %}
     </div>
   </div>
 </section>
