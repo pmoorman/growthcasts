@@ -4,7 +4,7 @@ html > body {
     font-size: 14px;
     line-height: 21px;
   }
-  
+
   // Client box
   .client-box {
     display: flex;
@@ -98,32 +98,52 @@ html > body {
   }
 
   /* SM */
-  .client-box__sm .client-box__logo {
-    border: 1px solid #e5e5e5;
-  }
-  .client-box__sm .client-box__content__industry {
-    color: #359bfa;
-  }
-  .client-box__sm .client-box__content {
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-  }
-  .client-box__sm .client-box__services {
-    flex-direction: column;
+  .client-box__sm {
+    .client-box {
+      &__logo {
+        border: 1px solid #e5e5e5;
+      }
+
+      &__content {
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+
+        &__industry {
+          color: #359bfa;
+        }
+      }
+
+      &__services {
+        flex-direction: column;
+      }
+    }
   }
 
   /* MD */
-  .client-box__md .client-box__content {
-    color: #fff;
-  }
-  .client-box__md .client-box__services__titlebox {
-    display: flex;
-    align-items: center;
-  }
-  .client-box__md .client-box__services__valuebox {
-    flex: 1;
-    display: flex;
-    align-items: center;
+  .client-box__md {
+    .client-box {
+      &__logo {
+        flex: 1;
+      }
+
+      &__content {
+        flex: 0;
+        color: #fff;
+      }
+
+      &__services {
+        &__titlebox {
+          display: flex;
+          align-items: center;
+        }
+
+        &__valuebox {
+          flex: 1;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
   }
 
   /* LG */
@@ -200,7 +220,7 @@ html > body {
         &__titlebox {
           display: flex;
           align-items: center;
-          justify-content: end;
+          justify-content: flex-end;
           p {
             padding: 0 40px;
             font-weight: bold;
