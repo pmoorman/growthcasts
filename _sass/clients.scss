@@ -30,14 +30,14 @@ html > body {
       flex: 1 1 auto;
       position: relative;
       &:not(.active) {
-        border: 1px solid #e5e5e5!important;
+        border: 1px solid #e5e5e5 !important;
       }
       &:not(.active):hover {
-        border: 1px solid #000!important;
+        border: 1px solid #000 !important;
       }
       &.active {
         background-color: #3497f3;
-        box-shadow: 12px 12px 0 0 #181d33!important;
+        box-shadow: 12px 12px 0 0 #181d33 !important;
         border: 0;
         color: #fff;
         font-weight: 600;
@@ -56,6 +56,47 @@ html > body {
       &:after {
         display: none;
       }
+    }
+  }
+
+  // Bottom content
+  .bottom_content {
+    h2 {
+      font-size: 56px;
+      line-height: 64px;
+      font-weight: normal;
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 42px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  // Arrow button
+  .arrow_button {
+    color: #fff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    &__arrow {
+      width: 56px;
+      height: 100%;
+      background: #359bfa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__text {
+      color: #fff;
+      padding: 0 40px 0 20px;
     }
   }
 
