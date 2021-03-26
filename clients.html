@@ -58,6 +58,43 @@ clients:
     background_color: "#EEF6FF"
     arrow: dark
     size: sm
+  - title: TikTok
+    logo: /assets/images/clients/tiktok-logo.svg
+    industry: FinTech
+    services:
+      - "Webdesign"
+      - "LinkedIn ads"
+      - "Onboarding"
+    description: "“Double’s team is extremely forthcoming with ideas to engage ourcostumer further.“"
+    testimonial_name: Dennis Kamst
+    testimonial_jobtitle: Founder & CEO at klooker
+    background_color: "#000"
+    background_image: /assets/images/clients/tiktok_background.svg
+    arrow: light
+    size: lg
+  - title: BABB
+    logo: /assets/images/clients/babb-logo.svg
+    industry: SaaS
+    services:
+      - "Instagram & Pinterest ads"
+      - "Funnels"
+      - "Analytics"
+    description: We already had some cool marketing ideas, but Pieter really helped us shape a clear and successful marketing plan that growth hacked our entire ICO.
+    testimonial_name: Demetrios Zamboglou
+    testimonial_jobtitle: CEO at BABB
+    background_image: /assets/images/clients/babb_background.svg
+    arrow: light
+    size: md
+  - title: sendcloud
+    logo: /assets/images/clients/sendcloud-logo.svg
+    industry: Mobile
+    services:
+      - "Funnels"
+      - "Onboarding"
+    description: We’ve become Insecto Cycle’s technical handymen and scale-up department.
+    background_color: "#EEF6FF"
+    arrow: dark
+    size: sm
 ---
 
 <style>
@@ -285,7 +322,91 @@ clients:
         </div>
       </div>
 
-      {% endif %} {% endfor %}
+      {% elsif client.size == "lg" %}
     </div>
+  </div>
+
+  <div
+    style="background-image: url('{{client.background_image}}'); background-repeat: no-repeat; background-size: cover; margin-bottom: 110px; margin-top: 20px;"
+  >
+    <div
+      class="client-box__lg container"
+      style="padding-top: 200px; color: #fff; position: relative"
+    >
+      <div class="row" style="padding: 0 8px">
+        <div class="col-md-4 px-0">
+          <div
+            class="client-box__logo"
+            style="background-color: {{client.background_color}}; width: 100%; min-height: 371px;"
+          >
+            <img src="{{client.logo}}" alt="{{client.title}} logo" />
+          </div>
+        </div>
+        <div class="col-md-8 pl-4 pr-0">
+          <div class="client-box__content" style="padding-right: 0">
+            <div style="padding-right: 30px">
+              <h3 class="client-box__content__title">{{client.title}}</h3>
+              <p class="client-box__content__industry">{{client.industry}}</p>
+              <p class="client-box__content__description">
+                {{client.description}}
+              </p>
+            </div>
+            {% if client.testimonial_name %}
+            <div class="client-box__testimonial">
+              <img
+                class="client-box__testimonial__line"
+                src="/assets/images/clients/testimonial_line.svg"
+              />
+              <p class="client-box__testimonial__name">
+                {{client.testimonial_name}}
+              </p>
+              <p class="client-box__testimonial__jobtitle">
+                {{client.testimonial_jobtitle}}
+              </p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div
+        class="client-box__services row"
+        style="position: absolute; bottom: -72px; width: 100%; padding: 0 8px"
+      >
+        <div
+          class="col-md-4 px-0 client-box__services__titlebox d-flex align-items-center justify-content-end"
+        >
+          <p
+            style="
+              padding: 0 40px;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 27px;
+            "
+          >
+            We worked on:
+          </p>
+        </div>
+        <div
+          class="client-box__services__valuebox col-md-8 px-0 d-flex align-items-center"
+        >
+          <p
+            style="
+              padding: 0 40px;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 27px;
+            "
+          >
+            {% for service in client.services %}
+            <span class="mr-4">#{{service}}</span>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">{% endif %} {% endfor %}</div>
   </div>
 </section>
