@@ -5,6 +5,7 @@ hide_footer: true
 stylesheets:
   - /assets/clients.css
 industries: ['All', 'SaaS', 'Mobile', 'FinTech', 'Customer', 'B2B', 'High-tech']
+services: ['Webdesign', 'LinkedIn ads', 'Onboarding', 'Instagram & Pinterest ads']
 clients:
 
   # Klooker
@@ -172,12 +173,13 @@ clients:
     font-size: 90px;
     line-height: 87px;
   }
-  .hero {
-    padding-bottom: 100px; 
-    padding-top: 100px;
+  #hero {
+    padding-bottom: 100px!important;
+    padding-top: 100px!important;
   }
   .industry_filters {
     width: 100%;
+    margin-top: 100px;
   }
 
   .industry_filters__item {
@@ -185,26 +187,66 @@ clients:
     background: transparent;
     border: 1px solid #E5E5E5!important;
     color: #292F47;
+    font-size: 18px;
+    line-height: 42px;
+    flex: 1 1 auto;
+    position: relative;
+  }
+
+  .industry_filters__item.active {
+    background-color: #3497f3;
+    box-shadow: 12px 12px 0 0 #181d33!important;
+    border: 0!important;
+    color: #fff;
+    font-weight: 600;
+    left: -12px;
+    bottom: 12px;
+  }
+
+  .industry_filters__item:not(.active):hover {
+    border: 1px solid #000!important;
+  }
+
+  .service_filters_btn {
+    background-color: transparent;
+    color: #292F47;
+    font-size: 20px;
+  }
+  .service_filters_btn:after {
+  display: none;
   }
 </style>
 
 <!-- Hero -->
 <section id="hero">
   <div class="container">
-    <div class="row mb-5">
+    <div class="row">
       <div class="col-md-12 d-flex justify-content-between align-items-center">
+
+        <!-- Title -->
         <h1>Clients</h1>
-        <button class="btn btn-link btn-lg">
-          All services
-        </button>
+
+        <!-- Service filters -->
+        <div class="service_filters dropdown">
+          <button class="service_filters_btn btn btn-light dropdown-toggle" type="button" id="service_filters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="mr-2" src="/assets/images/clients/chevron-down.svg" />
+            #All services
+          </button>
+          <div class="dropdown-menu" aria-labelledby="service_filters">
+            {% for service in page.services %}
+            <a class="dropdown-item" href="#">{{service}}</a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Industry filters -->
     <div class="row">
       <div class="col-md-12">
         <div class="industry_filters btn-group" role="group">
           {% for industry in page.industries %}
-          <button type="button" class="btn industry_filters__item">{{industry}}</button>
+          <button type="button" class="industry_filters__item {% if forloop.index == 1 %}active{% endif %}">{{industry}}</button>
           {% endfor %}
         </div>
       </div>
