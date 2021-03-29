@@ -19,9 +19,13 @@
         </div>
       </div>
       <div class="col-md-8 pl-4 pr-0">
-        <div class="client-box__logo__arrow d-none d-md-block d-md-flex d-none">
-          <img src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
-        </div>
+        <a href="{{client.page_url}}" class="client-box__logo__arrow d-none d-md-block d-md-flex d-none">
+          <img class="client-box__logo__arrow--non_hover" src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
+          <div class="client-box__logo__arrow--hover">
+            <img src="/assets/images/clients/link_arrow-light.svg" />
+            <span>See Case Study</span>
+          </div>
+        </a>
         <div class="client-box__content">
           <div class="client-box__content__inner">
             <h3 class="client-box__content__title">{{client.title}}</h3>
@@ -45,7 +49,7 @@
           </div>
           {% endif %}
           <div class="d-block d-md-none">
-            <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="">
+            <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="{{client.page_url}}">
               See Case Study <img class="client-box__link_mobile__arrow" src="/assets/images/clients/link_arrow-light.svg" />
             </a>
           </div>

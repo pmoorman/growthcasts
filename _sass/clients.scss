@@ -153,10 +153,10 @@ html > body {
           @include media-breakpoint-down(sm) {
             right: 0;
             left: initial;
-            top: 35px;        
+            top: 35px;
             width: 85px;
             height: 115px;
-            background: #D9EFFB;
+            background: #d9effb;
             opacity: 0.8;
           }
         }
@@ -228,7 +228,7 @@ html > body {
     padding: 0;
     border: 0;
     border-radius: 0;
-    background-color: #292F47;
+    background-color: #292f47;
     &__arrow {
       width: 56px;
       height: 100%;
@@ -257,9 +257,38 @@ html > body {
       align-items: center;
 
       &__arrow {
-        position: absolute;
-        right: 15px;
-        top: 15px;
+        &--non_hover {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
+        &--hover {
+          opacity: 0;
+          transition: 0.5s;
+          width: 140px;
+          height: 140px;
+          background: #359bfa;
+          color: #fff;
+          box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: flex-end;
+          padding: 15px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          img {
+            height: 24px;
+            width: 24px;
+            right: 15px;
+            position: absolute;
+            top: 15px;
+          }
+        }
+        &:hover {
+          .client-box__logo__arrow--hover {
+            opacity: 1;
+          }
+        }
       }
     }
 
@@ -443,6 +472,12 @@ html > body {
         min-height: 371px;
         @include media-breakpoint-down(sm) {
           min-height: 160px;
+        }
+        &__arrow {
+          &--hover {
+            width: 220px;
+            height: 220px;
+          }
         }
       }
 
