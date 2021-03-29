@@ -1,52 +1,63 @@
 {% assign client = include.client %}
 
-<div data-aos="fade-in" data-aos-offset="300" data-aos-once="true" class="col-md-8 px-0 px-md-2 mb-3">
+<div
+  class="client-box client-box__md"
+  style="background-image: url('{{client.background_image}}')"
+>
   <div
-    class="client-box client-box__md"
-    style="background-image: url('{{client.background_image}}')"
+    class="client-box__logo"
+    style="background-color: {{client.background_color}};"
   >
-    <div
-      class="client-box__logo"
-      style="background-color: {{client.background_color}};"
+    <a
+      href="{{client.page_url}}"
+      class="client-box__logo__arrow d-md-flex d-none"
     >
-      <a href="{{client.page_url}}" class="client-box__logo__arrow d-md-flex d-none">
-        <img class="client-box__logo__arrow--non_hover" src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
-        <div class="client-box__logo__arrow--hover">
-          <img src="/assets/images/clients/link_arrow-light.svg" />
-          <span>See Case Study</span>
-        </div>
-      </a>
-      <img src="{{client.logo}}" alt="{{client.title}} logo" />
+      <img
+        class="client-box__logo__arrow--non_hover"
+        src="/assets/images/clients/link_arrow-{{client.arrow}}.svg"
+      />
+      <div class="client-box__logo__arrow--hover">
+        <img src="/assets/images/clients/link_arrow-light.svg" />
+        <span>See Case Study</span>
+      </div>
+    </a>
+    <img src="{{client.logo}}" alt="{{client.title}} logo" />
+  </div>
+  <div class="client-box__content">
+    <h3 class="client-box__content__title">{{client.title}}</h3>
+    <p class="client-box__content__industry">{{client.industry}}</p>
+    <p class="client-box__content__description">{{client.description}}</p>
+    {% if client.testimonial_name %}
+    <div class="client-box__testimonial">
+      <img
+        class="client-box__testimonial__line"
+        src="/assets/images/clients/testimonial_line.svg"
+      />
+      <p class="client-box__testimonial__name">{{client.testimonial_name}}</p>
+      <p class="client-box__testimonial__jobtitle">
+        {{client.testimonial_jobtitle}}
+      </p>
     </div>
-    <div class="client-box__content">
-      <h3 class="client-box__content__title">{{client.title}}</h3>
-      <p class="client-box__content__industry">{{client.industry}}</p>
-      <p class="client-box__content__description">{{client.description}}</p>
-      {% if client.testimonial_name %}
-      <div class="client-box__testimonial">
+    {% endif %}
+    <div class="d-block d-md-none">
+      <a
+        class="client-box__link_mobile btn btn-primary d-flex justify-content-between"
+        href="{{client.page_url}}"
+      >
+        See Case Study
         <img
-          class="client-box__testimonial__line"
-          src="/assets/images/clients/testimonial_line.svg"
+          class="client-box__link_mobile__arrow"
+          src="/assets/images/clients/link_arrow-light.svg"
         />
-        <p class="client-box__testimonial__name">{{client.testimonial_name}}</p>
-        <p class="client-box__testimonial__jobtitle">
-          {{client.testimonial_jobtitle}}
-        </p>
-      </div>
-      {% endif %}
-      <div class="d-block d-md-none">
-        <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="{{client.page_url}}">
-          See Case Study <img class="client-box__link_mobile__arrow" src="/assets/images/clients/link_arrow-light.svg" />
-        </a>
-      </div>
+      </a>
     </div>
-    <div class="client-box__services d-md-flex d-none">
-      <div class="client-box__services__titlebox">
-        <p>We worked on:</p>
-      </div>
-      <div class="client-box__services__valuebox">
-        <p>{% for service in client.services %} #{{service}}{% endfor %}</p>
-      </div>
+  </div>
+  <div class="client-box__services d-md-flex d-none">
+    <div class="client-box__services__titlebox">
+      <p>We worked on:</p>
+    </div>
+    <div class="client-box__services__valuebox">
+      <p>{% for service in client.services %} #{{service}}{% endfor %}</p>
     </div>
   </div>
 </div>

@@ -1,13 +1,13 @@
 {% assign client = include.client %}
 
 <div
-  data-aos="fade-in"
-  data-aos-offset="300"
-  data-aos-once="true"
   class="client-box__lg"
   style="background-image: url('{{client.background_image}}');"
 >
-  <div class="mobile-bg d-block d-md-none" style="background-image:url('{{client.background_image_mobile}}')"></div>
+  <div
+    class="mobile-bg d-block d-md-none"
+    style="background-image:url('{{client.background_image_mobile}}')"
+  ></div>
   <div class="container">
     <div class="row">
       <div class="col-md-4 px-0">
@@ -19,8 +19,14 @@
         </div>
       </div>
       <div class="col-md-8 pl-4 pr-0">
-        <a href="{{client.page_url}}" class="client-box__logo__arrow d-none d-md-block d-md-flex d-none">
-          <img class="client-box__logo__arrow--non_hover" src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
+        <a
+          href="{{client.page_url}}"
+          class="client-box__logo__arrow d-none d-md-block d-md-flex d-none"
+        >
+          <img
+            class="client-box__logo__arrow--non_hover"
+            src="/assets/images/clients/link_arrow-{{client.arrow}}.svg"
+          />
           <div class="client-box__logo__arrow--hover">
             <img src="/assets/images/clients/link_arrow-light.svg" />
             <span>See Case Study</span>
@@ -49,8 +55,15 @@
           </div>
           {% endif %}
           <div class="d-block d-md-none">
-            <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="{{client.page_url}}">
-              See Case Study <img class="client-box__link_mobile__arrow" src="/assets/images/clients/link_arrow-light.svg" />
+            <a
+              class="client-box__link_mobile btn btn-primary d-flex justify-content-between"
+              href="{{client.page_url}}"
+            >
+              See Case Study
+              <img
+                class="client-box__link_mobile__arrow"
+                src="/assets/images/clients/link_arrow-light.svg"
+              />
             </a>
           </div>
         </div>

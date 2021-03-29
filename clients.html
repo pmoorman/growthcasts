@@ -5,12 +5,13 @@ custom_header: new-web/clients-header.html
 custom_footer: new-web/clients-footer.html
 scripts:
   - https://unpkg.com/aos@2.3.1/dist/aos.js
+  - https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js
 stylesheets:
   - /assets/clients.css
   - https://unpkg.com/aos@2.3.1/dist/aos.css
 industries: ["All", "SaaS", "Mobile", "FinTech", "Customer", "B2B", "High-tech"]
 services:
-  ["Webdesign", "LinkedIn ads", "Onboarding", "Instagram & Pinterest ads"]
+  ["All", "Webdesign", "LinkedIn ads", "Onboarding", "Instagram & Pinterest ads"]
 clients:
   # Klooker
   - title: klooker
@@ -185,6 +186,8 @@ clients:
     page_url: "#"
 ---
 
+<div id="clients-page">
+
 <!-- Hero -->
 <section id="hero">
   <div class="container">
@@ -206,11 +209,11 @@ clients:
             aria-expanded="false"
           >
             <img class="mr-2" src="/assets/images/clients/chevron-down.svg" />
-            #All services
+            #<span v-html="selectedService"></span> services
           </button>
           <div class="dropdown-menu" aria-labelledby="service_filters">
             {% for service in page.services %}
-            <a class="dropdown-item" href="#">{{service}}</a>
+            <button class="dropdown-item" v-on:click="selectService('{{service}}')">{{service}}</a>
             {% endfor %}
           </div>
         </div>
@@ -223,8 +226,10 @@ clients:
         <div class="industry_filters btn-group d-none d-md-flex" role="group">
           {% for industry in page.industries %}
           <button
+            v-on:click="selectIndustry('{{industry}}')"
+            v-bind:class="{ active: selectedIndustry === '{{industry}}' }"
             type="button"
-            class="industry_filters__item {% if forloop.index == 1 %}active{% endif %}"
+            class="industry_filters__item"
           >
             {{industry}}
           </button>
@@ -242,7 +247,7 @@ clients:
             aria-expanded="false"
             aria-controls="collapseOne"
           >
-            Show all
+            Show <span v-html="selectedIndustry"></span>
             <img
               class="mr-2 industry_filters-mobile__mainbtn__arrow"
               src="/assets/images/clients/chevron-down-light.svg"
@@ -255,7 +260,7 @@ clients:
             data-parent="#industry_filters"
           >
             {% for industry in page.industries %}
-            <button type="button" class="industry_filters-mobile__item">
+            <button v-on:click="selectIndustry('{{industry}}')" type="button" class="industry_filters-mobile__item">
               {{industry}}
             </button>
             {% endfor %}
@@ -267,18 +272,33 @@ clients:
 </section>
 
 <!-- Clients -->
-<section class="pt-0">
+<section id="clients" class="pt-0">
   <div class="container">
     <div class="row">
-      {% for client in page.clients %} {% if client.size == "sm" %} {% include
-      clients/block-sm.html client=client %} {% elsif client.size == "md" %} {%
-      include clients/block-md.html client=client %} {% elsif client.size ==
-      "lg" %}
+      {% for client in page.clients %} 
+
+        {% if client.size == "sm" %} 
+          <div v-if="isShown('{{client.industry}}', '{{client.services | join: ","}}')" data-aos="fade-in" data-aos-offset="300" data-aos-once="true" class="col-md-4 px-0 px-md-2 mb-3">
+            {% include clients/block-sm.html client=client %} 
+          </div>
+
+        {% elsif client.size == "md" %} 
+          <div v-if="isShown('{{client.industry}}', '{{client.services | join: ","}}')" data-aos="fade-in" data-aos-offset="300" data-aos-once="true" class="col-md-8 px-0 px-md-2 mb-3">
+            {% include clients/block-md.html client=client %} 
+          </div>
+
+        {% elsif client.size == "lg" %}
+        </div>
+      </div>
+      <div v-if="isShown('{{client.industry}}', '{{client.services | join: ","}}')" data-aos="fade-in" data-aos-offset="300" data-aos-once="true">
+        {% include clients/block-lg.html client=client %}
+      </div>
+      <div class="container">
+        <div class="row">
+
+        {% endif %} 
+      {% endfor %}
     </div>
-  </div>
-  {% include clients/block-lg.html client=client %}
-  <div class="container">
-    <div class="row">{% endif %} {% endfor %}</div>
   </div>
 </section>
 
@@ -336,8 +356,36 @@ clients:
   </div>
 </section>
 
+</div>
+
 <script>
   window.onload = function() {
     AOS.init();
   }
+</script>
+
+<script>
+  const industry = "{{page.industries[0]}}"
+  const service = "{{page.services[0]}}"
+  const app = new Vue({
+    el: "#clients-page",
+    data: () => ({
+      selectedIndustry: industry,
+      selectedService: service
+    }),
+    methods: {
+      selectIndustry: function(industry) {
+        this.selectedIndustry = industry;
+      },
+      selectService: function(service) {
+        this.selectedService = service;
+      },
+      isShown: function(industry, services) {
+        const s = services.split(",");
+        const isIndustry = this.selectedIndustry == "All" || this.selectedIndustry == industry;
+        const isService = this.selectedService == "All" || s.includes(this.selectedService);
+        return isIndustry && isService;
+      }
+    }
+  });
 </script>
