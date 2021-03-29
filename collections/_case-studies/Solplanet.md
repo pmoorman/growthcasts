@@ -2,7 +2,7 @@
 title: Solplanet
 date: October 28, 2020
 hero_title: Embracing user feedback for lasting growth
-hero_image: /assets/images/casestudy/Solplanet_logo_black.svg
+hero_image: 
 client_logo: /assets/images/casestudy/Solplanet_logo_black.svg
 related_1: klooker
 related_2: elugie
