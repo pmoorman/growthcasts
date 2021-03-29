@@ -1,0 +1,93 @@
+<style>
+  .navbar .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #292f47;
+    opacity: 0.6;
+  }
+  .navbar .nav-link.active {
+    opacity: 1;
+    font-weight: bold;
+  }
+  .navbar-toggler {
+    position: relative;
+    background: #51ABFF;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: none!important;
+  }
+  .navbar-toggler-icon > div {
+    background: #fff;
+    height: 2px;
+    width: 100%;
+  }
+  .navbar-toggler-icon > div:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .toggler-menu-text {
+    position: absolute;
+    left: -55px;
+    top: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #292F47;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="width: 120px">
+      {% include new-web/animated-logo.html %}
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <div class="toggler-menu-text">Menu</div>
+      <span class="navbar-toggler-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/" %}active{% endif %}" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/services" %}active{% endif %}" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/clients" %}active{% endif %}" href="/clients">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/process" %}active{% endif %}" href="/process">Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/about" %}active{% endif %}" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:pieter@double-agency.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -10,7 +10,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {% unless page.hide_header %}
-    {% include new-web/header.html %}
+    {% if page.custom_header %}
+      {% include {{page.custom_header}} %}
+    {% else %}
+      {% include new-web/header.html %}
+    {% endif %}
     {% endunless %}
 
     {{ content }}
