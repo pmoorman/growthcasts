@@ -174,7 +174,9 @@ clients:
 <section id="hero">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 d-flex justify-content-center justify-content-md-between align-items-center">
+      <div
+        class="col-md-12 d-flex justify-content-center justify-content-md-between align-items-center"
+      >
         <!-- Title -->
         <h1 class="mb-4 mb-md-0">Clients</h1>
 
@@ -218,11 +220,11 @@ clients:
           id="industry_filters"
         >
           <button
-            class="industry_filters-mobile__mainbtn"
+            class="industry_filters-mobile__mainbtn collapsed"
             type="button"
             data-toggle="collapse"
             data-target="#collapseOne"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="collapseOne"
           >
             Show all
@@ -232,16 +234,13 @@ clients:
             />
           </button>
           <div
+            class="collapse"
             id="collapseOne"
-            class="collapse show"
             aria-labelledby="headingOne"
             data-parent="#industry_filters"
           >
             {% for industry in page.industries %}
-            <button
-              type="button"
-              class="industry_filters-mobile__item"
-            >
+            <button type="button" class="industry_filters-mobile__item">
               {{industry}}
             </button>
             {% endfor %}
@@ -269,58 +268,35 @@ clients:
 </section>
 
 <!-- Bottom -->
-<section>
+<section class="bottom_content">
   <div class="container position-relative">
     <!-- Background -->
-    <div>
+    <div class="bottom_content__bg_items">
       <div
-        style="
-          width: 231px;
-          height: 309px;
-          background: #292f47;
-          position: absolute;
-          top: -85px;
-          right: -20px;
-          z-index: -1;
-        "
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-1"
       ></div>
       <div
-        style="
-          width: 234px;
-          height: 313px;
-          background: #3497f3;
-          position: absolute;
-          top: 140px;
-          left: -20px;
-        "
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-2"
       ></div>
       <div
-        style="
-          width: 176px;
-          height: 105px;
-          background: #e5e7ef;
-          position: absolute;
-          bottom: -140px;
-          right: 100px;
-          opacity: 0.65;
-        "
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-3"
       ></div>
       <img
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-4"
         src="/assets/images/clients/bottom-img-1.jpg"
-        style="position: absolute; left: -155px"
       />
       <img
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-5"
         src="/assets/images/clients/bottom-img-2.jpg"
-        style="position: absolute; top: -320px; right: 78px; z-index: -1"
       />
       <img
+        class="bottom_content__bg_items__item bottom_content__bg_items__item-6"
         src="/assets/images/clients/bottom-img-3.jpg"
-        style="position: absolute; top: -145px; right: -85px"
       />
     </div>
 
     <!-- Content -->
-    <div class="bottom_content row justify-content-center text-center">
+    <div class="row justify-content-center text-center">
       <div class="col-md-6">
         <h3>Become Our</h3>
         <h2 class="mb-2">Next Client</h2>
