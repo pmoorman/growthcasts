@@ -1,3 +1,5 @@
+@import "vendors/bootstrap/bootstrap";
+
 html > body {
   h1 {
     font-weight: 600;
@@ -190,6 +192,23 @@ html > body {
         margin: 0;
       }
     }
+
+    &__link_mobile {
+      background: #359bfa;
+      border-radius: 0;
+      border: 0;
+      height: 60px;
+      align-items: center;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 20px;
+      margin-top: 25px;
+      &__arrow {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   /* SM */
@@ -218,6 +237,7 @@ html > body {
   .client-box__md {
     .client-box {
       &__logo {
+        padding: 40px;
         flex: 1;
       }
 
@@ -247,25 +267,51 @@ html > body {
     background-size: cover;
     margin-bottom: 110px;
     margin-top: 20px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px;
+    }
+
+    .mobile-bg {
+      position: absolute;
+      bottom: 0;
+      height: calc(100% - 160px);
+      width: 100%;
+      background-size: cover;
+    }
 
     .container {
       padding-top: 200px;
       color: #fff;
       position: relative;
+      @include media-breakpoint-down(sm) {
+        padding-top: 0;
+      }
     }
 
     .row {
       padding: 0 8px;
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
     }
 
     .client-box {
       &__logo {
         width: 100%;
         min-height: 371px;
+        @include media-breakpoint-down(sm) {
+          min-height: 160px;
+        }
       }
 
       &__content {
-        padding-right: 0;
+        @include media-breakpoint-up(sm) {
+          padding-right: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          padding-left: 0;
+        }
 
         &__inner {
           padding-right: 30px;

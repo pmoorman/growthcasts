@@ -4,6 +4,7 @@
   class="client-box__lg"
   style="background-image: url('{{client.background_image}}');"
 >
+  <div class="mobile-bg d-block d-md-none" style="background-image:url('{{client.background_image_mobile}}')"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-4 px-0">
@@ -15,7 +16,7 @@
         </div>
       </div>
       <div class="col-md-8 pl-4 pr-0">
-        <div class="client-box__logo__arrow">
+        <div class="client-box__logo__arrow d-none d-md-block d-md-flex d-none">
           <img src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
         </div>
         <div class="client-box__content">
@@ -40,10 +41,15 @@
             </p>
           </div>
           {% endif %}
+          <div class="d-block d-md-none">
+            <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="">
+              See Case Study <img class="client-box__link_mobile__arrow" src="/assets/images/clients/link_arrow-light.svg" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="client-box__services row">
+    <div class="client-box__services row d-none d-md-flex">
       <div class="col-md-4 px-0 client-box__services__titlebox">
         <p>We worked on:</p>
       </div>

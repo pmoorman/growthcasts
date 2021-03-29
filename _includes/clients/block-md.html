@@ -1,6 +1,6 @@
 {% assign client = include.client %}
 
-<div class="col-md-8 px-2 mb-3">
+<div class="col-md-8 px-0 px-md-2 mb-3">
   <div
     class="client-box client-box__md"
     style="background-image: url('{{client.background_image}}')"
@@ -9,7 +9,7 @@
       class="client-box__logo"
       style="background-color: {{client.background_color}};"
     >
-      <div class="client-box__logo__arrow">
+      <div class="client-box__logo__arrow d-md-flex d-none">
         <img src="/assets/images/clients/link_arrow-{{client.arrow}}.svg" />
       </div>
       <img src="{{client.logo}}" alt="{{client.title}} logo" />
@@ -30,8 +30,13 @@
         </p>
       </div>
       {% endif %}
+      <div class="d-block d-md-none">
+        <a class="client-box__link_mobile btn btn-primary d-flex justify-content-between" href="">
+          See Case Study <img class="client-box__link_mobile__arrow" src="/assets/images/clients/link_arrow-light.svg" />
+        </a>
+      </div>
     </div>
-    <div class="client-box__services">
+    <div class="client-box__services d-md-flex d-none">
       <div class="client-box__services__titlebox">
         <p>We worked on:</p>
       </div>
