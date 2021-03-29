@@ -174,12 +174,12 @@ clients:
 <section id="hero">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 d-flex justify-content-between align-items-center">
+      <div class="col-md-12 d-flex justify-content-center justify-content-md-between align-items-center">
         <!-- Title -->
-        <h1>Clients</h1>
+        <h1 class="mb-4 mb-md-0">Clients</h1>
 
         <!-- Service filters -->
-        <div class="service_filters dropdown">
+        <div class="service_filters dropdown d-none d-md-block">
           <button
             class="service_filters__btn btn btn-light dropdown-toggle"
             type="button"
@@ -203,7 +203,7 @@ clients:
     <!-- Industry filters -->
     <div class="row">
       <div class="col-md-12">
-        <div class="industry_filters btn-group" role="group">
+        <div class="industry_filters btn-group d-none d-md-flex" role="group">
           {% for industry in page.industries %}
           <button
             type="button"
@@ -212,6 +212,40 @@ clients:
             {{industry}}
           </button>
           {% endfor %}
+        </div>
+        <div
+          class="accordion industry_filters-mobile d-block d-md-none"
+          id="industry_filters"
+        >
+          <button
+            class="industry_filters-mobile__mainbtn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Show all
+            <img
+              class="mr-2 industry_filters-mobile__mainbtn__arrow"
+              src="/assets/images/clients/chevron-down-light.svg"
+            />
+          </button>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#industry_filters"
+          >
+            {% for industry in page.industries %}
+            <button
+              type="button"
+              class="industry_filters-mobile__item"
+            >
+              {{industry}}
+            </button>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
