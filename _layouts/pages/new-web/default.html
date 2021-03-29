@@ -9,6 +9,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M44383W"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- header -->
     {% unless page.hide_header %}
     {% if page.custom_header %}
       {% include {{page.custom_header}} %}
@@ -19,6 +21,7 @@
 
     {{ content }}
 
+    <!-- footer -->
     {% unless page.hide_footer %}
     {% if page.custom_footer %}
       {% include {{page.custom_footer}} %}

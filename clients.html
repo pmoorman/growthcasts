@@ -3,8 +3,11 @@ title: Clients
 layout: pages/new-web/default
 custom_header: new-web/clients-header.html
 custom_footer: new-web/clients-footer.html
+scripts:
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
 stylesheets:
   - /assets/clients.css
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
 industries: ["All", "SaaS", "Mobile", "FinTech", "Customer", "B2B", "High-tech"]
 services:
   ["Webdesign", "LinkedIn ads", "Onboarding", "Instagram & Pinterest ads"]
@@ -320,3 +323,9 @@ clients:
     </div>
   </div>
 </section>
+
+<script>
+  window.onload = function() {
+    AOS.init();
+  }
+</script>

@@ -7,6 +7,9 @@
 {% for sheet in page.stylesheets %}
 <link rel="stylesheet" href="{{ sheet | relative_url }}">
 {% endfor %}
+{% for item in page.scripts %}
+  <script src="{{item}}"></script>
+{% endfor %}
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/new-web/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/new-web/apple-touch-icon-114x114.png" />
