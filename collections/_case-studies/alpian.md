@@ -24,5 +24,5 @@ For Alpian to grow sustainably, they needed an **automated** user acquisition pr
 
 Once the user-conversion engine was ready, all that was left was driving traffic to it with paid ads and content marketing. If you’d like to know how it’s going, then you can sharpen up your investing skills at the same time by checking out their masterclass, *i-vest*. 
 
-![](/assets/images/casestudy/alpian_hero.svg)
+![](/assets/images/casestudy/alpian_logo.png)
 
