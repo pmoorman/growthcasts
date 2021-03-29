@@ -20,7 +20,11 @@
     {{ content }}
 
     {% unless page.hide_footer %}
-    {% include new-web/footer.html %}
+    {% if page.custom_footer %}
+      {% include {{page.custom_footer}} %}
+    {% else %}
+      {% include new-web/footer.html %}
+    {% endif %}
     {% else %}
     <footer class="bg-secondary py-5">
       <div class="container">

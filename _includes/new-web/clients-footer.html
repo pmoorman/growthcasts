@@ -1,0 +1,68 @@
+<style>
+  footer {
+    padding-bottom: 50px;
+  }
+  footer .divider-1 {
+    opacity: 0.2;
+    border-top: 1px solid #333a57;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  footer .divider-2 {
+    opacity: 0.1;
+    border-top: 1px solid #333a57;
+  }
+  footer .contact-details {
+    font-size: 14px;
+  }
+  footer .contact-details a {
+    color: #292f47;
+  }
+  footer .nav-link {
+    font-size: 14px;
+    color: #292f47;
+    padding: 0;
+  }
+  footer .copyright {
+    color: #afafbf;
+    font-size: 12px;
+  }
+</style>
+
+<footer>
+  <div class="container">
+    <hr class="divider-1" />
+    <div class="row justify-content-between mx-0 mb-4">
+      <div style="max-width: 100px">
+        {% include new-web/animated-logo.html id="footer-logo" %}
+      </div>
+      <div class="contact-details">
+        <span class="mr-3">
+          <strong>Email</strong>:
+          <a href="mailto:pieter@double-agency.com">pieter@double-agency.com</a>
+        </span>
+        <span class="mr-3">
+          <strong>WhatsApp</strong>:
+          <a href="tel:+316 230 555 90">+316 230 555 90</a>
+        </span>
+        <span class="mr-3"> <strong>Telegram</strong>: @doubleagency </span>
+      </div>
+    </div>
+    <hr class="divider-2" />
+    <div class="row justify-content-between mx-0 mb-4">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/">Services</a>
+      <a class="nav-link" href="/">Clients</a>
+      <a class="nav-link" href="/">Process</a>
+      <a class="nav-link" href="/">About</a>
+      <a class="nav-link" href="/">Blog</a>
+      <a class="nav-link" href="/">Double Academy</a>
+      <a class="nav-link" href="/">Contact</a>
+    </div>
+    <div>
+      <span class="copyright"
+        >Copyright © {{ 'now' | date: "%Y" }} Double LLC. All Rights Reserved. Privacy Policy.</span
+      >
+    </div>
+  </div>
+</footer>
