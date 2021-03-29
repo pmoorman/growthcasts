@@ -2,7 +2,7 @@
 title: Core Life Analytics
 date: October 28, 2020
 hero_title: Reaching new customers with video
-hero_image: /assets/images/casestudy/CoreLifeAnalytics_logo_purple.png
+hero_image: 
 client_logo: /assets/images/casestudy/CoreLifeAnalytics_logo_purple.png
 related_1: tiktok
 related_2: sendcloud
