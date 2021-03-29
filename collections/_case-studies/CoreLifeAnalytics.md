@@ -3,7 +3,7 @@ title: Core Life Analytics
 date: October 28, 2020
 hero_title: Reaching new customers with video
 hero_image: /assets/images/casestudy/CoreLifeAnalytics_logo_purple.png
-client_logo: /assets/images/casestudy/CoreLifeAnalytics_no_text.png
+client_logo: /assets/images/casestudy/CoreLifeAnalytics_logo_purple.png
 related_1: tiktok
 related_2: sendcloud
 excerpt: 
@@ -28,5 +28,5 @@ We came on board and built an animated explainer video that showed exactly what 
 The video’s performance was tested when Core Life presented it at an industry conference. Reporting back to us, their words were, “it’s unparalleled in our space”...
 
 
-![](/assets/images/casestudy/CoreLifeAnalytics_no_text.png)
+![](/assets/images/casestudy/CoreLifeAnalytics_logo_purple.png)
 

@@ -2,7 +2,7 @@
 title: Solplanet
 date: October 28, 2020
 hero_title: Embracing user feedback for lasting growth
-hero_image: /assets/images/casestudy/Solplanet_inverter.png
+hero_image: /assets/images/casestudy/Solplanet_logo_black.svg
 client_logo: /assets/images/casestudy/Solplanet_logo_black.svg
 related_1: klooker
 related_2: elugie
@@ -26,5 +26,5 @@ It meant that when the day came to go live, it wasn’t long before the leads we
 
 From here, it was then time to focus on stage 2: acquisition. To build Solplanet’s authority in the market, we recommended a focus on beyond-excellent customer support, and a company culture for *embracing user feedback*. They’ve embraced the strategy and right now, Solplanet is active in seven countries and launching in more. They’re a testament to the fact that actively listening to your end-users almost always gives you the edge!
 
-![](/assets/images/casestudy/Solplanet_logo_black.svg)
+![](/assets/images/casestudy/Solplanet_inverter.png)
 
