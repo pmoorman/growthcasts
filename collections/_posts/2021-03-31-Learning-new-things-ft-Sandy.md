@@ -15,7 +15,6 @@ summary_items:
     - Books are on-demand teachers on every subject imaginable
     - Adlerian psychology suggests confidence and happiness stem from serving other people
     - Creativity depends on mixing existing ideas with your own life experience
-    
 ---
 
 *“We just want avid learners”*.
