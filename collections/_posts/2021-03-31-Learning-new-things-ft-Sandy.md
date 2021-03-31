@@ -5,7 +5,7 @@ cover: /assets/images/Sandy_blog.JPG
 navigation: True
 title: Learning new things - featuring Sandy
 subtitle: "The process behind our copywriter's continuous learning"
-date: 2021-03-31 11:07:01
+date: 2021-03-30 11:07:01
 tags: Learning
 class: post-template
 subclass: 'post'
