@@ -17,7 +17,7 @@ summary_items:
     - Creativity depends on mixing existing ideas with your own life experience
 ---
 
-*“We just want avid learners”*.
+***“We just want avid learners”***.
 
 According to Pieter, our hiring policy at Double is really that simple.
 
