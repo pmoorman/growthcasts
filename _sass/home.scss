@@ -1,0 +1,17 @@
+$primary-color: #3497f3;
+$secondary-color: #292f47;
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+);
+
+@import "vendors/bootstrap/bootstrap";
+
+html > body {
+  font-family: Poppins;
+
+  .text-highlight {
+    color: var(--primary);
+    font-weight: bold;
+  }
+}
