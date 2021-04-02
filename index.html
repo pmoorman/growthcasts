@@ -16,9 +16,21 @@ stylesheets:
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 9px 8px 0px #fff;
+    box-shadow: 10px 10px 0px #fff;
     margin-bottom: 10px;
     font-weight: bold;
+  }
+  .shadowbox-check-sm {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary);
+    box-shadow: 10px 10px 0px var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shadowbox-check-sm:before {
+    content: url("/assets/images/icon-check.png");
   }
 </style>
 
@@ -530,7 +542,7 @@ stylesheets:
 </section>
 
 <!-- About -->
-<section class="py-0 position-relative">
+<section class="py-0 position-relative" style="margin-bottom: -250px">
   <!-- Background -->
   <div
     class="bg-primary position-absolute"
@@ -697,6 +709,108 @@ stylesheets:
           exactly which part of your funnel is holding up the show.
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section>
+  <div class="container">
+    <!-- Intro -->
+    <div class="row mb-5">
+      <div class="col-md-10">
+        <h2
+          class="mb-5"
+          style="font-weight: 600; font-size: 90px; line-height: 74px"
+        >
+          Our <br />
+          Process
+        </h2>
+        <p style="font-size: 32px; line-height: 42px">
+          You can expect deliverables in the first two weeks, and
+          <span class="font-weight-bold">impossible-to-ignore</span> results in
+          the first two months.
+        </p>
+      </div>
+    </div>
+
+    <!-- List items -->
+    <div class="row">
+      <div class="col-md-10">
+        <div class="d-flex mb-5">
+          <div>
+            <div class="shadowbox-check-sm mr-5"></div>
+          </div>
+          <p
+            class="mb-0"
+            style="
+              font-size: 20px;
+              line-height: 30px;
+              position: relative;
+              top: 10px;
+            "
+          >
+            Our focus is building systems
+          </p>
+        </div>
+        <div class="d-flex mb-5">
+          <div>
+            <div class="shadowbox-check-sm mr-5"></div>
+          </div>
+          <p
+            class="mb-0"
+            style="
+              font-size: 20px;
+              line-height: 30px;
+              position: relative;
+              top: 10px;
+            "
+          >
+            We do that via an iterative approach called high-tempo testing
+          </p>
+        </div>
+        <div class="d-flex mb-5">
+          <div>
+            <div class="shadowbox-check-sm mr-5"></div>
+          </div>
+          <p
+            class="mb-0"
+            style="
+              font-size: 20px;
+              line-height: 30px;
+              position: relative;
+              top: 10px;
+            "
+          >
+            Once the system is running smoothly, we help you operate it in-house
+          </p>
+        </div>
+        <div class="d-flex mb-5">
+          <div>
+            <div class="shadowbox-check-sm mr-5"></div>
+          </div>
+          <p
+            class="mb-0"
+            style="
+              font-size: 20px;
+              line-height: 30px;
+              position: relative;
+              top: 10px;
+            "
+          >
+            As needed, we can engage in parallel workstreams <br />
+            <span style="color: rgba(41, 47, 71, 0.5)"
+              >(i.e. simultaneously building your sales funnels + improving
+              branding)</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- read more -->
+    <div class="row mt-5">
+      <a class="btn btn-primary">Read more</a>
     </div>
   </div>
 </section>
