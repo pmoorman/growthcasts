@@ -530,8 +530,93 @@ stylesheets:
 </section>
 
 <!-- About -->
-<section class="bg-primary py-0">
-  <div class="container">
+<section class="py-0 position-relative">
+  <!-- Background -->
+  <div
+    class="bg-primary position-absolute"
+    style="width: 100%; height: 75%"
+  ></div>
+
+  <div class="container position-relative">
+    <!-- Background blocks -->
+    <div>
+      <div
+        class="position-absolute"
+        style="
+          width: 264px;
+          height: 170px;
+          background: #ffffff;
+          opacity: 0.1;
+          left: -195px;
+          top: 220px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 342px;
+          height: 184px;
+          background: #ffffff;
+          bottom: 270px;
+          left: -70px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 282px;
+          height: 160px;
+          background: #2788e1;
+          top: 375px;
+          left: 235px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 243px;
+          height: 152px;
+          background: #d9effb;
+          opacity: 0.3;
+          bottom: 615px;
+          left: 340px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 474px;
+          height: 322px;
+          background: #ffffff;
+          opacity: 0.5;
+          right: -205px;
+          top: 85px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 220px;
+          height: 143px;
+          background: #ffffff;
+          opacity: 0.1;
+          right: 20px;
+          top: 395px;
+        "
+      ></div>
+      <div
+        class="position-absolute"
+        style="
+          width: 134px;
+          height: 92px;
+          background: #ffffff;
+          opacity: 0.1;
+          bottom: 725px;
+          right: -50px;
+        "
+      ></div>
+    </div>
+
     <!-- title box -->
     <div
       style="
@@ -553,29 +638,65 @@ stylesheets:
       <a class="btn btn-primary mt-5"> Read more </a>
     </div>
 
+    <!-- Image 1 -->
     <div
-      class="row justify-content-end position-relative"
+      class="row justify-content-end position-relative text-light"
       style="top: -120px; position: relative; right: 90px"
     >
-      <img src="assets/images/home/about-1.png" />
-      <div class="position-absolute" style="left: 36%; bottom: -115px">
+      <div class="d-flex flex-column align-items-end">
+        <img class="mb-4" src="assets/images/home/about-1.png" />
+        <p style="font-size: 32px; line-height: 42px; max-width: 475px">
+          Marketers you can introduce to your parents.
+        </p>
+      </div>
+      <div class="position-absolute" style="left: 36%; bottom: 0; z-index: 1">
         <img src="assets/images/home/about-line1.png" />
       </div>
     </div>
 
-    <div class="row">
-      <img src="assets/images/home/about-2.png" />
+    <!-- Image 2 -->
+    <div
+      class="row text-light"
+      style="position: relative; top: -160px; left: 105px"
+    >
+      <div class="d-flex flex-column">
+        <img class="mb-4" src="assets/images/home/about-2.png" />
+        <p
+          style="
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 350px;
+            position: relative;
+            left: -50px;
+          "
+        >
+          We’re witty enough for you to enjoy us in your video chat...
+        </p>
+      </div>
+      <div class="position-absolute" style="left: 300px; bottom: 0; z-index: 1">
+        <img src="assets/images/home/about-line2.png" />
+      </div>
     </div>
 
+    <!-- Image 3 -->
     <div
       class="row justify-content-end"
-      style="position: relative; right: 90px"
+      style="position: relative; right: 120px; top: -185px"
     >
-      <img src="assets/images/home/about-3.png" />
+      <div class="d-flex flex-column align-items-end">
+        <img class="mb-4" src="assets/images/home/about-3.png" />
+        <p
+          style="
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 475px;
+            color: initial;
+          "
+        >
+          ...and nerdy enough to dive into your Google Analytics and spot
+          exactly which part of your funnel is holding up the show.
+        </p>
+      </div>
     </div>
-
-    <div></div>
-    <div></div>
-    <div></div>
   </div>
 </section>
