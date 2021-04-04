@@ -1,0 +1,46 @@
+.case-studies {
+  &__intro {
+    &__title {
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    &__line1 {
+      position: absolute;
+      right: 130px;
+      bottom: -130px;
+    }
+    &__warningimg {
+      @include media-breakpoint-down(md) {
+        width: 158.91px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    &__bg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+
+      img {
+        @include media-breakpoint-down(md) {
+          width: 120%;
+        }
+      }
+    }
+    &__logo {
+      @include media-breakpoint-down(md) {
+        width: 159px;
+      }
+    }
+    &__divider {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
+}
