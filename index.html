@@ -9,79 +9,81 @@ stylesheets:
 ---
 
 <!-- Hero -->
-<section class="position-relative">
+<section id="hero" class="hero position-relative">
   <!-- Background -->
-  <div
-    class="position-absolute w-100"
-    style="bottom: 0; z-index: -1; height: 780px; overflow: hidden"
-  >
-    <img class="w-100" src="assets/images/home/hero-bg.png" />
+  <div class="hero__bg position-absolute w-100">
+    <img class="w-100 d-none d-lg-block" src="assets/images/home/hero-bg.png" />
+    <img
+      class="w-100 d-block d-lg-none"
+      src="assets/images/home/hero-bg-mobile.png"
+    />
   </div>
 
   <div class="container position-relative">
-    <!-- Arrows and images -->
-    <div class="position-absolute" style="top: 125px; width: 100%; z-index: -1">
-      <img
-        class="position-relative"
-        src="assets/images/home/hero-arrow-light.png"
-        style="right: -140px; bottom: 45px; z-index: -2"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-arrow-dark.png"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-1.png"
-        style="bottom: -130px; left: 105px"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-2.png"
-        style="left: 120px; top: 230px"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-3.png"
-        style="left: 390px; top: 500px"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-4.png"
-        style="right: 230px; top: 300px; z-index: -1"
-      />
-      <img
-        class="position-absolute"
-        src="assets/images/home/hero-5.png"
-        style="right: 95px"
-      />
-    </div>
-
     <!-- intro -->
-    <div style="margin-bottom: 475px; max-width: 270px">
-      <h1 class="text-primary font-weight-bold mb-3">
+    <div class="hero__intro px-3 px-lg-0 text-center text-lg-left">
+      <h1 class="text-primary font-weight-bold mb-4">
         Growth, <br /><span class="text-secondary">baby!</span>
       </h1>
-      <p>
+      <p class="lead">
         The name’s Double, and our game is
         <span class="text-highlight"> scaling businesses up. </span>
       </p>
     </div>
 
+    <!-- Arrows and images -->
+    <div class="hero__bggraphics">
+      <div class="hero__bggraphics__arrows">
+        <img
+          class="hero__bggraphics--arrow1 img-fluid position-relative"
+          src="assets/images/home/hero-arrow-light.png"
+        />
+        <img
+          class="hero__bggraphics--arrow2 img-fluid position-absolute"
+          src="assets/images/home/hero-arrow-dark.png"
+        />
+      </div>
+      <img
+        class="hero__bggraphics--img1 img-fluid position-absolute"
+        src="assets/images/home/hero-1.png"
+      />
+      <img
+        class="hero__bggraphics--img2 img-fluid position-absolute"
+        src="assets/images/home/hero-2.png"
+      />
+      <img
+        class="hero__bggraphics--img3 img-fluid position-absolute"
+        src="assets/images/home/hero-3.png"
+      />
+      <img
+        class="hero__bggraphics--img4 img-fluid position-absolute"
+        src="assets/images/home/hero-4.png"
+      />
+      <img
+        class="hero__bggraphics--img5 img-fluid position-absolute"
+        src="assets/images/home/hero-5.png"
+      />
+    </div>
+
     <!-- bottom -->
-    <div class="d-flex justify-content-end">
-      <div style="max-width: 360px; margin-right: 80px">
-        <p>
+    <div class="hero__bottom text-center text-lg-left px-3 px-lg-0 d-flex justify-content-end">
+      <div class="hero__bottom__inner">
+        <p class="lead">
           We’re marketing
           <span class="text-highlight">super-nerds</span>, ready to architect
           and execute your
-          <span class="text-highlight">growth strategy with</span>
+          <span class="text-highlight">growth strategy</span> with
           <span class="text-highlight">systems-thinking</span>.
         </p>
       </div>
     </div>
   </div>
+
+  <!-- Bottom arrow -->
+  <div class="hero__bottom-arrow-wrapper w-100 d-flex d-lg-none justify-content-center">
+    <div class="hero__bottom-arrow"></div>
+  </div>
+
 </section>
 
 <!-- Clients -->
