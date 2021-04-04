@@ -1,0 +1,32 @@
+.arrow-btn {
+  background: #292f47;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+.arrow-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.9;
+}
+.arrow-btn:before {
+  content: url("/assets/images/arrow-right.svg");
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #359bfa;
+  margin-right: 20px;
+}
+// arrowbg, arrowcolor, btnbg, fontcolor
+// ---
+// primary, white, secondary, white
+// white, black, secondary, white
+// primary, white, white, black
+// darkred, white, lightred, white
+// darkgreen, white, lightgreen, white
+// red, white, black, white
