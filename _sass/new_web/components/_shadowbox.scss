@@ -1,0 +1,43 @@
+@mixin shadowbox(
+  $bg: #292F47,
+  $shadow: #359BFA,
+  $color: #fff
+) {
+  background: $bg;
+  box-shadow: 10px 10px 0px $shadow;
+  color: $color;
+}
+
+@mixin shadowbox-check($check-color: "light") {
+  width: 40px;
+  height: 40px;
+  &:before {
+    @if $check-color == "dark" {
+      content: url("/assets/images/icon-check-dark.png");
+    } @else {
+      content: url("/assets/images/icon-check.png");
+    }
+  }
+}
+
+.shadowbox {
+  width: 49.33px;
+  height: 49.33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.shadowbox.variant-1 {
+  @include shadowbox();
+  &-check {
+    @include shadowbox();
+    @include shadowbox-check();
+  }
+}
+
+.shadowbox.variant-2 {
+  @include shadowbox(#359BFA, #fff, #fff);
+}
