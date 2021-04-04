@@ -1,0 +1,29 @@
+.clients {
+  &__lines {
+    &--line1 {
+      position: absolute;
+      left: 45%;
+      top: 130px;
+    }
+    &--line2 {
+      position: absolute;
+      bottom: 110px;
+      right: 20%;
+    }
+  }
+  &__logos {
+    &--desktop {
+      > .row {
+        margin-bottom: 100px;
+      }
+    }
+    &--mobile {
+      width: 120%;
+      position: relative;
+      left: -10%;
+      > .row {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
