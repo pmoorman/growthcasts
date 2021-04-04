@@ -13,7 +13,8 @@ $container-max-widths: (
 
 @import "vendors/bootstrap/bootstrap";
 @import "new_web/generic/font";
-@import "new_web/footer";
+@import "new_web/generic/typography-1";
+@import "new_web/components/footer-1";
 
 // Sections
 @import "casestudy/hero";
