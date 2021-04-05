@@ -122,7 +122,13 @@
       right: 20px;
       top: 395px;
       @include media-breakpoint-down(md) {
-        display: none;
+        width: 186px;
+        height: 116px;
+        background: #d9effb;
+        opacity: 0.6;
+        bottom: -60px;
+        top: initial;
+        right: -30px;
       }
     }
     &--item7 {
@@ -225,8 +231,8 @@
         color: initial !important;
         max-width: 475px;
         @include media-breakpoint-down(md) {
-          left: 10%;
-          max-width: 83%;
+          left: 15%;
+          max-width: 79%;
         }
       }
     }
