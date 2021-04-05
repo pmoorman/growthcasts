@@ -44,3 +44,47 @@
     }
   }
 }
+
+#case-studies-tiktok {
+  .case-studies__item__content {
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+    .text-highlight {
+      color: #ea3354;
+    }
+  }
+}
+
+#case-studies-alpian {
+  @include media-breakpoint-down(md) {
+    padding-top: 160px;
+  }
+  .case-studies__item__content {
+    padding-top: 50px;
+  }
+}
+
+#case-studies-cla {
+  padding-bottom: 250px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px;
+  }
+  .case-studies__item {
+    &__logo {
+      @include media-breakpoint-down(md) {
+        width: 201px;
+      }
+    }
+    &__content {
+      color: #632249;
+      padding-top: 380px;
+      @include media-breakpoint-down(md) {
+        padding-top: 160px;
+      }
+      .text-highlight {
+        color: #b63e86;
+      }
+    }
+  }
+}
