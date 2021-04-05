@@ -4,6 +4,16 @@
   }
 
   &__items {
-    
+    &__item {
+      &__text {
+        position: relative;
+        top: 10px;
+        span {
+          color: #9096aa;
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+    }
   }
 }

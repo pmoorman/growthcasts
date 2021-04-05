@@ -61,7 +61,13 @@
     padding-top: 160px;
   }
   .case-studies__item__content {
-    padding-top: 50px;
+    padding-top: 425px;
+    .text-highlight {
+      color: #292f47;
+    }
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
   }
 }
 
