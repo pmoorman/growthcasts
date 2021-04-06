@@ -39,6 +39,11 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      hr {
+        width: 100%;
+        opacity: 0.23;
+        border: 1px solid #292f47;
+      }
       @include media-breakpoint-down(md) {
         right: 0px;
         width: calc(100% + 15px);
