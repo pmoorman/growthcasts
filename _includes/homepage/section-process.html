@@ -18,42 +18,18 @@
     <!-- List items -->
     <div class="process__items row">
       <div class="col-lg-10">
+        {% for item in page.process.items %}
         <div class="process__items__item d-flex mb-5">
           <div>
             <div class="shadowbox variant-1-check mr-4 mr-lg-5"></div>
           </div>
           <p class="process__items__item__text mb-0 lead">
-            Our focus is building systems
+            {{item.title}} {% if item.content %}
+            <span><br/>{{item.content}}</span>
+            {% endif %}
           </p>
         </div>
-        <div class="d-flex mb-5">
-          <div>
-            <div class="shadowbox variant-1-check mr-4 mr-lg-5"></div>
-          </div>
-          <p class="process__items__item__text mb-0 lead">
-            We do that via an iterative approach called high-tempo testing
-          </p>
-        </div>
-        <div class="d-flex mb-5">
-          <div>
-            <div class="shadowbox variant-1-check mr-4 mr-lg-5"></div>
-          </div>
-          <p class="process__items__item__text mb-0 lead">
-            Once the system is running smoothly, we help you operate it in-house
-          </p>
-        </div>
-        <div class="d-flex mb-5">
-          <div>
-            <div class="shadowbox variant-1-check mr-4 mr-lg-5"></div>
-          </div>
-          <p class="process__items__item__text mb-0 lead">
-            As needed, we can engage in parallel workstreams <br />
-            <span
-              >(i.e. simultaneously building your sales funnels + improving
-              branding)
-            </span>
-          </p>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
