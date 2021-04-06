@@ -4,3 +4,8 @@ $theme-colors: (
   primary: $primary-color,
   secondary: $secondary-color,
 );
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1110px,
+) !default;
