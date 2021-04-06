@@ -174,10 +174,15 @@
     <div class="row justify-content-center">
       <div class="clients__circles position-relative">
         <div class="clients__circles--circle1">
-          <h3>Stories</h3>
+          <h3 class="clients__circles--circle1__text">Stories</h3>
         </div>
         <div class="clients__circles--circle2">
-          <h3>Systems</h3>
+          <h3
+            class="clients__circles--circle2__text"
+            data-animationend-text="System & Stories"
+          >
+            Systems
+          </h3>
           <div class="clients__circles__curved-text">
             <img
               class="clients__circles__curved-text--mobile d-lg-none d-block"
@@ -191,6 +196,50 @@
         </div>
       </div>
     </div>
+
+    <script>
+      (() => {
+        const circle1 = document.querySelector(".clients__circles--circle1");
+        const circle2 = document.querySelector(".clients__circles--circle2");
+        const circle1TextEl = document.querySelector(".clients__circles--circle1__text");
+        const circle2TextEl = document.querySelector(".clients__circles--circle2__text");
+
+        const sleep = (ms) => {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+       
+        const animateCircle = (circle, startPoint, duration) => {
+          circle.animate([
+            { transform: `translateX(${startPoint})`, opacity: 0 },
+            { transform: "translateX(0%)", opacity: 1 }
+          ], { duration, fill: "both" });
+        }
+
+        const animateCircleText = (textEl, duration) => {
+          textEl.animate([
+            { opacity: 1 },
+            { opacity: 0 },
+            { opacity: 1 },
+          ], { duration, fill: "both" });
+        }
+
+        const main = async () => {
+          animateCircle(circle1, "60%", 4000);
+          animateCircle(circle2, "-60%", 4000);
+  
+          await sleep(2500);
+  
+          animateCircleText(circle1TextEl, 2000);
+          animateCircleText(circle2TextEl, 2000);
+  
+          await sleep(1000);
+  
+          circle2TextEl.innerHTML = circle2TextEl.getAttribute("data-animationend-text");
+        }
+
+        main();
+      })();
+    </script>
 
     <!-- Footer -->
     <div class="row justify-content-center position-relative text-center">
