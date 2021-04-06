@@ -188,62 +188,24 @@
               class="clients__circles__curved-text--mobile d-lg-none d-block"
               src="/assets/images/home/explode-curved-text-mobile.png"
             />
-            <img
-              class="clients__circles__curved-text--desktop d-none d-lg-block"
-              src="/assets/images/home/explode-curved-text.png"
-            />
+            <div
+              class="clients__circles__curved-text--desktop--wrapper d-none d-lg-block"
+            >
+              <img
+                class="clients__circles__curved-text--desktop"
+                src="/assets/images/home/explode-curved-text.png"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script>
-      (() => {
-        const circle1 = document.querySelector(".clients__circles--circle1");
-        const circle2 = document.querySelector(".clients__circles--circle2");
-        const circle1TextEl = document.querySelector(".clients__circles--circle1__text");
-        const circle2TextEl = document.querySelector(".clients__circles--circle2__text");
-
-        const sleep = (ms) => {
-          return new Promise(resolve => setTimeout(resolve, ms));
-        }
-       
-        const animateCircle = (circle, startPoint, duration) => {
-          circle.animate([
-            { transform: `translateX(${startPoint})`, opacity: 0 },
-            { transform: "translateX(0%)", opacity: 1 }
-          ], { duration, fill: "both" });
-        }
-
-        const animateCircleText = (textEl, duration) => {
-          textEl.animate([
-            { opacity: 1 },
-            { opacity: 0 },
-            { opacity: 1 },
-          ], { duration, fill: "both" });
-        }
-
-        const main = async () => {
-          animateCircle(circle1, "60%", 4000);
-          animateCircle(circle2, "-60%", 4000);
-  
-          await sleep(2500);
-  
-          animateCircleText(circle1TextEl, 2000);
-          animateCircleText(circle2TextEl, 2000);
-  
-          await sleep(1000);
-  
-          circle2TextEl.innerHTML = circle2TextEl.getAttribute("data-animationend-text");
-        }
-
-        main();
-      })();
-    </script>
-
     <!-- Footer -->
-    <div class="row justify-content-center position-relative text-center">
-      <div class="col-md-7 px-4">
+    <div
+      class="clients__footer row justify-content-center position-relative text-center mt-4 mt-lg-5"
+    >
+      <div class="col-lg-7 px-4">
         <p class="lead-lg">
           We’ve been taking notes on what’s happening in
           <span class="text-highlight">Silicon Valley</span>.
@@ -258,4 +220,98 @@
       </div>
     </div>
   </div>
+
+  <script>
+    (async () => {
+      let animationDone = false;
+      const footer = document.querySelector(".clients__footer");
+      const circle1 = document.querySelector(".clients__circles--circle1");
+      const circle2 = document.querySelector(".clients__circles--circle2");
+      const circle1TextEl = document.querySelector(
+        ".clients__circles--circle1__text"
+      );
+      const circle2TextEl = document.querySelector(
+        ".clients__circles--circle2__text"
+      );
+      const curvedText = document.querySelector(
+        ".clients__circles__curved-text--desktop--wrapper"
+      );
+
+      const sleep = (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      };
+
+      const animateCircle = (circle, startPoint, duration) => {
+        circle.animate(
+          [
+            { transform: `translateX(${startPoint})`, opacity: 0 },
+            { transform: "translateX(0%)", opacity: 1 },
+          ],
+          { duration, fill: "both" }
+        );
+      };
+
+      const animateCircleText = (textEl, duration) => {
+        textEl.animate([{ opacity: 1 }, { opacity: 0 }, { opacity: 1 }], {
+          duration,
+          fill: "both",
+        });
+      };
+
+      const animateCurvedText = async (delayDuration) => {
+        await sleep(delayDuration);
+        curvedText.animate(
+          [
+            { opacity: 0, transform: "rotate(45deg)" },
+            { opacity: 1, transform: "rotate(0)" },
+          ],
+          { duration: 1000, fill: "both" }
+        );
+      };
+
+      const fadeIn = async (el, duration) => {
+        el.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration,
+          fill: "both",
+        });
+      };
+
+      const main = async () => {
+        animateCircle(circle1, "60%", 2000);
+        animateCircle(circle2, "-60%", 2000);
+        fadeIn(footer, 3000);
+
+        // Should be half of animateCircle anmimation
+        await sleep(1000);
+
+        animateCircleText(circle1TextEl, 1000);
+        animateCircleText(circle2TextEl, 1000);
+        animateCurvedText(250);
+
+        // Should be half of animateCircleText anmimation
+        await sleep(500);
+
+        circle2TextEl.innerHTML = circle2TextEl.getAttribute(
+          "data-animationend-text"
+        );
+      };
+
+      // Only animate on large screens
+      if (window.matchMedia("(min-width: 992px)").matches) {
+        const callback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!animationDone && entry.intersectionRatio >= 0.75) {
+              main();
+              animationDone = true;
+            }
+          });
+        };
+        const observer = new IntersectionObserver(callback, {
+          rootMargin: "0px",
+          threshold: 1.0,
+        });
+        observer.observe(document.querySelector(".clients__circles"));
+      }
+    })();
+  </script>
 </section>

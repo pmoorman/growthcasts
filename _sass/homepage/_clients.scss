@@ -67,6 +67,18 @@
         position: absolute;
         bottom: -60px;
         left: -70px;
+
+        &--wrapper {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 100%;
+          opacity: 0;
+          @include media-breakpoint-up(md) {
+            transform: rotate(45deg);
+          }
+        }
       }
     }
 
@@ -86,6 +98,10 @@
 
     &--circle1 {
       background: var(--secondary);
+      @include media-breakpoint-up(md) {
+        transform: translateX(60%);
+        opacity: 0;
+      }
     }
 
     &--circle2 {
@@ -93,6 +109,16 @@
       top: 0;
       left: -50px;
       background: var(--primary);
+      @include media-breakpoint-up(md) {
+        transform: translateX(-60%);
+        opacity: 0;
+      }
+    }
+  }
+
+  &__footer {
+    @include media-breakpoint-up(md) {
+      opacity: 0;
     }
   }
 }
