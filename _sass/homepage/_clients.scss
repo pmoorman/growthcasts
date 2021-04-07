@@ -22,7 +22,7 @@
       position: relative;
       left: -10%;
       > .row {
-        margin-bottom: 50px;
+        margin-bottom: 65px;
       }
     }
   }
@@ -38,7 +38,7 @@
   &__explode {
     margin-bottom: 270px;
     @include media-breakpoint-down(md) {
-      margin-bottom: 150px;
+      margin-bottom: 100px;
     }
 
     &__text {
@@ -55,8 +55,8 @@
       top: -385px;
       z-index: -1;
       @include media-breakpoint-down(md) {
-        width: 140%;
-        top: -140px;
+        width: 190%;
+        top: -220px;
       }
     }
   }
@@ -68,8 +68,8 @@
     &__curved-text {
       &--mobile {
         position: absolute;
-        bottom: -90px;
-        left: -20px;
+        bottom: -100px;
+        left: -30px;
       }
       &--desktop {
         position: absolute;

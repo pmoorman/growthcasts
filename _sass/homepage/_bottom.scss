@@ -1,4 +1,7 @@
 .bottom {
+  @include media-breakpoint-down(md) {
+    padding-bottom: 50px;
+  }
   &__bg {
     &--item1 {
       position: absolute;
@@ -18,6 +21,18 @@
   }
 
   &__content {
+    &__par1 {
+      @include media-breakpoint-down(md) {
+        font-size: 20px!important;
+        line-height: 24px!important;
+      }
+    }
+    &__par2 {
+      line-height: 30px;
+      @include media-breakpoint-down(md) {
+        line-height: 24px!important;
+      }
+    }
     &__col2 {
       position: absolute;
       right: 0;

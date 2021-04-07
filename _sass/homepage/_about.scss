@@ -167,6 +167,8 @@
     max-width: 100%;
     @include media-breakpoint-down(md) {
       padding: 45px;
+      max-width: calc(100% - 30px);
+      left: 15px;
     }
   }
 

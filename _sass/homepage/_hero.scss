@@ -30,12 +30,14 @@
     z-index: -1;
     position: relative;
     @include media-breakpoint-down(md) {
-      position: initial;
+      position: relative;
+      top: 0;
       margin-bottom: 100px;
+      margin-top: 20px;
     }
     &__arrows {
       @include media-breakpoint-down(md) {
-        left: -40%;
+        left: -38%;
         position: relative;
         top: 50px;
       }
@@ -51,13 +53,17 @@
     &--arrow2 {
       left: 0;
       bottom: 0;
+      @include media-breakpoint-down(md) {
+        left: -10px;
+        bottom: -12px;
+      }
     }
     &--img1 {
       bottom: -130px;
       left: 105px;
       @include media-breakpoint-down(md) {
         width: 69px;
-        bottom: -60px;
+        bottom: -250px;
         left: initial;
         right: 55px;
       }
@@ -67,8 +73,8 @@
       top: 230px;
       @include media-breakpoint-down(md) {
         width: 94px;
-        left: -20px;
-        top: 270px;
+        left: -38px;
+        top: 100px;
       }
     }
     &--img3 {
@@ -78,7 +84,7 @@
       @include media-breakpoint-down(md) {
         width: 106px;
         left: 60px;
-        top: 430px;
+        top: 290px;
       }
     }
     &--img4 {
@@ -87,8 +93,8 @@
       z-index: -1;
       @include media-breakpoint-down(md) {
         width: 195px;
-        right: 30px;
-        top: 345px;
+        right: 57px;
+        top: 180px;
       }
     }
     &--img5 {
@@ -96,8 +102,8 @@
       top: 0;
       @include media-breakpoint-down(md) {
         width: 82px;
-        top: 215px;
-        right: -10px;
+        top: 35px;
+        right: -20px;
       }
     }
   }
@@ -120,6 +126,12 @@
       right: -30px;
       @include media-breakpoint-down(md) {
         right: 0;
+      }
+    }
+    p {
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }

@@ -41,16 +41,23 @@
     &__divider {
       margin-top: 30px;
       margin-bottom: 45px;
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
 #case-studies-tiktok {
   padding-bottom: 25px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 25px;
+  }
   .case-studies__item__content {
     padding-top: 100px;
     @include media-breakpoint-down(md) {
-      padding-top: 50px;
+      padding-top: 65px;
     }
     .text-highlight {
       color: #ea3354;
@@ -69,7 +76,7 @@
       color: #292f47;
     }
     @include media-breakpoint-down(md) {
-      padding-top: 50px;
+      padding-top: 65px;
     }
   }
 }

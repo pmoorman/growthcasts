@@ -13,6 +13,10 @@
           font-size: 16px;
           line-height: 21px;
         }
+        @include media-breakpoint-down(md) {
+          font-size: 20px!important;
+          line-height: 24px!important;
+        }
       }
     }
   }
