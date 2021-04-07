@@ -74,15 +74,15 @@
     &--img3 {
       left: 390px;
       top: 500px;
+      z-index: -1;
       @include media-breakpoint-down(md) {
         width: 106px;
         left: 60px;
         top: 430px;
-        z-index: -1;
       }
     }
     &--img4 {
-      right: 230px;
+      right: 175px;
       top: 300px;
       z-index: -1;
       @include media-breakpoint-down(md) {
@@ -92,7 +92,7 @@
       }
     }
     &--img5 {
-      right: 95px;
+      right: 10px;
       top: 0;
       @include media-breakpoint-down(md) {
         width: 82px;
@@ -116,6 +116,11 @@
     }
     &__inner {
       max-width: 415px;
+      position: relative;
+      right: -30px;
+      @include media-breakpoint-down(md) {
+        right: 0;
+      }
     }
   }
 

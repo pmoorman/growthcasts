@@ -142,6 +142,17 @@
         display: none;
       }
     }
+    &--item8 {
+      width: 137px;
+      height: 86px;
+      background: #d9effb;
+      opacity: 0.6;
+      bottom: 295px;
+      right: 50px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
   }
 
   &__titlebox {

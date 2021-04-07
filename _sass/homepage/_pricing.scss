@@ -18,9 +18,10 @@
       right: -50px;
       bottom: 0;
       top: 0;
+      z-index: -1;
     }
     &__col1 {
-      padding-top: 140px;
+      padding-top: 95px;
       p {
         color: #9096aa;
       }
@@ -31,14 +32,21 @@
     }
     &__col2 {
       background: #ffffff;
-      box-shadow: 40px 40px 0px rgba(0, 0, 0, 0.06);
       padding: 70px;
       padding-top: 0;
-      position: relative;
-      right: -100px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      &__bg {
+        position: absolute;
+        background: #ffffff;
+        box-shadow: 40px 40px 0px rgba(0, 0, 0, 0.06);
+        left: 0;
+        right: -110px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
       hr {
         width: 100%;
         opacity: 0.23;

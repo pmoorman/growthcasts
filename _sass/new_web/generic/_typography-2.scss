@@ -34,7 +34,7 @@ h3 {
 p {
   font-weight: normal;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 24px;
   @include media-breakpoint-down(md) {
     line-height: 24px;
   }

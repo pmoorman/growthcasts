@@ -8,8 +8,8 @@
     }
     &__line1 {
       position: absolute;
-      right: 130px;
-      bottom: -130px;
+      right: 180px;
+      bottom: -135px;
     }
     &__warningimg {
       @include media-breakpoint-down(md) {
@@ -46,7 +46,9 @@
 }
 
 #case-studies-tiktok {
+  padding-bottom: 25px;
   .case-studies__item__content {
+    padding-top: 100px;
     @include media-breakpoint-down(md) {
       padding-top: 50px;
     }
@@ -57,11 +59,12 @@
 }
 
 #case-studies-alpian {
+  padding-bottom: 0;
   @include media-breakpoint-down(md) {
     padding-top: 160px;
   }
   .case-studies__item__content {
-    padding-top: 425px;
+    padding-top: 380px;
     .text-highlight {
       color: #292f47;
     }
