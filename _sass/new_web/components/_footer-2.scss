@@ -6,6 +6,9 @@ footer .divider-1 {
   border-top: 1px solid #333a57;
   margin-top: 0;
   margin-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+  }
 }
 footer .divider-2 {
   opacity: 0.1;
