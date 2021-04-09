@@ -55,9 +55,12 @@
     margin-bottom: 25px;
   }
   .case-studies__item__content {
-    padding-top: 100px;
+    padding-top: 40px;
+    position: relative;
+    left: 105px;
     @include media-breakpoint-down(md) {
       padding-top: 65px;
+      left: 0;
     }
     .text-highlight {
       color: #ea3354;
@@ -66,12 +69,12 @@
 }
 
 #case-studies-alpian {
-  padding-bottom: 0;
   @include media-breakpoint-down(md) {
     padding-top: 160px;
+    padding-bottom: 0;
   }
   .case-studies__item__content {
-    padding-top: 380px;
+    padding-top: 340px;
     .text-highlight {
       color: #292f47;
     }
@@ -94,7 +97,7 @@
     }
     &__content {
       color: #632249;
-      padding-top: 380px;
+      padding-top: 160px;
       @include media-breakpoint-down(md) {
         padding-top: 160px;
       }
