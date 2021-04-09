@@ -1,8 +1,25 @@
-.navbar .nav-link {
+.navbar {
+  padding-top: 50px;
+  @include media-breakpoint-down(md) {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 30px;
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
+}
+
+.nav-link {
+  opacity: 0.6;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #292f47;
+  color: #292f47 !important;
   opacity: 0.6;
 }
 .navbar .nav-link.active {
