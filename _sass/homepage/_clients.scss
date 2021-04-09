@@ -30,6 +30,8 @@
   &__logoitem {
     filter: grayscale(100%);
     transition: 0.5s;
+    max-width: 160px;
+    max-height: 92px;
     &:hover {
       filter: none;
     }
