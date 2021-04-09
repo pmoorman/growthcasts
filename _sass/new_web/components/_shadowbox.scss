@@ -1,11 +1,10 @@
-@mixin shadowbox(
-  $bg: #292F47,
-  $shadow: #359BFA,
-  $color: #fff
-) {
+@mixin shadowbox($bg: #292f47, $shadow: #359bfa, $color: #fff) {
   background: $bg;
-  box-shadow: 10px 10px 0px $shadow;
+  box-shadow: 0 0 0px $shadow;
   color: $color;
+  &.active {
+    box-shadow: 10px 10px 0px $shadow;
+  }
 }
 
 @mixin shadowbox-check($check-color: "light") {
@@ -28,6 +27,7 @@
   justify-content: center;
   margin-bottom: 10px;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .shadowbox.variant-1 {
@@ -39,5 +39,5 @@
 }
 
 .shadowbox.variant-2 {
-  @include shadowbox(#359BFA, #fff, #fff);
+  @include shadowbox(#359bfa, #fff, #fff);
 }

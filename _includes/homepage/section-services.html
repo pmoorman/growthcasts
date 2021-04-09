@@ -23,7 +23,7 @@
     <div class="row">
       {% for item in page.services.items %}
       <div class="col-lg-3 px-lg-4 mb-4 mb-lg-0">
-        <div class="shadowbox variant-2 mb-4 mb-lg-5">{{forloop.index}}</div>
+        <div class="shadowbox variant-2 mb-4 mb-lg-5 active-in-view">{{forloop.index}}</div>
         <p class="lead">{{item.title}}</p>
         <p class="text-small">{{item.content}}</p>
       </div>
