@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Selecting multiple elements to observe
   const elements = document.querySelectorAll(".active-in-view");
-  console.log({ elements });
   // Adding observer on each element
   elements.forEach((element) => {
     observer.observe(element);
