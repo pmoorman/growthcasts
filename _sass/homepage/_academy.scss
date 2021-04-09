@@ -36,7 +36,8 @@
     }
     &--img1 {
       top: -250px;
-      left: -200px;
+      left: -220px;
+      width: 378px;
       @include media-breakpoint-down(md) {
         width: 144px;
         top: -140px;
@@ -47,6 +48,7 @@
     &--img2 {
       bottom: -30px;
       left: 115px;
+      width: 222px;
       @include media-breakpoint-down(md) {
         width: 142.64px;
         bottom: -120px;
@@ -56,6 +58,7 @@
     &--img3 {
       bottom: -265px;
       right: 20px;
+      width: 322px;
       @include media-breakpoint-down(md) {
         width: 253.65px;
         right: -80px;
@@ -63,10 +66,11 @@
     }
     &--img4 {
       top: -65px;
-      right: -100px;
+      right: -120px;
+      width: 260px;
       @include media-breakpoint-down(md) {
         width: 138.36px;
-        right: -50px;
+        right: -70px;
         top: -100px;
       }
     }
