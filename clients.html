@@ -212,7 +212,7 @@ clients:
             aria-expanded="false"
           >
             <img class="mr-2" src="/assets/images/clients/chevron-down.svg" />
-            #<span v-html="selectedService"></span> services
+            #<span v-html="selectedServiceLabel()"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="service_filters">
             {% for service in page.services %}
@@ -372,6 +372,9 @@ clients:
       selectedService: service
     }),
     methods: {
+      selectedServiceLabel: function() {
+        return this.selectedService === service ? `${service} services` : this.selectedService;
+      },
       selectIndustry: function(industry) {
         this.selectedIndustry = industry;
       },
