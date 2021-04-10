@@ -219,7 +219,9 @@
       </div>
 
       <div class="row justify-content-center pt-5 pt-lg-0 pb-4 pb-lg-0">
-        <p class="lead-lg text-center mb-0">{{ page.client_logos_text[2] }}</p>
+        <p class="clients__logos__text2 lead-lg text-center mb-0">
+          {{ page.client_logos_text[2] }}
+        </p>
       </div>
     </div>
 
@@ -283,9 +285,9 @@
     </div>
   </div>
 
+  <!-- Circles animation -->
   <script>
     (async () => {
-      let animationDone = false;
       const footer = document.querySelector(".clients__footer");
       const circle1 = document.querySelector(".clients__circles--circle1");
       const circle2 = document.querySelector(".clients__circles--circle2");
@@ -366,9 +368,9 @@
       if (window.matchMedia("(min-width: 992px)").matches) {
         const callback = (entries, observer) => {
           entries.forEach((entry) => {
-            if (!animationDone && entry.intersectionRatio >= 0.75) {
+            if (entry.intersectionRatio >= 0.75) {
               main();
-              animationDone = true;
+              observer.unobserve(entry.target);
             }
           });
         };
@@ -380,6 +382,37 @@
       } else {
         changeCircle2Text();
       }
+    })();
+  </script>
+
+  <!-- Explode animation -->
+  <script>
+    (() => {
+      const textClass = "clients__logos__text2";
+      const explodeClass = "clients__explode";
+
+      const sleep = (ms) => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      };
+
+      const animate = async () => {
+        document.querySelector(`.${textClass}`).classList.add("active");
+        await sleep(1000);
+        document.querySelector(`.${explodeClass}`).classList.add("active");
+      };
+
+      const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate();
+          }
+        });
+      };
+      const observer = new IntersectionObserver(callback, {
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      });
+      observer.observe(document.querySelector(`.${textClass}`));
     })();
   </script>
 </section>

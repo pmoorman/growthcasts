@@ -12,6 +12,17 @@
     }
   }
   &__logos {
+    &__text2 {
+      span {
+        transition: 0.5s;
+      }
+      &.active {
+        span {
+          text-decoration-line: line-through;
+          color: #b6b6b6;
+        }
+      }
+    }
     &--desktop {
       > .row {
         margin-bottom: 100px;
@@ -37,6 +48,13 @@
 
   &__explode {
     margin-bottom: 270px;
+    transition: 0.5s;
+    opacity: 0;
+    transform: scale(0.6);
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
     @include media-breakpoint-down(md) {
       margin-bottom: 100px;
     }
