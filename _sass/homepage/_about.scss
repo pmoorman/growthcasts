@@ -10,22 +10,34 @@
 
   &--line1 {
     left: 36%;
-    bottom: 0;
+    top: 260px;
     z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    height: 1px;
+    &.active {
+      height: 236px;
+    }
     @include media-breakpoint-down(md) {
       left: 0;
-      bottom: -190px;
+      top: 300px;
     }
   }
 
   &--line2 {
     left: 300px;
-    bottom: 0;
+    top: 145px;
     z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    height: 1px;
+    &.active {
+      height: 205px;
+    }
     @include media-breakpoint-down(md) {
-      right: 0;
+      right: 10px;
       left: initial;
-      bottom: -150px;
+      top: 210px;
     }
   }
 

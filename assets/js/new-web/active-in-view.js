@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // How much of the element needs to be in viewport to trigger intersection (between 0 and 1)
     root: null,
     rootMargin: "-40% 0px -40% 0px",
-    threshold: 1,
+    threshold: 0,
   };
 
   // Create new Intersection Observer

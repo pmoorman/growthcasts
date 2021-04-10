@@ -10,6 +10,7 @@
       position: absolute;
       right: 180px;
       bottom: -135px;
+      z-index: 1;
     }
     &__warningimg {
       @include media-breakpoint-down(md) {

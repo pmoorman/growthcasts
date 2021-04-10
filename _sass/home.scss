@@ -33,3 +33,18 @@
     margin-right: 0;
   }
 }
+
+.line {
+  &:before {
+    transition: 1s;
+    content: "";
+    position: absolute;
+    background: white;
+    height: 99%;
+    width: 100%;
+    bottom: 0;
+  }
+  &.active:before {
+    height: 0%;
+  }
+}
