@@ -10,8 +10,7 @@ stylesheets:
 scripts:
   - /assets/js/new-web/active-in-view.js
   - https://unpkg.com/aos@2.3.1/dist/aos.js
-scripts_footer:
-  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
 client_logos:
   - path: /assets/images/home/logo-tiktok.png
   - path: /assets/images/home/logo-sendcloud.png
@@ -81,6 +80,6 @@ process:
 
 <script>
   window.onload = function() {
-    AOS.init();
+    AOS.init({ once: true });
   }
 </script>

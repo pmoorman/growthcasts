@@ -90,3 +90,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  (() => {
+    document.querySelectorAll('.about__bgblocks').forEach(el => {
+      new simpleParallax(el, { scale: 1.3, overflow: true });
+    })
+  })()
+</script>

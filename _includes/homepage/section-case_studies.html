@@ -112,9 +112,9 @@
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  (() => {
     document.querySelectorAll('.case-studies__item__bg').forEach(el => {
-      new simpleParallax(el, { scale: 1.4, overflow: true });
+      new simpleParallax(el, { scale: 1.1, overflow: true });
     })
-  })
+  })()
 </script>

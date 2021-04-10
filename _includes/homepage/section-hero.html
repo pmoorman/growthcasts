@@ -52,8 +52,8 @@
   </a>
 </section>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const item1 = document.querySelector('.hero__bggraphics');
-    new simpleParallax(item1, { scale: 1.4, overflow: true });
-  })
-</script>
+    (() => {
+      const item1 = document.querySelector('.hero__bggraphics');
+      new simpleParallax(item1, { scale: 1.4, overflow: true });
+    })()
+  </script>
