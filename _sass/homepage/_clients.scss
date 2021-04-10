@@ -41,6 +41,8 @@
   &__logoitem {
     filter: grayscale(100%);
     transition: 0.5s;
+    z-index: 1;
+    position: relative;
     &:hover {
       filter: none;
     }
