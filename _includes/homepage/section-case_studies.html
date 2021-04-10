@@ -7,10 +7,18 @@
           Curious to see what our work looks like in action?
         </h2>
         <p class="lead">Check out these case studies.</p>
-        <img class="case-studies__intro__line1 d-none d-lg-block" src="/assets/images/home/studies-line1.svg" />
+        <img
+          class="case-studies__intro__line1 d-none d-lg-block"
+          src="/assets/images/home/studies-line1.svg"
+        />
       </div>
-      <div class="col-lg-5 text-center text-lg-right order-1 order-lg-2 mb-4 mb-lg-0">
-        <img class="case-studies__intro__warningimg" src="assets/images/home/contains-warning.png" />
+      <div
+        class="col-lg-5 text-center text-lg-right order-1 order-lg-2 mb-4 mb-lg-0"
+      >
+        <img
+          class="case-studies__intro__warningimg"
+          src="assets/images/home/contains-warning.png"
+        />
       </div>
     </div>
   </div>
@@ -20,23 +28,34 @@
 <section id="case-studies-tiktok" class="case-studies__item">
   <!-- background -->
   <div class="case-studies__item__bg">
-    <img class="d-none d-lg-block img-fluid" src="/assets/images/home/studies-tiktok-bg.png" />
-    <img class="d-lg-none d-block img-fluid" src="/assets/images/home/studies-tiktok-bg-mobile.png" />
+    <img
+      class="d-none d-lg-block img-fluid"
+      src="/assets/images/home/studies-tiktok-bg.png"
+    />
+    <img
+      class="d-lg-none d-block img-fluid"
+      src="/assets/images/home/studies-tiktok-bg-mobile.png"
+    />
   </div>
 
   <!-- content -->
   <div class="case-studies__item__content container">
     <div class="row">
       <div class="col-lg-8 px-lg-4">
-        <img class="case-studies__item__logo img-fluid" src="assets/images/home/studies-tiktok-logo.png" />
+        <img
+          class="case-studies__item__logo img-fluid"
+          src="assets/images/home/studies-tiktok-logo.png"
+        />
         <p>
           Ha, don’t get us wrong here - TikTok was already booming! But at the
           same time, new advertisers were hesitating to get on board…
         </p>
         <p class="lead-lg">
           Long story short, we investigated, found the bottleneck and built
-          <span class="text-highlight">segmented, automated sales funnels for each of their customer
-            profiles</span>.
+          <span class="text-highlight"
+            >segmented, automated sales funnels for each of their customer
+            profiles</span
+          >.
         </p>
         <hr class="case-studies__item__divider" />
         <div class="d-flex">
@@ -51,15 +70,24 @@
 <section id="case-studies-alpian" class="case-studies__item">
   <!-- background -->
   <div class="case-studies__item__bg">
-    <img class="d-none d-lg-block img-fluid" src="/assets/images/home/studies-alpian-bg.png" />
-    <img class="d-lg-none d-block img-fluid" src="/assets/images/home/studies-alpian-bg-mobile.png" />
+    <img
+      class="d-none d-lg-block img-fluid"
+      src="/assets/images/home/studies-alpian-bg.png"
+    />
+    <img
+      class="d-lg-none d-block img-fluid"
+      src="/assets/images/home/studies-alpian-bg-mobile.png"
+    />
   </div>
 
   <!-- content -->
   <div class="case-studies__item__content container">
     <div class="row justify-content-end">
       <div class="col-lg-7 pr-lg-4">
-        <img class="case-studies__item__logo img-fluid mb-4" src="assets/images/home/studies-alpian-logo.png" />
+        <img
+          class="case-studies__item__logo img-fluid mb-4"
+          src="assets/images/home/studies-alpian-logo.png"
+        />
         <p>
           We’ve been Alpian’s right hand since pre-launch, handling their
           digital marketing. Together, we’ve locked down series A…
@@ -82,16 +110,24 @@
 <section id="case-studies-cla" class="case-studies__item">
   <!-- background -->
   <div class="case-studies__item__bg">
-    <img class="d-none d-lg-block img-fluid" src="/assets/images/home/studies-corelifeanalytics-bg.png" />
-    <img class="d-lg-none d-block img-fluid" src="/assets/images/home/studies-corelifeanalytics-bg-mobile.png" />
+    <img
+      class="d-none d-lg-block img-fluid"
+      src="/assets/images/home/studies-corelifeanalytics-bg.png"
+    />
+    <img
+      class="d-lg-none d-block img-fluid"
+      src="/assets/images/home/studies-corelifeanalytics-bg-mobile.png"
+    />
   </div>
 
   <!-- content -->
   <div class="case-studies__item__content container">
     <div class="row">
       <div class="col-lg-7 px-lg-5">
-        <img class="mb-4 case-studies__item__logo img-fluid"
-          src="assets/images/home/studies-corelifeanalytics-logo.png" />
+        <img
+          class="mb-4 case-studies__item__logo img-fluid"
+          src="assets/images/home/studies-corelifeanalytics-logo.png"
+        />
         <p>
           Core Life’s data-crunching service for microbiologists had some big,
           early wins. But before long, they were dreaming of scaled growth.
@@ -112,9 +148,9 @@
 </section>
 
 <script>
-  (() => {
-    document.querySelectorAll('.case-studies__item__bg').forEach(el => {
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".case-studies__item__bg").forEach((el) => {
       new simpleParallax(el, { scale: 1.1, overflow: true });
-    })
-  })()
+    });
+  });
 </script>

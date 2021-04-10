@@ -92,9 +92,9 @@
 </section>
 
 <script>
-  (() => {
-    document.querySelectorAll('.about__bgblocks').forEach(el => {
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".about__bgblocks").forEach((el) => {
       new simpleParallax(el, { scale: 1.3, overflow: true });
-    })
-  })()
+    });
+  });
 </script>
