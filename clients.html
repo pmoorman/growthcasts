@@ -238,6 +238,8 @@ clients:
           </button>
           {% endfor %}
         </div>
+
+        <!-- Industry filters mobile -->
         <div
           class="accordion industry_filters-mobile d-block d-md-none"
           id="industry_filters"
@@ -360,6 +362,14 @@ clients:
   window.onload = function() {
     AOS.init();
   }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const item1 = document.querySelectorAll(".bottom_content__bg_items__item").forEach(el => {
+      new simpleParallax(el, { scale: 1.3, overflow: true });
+    });
+  });
 </script>
 
 <script>

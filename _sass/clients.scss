@@ -78,6 +78,7 @@ html > body {
       color: #fff;
       font-weight: 600;
       font-size: 18px;
+      border: none;
       &__arrow {
         position: absolute;
         right: 15px;
@@ -89,6 +90,7 @@ html > body {
       line-height: 42px;
       width: 100%;
       background: none;
+      border: 1px solid #e5e5e5;
     }
     &__mainbtn[aria-expanded="true"] {
       .industry_filters-mobile__mainbtn__arrow {
