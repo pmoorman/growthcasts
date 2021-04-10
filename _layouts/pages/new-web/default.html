@@ -40,6 +40,10 @@
     </footer>
     {% endunless %}
 
+    {% for item in page.scripts_footer %}
+      <script src="{{item}}"></script>
+    {% endfor %}
+
     <script>
     (() => {
       _viewportAnimations();
