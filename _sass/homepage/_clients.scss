@@ -4,11 +4,24 @@
       position: absolute;
       left: 45%;
       top: 130px;
+      z-index: 1;
+      @include media-breakpoint-down(md) {
+        transform: rotate(35deg);
+        left: 25%;
+        top: -7px;
+      }
     }
     &--line2 {
       position: absolute;
       bottom: 100px;
       right: 19%;
+      z-index: 1;
+      @include media-breakpoint-down(md) {
+        right: initial;
+        bottom: initial;
+        top: -20px;
+        left: 42%;
+      }
     }
   }
   &__logos {
@@ -29,9 +42,9 @@
       }
     }
     &--mobile {
-      width: 120%;
+      width: 140%;
       position: relative;
-      left: -10%;
+      left: -20%;
       > .row {
         margin-bottom: 65px;
       }
