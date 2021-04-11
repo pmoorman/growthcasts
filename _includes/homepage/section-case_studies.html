@@ -149,7 +149,7 @@
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
     document.querySelectorAll(".case-studies__item__bg").forEach((el) => {
       new simpleParallax(el, { scale: 1.1, overflow: true });
     });

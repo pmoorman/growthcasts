@@ -359,13 +359,11 @@ clients:
 </div>
 
 <script>
-  window.onload = function() {
-    AOS.init();
-  }
+  AOS.init({ once: true });
 </script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
     const item1 = document.querySelectorAll(".bottom_content__bg_items__item").forEach(el => {
       new simpleParallax(el, { scale: 1.3, overflow: true });
     });
