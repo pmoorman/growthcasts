@@ -158,7 +158,6 @@ html > body {
           top: -85px;
           right: -20px;
           z-index: -1;
-          width: 287px;
           @include media-breakpoint-down(sm) {
             right: 0;
             left: initial;
@@ -175,7 +174,6 @@ html > body {
           background: #3497f3;
           top: 140px;
           left: -20px;
-          width: 261px;
           @include media-breakpoint-down(sm) {
             width: 116px;
             height: 65px;
@@ -191,7 +189,6 @@ html > body {
           bottom: -140px;
           right: 100px;
           opacity: 0.65;
-          width: 187px;
           @include media-breakpoint-down(sm) {
             bottom: -70px;
             left: 70px;
@@ -199,6 +196,7 @@ html > body {
         }
         &-4 {
           left: -155px;
+          width: 287px;
           @include media-breakpoint-down(sm) {
             width: 155px;
             bottom: -70px;
@@ -209,6 +207,7 @@ html > body {
           top: -320px;
           right: 78px;
           z-index: -1;
+          width: 261px;
           @include media-breakpoint-down(sm) {
             width: 101px;
             top: -20px;
@@ -219,6 +218,7 @@ html > body {
         &-6 {
           top: -145px;
           right: -85px;
+          width: 187px;
           @include media-breakpoint-down(sm) {
             width: 123px;
             bottom: 0px;
