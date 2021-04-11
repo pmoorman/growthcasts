@@ -61,6 +61,7 @@
     &--img1 {
       bottom: -130px;
       left: 105px;
+      width: 145px;
       @include media-breakpoint-down(md) {
         width: 69px;
         bottom: -250px;
@@ -71,6 +72,7 @@
     &--img2 {
       left: 120px;
       top: 230px;
+      width: 178px;
       @include media-breakpoint-down(md) {
         width: 94px;
         left: -38px;
@@ -81,6 +83,7 @@
       left: 390px;
       top: 500px;
       z-index: -1;
+      width: 178px;
       @include media-breakpoint-down(md) {
         width: 106px;
         left: 60px;
@@ -91,6 +94,7 @@
       right: 175px;
       top: 300px;
       z-index: -1;
+      width: 376px;
       @include media-breakpoint-down(md) {
         width: 195px;
         right: 57px;
@@ -100,6 +104,7 @@
     &--img5 {
       right: 10px;
       top: 0;
+      width: 124px;
       @include media-breakpoint-down(md) {
         width: 82px;
         top: 35px;

@@ -206,6 +206,7 @@
         top: -80px;
       }
       &__img {
+        width: 527px;
         @include media-breakpoint-down(md) {
           width: 317px;
           right: -20px;
@@ -223,8 +224,9 @@
         top: -30px;
         left: 0;
       }
-      @include media-breakpoint-down(md) {
-        &__img {
+      &__img {
+        width: 344px;
+        @include media-breakpoint-down(md) {
           width: 253px;
           position: relative;
           left: 90px;
@@ -250,6 +252,7 @@
         left: 0;
       }
       &__img {
+        width: 343px;
         @include media-breakpoint-down(md) {
           width: 268px;
           left: -25px;
