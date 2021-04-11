@@ -80,5 +80,7 @@ process:
 {% include homepage/section-bottom.html %}
 
 <script>
-  AOS.init({ once: true });
+  window.addEventListener("load", function () {
+    AOS.init({ once: true });
+  });
 </script>
