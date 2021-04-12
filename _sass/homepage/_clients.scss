@@ -56,8 +56,10 @@
     transition: 0.5s;
     z-index: 1;
     position: relative;
+    opacity: 0.5;
     &:hover {
       filter: none;
+      opacity: 1;
     }
   }
 
