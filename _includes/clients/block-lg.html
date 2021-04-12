@@ -19,6 +19,7 @@
         </div>
       </div>
       <div class="col-md-8 pl-4 pr-0">
+        {% if client.page_url %}
         <a
           href="{{client.page_url}}"
           class="client-box__logo__arrow d-none d-md-block d-md-flex d-none"
@@ -32,6 +33,7 @@
             <span>See Case Study</span>
           </div>
         </a>
+        {% endif %}
         <div class="client-box__content">
           <div class="client-box__content__inner">
             <h3 class="client-box__content__title">{{client.title}}</h3>
@@ -55,6 +57,7 @@
           </div>
           {% endif %}
           <div class="d-block d-md-none">
+            {% if client.page_url %}
             <a
               class="client-box__link_mobile btn btn-primary d-flex justify-content-between"
               href="{{client.page_url}}"
@@ -65,6 +68,7 @@
                 src="/assets/images/clients/link_arrow-light.svg"
               />
             </a>
+            {% endif %}
           </div>
         </div>
       </div>
