@@ -103,24 +103,23 @@
     &__curved-text {
       &--mobile {
         position: absolute;
-        bottom: -100px;
-        left: -30px;
+        bottom: -85px;
+        left: -15px;
       }
       &--desktop {
         position: absolute;
         bottom: -60px;
         left: -70px;
-
-        &--wrapper {
-          width: 100%;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          height: 100%;
-          opacity: 0;
-          @include media-breakpoint-up(md) {
-            transform: rotate(45deg);
-          }
+      }
+      &--wrapper {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        opacity: 0;
+        @include media-breakpoint-up(md) {
+          transform: rotate(45deg);
         }
       }
     }

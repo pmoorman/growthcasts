@@ -238,15 +238,14 @@
             Systems
           </h3>
           <div class="clients__circles__curved-text">
-            <img
-              class="clients__circles__curved-text--mobile d-lg-none d-block"
-              src="/assets/images/home/explode-curved-text-mobile.png"
-            />
-            <div
-              class="clients__circles__curved-text--desktop--wrapper d-none d-lg-block"
-            >
+            <div class="clients__circles__curved-text--wrapper">
               <img
-                class="clients__circles__curved-text--desktop"
+                class="clients__circles__curved-text--mobile d-lg-none d-block"
+                src="/assets/images/home/explode-curved-text-mobile.png"
+              />
+
+              <img
+                class="clients__circles__curved-text--desktop d-none d-lg-block"
                 src="/assets/images/home/explode-curved-text.png"
               />
             </div>
@@ -288,7 +287,7 @@
         ".clients__circles--circle2__text"
       );
       const curvedText = document.querySelector(
-        ".clients__circles__curved-text--desktop--wrapper"
+        ".clients__circles__curved-text--wrapper"
       );
 
       const sleep = (ms) => {
@@ -354,24 +353,19 @@
         changeCircle2Text();
       };
 
-      // Only animate on large screens
-      if (window.matchMedia("(min-width: 992px)").matches) {
-        const callback = (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.75) {
-              main();
-              observer.unobserve(entry.target);
-            }
-          });
-        };
-        const observer = new IntersectionObserver(callback, {
-          rootMargin: "0px",
-          threshold: 1.0,
+      const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio >= 0.75) {
+            main();
+            observer.unobserve(entry.target);
+          }
         });
-        observer.observe(document.querySelector(".clients__circles"));
-      } else {
-        changeCircle2Text();
-      }
+      };
+      const observer = new IntersectionObserver(callback, {
+        rootMargin: "0px",
+        threshold: 1.0,
+      });
+      observer.observe(document.querySelector(".clients__circles"));
     })();
   </script>
 
