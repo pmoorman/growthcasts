@@ -5,9 +5,12 @@
     position: absolute;
     background: #e5e7ef;
     left: 0;
-    width: 50%;
+    width: 40%;
     bottom: 0;
     top: 0;
+    @include media-breakpoint-down(md) {
+      width: 0;
+    }
   }
 
   &__content {
