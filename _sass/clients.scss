@@ -91,6 +91,8 @@ html > body {
       width: 100%;
       background: none;
       border: 1px solid #e5e5e5;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
     &__mainbtn[aria-expanded="true"] {
       .industry_filters-mobile__mainbtn__arrow {
