@@ -337,19 +337,19 @@
       };
 
       const main = async () => {
-        animateCircle(circle1, "60%", 2000);
-        animateCircle(circle2, "-60%", 2000);
-        fadeIn(footer, 3000);
+        animateCircle(circle1, "60%", 1500);
+        animateCircle(circle2, "-60%", 1500);
+        fadeIn(footer, 2250);
 
         // Should be half of animateCircle anmimation
-        await sleep(1000);
+        await sleep(750);
 
-        animateCircleText(circle1TextEl, 1000);
-        animateCircleText(circle2TextEl, 1000);
-        animateCurvedText(250);
+        animateCircleText(circle1TextEl, 750);
+        animateCircleText(circle2TextEl, 750);
+        animateCurvedText(200);
 
         // Should be half of animateCircleText anmimation
-        await sleep(500);
+        await sleep(375);
 
         changeCircle2Text();
       };
