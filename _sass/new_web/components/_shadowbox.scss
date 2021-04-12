@@ -14,7 +14,7 @@
     @if $check-color == "dark" {
       content: url("/assets/images/icon-check-dark.png");
     } @else {
-      content: url("/assets/images/icon-check.png");
+      content: url("/assets/images/icon-check.svg");
     }
   }
 }
