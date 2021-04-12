@@ -172,7 +172,6 @@
   }
 
   &__titlebox {
-    padding: 60px;
     background: #fff;
     color: initial;
     width: 550px;
@@ -181,6 +180,7 @@
     box-shadow: 30px 30px 0px #00000033;
     z-index: 1;
     max-width: 100%;
+    padding: 80px 85px 90px 60px;
     @include media-breakpoint-down(md) {
       padding: 45px;
       max-width: calc(100% - 30px);
