@@ -21,11 +21,13 @@
         {% for item in page.process.items %}
         <div class="process__items__item d-flex mb-5">
           <div>
-            <div class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"></div>
+            <div
+              class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
+            ></div>
           </div>
           <p class="process__items__item__text mb-0 lead">
             {{item.title}} {% if item.content %}
-            <span><br/>{{item.content}}</span>
+            <span><br />{{item.content}}</span>
             {% endif %}
           </p>
         </div>
@@ -34,8 +36,8 @@
     </div>
 
     <!-- read more -->
-    <div class="row flex-column flex-lg-row px-3 mt-4 mt-lg-5">
+    <!-- <div class="row flex-column flex-lg-row px-3 mt-4 mt-lg-5">
       <a href="" class="arrow-btn variant-1"> Read more </a>
-    </div>
+    </div> -->
   </div>
 </section>
