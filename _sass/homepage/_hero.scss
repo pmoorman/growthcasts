@@ -64,7 +64,7 @@
       width: 145px;
       @include media-breakpoint-down(md) {
         width: 69px;
-        bottom: -250px;
+        bottom: -21em;
         left: initial;
         right: 55px;
       }
@@ -75,7 +75,7 @@
       width: 178px;
       @include media-breakpoint-down(md) {
         width: 94px;
-        left: -38px;
+        left: -3em;
         top: 100px;
       }
     }
@@ -86,7 +86,7 @@
       width: 178px;
       @include media-breakpoint-down(md) {
         width: 106px;
-        left: 60px;
+        left: 2em;
         top: 290px;
       }
     }
@@ -97,7 +97,8 @@
       width: 376px;
       @include media-breakpoint-down(md) {
         width: 195px;
-        right: 57px;
+        right: initial;
+        left: 6em;
         top: 180px;
       }
     }
@@ -107,8 +108,8 @@
       width: 124px;
       @include media-breakpoint-down(md) {
         width: 82px;
-        top: 35px;
-        right: -20px;
+        right: -2.5em;
+        top: 1.5em;
       }
     }
   }

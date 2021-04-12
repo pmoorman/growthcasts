@@ -140,10 +140,8 @@
 
     &--circle1 {
       background: var(--secondary);
-      @include media-breakpoint-up(md) {
-        transform: translateX(60%);
-        opacity: 0;
-      }
+      transform: translateX(60%);
+      opacity: 0;
     }
 
     &--circle2 {
@@ -151,10 +149,8 @@
       top: 0;
       left: -50px;
       background: var(--primary);
-      @include media-breakpoint-up(md) {
-        transform: translateX(-60%);
-        opacity: 0;
-      }
+      transform: translateX(-60%);
+      opacity: 0;
     }
   }
 
