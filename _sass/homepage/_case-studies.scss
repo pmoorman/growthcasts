@@ -13,6 +13,7 @@
       z-index: 1;
     }
     &__warningimg {
+      width: 289px;
       @include media-breakpoint-down(md) {
         width: 158.91px;
       }
