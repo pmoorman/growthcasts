@@ -30,6 +30,7 @@
       top: 0;
 
       img {
+        width: 1920px;
         @include media-breakpoint-down(md) {
           width: 120%;
         }
