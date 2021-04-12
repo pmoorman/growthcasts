@@ -402,6 +402,20 @@ html > body {
 
   /* MD */
   .client-box__md {
+    position: relative;
+
+    &__bg {
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 20px);
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
     .client-box {
       &__logo {
         padding: 40px;

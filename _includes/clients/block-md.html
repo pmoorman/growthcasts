@@ -1,9 +1,12 @@
 {% assign client = include.client %}
 
-<div
-  class="client-box client-box__md"
-  style="background-image: url('{{client.background_image}}')"
->
+<div class="client-box client-box__md">
+  <div class="client-box__md__bg">
+    <img
+      src="{{client.background_image}}"
+      style="object-position: {{ client.background_image_position | default: 'top' }};"
+    />
+  </div>
   <div
     class="client-box__logo"
     style="background-color: {{client.background_color}};"
