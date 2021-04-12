@@ -5,12 +5,12 @@
   style="background-image: url('{{client.background_image}}');"
 >
   <div
-    class="mobile-bg d-block d-md-none"
+    class="mobile-bg d-block d-lg-none"
     style="background-image:url('{{client.background_image_mobile}}')"
   ></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 px-0">
+      <div class="col-lg-4 px-0">
         <div
           class="client-box__logo"
           style="background-color: {{client.background_color}};"
@@ -18,11 +18,11 @@
           <img src="{{client.logo}}" alt="{{client.title}} logo" />
         </div>
       </div>
-      <div class="col-md-8 pl-4 pr-0">
+      <div class="col-lg-8 pl-4 pr-0">
         {% if client.page_url %}
         <a
           href="{{client.page_url}}"
-          class="client-box__logo__arrow d-none d-md-block d-md-flex d-none"
+          class="client-box__logo__arrow d-none d-lg-block d-lg-flex d-none"
         >
           <img
             class="client-box__logo__arrow--non_hover"
@@ -56,7 +56,7 @@
             </p>
           </div>
           {% endif %}
-          <div class="d-block d-md-none">
+          <div class="d-block d-lg-none">
             {% if client.page_url %}
             <a
               class="client-box__link_mobile btn btn-primary d-flex justify-content-between"
@@ -73,11 +73,11 @@
         </div>
       </div>
     </div>
-    <div class="client-box__services row d-none d-md-flex">
-      <div class="col-md-4 px-0 client-box__services__titlebox">
+    <div class="client-box__services row d-none d-lg-flex">
+      <div class="col-lg-4 px-0 client-box__services__titlebox">
         <p>We worked on:</p>
       </div>
-      <div class="col-md-8 px-0 client-box__services__valuebox">
+      <div class="col-lg-8 px-0 client-box__services__valuebox">
         <p>
           {% for service in client.services %}
           <span class="mr-4">#{{service}}</span>
