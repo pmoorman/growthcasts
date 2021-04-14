@@ -459,20 +459,20 @@ html > body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
     @include media-breakpoint-down(md) {
       margin-bottom: 15px;
     }
 
     .mobile-bg {
-      width: 100%;
-      background-attachment: fixed;
+      width: 100vw;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 100%;
       position: absolute;
-      bottom: 0;
+      bottom: -120px;
     }
 
     .container {

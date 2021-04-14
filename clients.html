@@ -359,8 +359,16 @@ clients:
 </script>
 
 <script>
+  // Bottom items
   window.addEventListener("load", function () {
-    const item1 = document.querySelectorAll(".bottom_content__bg_items__item").forEach(el => {
+    document.querySelectorAll(".bottom_content__bg_items__item").forEach(el => {
+      new simpleParallax(el, { scale: 1.3, overflow: true });
+    });
+  });
+
+  // LG client boxes's background paralax
+  window.addEventListener("load", function () {
+    document.querySelectorAll(".client-box__lg .mobile-bg").forEach(el => {
       new simpleParallax(el, { scale: 1.3, overflow: true });
     });
   });
