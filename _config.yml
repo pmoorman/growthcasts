@@ -27,7 +27,6 @@ email: pieter@double-agency.co
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-target-blank
 
 # Collections
 collections_dir: collections
