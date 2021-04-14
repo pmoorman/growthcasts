@@ -37,7 +37,6 @@
     z-index: -1;
     position: relative;
     @include media-breakpoint-down(md) {
-      position: relative;
       top: 0;
       margin-bottom: 100px;
       margin-top: 20px;
@@ -56,6 +55,10 @@
       @include media-breakpoint-down(md) {
         right: -105px;
       }
+      @include media-breakpoint-down(xs) {
+        width: 354px;
+        height: 271px;
+      }
     }
     &--arrow2 {
       left: 0;
@@ -63,6 +66,10 @@
       @include media-breakpoint-down(md) {
         left: -10px;
         bottom: -12px;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 354px;
+        height: 261px;
       }
     }
     &--img1 {
