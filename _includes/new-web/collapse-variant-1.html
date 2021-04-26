@@ -2,8 +2,15 @@
 {% assign title = include.title %}
 {% assign content = include.content %}
 {% assign parent = include.parent %}
+{% assign bg = include.bg %}
+{% if bg == "dark" %}
+  {% assign arrow_color = "light" %}
+{% else %}
+  {% assign arrow_color = "dark" %}
+{% endif %}
 
-<div class="collapse-variant-1">
+
+<div class="collapse-variant-1 background-{{bg}}">
   <button
     class="btn btn-block text-left"
     type="button"
@@ -13,7 +20,7 @@
     aria-controls="{{id}}"
   >
     {{title}}
-    <img src="/assets/images/icon-chevron_up.svg" />
+    <img src="/assets/images/icon-chevron_up-{{arrow_color}}.svg" />
   </button>
   <div
     id="{{id}}"
