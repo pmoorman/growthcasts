@@ -1,0 +1,84 @@
+---
+layout: pages/new-web/default
+body_class: homepage
+custom_header: new-web/header-2.html
+custom_footer: new-web/footer-2.html
+main_css: ""
+stylesheets:
+  - /assets/home.css
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
+scripts:
+  - /assets/js/new-web/active-in-view.js
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
+scripts_footer:
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
+client_logos:
+  - path: /assets/images/home/logo-tiktok.png
+  - path: /assets/images/home/logo-sendcloud.png
+  - path: /assets/images/home/logo-klooker.png
+  - path: /assets/images/home/logo-startlife.png
+  - path: /assets/images/home/logo-fulfillment.png
+  - path: /assets/images/home/logo-diesel.png
+  - path: /assets/images/home/logo-simplabs.png
+  - path: /assets/images/home/logo-elugie.png
+  - path: /assets/images/home/logo-h.png
+  - path: /assets/images/home/logo-corelifeanalytics.png
+  - path: /assets/images/home/logo-insecto.png
+client_logos_text:
+  - Whether you’re a billion-dollar company,
+  - ...or a bootstrapped powerhouse,
+  - "...chances are that we can <br /> help you <span>scale up</span>"
+services:
+  items:
+    - title: Acquisition
+      content: |
+        If it’s traffic you need, we’ll choose a channel that matches your audience (maybe it’s ads, content marketing, or outbound sales) and iterate content at a high-tempo until you’re pulling in cost-effective leads.
+    - title: Marketing infrastructure
+      content: |
+        Because we geek out on analytics and attribution, we can help you quickly understand what is and isn’t working in your current marketing systems.
+    - title: Story-driven sales funnels
+      content: |
+        Our speciality is converting leads into customers. We do it by sending them on a journey that offers exceptional value for free, whilst pointing out the benefits of your paid offering.
+    - title: Modern growth strategies
+      content: |
+        Companies grow in the internet age when they leave behind the outdated approach of the TV era. We guide our clients to adopt the Growth Loops methodology - a systematic approach that we build, execute and teach.
+process:
+  items:
+    - title: Our focus is building systems
+    - title: We do that via an iterative approach called high-tempo testing
+    - title: Once the system is running smoothly, we help you operate it in-house
+    - title: As needed, we can engage in parallel workstreams
+      content: |
+        (i.e. simultaneously building your sales funnels + improving branding)
+---
+
+<!-- Hero -->
+{% include homepage/section-hero.html %}
+
+<!-- Clients -->
+{% include homepage/section-clients.html %}
+
+<!-- Services -->
+{% include homepage/section-services.html %}
+
+<!-- Case Studies -->
+{% include homepage/section-case_studies.html %}
+
+<!-- Academy -->
+{% include homepage/section-academy.html %}
+
+<!-- About -->
+{% include homepage/section-about.html %}
+
+<!-- Process -->
+{% include homepage/section-process.html %}
+
+<!-- Pricing -->
+{% include homepage/section-pricing.html %}
+
+<!-- Bottom -->
+{% include homepage/section-bottom.html %}
+
+<script>
+  AOS.init({ once: true });
+</script>
