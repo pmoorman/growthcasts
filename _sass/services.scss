@@ -32,6 +32,9 @@
     line-height: 42px;
     color: #7e87a8;
     padding: 15px 0;
+    &:hover {
+      text-decoration: none;
+    }
     &:last-child {
       padding-bottom: 0;
     }
