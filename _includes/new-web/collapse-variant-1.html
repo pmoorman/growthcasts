@@ -1,0 +1,25 @@
+{% assign id = include.id %}
+{% assign title = include.title %}
+{% assign content = include.content %}
+{% assign parent = include.parent %}
+
+<div class="collapse-variant-1">
+  <button
+    class="btn btn-block text-left"
+    type="button"
+    data-toggle="collapse"
+    data-target="#{{id}}"
+    aria-expanded="false"
+    aria-controls="{{id}}"
+  >
+    {{title}}
+    <img src="/assets/images/icon-chevron_up.svg" />
+  </button>
+  <div
+    id="{{id}}"
+    class="collapse"
+    data-parent="#{{parent}}"
+  >
+    <div class="collapse__content">{{content}}</div>
+  </div>
+</div>
