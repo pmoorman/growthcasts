@@ -1,0 +1,38 @@
+<style>
+  .services-nav__item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 42px;
+    color: #7e87a8;
+    padding: 15px 0;
+  }
+  .services-nav__item.active {
+    color: var(--primary);
+    font-weight: bold;
+  }
+  .services-nav__item img {
+    display: none;
+    max-width: 26px;
+    max-height: 28px;
+    margin-right: 20px;
+  }
+  .services-nav__item.active img {
+    display: block;
+  }
+</style>
+
+<div class="services-nav">
+  <div class="services-nav__item {% if include.index == 0 %}active{% endif %}">
+    <img src="/assets/images/services/icon-performance.svg" /> Performance
+  </div>
+  <div class="services-nav__item {% if include.index == 1 %}active{% endif %}">
+    <img src="/assets/images/services/icon-funnels.svg" /> Funnels & creative
+  </div>
+  <div class="services-nav__item {% if include.index == 2 %}active{% endif %}">
+    <img src="/assets/images/services/icon-marketing.svg" /> Product marketing
+  </div>
+  <div class="services-nav__item {% if include.index == 3 %}active{% endif %}">
+    <img src="/assets/images/services/icon-infrastructure.svg" /> Infrastructure
+  </div>
+</div>
