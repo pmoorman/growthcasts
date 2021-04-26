@@ -45,6 +45,12 @@
         display: block;
       }
     }
+    &.background-primary {
+      color: #B4DBFF;
+      &.active {
+        color: #fff;
+      }
+    }
     img {
       display: none;
       max-width: 26px;
