@@ -1,6 +1,9 @@
 .collapse-variant-1 {
   border-bottom: 1px solid rgba(41, 47, 71, 0.2);
   margin-bottom: 60px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
 
   &.background-dark {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);

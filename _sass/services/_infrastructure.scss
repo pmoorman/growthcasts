@@ -2,8 +2,15 @@
   background: linear-gradient(0deg, #359bfa 70%, transparent 30%);
   padding-top: 0;
   padding-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    background: linear-gradient(0deg, #359bfa 84%, transparent 30%);
+  }
+
   &__upper {
     margin-bottom: 125px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 90px;
+    }
     &__img {
       position: relative;
       bottom: -20px;

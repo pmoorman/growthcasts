@@ -5,5 +5,8 @@
 
   &__upper {
     margin-bottom: 125px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 100px;
+    }
   }
 }
