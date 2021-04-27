@@ -12,9 +12,10 @@
 @import "new_web/components/shadowbox";
 @import "new_web/components/animated-line";
 @import "new_web/components/collapse";
+@import "new_web/components/bottom-section-1";
 
 // Sections
-//
+@import "services/clients";
 
 @include media-breakpoint-down(md) {
   .row {

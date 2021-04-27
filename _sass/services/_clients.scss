@@ -1,0 +1,49 @@
+.clients {
+  position: relative;
+  padding-bottom: 500px;
+  padding-top: 180px;
+
+  &__logos {
+    position: relative;
+    & [class*="__item"] {
+      position: absolute;
+    }
+
+    &__item {
+      &--1 {
+        left: -10px;
+        top: 190px;
+      }
+      &--2 {
+        right: -20px;
+        top: 300px;
+      }
+      &--3 {
+        right: -200px;
+        top: 90px;
+      }
+      &--4 {
+        left: -200px;
+        bottom: -200px;
+      }
+      &--5 {
+        left: 35%;
+        top: -90px;
+      }
+      &--6 {
+        bottom: -155px;
+        left: 150px;
+      }
+      &--7 {
+        bottom: -250px;
+        right: -120px;
+      }
+    }
+  }
+
+  &__line1 {
+    position: absolute;
+    bottom: -30px;
+    left: 38%;
+  }
+}
