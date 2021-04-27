@@ -15,6 +15,11 @@
 @import "new_web/components/bottom-section-1";
 
 // Sections
+@import "services/hero";
+@import "services/performance";
+@import "services/funnels";
+@import "services/marketing";
+@import "services/infrastructure";
 @import "services/clients";
 
 @include media-breakpoint-down(md) {
