@@ -68,6 +68,15 @@
 
 // Mobile nav
 .mobile-nav {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
   button {
     background: #292F47;
     display: flex;
@@ -75,7 +84,7 @@
     align-items: center;
     font-size: 18px;
     line-height: 42px;
-    color: #fff;
+    color: #fff!important;
     border-radius: 0;
     &:focus {
       outline: 0;
@@ -92,14 +101,17 @@
   }
 
   .mobile-nav__content {
-    padding-bottom: 25px;
     background: #181D31;
     color: #fff;
+    padding: 15px 0 25px 0;
 
     a {
       color: #fff;
       display: block;
-      padding: 10px 15px;
+      padding: 13px 15px;
+      &:last-child {
+        padding-bottom:0;
+      }
     }
   }
 }
