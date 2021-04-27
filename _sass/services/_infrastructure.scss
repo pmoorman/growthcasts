@@ -1,0 +1,12 @@
+.infrastructure {
+  background: linear-gradient(0deg, #359bfa 70%, transparent 30%);
+  padding-top: 0;
+  padding-bottom: 50px;
+  &__upper {
+    margin-bottom: 125px;
+    &__img {
+      position: relative;
+      bottom: -20px;
+    }
+  }
+}

@@ -1,11 +1,6 @@
-<section
-  id="funnels"
-  style="background: linear-gradient(0deg, #292f47 70%, transparent 30%); padding-bottom: 50px;     position: relative;
-  top: -290px;
-  margin-bottom: -290px; z-index: 2;"
->
+<section id="funnels" class="funnels">
   <div class="container">
-    <div class="row align-items-end" style="margin-bottom: 125px">
+    <div class="funnels__upper row align-items-end">
       <div class="col">{% include services/navigation.html index=1 %}</div>
       <div>
         <img class="img-fluid" src="/assets/images/services/funnels.svg" />
@@ -14,8 +9,7 @@
 
     {% include new-web/collapse-variant-1-multi.html
       container="funnels-accordion" 
-      items=page.funnels 
-      bg="dark"
+      items=page.funnels bg="dark" 
     %}
   </div>
 </section>

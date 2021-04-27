@@ -1,0 +1,12 @@
+.funnels {
+  background: linear-gradient(0deg, #292f47 70%, transparent 30%);
+  padding-bottom: 50px;
+  position: relative;
+  top: -290px;
+  margin-bottom: -290px;
+  z-index: 2;
+
+  &__upper {
+    margin-bottom: 125px;
+  }
+}
