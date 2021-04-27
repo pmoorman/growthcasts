@@ -1,6 +1,7 @@
 <section id="hero" class="hero position-relative" style="padding-bottom: 0">
   <div class="container position-relative">
     <img
+      class="hero__bggraphic-item"
       style="width: 140.94px; position: absolute; top: -295px; left: 280px"
       src="/assets/images/services/hero-graphic-2.png"
     />
@@ -29,7 +30,10 @@
           <span class="text-highlight">we’ll bring it to life</span>.
         </p>
       </div>
-      <div style="position: absolute; right: -50px; bottom: 70px">
+      <div
+        class="hero__bggraphic-item"
+        style="position: absolute; right: -50px; bottom: 70px"
+      >
         <img
           style="
             position: absolute;
@@ -80,7 +84,10 @@
       data-aos="fade-in"
       style="height: 325px; position: relative; top: -125px"
     >
-      <div style="position: relative; display: inline-block; left: -70px">
+      <div
+        class="hero__bggraphic-item"
+        style="position: relative; display: inline-block; left: -70px"
+      >
         <img
           style="
             position: absolute;
@@ -96,13 +103,16 @@
           src="/assets/images/services/hero-img-1.jpg"
         />
       </div>
-      <div style="left: 24%; position: relative; top: 20px">
+      <div
+        class="hero__bggraphic-item"
+        style="left: 24%; position: relative; top: 20px"
+      >
         <img
           style="width: 278px"
           src="/assets/images/services/hero-img-2.jpg"
         />
       </div>
-      <div style="position: relative; left: 94%">
+      <div class="hero__bggraphic-item" style="position: relative; left: 94%">
         <img
           style="width: 187px"
           src="/assets/images/services/hero-img-5.jpg"
@@ -133,7 +143,10 @@
         </h2>
       </div>
       <div class="col">
-        <div style="left: 24%; position: relative; top: 75px">
+        <div
+          class="hero__bggraphic-item"
+          style="left: 24%; position: relative; top: 75px"
+        >
           <img
             style="width: 144px"
             src="/assets/images/services/hero-img-4.jpg"
@@ -180,3 +193,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  window.addEventListener("load", function () {
+    document.querySelectorAll(".hero__bggraphic-item").forEach((el) => {
+      new simpleParallax(el, { scale: 1.4, overflow: true });
+    });
+  });
+</script>
