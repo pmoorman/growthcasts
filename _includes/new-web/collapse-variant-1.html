@@ -25,7 +25,9 @@
   <div
     id="{{id}}"
     class="collapse"
+    {% if parent %}
     data-parent="#{{parent}}"
+    {% endif %}
   >
     <div class="collapse__content">{{content}}</div>
   </div>
