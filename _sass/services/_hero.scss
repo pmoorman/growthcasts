@@ -24,17 +24,48 @@
       @include media-breakpoint-up(md) {
         margin-bottom: 60px;
       }
-      h2 span {
-        font-size: 20px;
-        line-height: 30px;
-        opacity: 0.3;
-        position: relative;
-        bottom: 15px;
+      @include media-breakpoint-down(md) {
+        top: -40px;
+        text-align: center;
+      }
+      .shadowbox {
+        @include media-breakpoint-down(md) {
+          margin: auto;
+        }
+      }
+      h2 {
+        @include media-breakpoint-down(md) {
+          font-size: 24px;
+          line-height: 32px;
+        }
+        span {
+          font-size: 20px;
+          line-height: 30px;
+          opacity: 0.3;
+          position: relative;
+          bottom: 15px;
+          @include media-breakpoint-down(md) {
+            display: block;
+            margin-top: 15px;
+          }
+        }
       }
     }
     &--4 {
       position: relative;
       margin-bottom: 250px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0;
+        text-align: center;
+        > div:first-child {
+          margin-bottom: 40px;
+        }
+      }
+      .shadowbox {
+        @include media-breakpoint-down(md) {
+          margin: auto;
+        }
+      }
     }
   }
 
@@ -148,6 +179,8 @@
     }
     &--8 {
       width: 131px;
+      left: 50%;
+      top: 30px;
     }
   }
 
@@ -157,6 +190,9 @@
     }
     &--2 {
       height: 185px;
+    }
+    &--3 {
+      padding-bottom: 15px;
     }
   }
 
@@ -185,11 +221,25 @@
         display: none !important;
       }
     }
+    &--1-mobile {
+      position: absolute;
+      right: 75px;
+    }
+    &--2-mobile {
+      left: 15px;
+      top: 15px;
+    }
+    &--3-mobile {
+      text-align: center;
+    }
   }
 
   &__desktop-image-section {
     height: 325px;
     position: relative;
     top: -125px;
+    @include media-breakpoint-down(md) {
+      display: none !important;
+    }
   }
 }
