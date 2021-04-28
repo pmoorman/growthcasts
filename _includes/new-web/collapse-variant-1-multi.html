@@ -34,7 +34,7 @@
 {% endfor %}
 
 <div class="row" id="{{container}}">
-  <div class="col-lg-4">
+  <div class="col-lg-4 px-lg-2">
   {% for item in items_col1 %}
     {% assign id = container | append: "col1" | append: forloop.index %}
     {% include new-web/collapse-variant-1.html 
@@ -46,7 +46,7 @@
     %}
   {% endfor %}
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 px-lg-2">
   {% for item in items_col2 %}
     {% assign id = container | append: "col2" | append: forloop.index %}
     {% include new-web/collapse-variant-1.html 
@@ -58,7 +58,7 @@
     %}
   {% endfor %}
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 px-lg-2">
   {% for item in items_col3 %}
     {% assign id = container | append: "col3" | append: forloop.index %}
     {% include new-web/collapse-variant-1.html 
