@@ -4,19 +4,26 @@
 
   &__intro {
     margin-bottom: 50px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
     &--1 {
-      margin-bottom: 65px;
       position: relative;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 65px;
+      }
     }
     &--2 {
       position: relative;
     }
     &--3 {
-      margin-bottom: 60px;
       position: relative;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 60px;
+      }
       h2 span {
         font-size: 20px;
         line-height: 30px;
@@ -32,6 +39,9 @@
   }
 
   &__bggraphic-item--desktop {
+    @include media-breakpoint-down(md) {
+      display: none !important;
+    }
     &--1 {
       width: 140.94px;
       position: absolute;
@@ -93,21 +103,87 @@
     }
   }
 
+  &__bggraphic-item--mobile {
+    position: absolute;
+    @include media-breakpoint-up(md) {
+      display: none !important;
+    }
+
+    &--1 {
+      width: 93px;
+      top: -125px;
+      left: -40px;
+      z-index: -1;
+    }
+    &--2 {
+      width: 155px;
+      top: 100px;
+      right: 150px;
+    }
+    &--3 {
+      width: 232px;
+      top: -30px;
+      right: -40px;
+      z-index: -1;
+    }
+    &--4 {
+      width: 100px;
+      top: -40px;
+      left: -55px;
+    }
+    &--5 {
+      width: 179px;
+      top: 35px;
+      z-index: -1;
+    }
+    &--6 {
+      width: 94px;
+      top: 0;
+      right: 0;
+    }
+    &--7 {
+      width: 61px;
+      bottom: 0;
+      right: -20px;
+    }
+    &--8 {
+      width: 131px;
+    }
+  }
+
+  &__bggraphics-mobile {
+    &--1 {
+      height: 230px;
+    }
+    &--2 {
+      height: 185px;
+    }
+  }
+
   &__line {
     &--1 {
       position: absolute;
       left: 35%;
       top: 40px;
+      @include media-breakpoint-down(md) {
+        display: none !important;
+      }
     }
     &--2 {
       position: absolute;
       right: 30%;
       top: 170px;
+      @include media-breakpoint-down(md) {
+        display: none !important;
+      }
     }
     &--3 {
       position: absolute;
       left: 47%;
       top: 210px;
+      @include media-breakpoint-down(md) {
+        display: none !important;
+      }
     }
   }
 
