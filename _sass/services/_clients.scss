@@ -3,15 +3,26 @@
   padding-bottom: 500px;
   padding-top: 180px;
 
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+
   &__logos {
     position: relative;
 
     @include media-breakpoint-down(md) {
-      left: -20%;
-      min-width: 140%;
-      & [class*="__item"] {
-        transform: scale(.6)!important;
-      }
+      left: -80%;
+      min-width: 260%;
+      transform: scale(0.5);
     }
 
     @include media-breakpoint-up(md) {
