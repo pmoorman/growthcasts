@@ -187,12 +187,21 @@
   &__bggraphics-mobile {
     &--1 {
       height: 230px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
     &--2 {
       height: 185px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
     &--3 {
       padding-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
   }
 
@@ -224,13 +233,22 @@
     &--1-mobile {
       position: absolute;
       right: 75px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
     &--2-mobile {
       left: 15px;
       top: 15px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
     &--3-mobile {
       text-align: center;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
   }
 
