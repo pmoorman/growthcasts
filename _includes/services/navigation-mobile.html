@@ -19,3 +19,11 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll("#mobile-nav a").forEach(el => {
+    el.addEventListener("click", () => {
+      $('#mobile-nav').collapse('hide');
+    });
+  });
+</script>
