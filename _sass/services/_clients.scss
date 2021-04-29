@@ -20,9 +20,10 @@
     position: relative;
 
     @include media-breakpoint-down(md) {
-      left: -70%;
-      min-width: 240%;
+      left: -60vw;
+      min-width: 210vw;
       transform: scale(0.5);
+      padding: 0;
     }
 
     @include media-breakpoint-up(md) {
