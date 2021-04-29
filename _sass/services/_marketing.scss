@@ -18,6 +18,9 @@
     &__img {
       position: relative;
       bottom: -80px;
+      @include media-breakpoint-down(md) {
+        bottom: -60px;
+      }
     }
   }
 }

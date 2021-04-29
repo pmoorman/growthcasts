@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   padding-bottom: 0;
+  padding-top: 50px;
   @include media-breakpoint-up(md) {
     padding-top: 100px;
   }
@@ -9,6 +10,12 @@
     margin-bottom: 50px;
     @include media-breakpoint-down(md) {
       margin-bottom: 0;
+    }
+    &__subtitle {
+      @include media-breakpoint-down(md) {
+        font-size: 18px !important;
+        line-height: 27px !important;
+      }
     }
   }
 
@@ -56,7 +63,9 @@
           bottom: 15px;
           @include media-breakpoint-down(md) {
             display: block;
-            margin-top: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 24px;
           }
         }
       }
@@ -73,7 +82,7 @@
         margin-bottom: 0;
         text-align: center;
         > div:first-child {
-          margin-bottom: 40px;
+          margin-bottom: 50px;
         }
       }
       .shadowbox {
@@ -181,6 +190,7 @@
       width: 179px;
       top: 35px;
       z-index: -1;
+      left: -35px;
     }
     &--6 {
       width: 94px;
@@ -213,7 +223,8 @@
       }
     }
     &--3 {
-      padding-bottom: 15px;
+      padding-bottom: 25px;
+      padding-top: 10px;
       @include media-breakpoint-up(md) {
         display: none;
       }

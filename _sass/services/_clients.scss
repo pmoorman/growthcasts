@@ -20,8 +20,8 @@
     position: relative;
 
     @include media-breakpoint-down(md) {
-      left: -80%;
-      min-width: 260%;
+      left: -70%;
+      min-width: 240%;
       transform: scale(0.5);
     }
 

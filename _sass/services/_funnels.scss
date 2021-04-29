@@ -6,6 +6,7 @@
   margin-bottom: -290px;
   z-index: 2;
   @include media-breakpoint-down(md) {
+    padding-top: 140px;
     top: -155px;
     margin-bottom: -155px;
     background: linear-gradient(0deg, #292f47 80.5%, transparent 30%);
@@ -14,7 +15,7 @@
   &__upper {
     margin-bottom: 125px;
     @include media-breakpoint-down(md) {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
   }
 }
