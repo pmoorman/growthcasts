@@ -1,0 +1,15 @@
+.performance {
+  padding-bottom: 0;
+  z-index: 3;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+  }
+
+  &__upper {
+    margin-bottom: 125px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<section id="marketing" class="marketing">
+  <div class="container">
+    <div class="marketing__upper row align-items-end px-3 px-lg-0">
+      <div class="col">{% include services/navigation.html index=2 %}</div>
+      <div class="marketing__upper__img">
+        <img class="img-fluid d-none d-lg-block" src="/assets/images/services/marketing.svg" />
+        <img class="img-fluid d-lg-none" src="/assets/images/services/marketing-mobile.svg" />
+      </div>
+    </div>
+    {% include new-web/collapse-variant-1-multi.html 
+      container="marketing-accordion"
+      items=page.marketing 
+    %}
+  </div>
+</section>

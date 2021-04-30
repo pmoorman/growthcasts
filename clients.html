@@ -322,67 +322,17 @@ clients:
 </section>
 
 <!-- Bottom -->
-<section class="bottom_content">
-  <div class="container position-relative">
-    <!-- Background -->
-    <div class="bottom_content__bg_items">
-      <div
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-1"
-      ></div>
-      <div
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-2"
-      ></div>
-      <div
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-3"
-      ></div>
-      <img
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-4"
-        src="/assets/images/clients/bottom-img-1.jpg"
-      />
-      <img
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-5"
-        src="/assets/images/clients/bottom-img-2.jpg"
-      />
-      <img
-        class="bottom_content__bg_items__item bottom_content__bg_items__item-6"
-        src="/assets/images/clients/bottom-img-3.jpg"
-      />
-    </div>
-
-    <!-- Content -->
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-6">
-        <h3>Become Our</h3>
-        <h2 class="mb-0 mb-lg-2">Next Client</h2>
-        <p class="mt-4 pt-2 pt-lg-0 mt-lg-0">
-          You got this far because the evidence is hard to ignore: we’ve grown
-          businesses and will grow yours, too.
-        </p>
-        <div class="d-flex flex-column flex-lg-row justify-content-center mt-5">
-          <a href="mailto:pieter@double-agency.com" class="arrow-btn variant-1">Contact us</a>
-        </div>
-        <div class="mt-5" style="font-size: 14px; line-height: 21px">
-          <strong>Email</strong>: pieter@double-agency.com <br />
-          <strong>WhatsApp</strong>: +316 230 555 90
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include new-web/bottom-section-1.html
+  subtitle="Become Our"
+  title="Next Client"
+  content="You got this far because the evidence is hard to ignore: we’ve grown businesses and will grow yours, too."  
+%}
 
 </div>
 
 <script>
   window.addEventListener("load", function () {
     AOS.init({ once: true });
-  });
-</script>
-
-<script>
-  window.addEventListener("load", function () {
-    const item1 = document.querySelectorAll(".bottom_content__bg_items__item").forEach(el => {
-      new simpleParallax(el, { scale: 1.3, overflow: true });
-    });
   });
 </script>
 
