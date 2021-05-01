@@ -1,0 +1,37 @@
+---
+layout: pages/new-web/default
+body_class: about-page
+custom_header: new-web/header-2.html
+custom_footer: new-web/footer-2.html
+main_css: ""
+stylesheets:
+  - /assets/about.css
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
+scripts:
+  - /assets/js/new-web/active-in-view.js
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
+scripts_footer:
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
+---
+
+<!-- Hero -->
+{% include about/section-hero.html %}
+
+<!-- About -->
+{% include about/section-about.html %}
+
+<!-- Banner -->
+{% include about/section-banner.html %}
+
+<!-- Hiring -->
+{% include about/section-hiring.html %}
+
+<!-- Gallery -->
+{% include about/section-gallery.html %}
+
+<!-- Bottom -->
+{% include about/section-bottom.html %}
+
+<script>
+  AOS.init({ once: true });
+</script>
