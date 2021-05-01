@@ -1,0 +1,95 @@
+.gallery {
+  &__images {
+    @include media-breakpoint-up(md) {
+      height: 1900px;
+    }
+
+    & [class*="--"] {
+      @include media-breakpoint-up(md) {
+        position: absolute;
+      }
+    }
+    &--1 {
+      width: 159px;
+      right: 370px;
+    }
+    &--2 {
+      width: 250px;
+      right: -50px;
+    }
+    &--3 {
+      height: 220px;
+      right: 170px;
+      top: 95px;
+      z-index: -1;
+    }
+    &--4 {
+      width: 253px;
+      top: 230px;
+      right: 365px;
+    }
+    &--5 {
+      width: 524px;
+      right: -175px;
+      top: 285px;
+      z-index: -2;
+    }
+    &--6 {
+      width: 345px;
+      top: 320px;
+      right: 635px;
+    }
+    &--7 {
+      width: 436px;
+      top: 490px;
+      right: 365px;
+      z-index: -1;
+    }
+    &--8 {
+      width: 342px;
+      top: 650px;
+      left: -80px;
+    }
+    &--9 {
+      width: 344px;
+      top: 780px;
+      right: 5px;
+    }
+    &--10 {
+      width: 894px;
+      right: -95px;
+      top: 900px;
+      z-index: -1;
+    }
+    &--11 {
+      width: 252px;
+      top: 1075px;
+      left: -10px;
+    }
+    &--12 {
+      width: 433px;
+      top: 1445px;
+      left: -171px;
+    }
+    &--13 {
+      width: 252px;
+      top: 1550px;
+      right: 184px;
+    }
+    &--14 {
+      width: 344px;
+      top: 1600px;
+      left: 281px;
+    }
+    &--15 {
+      width: 252px;
+      top: 1795px;
+      left: -10px;
+    }
+    &--16 {
+      width: 159px;
+      top: 1795px;
+      left: 440px;
+    }
+  }
+}

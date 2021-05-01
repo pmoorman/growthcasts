@@ -13,7 +13,7 @@
 
 // Sections
 @import "homepage/hero";
-
+@import "about/gallery";
 
 @include media-breakpoint-down(md) {
   .row {
