@@ -26,7 +26,9 @@
       </div>
     </a>
     {% endif %}
+    {% if client.logo %}
     <img src="{{client.logo}}" alt="{{client.title}} logo" />
+    {% endif %}
   </div>
   <div class="client-box__content">
     <h3 class="client-box__content__title">{{client.title}}</h3>

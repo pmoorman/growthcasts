@@ -15,7 +15,9 @@
           class="client-box__logo"
           style="background-color: {{client.background_color}};"
         >
+          {% if client.logo %}
           <img src="{{client.logo}}" alt="{{client.title}} logo" />
+          {% endif %}
         </div>
       </div>
       <div class="col-lg-8 pl-4 pr-0">
