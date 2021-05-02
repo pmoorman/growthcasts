@@ -1,0 +1,79 @@
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #ecf5fe 100%);
+  padding-bottom: 165px;
+
+  &__images {
+    & [class*="--"] {
+      position: absolute;
+      p {
+        position: absolute;
+      }
+    }
+    &--1 {
+      width: 119px;
+      left: -140px;
+      top: -25px;
+      p {
+        font-size: 14px;
+        opacity: 0.5;
+        right: -20px;
+        bottom: -50px;
+      }
+    }
+    &--2 {
+      width: 190px;
+      left: 50%;
+      top: 160px;
+      p {
+        font-size: 16px;
+        opacity: 0.5;
+        right: -60px;
+        bottom: -50px;
+      }
+    }
+    &--3 {
+      width: 322px;
+      right: -150px;
+      p {
+        font-size: 20px;
+        opacity: 0.6;
+        right: 25px;
+        bottom: -50px;
+      }
+    }
+    &--4 {
+      width: 171px;
+      left: -160px;
+      bottom: -195px;
+      p {
+        font-size: 16px;
+        opacity: 0.6;
+        right: -70px;
+        top: -35px;
+        width: 110%;
+      }
+    }
+    &--5 {
+      width: 123px;
+      left: 280px;
+      bottom: -60px;
+      p {
+        font-size: 14px;
+        opacity: 0.44;
+        right: 15px;
+        bottom: -50px;
+      }
+    }
+    &--6 {
+      width: 247px;
+      bottom: -205px;
+      right: -50px;
+      p {
+        font-size: 16px;
+        opacity: 0.6;
+        left: -60px;
+        bottom: -60px;
+      }
+    }
+  }
+}
