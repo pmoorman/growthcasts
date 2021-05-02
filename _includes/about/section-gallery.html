@@ -9,7 +9,7 @@
       </div>
     </div>
     <!-- Images -->
-    <div class="gallery__images position-relative" style="top: -50px">
+    <div class="gallery__images position-relative">
       {% assign items = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16" | split: ',' %}
       {% for item in items %}
       <img
@@ -21,10 +21,7 @@
     </div>
 
     <!-- line -->
-    <div
-      class="animated-line active-in-view"
-      style="position: absolute; right: 200px; bottom: -155px"
-    >
+    <div class="gallery__line animated-line active-in-view">
       <img src="/assets/images/about/line2.svg" />
     </div>
   </div>
