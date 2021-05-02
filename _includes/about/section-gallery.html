@@ -10,70 +10,14 @@
     </div>
     <!-- Images -->
     <div class="gallery__images position-relative" style="top: -50px">
+      {% assign items = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16" | split: ',' %}
+      {% for item in items %}
       <img
-        class="img-fluid gallery__images--1"
-        src="/assets/images/about/gallery-img-1.jpg"
+        data-aos="fade-in"
+        class="img-fluid gallery__images--{{item}}"
+        src="/assets/images/about/gallery-img-{{item}}.jpg"
       />
-      <img
-        class="img-fluid gallery__images--2"
-        src="/assets/images/about/gallery-img-2.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--3"
-        src="/assets/images/about/gallery-img-3.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--4"
-        src="/assets/images/about/gallery-img-4.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--5"
-        src="/assets/images/about/gallery-img-5.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--6"
-        src="/assets/images/about/gallery-img-6.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--7"
-        src="/assets/images/about/gallery-img-7.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--8"
-        src="/assets/images/about/gallery-img-8.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--9"
-        src="/assets/images/about/gallery-img-9.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--10"
-        src="/assets/images/about/gallery-img-10.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--11"
-        src="/assets/images/about/gallery-img-11.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--12"
-        src="/assets/images/about/gallery-img-12.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--13"
-        src="/assets/images/about/gallery-img-13.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--14"
-        src="/assets/images/about/gallery-img-14.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--15"
-        src="/assets/images/about/gallery-img-15.jpg"
-      />
-      <img
-        class="img-fluid gallery__images--16"
-        src="/assets/images/about/gallery-img-16.jpg"
-      />
+      {% endfor %}
     </div>
 
     <!-- line -->
