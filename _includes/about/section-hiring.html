@@ -1,8 +1,4 @@
-<section id="hiring" class="hiring" style="background: linear-gradient(   -180deg   , #e2f1ff calc(100% - 155px), transparent 30%);
-      position: relative;
-      top: -100px;
-      padding-top: 240px;
-      padding-bottom: 0;">
+<section id="hiring" class="hiring">
   <div class="container">
     <!-- title -->
     <div class="row text-center mb-5">
@@ -15,7 +11,7 @@
     <!-- boxes -->
     <div class="row text-center mb-5">
       <div class="col-lg-4">
-        <div style="background: #fff; padding: 30px">
+        <div class="hiring__box">
           <p class="mb-0">
             The group chat is filled with
             <span class="text-highlight"
@@ -25,7 +21,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <div style="background: #fff; padding: 30px">
+        <div class="hiring__box">
           <p class="mb-0">
             All of your colleagues
             <span class="text-highlight">ferociously learn</span> in their spare
@@ -34,7 +30,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <div style="background: #fff; padding: 30px">
+        <div class="hiring__box">
           <p class="mb-0">
             The team celebrates
             <span class="text-highlight">everybody’s individual wins</span>
@@ -55,12 +51,12 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <div class="bg-secondary text-white px-4" style="box-shadow: 25px 25px 0px #359FFA;">
+        <div class="hiring__positions-box bg-secondary text-white px-4">
           {% for item in page.hiring_positions %}
-          <a href="{{item.url}}" class="d-flex justify-content-between align-items-center text-white py-4" style="border-bottom: 1px solid rgb(183 183 183 / 20%);">
+          <a href="{{item.url}}" class="hiring__positions-box__item d-flex justify-content-between align-items-center text-white py-4">
             <div>
               <p class="lead mb-0">{{item.title}}</p>
-              <p class="mb-0" style="opacity: 0.5">{{item.location}}</p>
+              <p class="hiring__positions-box__item__subtitle mb-0">{{item.location}}</p>
             </div>
             <div>
               <img src="/assets/images/arrow-right.svg" />

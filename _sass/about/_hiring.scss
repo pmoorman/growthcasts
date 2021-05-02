@@ -1,0 +1,32 @@
+.hiring {
+  background: linear-gradient(
+    -180deg,
+    #e2f1ff calc(100% - 155px),
+    transparent 30%
+  );
+  position: relative;
+  top: -100px;
+  padding-top: 240px;
+  padding-bottom: 0;
+
+  &__box {
+    background: #fff;
+    padding: 30px;
+  }
+
+  &__positions-box {
+    box-shadow: 25px 25px 0px var(--primary);
+
+    &__item {
+      &:hover {
+        text-decoration: none;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(183, 183, 183, .2);
+      }
+      &__subtitle {
+        opacity: 0.5;
+      }
+    }
+  }
+}

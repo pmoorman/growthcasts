@@ -1,7 +1,14 @@
 .gallery {
   &__images {
+    top: -50px;
     @include media-breakpoint-up(md) {
       height: 1900px;
+    }
+
+    &__line {
+      position: absolute;
+      right: 200px;
+      bottom: -155px;
     }
 
     & [class*="--"] {
