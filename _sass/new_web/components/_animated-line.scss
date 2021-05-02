@@ -1,7 +1,5 @@
 .animated-line {
   z-index: -3;
-  position: relative;
-  
   &:before {
     transition: 1s;
     content: "";
