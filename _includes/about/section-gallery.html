@@ -2,11 +2,12 @@
   <div class="container position-relative">
     <div class="row">
       <div class="col-lg-4">
-        <h3 style="line-height: 62px;">
-          <span class="text-highlight">Double</span>, but<br/>doubled.
+        <h3 style="line-height: 62px">
+          <span class="text-highlight">Double</span>, but<br />doubled.
         </h3>
       </div>
     </div>
+
     <!-- Images -->
     <div class="gallery__images position-relative">
       {% assign items = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16" | split: ',' %}
@@ -19,9 +20,21 @@
       {% endfor %}
     </div>
 
-    <!-- line -->
-    <div class="gallery__line animated-line active-in-view">
-      <img src="/assets/images/about/line2.svg" />
+    <div class="row gallery__bottom">
+      <div class="col-lg-4">
+        <h3 style="line-height: 62px">
+          Want to hire us?
+        </h3>
+        <div class="d-flex justify-content-end">
+          <a href="mailto:pieter@double-agency.com" class="arrow-btn variant-1">
+            Contact us
+          </a>
+        </div>
+        <!-- line -->
+        <div class="gallery__line animated-line active-in-view">
+          <img src="/assets/images/about/line2.svg" />
+        </div>
+      </div>
     </div>
   </div>
 </section>

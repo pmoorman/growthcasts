@@ -1,7 +1,7 @@
 <section id="hiring" class="hiring">
   <div class="container">
     <!-- title -->
-    <div class="row text-center mb-5">
+    <div class="row mb-5">
       <div class="col-lg-12">
         <h2>And guess who’s hiring</h2>
         <h4>Would you feel at home in an environment where…</h4>
@@ -9,9 +9,12 @@
     </div>
 
     <!-- boxes -->
-    <div class="row text-center mb-5">
+    <div class="row mb-5 pt-5">
       <div class="col-lg-4">
         <div class="hiring__box">
+          <div
+            class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
+          ></div>
           <p class="mb-0">
             The group chat is filled with
             <span class="text-highlight"
@@ -22,6 +25,9 @@
       </div>
       <div class="col-lg-4">
         <div class="hiring__box">
+          <div
+            class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
+          ></div>
           <p class="mb-0">
             All of your colleagues
             <span class="text-highlight">ferociously learn</span> in their spare
@@ -31,6 +37,9 @@
       </div>
       <div class="col-lg-4">
         <div class="hiring__box">
+          <div
+            class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
+          ></div>
           <p class="mb-0">
             The team celebrates
             <span class="text-highlight">everybody’s individual wins</span>
@@ -41,30 +50,38 @@
     </div>
 
     <!-- positions -->
-    <div class="row justify-content-center text-center mb-4 pt-5">
-      <div class="col-lg-6">
+    <div class="row justify-content-center mb-4 pt-5">
+      <div class="col-lg-4 pr-lg-5">
         <p class="lead-lg">
           Then check out the
           <span class="text-highlight">roles we’re looking</span> for:
         </p>
       </div>
-    </div>
-    <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="hiring__positions-box bg-secondary text-white px-4">
           {% for item in page.hiring_positions %}
-          <a href="{{item.url}}" class="hiring__positions-box__item d-flex justify-content-between align-items-center text-white py-4">
+          <a
+            href="{{item.url}}"
+            class="
+              hiring__positions-box__item
+              d-flex
+              justify-content-between
+              align-items-center
+              text-white
+              py-4
+            "
+          >
             <div>
               <p class="lead mb-0">{{item.title}}</p>
-              <p class="hiring__positions-box__item__subtitle mb-0">{{item.location}}</p>
+              <p class="hiring__positions-box__item__subtitle mb-0">
+                {{item.location}}
+              </p>
             </div>
             <div>
               <img src="/assets/images/arrow-right.svg" />
             </div>
           </a>
           {% endfor %}
-        </div>
-      </div>
         </div>
       </div>
     </div>
