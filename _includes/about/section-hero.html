@@ -1,41 +1,50 @@
 <section id="hero" class="hero">
   <div class="container position-relative">
-    <!-- Images -->
-    <div class="hero__images">
-      <div class="hero__images--1" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-1.jpg" />
-        <p>“Headshot!”</p>
-      </div>
-      <div class="hero__images--2" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-2.jpg" />
-        <p>“Press space to jump”</p>
-      </div>
-      <div class="hero__images--3" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-3.jpg" />
-        <p>Erik & Pieter</p>
-      </div>
-      <div class="hero__images--4" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-4.jpg" />
-        <p>Three Musketeers</p>
-      </div>
-      <div class="hero__images--5" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-5.jpg" />
-        <p>The Team</p>
-      </div>
-      <div class="hero__images--6" data-aos="fade-in">
-        <img class="img-fluid" src="/assets/images/about/hero-img-6.jpg" />
-        <p>Double’s Australian branch</p>
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="mb-5 pb-4 text-center">
+          <h3 style="font-size: 36px">Hey, we’re</h3>
+          <img
+            class="img-fluid"
+            width="344"
+            src="/assets/images/new-web/logo.svg"
+          />
+        </div>
       </div>
     </div>
-
-    <!-- Content -->
-    <div class="row">
-      <div class="col-12 offset-lg-1">
-        <div>
-          <h4 class="mb-3">We’re torn between</h4>
-          <img class="img-fluid" src="/assets/images/about/hero-text-1.svg" />
-          <h4 class="my-4">and</h4>
-          <img class="img-fluid" src="/assets/images/about/hero-text-2.svg" />
+    <div class="row justify-content-center position-relative">
+      <!-- Images -->
+      <div class="hero__images">
+        <div class="hero__images--1" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-1.jpg" />
+          <p>“Headshot!”</p>
+        </div>
+        <div class="hero__images--2" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-2.jpg" />
+          <p>“Press space to jump”</p>
+        </div>
+        <div class="hero__images--3" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-3.jpg" />
+          <p>Erik & Pieter</p>
+        </div>
+        <div class="hero__images--4" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-4.jpg" />
+          <p>Three Musketeers</p>
+        </div>
+        <div class="hero__images--5" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-5.jpg" />
+          <p>The Team</p>
+        </div>
+        <div class="hero__images--6" data-aos="fade-in">
+          <img class="img-fluid" src="/assets/images/about/hero-img-6.jpg" />
+          <p>Double’s Australian branch</p>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="position-relative">
+          <div data-aos="fade-in">
+            <img class="img-fluid" src="/assets/images/about/hero-main.jpg" />
+          </div>
         </div>
       </div>
     </div>
@@ -43,8 +52,8 @@
 </section>
 <script>
   window.addEventListener("load", function () {
-    document.querySelectorAll(".hero__images > div").forEach(el => {
+    document.querySelectorAll(".hero__images > div").forEach((el) => {
       new simpleParallax(el, { scale: 1.4, overflow: true });
-    })
+    });
   });
 </script>

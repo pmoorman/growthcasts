@@ -1,6 +1,9 @@
 .hero {
-  background: linear-gradient(180deg, #ffffff 0%, #ecf5fe 100%);
+  background: linear-gradient(0deg, #ffffff 0%, #ecf5fe 100%);
+  position: relative;
+  top: -100px;
   padding-bottom: 165px;
+  padding-top: 200px;
 
   &__images {
     & [class*="--"] {
@@ -10,9 +13,9 @@
       }
     }
     &--1 {
-      width: 119px;
+      width: 190px;
       left: -140px;
-      top: -25px;
+      top: 100px;
       p {
         font-size: 14px;
         opacity: 0.5;
@@ -23,56 +26,63 @@
     &--2 {
       width: 190px;
       left: 50%;
-      top: 160px;
+      bottom: -90px;
+      z-index: 1;
       p {
         font-size: 16px;
         opacity: 0.5;
-        right: -60px;
+        left: -60px;
         bottom: -50px;
       }
     }
     &--3 {
       width: 322px;
-      right: -150px;
+      right: -175px;
+      top: 150px;
       p {
         font-size: 20px;
         opacity: 0.6;
-        right: 25px;
+        left: 25px;
         bottom: -50px;
       }
     }
     &--4 {
-      width: 171px;
-      left: -160px;
-      bottom: -195px;
+      width: 225px;
+      left: -85px;
+      bottom: -100px;
+      img {
+        filter: drop-shadow(16px 16px 0px #359bfa);
+      }
       p {
         font-size: 16px;
         opacity: 0.6;
-        right: -70px;
+        text-align: right;
         top: -35px;
-        width: 110%;
+        width: 100%;
       }
     }
     &--5 {
-      width: 123px;
+      width: 160px;
       left: 280px;
-      bottom: -60px;
+      bottom: -200px;
       p {
         font-size: 14px;
         opacity: 0.44;
-        right: 15px;
-        bottom: -50px;
+        top: -30px;
       }
     }
     &--6 {
-      width: 247px;
+      width: 270px;
       bottom: -205px;
       right: -50px;
+      img {
+        filter: drop-shadow(20px 20px 0px #89c6ff);
+      }
       p {
         font-size: 16px;
         opacity: 0.6;
         left: -60px;
-        bottom: -60px;
+        bottom: -75px;
       }
     }
   }
