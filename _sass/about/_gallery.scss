@@ -1,4 +1,15 @@
 .gallery {
+  @include media-breakpoint-down(lg) {
+    padding-top: 35px;
+  }
+  &__title {
+    line-height: 62px;
+    @include media-breakpoint-down(lg) {
+      font-size: 48px;
+      line-height: 47px;
+      text-align: center;
+    }
+  }
   &__line {
     position: absolute;
     left: -20px;
@@ -6,6 +17,13 @@
     z-index: 1;
     &:before {
       background: linear-gradient(0deg, #e2f1ff 140px, white 50%);
+    }
+    @include media-breakpoint-down(lg) {
+      bottom: -155px;
+      left: -5px;
+      &:before {
+        background: linear-gradient(0deg, #e2f1ff 79px, white 24%);
+      }
     }
   }
 
@@ -15,6 +33,16 @@
       right: 25px;
       bottom: 100px;
     }
+    a {
+      z-index: 3;
+    }
+    @include media-breakpoint-down(lg) {
+      > div {
+        right: 0;
+        text-align: center;
+        bottom: 75px;
+      }
+    }
   }
 
   &__images {
@@ -22,9 +50,10 @@
     height: 1900px;
 
     @include media-breakpoint-down(lg) {
-      height: 2200px;
+      height: 2450px;
       width: 350px;
       margin: auto;
+      top: 50px;
     }
 
     & [class*="--"] {

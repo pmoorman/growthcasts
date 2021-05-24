@@ -2,7 +2,7 @@
   <div class="container position-relative">
     <div class="row">
       <div class="col-lg-4">
-        <h3 style="line-height: 62px">
+        <h3 class="gallery__title">
           <span class="text-highlight">Double</span>, but<br />doubled.
         </h3>
       </div>
@@ -22,17 +22,22 @@
 
     <div class="row gallery__bottom">
       <div class="col-lg-4">
-        <h3 style="line-height: 62px">
-          Want to hire us?
-        </h3>
-        <div class="d-flex justify-content-end">
+        <h3 style="line-height: 62px">Want to hire us?</h3>
+        <div
+          class="
+            d-flex
+            flex-column flex-lg-row
+            justify-content-center justify-content-lg-end
+          "
+        >
           <a href="mailto:pieter@double-agency.com" class="arrow-btn variant-1">
             Contact us
           </a>
         </div>
         <!-- line -->
         <div class="gallery__line animated-line active-in-view">
-          <img src="/assets/images/about/line2.svg" />
+          <img class="d-none d-lg-block" src="/assets/images/about/line2.svg" />
+          <img class="d-lg-none" src="/assets/images/about/line2-mobile.svg" />
         </div>
       </div>
     </div>

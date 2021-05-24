@@ -1,16 +1,18 @@
 <section id="hiring" class="hiring">
   <div class="container">
     <!-- title -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h2>And guess who’s hiring</h2>
-        <h4>Would you feel at home in an environment where…</h4>
+    <div class="hiring__intro row mb-5">
+      <div class="col-lg-12 text-center text-lg-left">
+        <h2 class="hiring__title mb-3 mb-lg-0">As we’re already hiring.</h2>
+        <h4 class="hiring__subtitle">
+          Would you feel at home in an environment where…
+        </h4>
       </div>
     </div>
 
     <!-- boxes -->
-    <div class="row mb-5 pt-5">
-      <div class="col-lg-4">
+    <div class="row mb-lg-5 pt-lg-5">
+      <div class="col-lg-4 mb-5 mb-lg-0 px-0 px-lg-3">
         <div class="hiring__box">
           <div
             class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
@@ -23,7 +25,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 mb-5 mb-lg-0 px-0 px-lg-3">
         <div class="hiring__box">
           <div
             class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
@@ -35,7 +37,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 mb-5 mb-lg-0 px-0 px-lg-3">
         <div class="hiring__box">
           <div
             class="shadowbox variant-1-check mr-4 mr-lg-5 active-in-view"
@@ -50,14 +52,23 @@
     </div>
 
     <!-- positions -->
-    <div class="row justify-content-center mb-4 pt-5">
-      <div class="col-lg-4 pr-lg-5">
+    <div class="row justify-content-center mb-4 pt-lg-5">
+      <div
+        class="
+          col-lg-4
+          mb-3 mb-lg-0
+          px-0
+          pl-lg-3
+          pr-lg-5
+          text-center text-lg-left
+        "
+      >
         <p class="lead-lg">
           Then check out the
           <span class="text-highlight">roles we’re looking</span> for:
         </p>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8 px-0 px-lg-3">
         <div class="hiring__positions-box bg-secondary text-white px-4">
           {% for item in page.hiring_positions %}
           <a
