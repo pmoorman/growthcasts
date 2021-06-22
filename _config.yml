@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Double
+title: Double Agency
 description: >- # this means to ignore newlines until "baseurl:"
   Growthmarketing and Growth Hacking are new business strategies for startups that incorporate marketing within your product and core business values.
   Build growth right into the hard of your company, by using feedback and customer data to test, enhance your product, build a lean and sustainable business and become a master entrepreneur.
@@ -22,6 +22,7 @@ url: "https://double-agency.com/" # the base hostname & protocol for your site, 
 twitter_username:
 github_username: pmoorman
 email: pieter@double-agency.co
+image: assets/images/new-web/double_logo.png
 
 # Build settings
 markdown: kramdown

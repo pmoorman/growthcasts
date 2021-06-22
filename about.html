@@ -1,0 +1,54 @@
+---
+title: About
+layout: pages/new-web/default
+body_class: about-page
+custom_header: new-web/header-2.html
+custom_footer: new-web/footer-2.html
+main_css: ""
+stylesheets:
+  - /assets/about.css
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
+scripts:
+  - /assets/js/new-web/active-in-view.js
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
+scripts_footer:
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
+hiring_positions:
+  - title: All-round Marketing Consultant
+    location: Amsterdam or Remote
+    url: "https://www.notion.so/All-round-Marketing-Consultant-8430964a121044df8b73e799f12a20ca"
+  - title: Senior Growth Strategist
+    location: Amsterdam or Remote
+    url: "https://www.notion.so/Senior-Growth-Strategist-1addc3fec0a34b57a76d063adbf6ed12"
+  - title: Open Application
+    location: Amsterdam or Remote
+    url: "https://www.notion.so/I-m-Feeling-Lucky-Open-Application-af2073d5142a4c0ea10cb699a5d422d4"
+---
+
+<!-- Hero -->
+{% include about/section-hero.html %}
+
+<!-- About -->
+{% include about/section-about.html %}
+
+<!-- Divider -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <hr style="border-top-color: #d6dcf3" />
+    </div>
+  </div>
+</div>
+
+<!-- Gallery -->
+{% include about/section-gallery.html %}
+
+<!-- Hiring -->
+{% include about/section-hiring.html %}
+
+<!-- Bottom -->
+{% include about/section-bottom.html %}
+
+<script>
+  AOS.init({ once: true });
+</script>
