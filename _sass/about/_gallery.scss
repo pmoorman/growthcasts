@@ -1,10 +1,10 @@
 .gallery {
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     padding-top: 35px;
   }
   &__title {
     line-height: 62px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       font-size: 48px;
       line-height: 47px;
       text-align: center;
@@ -18,7 +18,7 @@
     &:before {
       background: linear-gradient(0deg, #e2f1ff 140px, white 50%);
     }
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       bottom: -155px;
       left: -5px;
       &:before {
@@ -30,13 +30,13 @@
   &__bottom {
     > div {
       position: absolute;
-      right: 25px;
+      right: 0;
       bottom: 100px;
     }
     a {
       z-index: 3;
     }
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       > div {
         right: 0;
         text-align: center;
@@ -49,7 +49,7 @@
     top: -120px;
     height: 1900px;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       height: 2450px;
       width: 350px;
       margin: auto;
@@ -62,7 +62,7 @@
     &--1 {
       width: 159px;
       right: 370px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 157px;
         left: 0;
         right: initial;
@@ -71,7 +71,7 @@
     &--2 {
       width: 250px;
       right: -50px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 250px;
         left: 90px;
         top: 70px;
@@ -82,7 +82,7 @@
       right: 170px;
       top: 95px;
       z-index: -1;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 158px;
         left: 0;
         top: 205px;
@@ -92,7 +92,7 @@
       width: 253px;
       top: 230px;
       right: 365px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 179px;
         left: 170px;
         z-index: -1;
@@ -103,7 +103,7 @@
       right: -175px;
       top: 285px;
       z-index: -2;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 355px;
         top: 590px;
         left: 10px;
@@ -113,7 +113,7 @@
       width: 345px;
       top: 320px;
       right: 635px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 352px;
         left: -13px;
         top: 405px;
@@ -125,7 +125,7 @@
       top: 490px;
       right: 365px;
       z-index: -1;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 376px;
         left: -15px;
         top: 930px;
@@ -135,7 +135,7 @@
       width: 342px;
       top: 650px;
       left: -80px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 162px;
         top: 1125px;
         left: 175px;
@@ -145,7 +145,7 @@
       width: 344px;
       top: 780px;
       right: 5px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 247px;
         top: 830px;
         left: 9px;
@@ -156,7 +156,7 @@
       right: -95px;
       top: 900px;
       z-index: -1;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 376px;
         top: 1543px;
         left: -15px;
@@ -166,7 +166,7 @@
       width: 252px;
       top: 1075px;
       left: -10px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 159px;
         top: 1255px;
         left: 0;
@@ -176,7 +176,7 @@
       width: 433px;
       top: 1445px;
       left: -171px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 267px;
         top: 1310px;
         left: 100px;
@@ -187,7 +187,7 @@
       width: 252px;
       top: 1550px;
       right: 184px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 161px;
         top: 2015px;
         z-index: 2;
@@ -197,7 +197,7 @@
       width: 344px;
       top: 1600px;
       left: 281px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 247px;
         left: 100px;
         top: 1885px;
@@ -208,7 +208,7 @@
       width: 252px;
       top: 1795px;
       left: -10px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 247px;
         top: 1760px;
         left: 0;
@@ -218,7 +218,7 @@
       width: 159px;
       top: 1795px;
       left: 440px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 159px;
         top: 2055px;
         left: 180px;
