@@ -54,6 +54,7 @@
     overflow-y: overlay;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
     &::-webkit-scrollbar {
       background-color: transparent;
       width: 6px;
@@ -72,6 +73,12 @@
     img {
       padding-top: 0 !important;
       padding-bottom: 0 !important;
+    }
+  }
+
+  @supports (-moz-appearance: none) {
+    &__inner {
+      overflow-y: scroll;
     }
   }
 
