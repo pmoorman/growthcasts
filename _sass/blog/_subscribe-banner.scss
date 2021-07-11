@@ -1,4 +1,42 @@
 .subscribe-banner {
   background: var(--secondary);
   margin-bottom: 100px;
+
+  > .container {
+    position: relative;
+  }
+
+  p {
+    opacity: 0.6;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  &__form {
+    width: 80%;
+    .input-group {
+      height: 54px;
+    }
+    input {
+      height: 100%;
+      &[type="submit"] {
+        font-size: 14px;
+        border-radius: 0;
+      }
+      &[type="email"] {
+        padding-left: 23px;
+      }
+    }
+  }
+
+  &__hat {
+    position: absolute;
+    top: -359px;
+    width: 457px;
+    max-width: 100%;
+    right: 0;
+  }
 }
