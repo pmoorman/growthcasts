@@ -1,0 +1,11 @@
+.blog-posts {
+  padding-top: 0;
+
+  .post-cards > div {
+    margin-bottom: 75px;
+  
+    &:not(:nth-last-child(-n+2)) .post-card {
+      border-bottom: 1px solid #E5E5E5;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: Blog - Double
+title: Blog
 layout: pages/new-web/default
 custom_header: new-web/header-2.html
 custom_footer: new-web/footer-2.html
@@ -18,9 +18,17 @@ scripts_footer:
 {% include blog/section-hero.html %}
 
 <!-- Blog posts -->
-{% for post in site.posts %}
-  {% include blog/post-item.html %}
-{% endfor %}
+<section class="blog-posts">
+  <div class="container">
+    <div class="row post-cards">
+      {% for post in site.posts %}
+      <div class="col-lg-6 px-lg-5">
+        {% include blog/post-card.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <!-- Bottom -->
 {% include new-web/bottom-section-1.html
