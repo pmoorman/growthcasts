@@ -3,8 +3,8 @@ title: Blog
 layout: pages/new-web/default
 custom_header: new-web/header-2.html
 custom_footer: new-web/footer-2.html
+main_css: /assets/blog.css
 stylesheets:
-  - /assets/blog.css
   - https://unpkg.com/aos@2.3.1/dist/aos.css
 scripts:
   - /assets/js/new-web/active-in-view.js
@@ -22,9 +22,39 @@ scripts_footer:
   <div class="container">
     <div class="row post-cards">
       {% for post in site.posts %}
-      <div class="col-lg-6 px-lg-5">
+      {% if forloop.index < 5 %}
+      {% assign remainder = forloop.index | modulo: 2 %}
+      {% assign padding = "pr-lg-5 pl-lg-0" %}
+      {% if remainder == 0 %}
+      {% assign padding = "pl-lg-5 pr-lg-0" %}
+      {% endif %}
+      <div class="col-lg-6 {{padding}}">
         {% include blog/post-card.html %}
       </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Subscribe banner -->
+{% include blog/section-subscribe.html %}
+
+<!-- Blog posts -->
+<section class="blog-posts">
+  <div class="container">
+    <div class="row post-cards">
+      {% for post in site.posts %}
+      {% if forloop.index > 4 %}
+      {% assign remainder = forloop.index | modulo: 2 %}
+      {% assign padding = "pr-lg-5 pl-lg-0" %}
+      {% if remainder == 0 %}
+      {% assign padding = "pl-lg-5 pr-lg-0" %}
+      {% endif %}
+      <div class="col-lg-6 {{padding}}">
+        {% include blog/post-card.html %}
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
