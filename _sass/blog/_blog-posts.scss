@@ -7,5 +7,12 @@
     &:not(:nth-last-child(-n+2)) .post-card {
       border-bottom: 1px solid #E5E5E5;
     }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+      &:not(:last-child) .post-card {
+        border-bottom: 1px solid #E5E5E5;
+      }
+    }
   }
 }

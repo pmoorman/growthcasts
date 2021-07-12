@@ -2,6 +2,11 @@
   background: var(--secondary);
   margin-bottom: 100px;
 
+  @include media-breakpoint-down(md) {
+    padding-top: 250px;
+    text-align: center;
+  }
+
   > .container {
     position: relative;
   }
@@ -14,6 +19,10 @@
     position: absolute;
     right: 130px;
     bottom: -200px;
+    @include media-breakpoint-down(md) {
+      height: 200px;
+      right: 50px;
+    }
   }
 
   &__title {
@@ -23,17 +32,29 @@
 
   &__form {
     width: 80%;
-    .input-group {
-      height: 54px;
-    }
     input {
       height: 100%;
       &[type="submit"] {
+        height: 54px;
         font-size: 14px;
         border-radius: 0;
       }
       &[type="email"] {
+        height: 54px;
         padding-left: 23px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      margin: auto;
+      width: 100%;
+      .input-group-append {
+        width: 100%;
+      }
+      input {
+        &[type="submit"],
+        &[type="email"] {
+          width: 100%;
+        }
       }
     }
   }
@@ -44,5 +65,11 @@
     width: 457px;
     max-width: 100%;
     right: 0;
+    @include media-breakpoint-down(md) {
+      top: -470px;
+      right: initial;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
