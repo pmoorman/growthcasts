@@ -10,6 +10,12 @@
     opacity: 0.6;
   }
 
+  &__line {
+    position: absolute;
+    right: 130px;
+    bottom: -200px;
+  }
+
   &__title {
     font-size: 36px;
     line-height: 51px;
