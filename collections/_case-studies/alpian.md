@@ -19,18 +19,6 @@ We consulted Alpian on their marketing strategy just as they landed their series
 
 </p>
 
-<div class="webpreview">
-  <div class="webpreview__bar">
-    <div class="webpreview__bar__buttons">
-      <div></div><div></div><div></div>
-    </div>
-    Website Preview
-  </div>
-  <div class="webpreview__inner" >
-    <img src="/assets/images/webpreview-test.jpg" />
-  </div>
-</div>
-
 ### Systems based marketing
 
 For Alpian to grow sustainably, they needed an **automated** user acquisition process that could scale independently of their employee count. In action, that meant building an email masterclass that educated, nurtured and converted leads on autopilot, before turning them into happy customers with an onboarding flow.
