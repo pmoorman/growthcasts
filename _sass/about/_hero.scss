@@ -48,6 +48,9 @@
         right: -20px;
         bottom: -50px;
       }
+      @include media-breakpoint-down(xl) {
+        left: -40px;
+      }
       @include media-breakpoint-down(lg) {
         left: 0;
         top: 0;
@@ -58,8 +61,10 @@
         top: -100px;
         p {
           font-size: 12px;
-          top: -30px;
+          top: -29px;
           right: 0;
+          white-space: nowrap;
+          left: 0;
         }
       }
     }
@@ -102,6 +107,13 @@
         left: 25px;
         bottom: -50px;
       }
+      @include media-breakpoint-down(xl) {
+        width: 200px;
+        right: -50px;
+        p {
+          bottom: -75px;
+        }
+      }
       @include media-breakpoint-down(lg) {
         top: 0;
         right: -120px;
@@ -119,6 +131,8 @@
         p {
           font-size: 12px;
           top: -25px;
+          white-space: nowrap;
+          left: -25px;
         }
       }
     }
@@ -135,6 +149,11 @@
         text-align: right;
         top: -35px;
         width: 100%;
+      }
+      @include media-breakpoint-down(xl) {
+        p {
+          left: 25px;
+        }
       }
       @include media-breakpoint-down(lg) {
         left: -5px;
