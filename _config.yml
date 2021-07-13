@@ -43,7 +43,7 @@ collections:
     permalink: /proposals/:slug
   case-studies:
     output: true
-    permalink: /case-studies/:slug
+    permalink: /clients/:slug
   sales-header:
   intro:
   course:
