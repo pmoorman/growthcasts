@@ -1,0 +1,33 @@
+.post-card {
+  padding-bottom: 75px;
+  height: 100%;
+
+  &__tag {
+    background: #292f47;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: 0.5s;
+    &.active {
+      box-shadow: 10px 10px 0px #359bfa;
+    }
+  }
+  &__excerpt {
+    margin-bottom: 40px;
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &__readmore {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: normal;
+    img {
+      margin-left: 10px;
+    }
+  }
+}

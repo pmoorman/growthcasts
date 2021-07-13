@@ -14,16 +14,9 @@
     position: absolute;
     left: -20px;
     bottom: -280px;
-    z-index: 1;
-    &:before {
-      background: linear-gradient(0deg, #e2f1ff 140px, white 50%);
-    }
     @include media-breakpoint-down(lg) {
       bottom: -155px;
       left: -5px;
-      &:before {
-        background: linear-gradient(0deg, #e2f1ff 79px, white 24%);
-      }
     }
   }
 
