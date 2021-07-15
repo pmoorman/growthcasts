@@ -3,29 +3,11 @@
 
   <head>
     {% include new-web/head.html %}
-    <style>
-      .summary-block {
-        margin-left: 0;
-        padding-left: 15px;
-        width: 100%;
-        padding-right: 15px;
-      }
-      @media only screen and (min-width: 499px) {
-        .blog-content {
-          margin-left: -35px;
-        }
-        .summary-block {
-          margin-left: -140px;
-          padding-left: 105px;
-          width: calc(100% + 280px);
-          padding-right: 160px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/post.css">
   </head>
 
   <body class="blog-post">
-    {% include new-web/blog-header.html %}
+    {% include new-web/header-2.html %}
 
     <section class="py-0">
       <div class="container container-wider">
@@ -78,8 +60,7 @@
       </div>
     </section>
 
-    {% include new-web/blog-prefooter.html paddingtop="90px" %}
-
-    {% include new-web/footer.html %}
+    {% include new-web/subscribe-banner.html %}
+    {% include new-web/footer-2.html %}
   </body>
 </html>

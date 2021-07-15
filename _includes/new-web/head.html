@@ -2,11 +2,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}{%if page.title %} - {% endif %}{{ site.title }}</title>
-{% unless page.main_css %}
-<link rel="stylesheet" href="{{ "/assets/new-main.css" | relative_url }}">
-{% else %}
+{% if page.main_css or page.collection == "posts" %}
 <link rel="stylesheet" href="{{ page.main_css }}">
-{% endunless %}
+{% else %}
+<link rel="stylesheet" href="{{ "/assets/new-main.css" | relative_url }}">
+{% endif %}
 
 {% for sheet in page.stylesheets %}
 <link rel="stylesheet" href="{{ sheet | relative_url }}">
