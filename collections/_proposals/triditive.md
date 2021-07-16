@@ -1,17 +1,17 @@
 ---
-title: MeterInsight
-client_logo: /assets/images/proposals/meterinsight_logo.png
-password: erwin
+title: Triditive
+client_logo: /assets/images/proposals/triditive_logo.png
+password: mariel
 pricing:
   footer: |
-    **For MeterInsight, we suggest to start with the 10 hours/week sprint package** for start of the project and scale up when more executionally heavy tasks are required (content generation, sales, etc.).
+    **We advise a 20 hrs/week sprint package for Triditive as it allows us to speed up the branding project and start generating leads quickly.**
 ready_to_start:
   mail_address: "caspar@double-agency.com"
   call_button_link: "https://calendly.com/double-caspar"
   person_image: /assets/images/proposals/caspar_image.png
   person_name_image: /assets/images/proposals/caspar_name.png
   person_name: Caspar Lusink
-  person_title: Project Lead
+  person_title: Agency Director
 footer:
   mail_address: "caspar@double-agency.com"
   call_button_link: "https://calendly.com/double-caspar"
@@ -25,83 +25,71 @@ sections:
     - type: text
       data: 
         body: |
-          MeterInsight builds bespoke data science solutions on their no-code platform TimeSeriesXL, together with partnered data science consultancies. These solutions, like LeakInsight and EnergyInsight, can be re-used and sold to any other interested party.
+          Triditive’s top of the line 3D printers are set to revolutionize the manufacturing industry by reducing printing time and cost of metal and polymere parts. Their proprietary software EVAM®, reduces the learning curve and allows non-engineering professionals to operate the 3D printers with little to no assistance. 
 
-          In 2021, MeterInsight wishes to increase the number of customers serviced through TimeSeriesXL, as well as their existing solutions. To reach these results, they need to scale up the sales and marketing efforts and to bring their business to the next stage of maturity.
-          
-          MeterInsight is looking for a partner that can help position the brand and scale up their marketing and sales operations. Double is the right long-term partner to assist the current team in growing MeterInsight into an internationally recognized brand.
+          The combination of these two factors allows Triditive to cater to markets that require 3D printing technology, but which were previously unable to benefit from it, due to the high costs and technological barriers.
+
+          Triditive is looking to revamp its overall branding and lead generation strategy in order to expand its leading-edge 3D printing technology to markets in the US and worldwide. Double has extensive experience branding and lead generation in B2B markets and has the perfect position to assist Triditive in expanding their marketing.
+
 
 - title: Strategy
   blocks:
     - type: text
       data: 
         body: |
-          To pave the way for national and later international expansion, we need to find scalable ways to reach and convert (1) customers for the existing solutions in their respective industries and (2) data science and consultancy partners to build and sell more solutions.
+          To position Triditive as a leader in the 3D printing space, and consequently generate business interest from multinational companies, they need to scale up sales and fill their pipeline. In order to create a predictable flow of leads, both inbound and outbound lead generation needs to be setup. 
 
-          While the MeterInsight brand is getting a make-over by Studio Rocket Power, we can already start designing the strategies and infrastructure to grow.
-    - type: text
-      data: 
-        type: lead
-        body: |
-          We separated this into three workstreams:
+          To ensure sales and marketing efforts are effective, first the overall branding and communication of Triditive needs to be revisited. Besides a mature image, the new brand needs to inspire authority and explain clearly why the technology is superior.
+
+          In order to improve the above, there are a few areas that need to be improved:
 
     - type: list1
       data:
         items:
-          - title: Brand positioning
+          - title: Branding
             body: |
-              In order to tell a straight story to our clients and partners, we need to revise our communication strategy to position the brands clear and strong.
-          - title: Inbound Marketing
+              Build a brand identity that represents authority and thought leadership in the 3D printing space; with an eagerness to educate and cater to the highly-specific needs of the customer.
+          - title: Website
             body: |
-              Generate a steady inbound lead stream and claim an authority position in the market.
-          - title: Outbound & sales process
+              Upgrade the current website's copy, structure and design to highlight Triditive’s historical success while simultaneously underscoring the work being done to reshape the 3D printing industry.
+          - title: Content & landing pages
             body: |
-              Set up outbound sales processes for TimeSeriesXL and apps.
+              Industry specific landing pages and case studies need to be written and build to speak to the specific target audiences. Paid channels can lead to those pages and assets as well.
+          - title: Inbound & lead gen optimization
+            body: |
+              Inbound marketing will include: SEO optimized blog posts, guest articles on high traffic niche blogs, case studies, Linkedin thought leadership content, and Google search ads. 
+          - title: Outbound & sales handoff
+            body: |
+              Outbound will include: Linkedin ads, email marketing, cold calling and the systems to streamline prospect qualification and scoring.
 
 - title: Workstreams
   blocks:
     - type: text
       data:
         body: |
-          ### 1. Brand positioning
+          We will divide the entire strategy into 3 separate workstreams that can be executed separately or in parallel depending on the pricing package that is chosen
+
+
+          ### 1. Branding, website and content
               
-          We will create a fitting communication strategy that resonates with our audiences, by writing separate story angles for our different target audiences. Together we can structure these into one coherent story.
+          Upgrading Triditive’s branding and website will go hand in hand. This will involve creating a new visual identity for the brand that will include: logo, typography, imagery and creative design assets. In addition the branding upgrade will establish a new tone of voice for Triditive. We will include content creation necessary for filling the website and possible social channels.
 
-          Besides creating the main message, we will (re)write the copy for the website, emails and other necessary (sales) assets.
-
-          While working on the positioning and communication we can collaborate with the branding agency to get the message and visual identity well aligned. 
+          The website upgrade will take the new branding elements and apply it across the board. It will also involve stripping down the current copy, design and structure of the website, and building a new user experience from the ground up. The new website will be an essential part of the funnel, and will ensure that users sign up to Triditive’s newsletter, download the gated content, and reach out for quotes and sales calls. We are able to deliver all this end-to-end.
 
           <br>
-          ### 2. Inbound Marketing
+          ### 2. Inbound & lead gen optimization
 
-          Once the TimeSeriesXL and other brands have successfully been positioned, we will identify best-performing inbound marketing channels to create a predictable lead flow. 
-              
-          Possible channels to test:
-    - type: list2
-      data:
-        items:
-          - title: Google Search Ads (PPC)
-          - title: Content Marketing
-          - title: PR
-          - title: Social media marketing
-          - title: Retargeting campaigns
-          - title: LinkedIn Ads
-    - type: text
-      data:
-        body: |
-          Besides opening these channels, we can help create and distribute thought leadership content to gain a better authority and greater inbound lead flow.
+          Once the website has been upgraded, we'll get to work on destributing content, setting up search ads, and implement creative lead generation tactics. Once leads leave their details, we will send them automated messages and follow ups to ensure great hand off to sales.
+
+          Also we'll dive into the content strategy of Triditive to ensure a consistent and SEO-optimised voice that will inspire the target audience. Some examples of high quality content would be Industry reports, case studies, whitepapers, blog content (SEO optimized) and guest posts related to the 3D printing space, to position Triditive as an authority.
 
           <br>
-          ### 3. Outbound & sales process
-          To compliment the inbound process, we can assist in the outbound lead generation and create a oiled sales machine:
-    - type: list2
-      data:
-        type: numbers
-        items:
-          - title: Prospecting of new leads and outsourcing/automation
-          - title: Set up a CRM system to structure sales process
-          - title: Divide sales tasks and train sales reps
-          - title: Create necessary assets and sales copy
+          ### 3. Outbound & sales handoff
+          Triditive needs to build its own sales team, however before it does that it needs a group of sales systems that allows leads to be found, captured, qualified and handed over to the sales team; on time and efficiently. Furthermore, we will drive outbound traffic through 3 channels:
+
+          1. **Email marketing** // Researching, compiling data, crafting enticing email copy and reaching out to relevant leads on scale while being highly personalized, all automated.
+          2. **Cold calling** // Creating sales scripts and directly calling industry heavyweights to reduce the time between the first-touch, demo request and prospect conversion; as a result shortening the sales cycle.
+          3. **Linkedin Ads** // Captivating lead capture and traditional Linkedin ads to collect highly targeted leads for the sales team to begin working on.
 
 
 ---
