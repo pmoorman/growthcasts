@@ -1,0 +1,106 @@
+---
+layout: pages/new-web/post
+current: post
+cover: /assets/images/Sandy_blog_2021_2.0.JPG
+navigation: True
+title: Write ads that kill by understanding narrative device
+subtitle: "The technique separating 5% of ads from the rest"
+date: 2021-08-17 11:07:01
+tags: Learning
+class: post-template
+subclass: 'post'
+author: sandy
+excerpt: The technique separating 5% of ads from the rest
+summary_items:
+    - The low barrier to entry has flooded every platform with low-quality ads
+    - Audiences avoid ads by recognising a common writing style
+    - You can avoid being immediately flagged as an ad by using narrative device creatively
+---
+
+**Pre-internet advertising was ruthless and beautiful.**.
+
+Ruthless because basic processes like audience targeting, producing copy, and analysing results were a slow, delicate affair. And beautiful, because the rigamarole constrained the game to a few pros who served their audiences with delightful ads.
+
+Today’s advertising arena is comparatively cheap. Anyone with $5 can participate, which is creating
+- An overload of poorly executed ads
+- A public with a chronic case of ad fatigue
+
+Luckily, nearly all mediocre ads share something in common. You’re about to learn about it, so you can stay well away.
+
+#### **How do you stand apart in a sea of low-quality ads?**
+
+It begins with understanding the arena.
+
+The majority of advertisers are savvy enough to know that some understanding of sales psychology is a prerequisite for success. That leads them to invest in either a free copywriting course or a low-cost digital marketing service. Which creates a common theme:
+
+*Most ad-writers are operating on a few copywriting basics. They are much like beginner photographers who’ve grasped the Rule of Thirds and treat it as an iron law.*
+
+One of these psychology fundamentals is worth our attention because its overuse has become a warning signal for internet browsers. Here is that principle:
+
+*Readers value being spoken to directly, and writers can create this feeling with both basic and advanced methods.*
+
+Here’s the thing:
+**Just about every advertiser is using the basic techniques.**
+
+Which revolve around an element called narrative device - the point of view in which a writer speaks to their reader.
+
+Speaking directly to the reader with narrative device means using “you” language. Phrases like *“Imagine you’re…”* or *“You know what it’s like when…”*
+
+With that in mind, take a second to think about this…
+
+Social media platforms are blending ads with organic posts more and more. At the same time, most ads are of low quality. *This means readers can rely on recognising “you” language amongst posts to spot ads and move on.*  
+
+#### **The solution? Learn the advanced ways of speaking directly to your audience**
+
+We don’t need to use *narrative device* to give our readers the feeling of being spoken to directly.
+
+Instead, we can tell stories that involve elements specific to their lives.
+**For example**
+
+If I was advertising a photography composition course to new photographers…
+
+*John showed every sign of an amateur photographer: All of his questions were about my preferred exposure settings and gear.*
+
+*So when we explored his photos together… it didn’t take long to see what was holding him back.*
+
+*He’d taken the “Rule of thirds” to heart. But besides making all of his frames look similar, it wasn’t creating photos that left a viewer with a feeling.*
+
+*I often meet photographers like John who are hung up about camera settings. And here’s the secret - those settings are just the accounting of photography. They’re admin.*
+
+*Real photographic skill comes from the willingness to get into interesting situations to capture a moment.*
+
+*Do you get me? It’s not about setup. It’s about daring to live.*
+
+*I’ve distilled all my knowledge into a four-hour course that will change the way you see photography. Learn all about it (and see some of my award-winning photos) at the link below.*
+
+*-Steve*
+
+If I was advertising a distraction-free writing program to copywriters, I could begin an ad with:
+
+*I am an undisciplined copywriter.*
+
+*On autopilot, I will find the new tab button within minutes of opening a Google Doc.*
+
+*I will often wake up to the fact that that I’ve somehow spent ten minutes in the photography subreddit.*
+
+*So when my CMO asked why my productivity was lacking, it wasn’t easy to share what was up - I was sure she would consider me unfit for her team. But, to my surprise, she just told me to open a blank text document instead of my browser.*
+
+*I gave it a go. And a few days of writing copy in Notepad later, I was a new writer.*
+
+*All I needed was an environment that made it easy to do the right thing.*
+
+*But Notepad left much to be desired. I was forever copying, pasting, and reformatting.*
+
+*And that’s what led me to chat with our developer about building a copywriter’s dream program...*
+
+So, go and try this approach with your ads. One beautiful consequence of our cheap advertising arena is that you can test bold approaches with little repercussion.
+
+Dare to:
+- Speak in terms of “we” and “they”, rather than “you”.
+- Tell stories about interesting events and people, then tie them back to your offer
+
+And if this article is showing you that you need new ads now...email Pieter and we’ll take care of it.
+
+
+Written by [Sandy](https://www.linkedin.com/in/sandy-radburnd/)
+
