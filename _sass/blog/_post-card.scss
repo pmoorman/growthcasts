@@ -1,6 +1,8 @@
 .post-card {
   padding-bottom: 75px;
   height: 100%;
+  position: relative;
+  z-index: 1;
 
   &__tag {
     background: #292f47;
