@@ -1,50 +1,53 @@
 ---
 layout: pages/new-web/post
 current: post
-cover: /assets/images/Sandy_blog_2021_2.0.JPG
+cover: /assets/images/Leopard.jpeg
 navigation: True
 title: Write ads that kill by understanding narrative device
-subtitle: "The technique separating 5% of ads from the rest"
+subtitle: "Leave behind the writing style of the masses"
 date: 2021-08-17 11:07:01
-tags: Learning
+tags: Copywriting
 class: post-template
 subclass: 'post'
 author: sandy
-excerpt: The technique separating 5% of ads from the rest
+excerpt: Leave behind the writing style of the masses
 summary_items:
     - The low barrier to entry has flooded every platform with low-quality ads
     - Audiences avoid ads by recognising a common writing style
     - You can avoid being immediately flagged as an ad by using narrative device creatively
 ---
 
-**Pre-internet advertising was both ruthless and beautiful.**
+**Advertising was once ruthless and beautiful.**
 
 Ruthless because basic processes like audience targeting, producing copy, and analysing results were a slow, delicate affair. And beautiful, because the rigamarole constrained the game to a few pros who served their audiences with delightful ads.
 
-Today’s advertising arena is the opposite. Anyone with $5 and a keyboard can participate, which is creating:
+Today’s internet advertising arena is the opposite. Because anyone with $5 and a keyboard can participate, we face:
 - An overload of poorly executed ads
 - A public with a chronic case of ad fatigue
 
-Luckily, nearly all mediocre ads share something in common. You’re going to learn what that is, so you can do things differently.
+Luckily, nearly all mediocre ads share a common trait. You’re about to learn all about it, so you can do things differently.
 
-#### **How do you stand apart in a sea of low-quality ads?**
+#### **How to stand apart in a sea of low-quality ads**
 
 It begins with understanding the arena.
 
-The majority of advertisers are savvy enough to know that *some* understanding of sales psychology is a prerequisite for success. That leads them to invest in either free copywriting courses or low-cost digital marketing services. And that creates a common theme:
+Most advertisers are savvy enough to know they need *some* understanding of sales psychology to succeed. And that leads them to invest in either a few copywriting courses or a low-cost digital marketing service.
 
-*Most ad-writers are operating on a few copywriting basics. They can be likened to beginner photographers who’ve grasped the Rule of Thirds and treat it as an iron law.*
+Together, these create a common theme:
 
-One of these copywriting fundamentals is worth our attention because while it's usually helpful, its overuse has turned it into a red flag for internet browsers:
+*Most ad-writers are operating on a few copywriting basics. They can be likened to beginner photographers who’ve grasped the Rule of Thirds and treat it as an iron law for every photo.*
 
-*Readers appreciate being spoken to as if the writer was engaging with them in a one-on-one conversation.*
+One of these copywriting fundamentals is usually helpful. But its overuse has turned it into a red flag that internet browsers use to spot and dodge ads:
+
+*Speak to the reader as if you are engaging with them in a one-on-one conversation.*
  
- This feeling can be created with both basic and advanced techniques. And here’s the thing:
+ It's possible to create this feeling with both basic and advanced techniques. And here’s the crux of this article:
+
 **Just about every advertiser is using the basic technique.**
 
-It revolves around an element called narrative device - the point of view a writer uses to speak to their reader.
+It revolves around an element called narrative device - the point of view you use to speak to your reader.
 
-Speaking directly to the reader with narrative device means using “you” language. Phrases like *“Imagine you’re…”* or *“You know what it’s like when…”*
+Speaking directly to the reader with narrative device means using “you” language. Phrases like *“Imagine you’re…”*, *“You know what it’s like when…”*, or *"Does this happen to you, too?"*
 
 With that in mind, take a second to think about this…
 
@@ -57,21 +60,21 @@ We don’t need to use *narrative device* to give our readers the feeling of bei
 Instead, we can tell stories that involve elements specific to *their* lives.
 **For example**
 
-If I was advertising a photography composition course to new photographers…
+If I was advertising a composition course to new photographers, I'd open a Facebook ad like this:
 
-*John showed every sign of an amateur photographer: All of his questions were about my preferred exposure settings and gear.*
+*John showed the classic sign of an amateur photographer: All his questions were about my exposure settings and gear.*
 
-*So when we explored his photos together… it didn’t take long to see what was holding him back.*
+*So when we explored his photos together, I immediately spotted what was holding him back.*
 
-*He’d taken the “Rule of thirds” to heart. But besides making all of his frames look similar, it wasn’t creating photos that left a viewer with a feeling.*
+*He’d taken the “Rule of thirds” to heart and was using it wherever he could. But, in addition to making all of his frames look similar, his focus on it was preventing him from creating photos that left viewers with a feeling.*
 
-*I often meet photographers like John who are hung up about camera settings. And here’s the secret - those settings are just the accounting of photography. They’re admin.*
+*I often meet photographers like John who are hung up about camera settings. Here’s the secret - those settings are just the accounting of photography. They’re admin.*
 
 *Real photographic skill comes from the willingness to get into interesting situations to capture a moment.*
 
 *Do you get me? It’s not about setup. It’s about daring to live.*
 
-*I’ve distilled all my knowledge into a four-hour course that will change the way you see photography. Learn all about it (and see some of my award-winning photos) at the link below.*
+*I’ve distilled all my knowledge into a four-hour course that will change the way you see photography. Use the link below to learn all about it (and see some of my award-winning photos).*
 
 *-Steve*
 
@@ -79,27 +82,29 @@ If I was advertising a distraction-free writing program to copywriters, I could 
 
 *I am an undisciplined copywriter.*
 
-*On autopilot, I will find the new tab button within minutes of opening a Google Doc.*
+*Within minutes of opening a new Google Doc, I will open a new tab on autopilot.*
 
-*I will often wake up to the fact that that I’ve somehow spent ten minutes in the photography subreddit.*
+*Ten minutes later, I'll wake up to the fact that that I’m somehow browsing the Bitcoin subreddit...*
 
-*So when my CMO asked why my productivity was lacking, it wasn’t easy to share what was up - I was sure she would consider me unfit for her team. But, to my surprise, she just told me to open a blank text document instead of my browser.*
+*So when my CMO confronted me about my productivity, it wasn’t easy to share the problem - I was sure she would judge me as lazy. But, all she did was laugh and tell me to open a blank text document instead of my browser.*
 
-*I gave it a go. And a few days of writing copy in Notepad later, I was a new writer.*
+*I gave it a go.*
+
+*A few days of writing copy in Notepad later... I was a new writer.*
 
 *All I needed was an environment that made it easy to do the right thing.*
 
-*But Notepad left much to be desired. I was forever copying, pasting, and reformatting.*
+*With that said, Notepad left much to be desired. I was forever copying, pasting, and reformatting.*
 
-*And that’s what led me to chat with our developer about building a copywriter’s dream program...*
+*And that’s what led me to chat with our developer about building a copywriter’s dream text editor...*
 
-So, go and try this approach with your ads. One beautiful consequence of our cheap advertising arena is that you can test bold approaches with little repercussion.
+So, go on and try this new approach with your ads. One beautiful consequence of our cheap advertising arena is that you can test bold approaches with little repercussion.
 
 Dare to:
+-Tell stories about interesting events and people, then tie them back to your offer
 - Speak in terms of “we” and “they”, rather than “you”.
-- Tell stories about interesting events and people, then tie them back to your offer
 
-And if this article is showing you that you need new ads now...email Pieter and we’ll take care of it.
+And if this article is showing you that you need new ads now... email [Pieter](mailto:pieter@doubleagency.com) and we’ll take care of it.
 
 
 Written by [Sandy](https://www.linkedin.com/in/sandy-radburnd/)
