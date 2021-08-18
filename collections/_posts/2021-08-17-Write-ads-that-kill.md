@@ -17,32 +17,32 @@ summary_items:
     - You can avoid being immediately flagged as an ad by using narrative device creatively
 ---
 
-**Pre-internet advertising was ruthless and beautiful.**.
+**Pre-internet advertising was both ruthless and beautiful.**
 
 Ruthless because basic processes like audience targeting, producing copy, and analysing results were a slow, delicate affair. And beautiful, because the rigamarole constrained the game to a few pros who served their audiences with delightful ads.
 
-Today’s advertising arena is comparatively cheap. Anyone with $5 can participate, which is creating
+Today’s advertising arena is the opposite. Anyone with $5 and a keyboard can participate, which is creating:
 - An overload of poorly executed ads
 - A public with a chronic case of ad fatigue
 
-Luckily, nearly all mediocre ads share something in common. You’re about to learn about it, so you can stay well away.
+Luckily, nearly all mediocre ads share something in common. You’re going to learn what that is, so you can do things differently.
 
 #### **How do you stand apart in a sea of low-quality ads?**
 
 It begins with understanding the arena.
 
-The majority of advertisers are savvy enough to know that some understanding of sales psychology is a prerequisite for success. That leads them to invest in either a free copywriting course or a low-cost digital marketing service. Which creates a common theme:
+The majority of advertisers are savvy enough to know that *some* understanding of sales psychology is a prerequisite for success. That leads them to invest in either free copywriting courses or low-cost digital marketing services. And that creates a common theme:
 
-*Most ad-writers are operating on a few copywriting basics. They are much like beginner photographers who’ve grasped the Rule of Thirds and treat it as an iron law.*
+*Most ad-writers are operating on a few copywriting basics. They can be likened to beginner photographers who’ve grasped the Rule of Thirds and treat it as an iron law.*
 
-One of these psychology fundamentals is worth our attention because its overuse has become a warning signal for internet browsers. Here is that principle:
+One of these copywriting fundamentals is worth our attention because while it's usually helpful, its overuse has turned it into a red flag for internet browsers:
 
-*Readers value being spoken to directly, and writers can create this feeling with both basic and advanced methods.*
+*Readers appreciate being spoken to as if the writer was engaging with them in a one-on-one conversation.*
+ 
+ This feeling can be created with both basic and advanced techniques. And here’s the thing:
+**Just about every advertiser is using the basic technique.**
 
-Here’s the thing:
-**Just about every advertiser is using the basic techniques.**
-
-Which revolve around an element called narrative device - the point of view in which a writer speaks to their reader.
+It revolves around an element called narrative device - the point of view a writer uses to speak to their reader.
 
 Speaking directly to the reader with narrative device means using “you” language. Phrases like *“Imagine you’re…”* or *“You know what it’s like when…”*
 
@@ -54,7 +54,7 @@ Social media platforms are blending ads with organic posts more and more. At the
 
 We don’t need to use *narrative device* to give our readers the feeling of being spoken to directly.
 
-Instead, we can tell stories that involve elements specific to their lives.
+Instead, we can tell stories that involve elements specific to *their* lives.
 **For example**
 
 If I was advertising a photography composition course to new photographers…
