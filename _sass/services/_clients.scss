@@ -1,0 +1,72 @@
+.clients {
+  position: relative;
+  padding-bottom: 500px;
+  padding-top: 180px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+
+  &__logos {
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      left: -60vw;
+      min-width: 210vw;
+      transform: scale(0.5);
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      & [class*="__item"] {
+        position: absolute;
+      }
+
+      &__item {
+        &--1 {
+          left: -10px;
+          top: 190px;
+        }
+        &--2 {
+          right: 70px;
+          top: 270px;
+        }
+        &--3 {
+          right: -160px;
+          top: 90px;
+        }
+        &--4 {
+          left: -200px;
+          bottom: -245px;
+        }
+        &--5 {
+          left: 35%;
+          top: -90px;
+        }
+        &--6 {
+          bottom: -155px;
+          left: 150px;
+        }
+        &--7 {
+          bottom: -250px;
+          right: -25px;
+        }
+      }
+    }
+  }
+
+  &__line1 {
+    position: absolute;
+    bottom: -30px;
+    left: 38%;
+  }
+}

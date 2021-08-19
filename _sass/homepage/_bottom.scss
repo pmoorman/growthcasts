@@ -1,0 +1,89 @@
+.bottom {
+  @include media-breakpoint-down(md) {
+    padding-bottom: 50px;
+  }
+  &__bg {
+    &--item1 {
+      position: absolute;
+      width: 209px;
+      height: 225px;
+      background: #292f47;
+      left: -300px;
+      top: 50px;
+      @include media-breakpoint-down(md) {
+        top: 43%;
+        right: -70px;
+        left: initial;
+        width: 91px;
+        height: 125px;
+      }
+    }
+  }
+
+  &__content {
+    &__par1 {
+      @include media-breakpoint-down(md) {
+        font-size: 20px!important;
+        line-height: 24px!important;
+      }
+    }
+    &__par2 {
+      line-height: 30px;
+      @include media-breakpoint-down(md) {
+        line-height: 24px!important;
+      }
+    }
+    &__col2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: -75px;
+        height: 330px;
+      }
+
+      & [class*="--item"] {
+        position: absolute;
+      }
+
+      &--item1 {
+        width: 311px;
+        height: 413px;
+        background: #359bfa;
+        right: 0;
+        top: 35px;
+        @include media-breakpoint-down(md) {
+          width: 154px;
+          height: 207px;
+          right: 30%;
+          top: 80px;
+        }
+      }
+
+      &--item2 {
+        right: 140px;
+        top: 140px;
+        z-index: 1;
+        width: 344px;
+        @include media-breakpoint-down(md) {
+          width: 171px;
+          left: 15px;
+          top: 140px;
+        }
+      }
+
+      &--item3 {
+        top: -140px;
+        right: -140px;
+        width: 344px;
+        @include media-breakpoint-down(md) {
+          width: 172px;
+          top: 0;
+          right: 15px;
+        }
+      }
+    }
+  }
+}

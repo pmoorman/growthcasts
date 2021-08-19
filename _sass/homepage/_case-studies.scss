@@ -1,0 +1,115 @@
+.case-studies {
+  &__intro {
+    &__title {
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    &__line1 {
+      position: absolute;
+      right: 180px;
+      bottom: -135px;
+      z-index: 1;
+    }
+    &__warningimg {
+      width: 289px;
+      @include media-breakpoint-down(md) {
+        width: 158.91px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    &__bg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+
+      img {
+        max-width: 1920px;
+        @include media-breakpoint-down(md) {
+          width: 120%;
+        }
+        @media screen and (min-width: 1921px) {
+          max-width: 90%;
+        }
+      }
+    }
+    &__logo {
+      @include media-breakpoint-down(md) {
+        width: 159px;
+      }
+    }
+    &__divider {
+      margin-top: 30px;
+      margin-bottom: 45px;
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+#case-studies-tiktok {
+  padding-bottom: 25px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 25px;
+  }
+  .case-studies__item__content {
+    padding-top: 40px;
+    position: relative;
+    left: 105px;
+    @include media-breakpoint-down(md) {
+      padding-top: 65px;
+      left: 0;
+    }
+    .text-highlight {
+      color: #ea3354;
+    }
+  }
+}
+
+#case-studies-alpian {
+  @include media-breakpoint-down(md) {
+    padding-top: 160px;
+    padding-bottom: 0;
+  }
+  .case-studies__item__content {
+    padding-top: 340px;
+    .text-highlight {
+      color: #292f47;
+    }
+    @include media-breakpoint-down(md) {
+      padding-top: 65px;
+    }
+  }
+}
+
+#case-studies-cla {
+  padding-bottom: 250px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px;
+  }
+  .case-studies__item {
+    &__logo {
+      @include media-breakpoint-down(md) {
+        width: 201px;
+      }
+    }
+    &__content {
+      color: #632249;
+      padding-top: 160px;
+      @include media-breakpoint-down(md) {
+        padding-top: 160px;
+      }
+      .text-highlight {
+        color: #b63e86;
+      }
+    }
+  }
+}

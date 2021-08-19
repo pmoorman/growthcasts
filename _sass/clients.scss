@@ -1,0 +1,461 @@
+// Generics
+@import "new_web/generic/variables";
+@import "vendors/bootstrap/bootstrap";
+@import "new_web/generic/general-1";
+@import "new_web/generic/typography-2";
+@import "new_web/generic/font";
+
+@import "new_web/components/footer-2";
+@import "new_web/components/header-2";
+@import "new_web/components/arrow-btn";
+@import "new_web/components/bottom-section-1";
+
+html > body {
+  h1 {
+    font-weight: 600;
+    font-size: 90px !important;
+    line-height: 87px !important;
+    @include media-breakpoint-down(md) {
+      font-size: 48px !important;
+      line-height: 47px !important;
+    }
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  // Hero
+  #hero {
+    padding-bottom: 50px;
+    padding-top: 100px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 25px;
+      padding-top: 50px;
+    }
+  }
+
+  // Industry filters
+  .industry_filters {
+    width: 100%;
+    margin-top: 100px;
+    &__item {
+      padding: 15px;
+      background: transparent;
+      color: #292f47;
+      font-size: 18px;
+      line-height: 42px;
+      flex: 1 1 auto;
+      position: relative;
+      &:not(.active) {
+        border: 1px solid #e5e5e5 !important;
+      }
+      &:not(.active):hover {
+        border: 1px solid #000 !important;
+      }
+      &.active {
+        background-color: #3497f3;
+        box-shadow: 12px 12px 0 0 #181d33 !important;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
+        left: -12px;
+        bottom: 12px;
+      }
+    }
+  }
+  .industry_filters-mobile {
+    &__mainbtn {
+      height: 60px;
+      width: 100%;
+      background: #359bfa;
+      position: relative;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      &__arrow {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+      }
+    }
+    &__item {
+      font-size: 18px;
+      line-height: 42px;
+      width: 100%;
+      background: none;
+      border: 1px solid #e5e5e5;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &__mainbtn[aria-expanded="true"] {
+      .industry_filters-mobile__mainbtn__arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // Service filters
+  .service_filters {
+    &__btn {
+      background-color: transparent;
+      color: #292f47;
+      font-size: 20px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  // Client boxes
+  .client-boxes {
+    @include media-breakpoint-down(md) {
+      background-color: #e5e7ef;
+      padding-bottom: 0;
+    }
+  }
+
+  // Client box
+  .client-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__logo {
+      height: 220px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__arrow {
+        &--non_hover {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
+        &--hover {
+          opacity: 0;
+          transition: 0.5s;
+          width: 140px;
+          height: 140px;
+          background: #359bfa;
+          color: #fff;
+          box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: flex-end;
+          padding: 15px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          img {
+            height: 24px;
+            width: 24px;
+            right: 15px;
+            position: absolute;
+            top: 15px;
+          }
+        }
+        &:hover {
+          .client-box__logo__arrow--hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__content {
+      padding: 30px;
+      flex: 1;
+
+      &__title {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      &__industry {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 42px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__services {
+      display: flex;
+
+      &__titlebox {
+        background: #359bfa;
+        padding: 0px 30px;
+
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 42px;
+        }
+      }
+
+      &__valuebox {
+        background: #292f47;
+        padding: 15px 30px;
+        height: 72px;
+
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    &__testimonial {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 25px;
+
+      &__line {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      &__name {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      &__jobtitle {
+        font-weight: normal;
+        margin: 0;
+      }
+    }
+
+    &__link_mobile {
+      background: #359bfa;
+      border-radius: 0;
+      border: 0;
+      height: 60px;
+      align-items: center;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 20px;
+      margin-top: 25px;
+      &__arrow {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  /* SM */
+  .client-box__sm {
+    .client-box {
+      &__logo {
+        border: 1px solid #e5e5e5;
+      }
+
+      &__content {
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        background: #fff;
+
+        &__industry {
+          color: #359bfa;
+        }
+      }
+
+      &__services {
+        flex-direction: column;
+      }
+    }
+  }
+
+  /* MD */
+  .client-box__md {
+    position: relative;
+
+    &__bg {
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 20px);
+      z-index: -1;
+      @include media-breakpoint-down(md) {
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .client-box {
+      &__logo {
+        padding: 40px;
+        flex: 1;
+      }
+
+      &__content {
+        flex: 0;
+        color: #fff;
+      }
+
+      &__services {
+        &__titlebox {
+          display: flex;
+          align-items: center;
+        }
+
+        &__valuebox {
+          flex: 1;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  /* LG */
+  .client-box__lg {
+    margin-bottom: 110px;
+    margin-top: 20px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 15px;
+    }
+
+    .mobile-bg {
+      width: 100vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      position: absolute;
+      bottom: -120px;
+    }
+
+    .container {
+      padding-top: 200px;
+      color: #fff;
+      position: relative;
+      @include media-breakpoint-down(md) {
+        padding-top: 0;
+      }
+    }
+
+    .row {
+      padding: 0 8px;
+      @include media-breakpoint-down(md) {
+        padding: 0;
+      }
+    }
+
+    .client-box {
+      &__logo {
+        width: 100%;
+        min-height: 371px;
+        @include media-breakpoint-down(md) {
+          min-height: 160px;
+        }
+        &__arrow {
+          &--hover {
+            width: 220px;
+            height: 220px;
+          }
+        }
+      }
+
+      &__content {
+        @include media-breakpoint-up(md) {
+          padding-right: 0;
+        }
+        @include media-breakpoint-down(md) {
+          padding-left: 0;
+        }
+
+        &__inner {
+          padding-right: 30px;
+        }
+
+        &__title {
+          font-weight: 600;
+          font-size: 42px;
+          line-height: 48px;
+          margin-bottom: 0;
+        }
+
+        &__industry {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 42px;
+          margin-bottom: 25px;
+        }
+
+        &__description {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      &__testimonial {
+        &__name {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        &__jobtitle {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      &__services {
+        position: absolute;
+        bottom: -72px;
+        width: 100%;
+        padding: 0 8px;
+
+        &__titlebox {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          p {
+            padding: 0 40px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+
+        &__valuebox {
+          display: flex;
+          align-items: center;
+          p {
+            padding: 0 40px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}

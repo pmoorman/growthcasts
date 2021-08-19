@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="width: 120px">
+      {% include new-web/animated-logo.html %}
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <div class="toggler-menu-text">Menu</div>
+      <span class="navbar-toggle">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/" %}active{% endif %}" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/services" %}active{% endif %}" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/clients" %}active{% endif %}" href="/clients">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/blog" %}active{% endif %}" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/about" %}active{% endif %}" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:pieter@double-agency.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

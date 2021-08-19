@@ -8,14 +8,12 @@ how_we_work:
     - url: /assets/images/proposals/Double_Academy_Logo.svg
     - url: /assets/images/proposals/Sendcloud_logo.svg
     - url: /assets/images/proposals/Peg_logo.svg
-    - url: /assets/images/proposals/MyKuya_Logo.svg
+    - url: /assets/images/proposals/alpian_logo.png
 
 pricing:
   title: Pricing
   intro: |
     Our services are priced in weekly sprints of a fixed capacity of either 10, 20 or 40 hours/week. Prices are weekly, invoiced monthly at the start of each month. We are typically flexible to adjust capacity as we go:
-  footer: |
-    **For MeterInsight, we suggest to start with the 10 hours/week sprint package** for start of the project and scale up when more executionally heavy tasks are required (content generation, sales, etc.).
   items:
     - title: Sprints at 10 hours/week
       price: €900/week

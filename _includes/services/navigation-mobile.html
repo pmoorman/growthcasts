@@ -1,0 +1,29 @@
+<div class="mobile-nav">
+  <button
+    class="btn btn-block text-left"
+    type="button"
+    data-toggle="collapse"
+    data-target="#mobile-nav"
+    aria-expanded="false"
+    aria-controls="mobile-nav"
+  >
+    Jump to
+    <img src="/assets/images/icon-chevron_up-light.svg" />
+  </button>
+  <div id="mobile-nav" class="collapse">
+    <div class="mobile-nav__content">
+      <a href="#performance" class="mobile-nav__item"> Performance </a>
+      <a href="#funnels" class="mobile-nav__item"> Funnels & creative </a>
+      <a href="#marketing" class="mobile-nav__item"> Product marketing </a>
+      <a href="#infrastructure" class="mobile-nav__item"> Infrastructure </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll("#mobile-nav a").forEach(el => {
+    el.addEventListener("click", () => {
+      $('#mobile-nav').collapse('hide');
+    });
+  });
+</script>

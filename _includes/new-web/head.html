@@ -2,10 +2,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}{%if page.title %} - {% endif %}{{ site.title }}</title>
+{% unless page.main_css %}
 <link rel="stylesheet" href="{{ "/assets/new-main.css" | relative_url }}">
+{% else %}
+<link rel="stylesheet" href="{{ page.main_css }}">
+{% endunless %}
 
 {% for sheet in page.stylesheets %}
 <link rel="stylesheet" href="{{ sheet | relative_url }}">
+{% endfor %}
+{% for item in page.scripts %}
+  <script src="{{item}}"></script>
 {% endfor %}
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/new-web/apple-touch-icon-57x57.png" />
@@ -28,6 +35,32 @@
 <meta name="msapplication-wide310x150logo" content="/assets/images/new-web/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/images/new-web/mstile-310x310.png" />
 
+<!-- Open Graph & Twitter card -->
+{% if page.title %}
+  {% assign title = page.title | strip_html | strip_newlines | truncate: 160 | append: " - " | append: site.title %}
+{% else %}
+  {% assign title = site.title %}
+{% endif %}
+{% if page.excerpt %}
+  {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+{% else %}
+  {% assign description = site.description %}
+{% endif %}
+{% if page.image %}
+  {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
+{% else %}
+  {% assign image = site.image | prepend: site.baseurl | prepend: site.url %}
+{% endif %}
+{% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{title}}" />
+<meta name="twitter:image" content="{{image}}" />
+<meta property="og:image" content="{{image}}" />
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{url}}" />
+<meta property="og:site_name" content="Double Agency" />
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
@@ -71,15 +104,6 @@
     })();
   </script>
   
-
-  <!-- Segment 
-  /////////////////////////////////////////////////////////////////////////////////////////////// -->
-<script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
-  analytics.load("ZMJnl0vV4KgaIA7pPQIaiV1UNpENBh0v");
-  analytics.page();
-  }}();
-</script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

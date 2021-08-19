@@ -1,0 +1,17 @@
+{% assign index = include.index %}
+{% assign bg = "background-" | append: include.bg %}
+
+<div class="services-nav d-none d-lg-block">
+  <a href="#performance" class="services-nav__item {{bg}} {% if index == 0 %}active{% endif %}">
+    <img src="/assets/images/services/icon-performance.svg" /> Performance
+  </a>
+  <a href="#funnels" class="services-nav__item {{bg}} {% if index == 1 %}active{% endif %}">
+    <img src="/assets/images/services/icon-funnels.svg" /> Funnels & creative
+  </a>
+  <a href="#marketing" class="services-nav__item {{bg}} {% if index == 2 %}active{% endif %}">
+    <img src="/assets/images/services/icon-marketing.svg" /> Product marketing
+  </a>
+  <a href="#infrastructure" class="services-nav__item {{bg}} {% if index == 3 %}active{% endif %}">
+    <img src="/assets/images/services/icon-infrastructure.svg" /> Infrastructure
+  </a>
+</div>

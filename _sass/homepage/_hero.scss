@@ -1,0 +1,180 @@
+.hero {
+  padding-top: 100px;
+  padding-bottom: 0;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  > .container {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__bg {
+    bottom: 0;
+    z-index: -3;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:before {
+      content: "";
+      background: linear-gradient(0deg, transparent, #fff);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  &__bggraphics {
+    top: -125px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      top: 0;
+      margin-bottom: 100px;
+      margin-top: 20px;
+    }
+    &__arrows {
+      @include media-breakpoint-down(md) {
+        left: -38%;
+        position: relative;
+        top: 50px;
+      }
+    }
+    &--arrow1 {
+      right: -140px;
+      bottom: 45px;
+      z-index: -2;
+      @include media-breakpoint-down(md) {
+        right: -105px;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 354px;
+        height: 271px;
+      }
+    }
+    &--arrow2 {
+      left: 0;
+      bottom: 0;
+      @include media-breakpoint-down(md) {
+        left: -10px;
+        bottom: -12px;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 354px;
+        height: 261px;
+      }
+    }
+    &--img1 {
+      bottom: -130px;
+      left: 105px;
+      width: 145px;
+      @include media-breakpoint-down(md) {
+        width: 69px;
+        bottom: -21em;
+        left: initial;
+        right: 55px;
+      }
+    }
+    &--img2 {
+      left: 120px;
+      top: 230px;
+      width: 178px;
+      @include media-breakpoint-down(md) {
+        width: 94px;
+        left: -3em;
+        top: 100px;
+      }
+    }
+    &--img3 {
+      left: 390px;
+      top: 500px;
+      z-index: -1;
+      width: 178px;
+      @include media-breakpoint-down(md) {
+        width: 106px;
+        left: 2em;
+        top: 290px;
+      }
+    }
+    &--img4 {
+      right: 175px;
+      top: 300px;
+      z-index: -1;
+      width: 376px;
+      @include media-breakpoint-down(md) {
+        width: 195px;
+        right: initial;
+        left: 6em;
+        top: 180px;
+      }
+    }
+    &--img5 {
+      right: 10px;
+      top: 0;
+      width: 124px;
+      @include media-breakpoint-down(md) {
+        width: 82px;
+        right: -2.5em;
+        top: 1.5em;
+      }
+    }
+  }
+
+  &__intro {
+    max-width: 345px;
+  }
+
+  &__bottom {
+    position: relative;
+    top: -145px;
+    right: 45px;
+    @include media-breakpoint-down(md) {
+      top: 0;
+      right: 0;
+    }
+    &__inner {
+      max-width: 415px;
+      position: relative;
+      right: -30px;
+      @include media-breakpoint-down(md) {
+        right: 0;
+      }
+    }
+    p {
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__bottom-arrow-wrapper {
+    position: absolute;
+    bottom: -23px;
+  }
+  &__bottom-arrow {
+    width: 51.97px;
+    height: 51.97px;
+    background: var(--primary);
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    &:before {
+      content: url("/assets/images/icon-arrow_down.png");
+      transform: rotate(-45deg);
+      position: relative;
+      left: 3px;
+      top: -2px;
+    }
+  }
+}

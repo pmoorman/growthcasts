@@ -1,0 +1,73 @@
+{% assign container = include.container %}
+{% assign items = include.items %}
+{% assign bg = include.bg %}
+
+{% assign length = items | size %}
+{% assign rest = length | modulo: 3 %}
+{% assign min_per_row = length | divided_by: 3 | floor %}
+
+{% assign col1 = min_per_row %}
+{% assign col2 = min_per_row %}
+{% assign col3 = min_per_row %}
+{% assign items_col1 = "" | split: "" %}
+{% assign items_col2 = "" | split: "" %}
+{% assign items_col3 = "" | split: "" %}
+
+{% if rest == 1 %}
+  {% assign col1 = col1 | plus: 1 %}
+{% elsif rest == 2 %}
+  {% assign col1 = col1 | plus: 1 %}
+  {% assign col2 = col2 | plus: 1 %}
+{% endif %}
+
+{% assign col2 = col2 | plus: col1 %}
+{% assign col3 = col3 | plus: col2 %}
+
+{% for item in items %}
+  {% if forloop.index <= col1 %}
+    {% assign items_col1 = items_col1 | push: item %}
+  {% elsif forloop.index <= col2 %}
+    {% assign items_col2 = items_col2 | push: item %}
+  {% elsif forloop.index <= col3 %}
+    {% assign items_col3 = items_col3 | push: item %}
+  {% endif %}
+{% endfor %}
+
+<div class="row" id="{{container}}">
+  <div class="col-lg-4 px-lg-2">
+  {% for item in items_col1 %}
+    {% assign id = container | append: "col1" | append: forloop.index %}
+    {% include new-web/collapse-variant-1.html 
+      id=id
+      title=item.title
+      content=item.content
+      parent=container
+      bg=bg
+    %}
+  {% endfor %}
+  </div>
+  <div class="col-lg-4 px-lg-2">
+  {% for item in items_col2 %}
+    {% assign id = container | append: "col2" | append: forloop.index %}
+    {% include new-web/collapse-variant-1.html 
+      id=id
+      title=item.title
+      content=item.content
+      parent=container
+      bg=bg
+    %}
+  {% endfor %}
+  </div>
+  <div class="col-lg-4 px-lg-2">
+  {% for item in items_col3 %}
+    {% assign id = container | append: "col3" | append: forloop.index %}
+    {% include new-web/collapse-variant-1.html 
+      id=id
+      title=item.title
+      content=item.content
+      parent=container
+      bg=bg
+    %}
+  {% endfor %}
+  </div>
+</div>

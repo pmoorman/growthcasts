@@ -16,7 +16,7 @@
 				{% include casestudy/internal/tag.html item=tag %}
 			</div>
 			<p class="relatedstudies__excerpt mb-3">
-				{{related_1.excerpt}}
+				{{related_1.excerpt | strip_html }}
 			</p>
 			<a href="{{related_1.url}}" class="btn btn-link pl-0">
 				Go to Case Study >
@@ -29,7 +29,7 @@
 				{% include casestudy/internal/tag.html item=tag %}
 			</div>
 			<p class="relatedstudies__excerpt mb-3">
-				{{related_2.excerpt}}
+				{{related_2.excerpt | strip_html }}
 			</p>
 			<a href="{{related_2.url}}" class="btn btn-link pl-0">
 				Go to Case Study >

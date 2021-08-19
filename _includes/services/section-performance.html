@@ -1,0 +1,18 @@
+<section id="performance" class="performance">
+  <div class="container">
+
+    <div class="performance__upper row align-items-end px-3 px-lg-0">
+      <div class="col">
+        {% include services/navigation.html index=0 %}
+      </div>
+      <div>
+        <img class="img-fluid" src="/assets/images/services/performance.svg" />
+      </div>
+    </div>
+
+    {% include new-web/collapse-variant-1-multi.html 
+      container="performance-accordion"
+      items=page.performance 
+    %}
+  </div>
+</section>

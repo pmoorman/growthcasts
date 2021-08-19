@@ -1,0 +1,23 @@
+.process {
+  @include media-breakpoint-down(md) {
+    padding-top: 75px;
+  }
+
+  &__items {
+    &__item {
+      &__text {
+        position: relative;
+        top: 10px;
+        span {
+          color: #9096aa;
+          font-size: 16px;
+          line-height: 21px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 20px!important;
+          line-height: 24px!important;
+        }
+      }
+    }
+  }
+}

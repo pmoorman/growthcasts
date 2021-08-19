@@ -1,0 +1,119 @@
+// Generics
+@import "new_web/generic/variables";
+@import "vendors/bootstrap/bootstrap";
+@import "new_web/generic/general-1";
+@import "new_web/generic/typography-2";
+@import "new_web/generic/font";
+
+// Components
+@import "new_web/components/footer-2";
+@import "new_web/components/header-2";
+@import "new_web/components/arrow-btn";
+@import "new_web/components/shadowbox";
+@import "new_web/components/animated-line";
+@import "new_web/components/collapse";
+@import "new_web/components/bottom-section-1";
+
+// Sections
+@import "services/hero";
+@import "services/performance";
+@import "services/funnels";
+@import "services/marketing";
+@import "services/infrastructure";
+@import "services/clients";
+
+@include media-breakpoint-down(md) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+// Services nav
+.services-nav {
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 42px;
+    color: #7e87a8;
+    padding: 15px 0;
+    font-weight: normal;
+    &:hover {
+      text-decoration: none;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &.active {
+      color: var(--primary);
+      font-weight: bold;
+      img {
+        display: block;
+      }
+    }
+    &.background-primary {
+      color: #B4DBFF;
+      &.active {
+        color: #fff;
+      }
+    }
+    img {
+      display: none;
+      max-width: 26px;
+      max-height: 28px;
+      margin-right: 20px;
+    }
+  }
+}
+
+// Mobile nav
+.mobile-nav {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #181D31;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  button {
+    background: #292F47;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff!important;
+    border-radius: 0;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      color: #fff;
+    }
+    &[aria-expanded="true"] img {
+      transform: rotate(180deg);
+    }
+    img {
+      transition: 0.5s;
+      transform: rotate(0);
+    }
+  }
+
+  .mobile-nav__content {
+    background: #181D31;
+    color: #fff;
+    padding: 15px 0 25px 0;
+
+    a {
+      color: #fff;
+      display: block;
+      padding: 13px 15px;
+      &:last-child {
+        padding-bottom:0;
+      }
+    }
+  }
+}

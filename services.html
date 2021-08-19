@@ -1,0 +1,105 @@
+---
+title: Services
+layout: pages/new-web/default
+body_class: services-page
+custom_header: new-web/header-2.html
+custom_footer: new-web/footer-2.html
+main_css: ""
+stylesheets:
+  - /assets/services.css
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
+scripts:
+  - /assets/js/new-web/active-in-view.js
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
+  - https://unpkg.com/magic-grid/dist/magic-grid.min.js
+scripts_footer:
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
+performance:
+  - title: "SoMe paid ads"
+    content: "From Pinterest & Quora to IG or Facebook and LinkedIn, if there's a social medium out there, chances are we run ads there. "
+  - title: "Search Ads"
+    content: "We create the ad copy, do the targeting and management for your SEM campaigns on Google or Bing."
+  - title: "Programmatic ads"
+    content: "Let the algorithms do the work, with our help. This less known type of advertisements can be really successful for niche industries."
+  - title: "Outbound lead gen (B2B)"
+    content: "We help you build a well-oiled machine that finds, reaches and converts leads, all automated and outsources."
+  - title: "Affiliate marketing"
+    content: "Whether it is complex partnerships or simple referral campaigns, we set you up with the best parties for your target audience."
+  - title: "Influencer marketing"
+    content: "Wherever your perfect customer is hanging out, we will find their idols and bind them to your brand."
+funnels:
+  - title: "Animation"
+    content: "From explainer videos to web animations, use engaging motion graphics to make your brand stand out."
+  - title: "Technical writing"
+    content: "Let our team dive into the topic of your choice and write on-point, but easy-to-understand content for your audience."
+  - title: "Brand strategy"
+    content: "We help new and existing brands with their brand positioning, voice, and visual style."
+  - title: "Sales funnel architecture"
+    content: "Reach your company objectives by building a well-oiled sales funnel. This is the moment you will systemize your marketing."
+  - title: "Copywriting"
+    content: "Our team of copywriters will help you find your brand’s voice and produce out-of-this-world pieces of content."
+  - title: "Story-driven email copywriting"
+    content: "Build a list of loyal subscribers through story-telling. Get your readers hooked and convert them into paying customers later."
+  - title: "Lead nurturing"
+    content: "Let us help you close more deals by designing a powerful lead nurture strategy. "
+  - title: "Content creation"
+    content: "To complement your marketing campaigns, we help you create the right type of content. Think photos, videos, GIFs, blogposts, social media banners and more. "
+  - title: "Website design"
+    content: "We build anything from simple landing pages to full-blown websites using an array of platforms like Squarespace, Wordpress, and Wix. "
+marketing:
+  - title: "Growth Loops"
+    content: "Our passion is to architect your automated growth 'machines' that integrate all aspects of your acquisition, conversion, and retention into a never-ending loop."
+  - title: "Onboarding"
+    content: "Delight your new users or customers with a world-class onboarding experience. The most crucial step for successful long-term retention."
+  - title: "Product-driven growth"
+    content: "We help you find ways for your product or service to generate more (user) growth. Let your product do the work for you."
+  - title: "Retention"
+    content: "Turn new users into loyal customers by finding a strategy for long-term retention."
+  - title: "Referral & virality"
+    content: "We will unlock the potential of word-of-mouth and virality by giving your customers something worth talking about."
+infrastructure:
+  - title: "Attribution"
+    content: "Through precise attribution we determine the ROI for your money spent on each marketing channel."
+  - title: "Tooling & infrastructure "
+    content: "We find your ultimate tech stack and integrate everything neatly with your existing infrastructure."
+  - title: "Marketing & automation "
+    content: "Free up time to focus on your business by automating marketing and sales activities."
+  - title: "Data-driven growth "
+    content: "We design experiments that generate growth using company data. We use past data or help you set up data collection processes."
+  - title: "High-tempo testing "
+    content: "Our team will help you put your hypotheses to the test and build a structured (weekly) process to find which ones are true and not."
+  - title: "Analytics & dashboarding"
+    content: "We make your most important business and marketing insights available to you with customised dashboards."
+---
+
+<!-- Hero -->
+{% include services/section-hero.html %}
+
+<!-- Performance -->
+{% include services/section-performance.html %}
+
+<!-- Funnels & Creative -->
+{% include services/section-funnels.html %}
+
+<!-- Product Marketing -->
+{% include services/section-marketing.html %}
+
+<!-- Infrastructure -->
+{% include services/section-infrastructure.html %}
+
+<!-- Clients -->
+{% include services/section-clients.html %}
+
+<!-- Bottom -->
+{% include new-web/bottom-section-1.html
+  subtitle="Still here?"
+  title="We should talk."
+  content="You got this far because the evidence is hard to ignore: we’ve grown businesses and will grow yours, too."  
+%}
+
+<!-- Mobile nav -->
+{% include services/navigation-mobile.html %}
+
+<script>
+  AOS.init({ once: true });
+</script>

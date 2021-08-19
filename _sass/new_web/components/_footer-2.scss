@@ -1,0 +1,45 @@
+footer {
+  padding-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+footer .double_logo {
+  filter: grayscale(1);
+  opacity: 0.8;
+}
+footer .divider-1 {
+  opacity: 0.2;
+  border-top: 1px solid #333a57;
+  margin-top: 0;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+  }
+}
+footer .divider-2 {
+  opacity: 0.1;
+  border-top: 1px solid #333a57;
+  margin-bottom: 25px;
+}
+footer .contact-details {
+  font-size: 14px;
+}
+footer .contact-details a {
+  color: #292f47;
+}
+footer .nav-link {
+  font-size: 14px;
+  color: #292f47 !important;
+  padding: 0;
+  opacity: 1;
+}
+footer a {
+  color: #292f47 !important;
+  opacity: 1;
+}
+footer .copyright {
+  color: #afafbf;
+  font-size: 12px;
+}

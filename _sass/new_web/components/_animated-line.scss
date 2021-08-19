@@ -1,0 +1,8 @@
+.animated-line {
+  z-index: 999;
+  clip-path: inset(0 0 100% 0);
+  transition: 1s;
+  &.active {
+    clip-path: inset(0 0 0 0);
+  }
+}
