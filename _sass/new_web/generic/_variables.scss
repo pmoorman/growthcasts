@@ -1,0 +1,13 @@
+$primary-color: #3497f3;
+$secondary-color: #292f47;
+$gray-600: #9499AD;
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  muted: $gray-600,
+);
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1110px,
+) !default;

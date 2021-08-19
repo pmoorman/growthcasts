@@ -1,0 +1,26 @@
+.marketing {
+  padding-top: 0;
+  position: relative;
+  top: -85px;
+  margin-bottom: -85px;
+  padding-bottom: 0;
+  @include media-breakpoint-down(md) {
+    top: -100px;
+    margin-bottom: -100px;
+  }
+
+  &__upper {
+    margin-bottom: 125px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 100px;
+    }
+
+    &__img {
+      position: relative;
+      bottom: -80px;
+      @include media-breakpoint-down(md) {
+        bottom: -60px;
+      }
+    }
+  }
+}

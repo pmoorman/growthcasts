@@ -9,14 +9,25 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M44383W"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- header -->
     {% unless page.hide_header %}
-    {% include new-web/header.html %}
+    {% if page.custom_header %}
+      {% include {{page.custom_header}} %}
+    {% else %}
+      {% include new-web/header.html %}
+    {% endif %}
     {% endunless %}
 
     {{ content }}
 
+    <!-- footer -->
     {% unless page.hide_footer %}
-    {% include new-web/footer.html %}
+    {% if page.custom_footer %}
+      {% include {{page.custom_footer}} %}
+    {% else %}
+      {% include new-web/footer.html %}
+    {% endif %}
     {% else %}
     <footer class="bg-secondary py-5">
       <div class="container">
@@ -28,6 +39,10 @@
       </div>
     </footer>
     {% endunless %}
+
+    {% for item in page.scripts_footer %}
+      <script src="{{item}}"></script>
+    {% endfor %}
 
     <script>
     (() => {

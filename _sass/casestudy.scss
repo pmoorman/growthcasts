@@ -13,7 +13,9 @@ $container-max-widths: (
 
 @import "vendors/bootstrap/bootstrap";
 @import "new_web/generic/font";
-@import "new_web/footer";
+@import "new_web/generic/typography-1";
+@import "new_web/components/footer-1";
+@import "new_web/components/webpreview";
 
 // Sections
 @import "casestudy/hero";
@@ -75,7 +77,7 @@ body {
 }
 
 blockquote {
-  border-left: 1px solid #E7E8EA;
+  border-left: 1px solid #e7e8ea;
   margin: 2.8rem 0;
   @include media-breakpoint-down(sm) {
     margin: 1.8rem 0;
@@ -108,7 +110,7 @@ a.btn-shadow:hover {
 }
 
 .shadow-secondary {
-  box-shadow: 14px 14px 0 0 $secondary-color!important;
+  box-shadow: 14px 14px 0 0 $secondary-color !important;
 }
 
 .content {

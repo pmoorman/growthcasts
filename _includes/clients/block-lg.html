@@ -1,0 +1,91 @@
+{% assign client = include.client %}
+
+<div
+  class="client-box__lg"
+  style="background-image: url('{{client.background_image}}');"
+>
+  <div
+    class="mobile-bg d-block d-lg-none"
+    style="background-image:url('{{client.background_image_mobile}}')"
+  ></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 px-0">
+        <div
+          class="client-box__logo"
+          style="background-color: {{client.background_color}};"
+        >
+          {% if client.logo %}
+          <img src="{{client.logo}}" alt="{{client.title}} logo" />
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-8 pl-4 pr-0">
+        {% if client.page_url %}
+        <a
+          href="{{client.page_url}}"
+          class="client-box__logo__arrow d-none d-lg-block d-lg-flex d-none"
+        >
+          <img
+            class="client-box__logo__arrow--non_hover"
+            src="/assets/images/clients/link_arrow-{{client.arrow}}.svg"
+          />
+          <div class="client-box__logo__arrow--hover">
+            <img src="/assets/images/clients/link_arrow-light.svg" />
+            <span>See Case Study</span>
+          </div>
+        </a>
+        {% endif %}
+        <div class="client-box__content">
+          <div class="client-box__content__inner">
+            <h3 class="client-box__content__title">{{client.title}}</h3>
+            <p class="client-box__content__industry">{{client.industry}}</p>
+            <p class="client-box__content__description">
+              {{client.description}}
+            </p>
+          </div>
+          {% if client.testimonial_name %}
+          <div class="client-box__testimonial">
+            <img
+              class="client-box__testimonial__line"
+              src="/assets/images/clients/testimonial_line.svg"
+            />
+            <p class="client-box__testimonial__name">
+              {{client.testimonial_name}}
+            </p>
+            <p class="client-box__testimonial__jobtitle">
+              {{client.testimonial_jobtitle}}
+            </p>
+          </div>
+          {% endif %}
+          <div class="d-block d-lg-none">
+            {% if client.page_url %}
+            <a
+              class="client-box__link_mobile btn btn-primary d-flex justify-content-between"
+              href="{{client.page_url}}"
+            >
+              See Case Study
+              <img
+                class="client-box__link_mobile__arrow"
+                src="/assets/images/clients/link_arrow-light.svg"
+              />
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client-box__services row d-none d-lg-flex">
+      <div class="col-lg-4 px-0 client-box__services__titlebox">
+        <p>We worked on:</p>
+      </div>
+      <div class="col-lg-8 px-0 client-box__services__valuebox">
+        <p>
+          {% for service in client.services %}
+          <span class="mr-4">#{{service}}</span>
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

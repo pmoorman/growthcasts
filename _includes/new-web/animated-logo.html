@@ -1,10 +1,21 @@
-<div class="animated-logo not-scroll position-relative">
-  <img class="back img-fluid" src="/assets/images/new-web/double_logo_back.png" />
-  <img class="fore img-fluid position-absolute" src="/assets/images/new-web/double_logo_fore.png" />
-</div> 
+{% if include.id %}
+{% assign id = include.id %}
+{% else %}
+{% assign id = 'animated-logo' %}
+{% endif %}
+
+<div id="{{id}}" class="animated-logo not-scroll position-relative">
+  <img
+    class="back img-fluid"
+    src="/assets/images/new-web/double_logo_back.png"
+  />
+  <img
+    class="fore img-fluid position-absolute"
+    src="/assets/images/new-web/double_logo_fore.png"
+  />
+</div>
 
 <style>
-
   .animated-logo img {
     transition: 1s;
   }
@@ -24,34 +35,42 @@
   }
 
   @keyframes animatedLogoFore {
-    from { transform: translateX(0); }
-    to { transform: translateX(-5%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5%);
+    }
   }
-  
+
   @keyframes animatedLogoBack {
-    from { transform: translateX(0); }
-    to { transform: translateX(4%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(4%);
+    }
   }
 </style>
 
 <script>
-(() => {
-  const animatedLogo = document.querySelector('.animated-logo');
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px 0px",
-    threshold: 1,
-  };
+  (() => {
+    const animatedLogo = document.querySelector("#{{id}}");
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px",
+      threshold: 1,
+    };
 
-  const callback = (entries) => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        animatedLogo.classList.add("active");
-      }
-    })
-  }
-  
-  const observer = new IntersectionObserver(callback, observerOptions);
-  observer.observe(animatedLogo);
-})()
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          animatedLogo.classList.add("active");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, observerOptions);
+    observer.observe(animatedLogo);
+  })();
 </script>

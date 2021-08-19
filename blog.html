@@ -1,36 +1,72 @@
 ---
-title: Blog - Double
-layout: pages/new-web/blog
-current: home
-class: 'home-template'
-navigation: True
+title: Blog
+layout: pages/new-web/default
+custom_header: new-web/header-2.html
+custom_footer: new-web/footer-2.html
+main_css: /assets/blog.css
+stylesheets:
+  - https://unpkg.com/aos@2.3.1/dist/aos.css
+scripts:
+  - /assets/js/new-web/active-in-view.js
+  - https://unpkg.com/aos@2.3.1/dist/aos.js
+scripts_footer:
+  - https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js
 ---
 
-<!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
 
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer" style="background-image:  url(/assets/images/blog-cover-2.jpg)">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                <img class="site-logo" src="/assets/images/double_logo_blog.png" alt="Double Blog"/>
-            </h1>
-            <h2 class="site-description">Growth marketing for startups</h2>
-        </div>
-        {% include site-nav.html %}
+<!-- Hero -->
+{% include blog/section-hero.html %}
+
+<!-- Blog posts -->
+<section class="blog-posts" style="padding-bottom: 0;">
+  <div class="container">
+    <div class="row post-cards">
+      {% for post in site.posts %}
+      {% if forloop.index < 5 %}
+      {% assign remainder = forloop.index | modulo: 2 %}
+      {% assign padding = "pr-lg-5 pl-lg-0" %}
+      {% if remainder == 0 %}
+      {% assign padding = "pl-lg-5 pr-lg-0" %}
+      {% endif %}
+      <div class="col-lg-6 {{padding}}">
+        {% include blog/post-card.html %}
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-</header>
+  </div>
+</section>
 
-<!-- The main content area -->
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+<!-- Subscribe banner -->
+{% include blog/section-subscribe.html %}
 
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {%  include post-card.html %}
-        </div>
-
+<!-- Blog posts -->
+<section class="blog-posts">
+  <div class="container">
+    <div class="row post-cards">
+      {% for post in site.posts %}
+      {% if forloop.index > 4 %}
+      {% assign remainder = forloop.index | modulo: 2 %}
+      {% assign padding = "pr-lg-5 pl-lg-0" %}
+      {% if remainder == 0 %}
+      {% assign padding = "pl-lg-5 pr-lg-0" %}
+      {% endif %}
+      <div class="col-lg-6 {{padding}}">
+        {% include blog/post-card.html %}
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-</main>
+  </div>
+</section>
+
+<!-- Bottom -->
+{% include new-web/bottom-section-1.html
+  subtitle="Become Our"
+  title="Next Client"
+  content="You got this far because the evidence is hard to ignore: we’ve grown businesses and will grow yours, too."  
+%}
+
+<script>
+  AOS.init({ once: true });
+</script>

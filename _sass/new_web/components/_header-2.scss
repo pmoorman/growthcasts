@@ -1,0 +1,147 @@
+.navbar {
+  padding-top: 50px;
+  z-index: 9;
+  @include media-breakpoint-down(md) {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      background: #51abff;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      transition: 1.5s;
+      text-align: center;
+      &.collapsing,
+      &.show {
+        opacity: 1;
+      }
+      > ul {
+        padding-top: 48px;
+        padding-bottom: 30px;
+      }
+      a {
+        color: #fff !important;
+        font-size: 18px;
+        opacity: 1;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 30px;
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
+}
+
+.nav-link {
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292f47 !important;
+  opacity: 0.6;
+}
+.navbar .nav-link.active {
+  opacity: 1;
+  font-weight: bold;
+}
+.navbar-toggler {
+  position: relative;
+  background: #51abff;
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: none !important;
+  z-index: 1;
+}
+.navbar-toggler-icon > div {
+  background: #fff;
+  height: 2px;
+  width: 100%;
+}
+.navbar-toggler-icon > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.toggler-menu-text {
+  position: absolute;
+  left: -55px;
+  top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #292f47;
+}
+
+.navbar-toggle {
+  z-index: 9999;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0 4px 0;
+  transition: all 0.2s;
+}
+
+.navbar-toggler {
+  background: var(--primary);
+}
+.navbar-toggler .icon-bar {
+  background: #ffffff;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
