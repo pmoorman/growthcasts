@@ -17,9 +17,9 @@ summary_items:
     - You can avoid being immediately flagged as an ad by using narrative device creatively
 ---
 
-**Advertising was once ruthless and beautiful.**
+**Advertising used to be ruthless and beautiful.**
 
-Ruthless because basic processes like audience targeting, producing copy, and analysing results were a slow, delicate affair. And beautiful, because the rigamarole constrained the game to a few pros who served their audiences with delightful ads.
+Ruthless, because basic processes like audience targeting, writing copy, and analysing results were slow, delicate affairs. And beautiful, because the rigamarole constrained the game to a few pros who served their audiences with delightful ads.
 
 Today’s internet advertising arena is the opposite. Because anyone with $5 and a keyboard can participate, we face:
 - An overload of poorly executed ads
@@ -62,11 +62,11 @@ Instead, we can tell stories that involve elements specific to *their* lives.
 
 If I was advertising a composition course to new photographers, I'd open a Facebook ad like this:
 
-*John showed the classic sign of an amateur photographer: All his questions were about my exposure settings and gear.*
+*John showed the classic sign of an amateur: All his questions were about my camera gear and exposure settings.*
 
-*So when we explored his photos together, I immediately spotted what was holding him back.*
+*When I reviewed his photos, it was obvious what was holding him back:*
 
-*He’d taken the “Rule of thirds” to heart and was using it wherever he could. But, in addition to making all of his frames look similar, his focus on it was preventing him from creating photos that left viewers with a feeling.*
+*He’d taken the “Rule of thirds” to heart and was using it wherever he could. His focus on it was preventing him from creating photos that left viewers feeling something.*
 
 *I often meet photographers like John who are hung up about camera settings. Here’s the secret - those settings are just the accounting of photography. They’re admin.*
 
@@ -82,29 +82,34 @@ If I was advertising a distraction-free writing program to copywriters, I could 
 
 *I am an undisciplined copywriter.*
 
-*Within minutes of opening a new Google Doc, I will open a new tab on autopilot.*
+*Within minutes of opening a new Google Doc, I'll open a new tab on autopilot.*
 
 *Ten minutes later, I'll wake up to the fact that that I’m somehow browsing the Bitcoin subreddit...*
 
-*So when my CMO confronted me about my productivity, it wasn’t easy to share the problem - I was sure she would judge me as lazy. But, all she did was laugh and tell me to open a blank text document instead of my browser.*
+*When I was confronted by my CMO about my productivity, it wasn’t easy to tell her the truth - I was sure she would judge me as lazy. But, all she did was laugh and tell me to open a blank text document instead of my browser.*
 
 *I gave it a go.*
 
 *A few days of writing copy in Notepad later... I was a new writer.*
 
-*All I needed was an environment that made it easy to do the right thing.*
+*It turns out that all I needed was an environment that made it easy to do the right thing.*
 
-*With that said, Notepad left much to be desired. I was forever copying, pasting, and reformatting.*
+*With that said, Notepad left much to be desired.*
+
+*I was forever copying, pasting, and reformatting.*
 
 *And that’s what led me to chat with our developer about building a copywriter’s dream text editor...*
 
-So, go on and try this new approach with your ads. One beautiful consequence of our cheap advertising arena is that you can test bold approaches with little repercussion.
+**Get the gist?**
+
+Go on and try this approach with your ads. One beautiful consequence of our cheap advertising arena is that you can test bold approaches with few repercussions.
 
 Dare to:
--Tell stories about interesting events and people, then tie them back to your offer
+
+- Tell stories about interesting events and people, then tie them back to your offer
 - Speak in terms of “we” and “they”, rather than “you”.
 
-And if this article is showing you that you need new ads now... email [Pieter](mailto:pieter@doubleagency.com) and we’ll take care of it.
+And if this article is showing you that you need new ads **now**... email [Pieter](mailto:pieter@doubleagency.com) and we’ll take care of it.
 
 
 Written by [Sandy](https://www.linkedin.com/in/sandy-radburnd/)
