@@ -35,6 +35,7 @@ $container-max-widths: (
 // Components
 @import "components/logo_grid";
 @import "components/progress_list";
+@import "new_web/components/collapse";
 
 .box-with-shadow {
   height: 100%;
