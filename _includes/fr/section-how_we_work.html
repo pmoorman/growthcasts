@@ -1,0 +1,34 @@
+{% assign d = page.how_we_work | default: site.data.proposal.how_we_work %}
+
+<section id="how-we-work" class="how_we_work">
+	<div class="container">
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12 container-narrow">
+				<h2>{{ d.title }}</h2>
+				<p class="lead">
+					{{ d.intro | markdownify | strip_html }}
+				</p>
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center my-4 my-md-5 pb-md-5">
+			<div class="col-md-12">
+				<div class="logo_grid">
+					{% for logo in d.logos %}
+					<div class="logo_grid__item">
+						<img data-aos="fade" data-aos-delay="{{ forloop.index | times: 100 }}" data-aos-duration="500" data-aos-easing="linear" class="img-fluid" src="{{ logo.url | relative_url }}" />
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12 container-narrow">
+				{{ d.footer | markdownify }}
+			</div>
+		</div>
+
+	</div>
+</section>
