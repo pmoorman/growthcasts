@@ -1,0 +1,229 @@
+$primary-color: #3497f3;
+$secondary-color: #181d33;
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+);
+
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1040px,
+) !default;
+
+@import "vendors/bootstrap/bootstrap";
+@import "new_web/generic/font";
+@import "new_web/generic/typography-1";
+
+// Sections
+@import "fr/about";
+@import "fr/footer";
+@import "fr/hero";
+@import "fr/how_we_work";
+@import "fr/pricing";
+@import "fr/proud_work";
+@import "fr/ready_to_start";
+@import "fr/content_sections";
+@import "fr/mobile_header";
+
+// Work
+@import "fr/work/elugie";
+@import "fr/work/sendcloud";
+@import "fr/work/tiktok";
+
+// Components
+@import "components/logo_grid";
+@import "components/progress_list";
+@import "new_web/components/collapse";
+
+.box-with-shadow {
+  height: 100%;
+  border: 1px solid #d4d7e1;
+  box-shadow: 8px 8px 0 0 rgba(148, 154, 180, 0.4);
+}
+
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #181d33;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content-section {
+  max-width: 600px;
+  @include media-breakpoint-between(md, lg) {
+    max-width: 500px;
+  }
+}
+.container-narrow {
+  max-width: 710px;
+}
+
+// TODO: Move to other file
+.checkmark .back img,
+.checkmark .fore {
+  width: 30px;
+  height: 30px;
+}
+.checkmark p {
+  margin-bottom: 0;
+}
+
+.checkmark {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  position: absolute;
+  left: -35px;
+}
+.checkmark .fore,
+.checkmark img {
+  border-radius: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+
+.checkmark.active .fore,
+.checkmark.active img {
+  opacity: 1;
+}
+.checkmark.active .fore {
+  animation: fore 0.5s linear both;
+}
+.checkmark.active .back {
+  animation: back 0.5s linear both;
+}
+.checkmark .back {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.checkmark-number {
+  text-align: center;
+}
+.checkmark-number .fore {
+  margin-right: 15px;
+  background: #181d33;
+  border-radius: 100%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  padding-top: 6px;
+  font-size: 18px;
+}
+
+.checkmark.active .fore {
+  animation: fore 0.5s linear both;
+}
+.checkmark.active .back {
+  animation: back 0.5s linear both;
+}
+
+@keyframes fore {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-2px, -2.5px);
+  }
+}
+
+@keyframes back {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2px, 2.5px);
+  }
+}
+
+.checkmark_list__item {
+  @include media-breakpoint-down(sm) {
+    .checkmark {
+      position: initial;
+    }
+    &-body {
+      width: calc(100% + 40px);
+      position: relative;
+      left: -45px;
+    }
+  }
+}
+
+// Animations
+.animate-pulse-vertical {
+  animation: pulse 2s infinite;
+}
+.animate-pulse-horizontal {
+  animation: pulsehorizontal 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes pulsehorizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(15px, 0);
+    transform: translate(15px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes pulsehorizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(15px, 0);
+    transform: translate(15px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}

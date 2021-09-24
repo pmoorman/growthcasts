@@ -1,0 +1,8 @@
+.proud_work {
+	overflow: hidden;
+	&__item:not(:last-child) {
+		@include media-breakpoint-down(md) {
+      padding-bottom: 150px!important;
+    }
+	}
+}

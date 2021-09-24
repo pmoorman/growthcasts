@@ -1,0 +1,45 @@
+<div class="row justify-content-end">
+	<div class="col-md-6 px-0 position-relative">
+		<div class="elugie_animation">
+			<div class="elugie_animation__oval" id="elugie_animation__oval">
+				<img src="/assets/images/proposals/elugie_animatie/oval.svg" />
+			</div>
+			<div class="elugie_animation__halfcircle" id="elugie_animation__halfcircle">
+				<img src="/assets/images/proposals/elugie_animatie/geel_half_rondje.svg" />
+			</div>
+			<div class="elugie_animation__path1" id="elugie_animation__path1">
+				<img src="/assets/images/proposals/elugie_animatie/path_1.svg" />
+			</div>
+			<div class="elugie_animation__path2" id="elugie_animation__path2">
+				<img src="/assets/images/proposals/elugie_animatie/path_2.svg" />
+			</div>
+		</div>
+		{% include proposal/work/inner.html
+			image="/assets/images/proposals/Elugie-logo-dark.svg"
+			body="By having an outside perspective we were able to notice things elugie’s team couldn’t. Things that were so crucial, they decided to change the company focus segment."
+			button_color="#181D33"
+		%}
+	</div>
+</div>
+
+<script>
+  (() => {
+    const elugieAnimation = document.querySelector(".elugie_animation");
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px",
+      threshold: 1,
+    };
+  
+		const callback = (entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					elugieAnimation.classList.add("active")
+				}
+			})
+    }
+    
+    const observer = new IntersectionObserver(callback, observerOptions);
+		observer.observe(elugieAnimation);
+  })()
+</script>

@@ -1,0 +1,41 @@
+{% assign title = page.pricing.title | default: site.data.proposal.pricing.title %}
+{% assign intro = page.pricing.intro | default: site.data.proposal.pricing.intro %}
+{% assign items = page.pricing.items | default: site.data.proposal.pricing.items %}
+{% assign footer = page.pricing.footer | default: site.data.proposal.pricing.footer %}
+
+<section id="pricing" class="pricing my-4 py-4 my-md-5 py-md-5">
+	<div class="container">
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12 container-narrow">
+				<h3>{{ title }}</h3>
+				{{ intro | markdownify }}
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-center my-5 pb-4">
+			<div class="row text-center" style="max-width: 910px;">
+				{% for item in items %}
+				<div class="col-md-4 p-2 px-4" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 100 }}">
+					<div class="px-2 pt-4 p-md-5 text-dark text-center d-flex flex-column justify-content-between box-with-shadow">
+						<div class="upper mb-3">
+							<h4 class="font-weight-normal">{{ item.title }}</h4>
+						</div>
+						<div class="lower">
+							<p class="price text-primary font-weight-bold mb-0">{{ item.price }}</p>
+							<p>{{ item.below_price }}</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="col-md-12 container-narrow">
+				{{ footer | markdownify }}
+			</div>
+		</div>
+
+	</div>
+</section>
