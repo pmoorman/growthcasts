@@ -1,0 +1,73 @@
+.about {
+  overflow: hidden;
+  &__logo {
+    width: 360px;
+    @include media-breakpoint-down(md) {
+      width: 200px;
+      margin: auto;
+    }
+  }
+  &__bg {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &_img {
+      &-1,
+      &-3,
+      &-4 {
+        position: absolute;
+      }
+      &-1 {
+        height: 205px;
+        bottom: 220px;
+        left: -14%;
+      }
+      &-2 {
+        height: 341px;
+      }
+      &-3 {
+        height: 237px;
+        top: 0;
+        right: -14%;
+      }
+      &-4 {
+        height: 110px;
+        right: -2%;
+        top: 400px;
+      }
+      @include media-breakpoint-down(md) {
+        position: relative;
+        &-1 {
+          order: 2;
+          height: 142.5px;
+          bottom: initial;
+          top: 20px;
+          left: -105px;
+        }
+        &-2 {
+          order: 3;
+          height: 130px;
+          right: -125px;
+          top: -50px;
+        }
+        &-3 {
+          order: 1;
+          height: 189px;
+          right: -80px;
+        }
+        &-4 {
+          order: 4;
+          right: -2px;
+          top: initial;
+        }
+      }
+    }
+  }
+}

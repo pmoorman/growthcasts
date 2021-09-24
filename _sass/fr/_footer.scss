@@ -1,0 +1,57 @@
+.footer {
+  &__person {
+    position: absolute;
+    z-index: -1;
+    top: -421px;
+    left: -81px;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      top: initial;
+      left: initial;
+      text-align: center;
+    }
+    img {
+      width: 440px;
+    }
+    &__name_img {
+      height: 28px;
+    }
+    &__name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    &__title {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  &__button {
+    height: 270px;
+    padding-left: 71px;
+    width: calc(50vw - 23px);
+    @include media-breakpoint-down(md) {
+      height: 127px;
+      width: calc(100vw);
+      margin-left: -15px;
+      padding-left: 0;
+      align-items: center;
+    }
+    &__title {
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 48px;
+      letter-spacing: 1.1px;
+      @include media-breakpoint-down(md) {
+        font-size: 22px;
+        line-height: 48px;
+        letter-spacing: 0.8px;
+      }
+    }
+    &--1 {
+      background: #3497f3;
+    }
+    &--2 {
+      background: #181d33;
+    }
+  }
+}

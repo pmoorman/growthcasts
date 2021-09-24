@@ -16,21 +16,21 @@ $container-max-widths: (
 @import "new_web/generic/typography-1";
 
 // Sections
-@import "proposal/about";
-@import "proposal/footer";
-@import "proposal/hero";
-@import "proposal/how_we_work";
-@import "proposal/pricing";
-@import "proposal/proud_work";
-@import "proposal/ready_to_start";
-@import "proposal/content_sections";
-@import "proposal/auth_login";
-@import "proposal/mobile_header";
+@import "fr/about";
+@import "fr/footer";
+@import "fr/hero";
+@import "fr/how_we_work";
+@import "fr/pricing";
+@import "fr/proud_work";
+@import "fr/ready_to_start";
+@import "fr/content_sections";
+@import "fr/auth_login";
+@import "fr/mobile_header";
 
 // Work
-@import "proposal/work/elugie";
-@import "proposal/work/sendcloud";
-@import "proposal/work/tiktok";
+@import "fr/work/elugie";
+@import "fr/work/sendcloud";
+@import "fr/work/tiktok";
 
 // Components
 @import "components/logo_grid";

@@ -1,34 +1,26 @@
 <section id="hero" class="hero">
-	<div class="hero__inner container d-flex flex-column align-items-center justify-content-center py-5">
-		<div class="row justify-content-center text-center mb-5" data-aos="fade-up">
+	<div class="hero__inner container d-flex flex-column align-items-center justify-content-center pb-5">
+		<div class="row justify-content-center text-center mb-5">
 			<div class="col-md-12">
-				<h2 class="hero__subtitle mb-0">Marketing</h2>
-				<h1>Proposal</h1>
+				<div style="width: 500px; max-width: 100%">
+					{% include new-web/animated-logo.html id="hero-logo" %}
+				</div>
 			</div>
 		</div>
-		<div class="row flex-column flex-md-row justify-content-center align-items-center py-md-5 my-md-5">
-			<div data-aos="fade-right">
-				<img class="hero__double_logo img-fluid" src="{{ "/assets/images/proposals/double_logo.png" | relative_url }}" />
-			</div>
-			<div class="hero__cross">
-				<div data-aos="fade-up-left">
-					<div class="hero__cross__item hero__cross__item--1"></div>
+		<div  style="width: 800px; max-width: 100%">
+			<div class="video-wrapper shadow-secondary" style="box-shadow: 20px 20px 0px var(--secondary);">
+				<script src="https://fast.wistia.com/embed/medias/eap2y2f006.jsonp" async></script>
+				<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+				<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+					<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+						<div class="wistia_embed wistia_async_eap2y2f006 videoFoam=true" style="height:100%;position:relative;width:100%">
+							<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+								<img src="https://fast.wistia.com/embed/medias/eap2y2f006/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+							</div>
+						</div>
+					</div>
 				</div>
-				<div data-aos="fade-down-left">
-					<div class="hero__cross__item hero__cross__item--2"></div>
-				</div>
 			</div>
-			<div data-aos="fade-left">
-				<img class="hero__client_logo img-fluid" src="{{ page.client_logo | relative_url }}" />
-			</div>
-		</div>
-		<div class="row justify-content-center mt-5" data-aos="fade-down" data-aos-once="true" data-aos-duration="500">
-			<a href="#content-sections" style="color: initial;" class="d-flex flex-column align-items-center">
-				<h4 data-aos="fade-down" data-aos-once="true" data-aos-duration="500">Go to Proposal</h4>
-				<div data-aos="fade-down" data-aos-once="true" class="animate-pulse-vertical" style="width: 40px;">
-					{% include proposal/internal/arrow_black.html %}
-				</div>
-			</a>
 		</div>
 	</div>
 </section>

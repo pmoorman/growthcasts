@@ -1,0 +1,56 @@
+.content_sections {
+  &__inner {
+    position: sticky;
+    top: 150px;
+    bottom: 20px;
+    height: 0;
+    margin-bottom: 180px;
+  }
+  &__nav {
+    position: sticky;
+    top: 150px;
+    margin-bottom: 64px;
+    &__inner {
+      position: absolute;
+      left: 0;
+    }
+    &__title {
+      max-width: 200px;
+      position: relative;
+      left: -80px;
+      @include media-breakpoint-between(md, lg) {
+        left: 0;
+        max-width: 150px;
+      }
+    }
+  }
+  &__logo_sidebar {
+    position: absolute;
+    right: 0;
+    &__client_logo {
+      width: 160px;
+    }
+    &__double_logo {
+      width: 160px;
+      transition: .5s all ease-in-out;
+    }
+    &__cross {
+      height: 30px;
+      top: 15px;
+      position: relative;
+      transition: .5s all ease-in-out;
+      &__item {
+        height: 1px;
+        width: 40px;
+        &--1 {
+          transform: rotate(45deg);
+          background: black;
+        }
+        &--2 {
+          background: #51abff;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
