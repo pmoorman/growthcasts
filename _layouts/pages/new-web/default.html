@@ -29,15 +29,17 @@
       {% include new-web/footer.html %}
     {% endif %}
     {% else %}
-    <footer class="bg-secondary py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center" style="font-size: 14px; opacity: 0.6;">
-            Copyright © 2020 Double LLC. All Rights Reserved.
+      {% unless page.hide_smfooter %}
+        <footer class="bg-secondary py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col text-center" style="font-size: 14px; opacity: 0.6;">
+                Copyright © 2020 Double LLC. All Rights Reserved.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </footer>
+        </footer>
+      {% endunless %}
     {% endunless %}
 
     {% for item in page.scripts_footer %}
