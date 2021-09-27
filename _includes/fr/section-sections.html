@@ -32,7 +32,7 @@
 					<div class="blocks">
 						{% for block in section.blocks %}
 							<div class="{% if forloop.last == false %}mb-5{% endif %}">
-								{% assign partial = "proposal/blocks/" | append: block.type | append: ".html" %}
+								{% assign partial = "fr/blocks/" | append: block.type | append: ".html" %}
 								{% include {{ partial }} data=block.data %}
 							</div>
 						{% endfor %}
