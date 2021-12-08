@@ -1,0 +1,76 @@
+<div class="row justify-content-end">
+  <div class="col-md-6 px-0 position-relative">
+    <div class="tiktok_elements">
+      <div
+        id="tiktok_elements__element-1"
+        class="tiktok_elements__element-1">
+        <img src="/assets/images/proposals/tiktok_animatie/rood_blokje.svg" />
+      </div>
+      <div
+        id="tiktok_elements__element-2"
+        class="tiktok_elements__element-2">
+        <img src="/assets/images/proposals/tiktok_animatie/groen_blokje.svg" />
+      </div>
+      <div
+        id="tiktok_elements__element-3"
+        class="tiktok_elements__element-3">
+        <img src="/assets/images/proposals/tiktok_animatie/zwart_blokje.svg" />
+      </div>
+    </div>
+    {% include proposal/work/inner.html
+    image="/assets/images/proposals/TikTok_logo.svg"
+    body="Learn how we’ve become TikTok’s technical handymen and scale-up
+    department." button_color="#FF004F" %}
+  </div>
+</div>
+
+<script>
+  (() => {
+    const elOne = document.querySelector("#tiktok_elements__element-1");
+		const elTwo = document.querySelector("#tiktok_elements__element-2");
+		const elThree = document.querySelector("#tiktok_elements__element-3");
+
+    const rotateEl = (el, px) => {
+      const distancePercentage = doubleUtils.getDistancePercentage(el);
+      const deg = (px / 100) * distancePercentage;
+			$(el).css("transform", `rotate(${deg}deg)`);
+		}
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "50px",
+      threshold: 0,
+    };
+  
+    const listeners = {}
+		const callback = (entries) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        const id = el.getAttribute("id")
+        if (entry.intersectionRatio > 0) {
+          listeners[id] = () => {
+            switch (id) {
+              case "tiktok_elements__element-1":
+                rotateEl(el, -40);
+                break;
+              case "tiktok_elements__element-2":
+                rotateEl(el, 40);
+                break;
+              case "tiktok_elements__element-3":
+                rotateEl(el, -60);
+                break;
+            }
+          }
+					window.addEventListener("scroll", listeners[id]);
+        } else {
+          window.removeEventListener("scroll", listeners[id]);
+        }
+			})
+    }
+    
+    const observer = new IntersectionObserver(callback, observerOptions);
+		observer.observe(elOne);
+		observer.observe(elTwo);
+		observer.observe(elThree);
+  })()
+</script>

@@ -1,0 +1,70 @@
+<div class="row">
+	<div class="col-md-6 px-0 position-relative">
+		<div class="soundcloud_clouds">
+			<div class="soundcloud_clouds__cloud-1" id="soundcloud_clouds__cloud-1">
+				<img src="/assets/images/proposals/sendcloud_animatie/wit_wolkje.svg" />
+			</div>
+			<div class="soundcloud_clouds__cloud-2" id="soundcloud_clouds__cloud-2">
+				<img src="/assets/images/proposals/sendcloud_animatie/blauw_wolkje.svg" />
+			</div>
+			<div class="soundcloud_clouds__cloud-3" id="soundcloud_clouds__cloud-3">
+				<img src="/assets/images/proposals/sendcloud_animatie/donker_wolkje.svg" />
+			</div>
+		</div>
+		{% include proposal/work/inner.html
+			image="/assets/images/proposals/Sendcloud_logo.svg"
+			body="We started working on copywriting and ended up updating their whole marketing strategy."
+			button_color="#1D97FF"
+		%}
+	</div>
+</div>
+
+<script>
+	(() => {
+		const elOne = document.querySelector("#soundcloud_clouds__cloud-1");
+		const elTwo = document.querySelector("#soundcloud_clouds__cloud-2");
+		const elThree = document.querySelector("#soundcloud_clouds__cloud-3");
+
+		const translateEl = (el, px) => {
+			$(el).css("transform", `translateX(${px}px)`);
+		}
+
+		const observerOptions = {
+			root: null,
+			rootMargin: "-100px 0px",
+			threshold: 0,
+		};
+
+		const listeners = {}
+		const callback = (entries) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+				const id = el.getAttribute("id");
+				if (entry.intersectionRatio > 0) {
+					listeners[id] = () => {
+						const distancePercentage = doubleUtils.getDistancePercentage(el);
+						switch (id) {
+							case "soundcloud_clouds__cloud-1":
+								translateEl(el, `-${distancePercentage}`);
+								break;
+							case "soundcloud_clouds__cloud-2":
+								translateEl(el, `-${distancePercentage}`);
+								break;
+							case "soundcloud_clouds__cloud-3":
+								translateEl(el, distancePercentage);
+								break;
+						}
+					};
+					window.addEventListener("scroll", listeners[id]);
+				} else {
+          window.removeEventListener("scroll", listeners[id])
+        }
+			})
+		}
+	
+		const observer = new IntersectionObserver(callback, observerOptions);
+		observer.observe(elOne);
+		observer.observe(elTwo);
+		observer.observe(elThree);
+	})()
+</script>

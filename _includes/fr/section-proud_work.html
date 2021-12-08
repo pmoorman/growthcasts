@@ -1,0 +1,20 @@
+{% assign d = page.proud_work %}
+
+<section id="proud-work" class="proud_work mb-md-5 pb-md-5 mb-0 pb-0 mt-4 pt-4 mt-md-5 pt-md-5">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6 text-center text-md-left">
+				<h2>{{ d.title }}</h2>
+			</div>
+		</div>
+
+		{% for item in d.items %}
+			<div id="work-{{item.name}}" class="proud_work__item py-5">
+				{% assign partial = "proposal/work/" | append: item.name | append: ".html" %}
+				{% include {{ partial }} %}
+			</div>
+		{% endfor %}
+
+	</div>
+</section>

@@ -1,0 +1,49 @@
+.hero {
+  overflow: hidden;
+  &__inner {
+    min-height: calc(100vh + -200px);
+  }
+  &__subtitle {
+    line-height: 60px;
+    font-weight: 300;
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+      margin-bottom: 0;
+      line-height: 24px;
+    }
+  }
+  &__double_logo {
+    width: 248px;
+    @include media-breakpoint-down(md) {
+      width: 160px;
+    }
+  }
+  &__client_logo {
+    width: 248px;
+    @include media-breakpoint-down(md) {
+      width: 160px;
+    }
+  }
+  &__cross {
+    @include media-breakpoint-down(md) {
+      height: 120px;
+      position: relative;
+      top: 60px;
+    }
+    &__item {
+      height: 1px;
+      width: 225px;
+      @include media-breakpoint-down(md) {
+        width: 70px;
+      }
+      &--1 {
+        background: black;
+        transform: rotate(45deg);
+      }
+      &--2 {
+        background: #51abff;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

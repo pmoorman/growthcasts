@@ -1,0 +1,45 @@
+<div id="content-sections" class="content_sections mb-4 pb-4 mb-md-5 pb-md-5">
+
+	<div class="content_sections__inner container d-none d-md-block">
+		
+		<div class="content_sections__logo_sidebar section-aos-offset d-flex justify-content-end" data-aos="fade-zoom-in" data-aos-offset="50">
+			<div class="d-flex flex-column align-items-center">
+				
+				<div class="content_sections__logo_sidebar__cross" style="opacity: 0;">
+					<div class="section-aos-offset">
+						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--1">
+						</div>
+					</div>
+					<div class="section-aos-offset">
+						<div class="content_sections__logo_sidebar__cross__item content_sections__logo_sidebar__cross__item--2">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	{% for section in page.sections %}
+	{% assign id = section.title | replace: " " "-" | downcase %}
+	<section id="{{ id }}" class="content_section content_section-{{ forloop.index }} {% if forloop.last == false %}pb-5 mb-5{% endif %}">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				
+				<div class="col-md-8 content-section">
+					<h2>{{ section.title }}</h2>
+					<div class="blocks">
+						{% for block in section.blocks %}
+							<div class="{% if forloop.last == false %}mb-5{% endif %}">
+								{% assign partial = "fr/blocks/" | append: block.type | append: ".html" %}
+								{% include {{ partial }} data=block.data %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% endfor %}
+</div>

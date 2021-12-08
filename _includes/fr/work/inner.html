@@ -1,0 +1,16 @@
+{% assign image = include.image %} 
+{% assign body = include.body %} 
+{% assign button_text = include.button_text | default: "Go to Case Study" %} 
+{% assign button_color = include.button_color | default: "#1D97FF" %} 
+{% assign button_link = include.button_link | default: "https://drive.google.com/file/d/1S87CuBlq9VVZHJ3_8QOjdrMIZCHMpHI4/view?usp=sharing" %}
+
+<div class="mb-5 text-center text-md-left">
+  <img
+    class="work_logo"
+    src="{{ image | relative_url }}"
+  />
+</div>
+<p class="lead mb-4 text-center text-md-left px-4 px-md-0">{{ body | markdownify | strip_html }}</p>
+<a class="text-center text-md-left" href="{{button_link}}">
+  <p class="lead" style="color: {{button_color}};">{{ button_text }} ></p>
+</a>
