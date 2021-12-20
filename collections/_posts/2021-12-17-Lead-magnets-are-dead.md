@@ -11,7 +11,7 @@ class: post-template
 subclass: 'post'
 author: sandy
 excerpt:
-summary_items:
+summary_items: How to revitalise the digital marketer’s most essential asset
 ---
 
 We’re firm in our belief that **a lot of today’s marketing is repulsive.** A prime example is the current state of *lead magnets:* the free offers companies give you in exchange for submitting your email address.

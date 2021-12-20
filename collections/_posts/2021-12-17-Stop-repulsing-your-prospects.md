@@ -11,7 +11,8 @@ class: post-template
 subclass: 'post'
 author: sandy
 excerpt:
-summary_items:
+summary_items: Put an end to the behaviours that give marketers a bad rap
+
 ---
 
 **The jury is out, or is it?** Some people see us as tricksters. And others believe we’re downright *deceptive.* So, how did we marketers earn our reputation?
