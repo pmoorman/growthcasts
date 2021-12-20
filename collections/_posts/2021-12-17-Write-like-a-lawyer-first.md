@@ -11,7 +11,7 @@ class: post-template
 subclass: 'post'
 author: sandy
 excerpt: The writing technique that’s dramatically improved our conversions
-summary_items:
+summary_items: Understanding the hidden yet critical backbone of persuasive writing
 ---
 
 Our clients all say the same thing - whether they are the solo-founded startup, the scale-up, or the VC-funded behemoth.
