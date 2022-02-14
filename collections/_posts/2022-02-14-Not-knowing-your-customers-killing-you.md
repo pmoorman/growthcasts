@@ -5,7 +5,7 @@ cover: /assets/images/not-knowing-customers.jpg
 navigation: True
 title: Not knowing your customers is slowly killing you
 subtitle:
-date: 2022-02-14 11:07:01
+date: 2022-02-14
 tags: Customer Research
 class: post-template
 subclass: 'post'
