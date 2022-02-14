@@ -5,7 +5,7 @@ cover: /assets/images/customer-research.jpg
 navigation: True
 title: Customer research like a pro (even if you aren’t one)
 subtitle:
-date: 2022-02-14 11:07:01
+date: 2022-02-14
 tags: Customer Research
 class: post-template
 subclass: 'post'
