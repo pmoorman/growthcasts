@@ -3,7 +3,7 @@ layout: pages/new-web/post
 current: post
 cover: /assets/images/hire-remote.jpg
 navigation: True
-title: Not knowing your customers is slowly killing you
+title: Want to hire the best talent? Hire remote.
 subtitle:
 date: 2022-02-14
 tags: Customer Research
