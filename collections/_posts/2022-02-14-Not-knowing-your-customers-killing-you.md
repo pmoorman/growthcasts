@@ -6,7 +6,7 @@ navigation: True
 title: Not knowing your customers is slowly killing you
 subtitle:
 date: 2022-02-14
-tags: Customer Research
+tags: CustomerResearch
 class: post-template
 subclass: 'post'
 author: naveed

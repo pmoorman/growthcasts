@@ -6,7 +6,7 @@ navigation: True
 title: Customer research like a pro (even if you aren’t one)
 subtitle:
 date: 2022-02-14
-tags: Customer Research
+tags: CustomerResearch
 class: post-template
 subclass: 'post'
 author: naveed
