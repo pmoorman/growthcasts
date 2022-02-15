@@ -10,7 +10,7 @@ tags: Customer Research
 class: post-template
 subclass: 'post'
 author: naveed
-excerpt: Remote work has now made hidden gems more accessible. When will you take advantage?
+excerpt: Remote work has made hidden gems more accessible. When will you take advantage?
 summary_items: Hiring remote workers presents a daunting challenge, but the pay-offs are massive.
 ---
 
@@ -27,11 +27,11 @@ The ship called ‘Traditional Hiring’ was sailing peacefully along, until a 8
 
 Almost overnight, the things that you thought your top workers cared about…
 
--Foosball tables
--Standing tables
--Tennis (the mini version played on tables)
--Dogs in the office
--That gong you hit when someone does a thing
+1. Foosball tables
+2. Standing tables
+3. Tennis (the mini version played on tables)
+4. Dogs in the office
+5. That gong you hit when someone does a thing
 
 …all paled in comparison to the option of working from home.
 
@@ -43,12 +43,13 @@ Top local talent is almost always hired by industry big fish. Not necessarily be
 
 The good news? There’s a new breed of worker emerging that is ambitious, focused, proactive and has few opportunities in their home country. These mostly younger professionals are now popping up all over the world and, simply put, there are winners amongst them.
 
-Give this a thought, what qualities does a person that doesn’t want to be bound to their physical boundaries and current circumstance have? A lot of the same ones you’d like your employees to have. 
-The good news is that you can hire these superstars with little extra legal effort. The real battle will be an internal one; for you as a leader, and changing your team’s work culture to accommodate the move to remote. 
+Give this a thought, what qualities does a person that doesn’t want to be bound to their physical boundaries and current circumstance have? A lot of the same ones you’d like your employees to have: proactivity, tenacity and thick skin.
+
+You can hire these superstars with little extra legal effort. The real battle will be an internal one; for you as a leader, and changing your team’s work culture to accommodate the move to remote. 
 
 #### **Why remote teams smash it**
 
-In my opinion, there are four reasons beyond the obvious that make remote teams more productive and more impactful on company culture.
+In my opinion, there are four reasons beyond the obvious that make remote teams more productive and impactful on company culture.
 
 **Longer period for ‘aha-moments’ throughout 24 hours:**
 
@@ -56,7 +57,7 @@ At Double, the largest time difference between any two employees is 12 hours. Wh
 
 **Clearer insight into actual input (time) vs output for key tasks**
 
-Once you take out the distractions (not all bad) that an office environment throws up, you’ll have a clearer estimate of how long tasks really take, as well as the quality of the final output. In our experience, actual time per task has dropped, and output has increased. This will allow you to delegate and manage timelines, as well as managing expectations more accurately.
+Once you filter out the distractions (not all bad) that an office environment throws up, you’ll have a clearer estimate of how long tasks really take, as well as the quality of the final output. In our experience, actual time per task has dropped, and output has increased. This will allow you to delegate work, as well as manage project timelines and client expectations more accurately.
 
 **Healthy competition**
 
@@ -68,7 +69,7 @@ Diversity is a word that has been used ad nauseum. However, access to insights f
 
 #### **Conclusion**
 
-True remote hiring has no boundaries and hires the right person wherever they may be in the world. Some claim to be visionaries, but can’t look past time zone differences and tax policies. Short sighted I know, but it leaves more talent for the real mavericks to pick up.
+True remote hiring has no boundaries and hires the right person wherever they may be in the world. Some company leaders claim to be visionaries, but can’t look past time zone differences and tax policies. Short-sighted, but it leaves more talent for the real mavericks to pick up.
 
 Start by hiring remote writers, marketers, and designers. Once the hiring model and onboarding process is refined, scale as needed.
 
