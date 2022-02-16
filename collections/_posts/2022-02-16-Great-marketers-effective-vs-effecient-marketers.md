@@ -3,7 +3,7 @@ layout: pages/new-web/post
 current: post
 cover: /assets/images/effective-vs-effecient.png
 navigation: True
-title: Great marketers are effective first, efficient second.
+title: Great marketers are effective first, efficient second
 subtitle:
 date: 2022-02-16
 tags: Marketing
