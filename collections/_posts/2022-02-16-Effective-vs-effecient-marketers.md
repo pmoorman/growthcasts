@@ -11,7 +11,7 @@ class: post-template
 subclass: 'post'
 author: naveed
 excerpt: The words 'effective' and 'efficient' are often used interchangeably. But when it comes to marketers, the two mean very different things.
-summary_items: null
+summary_items: Effective markters find and fix the problems that actually matter, making them more valuable than efficiency-only marketers.
 ---
 The most important distinction between an effective marketer and an efficient one? Effective marketers focus on fewer, more important tasks, whereas an efficient marketer tries to complete as many tasks as possible. 
 
