@@ -11,9 +11,9 @@ class: post-template
 subclass: 'post'
 author: tracey
 excerpt: How 5 giants are making the switch to remote look like pie.
-summary_items:  
+summary_items: Discord, Zapier, Buffer, Hotjar, Hubspot 
 ---
-It took a global pandemic to convince most companies that going remote was a smart move. The fears, the hesitation, the scramble for control over this new way to work was palpable in 2020. Turns out, it was all unnecessary. According to a study by Owl labs, almost 70% of full time workers got into the swing of working from home without much fuss. So much so, a quarter of people would now take a pay cut to make it their permanent practice. Emerging from the deep end unscathed, a hybrid working system with at least 3 days from home, is expected to be the way forward for 80% of people. 
+It took a global pandemic to convince most companies that going remote was a smart move. The fears, the hesitation, the scramble for control over this new way to work was palpable in 2020. Turns out, it was all unnecessary. According to a study by Owl labs, almost 70% of full time workers got into the swing of working from home without much fuss. So much so, a quarter of people would now take a pay cut to make it their permanent practice. Emerging from the deep end unscathed, a hybrid working system with at least 3 days from home, is expected to be the way forward for 80% of people.
 
 While the rest of the world arrived late to the remote party, some companies had been on the dancefloor for a long time. They had established a steady groove with their own teams, learned from their own mis-steps, and even took it a leap further with the fully remote, distributed team model. 
 
