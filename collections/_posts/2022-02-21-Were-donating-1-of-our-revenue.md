@@ -10,8 +10,8 @@ tags: Marketing
 class: post-template
 subclass: 'post'
 author: Louise
-excerpt: The words 'effective' and 'efficient' are often used interchangeably. But when it comes to marketers, the two mean very different things.
-summary_items: Effective markters find and fix the problems that actually matter, making them more valuable than efficiency-only marketers.
+excerpt: Donating money is much easier when we know and agree with where it’s going. Understandable, of course, but is it fair that our selective ignorance keeps us from making meaningful donations?
+summary_items: There’s a creative challenge in making donations (in time or money) go furthest. Embrace it!
 ---
 No matter how small the donation, what most of us care about is its impact. 
 
