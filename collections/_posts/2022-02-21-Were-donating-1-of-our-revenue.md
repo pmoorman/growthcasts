@@ -23,18 +23,19 @@ At Double, we decided to make an impact by donating 1% of our yearly revenue to 
 
 #### **Getting started**
 
-We’re told never to shout our good deeds from the roof. Somehow to imply that the ‘goodness’ of a deed can be cancelled out if we talk about it. Because this is silly, we chose to tell the whole world about our donation. Hopefully, doing so will facilitate many more future donations. Here’s what we wish we had known before starting: 
+We chose to tell the whole world about our donation. Hopefully, doing so will facilitate many more future donations. Here’s what we wish we had known before starting: 
 
-1. **Finding the highest-impact charities isn’t hard**
+* **Finding the highest-impact charities isn’t hard**
 
 Know where to look and you will find them. A good place to start looking for effective charities is GiveWell — a non-profit charity that finds out where your donation will save or improve the most lives. 
+
 Check out [GiveWell’s list](https://www.google.com/url?q=https://www.givewell.org/charities/top-charities&sa=D&source=docs&ust=1645422633076171&usg=AOvVaw243Nvz5IAbFIFQw2l9LEbV) of cost-effective, evidence-based charities.
 
-2. **How you donate matters**
+* **How you donate matters**
 
 At first, we were tempted to spread out donations over several causes. Maybe even donate to a different charity every month. [It turns out that](https://www.sas.upenn.edu/~baron/papers/charity.pdf) the highest impact donations are ones done in one large amount to a single, most-effective charity. 
 
-3. **Beware of your own biases**
+* **Beware of your own biases**
 
 Sometimes, even with numbers to prove a charity’s impact, we remain unconvinced. This is because many of us have grown distrustful of the ‘non-profit’ label altogether. It reminds us of terrible operational inefficiencies and poorly-allocated funds. [But we’re probably just biased.](https://louisedesadeleer.com/2020/05/01/why-youre-still-hesitant-about-donating-to-charity/)
 
