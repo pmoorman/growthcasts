@@ -532,7 +532,7 @@ window.drip_plinko = function(drip, page) {
                                 </div>
                               </div>
                               <div class="grid__column discount__button">
-                                <a class="button btn button--primary button--rounded button--shadow" href="https://gum.co/bjfvbhksvbk">
+                                <a class="button btn button--primary button--rounded button--shadow" href="https://doublemarketing.gumroad.com/l/zzmdb">
                                   <span>Get it now</span>
                                   <div class="wrapper grid grid--gapeless grid--middle">
                                     <span>$249</span>
@@ -583,17 +583,17 @@ window.drip_plinko = function(drip, page) {
   else if (drip.has_tag('50%_discount')) {
         response = {
           elite1_price: '$234<span class="old-price">$469<span>',
-          elite1_link: '<a href="https://gum.co/iouqertiqhexl" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite1_link: '<a href="https://doublemarketing.gumroad.com/l/drzdk" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite2_price: '$199<span class="old-price"><span>',
           elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite3_price: '$249<span class="old-price">$499<span>',
-          elite3_link: '<a href="https://gum.co/bjfvbhksvbk" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite3_link: '<a href="https://doublemarketing.gumroad.com/l/zzmdb" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           // PRO
           pricetable: '<p class="price__current-price paragraph">249</p><p class="price__old-price paragraph h2">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/tPjm">
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/zzmdb">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$249</span>
@@ -601,7 +601,7 @@ window.drip_plinko = function(drip, page) {
                         </a>`,
           // Core
           pricetable2: '<p class="price__current-price paragraph">234</p><p class="price__old-price paragraph h2">469</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/EjSco">
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/drzdk">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$234</span>
@@ -610,7 +610,7 @@ window.drip_plinko = function(drip, page) {
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$249d</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/tPjm">
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://doublemarketing.gumroad.com/l/zzmdb">
                             Get it now
                           </a>`,
           // Discount timer
@@ -620,17 +620,17 @@ window.drip_plinko = function(drip, page) {
   else if (drip.has_tag('70%_discount')) {
         response = {
           elite1_price: '$139<span class="old-price">$479<span>',
-          elite1_link: '<a href="https://gumroad.com/l/70core" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite1_link: '<a href="https://doublemarketing.gumroad.com/l/tifli" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite2_price: '$199<span class="old-price"><span>',
           elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite3_price: '$149<span class="old-price">$499<span>',
-          elite3_link: '<a href="https://gumroad.com/l/70discount" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite3_link: '<a href="https://doublemarketing.gumroad.com/l/hmctx" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           // PRO
           pricetable: '<p class="price__current-price paragraph">149</p><p class="price__old-price paragraph h2">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70discount">
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/hmctx">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$149</span>
@@ -638,7 +638,7 @@ window.drip_plinko = function(drip, page) {
                         </a>`,
           // Core
           pricetable2: '<p class="price__current-price paragraph">139</p><p class="price__old-price paragraph h2">469</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/70core">
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/tifli">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$139</span>
@@ -647,7 +647,7 @@ window.drip_plinko = function(drip, page) {
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$149</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/70discount">
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://doublemarketing.gumroad.com/l/hmctx">
                             Get it now
                           </a>`,
           // Discount timer
@@ -657,17 +657,17 @@ window.drip_plinko = function(drip, page) {
   else {
         response = {
           elite1_price: '$479<span class="old-price"><span>',
-          elite1_link: '<a href="https://gumroad.com/l/core-content" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite1_link: '<a href="https://doublemarketing.gumroad.com/l/pkoyp" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite2_price: '$199<span class="old-price"><span>',
           elite2_link: '<a href="https://gumroad.com/l/bonuses" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           elite3_price: '$499<span class="old-price"><span>',
-          elite3_link: '<a href="https://gumroad.com/l/full-access-elite" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
+          elite3_link: '<a href="https://doublemarketing.gumroad.com/l/bsfce" class="mt-4 btn btn-primary btn-shadow font-weight-bold shadow-grey" style="bottom: -30px; position: absolute;">Get it now </a>',
 
           // PRO
           pricetable: '<p class="price__current-price price__current-price--center paragraph">499</p>',
-          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitepro">
+          price_button: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/bsfce">
                           <span>Get it now</span>
                           <div class="grid grid--gapeless grid--middle">
                             <span>$499</span>
@@ -675,7 +675,7 @@ window.drip_plinko = function(drip, page) {
                         </a>`,
           // Core
           pricetable2: '<p class="price__current-price price__current-price--center paragraph">469</p>',
-          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://gum.co/elitecore">
+          price_button2: `<a class="price__button button button--primary button--rounded button--shadow button--expanded" href="https://doublemarketing.gumroad.com/l/pkoyp">
                             <span>Get it now</span>
                             <div class="grid grid--gapeless grid--middle">
                               <span>$469</span>
@@ -684,7 +684,7 @@ window.drip_plinko = function(drip, page) {
           // Banner
           banner_header: `<h3 class="heading h3 c--white">Buy Double Elite</h3>
                           <p class="paragraph">With all the bonuses for just <span class="t--bold">$499</span></p>`,
-          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://gum.co/elitepro">
+          banner_button: `<a class="button button--white button--rounded button--shadow" href="https://doublemarketing.gumroad.com/l/bsfce">
                             Get it now
                           </a>`
         }
