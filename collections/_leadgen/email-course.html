@@ -163,26 +163,13 @@ steps_carousel:
   <div class="p-4 p-md-5 form_box" style="background-color: #EFF0F6;">
     <h5 class="mb-0 font-weight-bold">Leave your email</h5>
     <p>and receive the first lesson right away!</p>
-    <form action="https://www.getdrip.com/forms/18963199/submissions" method="post" data-drip-embedded-form="670916927" id="drip-ef-670916927">
-      <h3 data-drip-attribute="headline">Start your Free 14-day Email Course</h3>
-    <div data-drip-attribute="description">The 7 Lessons to Become a Master Entrepreneur</div>
-
-
-    <div>
-        <label for="drip-email">Email Address</label><br>
-        <input type="email" id="drip-email" name="fields[email]" value="">
-    </div>
-
-
-    <div style="display: none;" aria-hidden="true">
-      <label for="website">Website</label><br>
-      <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
-    </div>
-      <input type="hidden" name="tags[]" id="tags_" value="Quora 5.0 Q3 2022 July" tabindex="-1">
-
-    <div>
-      <input type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
-    </div>
+        <form action="https://www.getdrip.com/forms/670916927/submissions" method="post" data-drip-embedded-form="670916927">
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" name="fields[email]" placeholder="Enter your email" aria-label="Enter your email">
+        <div class="input-group-append">
+          <input class="btn btn-primary font-weight-bold" type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
+        </div>
+      </div>
   </form>
   </div>
   {% endcapture %}
