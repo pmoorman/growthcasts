@@ -1,0 +1,80 @@
+
+
+---
+title: Easter Egg
+layout: pages/new-web/default
+hide_footer: true
+header_logo_only: true
+---
+
+<!-- SECTION: random gif -->
+<section class="pb-4 pt-2">
+  <div class="container">
+    <div class="row flex-column text-center">
+      <div class="pb-3">
+        {% include new-web/random-video.html %}
+      </div>
+      <div><p class="mb-0"><strong>Thanks for clicking!</strong></p class="mb-0"></div>
+      <div>We've noted that.. A special email is on its way!</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #drip-ef-990970773 { font: .875rem/1.5rem sans-serif; width: 100%; }
+  #drip-ef-990970773 h3 { font-size: 1.125rem; margin: 0 0 .375rem; }
+  #drip-ef-990970773 > div { margin-bottom: .75rem; }
+  #drip-ef-990970773 fieldset { border: none; margin: 0; padding: 0; }
+  #drip-ef-990970773 legend { margin: 0; padding: 0; }
+  #drip-ef-990970773 input[type="email"],
+  #drip-ef-990970773 input[type="number"],
+  #drip-ef-990970773 input[type="tel"],
+  #drip-ef-990970773 input[type="text"] { margin: 0; padding: .375rem .5625rem; width: 100%; }
+  #drip-ef-990970773 input[type="checkbox"],
+  #drip-ef-990970773 input[type="radio"] { margin: .1875rem .1875rem 0 0; padding: 0; }
+  #drip-ef-990970773 input[type="submit"] { margin: 0; padding: .375rem .5625rem; }
+</style>
+
+<form action="https://www.getdrip.com/forms/990970773/submissions" method="post" data-drip-embedded-form="990970773" id="drip-ef-990970773">
+    <h3 data-drip-attribute="headline">Start your Free 14-day Email Course</h3>
+  <div data-drip-attribute="description">The 7 Lessons to Become a Master Entrepreneur</div>
+
+  
+  <div>
+      <label for="drip-email">Email Address</label><br>
+      <input type="email" id="drip-email" name="fields[email]" value="">
+  </div>
+
+
+  <div style="display: none;" aria-hidden="true">
+    <label for="website">Website</label><br>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
+  </div>
+    <input type="hidden" name="tags[]" id="tags_" value="Reddit 5.0 Q3 2022 July" tabindex="-1">
+
+  <div>
+    <input type="submit" value="Join Now - It's Free" data-drip-attribute="sign-up-button">
+  </div>
+</form>
+
+<section class="pt-5 pb-0 px-0">
+  <div class="container">
+    <div class="col">
+      <h3 class="text-center">While you wait for your email, check out our blog:</h3>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: slider -->
+<section class="py-5 px-0">
+  <div class="container-fluid px-0">
+    {% include new-web/carousel-3.html
+      id="carousel-3"
+      items=site.posts %}
+  </div>
+</section>
+
+{% include new-web/text-with-striped-bg.html
+  text="<span class='font-weight-bold text-under-swipe'>Swipe to explore more articles >></span>" %}
+
+
